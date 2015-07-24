@@ -348,13 +348,13 @@ section{
 	font-weight: 200;
 }
 
-.iti-blk-accord .accordion:first-child{
+/*.iti-blk-accord .accordion:first-child{
 	border-top: 2px solid #f2f2f1;
 }
 .iti-blk-accord .accordion:last-child{
 	border-bottom: 2px solid #f2f2f1;
 	padding-bottom: 20px;
-}
+}*/
 
 .content-text{
 	margin-top: 60px;
@@ -801,9 +801,9 @@ hr{
 		font-size: 16px;
 	}
 
-	.accordion .accordion_in .acc_head .acc_icon_expand {
+/*	.accordion .accordion_in .acc_head .acc_icon_expand {
 		top: -4px !important;
-	}
+	}*/
 
 	.navbar-header{
 		float: left;
@@ -829,10 +829,10 @@ hr{
 		margin-bottom: 25px;
 	}
 
-	.accordion .accordion_in .acc_head {
+/*	.accordion .accordion_in .acc_head {
 		font-size: 22px !important;
 		letter-spacing: 0;
-	}
+	}*/
 
 	.hotel-opt-container span p b {
 		font-size: 20px;
@@ -951,10 +951,10 @@ hr{
 		float: left;
 		width: 53%;
 	}
-	.accordion .accordion_in .acc_head {
+/*	.accordion .accordion_in .acc_head {
 		font-size: 18px !important;
 		letter-spacing: 0;
-	}
+	}*/
 
 	.trip-proposal-head h1 {
 		font-size: 51px;
