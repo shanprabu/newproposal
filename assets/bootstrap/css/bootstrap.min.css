@@ -6080,8 +6080,8 @@ button.close {
     opacity: 0
 }
 .modal-backdrop.in {
-    filter: alpha(opacity=50);
-    opacity: .5
+    filter: alpha(opacity=80);
+    opacity: .80
 }
 .modal-header {
     min-height: 16.43px;
