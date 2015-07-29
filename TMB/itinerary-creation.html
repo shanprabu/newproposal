@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>:: Itinerary Creation ::</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tooltip CSS -->
+  <link href="assets/tooltip/css/tipped.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/itinerary-creation.css" rel="stylesheet">
+
+  <link href="assets/css/accordion.css" rel="stylesheet">
+
+  <link href="assets/css/jquery-ui.css" rel="stylesheet">
+  <!-- multi select -->
+  <link href="assets/multiselect/css/multiple-select.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body>
+
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img class="img-responsive" src="assets/images/enchanting-logo.png" alt="Enchanting Travels"/>
+            </a>
+          </div>
+          <div class="header-links">
+            <a href="#">ITINERARY CREATION</a>
+            <a href="#">BOOKING</a>
+            <a href="#">RESERVATION</a>
+          </div>
+          <div class="header-buttons">
+            <button type="button" class="btn btn-primary">GENERATE PROPOSAL</button>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <div class="container">
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="itinerary-creation-container">
+          <article>
+            <section>
+              <form>
+                <div class="form-group col-md-2 mgn-rgt35">
+                  <div class="row">
+                    <label for="pldno">PLD Enquiry No.</label>
+                    <input type="text" class="form-control" id="pldno">
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="leadguestname">Lead Guest Name</label>
+                  <input type="text" class="form-control" id="leadguestname">
+                </div>
+              </form>
+            </section>   
+          </article>
+
+          <article>
+            <section>
+              <div class="iti-blk-accord">
+                <!-- Accordion begin -->
+                <div class="accordion">
+
+                  <!-- trip details section -->
+                  <article class="open">
+                    <h3 class="handle">
+                      <span class="icon">&nbsp;</span>
+                      <span class="text">TRIP DETAILS</span>
+                    </h3>
+                    <div class="content standard-type" style="display: block;">
+                      <div class="col-md-12">
+                        <div class="row">
+                          <form>
+                            <div class="col-md-9">
+                              <div class="row">
+
+                                <div class="form-group col-md-2 mgn-rgt15">
+                                  <div class="row">
+                                    <label for="strtdate">Start Date</label>
+                                    <input type="text" class="form-control start-date date_icon pointerclass" id="strtdate"> 
+                                  </div>
+                                </div>
+                                <div class="form-group col-md-2 wdtperc20">
+                                  <label for="enddate">End Date</label>
+                                  <input type="text" class="form-control end-date date_icon pointerclass" id="enddate"> 
+                                </div>
+                                <div class="form-group col-md-2">
+                                  <label for="nights">Nights</label>
+                                  <input type="text" class="form-control" id="nights">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label for="guestrooms">Guests / Rooms</label>
+                                  <select class="form-control" id="guestrooms">
+                                    <option>1 person, 1 room</option>
+                                    <option>2 people, 1 room</option>
+                                    <option>3 people, 2 room</option>
+                                    <option>4 people, 2 room</option>
+                                    <option>5 people, 3 room</option>
+                                  </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                  <label for="currency">Currency</label>
+                                  <select class="form-control" id="currency">
+                                    <option>USD</option>
+                                    <option>GBR</option>
+                                    <option>AUS</option>
+                                    <option>CAN</option>
+                                  </select>
+                                </div>
+
+                                <div class="form-group col-md-4 mgn-rgt15 wdtperc367">
+                                  <div class="row">
+                                    <label for="intrnalserv">Internal Services</label>
+                                    <i class="dropdown-icon"></i>
+                                    <select id="intrnalserv" class="form-control" multiple="multiple">
+                                      <option value="1">Internal Services 1</option>
+                                      <option value="2">Internal Services 2</option>
+                                      <option value="3">Internal Services 3</option>
+                                      <option value="4">Internal Services 4</option>
+                                      <option value="5">Internal Services 5</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="form-group col-md-2">
+                                  <label for="price">Price</label>
+                                  <input type="text" class="form-control" id="price">
+                                </div>
+                                <div class="form-group col-md-3">
+                                  <label for="priceadj1">Price Adj 1</label>
+                                  <input type="text" class="form-control" id="priceadj1">
+                                </div>
+                                <div class="form-group col-md-2">
+                                  <label for="priceadj2">Price Adj 2</label>
+                                  <input type="text" class="form-control" id="priceadj2">
+                                </div>
+                                <div class="form-group col-md-11 wdtperc9512">
+                                  <div class="row">
+                                    <label for="remarks">Remarks</label>
+                                    <textarea class="form-control" rows="3" id="remarks"></textarea>
+                                  </div>
+                                </div>
+
+
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="row">
+
+                                <div class="table-responsive">
+                                  <table class="table table-bordered table-iticreat">
+                                    <thead>
+                                      <tr>
+                                        <th>Price</th>
+                                        <th>Per Person</th>
+                                        <th>Total</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th scope="row">Option 1</th>
+                                        <td>2 x $ 750</td>
+                                        <td>$ 1,500</td>
+                                      </tr>
+                                      <tr>
+                                        <th scope="row">Option 1</th>
+                                        <td>2 x $ 950</td>
+                                        <td>$ 1,900</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <button class="btn btn-default pull-right" type="button">
+                                    RE-CALCULATE PRICE
+                                  </button>
+                                </div>
+
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div> <!-- .content -->
+                  </article>
+                  <!-- trip details section ends-->
+
+
+                  <!-- Summary section -->
+                  <article class="open">
+                    <h3 class="handle">
+                      <span class="icon">&nbsp;</span>
+                      <span class="text">SUMMARY</span>
+                    </h3>
+                    <div class="content standard-type" style="display: block;">
+
+                      <table class="table table-bordered table-summary">
+                        <thead>
+                          <tr>
+                            <th class="wdt127">Place</th>
+                            <th class="wdt170">Hotel</th>
+                            <th class="wdt60">Price</th>
+                            <th class="wdt220">Travel Details</th>
+                            <th class="wdt60">Price</th>
+                            <th class="wdt200">Activities</th>
+                            <th class="wdt60">Price</th>
+                            <th class="wdt127">Guides</th>
+                            <th class="wdt60">Price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td rowspan="2">
+                              <p><b>Delhi (2)</b></p>
+                              <p>Mon, Oct 15, 2015 - Wed, Oct 17, 2015</p>
+                              <p>Opt 1 : $ 1,000 <br>
+                                Opt 2 : $ 2,000</p>
+                              </td>
+                              <td>Opt 1 : Colonels Retreat</td>
+                              <td> $ 700</td>
+                              <td>Innova ( GT, Vns, Raj, )   |   Drive from Delhi to Agra</td>
+                              <td> $ 100</td>
+                              <td rowspan="2">
+                               <p> Fri, Oct 15, 2015 : Delhi - City highlights <p>
+                                <p>Sat, Oct 16, 2015 - Sun, Oct 17, 2015 : HD - Akshardham Temple</p>
+                              </td>
+                              <td>
+                                $ 50
+                              </td>
+                              <td rowspan="2">
+                                Sat, Oct 16, 2015 - Sun, Oct 17, 2015 : Delhi - Local Guide
+                              </td>
+                              <td rowspan="2"> $ 50</td>
+                            </tr>
+
+                            <tr>
+                              <td>Opt 2 : Hilton Garden Inn</td>
+                              <td>$ 900</td>
+                              <td>Drive from Delhi to Agra   |   Flight from Delhi to Agra</td>
+                              <td> $ 200</td>
+                              <td> $ 100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="9" class="table-dotted"></td>
+                            </tr>
+                            <tr>
+                              <td rowspan="2">
+                                <p><b>Delhi (2)</b></p>
+                                <p>Mon, Oct 15, 2015 - Wed, Oct 17, 2015</p>
+                                <p>Opt 1 : $ 1,000 <br>
+                                  Opt 2 : $ 2,000</p>
+                                </td>
+                                <td>Opt 1 : Colonels Retreat</td>
+                                <td> $ 700</td>
+                                <td>Innova ( GT, Vns, Raj, )   |   Drive from Delhi to Agra</td>
+                                <td> $ 100</td>
+                                <td rowspan="2">
+                                 <p> Fri, Oct 15, 2015 : Delhi - City highlights <p>
+                                  <p>Sat, Oct 16, 2015 - Sun, Oct 17, 2015 : HD - Akshardham Temple</p>
+                                </td>
+                                <td>
+                                  $ 50
+                                </td>
+                                <td rowspan="2">
+                                  Sat, Oct 16, 2015 - Sun, Oct 17, 2015 : Delhi - Local Guide
+                                </td>
+                                <td rowspan="2"> $ 50</td>
+                              </tr>
+
+                              <tr>
+                                <td>Opt 2 : Hilton Garden Inn</td>
+                                <td>$ 900</td>
+                                <td>Drive from Delhi to Agra   |   Flight from Delhi to Agra</td>
+                                <td> $ 200</td>
+                                <td> $ 100</td>
+                              </tr>
+                              <tr>
+                                <td colspan="9" class="table-dotted"></td>
+                              </tr>
+                              <tr>
+                                <td rowspan="2">
+                                  <p><b>Delhi (2)</b></p>
+                                  <p>Mon, Oct 15, 2015 - Wed, Oct 17, 2015</p>
+                                  <p>Opt 1 : $ 1,000 <br>
+                                    Opt 2 : $ 2,000</p>
+                                  </td>
+                                  <td>Opt 1 : Colonels Retreat</td>
+                                  <td> $ 700</td>
+                                  <td>Innova ( GT, Vns, Raj, )   |   Drive from Delhi to Agra</td>
+                                  <td> $ 100</td>
+                                  <td rowspan="2">
+                                   <p> Fri, Oct 15, 2015 : Delhi - City highlights <p>
+                                    <p>Sat, Oct 16, 2015 - Sun, Oct 17, 2015 : HD - Akshardham Temple</p>
+                                  </td>
+                                  <td>
+                                    $ 50
+                                  </td>
+                                  <td rowspan="2">
+                                    Sat, Oct 16, 2015 - Sun, Oct 17, 2015 : Delhi - Local Guide
+                                  </td>
+                                  <td rowspan="2"> $ 50</td>
+                                </tr>
+
+                                <tr>
+                                  <td>Opt 2 : Hilton Garden Inn</td>
+                                  <td>$ 900</td>
+                                  <td>Drive from Delhi to Agra   |   Flight from Delhi to Agra</td>
+                                  <td> $ 200</td>
+                                  <td> $ 100</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                          </div> <!-- .content -->
+                        </article>
+                        <!-- Summary section ends -->
+
+
+                      </div> <!-- .accordion -->
+                    </div>
+                  </section>
+
+
+                </article>
+
+                <article>
+                  <section>
+                    <div class="destination-timeline">
+                      <ul>
+                        <li>
+                          <div>
+                            <span>Delhi(2)</span>
+                            <img src="assets/images/timeline-icon.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <div>
+                            <span>Delhi(2)</span>
+                            <img src="assets/images/timeline-icon-2.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <div>
+                            <span>Delhi(2)</span>
+                            <img src="assets/images/timeline-icon-2.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <div>
+                            <span>Delhi(2)</span>
+                            <img src="assets/images/timeline-icon-2.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <div>
+                            <span>Delhi(2)</span>
+                            <img src="assets/images/timeline-icon-2.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <div>
+                            <span>Delhi(2)</span>
+                            <img src="assets/images/timeline-icon-2.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <div>
+                            <span>Delhi(2)</span>
+                            <img src="assets/images/timeline-icon-2.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <div>
+                            <span>Delhi(2)</span>
+                            <img src="assets/images/timeline-icon-2.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <div>
+                            <span>Delhi(2)</span>
+                            <img src="assets/images/timeline-icon-2.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <div>
+                            <span>Delhi(2)</span>
+                            <img src="assets/images/timeline-icon-2.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <div>
+                            <span>Delhi(2)</span>
+                            <img src="assets/images/timeline-icon-2.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <div>
+                            <span>kooorg(2)</span>
+                            <img src="assets/images/timeline-icon-2.png">
+                          </div>
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <img src="assets/images/timeline-icon-2.png">
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <img src="assets/images/timeline-icon-2.png">
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <img src="assets/images/timeline-icon-2.png">
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <img src="assets/images/timeline-icon-2.png">
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <img src="assets/images/timeline-icon-2.png">
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <img src="assets/images/timeline-icon-2.png">
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <span></span>
+                          <img src="assets/images/timeline-icon-2.png">
+                        </li>
+                        <hr class="desthrtimeline">
+                        <li>
+                          <img src="assets/images/timeline-icon-2.png">
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </article>
+
+
+
+                <article>
+                  <section>
+                    <div class="iti-blk-accord">
+                      <!-- Accordion begin -->
+                      <div class="accordion">
+
+                        <!-- hotels and trave details section -->
+                        <article class="open">
+                          <h3 class="handle">
+                            <span class="icon">&nbsp;</span>
+                            <span class="text">HOTELS &amp; TRAVEL DETAILS</span>
+                          </h3>
+                          <div class="content standard-type" style="display: block;">
+                            <div class="col-md-12">
+                              <div class="row">
+                                <form>
+                                  <div class="form-group col-md-2 mgn-rgt15">
+                                    <div class="row">
+                                      <label for="tdplace">Place</label>
+                                      <input type="text" class="form-control" id="tdplace">
+                                    </div>
+                                  </div>
+                                  <div class="form-group col-md-1 wdtperc965">
+                                    <label for="tdnights">Nights</label>
+                                    <input type="text" class="form-control" id="tdnights">
+                                  </div>
+                                  <div class="form-group col-md-2">
+                                    <label for="tdstrtdate">Start Date</label>
+                                    <input type="text" class="form-control start-date date_icon pointerclass" id="tdstrtdate">
+                                  </div>
+                                  <div class="form-group col-md-2">
+                                    <label for="tdenddates">End Date</label>
+                                    <input type="text" class="form-control end-date date_icon pointerclass" id="stdenddates">
+                                  </div>
+
+                                  <div class="hotel-td-opt-container">
+                                    <section>
+                                      <div class="clearfix">
+                                        <div class="form-group col-md-3 mgn-rgt15">
+                                          <div class="row">
+                                            <label for="tdplace">Travel Details Opt 1</label>
+                                            <i class="dropdown-icon"></i>
+                                            <select class="form-control" id="tdplace">
+                                              <option>Travel detail 1</option>
+                                              <option>Travel detail 2</option>
+                                              <option>Travel detail 3</option>
+                                              <option>Travel detail 4</option>
+                                              <option>Travel detail 5</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="form-group col-md-1">
+                                          <label for="tdprice">Price</label>
+                                          <input type="text" class="form-control" id="tdprice">
+                                        </div>
+                                        <div class="form-group col-md-7 drive-text">
+                                          <div class="row">
+                                            <p>
+                                              <span class='tool-tip pointerclass' data-tipped-options="inline: 'tooltip-1', position:'bottom'">Drive From Cochin To Munnar (160 Km, 4.5 Hrs) 
+                                              </span>
+                                              <a href="#"><img src="assets/images/del-row.png"></a>
+                                            </p>
+                                            <div id='tooltip-1' style='display:none'>
+                                              <ul class="tooltip-ul">
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                              </ul>
+                                            </div>
+
+                                            <p>
+                                              <span class='tool-tip pointerclass' data-tipped-options="inline: 'tooltip-2', position:'bottom'">Cochin - Bangalore
+                                              </span>
+                                              <a href="#"><img src="assets/images/del-row.png"></a>
+                                            </p>
+                                            <div id='tooltip-2' style='display:none'>
+                                              <ul class="tooltip-ul">
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                              </ul>
+                                            </div>
+
+                                            <p>
+                                              <span class='tool-tip pointerclass' data-tipped-options="inline: 'tooltip-3', position:'bottom'">Drive From Cochin To Munnar (160 Km, 4.5 Hrs) 
+                                              </span>
+                                              <a href="#"><img src="assets/images/del-row.png"></a>
+                                            </p>
+                                            <div id='tooltip-3' style='display:none'>
+                                              <ul class="tooltip-ul">
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                              </ul>
+                                            </div>
+
+                                            <p>
+                                              <span class='tool-tip pointerclass' data-tipped-options="inline: 'tooltip-4', position:'bottom'">Cochin - Bangalore  
+                                              </span>
+                                              <a href="#"><img src="assets/images/del-row.png"></a>
+                                            </p>
+                                            <div id='tooltip-4' style='display:none'>
+                                              <ul class="tooltip-ul">
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                                <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
+                                              </ul>
+                                            </div>
+
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="clearfix">
+                                        <div class="form-group col-md-3 mgn-rgt15">
+                                          <div class="row">
+                                            <label for="tdhotelopt1">Hotel Opt 1</label>
+                                            <i class="dropdown-icon"></i>
+                                            <select class="form-control" id="tdhotelopt1">
+                                              <option>Hotel detail 1</option>
+                                              <option>Hotel detail 2</option>
+                                              <option>Hotel detail 3</option>
+                                              <option>Hotel detail 4</option>
+                                              <option>Hotel detail 5</option>
+                                            </select>
+                                            <span data-toggle="modal" data-target="#reviewblock">
+                                              Guest Rating:
+                                              <img src="assets/images/rating-stars.png" alt="rating stars">
+                                              <a href="#" class="pull-right">8 Reviews</a>
+                                            </span>
+
+                                          </div>
+                                        </div>
+                                        <div class="form-group col-md-3 wdtperc20">
+                                          <label for="tdroom1">Room 1</label>
+                                          <i class="dropdown-icon ryt16"></i>
+                                          <select class="form-control" id="tdroom1">
+                                            <option>Luxury ( double )</option>
+                                            <option>Luxury ( single )</option>
+                                            <option>platinum ( double )</option>
+                                            <option>gold ( double )</option>
+                                            <option>gold ( single )</option>
+                                          </select>
+                                          <span>Meals : Breakfast, Lunch</span>
+                                        </div>
+                                        <div class="form-group col-md-2 wdtperc12">
+                                          <label for="tdroomprice">Room Price</label>
+                                          <input type="text" class="form-control" id="tdroomprice">
+                                        </div>
+                                        <div class="form-group col-md-3 wdtperc20">
+                                          <label for="tdromm2">Room 2</label>
+                                          <i class="dropdown-icon ryt16"></i>
+                                          <select class="form-control" id="tdromm2">
+                                            <option>Luxury ( double )</option>
+                                            <option>Luxury ( single )</option>
+                                            <option>platinum ( double )</option>
+                                            <option>gold ( double )</option>
+                                            <option>gold ( single )</option>
+                                          </select>
+                                          <span>Meals : Breakfast, Lunch</span>
+                                        </div>
+                                        <div class="form-group col-md-2 wdtperc12">
+                                          <label for="tdroomprice2">Room Price</label>
+                                          <input type="text" class="form-control" id="tdroomprice2">
+                                        </div>
+                                        <a href="#" class="closecontainer"><img src="assets/images/del-row.png"></a>
+                                      </div>
+                                    </section>
+                                    <hr class="dottedhr">
+                                    <section>
+                                      <div class="clearfix">
+                                        <div class="form-group col-md-3 mgn-rgt15">
+                                          <div class="row">
+                                            <label for="tdtraveldetail2">Travel Details Opt 2</label>
+                                            <i class="dropdown-icon"></i>
+                                            <select class="form-control" id="tdtraveldetail2">
+                                              <option>Travel detail 1</option>
+                                              <option>Travel detail 2</option>
+                                              <option>Travel detail 3</option>
+                                              <option>Travel detail 4</option>
+                                              <option>Travel detail 5</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="form-group col-md-1">
+                                          <label for="tdop2price">Price</label>
+                                          <input type="text" class="form-control" id="tdop2price">
+                                        </div>
+                                        <div class="form-group col-md-7 drive-text">
+                                          <div class="row">
+                                            <p>
+                                              <a class="link-gold" href="#">Copy as opt 1</a>
+                                            </p>
+
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="clearfix">
+                                        <div class="form-group col-md-3 mgn-rgt15">
+                                          <div class="row">
+                                            <label for="tdop2hotelopt">Hotel Opt 2</label>
+                                            <i class="dropdown-icon"></i>
+                                            <select class="form-control" id="tdop2hotelopt">
+                                              <option>Hotel detail 1</option>
+                                              <option>Hotel detail 2</option>
+                                              <option>Hotel detail 3</option>
+                                              <option>Hotel detail 4</option>
+                                              <option>Hotel detail 5</option>
+                                            </select>
+                                            <span data-toggle="modal" data-target="#reviewblock">
+                                              Guest Rating:
+                                              <img src="assets/images/rating-stars.png" alt="rating stars">
+                                              <a href="#" class="pull-right">8 Reviews</a>
+                                            </span>
+
+                                          </div>
+                                        </div>
+                                        <div class="form-group col-md-3 wdtperc20">
+                                          <label for="tdop2room1">Room 1</label>
+                                          <i class="dropdown-icon ryt16"></i>
+                                          <select class="form-control" id="tdop2room1">
+                                            <option>Luxury ( double )</option>
+                                            <option>Luxury ( single )</option>
+                                            <option>platinum ( double )</option>
+                                            <option>gold ( double )</option>
+                                            <option>gold ( single )</option>
+                                          </select>
+                                          <span>Meals : Breakfast, Lunch</span>
+                                        </div>
+                                        <div class="form-group col-md-2 wdtperc12">
+                                          <label for="tdop2roomprice">Room Price</label>
+                                          <input type="text" class="form-control" id="tdop2roomprice">
+                                        </div>
+                                        <div class="form-group col-md-3 wdtperc20">
+                                          <label for="tdop2room2">Room 2</label>
+                                          <i class="dropdown-icon ryt16"></i>
+                                          <select class="form-control" id="tdop2room2">
+                                            <option>Luxury ( double )</option>
+                                            <option>Luxury ( single )</option>
+                                            <option>platinum ( double )</option>
+                                            <option>gold ( double )</option>
+                                            <option>gold ( single )</option>
+                                          </select>
+                                          <span>Meals : Breakfast, Lunch</span>
+                                        </div>
+                                        <div class="form-group col-md-2 wdtperc12">
+                                          <label for="tdop2roomprice2">Room Price</label>
+                                          <input type="text" class="form-control" id="tdop2roomprice2">
+                                        </div>
+                                        <a href="#" class="closecontainer"><img src="assets/images/del-row.png"></a>
+                                      </div>
+                                    </section>
+                                  </div>
+
+                                </form>
+                              </div>
+                            </div>
+                          </div> <!-- .content -->
+                        </article>
+                        <!-- hotels and trave details section ends -->
+
+                        <!-- Activities and guides section -->
+                        <article class="open">
+                          <h3 class="handle">
+                            <span class="icon">&nbsp;</span>
+                            <span class="text">ACTIVITIES &amp; GUIDES</span>
+                          </h3>
+                          <div class="content standard-type" style="display: block;">
+                            <form>
+                              <div class="col-md-12">
+                                <div class="row">
+                                  <!-- activity block -->
+                                  <div class="col-md-6 pdn-lft0">
+                                    <div class="activitynguide-container">
+                                      <div class="activitynguide-container-row">
+                                        <div class="form-group col-md-3 wdtperc29 mgn-rgt15">
+                                          <div class="row">
+                                            <label for="agactivity">Activity 1</label>
+                                            <i class="dropdown-icon"></i>
+                                            <select class=" tool-tip form-control" id="agactivity" data-tipped-options="inline: 'tooltip-5', position:'bottom'">
+                                              <option>Activity 1</option>
+                                              <option>Activity 2</option>
+                                              <option>Activity 3</option>
+                                              <option>Activity 4</option>
+                                              <option>Activity 5</option>
+                                            </select>
+                                            <div id='tooltip-5' style='display:none'>
+                                              <span class="tooltip-ul">
+                                                <p>sdfsdffasdfasfdasdfsa</p>
+                                              </span>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form-group col-md-3 wdtperc29">
+                                          <label for="agstrtdate">Start Date</label>
+                                          <input type="text" class="form-control start-date date_icon pointerclass" id="agstrtdate">
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                          <label for="agenddate">Days</label>
+                                          <input type="text" class="form-control" id="agenddate">
+                                        </div>
+                                        <div class="form-group col-md-3 wdtperc20">
+                                          <label for="agprice">Price</label>
+                                          <input type="text" class="form-control" id="agprice">
+                                        </div>
+                                        <a href="#"><img src="assets/images/del-row.png"></a>
+                                      </div>
+                                      <div class="add-row">
+                                        <a href="#"><img src="assets/images/add-row.png">Add Activity</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- activity bloack ends -->
+
+                                  <!-- guide bloack -->
+                                  <div class="col-md-6 pdn-ryt0">
+                                   <div class="activitynguide-container">
+                                    <div class="activitynguide-container-row">
+                                      <div class="form-group col-md-3 wdtperc29 mgn-rgt15">
+                                        <div class="row">
+                                          <label for="agguide">Guide 1</label>
+                                          <i class="dropdown-icon"></i>
+                                          <select class="form-control" id="agguide">
+                                            <option>Guide 1</option>
+                                            <option>Guide 2</option>
+                                            <option>Guide 3</option>
+                                            <option>Guide 4</option>
+                                            <option>Guide 5</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="form-group col-md-3 wdtperc29">
+                                        <label for="agstrtdate1">Start Date</label>
+                                        <input type="text" class="form-control start-date date_icon pointerclass" id="agstrtdate1">
+                                      </div>
+                                      <div class="form-group col-md-2">
+                                        <label for="agenddate2">Days</label>
+                                        <input type="text" class="form-control" id="agenddate2">
+                                      </div>
+                                      <div class="form-group col-md-3 wdtperc20">
+                                        <label for="agenprice">Price</label>
+                                        <input type="text" class="form-control" id="agenprice">
+                                      </div>
+                                      <a href="#"><img src="assets/images/del-row.png"></a>
+                                    </div>
+                                    <div class="add-row">
+                                      <a href="#"><img src="assets/images/add-row.png">Add Guide</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- guide block ends -->
+                              </div>
+                            </div>
+                          </form>
+                        </div> <!-- .content -->
+                      </article>
+                      <!-- Activities and guides section ends -->
+
+                    </div> <!-- .accordion -->
+
+                    <section class="col-md-12 mgn-tp22">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="row">
+                            <button class="btn btn-default mgn-rgt22" type="button" data-toggle="modal" data-target="#warningblk">
+                              Save
+                            </button>
+                            <button class="btn btn-default mgn-rgt22" type="button" data-toggle="modal" data-target="#resetblk"> 
+                              Reset
+                            </button>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#errorblk">ADD NEW CITY
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <button class="btn btn-default pull-right" type="button" data-toggle="modal" data-target="#deleteblk">
+                              <span><img src="assets/images/del-btn-icon.png"></span>Delete City
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </section>
+
+
+              </article>
+
+            </div>
+          </div> <!-- /container -->
+
+        <!--<footer>
+          <div class="container">
+            <div class="foo">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="row footspan">© 2015 Enchanting-Travels</div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+                <div class="row footspan">
+                  <span><a href="#">Terms & Conditions</a></span>
+                  <span><a href="#">Privacy Policy</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>-->
+
+        <!-- review block -->
+        <div class="modal fade" id="reviewblock" tabindex="-1" role="dialog" aria-labelledby="creviewblockLabel">
+          <div class="modal-dialog review-modal" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><img src="assets/images/popup-close-icon.png" alt="close"></span>
+                </button>
+                <h1 class="modal-title" id="contactusLabel">GUEST REVIEWS</h1>
+              </div>
+              <div class="modal-body">
+                <div class="modal-travel-consultant">
+                  <ul>
+                    <li>
+                      <div class="popup-litxt">
+                        <h2>A lovely meal!</h2>
+                        <h4>By: Marianne Villeneuve  |   2 months ago</h4>
+                        <p>We were especially please when we returned to the hotel after a long drive from Agra to find out that we could order a meal and they would go out, shop for it, cook it and serve 
+                          it to us on their rooftop patio.</p>
+                        </div>
+                        <div class="popup-gustrating">
+                          Guest Rating
+                          <img class="rating-star" src="assets/images/blank.png">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="popup-litxt">
+                          <h2>A lovely meal!</h2>
+                          <h4>By: Marianne Villeneuve  |   2 months ago</h4>
+                          <p>We were especially please when we returned to the hotel after a long drive from Agra to find out that we could order a meal and they would go out, shop for it, cook it and serve 
+                            it to us on their rooftop patio.</p>
+                          </div>
+                          <div class="popup-gustrating">
+                            Guest Rating
+                            <img class="rating-star" src="assets/images/blank.png">
+                          </div>
+                        </li>
+                        <li>
+                          <div class="popup-litxt">
+                            <h2>A lovely meal!</h2>
+                            <h4>By: Marianne Villeneuve  |   2 months ago</h4>
+                            <p>We were especially please when we returned to the hotel after a long drive from Agra to find out that we could order a meal and they would go out, shop for it, cook it and serve 
+                              it to us on their rooftop patio.</p>
+                            </div>
+                            <div class="popup-gustrating">
+                              Guest Rating
+                              <img class="rating-star" src="assets/images/blank.png">
+                            </div>
+                          </li>
+                          <li>
+                            <div class="popup-litxt">
+                              <h2>A lovely meal!</h2>
+                              <h4>By: Marianne Villeneuve  |   2 months ago</h4>
+                              <p>We were especially please when we returned to the hotel after a long drive from Agra to find out that we could order a meal and they would go out, shop for it, cook it and serve 
+                                it to us on their rooftop patio.</p>
+                              </div>
+                              <div class="popup-gustrating">
+                                Guest Rating
+                                <img class="rating-star" src="assets/images/blank.png">
+                              </div>
+                            </li>
+                            <li>
+                              <div class="popup-litxt">
+                                <h2>A lovely meal!</h2>
+                                <h4>By: Marianne Villeneuve  |   2 months ago</h4>
+                                <p>We were especially please when we returned to the hotel after a long drive from Agra to find out that we could order a meal and they would go out, shop for it, cook it and serve 
+                                  it to us on their rooftop patio.</p>
+                                </div>
+                                <div class="popup-gustrating">
+                                  Guest Rating
+                                  <img class="rating-star" src="assets/images/blank.png">
+                                </div>
+                              </li>
+                              <li>
+                                <div class="popup-litxt">
+                                  <h2>A lovely meal!</h2>
+                                  <h4>By: Marianne Villeneuve  |   2 months ago</h4>
+                                  <p>We were especially please when we returned to the hotel after a long drive from Agra to find out that we could order a meal and they would go out, shop for it, cook it and serve 
+                                    it to us on their rooftop patio.</p>
+                                  </div>
+                                  <div class="popup-gustrating">
+                                    Guest Rating
+                                    <img class="rating-star" src="assets/images/blank.png">
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="popup-litxt">
+                                    <h2>A lovely meal!</h2>
+                                    <h4>By: Marianne Villeneuve  |   2 months ago</h4>
+                                    <p>We were especially please when we returned to the hotel after a long drive from Agra to find out that we could order a meal and they would go out, shop for it, cook it and serve 
+                                      it to us on their rooftop patio.</p>
+                                    </div>
+                                    <div class="popup-gustrating">
+                                      Guest Rating
+                                      <img class="rating-star" src="assets/images/blank.png">
+                                    </div>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- review block ends -->
+
+
+                      <!-- Modal warning msg -->
+                      <div class="modal fade" id="warningblk" tabindex="-1" role="dialog" aria-labelledby="warningblkLabel">
+                        <div class="modal-dialog warningblk-modal" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header warningarrow-down">
+                              <img src="assets/images/warning-icon.png">
+                            </div>
+                            <div class="modal-body">
+                              <div class="modal-warning">
+                                <h2 class="light-blue-txt">Watchout - there may be a better way :)</h2>
+                                <p>This riquires passport details</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal warning msg ends -->
+
+                      <!-- Modal reset -->
+                      <div class="modal fade" id="resetblk" tabindex="-1" role="dialog" aria-labelledby="resetblkLabel">
+                        <div class="modal-dialog warningblk-modal" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header warningarrow-down">
+                              <img src="assets/images/reset-icon.png">
+                            </div>
+                            <div class="modal-body">
+                              <div class="modal-warning">
+                                <h2>Do you want to reset?</h2>
+                                <button class="btn btn-default mgn-rgt15" type="button">
+                                  Yes
+                                </button>
+                                <button class="btn btn-default" type="button"> 
+                                  No
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal reset ends -->
+
+                      <!-- Modal delete -->
+                      <div class="modal fade" id="deleteblk" tabindex="-1" role="dialog" aria-labelledby="deleteblkLabel">
+                        <div class="modal-dialog warningblk-modal" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header warningarrow-down">
+                              <img src="assets/images/delete-icon.png">
+                            </div>
+                            <div class="modal-body">
+                              <div class="modal-warning">
+                                <h2>Are you sure you want to delete city Agra ?</h2>
+                                <button class="btn btn-default mgn-rgt15" type="button">
+                                  Yes
+                                </button>
+                                <button class="btn btn-default" type="button"> 
+                                  No
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal delete ends -->
+
+                      <!-- Modal error -->
+                      <div class="modal fade" id="errorblk" tabindex="-1" role="dialog" aria-labelledby="errorblkLabel">
+                        <div class="modal-dialog warningblk-modal" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header warningarrow-down">
+                              <img src="assets/images/error-icon.png">
+                            </div>
+                            <div class="modal-body">
+                              <div class="modal-warning">
+                                <h2 class="orange-txt">Ooops...that doesn't work</h2>
+                                <p>Child policy: 2Children below 8yrs-Accommodated with parents with breakfast@Rs650 all Incl + 1extra bed is provided. Below 12yrs-Need separate room-Complimentary in LowSeason with breakfast@Rs650 all Incl. In HighSeason-2nd room@50% of Adult room</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal warning ends -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="assets/tooltip/js/tipped.js"></script>
+    <script src="assets/js/core.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/accord-ion.js"></script>
+    <!-- datepicker -->
+    <script src="assets/js/jquery-ui.js"></script>
+    <!-- multiselect -->
+    <script src="assets/multiselect/js/jquery.multiple.select.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  </html>
