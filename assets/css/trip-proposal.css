@@ -620,6 +620,10 @@ section{
 		border-color: #de6e62;
 	}
 
+	.transition-btn span{
+		padding: 0px !important;
+	}
+
 	.btn-primary:hover {
 		-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
 		-webkit-opacity: 1;
@@ -996,7 +1000,7 @@ section{
 		}
 	}
 
-	@media (min-width: 300px) and (max-width: 400px) {
+	@media (min-width: 280px) and (max-width: 400px) {
 
 		.navbar-brand>img {
 			max-width: 85%;
@@ -1012,6 +1016,9 @@ section{
 		.navbar-header {
 			float: left;
 			width: 53%;
+		}
+		.mgn-lft35 {
+			margin-left: 28px;
 		}
 /*	.accordion .accordion_in .acc_head {
 		font-size: 18px !important;
