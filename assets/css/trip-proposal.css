@@ -146,6 +146,11 @@ section{
 	display: block;
 }
 
+.firstcost-trippricing{
+	margin: 30px 0px;
+	margin-bottom: 30px !important;
+}
+
 .first-Cost{
 	margin-bottom: 50px !important;
 }
