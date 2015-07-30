@@ -737,34 +737,52 @@ hr{
 .destination-timeline ul li{
 	float: left;
 	text-align: center;
+	position: relative;
+	margin-bottom: 25px;
+}
 
+.destination-timeline ul li:nth-child(12n+9){
+		direction: ltr;
 }
 
 .destination-timeline ul li div{
 	display: inline-block;
+	width: 100px;
 }
 
-.destination-timeline ul li span{
-	display: block;
+.destination-timeline ul li div p{
+	display: inline-block;
+	width: 80px;
+	margin: 0;
 	position: relative;
-	top: -18px;
+	bottom: -6px;
 }
 
-.destination-timeline ul li img{
-	position: relative;
-	bottom: 18px;
+.destination-timeline ul li div p span{
+	display: inline-block;
+	width: 60px;
+	white-space: nowrap;
+	overflow: hidden !important;
+	text-overflow: ellipsis;
+}
+.destination-timeline ul li div p small{
+	float: right;
+}
+
+.destination-timeline ul li div img{
+	text-align: center;
 }
 
 .desthrtimeline{
 	border-top: 1px solid #36312b;
 	margin: 0;
-	width: 102px;
+	width: 108px;
 	display: inline-block;
 	position: relative;
 	float: left;
-	bottom: -14px;
-	left: -11px;
-	margin-right: -24px;
+	top: 38px;
+	margin-right: -38px;
+	margin-left: -38px;
 }
 
 label{
