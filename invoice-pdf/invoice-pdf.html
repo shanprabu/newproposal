@@ -8,31 +8,26 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <!-- styling for invoice --> 
   <style type="text/css">
-  * {
-    margin: 0;
-  }
 
-  html, body {
-    height: 100%;
-  }
 
   body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    margin: 0;
   }
+
   a, a:hover, a:focus{
     color: #3c2e25;
     text-decoration: none;
   }
 
   .wrapper {
-    width: 600px;
-    min-height: 100%;
-    margin: 0 auto -95px; /* the bottom margin is the negative value of the footer's height */
+    width: 700px;
+    margin: 0 auto; /* the bottom margin is the negative value of the footer's height */
   }
 
   .container{
-    padding: 40px 30px;
+    padding: 40px 0px;
   }
 
   .header{
@@ -49,76 +44,213 @@
     float: right;
     text-transform: uppercase;
     color: #CEB691;
-    letter-spacing: .3em;
-    font-size: 22px;
+    /*letter-spacing: 5px;*/
+    font-size: 24px;
     display: inline-block;
     font-weight: bold;
     width: 315px;
     text-align: right;
   }
 
-  footer{
-    background-color: #efedde;
-    height: 95px;
-  }
-
-  footer .foo{
-    background-color: #efedde;
-    margin: 0 auto;
-    width: 600px;
-    font-size: 12px;
-    color: #3c2e25;
-  }  
-
-  footer .foo .container{
-    padding: 10px 30px;
-  }
-
-  .foo .container span{
+  .bilnumbernadd{
+    clear: both;
     display: inline-block;
-    text-transform: uppercase;
+    width: 100%;
+    color: #3b2e26;
+    padding-top: 25px;
+    position: relative;
+    min-height: 95px;
   }
-  .foo .container p {
-    line-height: 18px;
+  .billnumber{
+    vertical-align: bottom;
+    float: left;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .address{
+    float: right;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .date{
+    font-weight: 100;
+    color: #CEB691;
   }
 
-  </style>
-  <!-- /styling for invoice -->
+  .triphighlght{
+    padding-top: 25px;
+  }
 
-  <body>
-    <div class="wrapper">
-      <div class="container">
+  .triphighlght div{
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 20px;
+  }
 
-        <div class="header">
-          <div class="logo">
-            <img src="http://www.enchantingtravels.com/wp-content/themes/enchanting/assets/images/header/logo-enchanting.svg">
-          </div>
-          <div class="head-txt">
-            Additional Cost Invoice
-          </div>
+  .triphighlght div span{
+    font-weight: bold;
+  }
+
+  .thankyou{
+    padding-top: 25px;
+    width: 100%;
+    font-weight: 600;
+  }
+  .table-section{
+    margin-top: 16px;
+    border: 2px solid #757575;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+   border: 0;
+   padding: 12px 8px;
+ }
+ th {
+  font-weight: bold;
+}
+
+.greyspace{
+  height: 20px;
+  background-color: #888888;
+  border: 0;
+  padding: 0px;
+}
+.bdr-ryt2{border-right: 2px solid #757575 !important;}
+.font20{font-size: 20px;}
+.font16{font-size: 16px;}
+.font14{font-size: 14px;}
+.fontbold{font-weight: bold;}
+.wdtperc20{width:20%;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.greyheader{
+  background-color: #ECECEC;
+  border: 0;
+}
+
+.greyheader td{
+  border: 0;
+}
+
+footer{
+  background-color: #efedde;
+}
+
+footer .foo{
+  background-color: #efedde;
+  margin: 0 auto;
+  width: 700px;
+  font-size: 12px;
+  color: #3c2e25;
+  height: 120px;
+}  
+
+footer .foo .container{
+  padding: 20px 0px;
+}
+
+.foo .container span{
+  display: inline-block;
+  text-transform: uppercase;
+}
+.foo .container p {
+  line-height: 18px;
+  margin: 0;
+}
+
+</style>
+<!-- /styling for invoice -->
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+
+      <div class="header">
+        <div class="logo">
+          <img src="http://www.enchantingtravels.com/wp-content/themes/enchanting/assets/images/header/logo-enchanting.svg">
         </div>
-
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-
-
-      </div><!-- /main container  -->
-    </div><!-- /wrapper -->
-
-    <!-- footer -->
-    <footer>
-      <div class="foo">
-        <div class="container">
-          <p><span>EMAIL</span> <a href="#"><b>priyank@enchanting-travels.com</b></a></p>
-          <p><span>USA</span> <b>+1 888 263 2574</b></p>
-          <p><span>WEB</span> <a href="#"><b>enchantingtravels.com</b></a></p>
+        <div class="head-txt">
+          INVOICE
         </div>
       </div>
-    </footer>
-    <!-- /footer -->
-  </body>
-  </html>
+
+      <div>
+
+        <div class="bilnumbernadd">
+          <div class="billnumber">Bill Number: 20264</div>
+          <div class="address">
+            Hardev Bains<br>
+            412 Boreham Blvd, Manitoba<br>
+            Winnipeg<br>
+            Canada<br>
+            <span class="date">22 Jul 2015</span>
+          </div>
+        </div>
+
+        <div class="triphighlght">
+          <div><span>Submitted To:</span> Hardev Bains</div>
+          <div><span>Trip Destination:</span> Asia </div>
+          <div><span>Trip Dates:</span> 19 Dec 2015 to 5 Jan 2016</div>
+        </div>
+
+        <div class="table-section">
+
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2" class="greyspace"></th>
+              </tr>
+              <tr class="greyheader">
+                <td scope="col" class="text-left font20 bdr-ryt2 fontbold">Trip Costs: </td>
+                <td scope="col" class="wdtperc20 text-right font20 fontbold">Amount</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="font16 bdr-ryt2 fontbold">Total Cost of Trip (USD): </td>
+                <td class="wdtperc20 text-right font16 fontbold">$ 28250</td>
+              </tr>
+              <tr class="greyheader">
+                <td scope="col" class="text-left bdr-ryt2 font14 fontbold">Total Amount Due upon Receipt (20%) advance booking amount </td>
+                <td scope="col" class="wdtperc20 text-right font16 fontbold">$ 8475</td>
+              </tr>
+              <tr class="greyheader">
+                <td scope="col" class="text-left bdr-ryt2 font14 fontbold">Balance Amount Due (80%) 30 days before arrival </td>
+                <td scope="col" class="wdtperc20 text-right font16 fontbold">$ 19775</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
+        </div>
+
+        <div class="thankyou">Thank you.</div>
+
+      </div>
+
+
+    </div><!-- /main container  -->
+  </div><!-- /wrapper -->
+
+  <!-- footer -->
+  <footer>
+    <div class="foo">
+      <div class="container">
+        <p><span>EMAIL</span> <a href="#"><b>priyank@enchanting-travels.com</b></a></p>
+        <p><span>TEL</span> <b>USA +1 888 263 2574</b></p>
+        <p><span>WEB</span> <a href="#"><b>enchantingtravels.com</b></a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- /footer -->
+</body>
+</html>
