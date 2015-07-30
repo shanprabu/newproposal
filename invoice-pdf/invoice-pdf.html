@@ -31,9 +31,10 @@
   }
 
   .header{
-    border-bottom: 8px solid #3b2e26;
+    border-bottom: 15px solid #3b2e26;
     width: 100%;
-    height: 78px;
+    min-height: 78px;
+    position: relative;
   }
 
   .header .logo{
@@ -50,6 +51,10 @@
     font-weight: bold;
     width: 315px;
     text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px 0px;
   }
 
   .bilnumbernadd{
@@ -79,6 +84,7 @@
   .date{
     font-weight: 100;
     color: #CEB691;
+    font-size: 18px;
   }
 
   .triphighlght{
@@ -89,6 +95,7 @@
     display: inline-block;
     font-size: 16px;
     padding-right: 20px;
+    font-weight: 100;
   }
 
   .triphighlght div span{
@@ -109,6 +116,7 @@
     border-collapse: collapse;
     width: 100%;
   }
+  tr{border: 0;}
   th, td {
    border: 0;
    padding: 12px 8px;
@@ -175,7 +183,7 @@ footer .foo .container{
 
       <div class="header">
         <div class="logo">
-          <img src="http://www.enchantingtravels.com/wp-content/themes/enchanting/assets/images/header/logo-enchanting.svg">
+          <img src="logo.png" width="142">
         </div>
         <div class="head-txt">
           INVOICE
