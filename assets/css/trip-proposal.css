@@ -516,6 +516,7 @@ section{
 		-o-transition: opacity .25s ease-in;
 		transition: opacity .25s ease-in;
 		-webkit-transform: translateZ(0);
+		vertical-align: text-bottom;
 	}
 
 	.red-a:hover{
@@ -726,7 +727,7 @@ section{
 		color: #6b6862;
 	}
 	.contactus-modal .modal-body .modal-travel-consultant span p a{
-		line-height: 34px;
+		line-height: 31px;
 		vertical-align: text-bottom;
 	}
 
