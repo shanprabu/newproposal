@@ -368,6 +368,7 @@ section{
 .hotel-opt-container img{
 	float: left;
 	margin-right: 14px;
+	width: 99%;
 }
 
 .hotel-opt-container span{
@@ -721,11 +722,12 @@ section{
 
 	.contactus-modal .modal-body .modal-travel-consultant span p{
 		margin-bottom: 1px;
-		font-size: 19px;
+		font-size: 1.3em;
 		color: #6b6862;
 	}
 	.contactus-modal .modal-body .modal-travel-consultant span p a{
-		line-height: 31px;
+		/*line-height: 31px;*/
+		vertical-align: middle;
 	}
 
 	.contactus-modal .modal-body .modal-travel-consultant span img{
