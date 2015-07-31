@@ -180,6 +180,7 @@ section{
 .travel-consultant-blk{
 	display: inline-block;
 	margin-bottom: 30px;
+	width: 100%;
 }
 
 .travel-consultant-blk h3{
@@ -247,7 +248,8 @@ section{
 	font-size: 30px;
 	line-height: 25px;
 	letter-spacing: .2px;
-	display: flex;
+	display: inline-block;
+	width: 100%;
 	border-bottom: 2px solid #f2f2f1;
 	padding-bottom: 18px;
 }
@@ -721,6 +723,9 @@ section{
 		margin-bottom: 1px;
 		font-size: 19px;
 		color: #6b6862;
+	}
+	.contactus-modal .modal-body .modal-travel-consultant span p a{
+		line-height: 31px;
 	}
 
 	.contactus-modal .modal-body .modal-travel-consultant span img{
