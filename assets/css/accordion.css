@@ -58,12 +58,12 @@
 }
 
 .standard-type strong {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .standard-type p {
-  font-size: 18px;
-  line-height: 1.5em;
+  font-size: 17px;
+  line-height: 28px;
   letter-spacing: .01em;
 }
 
@@ -79,11 +79,18 @@
   }
 }
 @media screen and (max-width:767px) { 
-  .accordion article .handle
-  .icon {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
+  .accordion article
+  .handle { font-size: 22px }
+  .accordion article .handle .icon {
+    -webkit-transform: scale(.81);
+    -moz-transform: scale(.81);
+    -ms-transform: scale(.81);
+    -o-transform: scale(.81);
+  }
+  .accordion article .content {
+    padding-bottom: 0px;
+  }
+  .standard-type p {
+    font-size: 16px;
   }
 }

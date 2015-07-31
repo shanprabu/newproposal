@@ -365,7 +365,7 @@ section{
 
 .hotel-opt-container img{
 	float: left;
-	margin-right: 18px;
+	margin-right: 14px;
 }
 
 .hotel-opt-container span{
@@ -383,6 +383,7 @@ section{
 .hotel-opt-container span p{
 	font-size: 15px;
 	margin: 0px;
+	line-height: 21px;
 }
 
 .hotel-opt-container span p b{
@@ -599,8 +600,7 @@ section{
 		font-size: 13px;
 		letter-spacing: 1px;
 		text-transform: uppercase;
-		padding: 8px 16px;
-		padding-top: 10px;
+		padding: 9px 16px;
 		border-width: 2px;
 		-webkit-border-radius: 3px;
 		-moz-border-radius: 3px;
@@ -625,10 +625,6 @@ section{
 		border-color: #de6e62;
 	}
 
-	.transition-btn span{
-		padding: 0px !important;
-	}
-
 	.btn-primary:hover {
 		-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
 		-webkit-opacity: 1;
@@ -637,7 +633,8 @@ section{
 		opacity: 1;
 	}
 
-	.btn-primary span{
+
+	.btn-primary span img{
 		padding-right: 10px;
 		position: relative;
 		top: -2px;
@@ -758,12 +755,6 @@ section{
 	}
 	/* -------------------- bootstrap Media Quires ------------------ */
 
-
-	@media (min-width: 992px) {
-
-
-	}
-
 	@media (min-width: 768px) {
 
 		body {
@@ -774,7 +765,7 @@ section{
 
 		.trip-proposal-container {
 			background-color: #ffffff;
-			padding: 50px 0px;
+			padding: 50px 110px;
 		}
 
 		.trip-proposal-head h1 {
@@ -1007,20 +998,24 @@ section{
 
 	@media (min-width: 280px) and (max-width: 400px) {
 
+		.navbar-brand{
+			height: auto;
+		}
+
 		.navbar-brand>img {
 			max-width: 85%;
 		}
 		.navbar-default {
-			height: 62px;
+			height: 63px;
 		}
 		.btn-primary {
 			padding: 4px 16px;
-			padding-top: 6px;
+			padding-top: 5px;
 		}
 
 		.navbar-header {
 			float: left;
-			width: 53%;
+			width: 50%;
 		}
 		.mgn-lft35 {
 			margin-left: 28px;
@@ -1052,6 +1047,7 @@ section{
 		.content-text h1 {
 			font-size: 22px;
 			letter-spacing: 3px;
+			margin-bottom: 0px;
 		}
 
 		.content-text h2 {
@@ -1064,8 +1060,8 @@ section{
 			width: 70px;
 		}
 		.convence-rating .gst-xm{
-			width: 100%;
-			display: block;
+			/*width: 100%;
+			display: block;*/
 		}
 
 		.standard-type p {
@@ -1073,12 +1069,24 @@ section{
 		}
 		.hotel-opt-container img {
 			margin-right: 8px;
+			width: 100%;
 		}
 		.hotel-opt-container {
 			width: 100%;
 		}
 		.highlight-container > .col-xs-7, .highlight-container > .col-xs-5 {
 			width: 100%;
+		}
+		.itinery-blk h1 {
+			padding-bottom: 22px;
+		}
+		.convence-rating img.rating-star {
+			-webkit-transform: scale(.83);
+			-moz-transform: scale(.83);
+			-ms-transform: scale(.83);
+			-o-transform: scale(.83);
+			width: 32%;
+			margin: 0px 1px;
 		}
 	}
 
@@ -1109,12 +1117,13 @@ section{
 		}
 		
 
-		@media (min-width: 768px) and (max-width: 990px) {
+		@media (min-width: 768px) and (max-width: 991px) {
 			.container {
 				width: 100%;
 			}
 			.hotel-opt-container img {
 				margin-right: 14px;
+				width: 95%;
 			}
 
 			body {
@@ -1125,10 +1134,13 @@ section{
 
 			.trip-proposal-container {
 				background-color: #ffffff;
-				padding: 50px 10px;
+				padding: 50px 60px;
 			}
 			.TI-list {
 				font-size: 18px;
+			}
+			.hotel-opt-container span {
+				width: 100%;
 			}
 		}
 
