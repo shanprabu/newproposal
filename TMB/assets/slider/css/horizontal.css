@@ -96,3 +96,18 @@ font-size: 50px;*/
 .crazy ul li:nth-child(2n) { width: 100px; margin: 0 4px 0 20px; }
 .crazy ul li:nth-child(3n) { width: 300px; margin: 0 10px 0 5px; }
 .crazy ul li:nth-child(4n) { width: 400px; margin: 0 30px 0 2px; }
+
+/* firefox hack css */
+@-moz-document url-prefix() { 
+	.destination-timeline ul li a p {
+		display: table;
+	}
+}
+
+/* IE hack css */
+@media all and (-ms-high-contrast:none)
+{
+	.destination-timeline ul li a p {
+		display: table;
+	}
+}
