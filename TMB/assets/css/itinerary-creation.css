@@ -738,11 +738,43 @@ hr{
 	float: left;
 	text-align: center;
 	position: relative;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
+	width: 200px;
 }
 
-.destination-timeline ul li:nth-child(12n+9){
-		direction: ltr;
+.destination-timeline ul li:first-child .desthrtimeline{
+	width: 90px;
+}
+.destination-timeline ul li:last-child .desthrtimeline{
+	width: 87px;
+	float: left;
+}
+
+.destination-timeline ul li a{
+	text-decoration: none;
+	color: #595855;
+}
+
+.destination-timeline ul li a p{
+	margin: 0;
+	line-height: 16px;
+	height: 35px;
+	width: 200px;
+	clear: both;
+	display: table-cell;
+	vertical-align: bottom;
+	text-align: center;
+}
+
+.destination-timeline ul li a :hover{
+	text-decoration: none;
+	color: #595855;
+}
+
+.destination-timeline ul li a img{
+	position: absolute;
+	text-align: center;
+	right: 90px;
 }
 
 .destination-timeline ul li div{
@@ -752,15 +784,15 @@ hr{
 
 .destination-timeline ul li div p{
 	display: inline-block;
-	width: 80px;
+	/*width: 80px;
 	margin: 0;
 	position: relative;
-	bottom: -6px;
+	bottom: -6px;*/
 }
 
 .destination-timeline ul li div p span{
 	display: inline-block;
-	width: 60px;
+	/*width: 60px;*/
 	white-space: nowrap;
 	overflow: hidden !important;
 	text-overflow: ellipsis;
@@ -776,13 +808,11 @@ hr{
 .desthrtimeline{
 	border-top: 1px solid #36312b;
 	margin: 0;
-	width: 108px;
-	display: inline-block;
+	width: 90px;
+	width: 200px;
 	position: relative;
-	float: left;
-	top: 38px;
-	margin-right: -38px;
-	margin-left: -38px;
+	float: right;
+	top: 12px;
 }
 
 label{
