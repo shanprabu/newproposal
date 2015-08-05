@@ -517,6 +517,7 @@ section{
 		transition: opacity .25s ease-in;
 		-webkit-transform: translateZ(0);
 		vertical-align: text-bottom;
+		line-height: 20px;
 	}
 
 	.red-a:hover{
