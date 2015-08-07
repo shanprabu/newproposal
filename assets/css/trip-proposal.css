@@ -368,12 +368,13 @@ section{
 .hotel-opt-container img{
 	float: left;
 	margin-right: 14px;
-	width: 159px;
+	width: 47%;
 }
 
 .hotel-opt-container span{
 	float: left;
-	margin-top: 4px;
+	margin-top: 8px;
+	width: 47%;
 }
 
 .hotel-opt-container span small{
@@ -517,7 +518,7 @@ section{
 		transition: opacity .25s ease-in;
 		-webkit-transform: translateZ(0);
 		vertical-align: text-bottom;
-		line-height: 20px;
+		line-height: 21px;
 	}
 
 	.red-a:hover{
@@ -1112,7 +1113,20 @@ section{
 		}
 		.hotel-opt-container img {
 			margin-right: 10px;
-			width: 149px;
+			width: 100%;
+		}
+		.hotel-opt-container span {
+			float: left;
+			margin-top: 12px;
+			width: 100%;
+		}
+		.hotel-opt-container span p b {
+			font-size: 23px;
+		}
+		.hotel-opt-container span p {
+			font-size: 16px !important;
+			margin: 0px;
+			line-height: 23px;
 		}
 		.hotel-opt-container {
 			margin-bottom: 25px;
@@ -1126,11 +1140,12 @@ section{
 		}
 		.hotel-opt-container img {
 			margin-right: 18px;
-			width: 345px;
+			width: 50%;
 		}
 		.hotel-opt-container span {
 			float: left;
 			margin-top: 22px;
+			width: 40%;
 		}
 		.hotel-opt-container span p {
 			font-size: 16px;
@@ -1147,7 +1162,7 @@ section{
 		}
 		.hotel-opt-container img {
 			margin-right: 10px;
-			width: 149px;
+			width: 45%;
 		}
 		.first-Cost b {
 			font-size: 23px;
@@ -1156,15 +1171,16 @@ section{
 		.hotel-opt-container span {
 			float: left;
 			margin-top: 5px;
+			width: 50%;
 		}
 		.hideit{display: none!important;}
 		.hotel-opt-container span p {
-			font-size: 13px;
+			font-size: 15px;
 			margin: 0px;
-			line-height: 17px;
+			line-height: 23px;
 		}
 		.hotel-opt-container span p b {
-			font-size: 18px;
+			font-size: 22px;
 		}
 		.convence {
 			font-size: 16px;
@@ -1184,7 +1200,7 @@ section{
 		}
 		.hotel-opt-container img {
 			margin-right: 14px;
-			width: 149px;
+			width: 40%;
 		}
 
 		body {
@@ -1201,17 +1217,22 @@ section{
 			font-size: 18px;
 		}
 		.hotel-opt-container span {
-			/*width: 100%;*/
+			width: 50%;
+			margin-top: 2.5%;
 		}
 		.hideit{display: none!important;}
 		.hotel-opt-container span p {
-			font-size: 13px;
+			font-size: 18px;
 			margin: 0px;
-			line-height: 18px;
+			line-height: 28px;
 		}
 		.hotel-opt-container span p b {
-			font-size: 20px;
+			font-size: 25px;
 			font-weight: 200;
+		}
+		.hotel-opt-container {
+			width: 100%;
+			margin-bottom: 25px;
 		}
 	}
 
@@ -1222,3 +1243,15 @@ section{
 
 	}
 
+	/* firefox hack css */
+	@-moz-document url-prefix() { 
+		.red-a {
+			line-height: 23px;
+		}
+	}
+
+	/* IE hack css */
+	@media all and (-ms-high-contrast:none)
+	{
+		
+	}

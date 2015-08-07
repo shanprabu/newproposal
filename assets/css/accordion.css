@@ -32,7 +32,7 @@
   width: 32px;
   height: 32px;
   float: right;
-  background-image: url(../images/accordion-icons.png);
+  background-image: url(../images/accordion-icons.svg);
   background-image: linear-gradient(transparent,transparent),url(../images/accordion-icons.svg);
   background-position: 0 0;
   margin-top: -2px;
