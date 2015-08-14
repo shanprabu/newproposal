@@ -365,16 +365,22 @@ section{
 
 }
 
+.hotel-opt-container figure{
+	float: left;
+	width: 38.75%;
+}
+
 .hotel-opt-container img{
 	float: left;
-	margin-right: 14px;
-	width: 47%;
+	width: 100%;
+	height: auto;
 }
 
 .hotel-opt-container span{
 	float: left;
-	margin-top: 8px;
-	width: 47%;
+	/*margin-top: 8px;*/
+	width: 55%;
+	margin-left: 13px;
 }
 
 .hotel-opt-container span small{
@@ -385,14 +391,15 @@ section{
 }
 
 .hotel-opt-container span p{
-	font-size: 15px;
 	margin: 0px;
-	line-height: 21px;
+	font-size: 17px;
+	line-height: 1.53em;
 }
 
 .hotel-opt-container span p b{
 	font-size: 22px;
-	font-weight: 200;
+	line-height: 1.18em;
+	font-weight: 400;
 }
 
 /*.iti-blk-accord .accordion:first-child{
@@ -518,7 +525,7 @@ section{
 		transition: opacity .25s ease-in;
 		-webkit-transform: translateZ(0);
 		vertical-align: text-bottom;
-		line-height: 21px;
+		line-height: 1.2em;
 	}
 
 	.red-a:hover{
@@ -1111,6 +1118,10 @@ section{
 			position: relative;
 			top: -4px;
 		}
+		.hotel-opt-container figure {
+			float: left;
+			width: 100%;
+		}
 		.hotel-opt-container img {
 			margin-right: 10px;
 			width: 100%;
@@ -1119,6 +1130,7 @@ section{
 			float: left;
 			margin-top: 12px;
 			width: 100%;
+			margin-left: 0;
 		}
 		.hotel-opt-container span p b {
 			font-size: 23px;
@@ -1138,9 +1150,14 @@ section{
 		.highlight-container {
 			background-color: #f7f4f1;
 		}
-		.hotel-opt-container img {
-			margin-right: 18px;
-			width: 50%;
+		.hotel-opt-container figure {
+			float: left;
+			width: 42.75%;
+		}
+		.hotel-opt-container img{
+			float: left;
+			width: 100%;
+			height: auto;
 		}
 		.hotel-opt-container span {
 			float: left;
@@ -1160,9 +1177,14 @@ section{
 		.highlight-container > .col-xs-7, .highlight-container > .col-xs-5 {
 			width: 100%;
 		}
+		.hotel-opt-container figure {
+			float: left;
+			width: 42.75%;
+		}
 		.hotel-opt-container img {
-			margin-right: 10px;
-			width: 45%;
+			float: left;
+			width: 100%;
+			height: auto;
 		}
 		.first-Cost b {
 			font-size: 23px;
@@ -1170,7 +1192,7 @@ section{
 		}
 		.hotel-opt-container span {
 			float: left;
-			margin-top: 5px;
+			margin: 3%;
 			width: 50%;
 		}
 		.hideit{display: none!important;}
@@ -1198,9 +1220,15 @@ section{
 		.container {
 			width: 100%;
 		}
-		.hotel-opt-container img {
-			margin-right: 14px;
-			width: 40%;
+		.hotel-opt-container figure{
+			float: left;
+			width: 29.75%;
+		}
+
+		.hotel-opt-container img{
+			float: left;
+			width: 100%;
+			height: auto;
 		}
 
 		body {
@@ -1218,17 +1246,18 @@ section{
 		}
 		.hotel-opt-container span {
 			width: 50%;
-			margin-top: 2.5%;
+			margin: 3%;
 		}
 		.hideit{display: none!important;}
 		.hotel-opt-container span p {
-			font-size: 18px;
 			margin: 0px;
-			line-height: 28px;
+			font-size: 16px;
+			line-height: 1.53em;		
 		}
 		.hotel-opt-container span p b {
-			font-size: 25px;
-			font-weight: 200;
+			font-size: 22px;
+			line-height: 1.18em;
+			font-weight: 400;
 		}
 		.hotel-opt-container {
 			width: 100%;
@@ -1240,7 +1269,30 @@ section{
 
 	@media (min-width: 992px) and (max-width: 1199px) {
 
-
+		.hotel-opt-container figure {
+			float: left;
+			width: 44%;
+		}
+		.hotel-opt-container img {
+			margin-right: 10px;
+			width: 100%;
+		}
+		.hotel-opt-container span {
+			float: left;
+			margin-left: 12px;
+			width: 50%;
+		}
+		.hotel-opt-container span p b {
+			font-size: 20px;
+		}
+		.hotel-opt-container span p {
+			font-size: 15px !important;
+			margin: 0px;
+			line-height: 21px;
+		}
+		.hotel-opt-container {
+			margin-bottom: 25px;
+		}
 	}
 
 	/* firefox hack css */
