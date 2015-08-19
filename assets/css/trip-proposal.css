@@ -1310,7 +1310,7 @@ section{
 
 	/*for ios*/
 	@media screen and (-webkit-min-device-pixel-ratio:0) {
-		.red-a {
+		::i-block-chrome,.red-a {
 			line-height: 1em;
 		}
 
