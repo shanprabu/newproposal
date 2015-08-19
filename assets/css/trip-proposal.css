@@ -525,7 +525,7 @@ section{
 		transition: opacity .25s ease-in;
 		-webkit-transform: translateZ(0);
 		vertical-align: text-bottom;
-		line-height: 1.2em;
+		line-height: 20px;
 	}
 
 	.red-a:hover{
@@ -1309,9 +1309,8 @@ section{
 	}
 
 	/*for ios*/
-	@media screen and (-webkit-min-device-pixel-ratio:0) {
-		::i-block-chrome,.red-a {
-			line-height: 1em;
-		}
-
+	_::-webkit-full-page-media, _:future, :root .red-a  {
+		line-height: 1em;
 	}
+
+	
