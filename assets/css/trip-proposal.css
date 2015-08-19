@@ -1307,3 +1307,11 @@ section{
 	{
 		
 	}
+
+	/*for ios*/
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		.red-a {
+			line-height: 1em;
+		}
+
+	}
