@@ -204,6 +204,9 @@ section{
 .travel-consultant-blk span img{
 	margin-right: 15px !important;
 	float: left;
+	width: 76px;
+    height: 77px;
+    border-radius: 50%;
 }
 
 .travel-itinery-blk{
@@ -739,6 +742,9 @@ section{
 
 	.contactus-modal .modal-body .modal-travel-consultant span img{
 		margin-bottom: 15px;
+		width: 76px;
+        height: 77px;
+        border-radius: 50%;
 	}
 
 	.contactus-modal .modal-header {
@@ -806,6 +812,10 @@ section{
 			background-color:#f2f2f1;
 		}
 
+		.modal-dialog {
+		    width: 1035px;
+		    margin: 72px auto;
+		}
 	}
 
 	@media (max-width: 767px){
@@ -1308,9 +1318,106 @@ section{
 		
 	}
 
+	/* modal for booking */
+	.hotel_option {
+	  margin: 0 auto;
+	  padding: 45px 86px;
+	}
+
+	.hotel_option form {
+	  margin-bottom: 5px;
+	}
+
+	.hotel_option p {
+	  margin-bottom: 55px;
+	  color: #686868;
+	  font-size: 18px;
+	}
+	.hotel_option .cancel {
+	    color: #757575;
+	    margin-left: 15px;
+	    font-size: 16px;
+	}
+
+	.hotel_option label {
+	  padding: 10px 0px 25px 64px;
+	  font-size: 18px;
+	  display: inline-flex;
+	  line-height: 25px;
+	}
+
+	.hotel_option label span {
+	    font-weight: bold;
+	}
+
+	.billing_info input[type="checkbox"] {
+	  display: none;
+	}
+
+	.hotel_option .buttons_div {
+	  margin: 20px 0px;
+	}
+	.info_booking_pop {
+    	color: #686868;
+        font-size: 16px;
+	}
+	.payment {
+	    background-color: #DC665A;
+	    color: #fff;
+	    padding: 10px 20px;
+	    text-align: center;
+	    border: 1px solid #DC665A;
+	    border-radius: 4px;
+	    display: inline-block;
+	    font-size: 14px;
+	    letter-spacing: 1px;
+	}
+
+	.billing_info form {
+	  margin-top: 22px;
+	  line-height: 20px;
+	  *zoom: 1;
+	}
+
+	.billing_info form:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	.billing_info input[type="checkbox"] {
+	  display: none;
+	}
+
+	.billing_info label {
+	  width: 100%;
+	  font-size: 17px;
+	  font-weight: normal;
+	}
+
+	.hotel_option label[for="hotel1"] {
+	  padding-right: 35px;
+	}
+
+	.hotel_option input[type="checkbox"] + label {
+	  background: url("../images/form_elements/proposal-check-off.png") no-repeat;
+	}
+
+	.hotel_option input[type="checkbox"]:checked + label {
+	  background: url("../images/form_elements/proposal-check-on.png") no-repeat;
+
+
+
+	}
+
+
+#igonre_me {
+    background: url("../images/form_elements/proposal-check-on.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    opacity: 0;
+    height:0
+}
 	/*for ios*/
 	_::-webkit-full-page-media, _:future, :root .red-a  {
 		line-height: 1em;
 	}
-
 	
