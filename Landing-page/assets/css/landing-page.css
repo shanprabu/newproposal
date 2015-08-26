@@ -95,10 +95,11 @@ header{
 }
 .top-right >.row > .number{
 	color: #36312a;
-	padding-right: 18px;
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 600;
 	text-decoration: none;
+	vertical-align: bottom;
+	line-height: 36px;
 }
 
 
@@ -138,23 +139,19 @@ header{
 	position: relative;
 	z-index: 999;
 	color: #FFF;
-	margin-top: 32%;
+	margin-top: 34%;
 }
 
 .banner .wrapp > h1{
-	font-size: 68px;
-	font-family: 'Soin_Sans_Pro_Roman';
-	font-weight: normal;
-	color: #fff;
-	letter-spacing: 0.03em;
+	font-size: 58px;
+	letter-spacing: .025em;
 }
 
 .banner .wrapp > .text > .row > p{
-	font-size: 28px;
-	margin: 0;
-	padding: 0;
-	font-weight: 100;
+	font-size: 26px;
 	line-height: 1.2em;
+	text-transform: none;
+	letter-spacing: 0.1em;
 }
 
 
@@ -239,6 +236,7 @@ header{
 	padding-top: 6px;
 	clear: both;
 	font-weight: bold;
+	letter-spacing: .06em;
 }
 
 .quotelis{
@@ -301,18 +299,18 @@ header{
 }
 
 .page-bottom.feel-safe .left h3 {
-	font-size: 26px;
+	font-size: 25px;
 	line-height: 1.2em;
 	text-transform: uppercase;
-	letter-spacing: .05em;
+	letter-spacing: .14em;
 }
 
 .page-bottom.feel-safe .left p {
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 1.61em;
 	margin-top: 25px;
 	margin-bottom: 50px;
-	font-weight: normal;
+	letter-spacing: .1em;
 }
 
 .page-bottom.feel-safe .right {
@@ -406,10 +404,15 @@ header{
 .phone-call-number{
 	display: block;
 	float: left;
-	font-size: 17px;
+	font-size: 15px;
 	margin: 7px 9px;
 	color: #36312a;
 	line-height: 21px;
+	letter-spacing: .13em;
+}
+
+.phone-call-number span{
+	font-size: 17px;
 	letter-spacing: 0.04em;
 }
 
@@ -439,17 +442,22 @@ header{
 }
 .col-left blockquote img{
 	float: left;
+	width: 72px;
+	height: 72px;
 }
 
 .col-left blockquote .author{
 	display: block;
 	float: left;
-	margin-top: 21px;
+	margin-top: 12px;
 	padding-left: 15px;
+	font-size: 18px;
+	vertical-align: text-bottom;
 }
 .col-left blockquote .author strong{
 	display: block;
 	line-height: 24px;
+	letter-spacing: 0.05em;
 }
 
 .itinery-blk{
@@ -544,8 +552,8 @@ header{
 	pointer-events: none;
 	border-color: rgba(190, 169, 141, 0);
 	border-top-color: #bea98d;
-	border-width: 12px;
-	margin-left: -12px;
+	border-width: 8px;
+	margin-left: -8px;
 }
 
 .steps-n-txt{
@@ -590,7 +598,7 @@ header{
 	padding-top: 10px;
 	font-size: 16px;
 	line-height: 15px;
-	font-weight: bold;
+	font-weight: normal;
 	color: #36312a;
 	cursor: pointer;
 }
@@ -764,6 +772,7 @@ header{
 	letter-spacing: 0.03em;
 	margin-left: 25px;
 	margin-bottom: 20px;
+	margin-top: 3px;
 }
 
 .givuscall span{
@@ -782,14 +791,18 @@ header{
 
 /* -------------------- Common Css ------------------ */ 
 .btn-brown {
-	color: #ffffff;
-	background-color: #54504a;
 	border-width: 0;
-	font-family: 'Soin_Sans_Pro_Roman';
+	color: #FFF;
+	margin-left: 18px;
+	width: auto;
 	font-size: 13px;
+	height: 36px;
+	padding: 0;
+	line-height: 36px;
+	padding-left: 18px;
+	padding-right: 18px;
 	letter-spacing: .085em;
 	text-transform: uppercase;
-	padding: 9px 22px;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	background-color: rgba(84, 80, 74, .85);
@@ -816,16 +829,19 @@ header{
 
 .btn-red-transparent {
 	color: #dc665a;
+	display: inline-block;
+	letter-spacing: .075em;
+	height: 46px;
+	font-weight: 600;
+	line-height: 46px;
 	background-color: transparent;
 	border: 2px solid #dc665a;
-	font-family: 'Soin_Sans_Pro_Roman';
-	font-size: 15px;
-	letter-spacing: .085em;
+	font-size: 15.5px;
 	text-transform: uppercase;
-	padding: 13px 22px;
+	padding: 0px 20px;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
-	border-color: rgba(220, 102, 90, .75);
+	border-color: rgba(220, 102, 90, .65);
 	-webkit-transition: border-color .15s ease-in;
 	-moz-transition: border-color .15s ease-in;
 	-o-transition: border-color .15s ease-in;
@@ -848,12 +864,13 @@ header{
 	color: #ffffff;
 	background-color: #dc665a;
 	border-width: 0;
-	font-family: 'Soin_Sans_Pro_Roman';
 	font-size: 16px;
-	letter-spacing: .085em;
-	font-weight: 100;
+	letter-spacing: .08em;
+	line-height: 50px;
+	height: 51px;
+	font-weight: normal;
 	text-transform: uppercase;
-	padding: 14px 28px;
+	padding: 0px 27px;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	background-color: rgba(220, 102, 90, .85);
@@ -877,15 +894,16 @@ header{
 }
 
 .btn-red {
-	color: #ffffff;
 	background-color: #dc665a;
+	color: #ffffff;
 	border-width: 0;
-	font-family: 'Soin_Sans_Pro_Roman';
 	font-size: 16px;
-	letter-spacing: .085em;
-	font-weight: 100;
+	letter-spacing: .15em;
+	font-weight: normal;
+	line-height: 38px;
+	height: 38px;
 	text-transform: uppercase;
-	padding: 11px 28px;
+	padding: 0px 28px;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	background-color: rgba(220, 102, 90, .85);
@@ -911,14 +929,15 @@ header{
 
 .btn-red-sm {
 	color: #ffffff;
-	background-color: #dc665a;
 	border-width: 0;
-	font-family: 'Soin_Sans_Pro_Roman';
 	font-size: 13px;
-	letter-spacing: .085em;
-	font-weight: 100;
+	letter-spacing: .15em;
+	font-weight: normal;
+	line-height: 38px;
+	height: 38px;
 	text-transform: uppercase;
-	padding: 10px 20px;
+	padding: 0px 25px;
+	background-color: #dc665a;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	background-color: rgba(220, 102, 90, .85);
@@ -1384,8 +1403,8 @@ hr{
 		top: 50%;
 	}
 	.page-bottom.feel-safe .left h3 {
-		font-size: 20px;
-		letter-spacing: 0em;
+		font-size: 22px;
+		letter-spacing: 0.08em;
 	}
 	.page-bottom.feel-safe .left p {
 		font-size: 14px;
@@ -1397,6 +1416,26 @@ hr{
 	.page-bottom.feel-safe .left .container div img{
 		margin: 0 auto;
 	}
+	.banner-gradient {
+		height: 490px;
+	}
+	.hidden-smallest{
+		display: none;
+	}
+	.pdn0{
+		padding: 0px;
+	}
+	.itinery-blk {
+		padding: 0px 15px;
+	}
+	.accordion article .handle {
+		font-size: 20px !important;
+	}
+	.page-bottom.feel-safe .right blockquote {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
 
 
 
@@ -1425,9 +1464,8 @@ hr{
 	.container {
 		width: 100%;
 	}
-
 	.banner .wrapp {
-		margin-top: 48%;
+		margin-top: 50%;
 	}
 	.banner .wrapp > h1 {
 		text-align: center;
@@ -1453,7 +1491,7 @@ hr{
 	}
 
 	.secondlinebq blockquote {
-		padding: 54px 44px;
+		padding: 54px 37px;
 		background-color: #FFF;
 		font-size: 16px;
 		line-height: 29px;
@@ -1512,25 +1550,33 @@ hr{
 	.page-bottom.feel-safe .left .container div img{
 		margin: 0 auto;
 	}
-
+	.banner-gradient {
+		height: 490px;
+	}
+	#two-col .col-left, #two-col .col-right {
+		padding-bottom: 0px;
+	} 
+	#two-col .col-right {
+		padding-top: 25px;
+	}
+	
 }
 @media(max-width: 651px) and (min-width: 401px){
 
 	/* ----------------/header---------------- */
 	.top-right >.row > .number {
 		padding-right: 5px;
-		font-size: 11px;
+		font-size: 14px;
 	}
 	.btn-brown {
-		font-size: 11px;
-		padding: 9px 12px;
+		font-size: 13px;
 	}
 	.top-right {
 		padding-top: 22px;
 	}
 	/* ----------------/header---------------- */
 	.banner .wrapp {
-		margin-top: 43%;
+		margin-top: 42%;
 	}
 	.banner .wrapp > h1 {
 		text-align: center;
@@ -1640,8 +1686,8 @@ hr{
 		top: 50%;
 	}
 	.page-bottom.feel-safe .left h3 {
-		font-size: 20px;
-		letter-spacing: 0em;
+		font-size: 22px;
+		letter-spacing: 0.08em;
 	}
 	.page-bottom.feel-safe .left p {
 		font-size: 14px;
@@ -1652,7 +1698,43 @@ hr{
 	.page-bottom.feel-safe .left .container div img{
 		margin: 0 auto;
 	}
-
+	.banner-gradient {
+		height: 424px;
+	}
+	#home-page .expertise article h2 {
+		font-size: 24px;
+	}
+	#two-col .col-left, #two-col .col-right {
+		padding-bottom: 0px;
+		padding-top: 0px;
+	}
+	#home-page .expertise article {
+		width: 100%;
+		margin-bottom: 65px;
+	}
+	.btn-red-transparent {
+		width: 100%;
+	}
+	#home-page .expertise {
+		padding-bottom: 0px;
+		padding-top: 45px;
+	}
+	.hidden-smallest{
+		display: none;
+	}
+	.pdn0{
+		padding: 0px;
+	}
+	.itinery-blk {
+		padding: 0px 15px;
+	}
+	.accordion article .handle {
+		font-size: 20px !important;
+	}
+	.page-bottom.feel-safe .right blockquote {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
 
 
 }
@@ -1662,7 +1744,7 @@ hr{
 		width: 100%;
 	}
 	.banner .wrapp {
-		margin-top: 42%;
+		margin-top: 42.5%;
 	}
 	.banner .wrapp > h1 {
 		text-align: center;
@@ -1681,6 +1763,17 @@ hr{
 	}
 	#home-page .expertise article {
 		width: 84%;
+	}
+	.page-bottom.feel-safe .left .container {
+		display: table;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+	}
+	.page-bottom.feel-safe .left .container div {
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 0;
 	}
 	.secondlinebq {
 		padding-top: 55px;
@@ -1706,11 +1799,33 @@ hr{
 		padding: 0px 3.15%;
 	}
 	.page-bottom.feel-safe .left h3 {
-		font-size: 20px;
-		letter-spacing: 0em;
+		font-size: 22px;
+		letter-spacing: 0.09em;
 	}
 	.page-bottom.feel-safe .left p {
 		font-size: 14px;
+		font-weight: 100;
+	}
+	.banner-gradient {
+		height: 490px;
+	}
+	#home-page .expertise article h2 {
+		font-size: 24px;
+	}
+	.quotelis {
+		font-size: 19px;
+	}
+	#two-col .col-left, #two-col .col-right {
+		padding-bottom: 0px;
+	}
+	#two-col .col-right {
+		padding-top: 25px;
+	}
+	.page-bottom.feel-safe .right blockquote {
+		padding-right: 25px;
+	}
+	.page-bottom.feel-safe .right {
+		background-position: right center;
 	}
 }
 
@@ -1719,7 +1834,7 @@ hr{
 		width: 100%;
 	}
 	.banner .wrapp {
-		margin-top: 40%;
+		margin-top: 38.5%;
 	}
 	.banner .wrapp > h1 {
 		text-align: center;
@@ -1735,6 +1850,11 @@ hr{
 		width: 100%;
 		margin: 0;
 		padding: 0;
+	}
+	.quotelis ul {
+		list-style-type: none;
+		font-size: 19px;
+		color: #36312a;
 	}
 
 	.secondlinebq {
@@ -1767,12 +1887,26 @@ hr{
 	.page-bottom.feel-safe .left p {
 		font-size: 14px;
 	}
+	.page-bottom.feel-safe .left .container {
+		display: table;
+		height: 100%;
+		width: 100%;
+		padding: 0;
+	}
+	.page-bottom.feel-safe .left .container div {
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 0px;
+	}
+	.banner-gradient {
+		height: 400px;
+	}
 
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	.banner .wrapp {
-		margin-top: 40%;
+		margin-top: 44%;
 	}
 	.wdt2775perc {
 		width: 33.33333333%;
@@ -1783,6 +1917,11 @@ hr{
 	#home-page .expertise article {
 		width: 96%;
 	}
+	#home-page .expertise blockquote .quotelis ul {
+		list-style-type: none;
+		font-size: 19px;
+		color: #36312a;
+	}	
 	.slides-holder article {
 		width: 182px;
 		margin-right: 19px;
@@ -1807,15 +1946,30 @@ hr{
 	}
 	.phone-call-number {
 		font-size: 16px;
+		margin: 7px 8px;
 	}
 	.slides-holder {
 		padding: 0px 3.2%;
 	}
 	.page-bottom.feel-safe .left h3 {
-		font-size: 22px;
+		font-size: 21px;
+		letter-spacing: .09em;
 	}
 	.page-bottom.feel-safe .left p {
-		font-size: 14px;
+		font-size: 15px;
+	}
+	.col-left blockquote .author {
+		display: block;
+		float: left;
+		margin-top: 18px;
+		padding-left: 15px;
+		font-size: 16px;
+		vertical-align: text-bottom;
+	}
+	.page-bottom.feel-safe .left .container div {
+		display: table-cell;
+		vertical-align: middle;
+		padding-left: 5px;
 	}
 
 }
