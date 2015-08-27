@@ -1,0 +1,368 @@
+/* Start of Font Definition */
+@font-face {
+	font-family: 'Soin Sans Pro';
+    src: url('../fonts/Soin.Sans.Pro.Thin.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Soin.Sans.Pro.Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Soin.Sans.Pro.Thin.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Soin.Sans.Pro.Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Soin.Sans.Pro.Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'Soin Sans Pro';    src: url('../fonts/Soin.Sans.Pro.ThinOblique.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Soin.Sans.Pro.ThinOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Soin.Sans.Pro.ThinOblique.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Soin.Sans.Pro.ThinOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Soin.Sans.Pro.ThinOblique.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-style: italic;
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'Soin Sans Pro';
+	src: url('../fonts/Soin.Sans.Pro.Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Soin.Sans.Pro.Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Soin.Sans.Pro.Light.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Soin.Sans.Pro.Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Soin.Sans.Pro.Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Soin Sans Pro';
+    src: url('../fonts/Soin.Sans.Pro.LightOblique.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Soin.Sans.Pro.LightOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Soin.Sans.Pro.LightOblique.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Soin.Sans.Pro.LightOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Soin.Sans.Pro.LightOblique.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-style: italic;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Soin Sans Pro';    
+    src: url('../fonts/Soin.Sans.Pro.Roman.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Soin.Sans.Pro.Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Soin.Sans.Pro.Roman.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Soin.Sans.Pro.Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Soin.Sans.Pro.Roman.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Soin Sans Pro';
+    src: url('../fonts/Soin.Sans.Pro.RomanOblique.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Soin.Sans.Pro.RomanOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Soin.Sans.Pro.RomanOblique.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Soin.Sans.Pro.RomanOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Soin.Sans.Pro.RomanOblique.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-style: italic;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Soin Sans Pro';    
+    src: url('../fonts/Soin.Sans.Pro.Medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Soin.Sans.Pro.Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Soin.Sans.Pro.Medium.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Soin.Sans.Pro.Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Soin.Sans.Pro.Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Soin Sans Pro';
+	src: url('../fonts/Soin.Sans.Pro.MediumOblique.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Soin.Sans.Pro.MediumOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Soin.Sans.Pro.MediumOblique.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Soin.Sans.Pro.MediumOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Soin.Sans.Pro.MediumOblique.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-style: italic;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Soin Sans Pro';
+	src: url('../fonts/Soin.Sans.Pro.Bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Soin.Sans.Pro.Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Soin.Sans.Pro.Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Soin.Sans.Pro.Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Soin.Sans.Pro.Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-style: normal;
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'Soin Sans Pro';
+    src: url('../fonts/Soin.Sans.Pro.BoldOblique.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Soin.Sans.Pro.BoldOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Soin.Sans.Pro.BoldOblique.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Soin.Sans.Pro.BoldOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Soin.Sans.Pro.BoldOblique.svg#svgFontName') format('svg'); /* Legacy iOS */
+	font-style: italic;
+	font-weight: 900;
+}
+
+/* End of Font Definition */
+/**** common css starts here ****/
+html, body {
+	height: 100%;    
+	margin: 0px;
+    font-family: Soin Sans Pro;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+	padding: 0px;
+	margin: 0px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+select::-ms-expand {
+    display: none;
+}
+.select-container:after {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background: url(../images/dropdown-arrow.png) #fff;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 14%;
+    top: 45%;
+    pointer-events: none;
+}
+body .ui-state-default, body .ui-widget-content .ui-state-default, body .ui-widget-header .ui-state-default {
+	background: #e6e6e6;
+}
+body .ui-widget-header {
+	background: #ccc;
+}
+body .ui-state-highlight, body .ui-widget-content .ui-state-highlight, body .ui-widget-header .ui-state-highlight {
+	background: #fbf9ee;
+}
+#wrapper {
+	width: 1349px;
+	margin: 0px auto;
+	overflow: auto;
+	position: relative;
+	min-height: 100%;
+}
+#wrapper header {
+	height: 67px;
+	background: #36312b;
+	padding: 0px 90px;
+}
+#wrapper header a.logo-container {
+	height: 100%;
+	padding: 15px 15px 15px 0px;
+}
+#wrapper header a.logo-container img{
+	height: 35px;
+	width: 131px;
+}
+#wrapper header nav {
+	height: 65px;
+}
+#wrapper header nav ul.nav.nav-tabs{
+	height: 100%;
+	border: none;
+	margin-left: 138px;
+}
+ #wrapper header nav ul.nav.nav-tabs > li {
+ 	padding: 0px 22px;
+ 	margin-right: 30px;
+}
+#wrapper header nav ul.nav.nav-tabs > li > a {
+	color: #524e49;
+	font-size: 18px;
+	padding: 24px 0px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 0px;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+#wrapper header nav ul.nav.nav-tabs >  li > a:hover, #wrapper header nav ul.nav.nav-tabs >  li > a:focus  {
+	background: none;
+	color: #fffefe;
+	outline: none;	
+} 
+#wrapper header nav ul.nav.nav-tabs > li > a.active{
+	background: none;
+	border-top: 4px solid #715e48;
+	color: #fffefe;
+	padding-top: 20px;
+	outline: none;
+}
+#wrapper footer {
+	background: #36312b;
+	padding: 15px 90px;	
+	width: 1349px;
+    position: absolute;
+    bottom: 0;
+    color: #c2c0bf;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+/**** common css ends here ****/
+#wrapper main {
+	padding: 0px 90px 70px;
+}
+#wrapper main h1 {
+	margin: 30px 0px 30px;
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+#wrapper main form#search-form > #search-type {
+	margin: 12px 0px 37px;
+}
+#wrapper main form#search-form > #search-type div.col-md-2 {	
+	width: 13.9%;
+}
+label.radio-inline {
+	background-image: url(../images/radio.png);
+	background-repeat: no-repeat;
+	padding-left: 27px;
+	left: -15px;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	text-shadow: 0px 0.01px 0.01px #9E9E9E;
+	color: #4b4b4b;
+}
+input[type="radio"]:checked + label.radio-inline{
+	background-image: url(../images/radio_selected.png);	
+}
+input[type="radio"] {
+	visibility: hidden;
+}
+#wrapper main form#search-form > .col-md-12 {
+	margin-bottom: 35px;
+}
+#wrapper main form#search-form div.col-md-4 {
+	width: 31.33%
+}
+#wrapper main form#search-form > fieldset[disabled] {
+	display: none;
+}
+#wrapper main form#search-form > fieldset#multiCity-form .multicity-grp {
+	margin-bottom: 18px;
+}
+#wrapper main form#search-form > fieldset#multiCity-form .multicity-grp button.remove-city {
+	background-color: #36312b;
+	color: #fffefe;
+	border: none;
+	border-radius: 50%;
+	height: 15px;
+    width: 15px;
+    padding: 0;
+    font-size: 13px;
+    line-height: 15px;
+    position: absolute;
+    top: 12px;
+}
+#wrapper main form#search-form > fieldset#multiCity-form .add-city {
+	display: inline-block;
+	height: 30px;
+	padding-left: 36px;
+	color: #b9a284;
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 500;
+	text-decoration: none;
+	background: url(../images/add_city.png);
+	background-repeat: no-repeat;
+}
+#wrapper main form#search-form > .flight-type > div.col-md-2:first-child {	
+	width: 14.5%;
+}
+label.checkbox-inline {
+	background-image: url(../images/checkbox.png);
+	background-repeat: no-repeat;
+	padding-left: 27px;
+	left: -15px;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	text-shadow: 0px 0.01px 0.01px #9E9E9E;
+	color: #4b4b4b;
+}
+input[type="checkbox"]:checked + label.checkbox-inline{
+	background-image: url(../images/checkbox_selected.png);	
+}
+input[type="checkbox"] {
+	visibility: hidden;
+}
+#wrapper main form#search-form .form-control {
+	width: 90%;
+	height: 37px;
+  	border: 1px solid rgb(196, 196, 196);
+ 	border-radius: 4px;
+}
+#wrapper main form#search-form div.col-md-2.form-group {
+	margin-right: 17px;
+}
+#wrapper main form#search-form input.form-control {
+	color: #4b4b4b;
+	font-size: 13px;
+	font-weight: 700;
+}
+#wrapper main form#search-form .location input {
+	background-image: url(../images/location.png);
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+}
+#wrapper main form#search-form .location.has-value input {
+	background-image: url(../images/location_1.png);
+}
+#wrapper main form#search-form div.col-md-12 > .location:first-child {
+	background-image: url(../images/right-arrow.png);
+	background-repeat: no-repeat;
+	background-position: 340px center;
+}
+#wrapper main form#search-form .date input {
+	background-image: url(../images/date.png);
+    background-position: 13px 8px;
+    background-repeat: no-repeat;
+    padding-left: 41px;
+}
+.btn-red {
+    background-color: #DC665A;
+    border-radius: 4px;
+    border: none;
+    color: #fffefe;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    padding: 12px 15px 10px 17px;
+    font-weight: 500;
+    opacity: 0.85;
+}
+.btn-red:hover {
+	opacity: 1;
+}
+/**** Search Results css starts here ****/
+#wrapper header button.pull-right.btn-red {
+    margin: 15px 0px;
+}
+#wrapper main .top-bar.col-md-12 {
+	background-color: #eeeeee;
+	padding: 12px 16px 12px 20px;
+}
+/**** Search Results css ends here ****/

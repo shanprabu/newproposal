@@ -548,6 +548,7 @@ header{
 	letter-spacing: 0.05em;
 	border: 1px solid #ece6de;
 	border-top: 0px;
+	display: inline-block;
 }
 
 .arrow_down {
@@ -593,7 +594,7 @@ header{
 	float: left;
 	width: 100%;
 	padding: 0px 2.56%;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
 .slides-holder article {
@@ -687,6 +688,8 @@ header{
 	margin-left: 14px;
 }
 .border0{border: 0 !important; }
+.mgn-ryt10{margin-right: 10px;}
+.mgn-lft10{margin-left: 10px;}
 .wdt17perc{width:17%; }
 .wdt22perc{width:22%; }
 .wdt35perc{width:35%; }
@@ -807,6 +810,221 @@ header{
 	color: #b09470;
 }
 
+.daysofnumber{
+	width: 47.3% !important;
+	float: left;
+}
+.travelerofnumber{
+	width: 47.5% !important;
+}
+.form-control.daysofnumber {
+	margin-right: 18px;
+}
+.step3cont{
+
+}
+
+.step3cont h4{
+	font-size: 16px;
+	color: #36312a;
+	font-family: 'Soin_Sans_Pro_Medium';
+	display: block;
+	margin: 25px 0px 5px;
+}
+.step3cont small{
+	font-size: 15px;
+	color: #36312a;
+	font-style: italic;
+}
+.step3cont .check{
+	display: block;
+	line-height: 26px;
+}
+.step3cont .check label{
+	font-size: 16px;
+	color: #595754;
+	font-family: 'Soin_Sans_Pro_light';
+	margin: 4px 0px 0px 0px;
+	cursor: pointer;
+}
+.step3cont label input{
+	margin: 5px 10px 0px 0px;
+}
+
+.slide-thankyou{
+	text-align: center;
+}
+.slide-thankyou-txt{
+	padding-bottom: 30px;
+}
+.slide-thankyou-txt h2{
+	font-size: 38px;
+	color: #454649;
+}
+
+.slide-thankyou-txt p{
+	color: #36312a;
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.slide-thankyou-txt span{
+	font-size: 18px;
+	color: #36312a;
+	line-height: 30px;
+}
+.slide-thankyou-img{
+	border-top: 1px solid #ece6de;
+	padding: 30px;
+	padding-bottom: 50px;
+}
+.slide-thankyou-img p{
+	color: #595754;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.slide-thankyou-img div{
+	position: relative;
+	width: 333px;
+	display: inline-block;
+}
+.slide-thankyou-img div h5{
+	position: absolute;
+	bottom: 10px;
+	font-size: 22px;
+	color: #fff;
+	left: 20px;
+	z-index: 99999;
+}
+.slide-thankyou-img div .img1 {
+	display: inline-block;
+	width: 100%;
+	height: 172px;
+	background-image: url(../images/back-waters-1.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.slide-thankyou-img div .img2 {
+	display: inline-block;
+	width: 100%;
+	height: 172px;
+	background-image: url(../images/south-india-2.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.banner-gradient-sm {
+	width: 50%;
+	height: 172px;
+	background-image: url(../images/banner-gradient.png);
+	background-repeat: repeat-x;
+	z-index: 800;
+	opacity: 0.6;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+
+
+
+
+/*-------------------- Custom checkbox --------------*/
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+	position: absolute;
+	left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+	position: relative;
+	padding-left: 25px;
+	cursor: pointer;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 4px;
+	width: 14px;
+	height: 14px;
+	border: 2px solid #c8c9c0;
+	background: #ffffff;
+	border-radius: 3px;
+}
+[type="checkbox"]:checked + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 4px;
+	width: 14px;
+	height: 14px;
+	border: 2px solid #7d7d7d;
+	background: #ffffff;
+	border-radius: 3px;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+	content: '✔';
+	position: absolute;
+	top: -1px; 
+	left: 3px;
+	font-size: 9px;
+	color: #36312a;
+	transition: all .2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+	opacity: 0;
+	transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+	opacity: 1;
+	transform: scale(1);
+}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+	box-shadow: none;
+	border-color: #bbb;
+	background-color: #ddd;
+}
+[type="checkbox"]:disabled:checked + label:after {
+	color: #36312a;
+}
+[type="checkbox"]:disabled + label {
+	color: #aaa;
+}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+	border: 1px dotted blue;
+}
+
+/* hover style just for information */
+label:hover:before {
+	border: 2px solid #7d7d7d!important;
+}
+
+
 /* -------------------- Common Css ------------------ */ 
 .btn-brown {
 	border-width: 0;
@@ -918,10 +1136,10 @@ header{
 	font-size: 16px;
 	letter-spacing: .15em;
 	font-weight: normal;
-	line-height: 38px;
-	height: 38px;
+	line-height: 46px;
+	height: 46px;
 	text-transform: uppercase;
-	padding: 0px 28px;
+	padding: 0px 26px;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
 	background-color: rgba(220, 102, 90, .85);
@@ -937,6 +1155,39 @@ header{
 	color: #ffffff;
 	background-color: rgba(220, 102, 90, 1);
 	border-color: rgba(220, 102, 90, 1);
+	-webkit-transition: background-color .15s ease-in;
+	-moz-transition: background-color .15s ease-in;
+	-o-transition: background-color .15s ease-in;
+	transition: background-color .15s ease-in;
+	-webkit-transform: translateZ(0);
+}
+
+.btn-gold {
+	background-color: #cebea9;
+	color: #ffffff;
+	border-width: 0;
+	font-size: 16px;
+	letter-spacing: .15em;
+	font-weight: normal;
+	line-height: 46px;
+	height: 46px;
+	text-transform: uppercase;
+	padding: 0px 26px;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background-color: rgba(206, 190, 169, .85);
+	border-color: rgba(206, 190, 169, .85);
+	-webkit-transition: background-color .15s ease-in;
+	-moz-transition: background-color .15s ease-in;
+	-o-transition: background-color .15s ease-in;
+	transition: background-color .15s ease-in;
+	-webkit-transform: translateZ(0);
+}
+
+.btn-gold:hover, .btn-gold:focus, .btn-gold:active {
+	color: #ffffff;
+	background-color: rgba(206, 190, 169, 1);
+	border-color: rgba(206, 190, 169, 1);
 	-webkit-transition: background-color .15s ease-in;
 	-moz-transition: background-color .15s ease-in;
 	-o-transition: background-color .15s ease-in;
@@ -1335,6 +1586,7 @@ hr{
 	}
 	.slides-holder {
 		padding: 0px 6.15%;
+		padding-top: 20px;
 	}
 	.wdt20perc {
 		width: 100%;
@@ -1453,6 +1705,37 @@ hr{
 		padding-right: 15px;
 		padding-left: 15px;
 	}
+	.btn-gold, .btn-red {
+		font-size: 14px;
+		line-height: 40px;
+		height: 40px;
+		padding: 0px 22px;
+	}
+	.mgn-ryt10 {
+		margin-right: 4px;
+	}
+	.mgn-lft10 {
+		margin-left: 4px;
+	}
+	.daysofnumber {
+		width: 100% !important;
+		float: left;
+		margin-bottom: 18px;
+	}
+	.travelerofnumber {
+		width: 100% !important;
+	}
+	.slide-thankyou-img img {
+		display: inline-block;
+		margin: 10px 0px;
+	}
+	.slide-thankyou-img div {
+		position: relative;
+		width: 238px;
+	}
+	.slide-thankyou-img div h5 {
+		left: 10px;
+	}
 
 
 
@@ -1528,6 +1811,7 @@ hr{
 	}
 	.slides-holder {
 		padding: 0px 3.15%;
+		padding-top: 20px;
 	}
 	.wdt20perc {
 		width: 26%;
@@ -1575,6 +1859,17 @@ hr{
 	} 
 	#two-col .col-right {
 		padding-top: 25px;
+	}
+	.daysofnumber {
+		width: 48.6% !important;
+		float: left;
+	}
+	.travelerofnumber {
+		width: 48% !important;
+	}
+	.slide-thankyou-img img {
+		display: inline-block;
+		margin: 10px 0px;
 	}
 	
 }
@@ -1653,6 +1948,7 @@ hr{
 	}
 	.slides-holder {
 		padding: 0px 3.15%;
+		padding-top: 20px;
 	}
 	.wdt20perc {
 		width: 100%;
@@ -1752,6 +2048,18 @@ hr{
 		padding-right: 15px;
 		padding-left: 15px;
 	}
+	.daysofnumber {
+		width: 100% !important;
+		float: left;
+		margin-bottom: 18px;
+	}
+	.travelerofnumber {
+		width: 100% !important;
+	}
+	.slide-thankyou-img img {
+		display: inline-block;
+		margin: 10px 0px;
+	}
 
 
 }
@@ -1813,6 +2121,7 @@ hr{
 	}
 	.slides-holder {
 		padding: 0px 3.15%;
+		padding-top: 20px;
 	}
 	.page-bottom.feel-safe .left h3 {
 		font-size: 22px;
@@ -1842,6 +2151,21 @@ hr{
 	}
 	.page-bottom.feel-safe .right {
 		background-position: right center;
+	}
+	.daysofnumber {
+		width: 47% !important;
+		float: left;
+	}
+	.travelerofnumber {
+		width: 47% !important;
+	}
+	.slide-thankyou-img img {
+		display: inline-block;
+		margin: 10px 0px;
+	}
+	.slide-thankyou-img img {
+		display: inline-block;
+		margin: 10px 0px;
 	}
 }
 
@@ -1895,6 +2219,7 @@ hr{
 	}
 	.slides-holder {
 		padding: 0px 2.49%;
+		padding-top: 20px;
 	}
 	.page-bottom.feel-safe .left h3 {
 		font-size: 20px;
@@ -1918,6 +2243,11 @@ hr{
 	.banner-gradient {
 		height: 400px;
 	}
+	.daysofnumber {
+		width: 47.5% !important;
+		float: left;
+	}
+
 
 }
 
@@ -1967,6 +2297,7 @@ hr{
 	}
 	.slides-holder {
 		padding: 0px 3.2%;
+		padding-top: 20px;
 	}
 	.page-bottom.feel-safe .left h3 {
 		font-size: 21px;
@@ -1989,6 +2320,14 @@ hr{
 		padding-left: 5px;
 		margin-top: 20%;
 	}
+	.daysofnumber {
+		width: 45.3% !important;
+		float: left;
+	}
+	.slide-thankyou-img img {
+		display: inline-block;
+		margin: 10px 0px;
+	}
 
 }
 
@@ -1997,11 +2336,23 @@ hr{
 	.red-a {
 		line-height: 23px;
 	}
+	.form-control:-moz-placeholder { /* Firefox 18- */
+		color: #36312a;  
+	}
+
+	.form-control::-moz-placeholder {  /* Firefox 19+ */
+		color: #36312a;  
+	}
 }
 
 /* IE hack css */
 @media all and (-ms-high-contrast:none)
 {
+
+	.form-control:-ms-input-placeholder {  
+		color: #36312a;  
+	}
+
 
 }
 
@@ -2021,6 +2372,9 @@ hr{
 	}
 	}*/
 	/*for ios*/
+	.form-control::-webkit-input-placeholder {
+		color: #36312a;
+	}
 	_::-webkit-full-page-media, _:future, :root .btn-brown {
 		line-height: 38px;
 	}
