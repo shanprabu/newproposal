@@ -209,7 +209,7 @@ header{
 
 #home-page .expertise blockquote {
 	float: right;
-	padding: 40px 62px;
+	padding: 40px 58px;
 	background-color: #FFF;
 	font-size: 16px;
 	line-height: 29px;
@@ -287,14 +287,15 @@ header{
 }
 
 .page-bottom.feel-safe .left .container {
-	display: table;
+	/*display: table;*/
 	height: 100%;
 	width: 100%;
 }
 
 .page-bottom.feel-safe .left .container div {
-	display: table-cell;
-	vertical-align: middle;
+	/*display: table-cell;
+	vertical-align: middle;*/
+	margin-top: 12%;
 	padding-left: 15px;
 }
 
@@ -575,7 +576,7 @@ header{
 .slides-holder{
 	float: left;
 	width: 100%;
-	padding: 0px 2.57%;
+	padding: 0px 2.56%;
 	padding-top: 10px;
 }
 
@@ -710,6 +711,7 @@ header{
 
 .tar-namendate{
 	display: inline-block;
+	width: 100%;
 }
 
 .tar-namendate img{
@@ -721,7 +723,7 @@ header{
 	font-size: 16px;
 	color: #36312a;
 	line-height: 24px;
-	display: -webkit-box;
+	display: block;
 	font-weight: bold;
 	padding-top: 2px;
 }
@@ -1392,8 +1394,8 @@ hr{
 		height: 700px;
 	}
 	.page-bottom.feel-safe .left .container div {
-		display: table-cell;
-		vertical-align: top;
+		/*display: table-cell;
+		vertical-align: top;*/
 		padding: 30px 0px;
 	}
 	.page-bottom.feel-safe .right {
@@ -1527,8 +1529,7 @@ hr{
 		height: 700px;
 	}
 	.page-bottom.feel-safe .left .container div {
-		display: table-cell;
-		vertical-align: top;
+		margin-top: 0;
 		padding: 40px 0px;
 	}
 	.page-bottom.feel-safe .right {
@@ -1675,8 +1676,7 @@ hr{
 		height: 700px;
 	}
 	.page-bottom.feel-safe .left .container div {
-		display: table-cell;
-		vertical-align: top;
+		margin-top: 0;
 		padding: 40px 0px;
 	}
 	.page-bottom.feel-safe .right {
@@ -1691,6 +1691,7 @@ hr{
 	}
 	.page-bottom.feel-safe .left p {
 		font-size: 14px;
+		margin-bottom: 20px;
 	}
 	.page-bottom.feel-safe .left .container {
 		padding: 0;
@@ -1765,14 +1766,13 @@ hr{
 		width: 84%;
 	}
 	.page-bottom.feel-safe .left .container {
-		display: table;
+		/*display: table;*/
 		height: 100%;
 		width: 100%;
 		padding: 0;
 	}
 	.page-bottom.feel-safe .left .container div {
-		display: table-cell;
-		vertical-align: middle;
+		margin-top: 20%;
 		padding-left: 0;
 	}
 	.secondlinebq {
@@ -1875,7 +1875,7 @@ hr{
 		float: right;
 	}
 	.slides-holder article {
-		width: 31.628%;
+		width: 31.60%;
 	}
 	.slides-holder {
 		padding: 0px 2.49%;
@@ -1888,15 +1888,16 @@ hr{
 		font-size: 14px;
 	}
 	.page-bottom.feel-safe .left .container {
-		display: table;
+		/*display: table;*/
 		height: 100%;
 		width: 100%;
 		padding: 0;
 	}
 	.page-bottom.feel-safe .left .container div {
-		display: table-cell;
-		vertical-align: middle;
+		/*display: table-cell;
+		vertical-align: middle;*/
 		padding-left: 0px;
+		margin-top: 24%;
 	}
 	.banner-gradient {
 		height: 400px;
@@ -1912,7 +1913,7 @@ hr{
 		width: 33.33333333%;
 	}
 	#home-page .expertise blockquote {
-		padding: 40px 50px;
+		padding: 40px 49px;
 	}
 	#home-page .expertise article {
 		width: 96%;
@@ -1967,10 +1968,55 @@ hr{
 		vertical-align: text-bottom;
 	}
 	.page-bottom.feel-safe .left .container div {
-		display: table-cell;
-		vertical-align: middle;
+		/*display: table-cell;
+		vertical-align: middle;*/
 		padding-left: 5px;
+		margin-top: 20%;
 	}
 
 }
 
+/* firefox hack css */
+@-moz-document url-prefix() { 
+	.red-a {
+		line-height: 23px;
+	}
+}
+
+/* IE hack css */
+@media all and (-ms-high-contrast:none)
+{
+
+}
+
+
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.btn-brown {
+		line-height: 38px;
+	}
+	{
+		line-height: 52px;
+	}
+	#home-page .expertise blockquote {
+		padding: 40px 52px;
+	}
+	.btn-red {
+		line-height: 40px;
+	}
+	}*/
+	/*for ios*/
+	_::-webkit-full-page-media, _:future, :root .btn-brown {
+		line-height: 38px;
+	}
+
+	_::-webkit-full-page-media, _:future, :root .btn-lg-red {
+		line-height: 52px;
+	}
+
+	_::-webkit-full-page-media, _:future, :root #home-page .expertise blockquote {
+		padding: 40px 52px;
+	}
+
+	_::-webkit-full-page-media, _:future, :root .btn-red {
+		line-height: 40px;
+	}
