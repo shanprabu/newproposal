@@ -2391,10 +2391,18 @@ hr{
 		line-height: 52px;
 	}
 
+	_::-webkit-full-page-media, _:future, :root .btn-red-sm {
+		line-height: 40px;
+	}
+
 	_::-webkit-full-page-media, _:future, :root #home-page .expertise blockquote {
 		padding: 40px 52px;
 	}
 
 	_::-webkit-full-page-media, _:future, :root .btn-red {
-		line-height: 40px;
+		line-height: 50px;
+	}
+
+	_::-webkit-full-page-media, _:future, :root .btn-gold {
+		line-height: 50px;
 	}
