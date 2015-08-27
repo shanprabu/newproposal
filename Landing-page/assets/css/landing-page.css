@@ -139,19 +139,24 @@ header{
 	position: relative;
 	z-index: 999;
 	color: #FFF;
-	margin-top: 34%;
+	margin-top: 31%;
 }
 
 .banner .wrapp > h1{
-	font-size: 58px;
+	font-size: 68px;
 	letter-spacing: .025em;
+	font-family: 'Soin_Sans_Pro_Light';
+	font-weight: 500;
+
 }
 
 .banner .wrapp > .text > .row > p{
-	font-size: 26px;
+	font-size: 28px;
 	line-height: 1.2em;
 	text-transform: none;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.01em;
+	font-family: 'Soin_Sans_Pro_Light';
+	font-weight: 500;
 }
 
 
@@ -304,6 +309,8 @@ header{
 	line-height: 1.2em;
 	text-transform: uppercase;
 	letter-spacing: .14em;
+	font-family: 'Soin_Sans_Pro_Light';
+	font-weight: 500;
 }
 
 .page-bottom.feel-safe .left p {
@@ -312,6 +319,8 @@ header{
 	margin-top: 25px;
 	margin-bottom: 50px;
 	letter-spacing: .1em;
+	font-family: 'Soin_Sans_Pro_Light';
+	font-weight: 500;
 }
 
 .page-bottom.feel-safe .right {
@@ -363,7 +372,8 @@ header{
 .page-bottom.feel-safe .right blockquote .author {
 	float: left;
 	font-size: 16px;
-	font-weight: 600;
+	font-family: 'Soin_Sans_Pro_Medium';
+	font-weight: 500;
 }
 
 .page-bottom.feel-safe .right blockquote .cta-link {
@@ -415,6 +425,7 @@ header{
 .phone-call-number span{
 	font-size: 17px;
 	letter-spacing: 0.04em;
+	font-family: 'Soin_Sans_Pro_Medium';
 }
 
 #two-col .col-right {
@@ -455,7 +466,8 @@ header{
 	font-size: 18px;
 	vertical-align: text-bottom;
 }
-.col-left blockquote .author strong{
+.col-left blockquote .author span{
+	font-family: 'Soin_Sans_Pro_Medium';
 	display: block;
 	line-height: 24px;
 	letter-spacing: 0.05em;
@@ -563,6 +575,10 @@ header{
 	text-align: center;
 	display: block;
 	padding: 25px 0px 5px 0px;
+}
+
+.steps-n-txt span{
+	font-family: 'Soin_Sans_Pro_Medium';
 }
 
 .step-next-btn{
@@ -724,8 +740,8 @@ header{
 	color: #36312a;
 	line-height: 24px;
 	display: block;
-	font-weight: bold;
 	padding-top: 2px;
+	font-family: 'Soin_Sans_Pro_Medium';
 }
 
 .tar-content{
@@ -1907,7 +1923,7 @@ hr{
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	.banner .wrapp {
-		margin-top: 44%;
+		margin-top: 40%;
 	}
 	.wdt2775perc {
 		width: 33.33333333%;
