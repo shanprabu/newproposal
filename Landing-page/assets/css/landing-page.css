@@ -542,13 +542,13 @@ header{
 }
 
 .custom-itinerary .ct-container{
-	width: 100%;
+	/*width: 100%;
 	background-color: #f7f4f0;
-	/*padding: 25px 0px 22px 20px;*/
+	/*padding: 25px 0px 22px 20px;
 	letter-spacing: 0.05em;
 	border: 1px solid #ece6de;
 	border-top: 0px;
-	display: inline-block;
+	display: inline-block;*/
 }
 
 .arrow_down {
@@ -865,18 +865,18 @@ header{
 .slide-thankyou-txt p{
 	color: #36312a;
 	font-size: 22px;
-	line-height: 30px;
+	line-height: 26px;
 }
 
 .slide-thankyou-txt span{
 	font-size: 18px;
 	color: #36312a;
-	line-height: 30px;
+	line-height: 24px;
 }
 .slide-thankyou-img{
 	border-top: 1px solid #ece6de;
 	padding: 30px;
-	padding-bottom: 50px;
+	padding-bottom: 25px;
 }
 .slide-thankyou-img p{
 	color: #595754;
@@ -953,11 +953,18 @@ header{
 [type="checkbox"]:not(:checked) + label,
 [type="checkbox"]:checked + label {
 	position: relative;
-	padding-left: 25px;
+	padding-left: 22px;
 	cursor: pointer;
 }
 
 /* checkbox aspect */
+
+.stepscheck label:before {
+	top: 9px !important;
+}
+.stepscheck label:after{
+	top: 9px !important; 
+}
 [type="checkbox"]:not(:checked) + label:before{
 	content: '';
 	position: absolute;
@@ -1016,7 +1023,7 @@ header{
 /* accessibility */
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {
-	border: 1px dotted blue;
+	border: 2px solid #7d7d7d;
 }
 
 /* hover style just for information */

@@ -19,6 +19,14 @@
 
   <link href="assets/css/accordion.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="assets/slider/css/base.css" />
+  <link rel="stylesheet" href="assets/slider/css/style.css" />
+
+  <script src="assets/slider/js/jquery-1.9.1.min.js"></script>
+  <script src="assets/slider/js/jquery.cslide.js" type="text/javascript"></script>
+  
   
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -177,630 +185,672 @@
                 <div class="custom-itinerary">
                   <div class="ct-head arrow_down">create a custom itinerary</div>
                   <form>
-                  <!--<div class="ct-container">
-                    <div class="steps-n-txt"><span>Step 1 of 3:</span> Select Your Interests</div>
-                    <div class="slides-holder">
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step1-heritage.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="HeritageCulture" type="checkbox">Heritage & Culture</label>
-                      </article>
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step1-nature.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="NatureLandscapes" type="checkbox">Nature & Landscapes</label>
-                      </article>
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step1-wildlife.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="Wildlife" type="checkbox">Wildlife</label>
-                      </article>
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step1-relaxation.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="Relaxation" type="checkbox">Relaxation</label>
-                      </article>
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step1-adventure.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="Adventure" type="checkbox">Adventure</label>
-                      </article>
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step1-spas.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="SpasWellness" type="checkbox">Spas & Wellness</label>
-                      </article>
-                    </div>
-                    <span class="step-next-btn"><a href="#" class="btn btn-red">Next Step</a></span>
-                  </div>-->
-                  <!--<div class="ct-container">
-                    <div class="steps-n-txt"><span>Step 2 of 3:</span> Select Your Preferences</div>
-                    <div class="slides-holder">
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step2-heritage.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="Heritage" type="checkbox">Heritage Hotels</label>
-                      </article>
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step2-boutique.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="boutique" type="checkbox">Boutique Hotels</label>
-                      </article>
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step2-international.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="international" type="checkbox">International Hotels</label>
-                      </article>
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step2-resorts.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="resorts" type="checkbox">Resorts</label>
-                      </article>
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step2-lodges.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="lodges" type="checkbox">Lodges & Camps</label>
-                      </article>
-                      <article>
-                        <figure>
-                          <a href="#">
-                            <img src="assets/images/step2-homestays.jpg" alt="" height="142" width="246">
-                          </a>
-                        </figure>
-                        <label><input name="interest[]" value="homestays" type="checkbox">Homestays</label>
-                      </article>
-                    </div>
-                    <span class="step-next-btn">
-                      <a href="#" class="btn btn-gold mgn-ryt10"><i class="fa fa-long-arrow-left"></i>&nbsp;Go Back</a>
-                      <a href="#" class="btn btn-red mgn-lft10">Next Step&nbsp;<i class="fa fa-long-arrow-right"></i></a>
-                    </span>
-                  </div>-->
-                  <!--<div class="ct-container">
-                    <div class="steps-n-txt"><span>Step 3 of 3:</span>Your Details</div>
-                    <div class="slides-holder">
-                      <div class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="row">
-                          <div class="col-md-6 col-sm-6 col-xs-12">
+                    <section id="cslide-slides" class="cslide-slides-master clearfix">
+                      <div class="cslide-slides-container clearfix">
 
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Full Name *">
-                            </div>
-                            <div class="form-group">
-                              <input type="email" class="form-control" placeholder="Email Address *">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Phone *">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="City">
-                            </div>
-                            <div class="form-group">
-                              <select class="form-control" placeholder="Select Country *">
-                                <option>Select Country *</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                            </div>
-                            <div class="form-group">
-                              <select class="form-control" placeholder="Select approx budget(per person) *">
-                                <option>Select approx budget(per person) *</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                            </div>
-
-                          </div>
-                          <div class="col-md-6 col-sm-6 col-xs-12">
-
-                            <div class="form-group">
-                              <input type="text" class="form-control" placeholder="Select approx start date *">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="form-control daysofnumber" placeholder="# of days">
-                              <input type="text" class="form-control travelerofnumber" placeholder="# of travelers">
-                            </div>
-                            <div class="form-group">
-                              <select class="form-control" placeholder="What stage of planning are you in?">
-                                <option>What stage of planning are you in?</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                              </select>
-                            </div>
-                            <div class="step3cont">
-                              <h4>What would you like to do next?</h4>
-                              <small>check all that apply</small>
-                              <div class="check">
-                                <input type="checkbox" id="step3cont1"  />
-                                <label for="step3cont1">Receive a tailor-made itinerary</label>
+                        <div class="cslide-slide">
+                          <div class="steps-n-txt"><span>Step 1 of 3:</span> Select Your Interests</div>
+                          <div class="slides-holder">
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step1-heritage.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="HeritageCulture"  />
+                                <label for="HeritageCulture">Heritage & Culture</label>
                               </div>
-                              <div class="check">
-                                <input type="checkbox" id="step3cont2" checked="checked" />
-                                <label for="step3cont2">Talk with a travel expert</label>
-                              </div>
-                              <div class="check">
-                                <input type="checkbox" id="step3cont3" />
-                                <label for="step3cont3">See our India example vacations</label>
-                              </div>
-                              <div class="check">
-                                <input type="checkbox" id="step3cont4" checked="checked" />
-                                <label for="step3cont4">Start booking your next trip</label>
-                              </div>
-                            </div>
 
-
+                            </article>
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step1-nature.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="NatureLandscapes"  />
+                                <label for="NatureLandscapes">Nature & Landscapes</label>
+                              </div>
+                            </article>
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step1-wildlife.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="Wildlife"  />
+                                <label for="Wildlife">Wildlife</label>
+                              </div>
+                            </article>
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step1-relaxation.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="Relaxation"  />
+                                <label for="Relaxation">Relaxation</label>
+                              </div>
+                            </article>
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step1-adventure.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="Adventure"  />
+                                <label for="Adventure">Adventure</label>
+                              </div>
+                            </article>
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step1-spas.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="SpasWellness"  />
+                                <label for="SpasWellness">Spas & Wellness</label>
+                              </div>
+                            </article>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <span class="step-next-btn">
-                      <a href="#" class="btn btn-gold mgn-ryt10"><i class="fa fa-long-arrow-left"></i>&nbsp;Go Back</a>
-                      <a href="#" class="btn btn-red mgn-lft10">Next Step&nbsp;<i class="fa fa-long-arrow-right"></i></a>
-                    </span>
-                  </div>-->
-                  <div class="ct-container">
-                    <div class="slides-holder">
-                      <div class="slide-thankyou">
-                        <div class="slide-thankyou-txt">
-                          <h2>Thank You!</h2>
-                          <p>
-                            We appreciate you submitting your travel plans. Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce facilisis venenatis pretium.
-                          </p>
-                          <span>Sincerely,<br>
-                            Enchanting Travels</span>
+
+                        <div class="cslide-slide">
+                          <div class="steps-n-txt"><span>Step 2 of 3:</span> Select Your Preferences</div>
+                          <div class="slides-holder">
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step2-heritage.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="Heritage"  />
+                                <label for="Heritage">Heritage Hotels</label>
+                              </div>
+                            </article>
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step2-boutique.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="boutique"  />
+                                <label for="boutique">Boutique Hotels</label>
+                              </div>
+                            </article>
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step2-international.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="international"  />
+                                <label for="international">International Hotels</label>
+                              </div>
+                            </article>
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step2-resorts.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="resorts"  />
+                                <label for="resorts">Resorts</label>
+                              </div>
+                            </article>
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step2-lodges.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="lodges"  />
+                                <label for="lodges">Lodges & Camps</label>
+                              </div>
+                            </article>
+                            <article>
+                              <figure>
+                                <a href="#">
+                                  <img src="assets/images/step2-homestays.jpg" alt="" height="142" width="246">
+                                </a>
+                              </figure>
+                              <div class="stepscheck">
+                                <input type="checkbox" id="homestays"  />
+                                <label for="homestays">Homestays</label>
+                              </div>
+                            </article>
                           </div>
-                          <div class="slide-thankyou-img">
-                            <p>Based on your submission, here are sample vacations we recommend:</p>
-                            <div>
-                              <h5>Backwaters of Kerala</h5>
-                              <span class="img1">
-                                <div class="banner-gradient-sm"></div>
-                              </span>
-                            </div>
-                            <div>
-                              <h5>Spotlight on South India</h5>
-                              <span class="img2">                              
-                                <div class="banner-gradient-sm"></div>
-                              </span>
+                        </div>
+
+                        <div class="cslide-slide">
+                          <div class="steps-n-txt"><span>Step 3 of 3:</span>Your Details</div>
+                          <div class="slides-holder">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                              <div class="row">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Full Name *">
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email Address *">
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Phone *">
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="City">
+                                  </div>
+                                  <div class="form-group">
+                                    <select class="form-control" placeholder="Select Country *">
+                                      <option>Select Country *</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group">
+                                    <select class="form-control" placeholder="Select approx budget(per person) *">
+                                      <option>Select approx budget(per person) *</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
+
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Select approx start date *">
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control daysofnumber" placeholder="# of days">
+                                    <input type="text" class="form-control travelerofnumber" placeholder="# of travelers">
+                                  </div>
+                                  <div class="form-group">
+                                    <select class="form-control" placeholder="What stage of planning are you in?">
+                                      <option>What stage of planning are you in?</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                  <div class="step3cont">
+                                    <h4>What would you like to do next?</h4>
+                                    <small>check all that apply</small>
+                                    <div class="check">
+                                      <input type="checkbox" id="step3cont1"  />
+                                      <label for="step3cont1">Receive a tailor-made itinerary</label>
+                                    </div>
+                                    <div class="check">
+                                      <input type="checkbox" id="step3cont2" checked="checked" />
+                                      <label for="step3cont2">Talk with a travel expert</label>
+                                    </div>
+                                    <div class="check">
+                                      <input type="checkbox" id="step3cont3" />
+                                      <label for="step3cont3">See our India example vacations</label>
+                                    </div>
+                                    <div class="check">
+                                      <input type="checkbox" id="step3cont4" checked="checked" />
+                                      <label for="step3cont4">Start booking your next trip</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </section>
-              <section class="itinery-blk">
-                <div class="iti-blk-accord">
-                  <!-- Accordion begin -->
-                  <div class="accordion">
-                    <article class="">
-                      <h3 class="handle">
-                        <span class="icon">&nbsp;</span>
-                        <span class="text">Trip Advisor Reviews</span>
-                      </h3>
-                      <div class="content" style="display: none;">
-                        <div class="tar-rating-blk">
-                          <div class="tar-namendate">
-                            <img src="assets/images/natalia-moore.jpg">
-                            <span>Natalia Moore, USA</span>
-                            <span>Jan, 2015</span>                                  
+
+                        <div class="cslide-slide">
+                          <div class="slides-holder">
+                            <div class="slide-thankyou">
+                              <div class="slide-thankyou-txt">
+                                <h2>Thank You!</h2>
+                                <p>
+                                  We appreciate you submitting your travel plans. Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce facilisis venenatis pretium.
+                                </p>
+                                <span>Sincerely,<br>
+                                  Enchanting Travels</span>
+                                </div>
+                                <div class="slide-thankyou-img">
+                                  <p>Based on your submission, here are sample vacations we recommend:</p>
+                                  <div>
+                                    <h5>Backwaters of Kerala</h5>
+                                    <span class="img1">
+                                      <div class="banner-gradient-sm"></div>
+                                    </span>
+                                  </div>
+                                  <div>
+                                    <h5>Spotlight on South India</h5>
+                                    <span class="img2">                              
+                                      <div class="banner-gradient-sm"></div>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-                          <div class="col-md-12 col-sm-12 col-xs-12">
+                        </div>
+
+                        <div class="cslide-prev-next clearfix">
+                          <span class="cslide-prev btn btn-gold mgn-ryt10"><i class="fa fa-long-arrow-left"></i>&nbsp;Go Back</span>
+                          <span class="cslide-next btn btn-red mgn-lft10">Next Step&nbsp;<i class="fa fa-long-arrow-right"></i></span>
+                        </div>
+                      </section><!-- /sliding content section -->
+
+
+
+
+                    </form>
+                  </div>
+                </section>
+                <section class="itinery-blk">
+                  <div class="iti-blk-accord">
+                    <!-- Accordion begin -->
+                    <div class="accordion">
+                      <article class="">
+                        <h3 class="handle">
+                          <span class="icon">&nbsp;</span>
+                          <span class="text">Trip Advisor Reviews</span>
+                        </h3>
+                        <div class="content" style="display: none;">
+                          <div class="tar-rating-blk">
+                            <div class="tar-namendate">
+                              <img src="assets/images/natalia-moore.jpg">
+                              <span>Natalia Moore, USA</span>
+                              <span>Jan, 2015</span>                                  
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                              <div class="row">
+                                <div class="col-md-9 col-sm-9 col-xs-9 tar-content wdt80perc">
+                                  <div class="row">
+                                    <p>If you can take the good (amazing rich culture, delicious food, beautiful music, temples, etc.) with the bad (poverty, traffic jams, unclean streets), this is a great place to go to. It was my dream trip! Enchanting-India is the greatest tourist company one can choose!!!</p>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-3 tar-rating wdt20perc">
+                                  <div class="row">
+                                    <img src="assets/images/trip-advisor.png">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tar-rating-blk">
+                            <div class="tar-namendate">
+                              <img src="assets/images/francys-cocco.jpg">
+                              <span>Francys Cocco & Charles Mondora, USA</span>
+                              <span>Dec, 2014</span>                                  
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                              <div class="row">
+                                <div class="col-md-9 col-sm-9 col-xs-9 tar-content wdt80perc">
+                                  <div class="row">
+                                    <p>Enchanting Travels made sure our trip to India was Enchanting! They created an environment that provides the flexibility and opportunity for cultural immersion of non-tour company travel without the stress and work. They developed an excellent itinerary. Our trip coordinator... <a href="#">Read More</a></p>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-3 tar-rating wdt20perc">
+                                  <div class="row">
+                                    <img src="assets/images/trip-advisor.png">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tar-rating-blk">
+                            <div class="tar-namendate">
+                              <img src="assets/images/gareth-grant.jpg">
+                              <span>Gareth Grant, Australia</span>
+                              <span>Dec, 2014</span>                                  
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                              <div class="row">
+                                <div class="col-md-9 col-sm-9 col-xs-9 tar-content wdt80perc">
+                                  <div class="row">
+                                    <p>Enchanting Travels were exceptional in every way, from the tailoring of the itinerary to the trip itself. Nothing was too much of a problem, we felt very safe and secure, and felt the companies focus was to ensure that our trip was as unique, special and safe as possible... <a href="#">Read More</a></p>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-3 tar-rating wdt20perc">
+                                  <div class="row">
+                                    <img src="assets/images/trip-advisor.png">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tar-rating-blk">
+                            <div class="tar-namendate">
+                              <img src="assets/images/david-thull.jpg">
+                              <span>David Thull, USA</span>
+                              <span>Nov, 2014</span>                                  
+                            </div>
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                              <div class="row">
+                                <div class="col-md-9 col-sm-9 col-xs-9 tar-content wdt80perc">
+                                  <div class="row">
+                                    <p>We have toured with Enchanting Travels multiple times. They are head and shoulders above any other tour operator we have used and we have seen much of the world through various luxury tour operators. Enchanting Travels beats other tour operators at every level... <a href="#">Read More</a></p>
+                                  </div>
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-3 tar-rating wdt20perc">
+                                  <div class="row">
+                                    <img src="assets/images/trip-advisor.png">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                        </div> <!-- .content -->
+                      </article>
+
+                      <article class="">
+                        <h3 class="handle">
+                          <span class="icon">&nbsp;</span>
+                          <span class="text">How we compare <span class="hidden-smallest">to competitors</span></span>
+                        </h3>
+                        <div class="content standard-type compare-table" style="display: none;">
+                          <table class="table ">
+                            <thead>
+                              <tr>
+                                <th class="wdt17perc">Service</th>
+                                <th class="bgcolor-golden wdt22perc">Enchanting Travels</th>
+                                <th class="wdt35perc">Other US/UK-based Companies</th>
+                                <th class="wdt24perc">Local Companies</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Trip Planning</th>
+                                <td>
+                                  <ul>
+                                    <li>Enjoyable</li>
+                                    <li>Seamless</li>
+                                    <li>w/ Destination Expert</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Often through middlemen or with travel consultants not based in Africa</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Often limited understanding of international travellers</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Flexibility</th>
+                                <td>
+                                  <ul>
+                                    <li>100% tailor-made to your interests</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Limited based on standard products and itineraries</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Focus on standard packages </li>
+                                    <li>Limited ability to understand individual travel interests</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Response Time</th>
+                                <td>
+                                  <ul>
+                                    <li>1-2 days</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>5-10 days</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Widely varying</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Safari Vehicle Quality</th>
+                                <td>
+                                  <ul>
+                                    <li>Personally tested 4x4s</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Generally good</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Mixed, often poor quality 4x4s or minivans</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Lodge Quality</th>
+                                <td>
+                                  <ul>
+                                    <li>Personally tested, wide range to suit individual preference & style</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Outsourced to local handlers,often limited range</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Often large lodges with little or no personal service</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Trip Support</th>
+                                <td>
+                                  <ul>
+                                    <li>24/7 trip coordinator</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Either outsourced to “local partner” or need to call company in the</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Often lacking sense of urgency and understanding of traveller needs</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Team Base</th>
+                                <td>
+                                  <ul>
+                                    <li>USA & Africa (best of both worlds)</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>USA or UK, very few have offices in Africa</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Africa</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Prices</th>
+                                <td>
+                                  <ul>
+                                    <li>Competitive due to no middlemen and direct partner relationships</li>           
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>10-35% more expensive on average</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>5-15% cheaper but lower service and quality levels, often hidden costs and shopping traps</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div> <!-- .content -->
+                      </article>
+
+                      <article class="">
+                        <h3 class="handle">
+                          <span class="icon">&nbsp;</span>
+                          <span class="text">About Enchanting Travels</span>
+                        </h3>
+                        <div class="content standard-type" style="display: none;">
+                          <div class="aet-content planning-icon">
+                            <h3>Flexible Planning</h3>
+                            <p>We keep your interests and travel style in mind. Enjoy the flexibility and freedom of choice to design your itinerary the way you want it, with our careful guidance & advice. Consultations are free.</p>
+                          </div>
+                          <div class="aet-content expertise-icon  ">
+                            <h3>Destination Expertise</h3>
+                            <p>Our local experts bring South America to life! All the destinations we offer have been individually tested by our team, so you can look forward to first-hand knowledge and stress-free travel. </p>
+                          </div>
+                          <div class="aet-content privatetrips-icon">
+                            <h3>Only Private Trips</h3>
+                            <p>Why travel with the masses? Have a richer, more memorable trip with us. Our private tours give you flexibility. Plan your trip the way you want based on your own preferences and pace.</p>
+                          </div>
+                          <div class="aet-content protection-icon">
+                            <h3>100% Financial Protection</h3>
+                            <p>Your booking is completely secure. We are bonded members and license holders of all leading travel organizations. We can send you a security certificate proving you are financially protected.</p>
+                          </div>
+                          <div class="aet-content vehicle-icon">
+                            <h3>Quality Vehicles</h3>
+                            <p>You are in safe hands. We only use new vehicles, offering plenty of leg room and luggage space. Our chauffeurs are pleasant, experience and follow the highest standards of safety.</p>
+                          </div>
+                          <div class="aet-content support-icon">
+                            <h3>24/7 Dedicated Support</h3>
+                            <p class="border0">Truly personalized service. Our on-the-ground local experts are there to help you. You will be assigned a dedicated 24/7 Trip Coordinator.</p>
+                          </div>
+                        </div> <!-- .content -->
+                      </article>
+
+                      <article class="">
+                        <h3 class="handle">
+                          <span class="icon">&nbsp;</span>
+                          <span class="text">ways to Contact Us</span>
+                        </h3>
+                        <div class="content standard-type" style="display: none;">
+                          <div class="col-md-7 col-sm-7 col-xs-7 wcf-container">
                             <div class="row">
-                              <div class="col-md-9 col-sm-9 col-xs-9 tar-content wdt80perc">
-                                <div class="row">
-                                  <p>If you can take the good (amazing rich culture, delicious food, beautiful music, temples, etc.) with the bad (poverty, traffic jams, unclean streets), this is a great place to go to. It was my dream trip! Enchanting-India is the greatest tourist company one can choose!!!</p>
-                                </div>
-                              </div>
-                              <div class="col-md-3 col-sm-3 col-xs-3 tar-rating wdt20perc">
-                                <div class="row">
-                                  <img src="assets/images/trip-advisor.png">
-                                </div>
+                              <div class="wayscontactform">
+                                <form>
+                                  <div class="wcf-header">SEND US A MESSAGE</div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="How can we help you?">
+                                  </div>
+                                  <div class="form-group">
+                                    <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                  </div>
+
+                                  <button type="submit" class="btn btn-red-sm">Submit message</button>
+                                </form>
                               </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="tar-rating-blk">
-                          <div class="tar-namendate">
-                            <img src="assets/images/francys-cocco.jpg">
-                            <span>Francys Cocco & Charles Mondora, USA</span>
-                            <span>Dec, 2014</span>                                  
-                          </div>
-                          <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="row">
-                              <div class="col-md-9 col-sm-9 col-xs-9 tar-content wdt80perc">
-                                <div class="row">
-                                  <p>Enchanting Travels made sure our trip to India was Enchanting! They created an environment that provides the flexibility and opportunity for cultural immersion of non-tour company travel without the stress and work. They developed an excellent itinerary. Our trip coordinator... <a href="#">Read More</a></p>
-                                </div>
-                              </div>
-                              <div class="col-md-3 col-sm-3 col-xs-3 tar-rating wdt20perc">
-                                <div class="row">
-                                  <img src="assets/images/trip-advisor.png">
-                                </div>
-                              </div>
+                          <div class="col-md-5 col-sm-5 col-xs-5 givcall">
+                            <div class="givuscall">
+                              <span>GIVE US A CALL</span>
+                              US & Canada: +1 888 263 2574<br>
+                              UK: +0 800 098 8486<br>
+                              AUS: +1 800 044 986<br><br>
+                              <span>SEND AN EMAIL</span>
+                              <a href="#">support@enchantingtravels.com</a>
                             </div>
                           </div>
-                        </div>
-                        <div class="tar-rating-blk">
-                          <div class="tar-namendate">
-                            <img src="assets/images/gareth-grant.jpg">
-                            <span>Gareth Grant, Australia</span>
-                            <span>Dec, 2014</span>                                  
-                          </div>
-                          <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="row">
-                              <div class="col-md-9 col-sm-9 col-xs-9 tar-content wdt80perc">
-                                <div class="row">
-                                  <p>Enchanting Travels were exceptional in every way, from the tailoring of the itinerary to the trip itself. Nothing was too much of a problem, we felt very safe and secure, and felt the companies focus was to ensure that our trip was as unique, special and safe as possible... <a href="#">Read More</a></p>
-                                </div>
-                              </div>
-                              <div class="col-md-3 col-sm-3 col-xs-3 tar-rating wdt20perc">
-                                <div class="row">
-                                  <img src="assets/images/trip-advisor.png">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="tar-rating-blk">
-                          <div class="tar-namendate">
-                            <img src="assets/images/david-thull.jpg">
-                            <span>David Thull, USA</span>
-                            <span>Nov, 2014</span>                                  
-                          </div>
-                          <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="row">
-                              <div class="col-md-9 col-sm-9 col-xs-9 tar-content wdt80perc">
-                                <div class="row">
-                                  <p>We have toured with Enchanting Travels multiple times. They are head and shoulders above any other tour operator we have used and we have seen much of the world through various luxury tour operators. Enchanting Travels beats other tour operators at every level... <a href="#">Read More</a></p>
-                                </div>
-                              </div>
-                              <div class="col-md-3 col-sm-3 col-xs-3 tar-rating wdt20perc">
-                                <div class="row">
-                                  <img src="assets/images/trip-advisor.png">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-
-                      </div> <!-- .content -->
-                    </article>
-
-                    <article class="">
-                      <h3 class="handle">
-                        <span class="icon">&nbsp;</span>
-                        <span class="text">How we compare <span class="hidden-smallest">to competitors</span></span>
-                      </h3>
-                      <div class="content standard-type compare-table" style="display: none;">
-                        <table class="table ">
-                          <thead>
-                            <tr>
-                              <th class="wdt17perc">Service</th>
-                              <th class="bgcolor-golden wdt22perc">Enchanting Travels</th>
-                              <th class="wdt35perc">Other US/UK-based Companies</th>
-                              <th class="wdt24perc">Local Companies</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <th scope="row">Trip Planning</th>
-                              <td>
-                                <ul>
-                                  <li>Enjoyable</li>
-                                  <li>Seamless</li>
-                                  <li>w/ Destination Expert</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Often through middlemen or with travel consultants not based in Africa</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Often limited understanding of international travellers</li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">Flexibility</th>
-                              <td>
-                                <ul>
-                                  <li>100% tailor-made to your interests</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Limited based on standard products and itineraries</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Focus on standard packages </li>
-                                  <li>Limited ability to understand individual travel interests</li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">Response Time</th>
-                              <td>
-                                <ul>
-                                  <li>1-2 days</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>5-10 days</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Widely varying</li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">Safari Vehicle Quality</th>
-                              <td>
-                                <ul>
-                                  <li>Personally tested 4x4s</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Generally good</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Mixed, often poor quality 4x4s or minivans</li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">Lodge Quality</th>
-                              <td>
-                                <ul>
-                                  <li>Personally tested, wide range to suit individual preference & style</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Outsourced to local handlers,often limited range</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Often large lodges with little or no personal service</li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">Trip Support</th>
-                              <td>
-                                <ul>
-                                  <li>24/7 trip coordinator</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Either outsourced to “local partner” or need to call company in the</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Often lacking sense of urgency and understanding of traveller needs</li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">Team Base</th>
-                              <td>
-                                <ul>
-                                  <li>USA & Africa (best of both worlds)</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>USA or UK, very few have offices in Africa</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>Africa</li>
-                                </ul>
-                              </td>
-                            </tr>
-                            <tr>
-                              <th scope="row">Prices</th>
-                              <td>
-                                <ul>
-                                  <li>Competitive due to no middlemen and direct partner relationships</li>           
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>10-35% more expensive on average</li>
-                                </ul>
-                              </td>
-                              <td>
-                                <ul>
-                                  <li>5-15% cheaper but lower service and quality levels, often hidden costs and shopping traps</li>
-                                </ul>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div> <!-- .content -->
-                    </article>
-
-                    <article class="">
-                      <h3 class="handle">
-                        <span class="icon">&nbsp;</span>
-                        <span class="text">About Enchanting Travels</span>
-                      </h3>
-                      <div class="content standard-type" style="display: none;">
-                        <div class="aet-content planning-icon">
-                          <h3>Flexible Planning</h3>
-                          <p>We keep your interests and travel style in mind. Enjoy the flexibility and freedom of choice to design your itinerary the way you want it, with our careful guidance & advice. Consultations are free.</p>
-                        </div>
-                        <div class="aet-content expertise-icon  ">
-                          <h3>Destination Expertise</h3>
-                          <p>Our local experts bring South America to life! All the destinations we offer have been individually tested by our team, so you can look forward to first-hand knowledge and stress-free travel. </p>
-                        </div>
-                        <div class="aet-content privatetrips-icon">
-                          <h3>Only Private Trips</h3>
-                          <p>Why travel with the masses? Have a richer, more memorable trip with us. Our private tours give you flexibility. Plan your trip the way you want based on your own preferences and pace.</p>
-                        </div>
-                        <div class="aet-content protection-icon">
-                          <h3>100% Financial Protection</h3>
-                          <p>Your booking is completely secure. We are bonded members and license holders of all leading travel organizations. We can send you a security certificate proving you are financially protected.</p>
-                        </div>
-                        <div class="aet-content vehicle-icon">
-                          <h3>Quality Vehicles</h3>
-                          <p>You are in safe hands. We only use new vehicles, offering plenty of leg room and luggage space. Our chauffeurs are pleasant, experience and follow the highest standards of safety.</p>
-                        </div>
-                        <div class="aet-content support-icon">
-                          <h3>24/7 Dedicated Support</h3>
-                          <p class="border0">Truly personalized service. Our on-the-ground local experts are there to help you. You will be assigned a dedicated 24/7 Trip Coordinator.</p>
-                        </div>
-                      </div> <!-- .content -->
-                    </article>
-
-                    <article class="">
-                      <h3 class="handle">
-                        <span class="icon">&nbsp;</span>
-                        <span class="text">ways to Contact Us</span>
-                      </h3>
-                      <div class="content standard-type" style="display: none;">
-                        <div class="col-md-7 col-sm-7 col-xs-7 wcf-container">
-                          <div class="row">
-                            <div class="wayscontactform">
-                              <form>
-                                <div class="wcf-header">SEND US A MESSAGE</div>
-                                <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="How can we help you?">
-                                </div>
-                                <div class="form-group">
-                                  <textarea class="form-control" rows="3" placeholder="Message"></textarea>
-                                </div>
-                                <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="Your Name">
-                                </div>
-                                <div class="form-group">
-                                  <input type="email" class="form-control" placeholder="Email">
-                                </div>
-
-                                <button type="submit" class="btn btn-red-sm">Submit message</button>
-                              </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-5 col-sm-5 col-xs-5 givcall">
-                          <div class="givuscall">
-                            <span>GIVE US A CALL</span>
-                            US & Canada: +1 888 263 2574<br>
-                            UK: +0 800 098 8486<br>
-                            AUS: +1 800 044 986<br><br>
-                            <span>SEND AN EMAIL</span>
-                            <a href="#">support@enchantingtravels.com</a>
-                          </div>
-                        </div>
-                      </div> <!-- .content -->
-                    </article>
-                  </div> <!-- .accordion -->
-                </div>
-              </section>
-            </article>
-          </div> <!-- .col-right -->
+                        </div> <!-- .content -->
+                      </article>
+                    </div> <!-- .accordion -->
+                  </div>
+                </section>
+              </article>
+            </div> <!-- .col-right -->
+          </div>
         </div>
-      </div>
-      <div class="clear"></div>
-    </div> <!-- .wrap -->
-  </div>
-
-
-
-
-  <section class="page-bottom feel-safe col-md-12 col-sm-12 col-xs-12">
-    <div class="wrap">
-      <div class="left col-md-6 col-sm-6 col-xs-12 pdn0">
-        <div class="container">
-          <div>
-            <h3>Peace of mind with a globally
-              accredited company</h3>
-              <p>Enchanting Travels is a member of ASTA, ATOL, ABTA and AFTA. Rest assured that you will travel with low risk and high peace-of-mind since all our trips are fully-bonded.</p>
-              <img width="467" height="64" src="assets/images/accreditation-logos.png" class="img-responsive attachment-full" alt="accreditation-logos">         
-            </div>
-          </div> <!-- .container -->
-        </div> <!-- .left -->
-        <div class="right col-md-6 col-sm-6 col-xs-12" style="background-image: url(assets/images/guest-review.jpg);">
-          <blockquote>
-            <div class="container">
-              <p>"Our trip to India for our 30th wedding anniversary was all we had hoped for and more! Everyone we came into contact with who work with Enchanting India were professional, friendly and clearly wanted to make our trip a very memorable one.”</p>
-              <span class="author">– Veronica Vanderstoep</span>
-              <!--<a href="http://www.enchantingtravels.com/about-us/guest-reviews/" class="cta-link">See Guest Reviews</a>-->
-            </div> <!-- .container -->
-          </blockquote>
-        </div> <!-- .right -->
+        <div class="clear"></div>
       </div> <!-- .wrap -->
-    </section><!-- /.section Find Inspiration -->
-  </div>
+    </div>
 
-  <footer>
-    <div class="container">
-      <div class="foo">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-          <div class="row footspan">
-            <div>© Copyright 2015 Enchanting-Travels</div>
-            <span class="line"><a href="#">Terms</a></span>
-            <span><a href="#">Privacy</a></span>
+
+
+
+    <section class="page-bottom feel-safe col-md-12 col-sm-12 col-xs-12">
+      <div class="wrap">
+        <div class="left col-md-6 col-sm-6 col-xs-12 pdn0">
+          <div class="container">
+            <div>
+              <h3>Peace of mind with a globally
+                accredited company</h3>
+                <p>Enchanting Travels is a member of ASTA, ATOL, ABTA and AFTA. Rest assured that you will travel with low risk and high peace-of-mind since all our trips are fully-bonded.</p>
+                <img width="467" height="64" src="assets/images/accreditation-logos.png" class="img-responsive attachment-full" alt="accreditation-logos">         
+              </div>
+            </div> <!-- .container -->
+          </div> <!-- .left -->
+          <div class="right col-md-6 col-sm-6 col-xs-12" style="background-image: url(assets/images/guest-review.jpg);">
+            <blockquote>
+              <div class="container">
+                <p>"Our trip to India for our 30th wedding anniversary was all we had hoped for and more! Everyone we came into contact with who work with Enchanting India were professional, friendly and clearly wanted to make our trip a very memorable one.”</p>
+                <span class="author">– Veronica Vanderstoep</span>
+                <!--<a href="http://www.enchantingtravels.com/about-us/guest-reviews/" class="cta-link">See Guest Reviews</a>-->
+              </div> <!-- .container -->
+            </blockquote>
+          </div> <!-- .right -->
+        </div> <!-- .wrap -->
+      </section><!-- /.section Find Inspiration -->
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="foo">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="row footspan">
+              <div>© Copyright 2015 Enchanting-Travels</div>
+              <span class="line"><a href="#">Terms</a></span>
+              <span><a href="#">Privacy</a></span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 
 
@@ -812,7 +862,13 @@
     <script src="assets/js/accord-ion.js"></script>
     
     <script src="assets/js/core.js"></script>
-
+    <script src="assets/slider/js/jquery-1.9.1.min.js"></script>
+    <script src="assets/slider/js/jquery.cslide.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function(){
+      $("#cslide-slides").cslide();
+    });
+    </script>
     
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
