@@ -688,6 +688,13 @@ header{
 	margin-bottom: 15px !important;
 	margin-left: 14px;
 }
+
+.date_icon {
+	background: url("../images/calender-icon.png") no-repeat 2% center #fff;
+}
+.pointerclass {
+	cursor: pointer;
+}
 .border0{border: 0 !important; }
 .mgn-ryt10{margin-right: 10px;}
 .mgn-lft10{margin-left: 10px;}
@@ -1286,6 +1293,7 @@ footer .container .foo .footspan span a:hover{
 .wdt2775perc{width: 27.75%;}
 .wdt2783perc{width: 27.834%;}
 .pdn-tp20{padding-top: 20px;}
+.pdn-lft38{padding-left:38px !important;}
 .bdr0{  border-bottom: 0 !important;}
 .red-a{
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=85);
@@ -1331,7 +1339,28 @@ hr{
 	margin-bottom: 70px;
 }
 
+/* ---- date picker calender ----*/
+.ui-widget-header {
+	border: 1px solid #bea98d !important;
+	background: #bea98d !important;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	border: 1px solid #bea98d !important;
+	background: #bea98d !important;
+	color: #ffffff !important;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	border: 1px solid #bea98d !important;
+	background: #bea98d !important;
+	color: #FFFFFF !important;
+}
+
 /* -------------------- bootstrap overwritten ------------------ */
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #ffffff !important;
+    opacity: 1;
+}
 
 .btn {
 	border-radius: 5px
@@ -1462,7 +1491,7 @@ hr{
 	line-height: 1.42857143;
 	color: #36312a;
 	background-color: #fff;
-	background-image: none;
+	/*background-image: none;*/
 	border: 1px solid #c6c6c3;
 	border-radius: 4px;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);

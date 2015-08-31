@@ -46,3 +46,14 @@ $('.read-more-hide').on('click', function(e) {
   p.prev('.read-more-show').removeClass('hide'); // Hide only the preceding "Read More"
   e.preventDefault();
 });
+
+
+
+// Date Picker
+$(".start-date").datepicker({
+	dateFormat: 'dd M yy',
+	autoclose:true,
+	showOtherMonths: true,
+	selectOtherMonths: true
+})
+.attr('readonly', 'readonly');
