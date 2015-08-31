@@ -594,7 +594,8 @@ header{
 	float: left;
 	width: 100%;
 	padding: 0px 2.56%;
-	padding-top: 20px;
+	text-align: left;
+	/*padding-top: 20px;*/
 }
 
 .slides-holder article {
@@ -690,6 +691,7 @@ header{
 .border0{border: 0 !important; }
 .mgn-ryt10{margin-right: 10px;}
 .mgn-lft10{margin-left: 10px;}
+.mgnlr10{margin: 0px 10px;}
 .wdt17perc{width:17%; }
 .wdt22perc{width:22%; }
 .wdt35perc{width:35%; }
@@ -1283,6 +1285,7 @@ footer .container .foo .footspan span a:hover{
 .wdt106{width: 106px;}
 .wdt2775perc{width: 27.75%;}
 .wdt2783perc{width: 27.834%;}
+.pdn-tp20{padding-top: 20px;}
 .bdr0{  border-bottom: 0 !important;}
 .red-a{
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=85);
@@ -2338,6 +2341,11 @@ hr{
 	}
 
 }
+
+.hide {
+  display: none;
+}
+
 
 /* firefox hack css */
 @-moz-document url-prefix() { 
