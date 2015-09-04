@@ -1250,6 +1250,10 @@ section{
 	bottom: 32px;
 	background-color: #fff;
 	padding-top: 25px ;
+	background-color: rgb(221, 221, 221);
+	-webkit-box-shadow: 0px 0px 25px 2px #9C9C9C;
+	-moz-box-shadow: 0px 0px 25px 2px #9C9C9C;
+	box-shadow: 0px 0px 25px 2px #9C9C9C;
 }
 .summary-content a {
 	cursor: pointer;
@@ -1259,7 +1263,7 @@ section{
 }
 
 .sumrycontent > .sumary-tab{
-	margin-top: 25px;
+	margin-top: 10px;
 }
 
 .sumary-tab{
@@ -1270,9 +1274,27 @@ section{
 	text-transform: uppercase;
 	letter-spacing: 0.09em;
 	cursor: pointer;
+
 }
 .sumary-tab a{
 	display: block;
 	width: 100%;
 	line-height: 32px;
+}
+.shadowsumm{
+	-webkit-box-shadow: 0px 0px 8px 2px #9C9C9C;
+	-moz-box-shadow: 0px 0px 8px 2px #9C9C9C;
+	box-shadow: 0px 0px 8px 2px #9C9C9C;
+}
+
+.sumarysllidecont{
+	position: fixed;
+	width: 100%;
+	display: block;
+	z-index: 999;
+}
+
+.scrolcontai{
+	height: 355px;
+	overflow-y: scroll;
 }
