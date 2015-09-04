@@ -377,7 +377,7 @@ hr{
 
 .header-links{
 	float: left;
-	padding: 15px 15px;
+	padding: 13px 15px;
 	margin-right: -15px;
 	margin-left: 50px;
 }
@@ -746,16 +746,33 @@ hr{
 	float: left;
 	text-align: center;
 	position: relative;
-	margin-bottom: 30px;
-	width: 200px;
+	width: 125px;
+	height: 70px;
+	background: url(../images/timeline-icon.png);
+	background-repeat: no-repeat;
+	background-position: 11px 35px;
+	z-index: 999;
 }
 
+.destination-timeline ul li.active{
+	float: left;
+	text-align: center;
+	position: relative;
+	width: 125px;
+	height: 70px;
+	background: url(../images/timeline-icon-2.png);
+	background-repeat: no-repeat;
+	background-position: 11px 35px;
+	z-index: 9999;
+}
 .destination-timeline ul li:first-child .desthrtimeline{
-	width: 90px;
+	width: 103px;
+	float: right;
 }
 .destination-timeline ul li:last-child .desthrtimeline{
 	width: 87px;
 	float: left;
+	border: 0;
 }
 
 .destination-timeline ul li a{
@@ -767,7 +784,7 @@ hr{
 	margin: 0;
 	line-height: 16px;
 	height: 35px;
-	width: 200px;
+	/*width: 200px;*/
 	clear: both;
 	display: table-cell;
 	vertical-align: bottom;
@@ -821,6 +838,7 @@ hr{
 	position: relative;
 	float: right;
 	top: 12px;
+	left: 11px;
 }
 
 label{
@@ -884,6 +902,18 @@ section{
 	border-bottom: 0;
 	opacity: .9;
 }
+
+.table-summary > tbody > tr > td > ul {
+	list-style: none;
+}
+
+.table-summary > tbody > tr > td > ul > li{
+	height: 100%;
+	vertical-align: bottom;
+	min-height: 65px;
+	margin-bottom: 15px;
+}
+
 .table-summary > tbody > tr > td > p{
 	font-size: 14px;
 	margin-bottom: 10px;
@@ -1152,7 +1182,7 @@ section{
 
 		.itinerary-creation-container {
 			background-color: #ffffff;
-			padding: 20px 0px;
+			padding: 40px 0px;
 		}
 		.TI-list {
 			font-size: 18px;
@@ -1172,11 +1202,77 @@ section{
 
 		.itinerary-creation-container {
 			background-color: #ffffff;
-			padding: 50px 10px;
+			padding: 40px 10px;
 		}
 		.TI-list {
 			font-size: 18px;
 		}
 	}
 
+}
+
+
+#button1 img{
+	cursor: pointer;
+}
+
+#button1 span{
+	margin: 7px;
+	display: inline-block;
+	position: relative;
+	color: #ccc;
+	top: 3px;
+	color: #b9a284;
+	cursor: pointer;
+}
+
+#buttonNaN{
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0px;
+	top: 65%;
+	color: #fff;
+	background-color: #36312B;
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	font-size: 10px;
+	cursor: pointer;
+	padding: 3px 5px;
+}
+
+.sumrycontent {
+	border-bottom: 1px solid #cdcdcd;
+	width: 100%;
+	height: auto;
+	position: relative;
+	bottom: 32px;
+	background-color: #fff;
+	padding-top: 25px ;
+}
+.summary-content a {
+	cursor: pointer;
+}
+#summary-content {
+	display: none;
+}
+
+.sumrycontent > .sumary-tab{
+	margin-top: 25px;
+}
+
+.sumary-tab{
+	width: 100%;
+	text-align: center;
+	background-color: #ddd;
+	font-size: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.09em;
+	cursor: pointer;
+}
+.sumary-tab a{
+	display: block;
+	width: 100%;
+	line-height: 32px;
 }
