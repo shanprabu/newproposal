@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Search Results</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+	<div id="wrapper">
+		<header class="col-md-12">
+			<a href="search-form.html" class="pull-left logo-container">
+				<img src="images/logo.png" class="" />
+			</a>
+			
+			<nav class="col-md-7">
+				<ul class="nav nav-tabs">
+					<li role="presentation" class="pull-left">
+						<a href="search-form.html"> Search</a>
+					</li>
+					<li role="presentation" class="pull-left">
+						<a href="search-results.html" class="active"> Search Results </a>
+					</li>
+				</ul>
+			</nav>
+			<button type="button" class="pull-right btn-red">Generate Flight Proposal</button>
+		</header>
+		<main class="col-md-12">
+			<div class="to-top"> </div>
+			<div class="top-bar col-md-12">
+				<section class="search-params col-md-12">
+					<div class="pull-left src-dest">
+						<label>One - Way</label>
+						<label><span> Bangalore </span> - <span> New York</span></label>
+					</div>
+					<div class="pull-left depart-on">
+						<label> Depart on</label>
+						<label> 25-JUN-2015</label>
+					</div>
+					<div class="pull-left return-on">
+						<label> Return on</label>
+						<label> ---- </label>
+					</div>
+					<div class="pull-left passenger-count">
+						<div class="pull-left adult text-center">
+							<label>Adult</label>
+							<label>2</label>
+						</div>
+						<div class="pull-left child text-center">
+							<label>Child</label>
+							<label>1</label>
+						</div>
+						<div class="pull-left infant text-center">
+							<label>Infant</label>
+							<label>1</label>
+						</div>
+					</div>
+					<div class="pull-left">
+						<label>Class</label>
+						<label> Economy</label>
+					</div>
+					<div class="pull-left">
+						<label>Currency</label>
+						<label> USD</label>
+					</div>
+					<div class="pull-right">
+						<button type="button">Modify Search</button>
+					</div>
+				</section>
+			</div>
+			<section id="filters" class="pull-left">
+				<h2> Filter your search</h2>
+				<ul>
+					<li>Stops</li>
+					<li>
+						<input type="radio" name="stopFilter" id="nonStop" value="nonStop" checked>
+						<label class="radio-inline" for="nonStop"> Non-Stop </label>
+					</li>
+					<li>
+						<input type="radio" name="stopFilter" id="maxOneStop" value="maxOneStop" checked>
+						<label class="radio-inline" for="maxOneStop"> Max. 1 Stop </label>
+					</li>
+					<li>
+						<input type="radio" name="stopFilter" id="anyStop" value="anyStop" checked>
+						<label class="radio-inline" for="anyStop"> Any Stop </label>
+					</li>
+				</ul>
+				<ul>
+					<li> Airlines </li>
+					<li> 
+						<input type="checkbox" id="airline1" name="airlineFilter" value="aircanada">
+						<label class="checkbox-inline" for="airline1"> Air Canada </label>
+					</li>
+					<li> 
+						<input type="checkbox" id="airline2" name="airlineFilter" value="air india">
+						<label class="checkbox-inline" for="airline2"> Air India </label>
+					</li>
+					<li> 
+						<input type="checkbox" id="airline3" name="airlineFilter" value="american airlines">
+						<label class="checkbox-inline" for="airline3"> American Airlines </label>
+					</li>
+					<li> 
+						<input type="checkbox" id="airline4" name="airlineFilter" value="ethiad airways">
+						<label class="checkbox-inline" for="airline4"> Ethiad Airways </label>
+					</li>
+					<li> 
+						<input type="checkbox" id="airline5" name="airlineFilter" value="singapore airlines">
+						<label class="checkbox-inline" for="airline5"> Singapore Airlines </label>
+					</li>
+				</ul>
+				<ul>
+					<li>Fare</li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>Trip duration</li>
+					<li></li>
+				</ul>
+				<ul>
+					<li>Departure</li>
+					<li></li>
+				</ul>
+			</section>
+			<section id="results-container" class="pull-left">
+				<div class="sorting-options">
+					<div class="sort-airline"> <a href="javascript:void(0);"> Airline </a></div>
+					<div class="sort-departure"> <a href="javascript:void(0);"> Departure</a></div>
+					<div class="sort-arrival"> <a href="javascript:void(0);"> Arrival</a></div>
+					<div class="sort-duration"> <a href="javascript:void(0);"> Duration</a></div>
+					<div class="sort-price"> <a href="javascript:void(0);"> Price</a></div>
+					<div></div>
+				</div>
+				<div class="search-result-row one-way-result">
+					<div class="flight-info col-md-12">
+						<div class="segment pull-left">
+							<div class="pull-left">
+								<div class="airline-name">
+									<img src="images/qatar.png">
+									<div>Qatar Airways</div>
+								</div>
+								<div class="src-dest">
+									<div class="source">
+										<div>
+											<label class="time"> 17:30 </label> 
+											<label>BLR</label>
+										</div>
+										<div>Bangalore</div>
+									</div>
+									<div class="destination">
+										<div>
+											<label class="time">11:10</label>
+											<label>JFK</label>
+										</div>
+										<div>New York</div>
+									</div>
+								</div>
+								<div class="duration">
+									<div>27h 10m</div>
+									<div>2 Stop</div>
+								</div>
+								<hr/>
+							</div>
+							<div class="fare-and-select">
+								<div>$ 2,900</div>
+								<div>
+									<input type="checkbox" id="selectCheckbox1"/>
+									<label class="checkbox-inline" for="selectCheckbox1">SELECT</label>
+								</div>
+							</div>
+							<div class="additional-details">
+								<ul class="nav nav-tabs" role="tablist">
+								    <li role="presentation" class=""><a href="#fareDetails1" aria-controls="fareDetailsfareDetails1" role="tab" data-toggle="tab">Fare Details</a></li>
+								    <li role="presentation"><a href="#flightDetails1" aria-controls="flightDetails1" role="tab" data-toggle="tab">Flight Details</a></li>
+								    <li role="presentation"><a href="#baggageInfo1" aria-controls="baggageInfo1" role="tab" data-toggle="tab">Baggage Info</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="website">
+							<div> $ 2,700 </div>
+							<div> Expedia </div>
+						</div>
+						<div class="tab-content">
+						    <div role="tabpanel" class="tab-pane" id="fareDetails1">
+						    	<h3>Fare Details</h3>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="flightDetails1">
+						    	<h3>Flight Details</h3>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="baggageInfo1">
+						    	<h3>Baggage Info</h3>
+						    </div>
+						</div>
+					</div>
+				</div>
+				<div class="search-result-row round-trip-result">
+					<div class="flight-info col-md-12">
+						<div class="segment pull-left">
+							<div class="pull-left">
+								<div class="airline-name">
+									<img src="images/qatar.png">
+									<div>Qatar Airways</div>
+								</div>
+								<div class="src-dest">
+									<div class="source">
+										<div>
+											<label class="time"> 17:30 </label> 
+											<label>BLR</label>
+										</div>
+										<div>Bangalore</div>
+									</div>
+									<div class="destination">
+										<div>
+											<label class="time">11:10</label>
+											<label>JFK</label>
+										</div>
+										<div>New York</div>
+									</div>
+								</div>
+								<div class="duration">
+									<div>27h 10m</div>
+									<div>2 Stop</div>
+								</div>
+								<hr/>
+							</div>
+							<div class="pull-left">
+								<div class="airline-name">
+									<img src="images/qatar.png">
+									<div>Qatar Airways</div>
+								</div>
+								<div class="src-dest">
+									<div class="source">
+										<div>
+											<label class="time"> 17:30 </label> 
+											<label>BLR</label>
+										</div>
+										<div>Bangalore</div>
+									</div>
+									<div class="destination">
+										<div>
+											<label class="time">11:10</label>
+											<label>JFK</label>
+										</div>
+										<div>New York</div>
+									</div>
+								</div>
+								<div class="duration">
+									<div>27h 10m</div>
+									<div>2 Stop</div>
+								</div>
+								<hr/>
+							</div>
+							<div class="fare-and-select">
+								<div>$ 2,900</div>
+								<div>
+									<input type="checkbox" id="selectCheckbox2"/>
+									<label class="checkbox-inline" for="selectCheckbox2">SELECT</label>
+								</div>
+							</div>
+							<div class="additional-details">
+								<ul class="nav nav-tabs" role="tablist">
+								    <li role="presentation" class=""><a href="#fareDetails2" aria-controls="fareDetailsfareDetails2" role="tab" data-toggle="tab">Fare Details</a></li>
+								    <li role="presentation"><a href="#flightDetails2" aria-controls="flightDetails2" role="tab" data-toggle="tab">Flight Details</a></li>
+								    <li role="presentation"><a href="#baggageInfo2" aria-controls="baggageInfo2" role="tab" data-toggle="tab">Baggage Info</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="website">
+							<div> $ 2,700 </div>
+							<div> Expedia </div>
+						</div>
+						<div class="tab-content">
+						    <div role="tabpanel" class="tab-pane" id="fareDetails2">
+						    	<h3>Flight Details</h3>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="flightDetails2">
+						    	<h3>Fare Details</h3>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="baggageInfo2"> 
+						    	<h3> Baggage Info</h3>
+						    </div>
+						</div>
+					</div>
+				</div>
+				<div class="search-result-row multi-city-result">
+					<div class="flight-info col-md-12">
+						<div class="segment pull-left">
+							<div class="pull-left">
+								<div class="airline-name">
+									<img src="images/qatar.png">
+									<div>Qatar Airways</div>
+								</div>
+								<div class="src-dest">
+									<div class="source">
+										<div>
+											<label class="time"> 17:30 </label> 
+											<label>BLR</label>
+										</div>
+										<div>Bangalore</div>
+									</div>
+									<div class="destination">
+										<div>
+											<label class="time">11:10</label>
+											<label>JFK</label>
+										</div>
+										<div>New York</div>
+									</div>
+								</div>
+								<div class="duration">
+									<div>27h 10m</div>
+									<div>2 Stop</div>
+								</div>
+								<hr/>
+							</div>
+							<div class="pull-left">
+								<div class="airline-name">
+									<img src="images/qatar.png">
+									<div>Qatar Airways</div>
+								</div>
+								<div class="src-dest">
+									<div class="source">
+										<div>
+											<label class="time"> 17:30 </label> 
+											<label>BLR</label>
+										</div>
+										<div>Bangalore</div>
+									</div>
+									<div class="destination">
+										<div>
+											<label class="time">11:10</label>
+											<label>JFK</label>
+										</div>
+										<div>New York</div>
+									</div>
+								</div>
+								<div class="duration">
+									<div>27h 10m</div>
+									<div>2 Stop</div>
+								</div>
+								<hr/>
+							</div>
+							<div class="pull-left">
+								<div class="airline-name">
+									<img src="images/qatar.png">
+									<div>Qatar Airways</div>
+								</div>
+								<div class="src-dest">
+									<div class="source">
+										<div>
+											<label class="time"> 17:30 </label> 
+											<label>BLR</label>
+										</div>
+										<div>Bangalore</div>
+									</div>
+									<div class="destination">
+										<div>
+											<label class="time">11:10</label>
+											<label>JFK</label>
+										</div>
+										<div>New York</div>
+									</div>
+								</div>
+								<div class="duration">
+									<div>27h 10m</div>
+									<div>2 Stop</div>
+								</div>
+								<hr/>
+							</div>
+							<div class="fare-and-select">
+								<div>$ 2,900</div>
+								<div>
+									<input type="checkbox" id="selectCheckbox3"/>
+									<label class="checkbox-inline" for="selectCheckbox3">SELECT</label>
+								</div>
+							</div>
+							<div class="additional-details">
+								<ul class="nav nav-tabs" role="tablist">
+								    <li role="presentation" class=""><a href="#fareDetails3" aria-controls="fareDetailsfareDetails3" role="tab" data-toggle="tab">Fare Details</a></li>
+								    <li role="presentation"><a href="#flightDetails3" aria-controls="flightDetails3" role="tab" data-toggle="tab">Flight Details</a></li>
+								    <li role="presentation"><a href="#baggageInfo3" aria-controls="baggageInfo3" role="tab" data-toggle="tab">Baggage Info</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="website">
+							<div> $ 2,700 </div>
+							<div> Expedia </div>
+						</div>
+						<div class="tab-content">
+						    <div role="tabpanel" class="tab-pane" id="fareDetails3"> 
+						    	<h3>Fare Details</h3>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="flightDetails3">
+						    	<h3>Flight Details</h3>
+						    </div>
+						    <div role="tabpanel" class="tab-pane" id="baggageInfo3">
+						    	<h3>Baggage Info</h3>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="col-md-12">
+			Copyrights 2015 Enchanting Travelss
+		</footer>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
