@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>:: Booking Page Timeline ::</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tooltip CSS -->
+  <link href="assets/tooltip/css/tipped.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/bp-timeline.css" rel="stylesheet">
+
+  <link href="assets/css/accordion.css" rel="stylesheet">
+
+  <link href="assets/css/jquery-ui.css" rel="stylesheet">
+  <!-- sly slider css -->
+  <link rel="stylesheet" href="assets/slider/css/horizontal.css">
+  <script src="assets/slider/js/modernizr.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body>
+
+      <div id="wrapper-content">
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><img class="img-responsive" src="assets/images/logo.svg" alt="Enchanting Travels"/></a>
+            </div>
+            <div class="header-buttons">
+              <a href="bp-trip-document.html" class="btn btn-brown-head mgn-rgt20 hidden-xs">
+                TRIP DOCUMENTS
+              </a>
+              <a href="#" class="btn btn-brown-head mgn-rgt20 hidden-xs">
+                Proposal
+              </a>
+              <a href="#" class="btn btn-brown-head mgn-rgt20 hidden-xs">
+               Booking
+             </a>
+             <a href="#" class="btn btn-default mgn-rgt20 hidden-xs">
+              <span><img src="assets/images/pdf-icon.svg" alt="download"/></span>Download PDF
+            </a>
+            <a href="#" class="btn btn-default hidden-xs" data-toggle="modal" data-target="#contactus">
+              <span><img src="assets/images/contact-icon.svg" alt="contact"/></span>Contact Us
+            </a>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+
+      <div class="container" id="btmcontfoo">
+
+        <div class="col-md-12">
+          <div class="row">
+
+            <div id="msform">
+
+
+              <!-- progressbar -->
+              <div class="timline-cont">
+                <ul id="progressbar">
+                  <li class="active">Guest Details</li>
+                  <li>Trip Summary</li>
+                  <li>Advance Payment</li>
+                  <li>Passport Copies</li>
+                  <li>Balance Payment</li>
+                </ul>
+              </div>
+              <!-- fieldsets -->
+              <div>
+                <fieldset style="display:block;">
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-9">
+                        <div class="row">
+                          <div class="lft-section">
+                            <div class="l-s-box">
+
+                              <article>
+                                <p>Please enter your details and proceed with your advance payment to confirm your booking with us.</p>
+                                <section>
+                                  <div class="iti-blk-accord">
+                                    <!-- Accordion begin -->
+                                    <div class="accordion">
+
+                                      <!-- trip details section -->
+                                      <article class="open">
+                                        <h3 class="handle">
+                                          <span class="icon">&nbsp;</span>
+                                          <span class="text">PRIMARY GUEST DETAILS</span>
+                                        </h3>
+                                        <div class="content standard-type" style="display: block;">
+                                          <div class="content-bg-gry">
+                                            <div class="col-md-12">
+                                              <div class="row">
+                                                <form>
+                                                  <div class="col-md-6">
+                                                    <div class="row">
+
+                                                      <div class="form-group mgn-rgt30">
+                                                        <label for="first-name">First Name</label>
+                                                        <input type="text" class="form-control" id="first-name">
+                                                      </div>
+                                                      <div class="form-group mgn-rgt30">
+                                                        <label for="email">Email</label>
+                                                        <input type="text" class="form-control" id="email">
+                                                      </div>
+                                                      <div class="form-group mgn-rgt30">
+                                                        <label for="address-1">Address 1</label>
+                                                        <input type="text" class="form-control" id="address-1">
+                                                      </div>
+                                                      <div class="form-group mgn-rgt30">
+                                                        <label for="country">Country</label>
+                                                        <input type="text" class="form-control" id="country">
+                                                      </div>
+                                                      <div class="form-group mgn-rgt30">
+                                                        <label for="state">State</label>
+                                                        <input type="text" class="form-control" id="state">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="col-md-6">
+                                                    <div class="row">
+
+                                                     <div class="form-group mgn-rgt15">
+                                                      <label for="last-name">Last Name</label>
+                                                      <input type="text" class="form-control" id="last-name">
+                                                    </div>
+                                                    <div class="form-group mgn-rgt15">
+                                                      <label for="phone">Phone</label>
+                                                      <input type="text" class="form-control" id="phone">
+                                                    </div>
+                                                    <div class="form-group mgn-rgt15">
+                                                      <label for="address-2">Address 2</label>
+                                                      <input type="text" class="form-control" id="address-2">
+                                                    </div>
+                                                    <div class="form-group mgn-rgt15">
+                                                      <label for="city">City</label>
+                                                      <input type="text" class="form-control" id="city">
+                                                    </div>
+                                                    <div class="form-group mgn-rgt15">
+                                                      <div class="col-md-5 mgn-rgt15">
+                                                        <div class="row">
+                                                          <label for="zip-code">Zip Code</label>
+                                                          <input type="text" class="form-control" id="zip-code"> 
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-md-6 wdtperc534">
+                                                        <div class="row">
+                                                          <label for="strtdate">Date of Birth</label>
+                                                          <input type="text"  placeholder="mm/dd/yy" class="form-control start-date date_icon pointerclass" id="strtdate"> 
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                  </div>
+                                                </div>
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div> <!-- .content -->
+                                    </article>
+                                    <!-- trip details section ends-->
+
+                                  </div> 
+                                  <!-- .accordion -->
+                                </div>
+                              </section>
+
+                              <section>
+                                <div class="iti-blk-accord">
+                                  <!-- Accordion begin -->
+                                  <div class="accordion">
+
+                                    <!-- trip details section -->
+                                    <article class="open">
+                                      <h3 class="handle">
+                                        <span class="icon">&nbsp;</span>
+                                        <span class="text">ADDITIONAL GUEST 1:</span>
+                                      </h3>
+                                      <div class="content standard-type" style="display: block;">
+                                        <div class="content-bg-gry">
+                                          <div class="col-md-12">
+                                            <div class="row">
+                                              <form>
+                                                <div class="col-md-6">
+                                                  <div class="row">
+
+                                                    <div class="form-group mgn-rgt30">
+                                                      <label for="first-name1">First Name</label>
+                                                      <input type="text" class="form-control" id="first-name1">
+                                                    </div>
+                                                    <div class="form-group mgn-rgt30">
+                                                      <label for="email1">Email</label>
+                                                      <input type="text" class="form-control" id="email1">
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                  <div class="row">
+
+                                                   <div class="form-group mgn-rgt15">
+                                                    <label for="last-name1">Last Name</label>
+                                                    <input type="text" class="form-control" id="last-name1">
+                                                  </div>
+
+                                                  <div class="form-group mgn-rgt15">
+                                                    <label for="dob2">Date of Birth</label>
+                                                    <input type="text"  placeholder="mm/dd/yy" class="form-control start-date date_icon pointerclass" id="dob2"> 
+                                                  </div>
+
+                                                </div>
+                                              </div>
+                                            </form>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div> <!-- .content -->
+                                  </article>
+                                  <!-- trip details section ends-->
+
+                                </div> 
+                                <!-- .accordion -->
+                              </div>
+                            </section>
+                            <section>
+                              <div class="iti-blk-accord">
+                                <!-- Accordion begin -->
+                                <div class="accordion">
+
+                                  <!-- trip details section -->
+                                  <article class="">
+                                    <h3 class="handle">
+                                      <span class="icon">&nbsp;</span>
+                                      <span class="text">ADDITIONAL GUEST 2:</span>
+                                    </h3>
+                                    <div class="content standard-type" >
+                                      <div class="content-bg-gry">
+                                        <div class="col-md-12">
+                                          <div class="row">
+                                            <form>
+                                              <div class="col-md-6">
+                                                <div class="row">
+
+                                                  <div class="form-group mgn-rgt30">
+                                                    <label for="first-name2">First Name</label>
+                                                    <input type="text" class="form-control" id="first-name2">
+                                                  </div>
+                                                  <div class="form-group mgn-rgt30">
+                                                    <label for="email2">Email</label>
+                                                    <input type="text" class="form-control" id="email2">
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="col-md-6">
+                                                <div class="row">
+
+                                                 <div class="form-group mgn-rgt15">
+                                                  <label for="last-name2">Last Name</label>
+                                                  <input type="text" class="form-control" id="last-name2">
+                                                </div>
+
+                                                <div class="form-group mgn-rgt15">
+                                                  <label for="dob3">Date of Birth</label>
+                                                  <input type="text"  placeholder="mm/dd/yy" class="form-control start-date date_icon pointerclass" id="dob3"> 
+                                                </div>
+
+                                              </div>
+                                            </div>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div> <!-- .content -->
+                                </article>
+                                <!-- trip details section ends-->
+
+                              </div> 
+                              <!-- .accordion -->
+                            </div>
+                          </section>
+                          <section>
+                            <div class="iti-blk-accord">
+                              <!-- Accordion begin -->
+                              <div class="accordion">
+
+                                <!-- trip details section -->
+                                <article class="">
+                                  <h3 class="handle">
+                                    <span class="icon">&nbsp;</span>
+                                    <span class="text">ADDITIONAL GUEST 3:</span>
+                                  </h3>
+                                  <div class="content standard-type">
+                                    <div class="content-bg-gry">
+                                      <div class="col-md-12">
+                                        <div class="row">
+                                          <form>
+                                            <div class="col-md-6">
+                                              <div class="row">
+
+                                                <div class="form-group mgn-rgt30">
+                                                  <label for="first-name3">First Name</label>
+                                                  <input type="text" class="form-control" id="first-name3">
+                                                </div>
+                                                <div class="form-group mgn-rgt30">
+                                                  <label for="email3">Email</label>
+                                                  <input type="text" class="form-control" id="email3">
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                              <div class="row">
+
+                                               <div class="form-group mgn-rgt15">
+                                                <label for="last-name3">Last Name</label>
+                                                <input type="text" class="form-control" id="last-name3">
+                                              </div>
+
+                                              <div class="form-group mgn-rgt15">
+                                                <label for="dob4">Date of Birth</label>
+                                                <input type="text"  placeholder="mm/dd/yy" class="form-control start-date date_icon pointerclass" id="dob4"> 
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div> <!-- .content -->
+                              </article>
+                              <!-- trip details section ends-->
+
+                            </div> 
+                            <!-- .accordion -->
+                          </div>
+                        </section>
+
+                        <section>
+                          <div class="iti-blk-accord">
+                            <!-- Accordion begin -->
+                            <div class="accordion">
+
+                              <!-- trip details section -->
+                              <article class="open">
+                                <h3 class="handle">
+                                  <span class="icon">&nbsp;</span>
+                                  <span class="text">INTERNATIONAL FLIGHT DETAILS:</span>
+                                </h3>
+                                <div class="content standard-type" style="display: block;">
+                                  <div class="content-bg-gry">
+                                    <div class="col-md-12">
+                                      <div class="row">
+                                        <form>
+                                          <div class="col-md-6">
+                                            <div class="row">
+
+                                              <div class="form-group mgn-rgt30">
+                                                <label for="PNR-Number">PNR Number / Booking Code</label>
+                                                <input type="text" class="form-control" id="PNR-Number">
+                                              </div>
+                                              <div class="form-group mgn-rgt30">
+                                                <label for="dob5">Arrival Date</label>
+                                                <input type="text" class="form-control start-date date_icon pointerclass" id="dob5"> 
+                                              </div>
+                                              <div class="form-group mgn-rgt30">
+                                                <label for="Arrival-City">Arrival City</label>
+                                                <input type="text" class="form-control" id="Arrival-City">
+                                              </div>
+                                              <div class="form-group mgn-rgt30">
+                                                <label for="dob6">Departure Date</label>
+                                                <input type="text" class="form-control start-date date_icon pointerclass" id="dob6"> 
+                                              </div>
+                                              <div class="form-group mgn-rgt30">
+                                                <label for="first-name">Departure City</label>
+                                                <input type="text" class="form-control" id="first-name">
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="col-md-6">
+                                            <div class="row">
+
+                                              <div class="form-group mgn-rgt15 mgn-tp80">
+                                                <label for="first-name">Arrival Time</label>
+                                                <input type="text" class="form-control" id="first-name">
+                                              </div>
+                                              <div class="form-group mgn-rgt15 dispblkmgn10">
+                                                <div class="col-md-5 mgn-rgt15">
+                                                  <div class="row">
+                                                    <label for="zip-code">Flight #</label>
+                                                    <input type="text" class="form-control" id="zip-code"> 
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-6 wdtperc534">
+                                                  <div class="row">
+                                                    <label for="strtdate">Airline</label>
+                                                    <input type="text" class="form-control" id="strtdate"> 
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="form-group mgn-rgt15">
+                                                <label for="first-name">Departure Time</label>
+                                                <input type="text" class="form-control" id="first-name">
+                                              </div>
+                                              <div class="form-group mgn-rgt15">
+                                                <div class="col-md-5 mgn-rgt15">
+                                                  <div class="row">
+                                                    <label for="zip-code">Flight #</label>
+                                                    <input type="text" class="form-control" id="zip-code"> 
+                                                  </div>
+                                                </div>
+                                                <div class="col-md-6 wdtperc534">
+                                                  <div class="row">
+                                                    <label for="strtdate">Airline</label>
+                                                    <input type="text" class="form-control" id="strtdate"> 
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div> <!-- .content -->
+                              </article>
+                              <!-- trip details section ends-->
+
+                            </div> <!-- .accordion -->
+                          </div>
+                        </section>
+
+                        <section>
+                          <div class="iti-blk-accord">
+                            <!-- Accordion begin -->
+                            <div class="accordion">
+
+                              <!-- trip details section -->
+                              <article class="open">
+                                <h3 class="handle">
+                                  <span class="icon">&nbsp;</span>
+                                  <span class="text">ADDITIONAL INFORMATION:</span>
+                                </h3>
+                                <div class="content standard-type" style="display: block;">
+                                  <div class="content-bg-gry">
+                                    <div class="col-md-12">
+                                      <div class="row">
+                                        <form>
+                                          <div class="col-md-6">
+                                            <div class="row">
+                                              <div class="form-group mgn-rgt30 customradio">
+                                                <label for="first-name">Room Preference</label>
+                                                <input type="radio" name="smoking" id="Non-Smoking" checked=""> 
+                                                <label for="Non-Smoking">Non - Smoking</label> 
+                                                <input type="radio" name="smoking" id="Smoking">
+                                                <label for="Smoking">Smoking</label>       
+                                              </div>
+
+
+                                            </div>
+                                          </div>
+
+                                          <div class="col-md-6">
+                                            <div class="row">
+                                             <div class="form-group mgn-rgt30 customradio">
+                                              <label for="first-name">Bed Preference</label>
+                                              <input type="radio" name="Bed" id="Twin" checked=""> 
+                                              <label for="Twin">Twin</label> 
+                                              <input type="radio" name="Bed" id="Double">
+                                              <label for="Double">Double</label>       
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="ad-info-cont">
+                                          <div class="form-group mgn-rgt15">
+                                            <label for="first-name">Dietary Requirement</label>
+                                            <textarea name="diet"> </textarea>
+                                          </div>
+
+                                          <div class="form-group mgn-rgt15">
+                                            <label for="first-name">Important Medical Information</label>
+                                            <textarea name="diet"> </textarea>
+                                          </div>
+
+                                          <div class="form-group mgn-rgt15">
+                                            <label for="first-name">Special Request</label>
+                                            <textarea name="diet"> </textarea>
+                                          </div>
+
+                                        </div>
+                                      </form>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div> <!-- .content -->
+                            </article>
+                            <!-- trip details section ends-->
+
+                          </div> <!-- .accordion -->
+                        </div>
+                      </section>
+                      <section>
+                        <div class="iti-blk-accord">
+                          <!-- Accordion begin -->
+                          <div class="accordion">
+
+                            <!-- trip details section -->
+                            <article class="open">
+                              <h3 class="handle">
+                                <span class="icon">&nbsp;</span>
+                                <span class="text">EMERGENCY CONTACT:</span>
+                              </h3>
+                              <div class="content standard-type" style="display:block;">
+                                <div class="content-bg-gry">
+                                  <div class="col-md-12">
+                                    <div class="row">
+                                      <form>
+                                        <div class="col-md-6">
+                                          <div class="row">
+
+                                            <div class="form-group mgn-rgt30">
+                                              <label for="first-name">Full Name</label>
+                                              <input type="text" class="form-control" id="first-name">
+                                            </div>
+                                            <div class="form-group mgn-rgt30">
+                                              <label for="email">Email</label>
+                                              <input type="text" class="form-control" id="email">
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                          <div class="row">
+
+                                           <div class="form-group mgn-rgt15">
+                                            <label for="last-name">City</label>
+                                            <input type="text" class="form-control" id="last-name">
+                                          </div>
+
+                                          <div class="form-group mgn-rgt15">
+                                            <label for="dob2">Phone</label>
+                                            <input type="text" class="form-control" id="dob2"> 
+                                          </div>
+
+                                        </div>
+                                      </div>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div> <!-- .content -->
+                          </article>
+                          <!-- trip details section ends-->
+
+                        </div> <!-- .accordion -->
+                      </div>
+                    </section>
+
+                  </article>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="ryt-section">
+              <div class="r-s-container">
+                <div class="r-s-box">
+                  <div class="r-s-head r-s-arrow_box">
+                    TRIP SUMMARY & PRICING
+                  </div>
+                  <div class="r-s-content">
+                    <h4>TRIP DETAILS</h4>
+                    <p>Destination: <span>India</span></p>
+                    <p>Start Date: <span>20 JUN 2015</span></p>
+                    <p>End Date: <span>30 JUN 2015</span></p>
+                    <p>Nights: <span>9</span></p>
+                    <p>No. of Guests: <span>4</span></p>
+                    <h3>Total Price: USD 5,600</h3>
+                  </div>
+                </div>
+                <div class="r-s-bottom">
+                  <p>Stuck? Please get in touch.</p>
+                  <div class="travel-assist-container">
+                    <img src="assets/images/parik.png" width="66"/>
+                    <span>
+                      <h5>Parikshat Laxminarayan</h5>
+                      <p>parik@enchanting-travels.com</p>
+                      <p>+1 888 235 6783</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <input type="button" name="next" class="next action-button btn btn-primary pull-left" value="SAVE & NEXT" />
+
+    </fieldset>
+
+    <fieldset style="display:none;">
+     <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="lft-section">
+              <div class="l-s-box">
+
+                <article>
+
+                  <section class= "summary">
+                    <h2>TRIP SUMMARY</h2>
+                    <table>
+                      <tr>
+                        <th>City</th>
+                        <th>Date</th>
+                        <th>Travel Details</th>
+                        <th>Hotel</th>
+                        <th>Activities</th>
+                      </tr>
+                      <tr>
+                        <td>Delhi <br> ( 3 nights )</td>
+                        <td>Fri, Oct 15, 2015</td>
+                        <td>Innova ( GT, Vns, Raj, )  |  Drive from Delhi to Agra</td>
+                        <td>Colonels Retreat  |  Hilton Garden Inn</td>
+                        <td>Delhi - City highlights  |   Delhi -Local Guide</td>
+                      </tr>
+
+                      <tr>
+                        <td>Agra <br> ( 2 nights )</td>
+                        <td>Fri, Oct 15, 2015</td>
+                        <td>Innova ( GT, Vns, Raj, )  |  Drive from Delhi to Agra ( 205 Km - 4 Hrs )</td>
+                        <td>The Gateway Hotel Agra  |  The Trident Agra</td>
+                        <td>Agra - City highlights  |  Fatehpur Sikri Highlights  |  Agra - Local Guide</td>
+                      </tr>
+
+                      <tr>
+                        <td>Jaipur <br> ( 3 nights )</td>
+                        <td>Fri, Oct 15, 2015</td>
+                        <td>Innova ( GT, Vns, Raj, )  |  Drive from Delhi to Agra ( 205 Km - 4 Hrs )</td>
+                        <td>The Gateway Hotel Agra  |  The Trident Agra</td>
+                        <td>Agra - City highlights  |  Fatehpur Sikri Highlights  |  Agra - Local Guide</td>
+                      </tr>
+
+                      <tr>
+                        <td>Udaipur <br> ( 1 nights )</td>
+                        <td>Fri, Oct 15, 2015</td>
+                        <td>Innova ( GT, Vns, Raj, )  |  Drive from Delhi to Agra ( 205 Km - 4 Hrs )</td>
+                        <td>The Gateway Hotel Agra  |  The Trident Agra</td>
+                        <td>Agra - City highlights  |  Fatehpur Sikri Highlights  |  Agra - Local Guide</td>
+                      </tr>                                                                                                       
+                    </table>
+                  </section>
+
+                  <section>
+                    <div class="iti-blk-accord">
+                      <!-- Accordion begin -->
+                      <div class="accordion">
+
+                        <!-- trip details section -->
+                        <article class="open">
+                          <h3 class="handle">
+                            <span class="icon">&nbsp;</span>
+                            <span class="text">INCLUDED IN PRICE</span>
+                          </h3>
+                          <div class="content standard-type" style="display: block;">
+                            <div class="content-include-price">
+                              <div class="col-md-12">
+                                <div class="row">
+                                  <ul id="price-include">
+                                    <li>Flights</li>
+                                    <ul id="inert-price-include">
+                                      <li> Chennai - Madurai for Rob on economy class</li>
+                                      <li> Madurai to Delhi (via Chennai or Mumbai) on business class</li>
+                                      <li> Jodhpur to Udaipur via Delhi on business class</li>
+                                      <li> Udaipur to Delhi on business class</li>
+                                    </ul>
+                                    <li>All activities as listed</li>
+                                    <ul id="inert-price-include">
+                                      <li> Delhi: City Highlights of Delhi</li>
+                                      <li> Agra: City Highlights of Agra</li>
+                                      <li> Agra: City Highlights of Fatehpur Sikri</li>
+                                      <li> Jaipur: City Highlights of Jaipur</li>
+                                      <li> Jodhpur: City Highlights of Jodhpur</li>
+                                      <li> Udaipur: City Highlights of Udaipur</li>
+                                    </ul>
+                                    <li>Accommodation in two rooms on the indicated meal plan</li>
+                                    <li>All flights as mentioned above </li>
+                                    <li>All standard and special activities as mentioned above. We encourage you to research your activities and convey your preferences to your Travel Consultant / Trip Coordinator pre-arrival.</li>
+                                    <li>All airport and hotel transfers and journeys in a Luxury Mercedes Class Van</li>
+                                    <li>A Private English-speaking tour guide throughout your trip </li>
+                                    <li>All entrance fees and activities when accompanied by our tour guide</li>
+                                    <li>Your Trip Coordinator: a 24/7 point of contact, supporting you during your trip</li>
+                                    <li>Insolvency insurance</li>
+                                    <li>Fees and taxes</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div> <!-- .content -->
+                        </article>
+                        <!-- trip details section ends-->
+
+                      </div> <!-- .accordion -->
+                    </div>
+                  </section>
+                  <section>
+                    <div class="iti-blk-accord">
+                      <!-- Accordion begin -->
+                      <div class="accordion">
+
+                        <!-- trip details section -->
+                        <article class="open">
+                          <h3 class="handle">
+                            <span class="icon">&nbsp;</span>
+                            <span class="text">NOT INCLUDED IN PRICE</span>
+                          </h3>
+                          <div class="content standard-type" style="display: block;">
+                            <div class="content-include-price">
+                              <div class="col-md-12">
+                                <div class="row">
+                                  <ul id="price-include">
+                                    <li>Camera fees.</li>
+                                    <li>Travel, Health and Cancellation Insurance</li>
+                                    <li>International airfare</li>
+                                    <li>Tips and personal shopping expenses.</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div> <!-- .content -->
+                        </article>
+                        <!-- trip details section ends-->
+
+                      </div> <!-- .accordion -->
+                    </div>
+                  </section>
+                  <section>
+                    <div class="iti-blk-accord">
+                      <!-- Accordion begin -->
+                      <div class="accordion">
+
+                        <!-- trip details section -->
+                        <article class="open">
+                          <h3 class="handle">
+                            <span class="icon">&nbsp;</span>
+                            <span class="text">DOWNLOAD DOCUMENTS</span>
+                          </h3>
+                          <div class="content standard-type" style="display: block;">
+                            <div class="col-md-12">
+                              <div class="row">
+                                <a href="#" class="btn btn-default mgn-rgt20">
+                                  <span><img src="assets/images/pdf-icon.svg" alt="download"></span>TRIP CONFIRMATION
+                                </a>
+
+                                <a href="#" class="btn btn-default mgn-rgt20">
+                                  <span><img src="assets/images/pdf-icon.svg" alt="download"></span>SECURITY CERTIFICATE
+                                </a>
+                              </div>
+                            </div>
+                          </div> <!-- .content -->
+                        </article>
+                        <!-- trip details section ends-->
+
+                      </div> <!-- .accordion -->
+                    </div>
+                  </section>
+                </article>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="ryt-section">
+            <div class="r-s-container">
+              <div class="r-s-box">
+                <div class="r-s-head r-s-arrow_box">
+                  TRIP SUMMARY & PRICING
+                </div>
+                <div class="r-s-content">
+                  <h4>TRIP DETAILS</h4>
+                  <p>Primary Guest: <span>Nirmal Jain</span></p>
+                  <p>Additional Guests: <span>Priya Jain, Rohan Jain, Karan Gandhi.</span></p>
+                  <p>Destination: <span>India</span></p>
+                  <p>Start Date: <span>20 JUN 2015</span></p>
+                  <p>End Date: <span>30 JUN 2015</span></p>
+                  <p>Nights: <span>9</span></p>
+                  <p>No. of Guests: <span>4</span></p>
+                  <h3>Total Price: USD 5,600</h3>
+                </div>
+              </div>
+              <div class="r-s-bottom">
+                <p>Stuck? Please get in touch.</p>
+                <div class="travel-assist-container">
+                  <img src="assets/images/parik.png" width="66"/>
+                  <span>
+                    <h5>Parikshat Laxminarayan</h5>
+                    <p>parik@enchanting-travels.com</p>
+                    <p>+1 888 235 6783</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="button" name="next" class="next action-button btn btn-primary pull-left" value="PROCEED TO PAYMENT" />
+
+  </fieldset>
+
+  <fieldset style="display:none;">
+
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="lft-section">
+              <div id="advancepaymentcont">
+                <div class="l-s-box">
+                  <article id="bankpaymentgroup">
+                    <h3>Payment Method</h3>
+                    <div class="form-group customradio paymentmethod">
+                      <input type="radio" name="bankpayment" id="Credit-Card" checked="checked" value="2"> 
+                      <label for="Credit-Card">Credit Card</label> 
+                      <input type="radio" name="bankpayment" id="Bank-Transfer" value="3">
+                      <label for="Bank-Transfer">Bank Transfer</label>    
+                      <input type="radio" name="bankpayment" id="Check-Cheque" value="4">
+                      <label for="Check-Cheque">Check / Cheque</label>     
+                    </div>
+                    <div id="bankpayment2" class="bankpaymentgroupdesc">
+                      <h3>BILLING ADDRESS:</h3>
+                      <div id="billingaddressgr">
+                        <div class="form-group customradio paymentmethod pdn-lft0">
+
+                          <div class="labeladdress-bg">
+                            <input type="radio" name="billingaddress" id="billing1" value="2"> 
+                            <label for="billing1" class="labeladdress">
+                              Nirmal Jain</br>
+                              2 Spearsfield Lane </br>
+                              Lynnfield Massachusetts</br>
+                              USA 01940</br>
+                              002345678990
+                            </label> 
+                          </div>
+                          <div class="labeladdress-wobg">
+                            <input type="radio" name="billingaddress" id="billing2" checked="checked" value="3">
+                            <label for="billing2">Use a different billing address</label>   
+                          </div>
+                        </div>
+                        <div id="billingaddress3" class="billingaddressgrdesc">
+                          <div>
+                            <div class="cardholderdetails">
+                              <h3>CARD HOLDER DETAILS:</h3>
+                              <div class="cardholderdetails-bg">
+                                <div class="col-md-12">
+                                  <div class="row">
+                                    <form>
+                                      <div class="col-md-6">
+                                        <div class="row">
+
+                                          <div class="form-group mgn-rgt30">
+                                            <label for="first-name">Full Name</label>
+                                            <input type="text" class="form-control" id="first-name">
+                                          </div>
+                                          <div class="form-group mgn-rgt30">
+                                            <label for="email">Address 1</label>
+                                            <input type="text" class="form-control" id="email">
+                                          </div>
+                                          <div class="form-group mgn-rgt30">
+                                            <label for="address-1">City</label>
+                                            <input type="text" class="form-control" id="address-1">
+                                          </div>
+                                          <div class="form-group mgn-rgt30">
+                                            <label for="country">Zip</label>
+                                            <input type="text" class="form-control" id="country">
+                                          </div>
+                                          <div class="form-group mgn-rgt30">
+                                            <label for="state">Phone</label>
+                                            <input type="text" class="form-control" id="state">
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-6">
+                                        <div class="row">
+
+                                         <div class="form-group mgn-rgt15">
+                                          <label for="last-name">Last Name</label>
+                                          <input type="text" class="form-control" id="last-name">
+                                        </div>
+                                        <div class="form-group mgn-rgt15">
+                                          <label for="phone">Address 2</label>
+                                          <input type="text" class="form-control" id="phone">
+                                        </div>
+                                        <div class="form-group mgn-rgt15">
+                                          <label for="address-2">State</label>
+                                          <input type="text" class="form-control" id="address-2">
+                                        </div>
+                                        <div class="form-group mgn-rgt15">
+                                          <label for="country">Country</label>
+                                          <select class="form-control" id="country">
+                                            <option></option>
+                                            <option>country 1</option>
+                                            <option>country 2</option>
+                                            <option>country 3</option>
+                                            <option>country 4</option>
+                                            <option>country 5</option>
+                                          </select>
+                                        </div>
+                                        <div class="form-group mgn-rgt15">
+                                          <label for="city">Email</label>
+                                          <input type="text" class="form-control" id="city">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="cardholderdetails bdr0">
+                            <h3>CARD DETAILS:</h3>
+                            <div class="cardholderdetails-bg">
+                              <div class="col-md-12">
+                                <div class="row">
+                                  <form>
+                                    <p>
+                                      Advance Payable Now: <span>USD 1,700</span>
+                                    </p>
+                                    <div class="col-md-6">
+                                      <div class="row">
+
+                                        <div class="form-group mgn-rgt30">
+                                          <label for="first-name">Card Number</label>
+                                          <input type="text" class="form-control" id="first-name">
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                      <div class="row">
+
+                                        <div class="form-group expdate">
+                                          <div class="col-md-4 mgn-rgt15">
+                                            <div class="row">
+                                              <label for="expdate">Expiry Date</label>
+                                              <select class="form-control" id="expdate">
+                                                <option>MM</option>
+                                                <option>JAN</option>
+                                                <option>FEB</option>
+                                                <option>MAR</option>
+                                                <option>APR</option>
+                                                <option>MAY</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-3 mgn-rgt15">
+                                            <div class="row">
+                                              <label for="year">&nbsp;</label>
+                                              <select class="form-control" id="year">
+                                                <option>YY</option>
+                                                <option>2015</option>
+                                                <option>2014</option>
+                                                <option>2013</option>
+                                                <option>2012</option>
+                                                <option>2011</option>
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-4 cvv2">
+                                            <div class="row">
+                                              <label for="3strtdate">CVV2</label>
+                                              <input type="text" class="form-control info_icon pointerclass questionlink" id="3strtdate"> 
+                                              <div class="questioncontent questioncontent-arrow" style="display:none">
+                                                <p>sdfsdffasdfasfdasdfsa</p>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                              <hr class="dottedhr">
+                              <div class="verified-secure">
+                                <img src="assets/images/verified-secure.png" alt="verified and secure" ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bankpayment3" class="bankpaymentgroupdesc bdr-tp0" style="display: none;">
+                      <div class="cardholderdetails-bg mgn-btm30">
+                        <p class="fnt18">Advance Payable Now: USD 1,700</p>
+                        <div class="cardholderdetails-text">
+
+                          <p class="fnt18">Please send us an electronic bank transfer to our bank in the USA:</p>
+                          <p>Name of Account Holder: <span>Enchanting Travels Inc</span></p>
+                          <p>Bank: <span>J.P. Morgan Chase Bank</span></p>
+                          <p>Address of Bank:<br><span>12820 Lynnfield Dr, Englewood, <br>CO 80112, USA</span></p>
+                          <p>ABA Wire Routing Number: <span>102001017</span></p>
+                          <p>Account Number: <span>593171296</span></p>
+                          <p>International Wires Swift Code: <span>CHASUS33</span></p>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="row">
+                            <form>
+                              <div class="col-md-6">
+                                <div class="row">
+                                  <div class="form-group mgn-rgt30">
+                                    <label for="first-name">Date of Transfer Made</label>
+                                    <input type="text" class="form-control" id="first-name">
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-md-6">
+                                <div class="row">
+                                  <div class="form-group mgn-rgt30">
+                                    <label for="first-name">Reference Number</label>
+                                    <input type="text" class="form-control" id="first-name">
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="bankpayment4" class="bankpaymentgroupdesc bdr-tp0" style="display: none;">
+                      <div class="cardholderdetails-bg mgn-btm30">
+                        <p class="fnt18">Advance Payable Now: USD 1,700</p>
+                        <div class="cardholderdetails-text">
+
+                          <p class="fnt18">Please send us a check/cheque to the following:</p>
+                          <p>Name: <span>Enchanting Travels Inc</span></p>
+                          <p>Address: <span>Enchanting Travels, Inc.<br>
+                            8310 South Valley Highway,<br>
+                            Suite 300 Englewood, Colorado <br>
+                            80112, USA</span></p>
+                          </div>
+                          <form>
+                            <div class="col-md-6">
+                              <div class="row">
+                                <div class="form-group mgn-rgt30">
+                                  <label for="first-name">Cheque Number</label>
+                                  <input type="text" class="form-control" id="first-name">
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+                <div id="advancepaymenterror">
+                  <!-- error screen -->
+                  <div class="notification-screen">
+                    <div class="ns-headtxt">
+                      <img src="assets/images/retry-payment-notify.png">
+                      <h2>Oops! We could not process your payment.</h2>
+                    </div>
+                    <hr class="dottedhr">
+                    <div class="ns-bodytxt">
+
+                      <p>Please check your card details or contact your card company. If your credit card company has approved the payment and confirmed that there is no problem with your payment, please contact your travel consultant (link to travel consultant pop up with their contact details). </p>
+
+                      <a href="#">RETRY YOUR PAYMENT <img src="assets/images/retry-pay-icon.png"></a>
+
+                    </div>
+                  </div>
+                  <!-- error screen ends -->
+
+                  <!-- succes screen  -->
+                  <div class="notification-screen">
+                    <div class="ns-headtxt">
+                      <img src="assets/images/success-notify.png">
+                      <h1>SUCCESS!</h1>
+                      <h2>Your payment towards your trip of a lifetime has been made.<br> We’ve sent you an email confirmation. </h2>
+                    </div>
+                    <hr class="dottedhr">
+                    <div class="ns-bodytxt">
+                      <h4>What happens next?</h4>
+                      <ul id="whthappenext">
+                        <li>Our reservations team will begin confirming all your travel arrangements.</li>
+                        <li>Your travel consultant will contact you with further information for your trip once within the next 7 days.</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- succes screen ends -->
+
+                  <!-- thank You screen -->
+                  <div class="notification-screen">
+                    <div class="ns-headtxt">
+                      <h2>Thank you!</h2>
+                    </div>
+                    <hr class="dottedhr">
+                    <div class="ns-bodytxt">
+                      <p class="txt-center">We will send you an email immediately after the payyment is received.</p>
+                    </div>
+                  </div>
+                  <!-- thank You screen ends -->
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="ryt-section">
+              <div class="r-s-container">
+                <div class="r-s-box">
+                  <div class="r-s-head r-s-arrow_box">
+                    TRIP SUMMARY & PRICING
+                  </div>
+                  <div class="r-s-content">
+                    <h4>TRIP DETAILS</h4>
+                    <p>Primary Guest: <span>Nirmal Jain</span></p>
+                    <p>Additional Guests: <span>Priya Jain, Rohan Jain, Karan Gandhi.</span></p>
+                    <p>Email: <span>npjain2002@gmail.com</span></p>
+                    <p>No. of Guests: <span>4</span></p>
+                    <p>Invoice: <span class="goldtxt">HASG123456</span></p>
+                    <p>Total Invoice Amount: <span>USD 5,600</span></p>
+                    <h3>Advance Payable Now:</br> USD 1,700</h3>
+                    <p>Balance Payable Before</br> 31 Jul 2015: USD 3,900</p>
+                  </div>
+                </div>
+                <div class="r-s-bottom">
+                  <p>Stuck? Please get in touch.</p>
+                  <div class="travel-assist-container">
+                    <img src="assets/images/parik.png" width="66"/>
+                    <span>
+                      <h5>Parikshat Laxminarayan</h5>
+                      <p>parik@enchanting-travels.com</p>
+                      <p>+1 888 235 6783</p>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <input type="button" name="next" class="next action-button btn btn-primary pull-left" value="Make Payment" />
+      <input id="Button1" type="button" class="btn btn-primary pull-left mgn-lft15" value="Error" onclick="switchVisible();"/>
+
+    </fieldset>
+
+    <fieldset style="display:none;">
+     <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="lft-section">
+              <div class="l-s-box">
+                <article id="uploadfiles">
+                  <section>
+                    <h3>PRIMARY GUEST</h3>
+                    <div class="uploadfiles-container">
+                      <div class="pull-left">
+                        <h4>Nirmal Jain</h4>
+                        <div class="fileUpload btn btn-brown-head mgn-rgt20">
+                          <span>Upload</span>
+                          <input type="file" class="upload" for="uploading" onchange="readURL(this);"  />
+                        </div>
+                        <div class="nameoffile">Lorem_Ipsum_1.pdf
+                          <a href="#"><img src="assets/images/del-row.png"></a>
+                        </div>
+                      </div>
+                      <div class="pull-right">
+                        <img id="uploadimg" src=""  width="176" height="132" />
+                      </div>
+                    </div>
+                  </section>
+                  <section>
+                    <h3>ADDITIONAL GUEST 1:</h3>
+                    <div class="uploadfiles-container">
+                      <div class="pull-left">
+                        <h4>Kiran Kumar</h4>
+                        <div class="fileUpload btn btn-brown-head mgn-rgt20">
+                          <span>Upload</span>
+                          <input type="file" class="upload" for="uploading1" onchange="readURL(this);"  />
+                        </div>
+                        <div class="nameoffile">Lorem_Ipsum_1.pdf
+                          <a href="#"><img src="assets/images/del-row.png"></a>
+                        </div>
+                      </div>
+                      <div class="pull-right">
+                        <img id="uploadimg1" src=""  width="176" height="132" />
+                      </div>
+                    </div>
+                  </section>
+                  <section>
+                    <h3>ADDITIONAL GUEST 2:</h3>
+                    <div class="uploadfiles-container">
+                      <div class="pull-left">
+                        <h4>Reena Kapoor</h4>
+                        <div class="fileUpload btn btn-brown-head mgn-rgt20">
+                          <span>Upload</span>
+                          <input type="file" class="upload" for="uploading2" onchange="readURL(this);"  />
+                        </div>
+                        <div class="nameoffile">Lorem_Ipsum_1.pdf
+                          <a href="#"><img src="assets/images/del-row.png"></a>
+                        </div>
+                      </div>
+                      <div class="pull-right">
+                        <img id="uploadimg2" src=""  width="176" height="132" />
+                      </div>
+                    </div>
+                  </section>
+                  <section>
+                    <h3>ADDITIONAL GUEST 3:</h3>
+                    <div class="uploadfiles-container">
+                      <div class="pull-left">
+                        <h4>Riya Jain</h4>
+                        <div class="fileUpload btn btn-brown-head mgn-rgt20">
+                          <span>Upload</span>
+                          <input type="file" class="upload" for="uploading3" onchange="readURL(this);"  />
+                        </div>
+                        <div class="nameoffile">Lorem_Ipsum_1.pdf
+                          <a href="#"><img src="assets/images/del-row.png"></a>
+                        </div>
+                      </div>
+                      <div class="pull-right">
+                        <img class="uploadimg3" src=""  width="176" height="132" />
+                      </div>
+                    </div>
+                  </section>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="ryt-section">
+            <div class="r-s-container">
+              <div class="r-s-box">
+                <div class="r-s-head r-s-arrow_box">
+                  TRIP SUMMARY & PRICING
+                </div>
+                <div class="r-s-content">
+                  <h4>TRIP DETAILS</h4>
+                  <p>Primary Guest: <span>Nirmal Jain</span></p>
+                  <p>Additional Guests: <span>Priya Jain, Rohan Jain, Karan Gandhi.</span></p>
+                  <p>Email: <span>npjain2002@gmail.com</span></p>
+                  <p>No. of Guests: <span>4</span></p>
+                  <p>Invoice: <span class="goldtxt">HASG123456, TQKD12343, THAVD67890</span></p>
+                  <p>Total Invoice Amount: <span>USD 5,600</span></p>
+                  <p>Advance Received On</br> 31 Jan 2015: USD 1,600</p>
+                  <p>Balance Payable Before</br> 31 Jul 2015: USD 3,900</p>
+                </div>
+              </div>
+              <div class="r-s-bottom">
+                <p>Stuck? Please get in touch.</p>
+                <div class="travel-assist-container">
+                  <img src="assets/images/parik.png" width="66"/>
+                  <span>
+                    <h5>Parikshat Laxminarayan</h5>
+                    <p>parik@enchanting-travels.com</p>
+                    <p>+1 888 235 6783</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="button" name="next" class="next action-button btn btn-primary pull-left" value="NEXT" />
+
+  </fieldset>
+
+  <fieldset style="display:none;">
+    <div class="col-md-12">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row">
+            <div class="lft-section">
+              <div class="l-s-box">
+                <p>Same as the advance payment section!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="ryt-section">
+            <div class="r-s-container">
+              <div class="r-s-box">
+                <div class="r-s-head r-s-arrow_box">
+                  TRIP SUMMARY & PRICING
+                </div>
+                <div class="r-s-content">
+                  <h4>TRIP DETAILS</h4>
+                  <p>Primary Guest: <span>Nirmal Jain</span></p>
+                  <p>Additional Guests: <span>Priya Jain, Rohan Jain, Karan Gandhi.</span></p>
+                  <p>Email: <span>npjain2002@gmail.com</span></p>
+                  <p>No. of Guests: <span>4</span></p>
+                  <p>Invoice: <span class="goldtxt">HASG123456, TQKD12343, THAVD67890</span></p>
+                  <p>Total Invoice Amount: <span>USD 5,600</span></p>
+                  <p>Advance Received On</br> 31 Jan 2015: USD 1,600</p>
+                  <p>Balance Payable Before</br> 31 Jul 2015: USD 3,900</p>
+                </div>
+              </div>
+              <div class="r-s-bottom">
+                <p>Stuck? Please get in touch.</p>
+                <div class="travel-assist-container">
+                  <img src="assets/images/parik.png" width="66"/>
+                  <span>
+                    <h5>Parikshat Laxminarayan</h5>
+                    <p>parik@enchanting-travels.com</p>
+                    <p>+1 888 235 6783</p>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <input type="submit" name="next" class="btn btn-primary pull-left" value="MAKE PAYMENT" />
+  </fieldset>
+</div>
+
+
+</div>
+
+</div>
+</div>
+</div> 
+<!-- /container -->
+<div id="footer">
+  <div class="container">
+    <div class="foo">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="row footspan">© 2015 Enchanting Travels</div>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+        <div class="row footspan">
+          <span class="mgn-rgt25"><a href="#">Terms & Conditions</a></span>
+          <span><a href="#">Privacy Policy</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- sly slider -->
+    <script src="assets/slider/js/plugins.js"></script>
+    <script src="assets/slider/js/sly.min.js"></script>
+    <script src="assets/slider/js/horizontal.js"></script>
+
+    <!-- tool-tip -->
+    <script src="assets/tooltip/js/tipped.js"></script>
+
+    <script src="assets/js/core.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/accord-ion.js"></script>
+
+    <!-- datepicker -->
+    <script src="assets/js/jquery-ui.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  </html>
