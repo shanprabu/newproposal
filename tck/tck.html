@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>::TCK::</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <!-- styling for invoice --> 
+  <style type="text/css">
+
+  /*------- Common body --------*/
+  body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0.02em;
+  }
+
+  a, a:hover, a:focus{
+    color: #3c2e25;
+    text-decoration: none;
+  }
+
+  #main-wrapper{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: 0 auto; /* the bottom margin is the negative value of the footer's height */
+  }
+
+  .container{
+    margin: 0 auto;
+    width: 1020px;
+  }
+  /*------- Common body ends --------*/
+
+  /*------- pdfHeader --------*/
+  .header{
+    border-bottom: 15px solid #3b2e26;
+    width: 100%;
+    min-height: 78px;
+  }
+
+  .header .logo{
+    width: 50%;
+    float: left;
+    padding: 13px 0px;
+  }
+
+  .header .head-title{
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: right;
+    padding: 24px 0px;
+  }
+
+  /*------- pdfHeader ends --------*/
+
+  .main-container{
+    clear: both;
+    width: 100%;
+    color: #3b2e26;
+    padding: 25px 0px;
+  }
+
+  .cover-page{
+    width: 100%;
+  }
+  .cover-page img{
+    margin-top: 18px;
+  }
+
+  .name{
+    float: left;
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+  }
+  .date{
+    text-align: right;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+  }
+
+  .page{
+
+  }
+  .page p{
+    font-size: 16px;
+  }
+
+  /*--- summary section ---*/
+  .summary {
+    color: #686868;
+    font-size: 16px;
+    margin-top: 28px;
+  }
+  .summary h2, .summary .tab_container span, .tab_container .summary span {
+    display: block;
+    margin-right: 40px;
+    font-size: 18px;
+    line-height: 1.2em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #36312a;
+  }
+  .summary table tbody{
+    background-color: #fbfbfb;
+  }
+  .summary table th {
+    background-color: #e7e7e7;
+    padding: 12px 15px;
+    font-weight: bold;
+    letter-spacing: .9px;
+    font-size: 15px;
+  }
+  .summary table td {
+    padding: 12px;
+    box-sizing: border-box;
+    min-width: 84px;
+    line-height: 20px;
+  }
+  .summary table td:first-child {
+    min-width: 115px;
+  }
+  .summary th, .summary td {
+    border: 1px solid #d4d4d4;
+  }
+
+  /*--- pricing info ---*/
+  .pricing-info{
+    width: 100%;
+    display: inline-block;
+  }
+
+  .pricing-info div {
+    border: 1px solid #ccc;
+    float: left;
+    width: 49%;
+    min-height: 110px;
+  }
+
+  .pricing-info div ul{
+    list-style-type: none;
+    line-height: 26px;
+    color: #595754;
+  }
+
+  .pricing-info div ul.cost li{
+    font-size: 20px;
+    line-height: 28px;
+    color: #83322c;
+    font-weight: normal;
+  }
+
+  .pricing-info div ul.cost li span{
+    font-size: 16px;
+    color: #595754;
+  }
+
+  .price-included{
+    margin-top: 30px;
+    border-top: 1px dashed #DBDAD9;
+  }
+
+  .imp-info{
+
+  }
+
+  ul#price-include {
+    list-style-type: none;
+    font-size: 17px;
+    padding-left: 20px;
+    line-height: 26px;
+    margin-bottom: 45px;
+  }
+
+  ul#price-include li:before{
+    content: "•";
+    margin-right: -8px;
+    font-weight: 100;
+    color: #c4c1bb;
+    position: relative;
+    right: 18px;
+
+  }
+
+  ul#inert-price-include{
+    padding-left: 20px;
+    list-style-type: none;
+  }
+
+  ul#inert-price-include li:before{
+    content: "-";
+    color: #c4c1bb;
+    margin-left: -2px;
+    font-weight: 100; 
+  }
+  
+  ul#whthappenext {
+    list-style-type: none;
+    list-style-image: url('tick.png');
+    font-size: 17px;
+    padding-left: 20px;
+    line-height: 24px;
+    margin-bottom: 45px;
+  }
+
+  ul#whthappenext li{ 
+    margin-bottom: 15px;
+  }
+  ul#whthappenext li span{ 
+    color: #ab9175;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+  }
+
+  ul#whthappenext li:before{
+    content: "";
+    font-weight: 100;
+    color: #c4c1bb;
+    position: relative;
+    right: 18px;
+  }
+
+  .page a:hover, .page a:visited, .page a:focus, .page a:link {
+    color: #d35c1c;
+    text-decoration: underline;
+  }
+
+  .goldline{
+    color: #ab9175;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .regards{
+    margin-bottom: 25px;
+  }
+
+  .regards p{
+    margin: 0px;
+  }
+
+  .signature span{
+    font-size: 14px;
+  }
+
+  .signature div{
+    font-weight: bold;
+  }
+
+
+
+  .greyspace{
+    height: 20px;
+    background-color: #ECECEC;
+    border: 0;
+    padding: 5px;
+    text-align: left;
+  }
+  .bdr-ryt2{border-right: 2px solid #757575 !important;}
+  .font20{font-size: 20px;}
+  .font16{font-size: 16px;}
+  .font14{font-size: 14px;}
+  .fontbold{font-weight: bold;}
+  .wdtperc40{width:40%;}
+  .wdtperc25{width:25%;}
+  .text-right{text-align: right;}
+  .text-left{text-align: left;}
+  .greyheader{
+    background-color: #ECECEC;
+    border: 0;
+  }
+
+  .greyheader td{
+    border: 0;
+  }
+
+  /*------ pdffooter -------*/
+  .first-page-foo{
+    background-color: #fff !important;
+    border-top: 2px solid #ededed;
+  }
+  .first-page-foo p{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .first-page-foo .foo-icons{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0px;
+
+  }
+
+  footer{
+    background-color: #efedde;
+    margin-top: 25px;
+  }
+
+  footer .foo{
+    margin: 0 auto;
+    width: 1020px;
+    font-size: 14px;
+    color: #3c2e25;
+  }  
+
+  footer .foo .container{
+    padding: 20px 0px;
+  }
+
+  .foo .container span{
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  .foo .container p {
+    line-height: 18px;
+    margin: 0;
+  }
+  /*------ pdffooter ends -------*/
+
+</style><!-- /styling -->
+
+
+<body>
+
+  <div id="main-wrapper"> <!-- main wrapper -->
+
+    <section><!-- pdf section page -->
+      <div class="wrapper">
+
+        <div class="header"><!-- pdfheader -->
+          <div class="container">
+            <div class="logo">
+              <img src="logo.png" width="142">
+            </div>
+            <div class="head-title">
+              TRIP CONFIRMATION
+            </div>
+          </div>
+        </div><!-- pdfheader ends -->
+        
+        <div class="container"><!-- main content container -->
+          <div class="main-container">
+            <div class="cover-page">
+              <div class="name">Custom Trip for Andrea Jayne Everest</div>
+              <div class="date">09 Aug - 25 Aug 2015 in Asia</div>
+              <img src="main-cover.jpg" width="1020"/>
+            </div>
+          </div>
+        </div><!-- main content container ends -->
+      </div><!-- wrapper ends -->
+
+      <footer class="first-page-foo"><!-- first footer -->
+        <div class="foo">
+          <div class="container">
+            <p>Peace of mind for you:</p>
+            <div class="foo-icons">
+              <img src="footer-icons.png"/>
+            </div>
+            <p class="text-right">Find out more here</p>
+          </div>
+        </div>
+      </footer><!-- first footer -->
+      
+    </section><!-- pdf section page ends -->
+    
+    <pagebreak></pagebreak><!-- page break -->
+    
+    <section><!-- pdf section page -->
+      <div class="wrapper">
+
+        <div class="header"><!-- pdfheader -->
+          <div class="container">
+            <div class="logo">
+              <img src="logo.png" width="142">
+            </div>
+            <div class="head-title">
+              YOUR ITINERARY
+            </div>
+          </div>
+        </div><!-- pdfheader ends -->
+        
+        <div class="container"><!-- main content container -->
+          <div class="main-container">
+            <div class="page">
+              <div class="name">Dear Andrea,</div>
+              <div class="date">27 Mar 2015 </div>
+              <p><b>Thank you for booking your trip to Asia with us!</b> We will do our best to make your trip as enjoyable and memorable as possible. As discussed, below is the confirmation of your trip and itinerary. Further, you will find soft copies of your hotel vouchers, the contact details of your hotels and our cancellation policy in the appendix of this document.</p>
+              <p><b>Names of guests:</b> Andrea Jayne Everest, Peter Lindsay Everest, Francesca Louise Claire Everest, Henry Charlie Thomas Everest & William Stephen Joshua Everest</p>
+              <div class= "summary">
+                <h2>TRIP SUMMARY</h2>
+                <table cellspacing=0 >
+                  <tr>
+                    <th>City</th>
+                    <th>Date</th>
+                    <th>Travel Details</th>
+                    <th>Hotel</th>
+                    <th>Activities</th>
+                  </tr>
+                  <tr>
+                    <td>Delhi <br> ( 3 nights )</td>
+                    <td>Fri, Oct 15, 2015</td>
+                    <td>Innova ( GT, Vns, Raj, )  |  Drive from Delhi to Agra</td>
+                    <td>Colonels Retreat  |  Hilton Garden Inn</td>
+                    <td>Delhi - City highlights  |   Delhi -Local Guide</td>
+                  </tr>
+
+                  <tr>
+                    <td>Agra <br> ( 2 nights )</td>
+                    <td>Fri, Oct 15, 2015</td>
+                    <td>Innova ( GT, Vns, Raj, )  |  Drive from Delhi to Agra ( 205 Km - 4 Hrs )</td>
+                    <td>The Gateway Hotel Agra  |  The Trident Agra</td>
+                    <td>Agra - City highlights  |  Fatehpur Sikri Highlights  |  Agra - Local Guide</td>
+                  </tr>
+
+                  <tr>
+                    <td>Jaipur <br> ( 3 nights )</td>
+                    <td>Fri, Oct 15, 2015</td>
+                    <td>Innova ( GT, Vns, Raj, )  |  Drive from Delhi to Agra ( 205 Km - 4 Hrs )</td>
+                    <td>The Gateway Hotel Agra  |  The Trident Agra</td>
+                    <td>Agra - City highlights  |  Fatehpur Sikri Highlights  |  Agra - Local Guide</td>
+                  </tr>
+
+                  <tr>
+                    <td>Udaipur <br> ( 1 nights )</td>
+                    <td>Fri, Oct 15, 2015</td>
+                    <td>Innova ( GT, Vns, Raj, )  |  Drive from Delhi to Agra ( 205 Km - 4 Hrs )</td>
+                    <td>The Gateway Hotel Agra  |  The Trident Agra</td>
+                    <td>Agra - City highlights  |  Fatehpur Sikri Highlights  |  Agra - Local Guide</td>
+                  </tr>                                                                                                       
+                </table>
+              </div>
+            </div>
+          </div><!-- main content container ends -->
+        </div><!-- wrapper ends -->
+
+        <footer><!-- pdffooter -->
+          <div class="foo">
+            <div class="container">
+              <p><span>EMAIL</span> <a href="#"><b>priyank@enchanting-travels.com</b></a></p>
+              <p><span>TEL</span> <b>USA +1 888 263 2574</b></p>
+              <p><span>WEB</span> <a href="#"><b>enchantingtravels.com</b></a></p>
+            </div>
+          </div>
+        </footer><!-- pdffooter -->
+
+      </section><!-- pdf section page ends -->
+
+      <pagebreak></pagebreak><!-- page break -->
+
+      <section><!-- pdf section page -->
+        <div class="wrapper">
+
+          <div class="header"><!-- pdfheader -->
+            <div class="container">
+              <div class="logo">
+                <img src="logo.png" width="142">
+              </div>
+              <div class="head-title">
+                FINAL PRICING
+              </div>
+            </div>
+          </div><!-- pdfheader ends -->
+
+          <div class="container"><!-- main content container -->
+            <div class="main-container">
+              <div class="page">
+
+                <div class="pricing-info">
+                  <div>
+                    <ul>
+                      <li>Pricing in USD</li>
+                      <li>Excludes International flights</li>
+                      <li>Based on 2 people travelling together</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul class="cost">
+                      <li>Option 1: <b>USD 5,785</b><span> / person</span></li>
+                      <li>Option 2: <b>USD 10,920</b><span> / person</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <p>Your Trip Proposal is valid for 14 days</p>
+
+                <div class="price-included">
+                  <h2>Price Includes</h2>
+                  <ul id="price-include">
+                    <li>16 Nights in the above mentioned hotels with (1 double room with twin beds throughout, 1 single room in Delhi, Jodhpur & Udaipur & 1 triple room in Agra, Samode Village, Jaipur & Deogarh) on the indicated meal plans.</li>
+                    <li>All flights as mentioned above on economy class.</li>
+                    <li>All activities as listed:</li>
+                    <ul id="inert-price-include">
+                      <li>Delhi: City Highlights, 10 Aug to 11 Aug</li>
+                      <li>Delhi: Cycle Rickshaw Ride, 11 Aug </li>
+                      <li>Agra: City Highlights, 12 Aug </li>
+                      <li>Samode Palace: Samode Palace complimentary activities, 13 Aug </li>
+                      <li>Samode Village: Jeep Safari, 14 Aug </li>
+                      <li>Jaipur: City Highlights, 15 Aug to 16 Aug</li>
+                      <li>Jaipur: Dera Amer Sunset Ride and Dinner, 16 Aug </li>
+                      <li>Jodhpur: City Highlights, 17 Aug to 18 Aug</li>
+                      <li>Jodhpur: Bishnoi Jeep Safari, 18 Aug </li>
+                      <li>Deogarh: DEOMAHAL-Rural Ramble, 19 Aug </li>
+                      <li>Deogarh: Hotel Activity, 20 Aug </li>
+                      <li>Ranakpur: City Highlights in Ranakpur, 21 Aug </li>
+                      <li>Udaipur: City Highlights, 21 Aug to 22 Aug</li>
+                      <li>Delhi: City Highlights , 24 Aug </li>
+                    </ul>
+                    <li>All airport and hotel transfers. </li>
+                    <li>An air conditioned Tempo Traveler with chauffeur in India.</li>
+                    <li>An English-speaking local tour guide for the activities mentioned above in India </li>
+                    <li>All entrance fees and activities when accompanied by our tour guide.</li>
+                    <li>Your Trip Coordinator: a 24/7 point of contact, supporting you during your trip. </li>
+                    <li>Insolvency insurance.</li>
+                    <li>Fees and taxes.</li>
+                  </ul>
+
+                  <h2>Not Included</h2>
+
+                  <ul id="price-include">
+                    <li>Camera fees</li>
+                    <li>Travel, Health and Cancellation Insurance</li>
+                    <li>International airfare</li>
+                    <li>Tips and personal shopping expenses</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div><!-- main content container ends -->
+          </div><!-- wrapper ends -->
+
+          <footer><!-- pdffooter -->
+            <div class="foo">
+              <div class="container">
+                <p><span>EMAIL</span> <a href="#"><b>priyank@enchanting-travels.com</b></a></p>
+                <p><span>TEL</span> <b>USA +1 888 263 2574</b></p>
+                <p><span>WEB</span> <a href="#"><b>enchantingtravels.com</b></a></p>
+              </div>
+            </div>
+          </footer><!-- pdffooter -->
+
+        </section><!-- pdf section page ends -->
+
+        <pagebreak></pagebreak><!-- page break -->
+
+        <section><!-- pdf section page -->
+          <div class="wrapper">
+
+            <div class="header"><!-- pdfheader -->
+              <div class="container">
+                <div class="logo">
+                  <img src="logo.png" width="142">
+                </div>
+                <div class="head-title">
+                  IMPORTANT INFORMATION
+                </div>
+              </div>
+            </div><!-- pdfheader ends -->
+
+            <div class="container"><!-- main content container -->
+              <div class="main-container">
+                <div class="page">
+                  <div class="imp-info">
+
+                    <h2>Important Notes...</h2>
+                    <ul id="price-include">
+                      <li>Special note for flights please ensure you carry a hard (printed) copy of your E-ticket to avoid any printing fees at the airport. You will find these in your welcome kit.</li>
+                      <li>Baggage allowance in India for international flights varies depending upon which airline and class of seat you choose.. Kindly note that your domestic flight baggage allowance is usually less. As a rule of thumb, most airlines in India have a maximum baggage allowance of 15 kg (33 pounds) and you may be subject to excess weight baggage charges if you exceed this.</li>
+                    </ul>
+
+                    <h2>Don't Forget To...</h2>
+                    <ul id="whthappenext">
+                      <li><span>Apply for your visa</span><br>
+                        India: Travelers from most countries will need a tourist visa to India, which can be obtained from the Indian Embassy in your country of residence. Please take care of this well in advance, as embassies in some countries may not be able to rush visa applications.<br>
+                        Important: Please note that a permit is required for guests visiting Sikkim and we suggest that you apply for this at the same time as your visa. This permit incurs an additional fee of USD $30. Further information about how and where to apply can be found at: http://sikkim.nic.in/homedept/ilpfaqs.htm<br>
+                        All hotels in Darjeeling & Sikkim require a passport size photograph of you at the time of check in.</li>
+
+
+                        <li><span>Purchase your travel insurance</span><br>
+                          We highly encourage you to <a href="#">purchase travel insurance</a> for your trip. This will guard against incurring a loss of your trip cost in case of cancellation caused due to medical illness, family emergency, personal reasons or other factors beyond one’s control.<br>
+                          While Enchanting Travels does not provide travel insurance or endorse any particular insurance provider, several of our past guests have used the following company for travel insurance: Travel Guard (www.travelguard.com).</li>
+
+                          <li><span>Received your Enchanting Travel Guide?</span><br>
+                            We highly recommend you to read through the Enchanting Travel Guide. If you have not already received this, please request this from your Travel Consultant or Trip Coordinator. This information will ensure you are fully prepared for your trip; it also has a Frequently Asked Questions section that we hope answers many of your questions.</li>
+                          </ul>
+
+                          <h2>Thank you</h2>
+                          <p class="goldline">Thank you once again for booking your trip with Enchanting Travels.</p>
+                          <br>
+                          <div class="regards">
+                            <p><b>We look forward to welcoming you in Asia soon.</b></p>
+                            <span>Warm regards,</span>
+                          </div>
+                          <div class="signature">
+                            <div>Renuka Salvi</div>
+                            <span>Enchanting Travels </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- main content container ends -->
+                  </div><!-- wrapper ends -->
+
+                  <footer><!-- pdffooter -->
+                    <div class="foo">
+                      <div class="container">
+                        <p><span>EMAIL</span> <a href="#"><b>priyank@enchanting-travels.com</b></a></p>
+                        <p><span>TEL</span> <b>USA +1 888 263 2574</b></p>
+                        <p><span>WEB</span> <a href="#"><b>enchantingtravels.com</b></a></p>
+                      </div>
+                    </div>
+                  </footer><!-- pdffooter -->
+
+                </section><!-- pdf section page ends -->
+
+                <pagebreak></pagebreak><!-- page break -->
+
+                <section><!-- pdf section page -->
+                  <div class="wrapper">
+
+                    <div class="header"><!-- pdfheader -->
+                      <div class="container">
+                        <div class="logo">
+                          <img src="logo.png" width="142">
+                        </div>
+                        <div class="head-title">
+                          CANCELLATION POLICY
+                        </div>
+                      </div>
+                    </div><!-- pdfheader ends -->
+
+                    <div class="container"><!-- main content container -->
+                      <div class="main-container">
+                        <div class="page">
+                          <h2>Cancellation Policy</h2>
+                          <p>Should you need to change or cancel your trip after confirming your booking with us, we require you to inform Enchanting Travels in writing. You may be entitled to a refund from your travel insurance company depending on the reason for your cancellation. Our cancellation charges are as follows:</p>
+                          <ul id="price-include">
+                            <li>Cancellation 30 or more days before departure: 20%</li>
+                            <li>Cancellation 15-29 days before departure: 30%</li>
+                            <li>Cancellation 7-14 days before departure: 50%</li>
+                            <li>Cancellation 1-7 days before departure: 65%</li>
+                            <li>Cancellation / shortening trip after start of trip: 100%</li>
+                          </ul>
+                          <p>For full information and details, please <a href="#">click here</a> for our Terms and Conditions on our website.</p>
+                        </div>
+                      </div><!-- main content container ends -->
+                    </div><!-- wrapper ends -->
+
+                    <footer><!-- pdffooter -->
+                      <div class="foo">
+                        <div class="container">
+                          <p><span>EMAIL</span> <a href="#"><b>priyank@enchanting-travels.com</b></a></p>
+                          <p><span>TEL</span> <b>USA +1 888 263 2574</b></p>
+                          <p><span>WEB</span> <a href="#"><b>enchantingtravels.com</b></a></p>
+                        </div>
+                      </div>
+                    </footer><!-- pdffooter -->
+
+                  </section><!-- pdf section page ends -->
+
+                </div><!-- main wrapper ends -->
+
+              </body>
+              </html>
