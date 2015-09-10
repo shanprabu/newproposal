@@ -1521,6 +1521,10 @@ section{
 		color: #ab9175 !important;
 		text-transform: uppercase;
 	}
+	.goldtxt a, .goldtxt a:hover, .goldtxt a:focus, .goldtxt a:active,{
+		color: #ab9175 !important;
+		text-transform: uppercase;
+	}
 	.paymentmethod{
 		display: inline-block;
 		margin-top: 15px;
