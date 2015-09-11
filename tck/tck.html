@@ -262,73 +262,166 @@
   }
 
 
-
-  .greyspace{
-    height: 20px;
-    background-color: #ECECEC;
-    border: 0;
-    padding: 5px;
-    text-align: left;
+  .bilnumbernadd{
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    color: #3b2e26;
+    padding-top: 25px;
+    position: relative;
+    min-height: 95px;
   }
-  .bdr-ryt2{border-right: 2px solid #757575 !important;}
-  .font20{font-size: 20px;}
-  .font16{font-size: 16px;}
-  .font14{font-size: 14px;}
-  .fontbold{font-weight: bold;}
-  .wdtperc40{width:40%;}
-  .wdtperc25{width:25%;}
-  .text-right{text-align: right;}
-  .text-left{text-align: left;}
-  .greyheader{
-    background-color: #ECECEC;
-    border: 0;
+  .billnumber{
+    vertical-align: bottom;
+    float: left;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
-
-  .greyheader td{
-    border: 0;
+  .address{
+    float: right;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 600;
   }
-
-  /*------ pdffooter -------*/
-  .first-page-foo{
-    background-color: #fff !important;
-    border-top: 2px solid #ededed;
-  }
-  .first-page-foo p{
+  .date{
+    font-weight: 100;
+    color: #CEB691;
     font-size: 18px;
+  }
+
+  .triphighlght{
+    padding-top: 25px;
+  }
+
+  .triphighlght div{
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 20px;
+    font-weight: 100;
+  }
+
+  .triphighlght div span{
     font-weight: bold;
   }
-  .first-page-foo .foo-icons{
+
+  .thankyou{
+    padding-top: 25px;
     width: 100%;
-    text-align: center;
-    margin: 10px 0px;
-
+    font-weight: 600;
+  }
+  .table-section{
+    margin-top: 16px;
+    border: 2px solid #757575;
   }
 
-  footer{
-    background-color: #efedde;
-    margin-top: 25px;
+  table {
+    border-collapse: collapse;
+    width: 100%;
   }
+  tr{border: 0;}
+  th, td {
+   border: 0;
+   padding: 12px 8px;
+ }
+ th {
+  font-weight: bold;
+}
 
-  footer .foo{
-    margin: 0 auto;
-    width: 1020px;
-    font-size: 14px;
-    color: #3c2e25;
-  }  
+.invo-payopt{
+  margin: 25px 0px;
+}
 
-  footer .foo .container{
-    padding: 20px 0px;
-  }
+.invo-payopt h3{
+  margin: 0px 0px 10px 0px
+}
 
-  .foo .container span{
-    display: inline-block;
-    text-transform: uppercase;
-  }
-  .foo .container p {
-    line-height: 18px;
-    margin: 0;
-  }
-  /*------ pdffooter ends -------*/
+.invo-payopt p{
+  margin: 0px;
+}
+
+.invo-optcon{
+  margin-top: 15px;
+  border-top: 1px dashed #DBDAD9;
+  border-bottom: 1px dashed #DBDAD9;
+  display: inline-block;
+  padding-bottom: 25px;
+}
+
+.invo-optcon div{
+  width: 30%;
+  float: left;
+  margin-right: 34px;
+}
+
+.greyspace{
+  height: 20px;
+  background-color: #888888;
+  border: 0;
+  padding: 0px;
+}
+
+.bdr-ryt2{border-right: 2px solid #757575 !important;}
+.font20{font-size: 20px;}
+.font16{font-size: 16px;}
+.font14{font-size: 14px;}
+.fontbold{font-weight: bold;}
+.wdtperc40{width:40%;}
+.wdtperc25{width:25%;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.greyheader{
+  background-color: #ECECEC;
+  border: 0;
+}
+
+.greyheader td{
+  border: 0;
+}
+
+/*------ pdffooter -------*/
+.first-page-foo{
+  background-color: #fff !important;
+  border-top: 2px solid #ededed;
+}
+.first-page-foo p{
+  font-size: 18px;
+  font-weight: bold;
+}
+.first-page-foo .foo-icons{
+  width: 100%;
+  text-align: center;
+  margin: 10px 0px;
+
+}
+
+footer{
+  background-color: #efedde;
+  margin-top: 25px;
+}
+
+footer .foo{
+  margin: 0 auto;
+  width: 1020px;
+  font-size: 14px;
+  color: #3c2e25;
+}  
+
+footer .foo .container{
+  padding: 20px 0px;
+}
+
+.foo .container span{
+  display: inline-block;
+  text-transform: uppercase;
+}
+.foo .container p {
+  line-height: 18px;
+  margin: 0;
+}
+/*------ pdffooter ends -------*/
 
 </style><!-- /styling -->
 
@@ -634,7 +727,7 @@
                           <img src="logo.png" width="142">
                         </div>
                         <div class="head-title">
-                          CANCELLATION POLICY
+                          INVOICE
                         </div>
                       </div>
                     </div><!-- pdfheader ends -->
@@ -642,33 +735,146 @@
                     <div class="container"><!-- main content container -->
                       <div class="main-container">
                         <div class="page">
-                          <h2>Cancellation Policy</h2>
-                          <p>Should you need to change or cancel your trip after confirming your booking with us, we require you to inform Enchanting Travels in writing. You may be entitled to a refund from your travel insurance company depending on the reason for your cancellation. Our cancellation charges are as follows:</p>
-                          <ul id="price-include">
-                            <li>Cancellation 30 or more days before departure: 20%</li>
-                            <li>Cancellation 15-29 days before departure: 30%</li>
-                            <li>Cancellation 7-14 days before departure: 50%</li>
-                            <li>Cancellation 1-7 days before departure: 65%</li>
-                            <li>Cancellation / shortening trip after start of trip: 100%</li>
-                          </ul>
-                          <p>For full information and details, please <a href="#">click here</a> for our Terms and Conditions on our website.</p>
+
+                          <div class="bilnumbernadd">
+                            <div class="billnumber">Bill Number: 20264</div>
+                            <div class="address">
+                              Hardev Bains<br>
+                              412 Boreham Blvd, Manitoba<br>
+                              Winnipeg<br>
+                              Canada<br>
+                              <span class="date">22 Jul 2015</span>
+                            </div>
+                          </div>
+
+                          <div class="triphighlght">
+                            <div><span>Submitted To:</span> Hardev Bains</div>
+                            <div><span>Trip Destination:</span> Asia </div>
+                            <div><span>Trip Dates:</span> 19 Dec 2015 to 5 Jan 2016</div>
+                          </div>
+
+                          <div class="table-section">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th colspan="2" class="greyspace"></th>
+                                </tr>
+                                <tr class="greyheader">
+                                  <td scope="col" class="text-left font20 bdr-ryt2 fontbold">Trip Costs: </td>
+                                  <td scope="col" class="wdtperc20 text-right font20 fontbold">Amount</td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="font16 bdr-ryt2 fontbold">Total Cost of Trip (USD): </td>
+                                  <td class="wdtperc20 text-right font16 fontbold">$ 28250</td>
+                                </tr>
+                                <tr class="greyheader">
+                                  <td scope="col" class="text-left bdr-ryt2 font14 fontbold">Total Amount Due upon Receipt (20%) advance booking amount </td>
+                                  <td scope="col" class="wdtperc20 text-right font16 fontbold">$ 8475</td>
+                                </tr>
+                                <tr class="greyheader">
+                                  <td scope="col" class="text-left bdr-ryt2 font14 fontbold">Balance Amount Due (80%) 30 days before arrival </td>
+                                  <td scope="col" class="wdtperc20 text-right font16 fontbold">$ 19775</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="invo-payopt">
+                            <h3>Payment Options:</h3>
+                            <p><b>The advance payment is due immediately (to confirm your booking with us) and the balance payment is due 30 days prior to your arrival.</b></p>
+                          </div>
+                          <div class="invo-optcon">
+                            <div>
+                              <h3>Option 1:  Credit Card</h3>
+                              <p>Please use the personalized payment link to our secure online payment gateway to pay by credit card.</p>
+                              <p>Your Travel Consultant will have sent you a link to this.</p>
+                              <p>We prefer Visa or MasterCard but also accept American Express.</p>
+                            </div>
+                            <div>
+                              <h3>Option 2: Bank transfer</h3>
+                              <h3>For guests whose invoices are in GBP (£), AU$ or EUROS (€):</h3>
+                              <p>Please send us an electronic bank transfer to our bank in Germany: </p>
+                              <p><b>Name of Account Holder:</b>Enchanting Travels AG<br>
+                                <b>Bank:</b> Deutsche Bank Munich<br>
+                                <b>Bank Address:</b>
+                                Promenadeplatz 15, Munich, Germany 80271<br> 
+                                <b>BIC (SWIFT Code):</b> DEUTDEDBMUC<br> 
+                                <b>IBAN:</b> DE97 7007 0024 0181 8103 00
+                              </p>
+                            </div>
+                            <div>
+                              <h3>Option 3: Check/Cheque</h3>
+                              <p>For guests whose invoices are in GBP (£), AU$ or EUROS (€):</p>
+                              <p>Please write us a cheque in the name of Enchanting Travels, AG and send it to: </p>
+                              <p><b>Enchanting Travels, AG.</b>
+                                Sonnenstrasse 26b, Feldkirchen, Germany 85622</p>
+                              </div>
+                            </div>
+                            <div class="thankyou">Thank you.</div>
+
+                          </div>
+                        </div><!-- main content container ends -->
+                      </div><!-- wrapper ends -->
+
+                      <footer><!-- pdffooter -->
+                        <div class="foo">
+                          <div class="container">
+                            <p><span>EMAIL</span> <a href="#"><b>priyank@enchanting-travels.com</b></a></p>
+                            <p><span>TEL</span> <b>USA +1 888 263 2574</b></p>
+                            <p><span>WEB</span> <a href="#"><b>enchantingtravels.com</b></a></p>
+                          </div>
                         </div>
-                      </div><!-- main content container ends -->
-                    </div><!-- wrapper ends -->
+                      </footer><!-- pdffooter -->
 
-                    <footer><!-- pdffooter -->
-                      <div class="foo">
-                        <div class="container">
-                          <p><span>EMAIL</span> <a href="#"><b>priyank@enchanting-travels.com</b></a></p>
-                          <p><span>TEL</span> <b>USA +1 888 263 2574</b></p>
-                          <p><span>WEB</span> <a href="#"><b>enchantingtravels.com</b></a></p>
-                        </div>
-                      </div>
-                    </footer><!-- pdffooter -->
+                    </section><!-- pdf section page ends -->
 
-                  </section><!-- pdf section page ends -->
+                    <pagebreak></pagebreak><!-- page break -->
 
-                </div><!-- main wrapper ends -->
+                    <section><!-- pdf section page -->
+                      <div class="wrapper">
 
-              </body>
-              </html>
+                        <div class="header"><!-- pdfheader -->
+                          <div class="container">
+                            <div class="logo">
+                              <img src="logo.png" width="142">
+                            </div>
+                            <div class="head-title">
+                              CANCELLATION POLICY
+                            </div>
+                          </div>
+                        </div><!-- pdfheader ends -->
+
+                        <div class="container"><!-- main content container -->
+                          <div class="main-container">
+                            <div class="page">
+                              <h2>Cancellation Policy</h2>
+                              <p>Should you need to change or cancel your trip after confirming your booking with us, we require you to inform Enchanting Travels in writing. You may be entitled to a refund from your travel insurance company depending on the reason for your cancellation. Our cancellation charges are as follows:</p>
+                              <ul id="price-include">
+                                <li>Cancellation 30 or more days before departure: 20%</li>
+                                <li>Cancellation 15-29 days before departure: 30%</li>
+                                <li>Cancellation 7-14 days before departure: 50%</li>
+                                <li>Cancellation 1-7 days before departure: 65%</li>
+                                <li>Cancellation / shortening trip after start of trip: 100%</li>
+                              </ul>
+                              <p>For full information and details, please <a href="#">click here</a> for our Terms and Conditions on our website.</p>
+                            </div>
+                          </div><!-- main content container ends -->
+                        </div><!-- wrapper ends -->
+
+                        <footer><!-- pdffooter -->
+                          <div class="foo">
+                            <div class="container">
+                              <p><span>EMAIL</span> <a href="#"><b>priyank@enchanting-travels.com</b></a></p>
+                              <p><span>TEL</span> <b>USA +1 888 263 2574</b></p>
+                              <p><span>WEB</span> <a href="#"><b>enchantingtravels.com</b></a></p>
+                            </div>
+                          </div>
+                        </footer><!-- pdffooter -->
+
+                      </section><!-- pdf section page ends -->
+
+                    </div><!-- main wrapper ends -->
+
+                  </body>
+                  </html>
