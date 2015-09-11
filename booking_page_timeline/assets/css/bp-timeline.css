@@ -494,8 +494,6 @@ hr{
 	-webkit-transform: translateZ(0);
 	border: 2px solid #b9a284;
 	border: 2px solid rgba(185,162,132,.45);
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
 }
 
 .btn-default:hover {
@@ -525,9 +523,6 @@ hr{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=85);
 	-webkit-opacity: .85;
 	-khtml-opacity: .85;
@@ -538,6 +533,7 @@ hr{
 	-o-transition: opacity .15s ease-in;
 	transition: opacity .15s ease-in;
 	-webkit-transform: translateZ(0);
+	font-weight: 700;
 }
 
 .btn-primary:hover {
@@ -547,6 +543,7 @@ hr{
 	opacity: 1;
 	font-family: 'Soin_Sans_Pro_Light';
 	letter-spacing: 0.2em;
+	font-weight: 700;
 }
 
 .btn-primary span{
@@ -1802,7 +1799,7 @@ section{
 		color: #CCCCCC;
 		display: block;
 		width: 100%;
-		height: 72px;
+		height: 73px;
 		position: absolute;
 		clear: both;
 		bottom:0;
@@ -1985,8 +1982,6 @@ section{
 		-webkit-transform: translateZ(0);
 		border: 2px solid #b9a284;
 		border: 2px solid rgba(185,162,132,.45);
-		-webkit-background-clip: padding-box;
-		background-clip: padding-box;
 	}
 
 	.btn-brown-head:hover {
