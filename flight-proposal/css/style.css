@@ -153,11 +153,13 @@ body .ui-state-highlight, body .ui-widget-content .ui-state-highlight, body .ui-
 	background: #fbf9ee;
 }
 #wrapper {
-	width: 1349px;
+	width: 100%;
 	margin: 0px auto;
 	overflow: auto;
 	position: relative;
 	min-height: 100%;
+	max-width: 1366px;
+	min-width: 1349px;
 }
 #wrapper header {
 	height: 67px;
@@ -208,8 +210,7 @@ body .ui-state-highlight, body .ui-widget-content .ui-state-highlight, body .ui-
 }
 #wrapper footer {
 	background: #36312b;
-	padding: 15px 90px;	
-	width: 1349px;
+	padding: 15px 90px;
     position: absolute;
     bottom: 0;
     color: #c2c0bf;
@@ -217,12 +218,36 @@ body .ui-state-highlight, body .ui-widget-content .ui-state-highlight, body .ui-
     letter-spacing: 1.5px;
     font-weight: 700;
 }
+.to-top {
+  display: inline-block;
+  height: 39px;
+  width: 39px;
+  position: fixed;
+  bottom: 60px;
+  right: 25px;
+  background: url(../images/up_icon.png);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.to-top.visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.table>tbody>tr.active>td, .table>tbody>tr.active>th, .table>tbody>tr>td.active, .table>tbody>tr>th.active, .table>tfoot>tr.active>td, .table>tfoot>tr.active>th, .table>tfoot>tr>td.active, .table>tfoot>tr>th.active, .table>thead>tr.active>td, .table>thead>tr.active>th, .table>thead>tr>td.active, .table>thead>tr>th.active {
+	background-color: #f4f4f4;
+}
 /**** common css ends here ****/
 #wrapper main {
 	padding: 0px 90px 120px;
 	overflow-y: hidden;
+	width: 1349px;
+	margin: 0 auto;
 }
-#wrapper main h1 {
+#wrapper main h1.search-page-title {
 	margin: 30px 0px 30px;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -344,6 +369,12 @@ input[type="checkbox"] {
     background-repeat: no-repeat;
     padding-left: 41px;
 }
+#wrapper main form#search-form .return-date input {
+	background-image: url(../images/return-date.png);
+    background-position: 13px 8px;
+    background-repeat: no-repeat;
+    padding-left: 41px;
+}
 .btn-red {
     background-color: #DC665A;
     border-radius: 4px;
@@ -421,7 +452,8 @@ input[type="checkbox"] {
 }
 #wrapper main .top-bar.col-md-12 .search-params div.pull-right button {
 	background: #fff;
-    border: 1.5px solid rgba(186,163,132,0.85);
+	outline: none;
+    border: 1.5px solid rgba(186,163,132,0.6);
     border-radius: 4px;
     padding: 10px 16px 9px;
     margin-top: 3px;
@@ -431,6 +463,9 @@ input[type="checkbox"] {
     text-transform: uppercase;
     line-height: 12px;
     letter-spacing: 1px;
+}
+#wrapper main .top-bar.col-md-12 .search-params div.pull-right button:hover {
+	border: 1.5px solid rgba(186,163,132,1);
 }
 #wrapper main section#filters {
 	width: 275px;
@@ -474,6 +509,35 @@ input[type="checkbox"] {
 }
 #wrapper main section#filters ul li label.checkbox-inline {
 	padding-top: 2px;
+}
+#wrapper main section#filters ul.airline-filter.show-less {
+	overflow: hidden;
+}
+#wrapper main section#filters ul.airline-filter.show-less li + li + li + li + li {
+	display: none;
+}
+#wrapper main section#filters ul.airline-filter.show-less li:last-child {
+	display: list-item;
+}
+#wrapper main section#filters ul.airline-filter li:last-child label {
+	padding-left: 27px;
+	margin-top: 12px;
+	background-size: 10px;
+	cursor: pointer;
+}
+#wrapper main section#filters ul.airline-filter li:last-child label.show-more-link {
+	background: url(../images/tab-open-arrow.png) 5px 7px no-repeat;
+}
+#wrapper main section#filters ul.airline-filter li:last-child label.show-less-link {
+	background: url(../images/up-arrow.png) 5px 7px no-repeat;
+}
+#wrapper main section#filters ul.airline-filter li:last-child label.show-more-link,
+#wrapper main section#filters ul.airline-filter.show-less li:last-child label.show-less-link {
+	display: none;
+}
+#wrapper main section#filters ul.airline-filter.show-less li:last-child label.show-more-link,
+#wrapper main section#filters ul.airline-filter li:last-child label.show-less-link {
+	display: block;
 }
 #wrapper main section#results-container {
 	/*padding: 0px 8px 0px 12px;*/
@@ -522,30 +586,28 @@ section#results-container div.sorting-options > div a {
 }
 section#results-container div.search-result-row {
 	overflow: auto;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 	padding: 1px 8px 1px 12px;
 }
 section#results-container div.search-result-row div.flight-info .website {
     float: right;
-    width: 139px;
+    width: 137px;
     height: 139px;
     background-color: #fff;
-    margin-right: 3px;
-    padding: 20px 30px;
-    border: 1px solid rgba(152,152,152,0.25);
-    box-shadow: 0px 0px 3px rgba(152,152,152,0.25);
+    margin-left: 8px;
+    margin-right: 4px;
+    padding: 15px;
+    text-align: center;
+    /*border: 1px solid rgba(152,152,152,0.25);*/
+    box-shadow: 0px 0px 3px #989898;
 }
 section#results-container div.search-result-row div.flight-info .segment {
 	background-color: #fff;
 	padding: 15px 0px 0px;
 	width: 725px;
 	position: relative;
-	border: 1px solid #dddddd;
-	box-shadow: 0px 0px 3px rgba(152,152,152,0.25);
-}
-section#results-container div.search-result-row div.flight-info .tab-content {
-	float: left;
-	width: 100%;
+	/*border: 1px solid #dddddd;*/
+	box-shadow: 0px 0px 3px #989898;
 }
 section#results-container div.search-result-row div.flight-info .segment div.pull-left > div, section#results-container div.search-result-row div.flight-info .segment .src-dest > div {
 	float: left;
@@ -595,6 +657,29 @@ div.search-result-row div.flight-info .segment div.pull-left:nth-last-child(3) h
 	float: left;
 	margin-top: 10px
 }
+.additional-details .nav.nav-tabs {
+	border: none;
+}
+.additional-details .nav.nav-tabs li {
+	padding: 10px 15px;
+    margin: 0px 5px;
+}
+.additional-details .nav.nav-tabs li.active {
+}
+.additional-details .nav.nav-tabs li a.collapsed  {
+	border: none;
+    background: url(../images/tab-closed-arrow.png) 0px center no-repeat;
+}
+.additional-details .nav.nav-tabs > li > a:hover {
+	border: none;
+}
+.additional-details .nav.nav-tabs li a{
+	padding: 0px 0px 0px 10px;
+	color: #b9a284;
+	font-size: 13px;
+	border: none;
+	background: url(../images/tab-open-arrow.png) 0px center no-repeat;
+}
 div.search-result-row div.flight-info div.airline-name  {
 	position: relative;
 }
@@ -620,6 +705,10 @@ div.search-result-row div.flight-info div.website div:first-child {
 	color: #5d5d5d;
 	font-weight: 700;
 	padding-top: 5px;
+}
+div.search-result-row div.flight-info div.website div a {
+	display: inline-block;
+	margin-top: 12px;
 }
 div.search-result-row div.flight-info div.airline-name div, 
 div.search-result-row div.flight-info div.source div:last-child,
@@ -660,24 +749,473 @@ div.search-result-row div.flight-info div.fare-and-select div:last-child .checkb
 	color: #b9a284;
 	background-size: 16px;
 }
+div.search-result-row div.flight-info div.panel-group .panel {
+	float: left;
+	width: 99.9%;
+	margin: 0px;
+	border: none;
+	background: none;
+}
+div.search-result-row div.flight-info div.panel-group .collapse, div.search-result-row div.flight-info div.panel-group .collapsing {
+    box-shadow: 0px 0px 3px #989898;
+    width: 99.6%;
+    margin: 5px 0px 3px;
+}
+div.search-result-row div.flight-info div.panel-group .collapse h3.col-md-12, div.search-result-row div.flight-info div.panel-group .collapsing h3.col-md-12 {
+	background-color: #EDEDED;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 17px 30px 14px;
+	color: #5d5d5d;
+	text-shadow: 0px 0.01px 0.01px #9E9E9E;
+	letter-spacing: 1px;
+}
+div.search-result-row div.flight-info div.panel-group .collapse > div.col-md-12, 
+div.search-result-row div.flight-info div.panel-group .collapsing > div.col-md-12 {
+	padding: 16px 30px;
+	background-color: #fff;
+}
+div.search-result-row div.flight-info div.panel-group .flight-details-tab > div.col-md-12.layover {
+	padding: 3px 30px 6px;
+}
+div.search-result-row div.flight-info div.panel-group .collapse.baggage-info-tab div.col-md-5, div.search-result-row div.flight-info div.panel-group .collapsing.baggage-info-tab div.col-md-5 {
+	padding-right: 30px;
+}
+div.search-result-row div.flight-info div.panel-group .collapse h4.col-md-12, div.search-result-row div.flight-info div.panel-group .collapsing h4.col-md-12 {
+	font-size: 14px;
+	font-weight: 700;
+	color: #5d5d5d;
+	letter-spacing: 1px;
+	text-shadow: 0px 0.01px 0.01px #9E9E9E;
+	margin-bottom: 5px;
+}
+.collapse .table.table-bordered, .collapsing .table.table-bordered {
+	border-color: rgba(152,152,152,0.25);
+	/*box-shadow: 0px 0px 1px #989898;*/
+}
+.collapse .table-bordered td, .collapse .table-bordered th,
+.collapsing .table-bordered td, .collapsing .table-bordered th {
+	border-width: 1px;
+	font-size: 12px;
+	font-weight: 500;
+	color: #5d5d5d;
+	text-shadow: 0px 0.01px 0.01px #9E9E9E;
+	letter-spacing: 1px;
+	padding-left: 11px;
+}
+div.search-result-row div.flight-info div.panel-group .flight-details-tab > div.pull-left > div.col-md-12 > div.col-md-12:nth-child(1),
+div.search-result-row div.flight-info div.panel-group .flight-details-tab > div.pull-left > div.col-md-12 > div.col-md-12:nth-child(2) {
+	margin-bottom: 6px;
+}
+div.search-result-row div.flight-info div.panel-group .flight-details-tab > div.pull-left > div.col-md-12 > div.col-md-12 > div.col-md-3 {
+	padding-right: 15px;
+}
+div.search-result-row div.flight-info div.panel-group .flight-details-tab > div.pull-left > div.col-md-12 > div.col-md-12:nth-child(2) > div.airport:nth-child(2) {
+	padding-right: 50px;
+	background: url(../images/flight-arrow.png) 93% center no-repeat;
+}
+div.search-result-row div.flight-info div.panel-group .flight-details-tab > div.pull-left > div.col-md-12 > div.col-md-12 > div.col-md-4:nth-child(3) {
+	padding-left: 40px;
+	padding-right: 20px;
+}
+.flight-details-tab {
+	letter-spacing: 1px;
+	color: #5d5d5d;
+	font-weight: 500;
+}
+.flight-details-tab > div.pull-left {
+	background: #fff;
+	padding: 16px 30px 6px;
+}
+.flight-details-tab > div.pull-left:nth-last-child(2) {
+	padding-bottom: 16px;
+}
+.flight-details-tab > div.pull-left:nth-last-child(2) .layover {
+	display: none;
+}
+.flight-details-tab > div.pull-left > div.col-md-12 .airline-code, 
+.flight-details-tab > div.pull-left > div.col-md-12 .terminal, 
+.flight-details-tab > div.pull-left > div.col-md-12 .airline-carrier-code,
+.flight-details-tab > div.pull-left > div.col-md-12 .flight-class,
+.flight-details-tab > div.pull-left > div.col-md-12 .no-of-stops {
+	font-size: 12px;
+	line-height: 25px;
+}
+.flight-details-tab > div.pull-left > div.col-md-12 .airline-logo-sm img{
+	max-height: 24px;
+}
+.flight-details-tab > div.pull-left > div.col-md-12 .time-city-code {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 24px;
+}
+.flight-details-tab > div.pull-left > div.col-md-12 .airport, .flight-details-tab > div.pull-left > div.col-md-12 .flight-duration{
+	font-size: 14px;
+	line-height: 25px;
+}
+.flight-details-tab > div.pull-left > div.col-md-12 .airways-name {
+	font-size: 13px;
+	line-height: 26px;
+}
+.flight-details-tab .layover {
+    border: 0;
+    position: relative;
+    height: 0;
+    margin-top: 18px;
+}
+.flight-details-tab .layover > div {
+	margin: 0; 
+	height: 0; 
+	border: 1px solid #ddd; 
+	border-width: 1px 0px 0px;
+}
+.flight-details-tab .layover > span {
+	position: relative; 
+/*	left: 0; 
+	right: 0; */
+	top: -12px; 
+	display: inline-block; 
+	background-color: #fff; 
+	padding: 0px 16px;
+	font-size: 12px;
+	font-weight: 500;
+}
+.flight-details-tab .layover > div:before, .flight-details-tab .layover > div:after,
+.flight-details-tab .layover > span:before, .flight-details-tab .layover > span:after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: url(../images/dot.png) no-repeat;
+    position: absolute;
+    /*left: 0;*/
+    top: 7px;
+}
+.flight-details-tab .layover > div:before {
+	left: 0px;
+    top: -2px;
+} 
+.flight-details-tab .layover > div:after {
+	right: 0px;
+    top: -2px;
+}
+.flight-details-tab .layover > span:before {
+	left: 0;
+}
+.flight-details-tab .layover > span:after {
+	right: 0;
+}
+div.search-result-row div.flight-info div.panel-group .flight-details-tab.collapse > .time-date-details,
+div.search-result-row div.flight-info div.panel-group .flight-details-tab.collapsing > .time-date-details {
+	padding: 11px 30px 6px;
+}
+.flight-details-tab .time-date-details label{
+	font-size: 12px;
+	line-height: 28px;
+	font-weight: 500;
+}
+.flight-details-tab .time-date-details label.pull-left:nth-child(1) {
+	padding-left: 28px;
+	background: url(../images/date.png) left 0px no-repeat;
+	margin-right: 40px;
+}
+.flight-details-tab .time-date-details label.pull-left:nth-child(2) {
+	padding-left: 28px;
+	background: url(../images/return-date.png) left 0px no-repeat;
+}
+.flight-details-tab .time-date-details label.pull-right.text-right {
+	padding-left: 19px;
+	background: url(../images/time-icon.png) left 5px no-repeat;
+}
+.fare-details-tab h3.col-md-12 span {
+	float: right;
+	font-size: 14px;
+	text-transform: capitalize;
+	letter-spacing: 1.6px;
+}
+.fare-details-tab .note {
+	font-size: 12px;
+	font-weight: 500;
+	color: #5d5d5d;
+	text-shadow: 0px 0.01px 0.01px #9E9E9E;
+	letter-spacing: 1px;
+}
+.fare-details-tab .fare-break-up-tbl {
+	padding-right: 50px;
+}
+.fare-details-tab .fare-break-up-tbl td {
+	font-size: 14px;
+	padding: 5px 12px;
+}
+.fare-details-tab .fare-break-up-tbl .table tr:last-child td {
+	font-size: 15px;
+	color: #b9a284;
+	padding: 10px 12px;
+}
+.fare-details-tab div.col-md-12 > div.col-md-4:nth-child(2) {
+	padding-right: 25px;
+}
+.fare-details-tab div.col-md-12 > div.col-md-4:nth-child(3) {
+	padding-left: 25px;
+}
+.fare-details-tab div.col-md-12 > div.col-md-12 {
+	margin-bottom: 10px;
+}
+section#results-container ul.pagination.pull-right {
+    margin-right: 11px;
+}
+section#results-container ul.pagination.pull-right > li > a {
+	width: 40px;
+	height: 40px;
+	padding: 11px;
+	color: #5d5d5d;
+	font-size: 14px;
+	text-align: center;
+}
+section#results-container ul.pagination.pull-right > li > a:hover, section#results-container ul.pagination.pull-right > li > a:focus{
+	background: #f5f4f4;
+}
+section#results-container ul.pagination.pull-right > li > a[aria-label="Previous"] {
+	background: url(../images/prev-page.png) center #fff no-repeat;
+	font-size: 0px;
+}
+section#results-container ul.pagination.pull-right > li > a[aria-label="Next"] {
+	background: url(../images/next-page.png) center #fff no-repeat;
+	font-size: 0px;
+}
 /**** Search Results css ends here ****/
 
-.to-top {
-  display: inline-block;
-  height: 39px;
-  width: 39px;
-  position: fixed;
-  bottom: 60px;
-  right: 25px;
-  background: url(../images/up_icon.png);
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s;
+/**** Modify search css starts here ****/
+#modifySearchCollapse {
+	position: absolute;
+	top: 104%;
+	z-index: 1000;
+	background-color: #FAFAFA;
+	padding: 13px 0px 0px 25px;
+	border: 1px solid #C7C7C7;
+	box-shadow: 0px 0px 2px #C7C7C7;
 }
-.to-top.visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1;
+#wrapper #modifySearchCollapse form#search-form > .col-md-12 {
+	margin-bottom: 30px;
 }
+#wrapper #modifySearchCollapse form#search-form div.col-md-12 > .location:first-child {
+	background-position: 334px center;
+}
+/**** Modify search css ends here ****/
+
+/**** Flight proposal page css starts here ****/
+#wrapper.proposal-page {
+	background: #F2F2F2;
+}
+#wrapper.proposal-page header {
+	padding: 15px 173px 17px;
+	height: auto;
+	margin-bottom: 3px;
+}
+#wrapper.proposal-page header a.logo-container {
+	padding: 0px;
+}
+#wrapper.proposal-page header a.logo-container img {
+	width: 138px;
+	height: auto;
+}
+#wrapper.proposal-page header button {
+	padding: 11px 25px 6px 30px;
+	margin-top: 2px;
+	margin-left: 17px;
+	background-color: #36312a;
+	color: #c4ad8e;
+	border: 2px solid rgba(185,162,132,0.25);
+	border-radius: 5px;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	opacity: 0.8;
+}
+#wrapper.proposal-page header button:hover {
+	border-color: #b9a284;
+}
+#wrapper.proposal-page header button.download-btn {
+	background: url(../images/download-icon.png) 12px center no-repeat;
+}
+#wrapper.proposal-page header button.contact-btn {
+	background: url(../images/customer-support-icon.png) 14px center no-repeat;
+}
+#wrapper.proposal-page main {
+	width: 1020px;
+	margin: 0px auto;
+	padding: 50px 115px 50px 105px;
+	clear: both;
+	background: #fff;
+}
+#wrapper.proposal-page main .book-btn {
+	padding: 10px 15px 6px;
+	background: #dc665a;
+	color: #fffefe;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	border-radius: 4px;
+}
+#wrapper.proposal-page main .page-title {
+	overflow: auto;
+	margin-bottom: 61px;
+}
+#wrapper.proposal-page main .page-title h1 {
+	display: inline-block;
+	width: 60.5%;
+	font-size: 50px;
+	font-weight: 300;
+	color: #d1d1d1;
+	margin: 44px 0px 0;
+}
+#wrapper.proposal-page main .page-title > div {
+	width: 39.5%;
+	display: inline-block;
+	padding: 20px 30px 19px;
+	border: 6px solid #f2f2f2;
+}
+#wrapper.proposal-page main .page-title > div ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+#wrapper.proposal-page main .page-title > div ul li {
+	font-size: 16px;
+	font-weight: 500;
+	color: #595855;
+}
+#wrapper.proposal-page main .page-title > div ul li label {
+	font-weight: 700;
+	margin-bottom: 0px;
+	color: #595855;
+}
+#wrapper.proposal-page h2.section-title {
+	color: #595855;
+	font-size: 26px;
+	font-weight: 700;
+}
+#wrapper.proposal-page h3 {
+	color: #595754;
+	font-size: 22px;
+	font-weight: 700;
+	margin: 0px;
+	line-height: 25px;
+}
+#wrapper.proposal-page .suggested-flights p,#wrapper.proposal-page .imp-flight-info, #wrapper.proposal-page .suggested-flights .option-block ul li {
+	font-size: 17px;
+	color: #595754;
+}
+#wrapper.proposal-page .suggested-flights p {
+	margin-bottom: 24px;
+}
+#wrapper.proposal-page .suggested-flights .option-block {
+	border-top: 2px solid #f2f2f1;
+	overflow: auto;
+	padding: 23px 0px 10px;
+} 
+#wrapper.proposal-page .suggested-flights .option-block:last-child{
+	border-bottom: 2px solid #f2f2f1;
+}
+#wrapper.proposal-page .suggested-flights .option-block .option-info ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px 0px 25px;
+	display: inline-block;
+	width: 89%;
+}
+#wrapper.proposal-page .suggested-flights .option-block .option-info > span {
+	display: inline-block;
+	width: 10%;
+	text-align: right;
+}
+#wrapper.proposal-page .suggested-flights .option-block .option-info > span .book-btn {
+	margin-bottom: 33px;
+}
+#wrapper.proposal-page .suggested-flights .option-block .option-flight-details {
+	overflow: auto;
+	margin-bottom: 23px;
+}
+#wrapper.proposal-page .suggested-flights .option-block .option-flight-details > label {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #5d5d5d;
+}
+#wrapper.proposal-page .suggested-flights .option-block .option-flight-details > label span {
+	text-transform: none;
+}
+#wrapper.proposal-page .suggested-flights .option-block .option-flight-details  > div.col-md-12 {
+	background: #f7f4f1;
+	padding: 0px 75px 0px 45px;
+	color: #5d5d5d;
+	letter-spacing: 1px;
+}
+#wrapper.proposal-page .suggested-flights .option-block .option-flight-details  > div.col-md-12 .option-flight-segment {
+	padding: 23px 0px 10px 0px;
+	border-bottom: 1px dashed #000;
+}
+.option-flight-segment > div.col-md-12 {
+	margin-bottom: 10px;
+}
+#wrapper.proposal-page .suggested-flights .option-block .option-flight-details  > div.col-md-12 .option-flight-segment:last-child {
+	border: none;
+}
+.option-flight-details  > div.col-md-12 .option-flight-segment .time-city-code {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 24px;
+}
+.option-flight-details  > div.col-md-12 .option-flight-segment .airline-code {
+	font-size: 12px;
+	font-weight: 500;
+}
+.option-flight-details  > div.col-md-12 .option-flight-segment .city-name {
+	font-size: 14px;
+}
+.option-flight-details  > div.col-md-12 .option-flight-segment .airways-name {
+	font-size: 13px;
+}
+.option-flight-details  > div.col-md-12 .option-flight-segment .arr-date, .option-flight-details  > div.col-md-12 .option-flight-segment .dep-date {
+	font-size: 12px;
+}
+.option-flight-details  > div.col-md-12 .option-flight-segment > div.col-md-12 > div.col-md-3:nth-child(2) {
+	padding-right: 30px;
+}
+.option-flight-details  > div.col-md-12 .option-flight-segment > div.col-md-12 > div.col-md-3:nth-child(4) {
+	padding-left: 40px;
+}
+.option-flight-details  > div.col-md-12 .option-flight-segment > div.col-md-12:nth-child(2) > div.col-md-3:nth-child(3) {
+	position: relative;
+	top: -12px; 
+	height: 20px;
+	background: url(../images/flight-arrow.png) center center no-repeat;
+}
+#wrapper.proposal-page .imp-flight-info h2.section-title {
+	margin-top: 23px;
+	margin-bottom: 20px;
+}
+#wrapper.proposal-page .imp-flight-info > div > p {
+	margin-bottom: 11px;
+}
+#wrapper.proposal-page .price-info p {
+	line-height: 22px;
+}
+#wrapper.proposal-page .imp-flight-info h3 {
+	margin-bottom: 2px;
+}
+#wrapper.proposal-page .imp-flight-info .booking-flights-info ul {
+	list-style-position: inside;
+	padding: 0px;
+	margin: 0px;
+}
+#wrapper.proposal-page .imp-flight-info .booking-flights-info p {
+	margin: 0;
+}
+/**** Flight proposal page css ends here ****/

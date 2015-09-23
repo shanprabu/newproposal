@@ -69,9 +69,152 @@
 						<label> USD</label>
 					</div>
 					<div class="pull-right">
-						<button type="button">Modify Search</button>
+						<button type="button" data-toggle="collapse" data-target="#modifySearchCollapse" aria-expanded="false" aria-controls="modifySearchCollapse">Modify Search</button>
 					</div>
 				</section>
+				<div class="collapse" id="modifySearchCollapse">
+				  	<form id="search-form" class=" col-md-12">
+						<div id="search-type" class="col-md-12">
+							<div class="col-md-2">
+								<input type="radio" name="searchType" id="oneWay" value="oneWay" checked>
+								<label class="radio-inline" for="oneWay"> One - Way </label>
+							</div>
+							<div class="col-md-2">
+								<input type="radio" name="searchType" id="roundTrip" value="roundTrip">
+								<label class="radio-inline" for="roundTrip"> Round Trip </label>
+							</div>
+							<div class="col-md-2"> 
+								<input type="radio" name="searchType" id="multiCity" value="multiCity">
+								<label class="radio-inline" for="multiCity"> Multi - City </label>
+							</div>
+						</div>
+						<fieldset id="oneWay-form" class="col-md-12" disabled>
+							<div class="col-md-12">
+								<div class="form-group col-md-4 location">
+									<input type="text" class="form-control" name="from" placeholder="From">
+								</div>
+								<div class="form-group col-md-4 location">
+									<input type="text" class="form-control" name="to" placeholder="To">
+								</div>
+								<div class="form-group col-md-2 date">
+									<input type="text" class="form-control datepicker" name="depart" placeholder="Depart on">
+								</div>
+								<div class="form-group col-md-2 return-date">
+									<input type="text" class="form-control" name="" placeholder="---" >
+								</div>
+							</div>
+						</fieldset>
+						<fieldset id="roundTrip-form" class="col-md-12" disabled>
+							<div class="col-md-12">
+								<div class="form-group col-md-4 location">
+									<input type="text" class="form-control" name="from" placeholder="From">
+								</div>
+								<div class="form-group col-md-4 location">
+									<input type="text" class="form-control" name="to" placeholder="To">
+								</div>
+								<div class="form-group col-md-2 date">
+									<input type="text" class="form-control datepicker" name="departOn" placeholder="Depart on">
+								</div>
+								<div class="form-group col-md-2 return-date">
+									<input type="text" class="form-control datepicker" name="returnOn" placeholder="Return on">
+								</div>
+							</div>
+						</fieldset>
+						<fieldset id="multiCity-form" class="col-md-12"  disabled>
+							<div class="col-md-12 multicity-grp">
+								<div class="form-group col-md-4 location">
+									<input type="text" class="form-control" name="from" placeholder="From">
+								</div>
+								<div class="form-group col-md-4 location">
+									<input type="text" class="form-control" name="to" placeholder="To">
+								</div>
+								<div class="form-group col-md-2 date">
+									<input type="text" class="form-control datepicker" name="date" placeholder="Depart on">
+								</div>
+								<button class="remove-city">x</button>
+							</div>
+							<div class="col-md-12 multicity-grp">
+								<div class="form-group col-md-4 location">
+									<input type="text" class="form-control" name="from" placeholder="From">
+								</div>
+								<div class="form-group col-md-4 location">
+									<input type="text" class="form-control" name="to" placeholder="To">
+								</div>
+								<div class="form-group col-md-2 date">
+									<input type="text" class="form-control datepicker" name="date" placeholder="Depart on">
+								</div>
+								<button class="remove-city">x</button>
+							</div>
+							<div class="col-md-12">
+								<a href="" class="add-city"> Add Another City</a>
+							</div>
+						</fieldset>
+						<div class="col-md-12">
+							<div class="col-md-4">
+								<div class="form-group col-md-4 select-container">
+									<select class="form-control" name="adult">
+										<option value="0"> Adult</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+								<div class="form-group col-md-4 select-container">
+									<select class="form-control" name="child">
+										<option value="0"> Child</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+								<div class="form-group col-md-4 select-container">
+									<select class="form-control" name="infant">
+										<option value="0"> Infant</option>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group col-md-4 select-container">
+								<select class="form-control" name="class">
+									<option> Class</option>
+									<option>Economy</option>
+								</select>
+							</div>
+							<div class="form-group col-md-2">
+								<input type="text" class="form-control" placeholder="Preferred Airline">
+							</div>
+							<div class="form-group col-md-2 select-container">
+								<select class="form-control" name="currency">
+									<option> Currency</option>
+									<option>INR</option>
+									<option>USD</option>
+									<option>EUR</option>
+								</select>
+							</div>
+						</div>
+						<div class="flight-type col-md-12">
+							<div class="col-md-2">
+								<input type="checkbox" id="directFlight" name="flightType"  value="direct">
+								<label class="checkbox-inline" for="directFlight"> Direct Flights Only </label>
+							</div>
+							<div class="col-md-2">
+								<input type="checkbox" id="refundableFlight" name="flightType" value="refundable">
+								<label class="checkbox-inline" for="refundableFlight"> Refundable Flights Only </label>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<button type="submit" class="btn btn-default btn-red">Search</button>
+						</div>
+					</form>
+				</div>
 			</div>
 			<section id="filters" class="pull-left">
 				<h2> Filter your search</h2>
@@ -90,7 +233,7 @@
 						<label class="radio-inline" for="anyStop"> Any Stop </label>
 					</li>
 				</ul>
-				<ul>
+				<ul class="airline-filter show-less">
 					<li> Airlines </li>
 					<li> 
 						<input type="checkbox" id="airline1" name="airlineFilter" value="aircanada">
@@ -111,6 +254,10 @@
 					<li> 
 						<input type="checkbox" id="airline5" name="airlineFilter" value="singapore airlines">
 						<label class="checkbox-inline" for="airline5"> Singapore Airlines </label>
+					</li>
+					<li class="show-options">
+						<label class="show-more-link">Show all 10 airlines</label>
+						<label class="show-less-link">Show less</label>
 					</li>
 				</ul>
 				<ul>
@@ -135,273 +282,907 @@
 					<div class="sort-price"> <a href="javascript:void(0);"> Price</a></div>
 					<div></div>
 				</div>
-				<div class="search-result-row one-way-result">
-					<div class="flight-info col-md-12">
-						<div class="segment pull-left">
-							<div class="pull-left">
-								<div class="airline-name">
-									<img src="images/qatar.png">
-									<div>Qatar Airways</div>
-								</div>
-								<div class="src-dest">
-									<div class="source">
-										<div>
-											<label class="time"> 17:30 </label> 
-											<label>BLR</label>
+				<table id="results-table">
+					<tr>
+						<td>
+							<div class="search-result-row one-way-result">
+								<div class="flight-info col-md-12" >
+									<div class="segment pull-left">
+										<div class="pull-left">
+											<div class="airline-name">
+												<img src="images/qatar.png">
+												<div>Qatar Airways</div>
+											</div>
+											<div class="src-dest">
+												<div class="source">
+													<div>
+														<label class="time"> 17:30 </label> 
+														<label>BLR</label>
+													</div>
+													<div>Bangalore</div>
+												</div>
+												<div class="destination">
+													<div>
+														<label class="time">11:10</label>
+														<label>JFK</label>
+													</div>
+													<div>New York</div>
+												</div>
+											</div>
+											<div class="duration">
+												<div>27h 10m</div>
+												<div>2 Stop</div>
+											</div>
+											<hr/>
 										</div>
-										<div>Bangalore</div>
-									</div>
-									<div class="destination">
-										<div>
-											<label class="time">11:10</label>
-											<label>JFK</label>
+										<div class="fare-and-select">
+											<div>$ 2,900</div>
+											<div>
+												<input type="checkbox" id="selectCheckbox1"/>
+												<label class="checkbox-inline" for="selectCheckbox1">SELECT</label>
+											</div>
 										</div>
-										<div>New York</div>
-									</div>
-								</div>
-								<div class="duration">
-									<div>27h 10m</div>
-									<div>2 Stop</div>
-								</div>
-								<hr/>
-							</div>
-							<div class="fare-and-select">
-								<div>$ 2,900</div>
-								<div>
-									<input type="checkbox" id="selectCheckbox1"/>
-									<label class="checkbox-inline" for="selectCheckbox1">SELECT</label>
-								</div>
-							</div>
-							<div class="additional-details">
-								<ul class="nav nav-tabs" role="tablist">
-								    <li role="presentation" class=""><a href="#fareDetails1" aria-controls="fareDetailsfareDetails1" role="tab" data-toggle="tab">Fare Details</a></li>
-								    <li role="presentation"><a href="#flightDetails1" aria-controls="flightDetails1" role="tab" data-toggle="tab">Flight Details</a></li>
-								    <li role="presentation"><a href="#baggageInfo1" aria-controls="baggageInfo1" role="tab" data-toggle="tab">Baggage Info</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="website">
-							<div> $ 2,700 </div>
-							<div> Expedia </div>
-						</div>
-						<div class="tab-content">
-						    <div role="tabpanel" class="tab-pane" id="fareDetails1">
-						    	<h3>Fare Details</h3>
-						    </div>
-						    <div role="tabpanel" class="tab-pane" id="flightDetails1">
-						    	<h3>Flight Details</h3>
-						    </div>
-						    <div role="tabpanel" class="tab-pane" id="baggageInfo1">
-						    	<h3>Baggage Info</h3>
-						    </div>
-						</div>
-					</div>
-				</div>
-				<div class="search-result-row round-trip-result">
-					<div class="flight-info col-md-12">
-						<div class="segment pull-left">
-							<div class="pull-left">
-								<div class="airline-name">
-									<img src="images/qatar.png">
-									<div>Qatar Airways</div>
-								</div>
-								<div class="src-dest">
-									<div class="source">
-										<div>
-											<label class="time"> 17:30 </label> 
-											<label>BLR</label>
+										<div class="additional-details">
+											<ul class="nav nav-tabs" role="tablist">
+											    <li role="presentation"><a class="collapsed" role="button" data-toggle="collapse" href="#flightDetails1" aria-expanded="false" data-parent="#accordion1" aria-controls="flightDetails1">Flight Details </a>
+											    </li>
+											    <li role="presentation" class=""><a href="#fareDetails1" class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#accordion1" aria-controls="fareDetails1">Fare Details</a></li>
+											    <li role="presentation"><a href="#baggageInfo1" class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#accordion1" aria-controls="baggageInfo1">Baggage Info</a></li>
+											</ul>
 										</div>
-										<div>Bangalore</div>
 									</div>
-									<div class="destination">
-										<div>
-											<label class="time">11:10</label>
-											<label>JFK</label>
-										</div>
-										<div>New York</div>
+									<div class="website">
+										<div> $ 2,700 </div>
+										<div> <a href=""> <img src="images/expedia.png"/></a> </div>
+									</div>
+									
+									<div class="panel-group col-md-12" id="accordion1" role="tablist" aria-multiselectable="true">
+										<div class="panel">
+										    <div class="panel-collapse collapse col-md-12 flight-details-tab" id="flightDetails1">
+										    	<h3 class="col-md-12">Flight Details</h3>
+										    	<div class="pull-left">
+											    	<div class="col-md-12">
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+													    		<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-code">H206</div>
+												    		</div>
+												    		<div class="col-md-4 time-city-code"> 17:30 BLR</div>
+												    		<div class="col-md-4 time-city-code"> 05:40 DOH</div>
+												    		<div class="col-md-1 text-right flight-duration"> 3h 55m</div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3 airline-logo-sm"> <img src="images/qatar.png"></div>
+													    		<div class="col-md-9 airways-name">Qatar Airways</div>
+												    		</div>
+												    		<div class="col-md-4 airport"> Bangalore International Airport</div>
+												    		<div class="col-md-4 airport"> Doha International Airport</div>
+												    		<div class="col-md-1 text-right flight-class"> Economy </div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-carrier-code">Boeing 749 - 800</div>
+												    		</div>
+												    		<div class="col-md-4 terminal"> Terminal 1 </div>
+												    		<div class="col-md-4 terminal"> Terminal 2 </div>
+												    		<div class="col-md-1 text-right no-of-stops"> Non - Stop</div>
+												    	</div>
+												    </div>
+												    <div class="col-md-12 text-center layover">
+												    	<div> </div>
+												    	<span style="">Layover -  Doha (DOH) 2h 55m</span>
+												    </div>
+												</div>
+											    <div class="pull-left">
+											    	<div class="col-md-12">
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+													    		<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-code">H206</div>
+												    		</div>
+												    		<div class="col-md-4 time-city-code"> 17:30 BLR</div>
+												    		<div class="col-md-4 time-city-code"> 05:40 DOH</div>
+												    		<div class="col-md-1 text-right flight-duration"> 3h 55m</div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3 airline-logo-sm"> <img src="images/qatar.png"></div>
+													    		<div class="col-md-9 airways-name">Qatar Airways</div>
+												    		</div>
+												    		<div class="col-md-4 airport"> Bangalore International Airport</div>
+												    		<div class="col-md-4 airport"> Doha International Airport</div>
+												    		<div class="col-md-1 text-right flight-class"> Economy </div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-carrier-code">Boeing 749 - 800</div>
+												    		</div>
+												    		<div class="col-md-4 terminal"> Terminal 1 </div>
+												    		<div class="col-md-4 terminal"> Terminal 2 </div>
+												    		<div class="col-md-1 text-right no-of-stops"> Non - Stop</div>
+												    	</div>
+												    </div>
+												    <div class="col-md-12 text-center layover">
+												    	<div> </div>
+												    	<span style="">Layover -  Doha (DOH) 2h 55m</span>
+												    </div>
+												</div>
+											    <div class="col-md-12 time-date-details">
+											    	<label class="pull-left">Depart On : <span> Fri, 26 AUG 2015 </span></label>
+											    	<label class="pull-left">Arrive On : <span> Sat, 27 AUG 2015 </span></label>
+											    	<label class="pull-right text-right"> Total Travel Time : 27h 10m</label>
+											    </div>
+										    </div>
+									    </div>
+									    <div class="panel">
+										    <div class="panel-collapse collapse col-md-12 fare-details-tab" id="fareDetails1">
+										    	<h3 class="col-md-12">Fare Details <span>Airline Refund Policy: Refundable</span></h3>
+										    	<div class="col-md-12">
+											    	<div class="col-md-4 fare-break-up-tbl"> 
+											    		<h4 class="col-md-12"> Fare Break up</h4>
+											    		<table class="table table-bordered fare-break-up">
+											    			<tbody>
+											    				<tr>
+											    					<td>Base Fare</td>
+											    					<td>$ 1500</td>
+											    				</tr>
+											    				<tr>
+											    					<td> Fee &amp; Surcharge </td>
+											    					<td>$ 400</td>
+											    				</tr>
+											    				<tr>
+											    					<td>Total Amount</td>
+											    					<td>$ 2900</td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    	<div class="col-md-4"> 
+											    		<h4 class="col-md-12">Cancellation Per Person</h4>
+											    		<table class="table table-bordered">
+											    			<thead>
+											    				<tr class="active">
+											    					<th>Airline Fee</th>
+											    					<th>Enchanting Travels Fee</th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td class="text-center"> $50 </td>
+											    					<td class="text-center"> $10 </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    	<div class="col-md-4"> 
+											    		<h4 class="col-md-12">Change Flight Per Person</h4>
+											    		<table class="table table-bordered">
+											    			<thead>
+											    				<tr class="active">
+											    					<th>Airline Fee</th>
+											    					<th>Enchanting Travels Fee</th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td class="text-center"> $50 </td>
+											    					<td class="text-center"> $10 </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+										    		<div class="col-md-12 note">
+										    			Note: The airline fee may, at times, be calculated on a per-flight basis. Cancellation/Flight change charges are indicative. If the flight is cancelled within 2 hours of departure, you will lose 100% of the fare, only the taxes will be returned.
+										    		</div>
+										    	</div>
+										    </div>
+									    </div>
+									    <div class="panel">									    
+										    <div class="panel-collapse collapse col-md-12 baggage-info-tab" id="baggageInfo1">
+										    	<h3 class="col-md-12">Baggage Info</h3>
+										    	<div class="col-md-12">
+											    	<div class="col-md-5">
+											    		<h4 class="col-md-12"> Check - in Baggage </h4>
+											    		<table class="table table-bordered check-in">
+											    			<thead>
+											    				<tr class="active">
+											    					<th> Flight </th>
+											    					<th class="text-center"> Adult </th>
+											    					<th class="text-center"> Child </th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td> BLR - DOH H209 </td>
+											    					<td class="text-center"> 30kg </td>
+											    					<td class="text-center"> 30kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> DOH - CDG A657 </td>
+											    					<td class="text-center"> 30kg </td>
+											    					<td class="text-center"> 30kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> CDG - JFK G458 </td>
+											    					<td class="text-center"> 30kg </td>
+											    					<td class="text-center"> 30kg </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    	<div class="col-md-5">
+											    		<h4 class="col-md-12"> Cabin Baggage</h4>
+											    		<table class="table table-bordered cabin">
+											    			<thead>
+											    				<tr class="active">
+											    					<th> Flight </th>
+											    					<th class="text-center"> Adult </th>
+											    					<th class="text-center"> Child </th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td> BLR - DOH H209 </td>
+											    					<td class="text-center"> 7kg </td>
+											    					<td class="text-center"> 7kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> DOH - CDG A657 </td>
+											    					<td class="text-center"> 7kg </td>
+											    					<td class="text-center"> 7kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> CDG - JFK G458 </td>
+											    					<td class="text-center"> 7kg </td>
+											    					<td class="text-center"> 7kg </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    </div>
+										    </div>
+									    </div>
 									</div>
 								</div>
-								<div class="duration">
-									<div>27h 10m</div>
-									<div>2 Stop</div>
-								</div>
-								<hr/>
 							</div>
-							<div class="pull-left">
-								<div class="airline-name">
-									<img src="images/qatar.png">
-									<div>Qatar Airways</div>
-								</div>
-								<div class="src-dest">
-									<div class="source">
-										<div>
-											<label class="time"> 17:30 </label> 
-											<label>BLR</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="search-result-row round-trip-result">
+								<div class="flight-info col-md-12">
+									<div class="segment pull-left">
+										<div class="pull-left">
+											<div class="airline-name">
+												<img src="images/qatar.png">
+												<div>Qatar Airways</div>
+											</div>
+											<div class="src-dest">
+												<div class="source">
+													<div>
+														<label class="time"> 17:30 </label> 
+														<label>BLR</label>
+													</div>
+													<div>Bangalore</div>
+												</div>
+												<div class="destination">
+													<div>
+														<label class="time">11:10</label>
+														<label>JFK</label>
+													</div>
+													<div>New York</div>
+												</div>
+											</div>
+											<div class="duration">
+												<div>27h 10m</div>
+												<div>2 Stop</div>
+											</div>
+											<hr/>
 										</div>
-										<div>Bangalore</div>
-									</div>
-									<div class="destination">
-										<div>
-											<label class="time">11:10</label>
-											<label>JFK</label>
+										<div class="pull-left">
+											<div class="airline-name">
+												<img src="images/qatar.png">
+												<div>Qatar Airways</div>
+											</div>
+											<div class="src-dest">
+												<div class="source">
+													<div>
+														<label class="time"> 17:30 </label> 
+														<label>BLR</label>
+													</div>
+													<div>Bangalore</div>
+												</div>
+												<div class="destination">
+													<div>
+														<label class="time">11:10</label>
+														<label>JFK</label>
+													</div>
+													<div>New York</div>
+												</div>
+											</div>
+											<div class="duration">
+												<div>27h 10m</div>
+												<div>2 Stop</div>
+											</div>
+											<hr/>
 										</div>
-										<div>New York</div>
-									</div>
-								</div>
-								<div class="duration">
-									<div>27h 10m</div>
-									<div>2 Stop</div>
-								</div>
-								<hr/>
-							</div>
-							<div class="fare-and-select">
-								<div>$ 2,900</div>
-								<div>
-									<input type="checkbox" id="selectCheckbox2"/>
-									<label class="checkbox-inline" for="selectCheckbox2">SELECT</label>
-								</div>
-							</div>
-							<div class="additional-details">
-								<ul class="nav nav-tabs" role="tablist">
-								    <li role="presentation" class=""><a href="#fareDetails2" aria-controls="fareDetailsfareDetails2" role="tab" data-toggle="tab">Fare Details</a></li>
-								    <li role="presentation"><a href="#flightDetails2" aria-controls="flightDetails2" role="tab" data-toggle="tab">Flight Details</a></li>
-								    <li role="presentation"><a href="#baggageInfo2" aria-controls="baggageInfo2" role="tab" data-toggle="tab">Baggage Info</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="website">
-							<div> $ 2,700 </div>
-							<div> Expedia </div>
-						</div>
-						<div class="tab-content">
-						    <div role="tabpanel" class="tab-pane" id="fareDetails2">
-						    	<h3>Flight Details</h3>
-						    </div>
-						    <div role="tabpanel" class="tab-pane" id="flightDetails2">
-						    	<h3>Fare Details</h3>
-						    </div>
-						    <div role="tabpanel" class="tab-pane" id="baggageInfo2"> 
-						    	<h3> Baggage Info</h3>
-						    </div>
-						</div>
-					</div>
-				</div>
-				<div class="search-result-row multi-city-result">
-					<div class="flight-info col-md-12">
-						<div class="segment pull-left">
-							<div class="pull-left">
-								<div class="airline-name">
-									<img src="images/qatar.png">
-									<div>Qatar Airways</div>
-								</div>
-								<div class="src-dest">
-									<div class="source">
-										<div>
-											<label class="time"> 17:30 </label> 
-											<label>BLR</label>
+										<div class="fare-and-select">
+											<div>$ 2,900</div>
+											<div>
+												<input type="checkbox" id="selectCheckbox2"/>
+												<label class="checkbox-inline" for="selectCheckbox2">SELECT</label>
+											</div>
 										</div>
-										<div>Bangalore</div>
-									</div>
-									<div class="destination">
-										<div>
-											<label class="time">11:10</label>
-											<label>JFK</label>
+										<div class="additional-details">
+											<ul class="nav nav-tabs" role="tablist">
+											    <li role="presentation"><a class="collapsed" role="button" data-toggle="collapse" href="#flightDetails2" aria-expanded="false" data-parent="#accordion2" aria-controls="flightDetails2">Flight Details </a>
+											    </li>
+											    <li role="presentation" class=""><a href="#fareDetails2" class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#accordion2" aria-controls="fareDetails2">Fare Details</a></li>
+											    <li role="presentation"><a href="#baggageInfo2" class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#accordion2" aria-controls="baggageInfo2">Baggage Info</a></li>
+											</ul>
 										</div>
-										<div>New York</div>
+									</div>
+									<div class="website">
+										<div> $ 2,700 </div>
+										<div> <a href=""> <img src="images/expedia.png"/></a> </div>
+									</div>
+									<div class="panel-group col-md-12" id="accordion2" role="tablist" aria-multiselectable="true">
+										<div class="panel">
+										    <div class="panel-collapse collapse col-md-12 flight-details-tab" id="flightDetails2">
+										    	<h3 class="col-md-12">Flight Details</h3>
+										    	<div class="pull-left">
+											    	<div class="col-md-12">
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+													    		<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-code">H206</div>
+												    		</div>
+												    		<div class="col-md-4 time-city-code"> 17:30 BLR</div>
+												    		<div class="col-md-4 time-city-code"> 05:40 DOH</div>
+												    		<div class="col-md-1 text-right flight-duration"> 3h 55m</div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3 airline-logo-sm"> <img src="images/qatar.png"></div>
+													    		<div class="col-md-9 airways-name">Qatar Airways</div>
+												    		</div>
+												    		<div class="col-md-4 airport"> Bangalore International Airport</div>
+												    		<div class="col-md-4 airport"> Doha International Airport</div>
+												    		<div class="col-md-1 text-right flight-class"> Economy </div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-carrier-code">Boeing 749 - 800</div>
+												    		</div>
+												    		<div class="col-md-4 terminal"> Terminal 1 </div>
+												    		<div class="col-md-4 terminal"> Terminal 2 </div>
+												    		<div class="col-md-1 text-right no-of-stops"> Non - Stop</div>
+												    	</div>
+												    </div>
+												    <div class="col-md-12 text-center layover">
+												    	<div> </div>
+												    	<span style="">Layover -  Doha (DOH) 2h 55m</span>
+												    </div>
+												</div>
+											    <div class="pull-left">
+											    	<div class="col-md-12">
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+													    		<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-code">H206</div>
+												    		</div>
+												    		<div class="col-md-4 time-city-code"> 17:30 BLR</div>
+												    		<div class="col-md-4 time-city-code"> 05:40 DOH</div>
+												    		<div class="col-md-1 text-right flight-duration"> 3h 55m</div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3 airline-logo-sm"> <img src="images/qatar.png"></div>
+													    		<div class="col-md-9 airways-name">Qatar Airways</div>
+												    		</div>
+												    		<div class="col-md-4 airport"> Bangalore International Airport</div>
+												    		<div class="col-md-4 airport"> Doha International Airport</div>
+												    		<div class="col-md-1 text-right flight-class"> Economy </div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-carrier-code">Boeing 749 - 800</div>
+												    		</div>
+												    		<div class="col-md-4 terminal"> Terminal 1 </div>
+												    		<div class="col-md-4 terminal"> Terminal 2 </div>
+												    		<div class="col-md-1 text-right no-of-stops"> Non - Stop</div>
+												    	</div>
+												    </div>
+												    <div class="col-md-12 text-center layover">
+												    	<div> </div>
+												    	<span style="">Layover -  Doha (DOH) 2h 55m</span>
+												    </div>
+												</div>
+											    <div class="col-md-12 time-date-details">
+											    	<label class="pull-left">Depart On : <span> Fri, 26 AUG 2015 </span></label>
+											    	<label class="pull-left">Arrive On : <span> Sat, 27 AUG 2015 </span></label>
+											    	<label class="pull-right text-right"> Total Travel Time : 27h 10m</label>
+											    </div>
+										    </div>
+									    </div>
+									    <div class="panel">
+										    <div class="panel-collapse collapse col-md-12 fare-details-tab" id="fareDetails2">
+										    	<h3 class="col-md-12">Fare Details <span>Airline Refund Policy: Refundable</span></h3>
+										    	<div class="col-md-12">
+											    	<div class="col-md-4 fare-break-up-tbl"> 
+											    		<h4 class="col-md-12"> Fare Break up</h4>
+											    		<table class="table table-bordered fare-break-up">
+											    			<tbody>
+											    				<tr>
+											    					<td>Base Fare</td>
+											    					<td>$ 1500</td>
+											    				</tr>
+											    				<tr>
+											    					<td> Fee &amp; Surcharge </td>
+											    					<td>$ 400</td>
+											    				</tr>
+											    				<tr>
+											    					<td>Total Amount</td>
+											    					<td>$ 2900</td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    	<div class="col-md-4"> 
+											    		<h4 class="col-md-12">Cancellation Per Person</h4>
+											    		<table class="table table-bordered">
+											    			<thead>
+											    				<tr class="active">
+											    					<th>Airline Fee</th>
+											    					<th>Enchanting Travels Fee</th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td class="text-center"> $50 </td>
+											    					<td class="text-center"> $10 </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    	<div class="col-md-4"> 
+											    		<h4 class="col-md-12">Change Flight Per Person</h4>
+											    		<table class="table table-bordered">
+											    			<thead>
+											    				<tr class="active">
+											    					<th>Airline Fee</th>
+											    					<th>Enchanting Travels Fee</th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td class="text-center"> $50 </td>
+											    					<td class="text-center"> $10 </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+										    		<div class="col-md-12 note">
+										    			Note: The airline fee may, at times, be calculated on a per-flight basis. Cancellation/Flight change charges are indicative. If the flight is cancelled within 2 hours of departure, you will lose 100% of the fare, only the taxes will be returned.
+										    		</div>
+										    	</div>
+										    </div>
+									    </div>
+									    <div class="panel">									    
+										    <div class="panel-collapse collapse col-md-12 baggage-info-tab" id="baggageInfo2">
+										    	<h3 class="col-md-12">Baggage Info</h3>
+										    	<div class="col-md-12">
+											    	<div class="col-md-5">
+											    		<h4 class="col-md-12"> Check - in Baggage </h4>
+											    		<table class="table table-bordered check-in">
+											    			<thead>
+											    				<tr class="active">
+											    					<th> Flight </th>
+											    					<th class="text-center"> Adult </th>
+											    					<th class="text-center"> Child </th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td> BLR - DOH H209 </td>
+											    					<td class="text-center"> 30kg </td>
+											    					<td class="text-center"> 30kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> DOH - CDG A657 </td>
+											    					<td class="text-center"> 30kg </td>
+											    					<td class="text-center"> 30kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> CDG - JFK G458 </td>
+											    					<td class="text-center"> 30kg </td>
+											    					<td class="text-center"> 30kg </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    	<div class="col-md-5">
+											    		<h4 class="col-md-12"> Cabin Baggage</h4>
+											    		<table class="table table-bordered cabin">
+											    			<thead>
+											    				<tr class="active">
+											    					<th> Flight </th>
+											    					<th class="text-center"> Adult </th>
+											    					<th class="text-center"> Child </th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td> BLR - DOH H209 </td>
+											    					<td class="text-center"> 7kg </td>
+											    					<td class="text-center"> 7kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> DOH - CDG A657 </td>
+											    					<td class="text-center"> 7kg </td>
+											    					<td class="text-center"> 7kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> CDG - JFK G458 </td>
+											    					<td class="text-center"> 7kg </td>
+											    					<td class="text-center"> 7kg </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    </div>
+										    </div>
+									    </div>
 									</div>
 								</div>
-								<div class="duration">
-									<div>27h 10m</div>
-									<div>2 Stop</div>
-								</div>
-								<hr/>
 							</div>
-							<div class="pull-left">
-								<div class="airline-name">
-									<img src="images/qatar.png">
-									<div>Qatar Airways</div>
-								</div>
-								<div class="src-dest">
-									<div class="source">
-										<div>
-											<label class="time"> 17:30 </label> 
-											<label>BLR</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="search-result-row multi-city-result">
+								<div class="flight-info col-md-12">
+									<div class="segment pull-left">
+										<div class="pull-left">
+											<div class="airline-name">
+												<img src="images/qatar.png">
+												<div>Qatar Airways</div>
+											</div>
+											<div class="src-dest">
+												<div class="source">
+													<div>
+														<label class="time"> 17:30 </label> 
+														<label>BLR</label>
+													</div>
+													<div>Bangalore</div>
+												</div>
+												<div class="destination">
+													<div>
+														<label class="time">11:10</label>
+														<label>JFK</label>
+													</div>
+													<div>New York</div>
+												</div>
+											</div>
+											<div class="duration">
+												<div>27h 10m</div>
+												<div>2 Stop</div>
+											</div>
+											<hr/>
 										</div>
-										<div>Bangalore</div>
-									</div>
-									<div class="destination">
-										<div>
-											<label class="time">11:10</label>
-											<label>JFK</label>
+										<div class="pull-left">
+											<div class="airline-name">
+												<img src="images/qatar.png">
+												<div>Qatar Airways</div>
+											</div>
+											<div class="src-dest">
+												<div class="source">
+													<div>
+														<label class="time"> 17:30 </label> 
+														<label>BLR</label>
+													</div>
+													<div>Bangalore</div>
+												</div>
+												<div class="destination">
+													<div>
+														<label class="time">11:10</label>
+														<label>JFK</label>
+													</div>
+													<div>New York</div>
+												</div>
+											</div>
+											<div class="duration">
+												<div>27h 10m</div>
+												<div>2 Stop</div>
+											</div>
+											<hr/>
 										</div>
-										<div>New York</div>
-									</div>
-								</div>
-								<div class="duration">
-									<div>27h 10m</div>
-									<div>2 Stop</div>
-								</div>
-								<hr/>
-							</div>
-							<div class="pull-left">
-								<div class="airline-name">
-									<img src="images/qatar.png">
-									<div>Qatar Airways</div>
-								</div>
-								<div class="src-dest">
-									<div class="source">
-										<div>
-											<label class="time"> 17:30 </label> 
-											<label>BLR</label>
+										<div class="pull-left">
+											<div class="airline-name">
+												<img src="images/qatar.png">
+												<div>Qatar Airways</div>
+											</div>
+											<div class="src-dest">
+												<div class="source">
+													<div>
+														<label class="time"> 17:30 </label> 
+														<label>BLR</label>
+													</div>
+													<div>Bangalore</div>
+												</div>
+												<div class="destination">
+													<div>
+														<label class="time">11:10</label>
+														<label>JFK</label>
+													</div>
+													<div>New York</div>
+												</div>
+											</div>
+											<div class="duration">
+												<div>27h 10m</div>
+												<div>2 Stop</div>
+											</div>
+											<hr/>
 										</div>
-										<div>Bangalore</div>
-									</div>
-									<div class="destination">
-										<div>
-											<label class="time">11:10</label>
-											<label>JFK</label>
+										<div class="fare-and-select">
+											<div>$ 2,900</div>
+											<div>
+												<input type="checkbox" id="selectCheckbox3"/>
+												<label class="checkbox-inline" for="selectCheckbox3">SELECT</label>
+											</div>
 										</div>
-										<div>New York</div>
+										<div class="additional-details">
+											<ul class="nav nav-tabs" role="tablist">
+											    <li role="presentation"><a class="collapsed" role="button" data-toggle="collapse" href="#flightDetails3" aria-expanded="false" data-parent="#accordion3" aria-controls="flightDetails3">Flight Details </a>
+											    </li>
+											    <li role="presentation" class=""><a href="#fareDetails3" class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#accordion3" aria-controls="fareDetails3">Fare Details</a></li>
+											    <li role="presentation"><a href="#baggageInfo3" class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" data-parent="#accordion2" aria-controls="baggageInfo3">Baggage Info</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="website">
+										<div> $ 2,700 </div>
+										<div> <a href=""> <img src="images/expedia.png"/></a> </div>
+									</div>
+									<div class="panel-group col-md-12" id="accordion3" role="tablist" aria-multiselectable="true">
+										<div class="panel">
+										    <div class="panel-collapse collapse col-md-12 flight-details-tab" id="flightDetails3">
+										    	<h3 class="col-md-12">Flight Details</h3>
+										    	<div class="pull-left">
+											    	<div class="col-md-12">
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+													    		<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-code">H206</div>
+												    		</div>
+												    		<div class="col-md-4 time-city-code"> 17:30 BLR</div>
+												    		<div class="col-md-4 time-city-code"> 05:40 DOH</div>
+												    		<div class="col-md-1 text-right flight-duration"> 3h 55m</div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3 airline-logo-sm"> <img src="images/qatar.png"></div>
+													    		<div class="col-md-9 airways-name">Qatar Airways</div>
+												    		</div>
+												    		<div class="col-md-4 airport"> Bangalore International Airport</div>
+												    		<div class="col-md-4 airport"> Doha International Airport</div>
+												    		<div class="col-md-1 text-right flight-class"> Economy </div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-carrier-code">Boeing 749 - 800</div>
+												    		</div>
+												    		<div class="col-md-4 terminal"> Terminal 1 </div>
+												    		<div class="col-md-4 terminal"> Terminal 2 </div>
+												    		<div class="col-md-1 text-right no-of-stops"> Non - Stop</div>
+												    	</div>
+												    </div>
+												    <div class="col-md-12 text-center layover">
+												    	<div> </div>
+												    	<span style="">Layover -  Doha (DOH) 2h 55m</span>
+												    </div>
+												</div>
+											    <div class="pull-left">
+											    	<div class="col-md-12">
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+													    		<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-code">H206</div>
+												    		</div>
+												    		<div class="col-md-4 time-city-code"> 17:30 BLR</div>
+												    		<div class="col-md-4 time-city-code"> 05:40 DOH</div>
+												    		<div class="col-md-1 text-right flight-duration"> 3h 55m</div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3 airline-logo-sm"> <img src="images/qatar.png"></div>
+													    		<div class="col-md-9 airways-name">Qatar Airways</div>
+												    		</div>
+												    		<div class="col-md-4 airport"> Bangalore International Airport</div>
+												    		<div class="col-md-4 airport"> Doha International Airport</div>
+												    		<div class="col-md-1 text-right flight-class"> Economy </div>
+												    	</div>
+												    	<div class="col-md-12">
+												    		<div class="col-md-3"> 
+												    			<div class="col-md-3"></div>
+													    		<div class="col-md-9 airline-carrier-code">Boeing 749 - 800</div>
+												    		</div>
+												    		<div class="col-md-4 terminal"> Terminal 1 </div>
+												    		<div class="col-md-4 terminal"> Terminal 2 </div>
+												    		<div class="col-md-1 text-right no-of-stops"> Non - Stop</div>
+												    	</div>
+												    </div>
+												    <div class="col-md-12 text-center layover">
+												    	<div> </div>
+												    	<span style="">Layover -  Doha (DOH) 2h 55m</span>
+												    </div>
+												</div>
+											    <div class="col-md-12 time-date-details">
+											    	<label class="pull-left">Depart On : <span> Fri, 26 AUG 2015 </span></label>
+											    	<label class="pull-left">Arrive On : <span> Sat, 27 AUG 2015 </span></label>
+											    	<label class="pull-right text-right"> Total Travel Time : 27h 10m</label>
+											    </div>
+										    </div>
+									    </div>
+									    <div class="panel">
+										    <div class="panel-collapse collapse col-md-12 fare-details-tab" id="fareDetails3">
+										    	<h3 class="col-md-12">Fare Details <span>Airline Refund Policy: Refundable</span></h3>
+										    	<div class="col-md-12">
+											    	<div class="col-md-4 fare-break-up-tbl"> 
+											    		<h4 class="col-md-12"> Fare Break up</h4>
+											    		<table class="table table-bordered fare-break-up">
+											    			<tbody>
+											    				<tr>
+											    					<td>Base Fare</td>
+											    					<td>$ 1500</td>
+											    				</tr>
+											    				<tr>
+											    					<td> Fee &amp; Surcharge </td>
+											    					<td>$ 400</td>
+											    				</tr>
+											    				<tr>
+											    					<td>Total Amount</td>
+											    					<td>$ 2900</td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    	<div class="col-md-4"> 
+											    		<h4 class="col-md-12">Cancellation Per Person</h4>
+											    		<table class="table table-bordered">
+											    			<thead>
+											    				<tr class="active">
+											    					<th>Airline Fee</th>
+											    					<th>Enchanting Travels Fee</th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td class="text-center"> $50 </td>
+											    					<td class="text-center"> $10 </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    	<div class="col-md-4"> 
+											    		<h4 class="col-md-12">Change Flight Per Person</h4>
+											    		<table class="table table-bordered">
+											    			<thead>
+											    				<tr class="active">
+											    					<th>Airline Fee</th>
+											    					<th>Enchanting Travels Fee</th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td class="text-center"> $50 </td>
+											    					<td class="text-center"> $10 </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+										    		<div class="col-md-12 note">
+										    			Note: The airline fee may, at times, be calculated on a per-flight basis. Cancellation/Flight change charges are indicative. If the flight is cancelled within 2 hours of departure, you will lose 100% of the fare, only the taxes will be returned.
+										    		</div>
+										    	</div>
+										    </div>
+									    </div>
+									    <div class="panel">									    
+										    <div class="panel-collapse collapse col-md-12 baggage-info-tab" id="baggageInfo3">
+										    	<h3 class="col-md-12">Baggage Info</h3>
+										    	<div class="col-md-12">
+											    	<div class="col-md-5">
+											    		<h4 class="col-md-12"> Check - in Baggage </h4>
+											    		<table class="table table-bordered check-in">
+											    			<thead>
+											    				<tr class="active">
+											    					<th> Flight </th>
+											    					<th class="text-center"> Adult </th>
+											    					<th class="text-center"> Child </th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td> BLR - DOH H209 </td>
+											    					<td class="text-center"> 30kg </td>
+											    					<td class="text-center"> 30kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> DOH - CDG A657 </td>
+											    					<td class="text-center"> 30kg </td>
+											    					<td class="text-center"> 30kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> CDG - JFK G458 </td>
+											    					<td class="text-center"> 30kg </td>
+											    					<td class="text-center"> 30kg </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    	<div class="col-md-5">
+											    		<h4 class="col-md-12"> Cabin Baggage</h4>
+											    		<table class="table table-bordered cabin">
+											    			<thead>
+											    				<tr class="active">
+											    					<th> Flight </th>
+											    					<th class="text-center"> Adult </th>
+											    					<th class="text-center"> Child </th>
+											    				</tr>
+											    			</thead>
+											    			<tbody>
+											    				<tr>
+											    					<td> BLR - DOH H209 </td>
+											    					<td class="text-center"> 7kg </td>
+											    					<td class="text-center"> 7kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> DOH - CDG A657 </td>
+											    					<td class="text-center"> 7kg </td>
+											    					<td class="text-center"> 7kg </td>
+											    				</tr>
+											    				<tr>
+											    					<td> CDG - JFK G458 </td>
+											    					<td class="text-center"> 7kg </td>
+											    					<td class="text-center"> 7kg </td>
+											    				</tr>
+											    			</tbody>
+											    		</table>
+											    	</div>
+											    </div>
+										    </div>
+									    </div>
 									</div>
 								</div>
-								<div class="duration">
-									<div>27h 10m</div>
-									<div>2 Stop</div>
-								</div>
-								<hr/>
 							</div>
-							<div class="fare-and-select">
-								<div>$ 2,900</div>
-								<div>
-									<input type="checkbox" id="selectCheckbox3"/>
-									<label class="checkbox-inline" for="selectCheckbox3">SELECT</label>
-								</div>
-							</div>
-							<div class="additional-details">
-								<ul class="nav nav-tabs" role="tablist">
-								    <li role="presentation" class=""><a href="#fareDetails3" aria-controls="fareDetailsfareDetails3" role="tab" data-toggle="tab">Fare Details</a></li>
-								    <li role="presentation"><a href="#flightDetails3" aria-controls="flightDetails3" role="tab" data-toggle="tab">Flight Details</a></li>
-								    <li role="presentation"><a href="#baggageInfo3" aria-controls="baggageInfo3" role="tab" data-toggle="tab">Baggage Info</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="website">
-							<div> $ 2,700 </div>
-							<div> Expedia </div>
-						</div>
-						<div class="tab-content">
-						    <div role="tabpanel" class="tab-pane" id="fareDetails3"> 
-						    	<h3>Fare Details</h3>
-						    </div>
-						    <div role="tabpanel" class="tab-pane" id="flightDetails3">
-						    	<h3>Flight Details</h3>
-						    </div>
-						    <div role="tabpanel" class="tab-pane" id="baggageInfo3">
-						    	<h3>Baggage Info</h3>
-						    </div>
-						</div>
-					</div>
-				</div>
+						</td>
+					</tr>
+				</table>
+				<nav class="col-md-12">
+				  	<ul class="pagination pull-right ">
+					    <li>
+					      <a href="#" aria-label="Previous">
+					        <span aria-hidden="true">&laquo;</span>
+					      </a>
+					    </li>
+					    <li><a href="#">1</a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#">4</a></li>
+					    <li><a href="#">5</a></li>
+					    <li>
+					      <a href="#" aria-label="Next">
+					        <span aria-hidden="true">&raquo;</span>
+					      </a>
+					    </li>
+				  	</ul>
+				</nav>
 			</section>
 		</main>
 		<footer class="col-md-12">
@@ -413,5 +1194,6 @@
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
 </body>
 </html>

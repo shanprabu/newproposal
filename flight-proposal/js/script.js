@@ -81,6 +81,10 @@ jQuery(document).ready(function($){
 		};
 	});
 
+	$('.show-options label').on('click',function() {
+		$(this).parentsUntil('section#filters').toggleClass('show-less');
+	});
+
 	$(function() {
 	    $( ".datepicker" ).datepicker();
 	});
