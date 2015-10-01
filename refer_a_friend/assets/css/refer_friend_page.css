@@ -84,6 +84,10 @@ body {
 
 header{
 	height: 74px;
+	border-bottom: 1px solid #ccc;
+	-webkit-box-shadow: 0px 1px 1px #EAEAEA;
+	-moz-box-shadow: 0px 1px 1px #EAEAEA;
+	box-shadow: 0px 1px 1px #EAEAEA;
 }
 .logo {
 	float: left;
@@ -369,6 +373,66 @@ header{
 	display: inline-block;
 }
 
+.txtlogobtn{
+	border: 2px solid #ccc;
+	padding: 12px 12px;
+	border-radius: 6px;
+	font-size: 15px;
+	font-family: 'Soin_Sans_Pro_Medium';
+	color: #595754;
+	clear: both;
+	display: inline-block;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.imglogobtn{
+	border: 2px solid #ccc;
+	padding: 6px 12px;
+	border-radius: 6px;
+	display: inline-block;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.travelconsultant{
+	clear: both;
+	margin: 15px 0px;
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.travelconsultant img{
+	float: left;
+	width: 74px;
+	margin-right: 15px;
+}
+.travelconsultant .grmanager{
+	float: left;
+}
+
+.travelconsultant .grmanager h3{
+	color: #595754;
+	font-size: 17px;
+	letter-spacing: 0.03em;
+	font-family: 'Soin_Sans_Pro_Medium';
+	margin: 6px 0px;
+}
+
+.travelconsultant .grmanager h4{
+	color: #595754;
+	font-size: 17px;
+	font-style: italic;
+	font-family: 'Soin_Sans_Pro_Light';
+	margin: 6px 0px;
+}
+
+.travelconsultant .grmanager a{
+	text-decoration: underline;
+	letter-spacing: 0.03em;
+}
+
+
 /* --------------- two colums ------------ */
 
 
@@ -574,6 +638,12 @@ header{
 	text-align: center;
 	display: inline-block;
 }
+.cslide-slide2{
+	width: 525px;
+}
+.cslide-slide3{
+	width: 650px;
+}
 .steps-n-txt{
 	font-size: 20px;
 	color: #595754;
@@ -602,14 +672,24 @@ header{
 	/*padding-top: 20px;*/
 }
 
-.slides-holder article, .slides-holder1 article, .slides-holder2 article {
+.slides-holder article{
 	float: left;
 	margin-right: 20px;
-	margin-top: 22px;
-	width: 239px;
+	width: 23%;
 	position: relative;
 }
-
+.slides-holder1 article {
+	float: left;
+	margin-right: 20px;
+	width: 23%;
+	position: relative;
+}
+.slides-holder2 article{
+	float: left;
+	margin-right: 20px;
+	width: 47%;
+	position: relative;
+}
 
 .slides-holder article figure img, .slides-holder1 article figure img, .slides-holder2 article figure img {
 	width: 100%;
@@ -703,11 +783,97 @@ header{
 }
 
 .date_icon {
-	background: url("../images/calender-icon.png") no-repeat 2% center #fff;
+	background: url("../images/calender-icon.png") no-repeat 98% center #fff;
 }
 .pointerclass {
 	cursor: pointer;
 }
+
+.referrncetxt{
+	font-size: 16px;
+	color: #36312a;
+	float: left;
+	line-height: 44px;
+	margin-right: 15px;
+	width: 100px;
+}
+.referrncebox{
+	background-color: #f9f6d5;
+	font-size: 16px;
+	color: #36312a;
+	line-height: 44px;
+	border: 1px dashed #35312a;
+	float: right;
+	padding: 0px 10px;
+	width: -webkit-calc(100% - 115px); 
+	width: -moz-calc(100% - 115px); 
+	width: calc(100% - 115px);
+	text-align: center;;
+}
+.requirdtxt{
+	font-size: 15px;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	color: #36312a;
+	line-height: 48px;
+}
+#faq{
+	width: 100%;
+	background-color: #f3f3f3;
+	display: table;
+}
+#faq .wrap{
+	width: 900px;
+	background: #fff;
+	padding: 30px 70px;
+}
+
+#faq .wrap h2{
+	font-size: 38px;
+	font-family: 'Soin_Sans_Pro_Medium';
+	color:#4a4a49;
+}
+#faq .wrap h3{
+	font-size: 22px;
+	font-family: 'Soin_Sans_Pro_Medium';
+	color:#4a4a49;
+	margin: 20px 0px;
+}
+#faq .wrap p{
+	font-size: 18px;
+	color:#4a4a49;
+	line-height: 24px;
+	margin-bottom: 30px;
+
+}
+#faq .wrap p a{
+	color:#ad926e;
+}
+#faq .wrap p a:hover{
+	color:#ad926e;
+	text-decoration: underline;
+}
+
+#faq .wrap hr{
+	border-color: #e2e2e2;
+	margin-top: 75px;
+	margin-bottom: 45px;
+}
+
+#faq .wrap ul{
+	margin-left: 25px;
+	color: #4a4a49;
+	margin-bottom: 65px;
+	margin-top: 25px;
+}
+
+#faq .wrap ul li{
+	font-size: 16px;
+	line-height: 28px;
+}
+
+
 .border0{border: 0 !important; }
 .mgn-ryt10{margin-right: 10px;}
 .mgn-lft10{margin-left: 10px;}
@@ -1305,14 +1471,17 @@ footer .container .foo .footspan span a:hover{
 .mgn0{margin: 0px;}
 .mgn-rgt20{margin-right: 20px;}
 .mgn-btm0{margin-bottom: 0 !important;}
+.mgn-btm35{margin-bottom: 35px !important;}
 .mgn-tp0{margin-top: 0}
 .bdr-ryt{border-right: 2px solid #f2f2f1;}
 .mgn-lft35{ margin-left: 35px;}
+.mgn-ryt15 {margin-right: 15px;}
 .wdt106{width: 106px;}
 .wdt2775perc{width: 27.75%;}
 .wdt2783perc{width: 27.834%;}
 .pdn-tp20{padding-top: 20px;}
 .pdn-lft38{padding-left:38px !important;}
+.pdn-ryt38{padding-right:38px !important;}
 .bdr0{  border-bottom: 0 !important;}
 .red-a{
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=85);
@@ -1345,7 +1514,7 @@ a:hover{
 }
 hr{
 	display: block;
-	margin-top: 55px;
+	margin-top: 30px;
 	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
@@ -1555,6 +1724,10 @@ hr{
 	.container {
 		width: 1260px;
 	}
+	.sm-conttxt{
+		text-align: right;
+		padding-right: 15px;
+	}
 
 }
 
@@ -1572,6 +1745,13 @@ hr{
 	}
 	.top-right {
 		padding-top: 23px;
+	}
+	.expertise {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.fristbottomblk, .friendblk {
+		padding: 0px;
 	}
 	header{
 		height: 100%;
@@ -1594,11 +1774,103 @@ hr{
 	/* ----------------/header---------------- */
 
 	.banner .wrapp {
-		margin-top: 44%;
+		margin-top: 16%;
 	}
 	.banner .wrapp > h1 {
 		text-align: center;
-		font-size: 40px;
+		font-size: 26px;
+		line-height: 52px;
+	}
+	.heart-img {
+		top: 87.4%;
+	}
+
+	#faq .wrap {
+		width: 100%;
+		padding: 30px 20px;
+	}
+	#faq .wrap h2 {
+		font-size: 34px;
+	}
+	#faq .wrap h3 {
+		font-size: 20px;
+	}
+	#faq .wrap p {
+		font-size: 16px;
+	}
+	.ct-head {
+		font-size: 18px;
+	}
+
+	.planing-trip .wrap {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+	}
+
+	.cslide-slide {
+		width: 100%;
+	}
+	.slides-holder article{
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 100%;
+	}
+	.slides-holder1 article {
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 100%;
+	}
+	.slides-holder2 article{
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 100%;
+	}
+	.slides-holder1 article:nth-child(4), .slides-holder1 article:nth-child(8) {
+		margin-right: 20px;
+	}
+	.slides-holder1 article:nth-child(2), .slides-holder1 article:nth-child(4),
+	.slides-holder1 article:nth-child(6), .slides-holder1 article:nth-child(8) {
+		margin-right: 0px;
+	}
+	.slides-holder article label, .slides-holder1 article label, .slides-holder2 article label {
+		font-size: 18px;
+	}
+
+	.expertise article {
+		width: 100%;
+	}
+	.expertise article p, #home-page .expertise article ul {
+		font-size: 16px;
+	}
+	.check-list {
+		font-size: 16px;
+	}
+	.expertise article h2 {
+		font-size: 22px;
+	}
+	.wdt100perc{width: 100%;}
+	.borderinbotmforsm{
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		border-bottom: 2px solid #f2f2f1;
+	}
+	.fristbottomblkwrap {
+		width: 100%; 
+	}
+	.friendblkwrap {
+		width: 100%; 
+	}
+	.friendblk h2 {
+		font-size: 24px;
+	}
+
+	.friendblk p {
+		font-size: 18px;
 	}
 	.banner .wrapp > .text > .row > p {	
 		text-align: center;
@@ -1615,7 +1887,7 @@ hr{
 		width: 100%;
 	}
 	.head-banner {
-		height: 440px;
+		height: 240px;
 	}
 
 	.secondlinebq {
@@ -1644,7 +1916,7 @@ hr{
 		margin-right: 0px;
 	}
 	.slides-holder {
-		padding: 0px 6.15%;
+		padding: 0px;
 		padding-top: 20px;
 	}
 	.wdt20perc {
@@ -1824,12 +2096,102 @@ hr{
 	.container {
 		width: 100%;
 	}
+	#faq .wrap {
+		width: 100%;
+		padding: 30px 20px;
+	}
+	#faq .wrap h2 {
+		font-size: 34px;
+	}
+	#faq .wrap h3 {
+		font-size: 20px;
+	}
+	#faq .wrap p {
+		font-size: 16px;
+	}
 	.banner .wrapp {
-		margin-top: 50%;
+		margin-top: 20%;
 	}
 	.banner .wrapp > h1 {
 		text-align: center;
-		font-size: 50px;
+		font-size: 32px;
+	}
+
+	.cslide-slide {
+		width: 100%;
+	}
+	.slides-holder article{
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 48%;
+	}
+	.slides-holder1 article {
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 48%;
+	}
+	.slides-holder2 article{
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 47%;
+	}
+	.slides-holder1 article:nth-child(4), .slides-holder1 article:nth-child(8) {
+		margin-right: 20px;
+	}
+	.slides-holder1 article:nth-child(2), .slides-holder1 article:nth-child(4),
+	.slides-holder1 article:nth-child(6), .slides-holder1 article:nth-child(8) {
+		margin-right: 0px;
+	}
+	.slides-holder article label, .slides-holder1 article label, .slides-holder2 article label {
+		font-size: 18px;
+	}
+
+	.expertise article h2 {
+		font-size: 22px;
+	}
+	.expertise article p, #home-page .expertise article ul {
+		font-size: 16px;
+	}
+	.check-list {
+		font-size: 16px;
+	}
+	.expertise {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.fristbottomblk, .friendblk {
+		padding: 0px;
+	}
+	.fristbottomblkwrap {
+		width: 100%; 
+	}
+	.expertise article {
+		width: 100%;
+	}
+	.borderinbotmforsm{
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		border-bottom: 2px solid #f2f2f1;
+	}
+
+	.friendblkwrap {
+		width: 100%; 
+	}
+	.friendblk h2 {
+		font-size: 36px;
+	}
+
+	.friendblk p {
+		font-size: 20px;
+	}
+
+
+	.head-banner {
+		height: 330px;
 	}
 	.banner .wrapp > .text > .row > p {	
 		text-align: center;
@@ -1848,6 +2210,10 @@ hr{
 	.secondlinebq {
 		padding-top: 55px;
 		width: 48%;
+	}
+	.sm-conttxt{
+		text-align: right;
+		padding-right: 15px;
 	}
 
 	.secondlinebq blockquote {
@@ -1945,18 +2311,115 @@ hr{
 	.top-right {
 		padding-top: 22px;
 	}
+	.sm-conttxt{
+		text-align: right;
+		padding-right: 15px;
+	}
 	/* ----------------/header---------------- */
 	.banner .wrapp {
-		margin-top: 42%;
+		margin-top: 18%;
+	}
+	.ct-head {
+		font-size: 18px;
+	}
+	#faq .wrap {
+		width: 100%;
+		padding: 30px 20px;
+	}
+	#faq .wrap h2 {
+		font-size: 34px;
+	}
+	#faq .wrap h3 {
+		font-size: 20px;
+	}
+	#faq .wrap p {
+		font-size: 16px;
+	}
+	.cslide-slide {
+		width: 100%;
+	}
+	.slides-holder article{
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 47%;
+	}
+	.slides-holder1 article {
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 47%;
+	}
+	.slides-holder2 article{
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 47%;
+	}
+	.slides-holder1 article:nth-child(4), .slides-holder1 article:nth-child(8) {
+		margin-right: 20px;
+	}
+	.slides-holder1 article:nth-child(2), .slides-holder1 article:nth-child(4),
+	.slides-holder1 article:nth-child(6), .slides-holder1 article:nth-child(8) {
+		margin-right: 0px;
+	}
+	.slides-holder article label, .slides-holder1 article label, .slides-holder2 article label {
+		font-size: 16px;
+	}
+
+
+	.expertise article {
+		width: 100%;
+	}
+	.expertise article p, #home-page .expertise article ul {
+		font-size: 16px;
+	}
+	.check-list {
+		font-size: 16px;
+	}
+	.expertise article h2 {
+		font-size: 22px;
+	}
+	.wdt100perc{width: 100%;}
+	.borderinbotmforsm{
+		margin-bottom: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		border-bottom: 2px solid #f2f2f1;
+	}
+
+	.expertise {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.fristbottomblk, .friendblk {
+		padding: 0px;
+	}
+	.fristbottomblkwrap {
+		width: 100%; 
+	}
+	.friendblkwrap {
+		width: 100%; 
+	}
+	.friendblk h2 {
+		font-size: 36px;
+	}
+
+	.friendblk p {
+		font-size: 20px;
 	}
 	.banner .wrapp > h1 {
 		text-align: center;
-		font-size: 40px;
+		font-size: 28px;
+		line-height: 55px;
 	}
 	.banner .wrapp > .text > .row > p {	
 		text-align: center;
 		margin-bottom: 15px;
 		font-size: 20px;
+	}
+	.heart-img {
+		top: 91.4%;
 	}
 	.custom-itineraray{
 		text-align: center;
@@ -1968,7 +2431,7 @@ hr{
 		width: 100%;
 	}
 	.head-banner {
-		height: 440px;
+		height: 330px;
 	}
 	.smallest-expertise{
 		width: 100%;
@@ -2088,7 +2551,6 @@ hr{
 		width: 100%;
 	}
 	#home-page .expertise {
-		padding-bottom: 0px;
 		padding-top: 45px;
 	}
 	.hidden-smallest{
@@ -2127,12 +2589,54 @@ hr{
 	.container {
 		width: 100%;
 	}
+	#faq .wrap {
+		width: 100%;
+	}
+	.cslide-slide {
+		width: 100%;
+	}
+	.slides-holder article{
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 22%;
+	}
+	.slides-holder1 article {
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 22%;
+	}
+	.slides-holder2 article{
+		float: left;
+		margin-right: 20px;
+		margin-top: 22px;
+		width: 47%;
+	}
+	.slides-holder article label, .slides-holder1 article label, .slides-holder2 article label {
+		font-size: 14px;
+	}
+	.fristbottomblkwrap {
+		width: 100%; 
+	}
+	.expertise article p, #home-page .expertise article ul {
+		font-size: 16px;
+	}
+	.check-list {
+		font-size: 16px;
+	}
+	.expertise article h2 {
+		font-size: 22px;
+	}
+	.friendblkwrap {
+		width: 100%; 
+	}
 	.banner .wrapp {
-		margin-top: 42.5%;
+		margin-top: 18.5%;
 	}
 	.banner .wrapp > h1 {
 		text-align: center;
-		font-size: 50px;
+		font-size: 38px;
 	}
 	.banner .wrapp > .text > .row > p {	
 		text-align: center;
@@ -2144,6 +2648,10 @@ hr{
 		width: 100%;
 		margin: 0;
 		padding: 0;
+	}
+	.sm-conttxt{
+		text-align: right;
+		padding-right: 15px;
 	}
 	#home-page .expertise article {
 		width: 84%;
@@ -2229,15 +2737,33 @@ hr{
 }
 
 @media (min-width: 886px) and (max-width: 991px) {
+	#faq .wrap {
+		width: 100%;
+	}
 	.container {
 		width: 100%;
 	}
+	.fristbottomblkwrap {
+		width: 100%; 
+	}
+	.friendblkwrap {
+		width: 100%; 
+	}
+	.cslide-slide {
+		width: 100%;
+	}
+	.cslide-slide2{
+		width: 525px;
+	}
+	.cslide-slide3{
+		width: 650px;
+	}
 	.banner .wrapp {
-		margin-top: 38.5%;
+		margin-top: 18.5%;
 	}
 	.banner .wrapp > h1 {
 		text-align: center;
-		font-size: 50px;
+		font-size: 40px;
 	}
 	.banner .wrapp > .text > .row > p {	
 		text-align: center;
@@ -2259,6 +2785,10 @@ hr{
 	.secondlinebq {
 		padding-top: 55px;
 		width: 48%;
+	}
+	.sm-conttxt{
+		text-align: right;
+		padding-right: 15px;
 	}
 
 	.secondlinebq blockquote{
@@ -2312,11 +2842,30 @@ hr{
 
 @media (min-width: 992px) and (max-width: 1199px) {
 	.banner .wrapp {
-		margin-top: 40%;
+		margin-top: 18%;
+	}
+	.fristbottomblkwrap {
+		width: 100%; 
+	}
+	.friendblkwrap {
+		width: 100%; 
 	}
 	.wdt2775perc {
 		width: 33.33333333%;
 	}
+
+
+	.cslide-slide {
+		width: 100%;
+	}
+	.cslide-slide2{
+		width: 525px;
+	}
+	.cslide-slide3{
+		width: 650px;
+	}
+
+
 	#home-page .expertise blockquote {
 		padding: 40px 49px;
 	}
@@ -2343,6 +2892,10 @@ hr{
 	}
 	.givcall{
 		width: 45%;
+	}
+	.sm-conttxt{
+		text-align: right;
+		padding-right: 15px;
 	}
 	.wdt2783perc {
 		width: 30%;

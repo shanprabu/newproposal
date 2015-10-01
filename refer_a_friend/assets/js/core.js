@@ -58,6 +58,14 @@ $(".start-date").datepicker({
 })
 .attr('readonly', 'readonly');
 
+$(".return-date").datepicker({
+	dateFormat: 'dd M yy',
+	autoclose:true,
+	showOtherMonths: true,
+	selectOtherMonths: true
+})
+.attr('readonly', 'readonly');
+
 
 
 
