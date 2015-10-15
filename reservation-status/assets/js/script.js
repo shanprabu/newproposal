@@ -31,5 +31,17 @@ jQuery(document).ready(function($){
 		$nav_items.removeClass('active');
 		$current_tab.addClass('active');
 	});
+
+
+	 $('.user-table tr td:first-child').on('click', function (evt)
+    {
+      $(this).parent('tr').toggleClass('selected-rowselection');
+      if ($('.selected-rowselection').length > 0)
+      	{
+      		$('.topbarcontainer').show();
+      	} else {
+      		$('.topbarcontainer').hide();
+      	}
+    });
 });
 

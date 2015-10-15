@@ -245,39 +245,39 @@ header .wrapper nav ul.nav.nav-tabs > li > a.active{
 	margin: 7px 0px;
 	overflow: auto;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading {
+.panel .panel-heading {
 	background: none;
 	border: none;
 	padding: 20px 15px;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading .panel-title a {
+.panel .panel-heading .panel-title a {
 	text-decoration: none;
 	position: relative;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading .panel-title a:focus {
+.panel .panel-heading .panel-title a:focus {
 	outline: none;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading .panel-title a span {
+.panel .panel-heading .panel-title a span {
 	color: #5b5b5b;
 	font-size: 18px;
 	letter-spacing: 0.1em;
 	text-decoration: none;
 	font-family: 'Soin_Sans_Pro_Medium';
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading .panel-title a .titletxt {
+.panel .panel-heading .panel-title a .titletxt {
 	color: #5b5b5b;
 	font-size: 18px;
 	letter-spacing: 0.1em;
 	text-decoration: none;
 	font-family: 'Soin_Sans_Pro_Medium';
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading .panel-title a span:first-child:after {
+.panel .panel-heading .panel-title a span:first-child:after {
 	content: "|";
 	padding: 0px 10px;
 
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading .panel-title.col-md-12 a span.plus,
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading .panel-title.col-md-12 a span.minus  {
+.panel .panel-heading .panel-title.col-md-12 a span.plus,
+.panel .panel-heading .panel-title.col-md-12 a span.minus  {
 	width: 34px;
 	height: 32px;
 	color: #FFF;
@@ -291,33 +291,33 @@ header .wrapper nav ul.nav.nav-tabs > li > a.active{
 	right: -3px;
 	top: -7px;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading .panel-title.col-md-12 a span.plus  {
+.panel .panel-heading .panel-title.col-md-12 a span.plus  {
 	display: none;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading .panel-title a:not(collapsed) span.minus {
+.panel .panel-heading .panel-title a:not(collapsed) span.minus {
 	display: block;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading .panel-title.col-md-12 a.collapsed span.minus {
+.panel .panel-heading .panel-title.col-md-12 a.collapsed span.minus {
 	display: none;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-heading .panel-title a.collapsed span.plus {
+.panel .panel-heading .panel-title a.collapsed span.plus {
 	display: block;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse.collapse {
+.panel .panel-collapse.collapse {
 	overflow: auto;
 	padding-bottom: 30px;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body {
+.panel .panel-collapse .panel-body {
 	border: none;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tr > td {
+.panel .panel-collapse .panel-body table.col-md-12 tr > td {
 	background: #fefefe;
 	color: #686868;
 	font-weight: 300;
 	border: 1px solid #d4d4d4;
 	padding: 7px;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tr > th {
+.panel .panel-collapse .panel-body table.col-md-12 tr > th {
 	color: #686868;
 	background: #EBEBEB none repeat scroll 0% 0%;
 	border: 1px solid #D4D4D4;
@@ -326,14 +326,14 @@ header .wrapper nav ul.nav.nav-tabs > li > a.active{
 	padding: 10px;
 	white-space: nowrap;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td input,
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td select {
+.panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td input,
+.panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td select {
 	/*height: 30px;*/
 	border: 1px solid #d7d5d5;
 	border-radius: 2px;
 	padding: 7px;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td select {
+.panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td select {
 	-webkit-appearance: none;       
 	-moz-appearance: none;    
 	appearance: none;
@@ -351,21 +351,17 @@ header .wrapper nav ul.nav.nav-tabs > li > a.active{
 	z-index: 1;
 	pointer-events: none;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td:first-child {
+.panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td:first-child {
 	background: #f3f3f3;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td:nth-child(2) {
+.panel-collapse .panel-body table.col-md-12 tbody > tr > td:nth-child(2) {
 	background: #f9f9f9;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td:nth-child(2) .relative {
+.panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td:nth-child(2) .relative {
 	position: relative;
 }
 
-
-
-
-
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td .description-text{
+.panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td .description-text{
 	width: 360px;
 	position: absolute;
 	padding: 10px;
@@ -377,7 +373,7 @@ header .wrapper nav ul.nav.nav-tabs > li > a.active{
 	z-index: 1;
 	display: none;
 }
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td .description-text:before {
+.panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td .description-text:before {
 	content: " ";
 	width: 0;
 	border-left: 10px solid transparent;
@@ -390,26 +386,26 @@ header .wrapper nav ul.nav.nav-tabs > li > a.active{
 }
 tbody{vertical-align: top;}
 
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td ul{
+.panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td ul{
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
 }
 
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td ul li{
+.panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td ul li{
 	color: #686868;
 	font-size: 14px;
 	line-height: 24px;
 }
 
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td ul li.namehotel{
+.panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td ul li.namehotel{
 	color: #686868;
 	font-size: 14px;
 	padding-bottom: 10px;
 	line-height: 24px;
 }
 
-.main-container .wrapper div#accordion.panel-group .panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td ul li.smalltxt{
+.panel .panel-collapse .panel-body table.col-md-12 tbody > tr > td ul li.smalltxt{
 	color: #686868;
 	font-size: 12px;
 	line-height: 24px;
@@ -756,13 +752,14 @@ tbody{vertical-align: top;}
 	user-select: none;
 }
 
-.table-striped > tbody > tr.selected > td, .table-striped > tbody > tr.selected > td input, .table-striped > tbody > tr.selected > td select,
-.table-striped > tbody > tr.selected > td textarea
+.user-table > tbody > tr.selected-rowselection > td, 
+.user-table > tbody > tr.selected-rowselection > td input, 
+.user-table > tbody > tr.selected-rowselection > td select,
+.user-table > tbody > tr.selected-rowselection > td textarea
 {
 	background-color: #cfc6ba !important;
 	color: #686868 !important;
 }
-
 
 
 /*-------------common -----------------*/
