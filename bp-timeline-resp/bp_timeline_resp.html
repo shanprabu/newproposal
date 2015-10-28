@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	<title>:: ET Booking Timeline ::</title>
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet"  href="assets/css/bp-timline-resp.css" type="text/css" media="all">
+
+	<link href="assets/css/jquery-ui.css" rel="stylesheet">
+	<!-- timeline -->
+	<link href="assets/timeline/css/custom-timeline.css" rel="stylesheet">
+
+	<link href="assets/css/accordion.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<script src="assets/js/ie.js"></script>
+<![endif]-->
+</head>
+
+<body class="home page page-id-7 page-template page-template-home-page page-template-home-page-php lang-en">
+	<div id="site-wrap" class="" style="margin-left: 0px;"> <!-- ( This ends in the footer ) -->
+		<a href="http://www.enchantingtravels.com/#" id="back-to-top" style="display: none;"></a>
+		<header id="header">
+			<div class="top" style="margin-left: 0px;">
+				<div class="wrap" >
+					<a href="" class="logo">Enchanting Travels</a>
+					<a href="http://www.enchantingtravels.com/#" class="mobile-menu-button">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>
+					<div id="mobile-menu-container" style="height: 916px; right: -410px;" class=""> <!-- Used in conjunction with #site-wrap -->
+						<nav>
+							<ul class="mgnlft32perc">
+								<li class="menu-item-has-children destinations menu-item menu-item-type-post_type menu-item-object-page">
+									<a href="">Proposal</a>
+								</li>
+								<li class="menu-item-has-children vacations menu-item menu-item-type-post_type menu-item-object-page">
+									<a href="">Booking</a>
+								</li>
+								<li class="menu-item-has-children vacations menu-item menu-item-type-post_type menu-item-object-page">
+									<a href="">Trip Documents</a>
+								</li>
+							</ul>
+							<div class="mobile-show">
+								<div class="buttons">
+									<a href="" class="button contact"><i class="contact-icon"></i>Contact Us</a>
+								</div> <!-- .buttons -->
+							</div> <!-- .mobile-show -->
+						</nav>
+					</div> <!-- #mobile-menu-container -->
+					<div class="right">  						
+						<a href="" class="button contact"><i class="contact-icon"></i>Contact Us</a>
+					</div> <!-- .right -->
+					<div class="right-active">
+						<a href="" class="active-booking-page">Booking</a>
+					</div> 
+					<div class="clear"></div>
+				</div> <!-- .wrap -->
+			</div> <!-- .top -->
+		</header>
+
+		<div id="main-container">
+
+			<div class="cd-tabs">
+				<nav>
+					<div class="linegrey"></div>
+					<ul class="cd-tabs-navigation">
+						<li><a data-content="guest-details" class="selected" href="#0">Guest Details</a></li>
+						<li><a data-content="trip-details" href="#0">Trip Details</a></li>
+						<li><a data-content="advance-payment" href="#0">Advance Payment</a></li>
+						<li><a data-content="passport-copies" href="#0">Passport Copies</a></li>
+						<li><a data-content="balance-payment" href="#0">Balance Payment</a></li>
+					</ul> <!-- cd-tabs-navigation -->
+				</nav>
+
+				<ul class="cd-tabs-content">
+					<li data-content="guest-details" class="selected">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="row">
+
+								<div class="col-md-3 col-sm-12 pull-right floatnonelft">
+									<div class="row">
+										<div class="mainrightcontainer">
+											<div class="tripsummarycont">
+												<h3>TRIP SUMMARY</h3>
+												<ul>
+													<li><span>Guest:</span> John Doe</li>
+													<li><span>No. of Guest:</span> 4</li>
+													<li><span>Destination:</span> India</li>
+													<li><span>Start Date:</span> 10 Dec 2015 </li>
+													<li><span>End Date:</span> 19 Dec 2015</li>
+													<li><span>Nights:</span> 9</li>
+												</ul>
+												<h4>
+													<span>Total:</span> USD 10,420
+												</h4>
+											</div>
+											<div class="ctacont">
+												<h3>Question? We're here to help!</h3>
+												<div class="cta-details">
+													<img src="assets/images/parik.png">
+													<ul>
+														<li>Parik Laxminarayan</li>
+														<li><a href="">parik@enchanting-travels.com</a></li>
+														<li>1 888 263 2574</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-9 col-sm-12">
+									<div class="row">
+										<div class="mainleftcontainer">
+
+											<!-- preimary guest info -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Primary Guest Info 
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Last Name *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Email *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Select Country *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Address 1 *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Address 2</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">City *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">State *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Zip Code *</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- primary guest info -->
+
+											<!-- addtional guest 1 -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Addtional Guest 1
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- addtional guest 1 ends -->
+
+											<!-- International flight details -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														International Flight Details
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- international flight details ends -->
+
+											<!-- Addtional Info -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Addtional Info
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- additional Info ends -->
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li data-content="trip-details">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="row">
+
+								<div class="col-md-3 col-sm-12 pull-right floatnonelft">
+									<div class="row">
+										<div class="mainrightcontainer">
+											<div class="tripsummarycont">
+												<h3>TRIP SUMMARY</h3>
+												<ul>
+													<li><span>Guest:</span> John Doe</li>
+													<li><span>No. of Guest:</span> 4</li>
+													<li><span>Destination:</span> India</li>
+													<li><span>Start Date:</span> 10 Dec 2015 </li>
+													<li><span>End Date:</span> 19 Dec 2015</li>
+													<li><span>Nights:</span> 9</li>
+												</ul>
+												<h4>
+													<span>Total:</span> USD 10,420
+												</h4>
+											</div>
+											<div class="ctacont">
+												<h3>Question? We're here to help!</h3>
+												<div class="cta-details">
+													<img src="assets/images/parik.png">
+													<ul>
+														<li>Parik Laxminarayan</li>
+														<li><a href="">parik@enchanting-travels.com</a></li>
+														<li>1 888 263 2574</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-9 col-sm-12">
+									<div class="row">
+										<div class="mainleftcontainer">
+
+											<!-- preimary guest info -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Primary Guest Info 
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Last Name *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Email *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Select Country *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Address 1 *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Address 2</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">City *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">State *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Zip Code *</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- primary guest info -->
+
+											<!-- addtional guest 1 -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Addtional Guest 1
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- addtional guest 1 ends -->
+
+											<!-- International flight details -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														International Flight Details
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- international flight details ends -->
+
+											<!-- Addtional Info -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Addtional Info
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- additional Info ends -->
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li data-content="advance-payment">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="row">
+
+								<div class="col-md-3 col-sm-12 pull-right floatnonelft">
+									<div class="row">
+										<div class="mainrightcontainer">
+											<div class="tripsummarycont">
+												<h3>TRIP SUMMARY</h3>
+												<ul>
+													<li><span>Guest:</span> John Doe</li>
+													<li><span>No. of Guest:</span> 4</li>
+													<li><span>Destination:</span> India</li>
+													<li><span>Start Date:</span> 10 Dec 2015 </li>
+													<li><span>End Date:</span> 19 Dec 2015</li>
+													<li><span>Nights:</span> 9</li>
+												</ul>
+												<h4>
+													<span>Total:</span> USD 10,420
+												</h4>
+											</div>
+											<div class="ctacont">
+												<h3>Question? We're here to help!</h3>
+												<div class="cta-details">
+													<img src="assets/images/parik.png">
+													<ul>
+														<li>Parik Laxminarayan</li>
+														<li><a href="">parik@enchanting-travels.com</a></li>
+														<li>1 888 263 2574</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-9 col-sm-12">
+									<div class="row">
+										<div class="mainleftcontainer">
+
+											<!-- preimary guest info -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Primary Guest Info 
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Last Name *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Email *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Select Country *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Address 1 *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Address 2</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">City *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">State *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Zip Code *</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- primary guest info -->
+
+											<!-- addtional guest 1 -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Addtional Guest 1
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- addtional guest 1 ends -->
+
+											<!-- International flight details -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														International Flight Details
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- international flight details ends -->
+
+											<!-- Addtional Info -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Addtional Info
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- additional Info ends -->
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li data-content="passport-copies">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="row">
+
+								<div class="col-md-3 col-sm-12 pull-right floatnonelft">
+									<div class="row">
+										<div class="mainrightcontainer">
+											<div class="tripsummarycont">
+												<h3>TRIP SUMMARY</h3>
+												<ul>
+													<li><span>Guest:</span> John Doe</li>
+													<li><span>No. of Guest:</span> 4</li>
+													<li><span>Destination:</span> India</li>
+													<li><span>Start Date:</span> 10 Dec 2015 </li>
+													<li><span>End Date:</span> 19 Dec 2015</li>
+													<li><span>Nights:</span> 9</li>
+												</ul>
+												<h4>
+													<span>Total:</span> USD 10,420
+												</h4>
+											</div>
+											<div class="ctacont">
+												<h3>Question? We're here to help!</h3>
+												<div class="cta-details">
+													<img src="assets/images/parik.png">
+													<ul>
+														<li>Parik Laxminarayan</li>
+														<li><a href="">parik@enchanting-travels.com</a></li>
+														<li>1 888 263 2574</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-9 col-sm-12">
+									<div class="row">
+										<div class="mainleftcontainer">
+
+											<!-- preimary guest info -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Primary Guest Info 
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Last Name *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Email *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Select Country *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Address 1 *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Address 2</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">City *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">State *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Zip Code *</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- primary guest info -->
+
+											<!-- addtional guest 1 -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Addtional Guest 1
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- addtional guest 1 ends -->
+
+											<!-- International flight details -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														International Flight Details
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- international flight details ends -->
+
+											<!-- Addtional Info -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Addtional Info
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- additional Info ends -->
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li data-content="balance-payment">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="row">
+
+								<div class="col-md-3 col-sm-12 pull-right floatnonelft">
+									<div class="row">
+										<div class="mainrightcontainer">
+											<div class="tripsummarycont">
+												<h3>TRIP SUMMARY</h3>
+												<ul>
+													<li><span>Guest:</span> John Doe</li>
+													<li><span>No. of Guest:</span> 4</li>
+													<li><span>Destination:</span> India</li>
+													<li><span>Start Date:</span> 10 Dec 2015 </li>
+													<li><span>End Date:</span> 19 Dec 2015</li>
+													<li><span>Nights:</span> 9</li>
+												</ul>
+												<h4>
+													<span>Total:</span> USD 10,420
+												</h4>
+											</div>
+											<div class="ctacont">
+												<h3>Question? We're here to help!</h3>
+												<div class="cta-details">
+													<img src="assets/images/parik.png">
+													<ul>
+														<li>Parik Laxminarayan</li>
+														<li><a href="">parik@enchanting-travels.com</a></li>
+														<li>1 888 263 2574</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-9 col-sm-12">
+									<div class="row">
+										<div class="mainleftcontainer">
+
+											<!-- preimary guest info -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Primary Guest Info 
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Last Name *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Email *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Select Country *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Address 1 *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Address 2</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">City *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">State *</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">Zip Code *</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- primary guest info -->
+
+											<!-- addtional guest 1 -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Addtional Guest 1
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- addtional guest 1 ends -->
+
+											<!-- International flight details -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														International Flight Details
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- international flight details ends -->
+
+											<!-- Addtional Info -->
+											<div class="responsive-accordion responsive-accordion-default bm-larger">
+												<div class="setli">
+													<div class="responsive-accordion-head active">
+														Addtional Info
+														<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
+														<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
+													</div>
+													<div class="responsive-accordion-panel active">
+														<div class="col-md-12">
+															<div class="row">
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+																<div class="col-md-6 col-sm-6 col-xs-12">
+																	<span class="input input--juro">
+																		<input class="input__field input__field--juro" type="text" id="input-28" />
+																		<label class="input__label input__label--juro" for="input-28">
+																			<span class="input__label-content input__label-content--juro">First Name</span>
+																		</label>
+																	</span>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<!-- additional Info ends -->
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+
+				</ul> <!-- cd-tabs-content -->
+			</div> <!-- cd-tabs -->
+
+
+
+		</div> <!-- #home-page -->
+
+	</div> <!-- #site-wrap ( This starts in the header ) -->
+	<footer>
+		<div class="footer">
+			<div class="pull-left">© Copyright 2015 Enchanting-Travels</div>
+			<div class="pull-right">Terms & Conditions   |   Privacy Policy</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/custom_jquery_v1.11.2.js"></script>
+	<!-- timeline -->
+	<script src="assets/timeline/js/jquery-2.1.1.js"></script>
+	<script src="assets/timeline/js/custom_main.js"></script>
+	<script src="assets/timeline/js/modernizr.js"></script>
+	<!-- datepicker -->
+	<script src="assets/js/jquery-ui.js"></script>
+	<!-- accordion -->
+	<script src="assets/accordion/js/responsive-accordion.js"></script>
+	<!-- custom input field -->
+	<script src="assets/custom-input/js/classie.js"></script>
+	<script src="assets/custom-input/js/custom_input.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>	
