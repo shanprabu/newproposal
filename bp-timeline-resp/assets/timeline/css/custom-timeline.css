@@ -133,14 +133,6 @@ Main components
   -moz-animation: cd-fade-in 0.5s;
   animation: cd-fade-in 0.5s;
 }
-.cd-tabs-content li p {
-  font-size: 14px;
-  font-size: 0.875rem;
-  line-height: 1.6;
-  color: #8493bf;
-  margin-bottom: 2em;
-}
-
 
 
 /* -------------------- bootstrap Media Quires ------------------ */
@@ -188,6 +180,8 @@ Main components
 
   .cd-tabs-content {
     /*min-height: 480px;*/
+    width: 100%;
+    display: inline-block;
   }
   .cd-tabs-content li {
     /*padding: 2em 2em 2em 7em;*/

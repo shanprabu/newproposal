@@ -10005,7 +10005,6 @@ jQuery(function($) {
         });
         return false;
     });
-    
 
     $window.resize();
 });

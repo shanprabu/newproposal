@@ -21,13 +21,26 @@
 					inputEl.addEventListener( 'blur', onInputBlur );
 				} );
 
+				[].slice.call( document.querySelectorAll( 'select.select__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'select--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				});
+
 				function onInputFocus( ev ) {
 					classie.add( ev.target.parentNode, 'input--filled' );
+					classie.add( ev.target.parentNode, 'select--filled' );
 				}
 
 				function onInputBlur( ev ) {
 					if( ev.target.value.trim() === '' ) {
 						classie.remove( ev.target.parentNode, 'input--filled' );
+						classie.remove( ev.target.parentNode, 'select--filled' );
 					}
 				}
 			})();
