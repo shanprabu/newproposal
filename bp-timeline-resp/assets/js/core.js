@@ -15,6 +15,28 @@ $.each(toggleElements, function (key, value) {
 });
 
 
+$(".oppspage").click(function() {
+	$("#bankpaymentgroup").hide();
+	$(".hideitoops").show();
+});
+
+$(".sucesspage").click(function() {
+	$("#bankpaymentgroup").hide();
+	$(".hideitsuccess").show();
+});
+
+
+$(".thankupage").click(function() {
+	$("#bankpaymentgroup").hide();
+	$(".hideitthanku").show();
+});
+
+$(".cngrtsupage").click(function() {
+	$("#hideitoops").hide();
+	$(".hideitcogrtscont").show();
+});
+
+
 //radiobuttons swatch
 $("input[name$='bankpayment']").click(function() {
 	var test = $(this).val();
