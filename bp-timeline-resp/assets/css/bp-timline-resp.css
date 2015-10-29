@@ -2998,6 +2998,10 @@ ul#inert-price-include li:before{
 	background-color: #fff;
 	text-align: center;
 	padding: 4% 14%;
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(233,233,232,1);
+	-moz-box-shadow: 2px 2px 2px 0px rgba(233,233,232,1);
+	box-shadow: 2px 2px 2px 0px rgba(233,233,232,1);
+	background-color: #ffffff;
 }
 
 .modal-travel-consultant h4{

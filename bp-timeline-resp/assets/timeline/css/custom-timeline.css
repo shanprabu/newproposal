@@ -93,6 +93,7 @@ Main components
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #82817e;
+  pointer-events: none;
   padding-top: 34px;
 }
 .no-touch .cd-tabs-navigation a:hover {
