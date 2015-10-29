@@ -1,48 +1,63 @@
 $(document).ready(function(){
 
-	//radiobuttons swatch
-	$("input[name$='bankpayment']").click(function() {
-		var test = $(this).val();
+//show hidediv onclick of class
+var toggleElements = $(".toggleMe");
+$.each(toggleElements, function (key, value) {
+	if (value.hasClass('hidden')) {
+		value.removeClass('hidden');
+		value.addClass('shown');
+	} else {
+		if (value.hasClass('shown')) {
+			value.removeClass('shown');
+			value.addClass('hidden');
+		}
+	}
+});
 
-		$("#bankpaymentgroup .bankpaymentgroupdesc").hide();
-		$("#bankpayment" + test).show();
-	});
 
-	 //radiobuttons swatch
-	 $("input[name$='billingaddress']").click(function() {
-	 	var test = $(this).val();
+//radiobuttons swatch
+$("input[name$='bankpayment']").click(function() {
+	var test = $(this).val();
 
-	 	$("#billingaddressgr .billingaddressgrdesc").hide();
-	 	$("#billingaddress" + test).show();
-	 });
+	$("#bankpaymentgroup .bankpaymentgroupdesc").hide();
+	$("#bankpayment" + test).show();
+});
 
-  	// Tool tip js starts 
-  	//Tipped.create('.tool-tip');
-    // Tool tip js ends 
+//radiobuttons swatch
+$("input[name$='billingaddress']").click(function() {
+	var test = $(this).val();
 
-     // Date Picker
-     $(".dob").datepicker({
-     	dateFormat: 'M dd yy',
-     	autoclose:true,
-     	showOtherMonths: true,
-     	selectOtherMonths: true
-     }).attr('readonly', 'readonly');
+	$("#billingaddressgr .billingaddressgrdesc").hide();
+	$("#billingaddress" + test).show();
+});
 
-	// Date Picker
-	$(".start-date").datepicker({
-		dateFormat: 'M dd yy',
-		autoclose:true,
-		showOtherMonths: true,
-		selectOtherMonths: true
-	})
-	.attr('readonly', 'readonly');
-	$(".end-date").datepicker({
-		dateFormat: 'M dd yy',
-		autoclose:true,
-		showOtherMonths: true,
-		selectOtherMonths: true
-	})
-	.attr('readonly', 'readonly');
+// Tool tip js starts 
+//Tipped.create('.tool-tip');
+// Tool tip js ends 
+
+// Date Picker
+$(".dob").datepicker({
+	dateFormat: 'M dd yy',
+	autoclose:true,
+	showOtherMonths: true,
+	selectOtherMonths: true
+}).attr('readonly', 'readonly');
+
+// Date Picker
+$(".start-date").datepicker({
+	dateFormat: 'M dd yy',
+	autoclose:true,
+	showOtherMonths: true,
+	selectOtherMonths: true
+})
+.attr('readonly', 'readonly');
+$(".end-date").datepicker({
+	dateFormat: 'M dd yy',
+	autoclose:true,
+	showOtherMonths: true,
+	selectOtherMonths: true
+})
+.attr('readonly', 'readonly');
 
 });
 
@@ -87,10 +102,10 @@ $(document).mouseup(function (e)
 {
 	var container = $(".questioncontent");
 
-    if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-    	container.hide();
-    }
+if (!container.is(e.target) // if the target of the click isn't the container...
+&& container.has(e.target).length === 0) // ... nor a descendant of the container
+{
+	container.hide();
+}
 });
 

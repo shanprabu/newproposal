@@ -49,4 +49,13 @@ jQuery(document).ready(function($){
 			tabs.parent('.cd-tabs').removeClass('is-ended');
 		}
 	}
+
+	$('.proceedtonextpage').on('click', function() {
+		var currentLiTrigger = $('a.selected');
+		var currentLi = $('li.selected');
+		var nextLiTrigger = currentLiTrigger.parent().next('li');
+		var nextLi = currentLi.next('li');
+		nextLiTrigger.find('a')[0].click();
+		currentLiTrigger.addClass('done');
+	});
 });

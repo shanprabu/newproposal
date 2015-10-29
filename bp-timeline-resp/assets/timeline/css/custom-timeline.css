@@ -107,6 +107,11 @@ Main components
   background-image: url("../../images/timeline_icon_active.png");
   background-repeat: no-repeat;
 }
+.cd-tabs-navigation a.done::before {
+  /* icons */
+  background-image: url("../../images/timeline_icon_done.png");
+  background-repeat: no-repeat;
+}
 .cd-tabs-navigation a::before {
   /* icons */
   position: absolute;
@@ -167,7 +172,6 @@ Main components
   }
   .cd-tabs nav {
     position: relative;
-    box-shadow: inset -2px 0 3px rgba(203, 196, 130, 0.06);
     z-index: 1;
   }
 
@@ -195,13 +199,19 @@ Main components
 
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) and (max-width: 1399px){
+  .wrap {
+    margin: 0 auto;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 
   .cd-tabs-navigation {
     /* tabbed on top on big devices */
-    width: 1200px;
     margin: 0 auto;
-    padding: 0em 2em;
+    width: 1200px;
+    padding: 0;
     height: 98px;
   }
   .cd-tabs-navigation a {
@@ -210,7 +220,8 @@ Main components
     width: auto;
     text-align: left;
     font-size: 17px;
-    padding: 0 3.4em 0 3.4em;
+    padding: 0 3.9em;
+        pointer-events: none;
   }
   .cd-tabs-navigation a.selected {
     /*box-shadow: inset 0 2px 0 #f05451;*/
@@ -219,8 +230,10 @@ Main components
     top: 17%;
   }
   .cd-tabs-content li {
-    width: 1200px;
     margin: 0 auto;
+    width: auto;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
 }
@@ -228,7 +241,7 @@ Main components
 @media (min-width: 1400px){
   .cd-tabs-navigation {
     /* tabbed on top on big devices */
-    width: 1200px;
+    width: 1240px;
     margin: 0 auto;
     padding: 0em 2em;
     height: 98px;
@@ -239,7 +252,7 @@ Main components
     width: auto;
     text-align: left;
     font-size: 17px;
-    padding: 0 3.4em 0 3.4em;
+    padding: 0 3.84em;
     text-decoration: inherit;
   }
   .cd-tabs-navigation a.selected {
@@ -282,12 +295,39 @@ Main components
 
   .cd-tabs-content li {
     width: auto;
-    margin-left: 10px;
-    margin-right:10px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
   .floatnonelft{
     float: none !important;
   }
+  .responsive-accordion-default.responsive-accordion .setli .responsive-accordion-panel {
+    margin: 20px 10px;
+    background: #f7f7f7;
+    padding: 5px;
+    width: 95.6%;
+  }
+
+  .input {
+    width: 100%;
+  }
+  .select {
+    width: 100%;
+  }
+  .responsive-accordion-default.responsive-accordion .setli .responsive-accordion-head i {
+    width: 33px;
+    height: 34px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 16px;
+    right: 10px;
+  }
+  .responsive-accordion-default.responsive-accordion .setli .responsive-accordion-head {
+    padding: 20px 10px;
+    font-size: 22px;
+  }
+
 }
 
 @media (max-width: 767px) and (min-width: 650px){
@@ -325,13 +365,23 @@ Main components
   .floatnonelft{
     float: none !important;
   }
+  .responsive-accordion-default.responsive-accordion .setli .responsive-accordion-panel {
+    width: 91.6%;
+  }
+
+  .input {
+    width: 100%;
+  }
+  .select {
+    width: 100%;
+  }
 
 }
 
 @media(max-width: 651px) and (min-width: 401px){
 
   .cd-tabs-navigation {
-    width: 680px;
+    width: 635px;
     margin: 0 auto;
     padding: 0em 1.8em;
     height: 98px;
@@ -355,12 +405,41 @@ Main components
   }
   .cd-tabs-content li {
     width: auto;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
   .floatnonelft{
     float: none !important;
   }
+
+  .responsive-accordion-default.responsive-accordion .setli .responsive-accordion-panel {
+    margin: 20px 10px;
+    background: #f7f7f7;
+    padding: 5px;
+    width: 95.6%;
+  }
+
+  .input {
+    width: 100%;
+  }
+  .select {
+    width: 100%;
+  }
+
+  .responsive-accordion-default.responsive-accordion .setli .responsive-accordion-head i {
+    width: 33px;
+    height: 34px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 16px;
+    right: 10px;
+  }
+  .responsive-accordion-default.responsive-accordion .setli .responsive-accordion-head {
+    padding: 20px 10px;
+    font-size: 22px;
+  }
+
 }
 
 
@@ -397,6 +476,9 @@ Main components
     width: auto;
     margin-left: 30px;
     margin-right: 30px;
+  }
+  .responsive-accordion-default.responsive-accordion .setli .responsive-accordion-panel {
+    width: 92.6%;
   }
 
 }
