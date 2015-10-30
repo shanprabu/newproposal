@@ -84,6 +84,28 @@ $(".end-date").datepicker({
 });
 
 
+if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}
+
 function readURL(input) {
 	if (input.files && input.files[0]) {
 		var reader = new FileReader();
@@ -99,22 +121,12 @@ function readURL(input) {
 	}
 }
 
+function sample() {
+	$('.sampleerrormgnc').siblings('i').addClass('correctfield');
+	$('.sampleerrormgn').addClass('errormsg')
+	$('.sampleerrormgn').siblings('span').show();
 
-function switchVisible() {
-	if (document.getElementById('advancepaymentcont')) {
-
-		if (document.getElementById('advancepaymentcont').style.display == 'none') {
-			document.getElementById('advancepaymentcont').style.display = 'block';
-			document.getElementById('advancepaymenterror').style.display = 'none';
-		}
-		else {
-			document.getElementById('advancepaymentcont').style.display = 'none';
-			document.getElementById('advancepaymenterror').style.display = 'block';
-		}
-	}
 }
-
-
 
 
 $('.questionlink').click(function(){

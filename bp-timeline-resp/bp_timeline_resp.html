@@ -77,8 +77,8 @@
 						<li><a data-content="guest-details" class="guest-details selected" href="#0">Guest Details</a></li>
 						<li><a data-content="trip-details" class="trip-details" href="#0">Trip Details</a></li>
 						<li><a data-content="advance-payment" class="advance-payment" href="#0">Advance Payment</a></li>
-						<li><a data-content="passport-copies" class="passport-copies" href="#0" style="pointer-event:inherit;">Passport Copies</a></li>
-						<li><a data-content="balance-payment" class="balance-payment" href="#0" style="pointer-event:inherit;">Balance Payment</a></li>
+						<li><a data-content="passport-copies" class="passport-copies" href="#0" style="pointer-events:inherit;">Passport Copies</a></li>
+						<li><a data-content="balance-payment" class="balance-payment" href="#0" style="pointer-events:inherit;">Balance Payment</a></li>
 					</ul> <!-- cd-tabs-navigation -->
 				</nav>
 
@@ -144,28 +144,34 @@
 														<div class="col-md-12">
 															<div class="row">
 																<div class="col-md-6 col-sm-6 col-xs-12">
-																	<span class="input input--juro">
+																	<span class="input input--juro sampleerrormgnc">
 																		<input class="input__field input__field--juro" type="text" id="input-28" />
 																		<label class="input__label input__label--juro" for="input-28">
 																			<span class="input__label-content input__label-content--juro">First Name *</span>
 																		</label>
 																	</span>
+																	<i class=""></i>
+																	<span class="errormsgtxt">This field is required.</span>
 																</div>
 																<div class="col-md-6 col-sm-6 col-xs-12">
-																	<span class="input input--juro">
+																	<span class="input input--juro sampleerrormgn">
 																		<input class="input__field input__field--juro" type="text" id="input-28" />
 																		<label class="input__label input__label--juro" for="input-28">
 																			<span class="input__label-content input__label-content--juro">Last Name *</span>
 																		</label>
 																	</span>
+																	<i class=""></i>
+																	<span class="errormsgtxt">This field is required.</span>
 																</div>
 																<div class="col-md-6 col-sm-6 col-xs-12">
-																	<span class="input input--juro">
+																	<span class="input input--juro sampleerrormgn">
 																		<input class="input__field input__field--juro" type="text" id="input-28" />
 																		<label class="input__label input__label--juro" for="input-28">
 																			<span class="input__label-content input__label-content--juro">Email *</span>
 																		</label>
 																	</span>
+																	<i class=""></i>
+																	<span class="errormsgtxt">This field is required.</span>
 																</div>
 																<div class="col-md-6 col-sm-6 col-xs-12">
 																	<span class="select select--juro">
@@ -180,6 +186,7 @@
 																		<label class="select__label select__label--juro" for="input-28">
 																			<span class="select__label-content select__label-content--juro">Select Country *</span>
 																		</label>
+																		<span class="errormsgtxt"></span>
 																	</span>
 																</div>
 																<div class="col-md-6 col-sm-6 col-xs-12">
@@ -189,6 +196,7 @@
 																			<span class="input__label-content input__label-content--juro">Address 1 *</span>
 																		</label>
 																	</span>
+																	<span class="errormsgtxt"></span>
 																</div>
 																<div class="col-md-6 col-sm-6 col-xs-12">
 																	<span class="input input--juro">
@@ -197,6 +205,7 @@
 																			<span class="input__label-content input__label-content--juro">Address 2</span>
 																		</label>
 																	</span>
+																	<span class="errormsgtxt"></span>
 																</div>
 																<div class="col-md-6 col-sm-6 col-xs-12">
 																	<span class="input input--juro">
@@ -205,6 +214,7 @@
 																			<span class="input__label-content input__label-content--juro">City *</span>
 																		</label>
 																	</span>
+																	<span class="errormsgtxt"></span>
 																</div>
 																<div class="col-md-6 col-sm-6 col-xs-12">
 																	<span class="input input--juro wdt413perc mgn-ryt64perc">
@@ -213,12 +223,14 @@
 																			<span class="input__label-content input__label-content--juro">State *</span>
 																		</label>
 																	</span>
+																	<span class="errormsgtxt"></span>
 																	<span class="input input--juro wdt436perc">
 																		<input class="input__field input__field--juro" type="text" id="input-28" />
 																		<label class="input__label input__label--juro" for="input-28">
 																			<span class="input__label-content input__label-content--juro">Zip Code *</span>
 																		</label>
 																	</span>
+																	<span class="errormsgtxt"></span>
 																</div>
 																<div class="col-md-6 col-sm-6 col-xs-12">
 																	<span class="input input--juro wdt436perc mgn-ryt64perc">
@@ -227,18 +239,21 @@
 																			<span class="input__label-content input__label-content--juro">Country Code *</span>
 																		</label>
 																	</span>
+																	<span class="errormsgtxt"></span>
 																	<span class="input input--juro wdt413perc">
 																		<input class="input__field input__field--juro" type="text" id="input-28" />
 																		<label class="input__label input__label--juro" for="input-28">
 																			<span class="input__label-content input__label-content--juro">Phone *</span>
 																		</label>
 																	</span>
+																	<span class="errormsgtxt"></span>
 																</div>
 
 																<div class="col-md-6 col-sm-6 col-xs-12">
 																	<span class="input input--juro">
 																		<input type="text"  placeholder="DOB *" class="form-control start-date date_icon pointerclass"> 
 																	</span>
+																	<span class="errormsgtxt"></span>
 																</div>
 															</div>
 														</div>
@@ -525,7 +540,7 @@
 												<div class="col-md-12">
 													<div class="row">
 														<a data-content="trip-details" href="javascript:void(0)" class="expandedbtns btn btn-primary mgn-ryt23 proceedtonextpage">Proceed to Payment</a>
-														<a href="" class="expandedbtns btn btn-planbdr">Save</a>
+														<a href="javascript:void(0)" onclick="sample();" class="expandedbtns btn btn-planbdr sampleerror" >Save</a>
 													</div>
 												</div>
 											</div>
@@ -1463,6 +1478,7 @@
 		</div> <!-- #home-page -->
 
 	</div> 
+	<a href="#" id="back-to-top" title="Back to top"></a>
 	<!-- #site-wrap ( This starts in the header ) -->
 	<footer>
 		<div class="footer">
@@ -1510,7 +1526,7 @@
 										</div>
 									</div>
 									<div class="form-group dispinblkwdt100">
-										<textarea class="customtxtarea wdt100perc" placecholder="Message *"> </textarea>
+										<textarea class="customtxtarea wdt100perc" rows="4" placeholder="Message *" ></textarea>
 									</div>
 									<div class="col-md-12 col-sm-12 col-xs-12">
 										<div class="row">

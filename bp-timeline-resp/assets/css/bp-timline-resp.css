@@ -1732,7 +1732,7 @@ footer{
 
 .form-control:-ms-input-placeholder {  
 	font-size: 16px;
-	color: ##767069;
+	color: #767069;
 	font-weight: bold;
 	-webkit-transform-origin: 0% 60%;
 	transform-origin: 0% 60%;
@@ -1740,6 +1740,26 @@ footer{
 	transition: transform 0.3s, color 0.3s;
 	text-rendering: geometricPrecision;
 	letter-spacing: 0.05em;
+}
+
+.customtxtarea:-ms-input-placeholder{
+	color: #767069;
+	font-weight: bold;
+}
+
+.customtxtarea::-moz-placeholder {
+	color: #767069;
+	font-weight: bold;
+}
+
+.customtxtarea:-moz-placeholder {
+	color: #767069;
+	font-weight: bold;
+}
+
+.customtxtarea::-webkit-input-placeholder {
+	color: #767069;
+	font-weight: bold;
 }
 
 
@@ -2197,6 +2217,7 @@ footer{
 	margin: 10px 0px;
 	width: 92%;
 	vertical-align: top;
+	margin-bottom: 14px;
 }
 
 .input__field {
@@ -2248,6 +2269,7 @@ footer{
 	margin: 10px 0px;
 	width: 92%;
 	vertical-align: top;
+	margin-bottom: 14px;
 }
 
 .select__field {
@@ -2292,6 +2314,30 @@ footer{
 	width: 100%;
 }
 /* Juro */
+.errormsg {
+	border: 0.18em solid #df776c !important;
+}
+
+.errormsgtxt{
+	color: #df776c;
+	font-size: 16px;
+	position: absolute;
+	top: 84%;
+	left: 4.5%;
+	display: none;
+}
+
+.correctfield{
+	background-image: url('../images/correct-field.png');
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	z-index: 9999;
+	top: 24px;
+}
+
 .input--juro {
 	overflow: hidden;
 	border: 0.18em solid #c6c6c3;
@@ -3155,5 +3201,29 @@ ul#inert-price-include li:before{
 /*---- show hide div ----*/
 .hideitoops, .hideitsuccess, .hideitthanku, .hideitcogrtscont{
 	display: none;
+}
+
+/*-------back to top -----------*/
+#back-to-top {
+	position: fixed;
+	background: url('../images/back-to-top.png');
+	background-repeat: no-repeat;
+	bottom: 100px;
+	right: 20px;
+	z-index: 9999;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	line-height: 30px;
+	color: #444;
+	cursor: pointer;
+	border: 0;
+	border-radius: 2px;
+	text-decoration: none;
+	transition: opacity 0.2s ease-out;
+	opacity: 0;
+}
+#back-to-top.show {
+	opacity: 1;
 }
 
