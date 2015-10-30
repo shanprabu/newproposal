@@ -1968,7 +1968,7 @@ footer{
 		margin-right: 0;
 	}
 	.customtxtarea {
-		width: 97.3%;
+		    width: 90.7% !important;
 	}
 	.expandedbtns{
 		width: 100%;
@@ -1987,6 +1987,10 @@ footer{
 		width: 86.4% !important;
 	}
 	.overflowscrolx{overflow-x:scroll; }
+	.correctfield {
+		top: 26px !important;
+		right: 5px !important;
+	}
 
 }
 
@@ -2019,6 +2023,10 @@ footer{
 	.inactiveLink {
 		pointer-events:visible !important;
 		cursor: pointer !important;
+	}
+	.correctfield {
+		top: 37px !important;
+		right: -11px !important;
 	}
 }
 
@@ -2083,6 +2091,10 @@ footer{
 		border-top: 2px solid #e8e8e8;
 		margin-left: 20px;
 		margin-right: 20px;
+	}
+	.correctfield {
+		top: 37px;
+		right: -11px;
 	}
 }
 
@@ -2332,10 +2344,10 @@ footer{
 	background-repeat: no-repeat;
 	width: 20px;
 	height: 20px;
-	display: inline-block;
-	position: relative;
+	position: absolute;
 	z-index: 9999;
 	top: 24px;
+	right: 10px;
 }
 
 .input--juro {
