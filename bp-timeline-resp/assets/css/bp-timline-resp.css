@@ -1968,7 +1968,7 @@ footer{
 		margin-right: 0;
 	}
 	.customtxtarea {
-		    width: 90.7% !important;
+		width: 90.7% !important;
 	}
 	.expandedbtns{
 		width: 100%;
@@ -2041,7 +2041,21 @@ footer{
 		margin-right: 0;
 	}
 	.customtxtarea {
-		width: 97.3% !important;
+		width: 94.8% !important;
+	}
+	.formobwdt{
+		margin-left: 22px;
+	}
+	.customradio label {    
+		margin-bottom: 0px !important;
+	}
+	.customradio input[type=radio]:checked + label {
+		padding: 0px 28px !important;
+		padding-right: 0 !important;
+	}
+	.customradio input[type=radio] + label {
+		padding: 0px 28px !important;
+		padding-right: 0 !important;
 	}
 	.expandedbtns{
 		width: 100%;
@@ -2052,10 +2066,10 @@ footer{
 		width: 86.4% !important;
 	}
 	.wdt436perc {
-		width: 46.1% !important;
+		width: 44.2% !important;
 	}
 	.wdt413perc {
-		width: 45.6% !important;
+		width: 42.6% !important;
 	}
 	#header nav .mobile-show .buttons a {
 		font-size: 18px;
@@ -2433,6 +2447,9 @@ footer{
 	background: transparent;
 	font-size: 16px;
 	color: #36312a;
+	background-image: none;
+ /*   background-repeat: no-repeat;
+    background-position: 100% 4px;*/
 }
 
 .select__label--juro {
@@ -2502,6 +2519,7 @@ footer{
 .mgnbtm10{margin-bottom: 10px !important;}
 .mgntp0{margin-top: 0px !important;}
 .mgnrytlft0{margin-right:0px; margin-left: 0px;}
+.mgnrytlft15{margin-left: 15px !important; margin-right: 15px !important;}
 .mgn0{margin: 0px;}
 .dispblk{display: block;}
 .dispinblkwdt100{display: inline-block;width: 100%;}
@@ -2828,8 +2846,9 @@ ul#inert-price-include li:before{
 	display: block;
 	font-size: 16px;
 	line-height: 24px;
-	font-family: 'Soin_Sans_Pro_Light';
+	font-family: 'Soin_Sans_Pro_Roman';
 	width: inherit;
+	margin-left: 0;
 }
 
 .bankordertxt ul li span{
@@ -3239,3 +3258,14 @@ ul#inert-price-include li:before{
 	opacity: 1;
 }
 
+.dropdown-icon {
+    background: #ffffff url("../images/arrow-icon-up.png") no-repeat scroll right center;
+    border-radius: 0 3px 3px 0;
+    height: 46px;
+    pointer-events: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 35px;
+    z-index: 999;
+}

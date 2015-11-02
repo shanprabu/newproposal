@@ -175,6 +175,7 @@
 																</div>
 																<div class="col-md-6 col-sm-6 col-xs-12">
 																	<span class="select select--juro">
+																		<i class="dropdown-icon"></i>
 																		<select class="select__field select__field--juro" id="input-28">
 																			<option></option>
 																			<option>country 1</option>
@@ -423,45 +424,47 @@
 														<div class="col-md-12 addtionalinfocont">
 															<div class="row">
 																<form>
-																	<div class="col-md-6 col-sm-6 col-xs-12">
-																		<div class="row">
-																			<div class="form-group mgn-rgt30 customradio">
-																				<div class="titlecont">Room Preference</div>
-																				<input type="radio" name="smoking" id="Non-Smoking" checked=""> 
-																				<label for="Non-Smoking">Non - Smoking</label> 
-																				<input type="radio" name="smoking" id="Smoking">
-																				<label for="Smoking">Smoking</label>       
+																	<div class="mgnrytlft15">
+																		<div class="col-md-6 col-sm-6 col-xs-12">
+																			<div class="row">
+																				<div class="form-group mgn-rgt30 customradio">
+																					<div class="titlecont">Room Preference</div>
+																					<input type="radio" name="smoking" id="Non-Smoking" checked=""> 
+																					<label for="Non-Smoking">Non - Smoking</label> 
+																					<input type="radio" name="smoking" id="Smoking">
+																					<label for="Smoking">Smoking</label>       
+																				</div>
 																			</div>
 																		</div>
-																	</div>
 
-																	<div class="col-md-6 col-sm-6 col-xs-12">
-																		<div class="row">
-																			<div class="form-group mgn-rgt30 customradio">
-																				<div class="titlecont">Bed Preference</div>
-																				<input type="radio" name="Bed" id="Twin" checked=""> 
-																				<label for="Twin">Twin</label> 
-																				<input type="radio" name="Bed" id="Double">
-																				<label for="Double">Double</label>       
+																		<div class="col-md-6 col-sm-6 col-xs-12">
+																			<div class="row">
+																				<div class="form-group mgn-rgt30 customradio">
+																					<div class="titlecont">Bed Preference</div>
+																					<input type="radio" name="Bed" id="Twin" checked=""> 
+																					<label for="Twin">Twin</label> 
+																					<input type="radio" name="Bed" id="Double">
+																					<label for="Double">Double</label>       
+																				</div>
 																			</div>
 																		</div>
-																	</div>
-																	<div class="ad-info-cont">
-																		<div class="form-group mgn-rgt15">
-																			<div class="titlecont">Dietary Requirement</div>
-																			<textarea  class="customtxtarea"> </textarea>
-																		</div>
+																		<div class="ad-info-cont">
+																			<div class="form-group mgn-rgt15">
+																				<div class="titlecont">Dietary Requirement</div>
+																				<textarea  class="customtxtarea"> </textarea>
+																			</div>
 
-																		<div class="form-group mgn-rgt15">
-																			<div class="titlecont">Important Medical Information</div>
-																			<textarea class="customtxtarea"> </textarea>
-																		</div>
+																			<div class="form-group mgn-rgt15">
+																				<div class="titlecont">Important Medical Information</div>
+																				<textarea class="customtxtarea"> </textarea>
+																			</div>
 
-																		<div class="form-group mgn-rgt15">
-																			<div class="titlecont">Special Request</div>
-																			<textarea class="customtxtarea"> </textarea>
-																		</div>
+																			<div class="form-group mgn-rgt15">
+																				<div class="titlecont">Special Request</div>
+																				<textarea class="customtxtarea"> </textarea>
+																			</div>
 
+																		</div>
 																	</div>
 																</form>
 															</div>
@@ -835,12 +838,14 @@
 															<div class="col-md-12">
 																<div class="row">
 																	<div class="form-group customradio paymentmethod">
-																		<input type="radio" name="bankpayment" id="Credit-Card" checked="checked" value="2"> 
-																		<label for="Credit-Card" class="wdt33perc">Credit Card</label> 
-																		<input type="radio" name="bankpayment" id="Bank-Transfer" value="3">
-																		<label for="Bank-Transfer" class="wdt33perc">Bank Transfer</label>    
-																		<input type="radio" name="bankpayment" id="Check-Cheque" value="4">
-																		<label for="Check-Cheque" class="wdt33perc">Check / Cheque</label>     
+																		<div class="formobwdt">
+																			<input type="radio" name="bankpayment" id="Credit-Card" checked="checked" value="2"> 
+																			<label for="Credit-Card" class="wdt33perc">Credit Card</label> 
+																			<input type="radio" name="bankpayment" id="Bank-Transfer" value="3">
+																			<label for="Bank-Transfer" class="wdt33perc">Bank Order</label>    
+																			<input type="radio" name="bankpayment" id="Check-Cheque" value="4">
+																			<label for="Check-Cheque" class="wdt33perc">Check</label>   
+																		</div>  
 																	</div>	
 
 																	<div id="bankpayment3" class="bankpaymentgroupdesc bankpaymentorder" style="display: none;">
@@ -894,8 +899,7 @@
 																			<h3>Advance Payable Now: USD 1,800</h3>
 																			<h3>Please send us an electronic bank transfer to our bank in the USA:</h3>
 																			<ul>
-																				<li>
-																					<span>Address: </span> <br>
+																				<li><span>Address: </span> <br>
 																					Enchanting Travels Inc.<br>
 																					8310 South Valley Highway, Suite 300<br>
 																					Englewood, Colorado 80112, USA
@@ -1080,7 +1084,7 @@
 																<div class="responsive-accordion responsive-accordion-default bm-larger">
 																	<div class="setli">
 																		<div class="responsive-accordion-head active">
-																			Card Holder Details
+																			Card Details
 																			<i class="fa fa-plus responsive-accordion-plus fa-fw"></i>
 																			<i class="fa fa-minus responsive-accordion-minus fa-fw"></i>
 																		</div>
@@ -1120,18 +1124,18 @@
 																	</div>
 																</div>
 																<!-- Card Details ends -->
-
-																<!-- Buttons container -->
-																<div class="btmcont">
-																	<div class="col-md-12">
-																		<div class="row">
-																			<a class="expandedbtns btn btn-primary mgn-ryt23 thankupage">Submit Payment</a>
-																		</div>
-																	</div>
-																</div>
-																<!-- Buttons container ends -->
 															</div>
 														</div>
+
+														<!-- Buttons container -->
+														<div class="btmcont">
+															<div class="col-md-12">
+																<div class="row">
+																	<a class="expandedbtns btn btn-primary mgn-ryt23 thankupage">Submit Payment</a>
+																</div>
+															</div>
+														</div>
+														<!-- Buttons container ends -->
 
 													</div>
 												</div>
