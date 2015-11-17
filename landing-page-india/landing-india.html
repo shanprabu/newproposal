@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--  <link rel="icon" href="../../favicon.ico"> -->
+
+  <title>::India Landing Page::</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/india-landing-page.css" rel="stylesheet">
+
+  <link href="assets/css/jquery-ui.css" rel="stylesheet">
+
+  <!-- dropdown selection -->
+  <link href="assets/dropdown/css/dropdown.css" rel="stylesheet" />
+
+  <!-- owl slider for rating -->
+  <link href="assets/review_slider/css/owl.carousel.css" rel="stylesheet"/>
+  <link href="assets/review_slider/css/owl.theme.css" rel="stylesheet">
+
+  
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link href="assets/slider/css/smart_wizard.css" rel="stylesheet" type="text/css">
+
+<!--[if IE ]>
+  <script src="assets/js/ie.js"></script>
+  <![endif]-->
+  
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="assets/js/ie.js"></script>
+      <![endif]-->
+    </head>
+
+    <body>
+      <header>
+        <div class="top container">
+          <div class="col-md-6 col-sm-6 col-xs-4 smallest">
+            <div class="row">
+              <a href="#" class="logo"><img class="img-responsive" src="assets/images/logo.png" alt="enchanting travels"></a>
+              <span class="tagline">Private tailor-made journeys of a lifetime</span>
+            </div>
+          </div>
+          <div class="top-right col-md-6 col-sm-6 col-xs-8 smallest">
+            <div class="row pull-right sm-conttxt">
+
+              <div class="trustpiotimg"><img src="assets/images/trust_pilot_rating.png"></div>
+              <div class="recomtpimg" data-toggle="modal" data-target="#tripadvisorreview">
+                <img src="assets/images/trip_advisor_recomended.png">
+              </div>
+              <div class="pull-left mgn-ryt15 mgn-tp4">
+                <select id="language" name="language">
+                  <option value="english" data-image="assets/images/us-flag.jpg"></option>
+                  <option value="german" data-image="assets/images/us-flag.jpg" ></option>
+                  <option value="french" data-image="assets/images/us-flag.jpg" ></option>
+                  <option value="chinese" data-image="assets/images/us-flag.jpg" ></option>
+                  <option value="japanese" data-image="assets/images/us-flag.jpg" ></option>
+                  <option value="Indian" data-image="assets/images/us-flag.jpg"></option>
+                  <option value="european" data-image="assets/images/us-flag.jpg"></option>
+                </select>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- /.Header -->
+
+      <div id="home-page">
+        <section class="head-banner banner">
+          <div class="container">
+            <div class="wrapp">
+              <div class="text col-md-9 col-sm-12">
+                <div class="row">
+                 <h1>Your Private India Adventure Awaits</h1>
+               </div>
+             </div>
+             <div class="col-md-3 col-sm-12">
+              <div class="custom-itineraray row pull-right">
+                <a href="#" class="mgn-tp28 btn btn-lg-red" id="createmytripbtn">CREATE MY TRIP <i class="fa dropbtnicon"></i> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banner-gradient"></div>
+      </section>
+      <!-- /.section for banner -->
+
+
+      <div class="expertise col-md-12 col-sm-12 col-xs-12">
+        <div class="container">
+          <section>
+            <div class="ct-containertp" id="createmytripbtn-open">
+              <div class="ct-head">Create My Trip in 3 Simple Steps</div>
+            </div>  
+            <div class="custom-itinerary">
+
+              <form>
+
+                <div id="wizard" class="swMain">
+                  <ul class="anchor">
+                    <li>
+                      <a href="#step-1" class="done" isdone="1" rel="1">
+                        <label class="stepNumber">
+                          <i class="fa fa-check-circle"></i>
+                          <span>1</span>
+                        </label>
+                        <span class="stepDesc">
+                          <i class="fa fa-flag"></i>
+                          Choose Destination
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#step-2" class="selected" isdone="1" rel="2">
+                        <label class="stepNumber">
+                          <i class="fa fa-check-circle"></i>
+                          <span>2</span>
+                        </label>
+                        <span class="stepDesc">
+                          <i class="fa fa-map-signs"></i>
+                          Select Interests
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#step-3" class="disabled" isdone="0" rel="3">
+                        <label class="stepNumber">
+                          <i class="fa fa-check-circle"></i>
+                          <span>3</span>
+                        </label>
+                        <span class="stepDesc">
+                          <i class="fa fa-pencil-square-o"></i>
+                          Trip Details
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <div id="step-1"> 
+
+                   <div class="cslide-slide" >
+                    <div class="steps-n-txt">
+                      Please select where you would like to travel. 
+                      <span>Second line of text.</span>
+                    </div>
+                    <div class="slides-holder">
+                      <article>
+                        <div class="stepscheck">
+                          <img src="assets/images/imagesfirst_set_01.png" alt="" height="152" width="152">
+                          <input type="checkbox" id="HeritageCulture"  />
+                          <label for="HeritageCulture">Heritage & Culture</label>
+                          <span class="morinfotxtform">More Info +</span>
+                        </div>
+                      </article>
+                      <article>
+                        <div class="stepscheck">
+                          <img src="assets/images/imagesfirst_set_02.png" alt="" height="152" width="152">
+                          <input type="checkbox" id="NatureLandscapes"  />
+                          <label for="NatureLandscapes">Nature & Landscapes</label>
+                          <span class="morinfotxtform">More Info +</span>
+                        </div>
+                      </article>
+                      <article>
+                        <div class="stepscheck">
+                          <img src="assets/images/imagesfirst_set_03.png" alt="" height="152" width="152">
+                          <input type="checkbox" id="Wildlife"  />
+                          <label for="Wildlife">Wildlife</label>
+                          <span class="morinfotxtform">More Info +</span>
+                        </div>
+                      </article>
+                      <article>
+                        <div class="stepscheck">
+                          <img src="assets/images/imagesfirst_set_04.png" alt="" height="152" width="152">
+                          <input type="checkbox" id="Relaxation"  />
+                          <label for="Relaxation">Relaxation</label>
+                          <span class="morinfotxtform">More Info +</span>
+                        </div>
+                      </article>
+                      <article>
+                        <div class="stepscheck">
+                          <img src="assets/images/imagesfirst_set_05.png" alt="" height="152" width="152">
+                          <input type="checkbox" id="Adventure"  />
+                          <label for="Adventure">Adventure</label>
+                          <span class="morinfotxtform">More Info +</span>
+                        </div>
+                      </article>
+                      <article>
+                        <div class="stepscheck">
+                          <img src="assets/images/imagesfirst_set_06.png" alt="" height="152" width="152">
+                          <input type="checkbox" id="SpasWellness"  />
+                          <label for="SpasWellness">Spas & Wellness</label>
+                          <span class="morinfotxtform">More Info +</span>
+                        </div>
+                      </article>
+                    </div>
+                  </div>               
+                </div>
+
+                <div id="step-2">
+                 <div class="cslide-slide">
+                  <div class="steps-n-txt">
+                    What’s your personal style? 
+                    <span>Choose as many as you would like then proceed to the final step.</span>
+                  </div>
+                  <div class="slides-holder">
+                    <article>
+                      <div class="stepscheck">
+                        <img src="assets/images/imagesfirst_set2_01.png" alt="" height="152" width="152">
+                        <input type="checkbox" id="Heritage"  />
+                        <label for="Heritage">Heritage Hotels</label>
+                        <span class="morinfotxtform">More Info +</span>
+                      </div>
+                    </article>
+                    <article>
+                      <div class="stepscheck">
+                        <img src="assets/images/imagesfirst_set2_02.png" alt="" height="152" width="152">
+                        <input type="checkbox" id="boutique"/>
+                        <label for="boutique">Boutique Hotels</label>
+                        <span class="morinfotxtform">More Info +</span>
+                      </div>
+                    </article>
+                    <article>
+                      <div class="stepscheck">
+                        <img src="assets/images/imagesfirst_set2_03.png" alt="" height="152" width="152">
+                        <input type="checkbox" id="international"  />
+                        <label for="international">International Hotels</label>
+                        <span class="morinfotxtform">More Info +</span>
+                      </div>
+                    </article>
+                    <article>
+                      <div class="stepscheck">
+                        <img src="assets/images/imagesfirst_set2_04.png" alt="" height="152" width="152">
+                        <input type="checkbox" id="resorts"  />
+                        <label for="resorts">Resorts</label>
+                        <span class="morinfotxtform">More Info +</span>
+                      </div>
+                    </article>
+                    <article>
+                      <div class="stepscheck">
+                        <img src="assets/images/imagesfirst_set2_05.png" alt="" height="152" width="152">
+                        <input type="checkbox" id="lodges"  />
+                        <label for="lodges">Lodges & Camps</label>
+                        <span class="morinfotxtform">More Info +</span>
+                      </div>
+                    </article>
+                    <article>
+                      <div class="stepscheck">
+                        <img src="assets/images/imagesfirst_set2_06.png" alt="" height="152" width="152">
+                        <input type="checkbox" id="homestays"  />
+                        <label for="homestays">Homestays</label>
+                        <span class="morinfotxtform">More Info +</span>
+                      </div>
+                    </article>
+                  </div>
+                </div>        
+              </div>
+
+              <div id="step-3">
+                <div class="cslide-slide">
+                  <div class="steps-n-txt">Your dream trip is almost underway. Please complete the forms below and submit.</div>
+                  <div class="slides-holder pdn-tp20">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="row">
+                        <div class="formcontinergry">
+
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+
+                            <div class="form-group">
+                              <select name="personal_country" class="form-control threpartition1" placeholder="Title">  
+                                <option value="">Title</option>
+                                <option value="Mr">Mr.</option>
+                                <option value="Miss">Miss.</option>
+                                <option value="Mrs">Mrs.</option>
+                              </select>
+                              <input type="text" class="form-control threpartition2" placeholder="First Name">
+                              <input type="text" class="form-control threpartition3" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control daysofnumber" placeholder="City">
+                              <select name="personal_country" class="form-control travelerofnumber" placeholder="Country *">  
+                                <option value="">Select Country</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Österreich">Austria</option>
+                                <option value="Belgique">Belgium</option>
+                                <option value="Bermuda">Bermuda</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="Brasil">Brazil</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Czech Republic">Czech Republic</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="República Dominicana">Dominican Republic</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="Deutschland">Germany</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="India">India</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italia">Italy</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Laos">Laos</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Luxemburg">Luxemburg</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Monaco">Monaco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Myanmar">Myanmar</option>
+                                <option value="Namibia">Namibia</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Panamá">Panama</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Perú">Peru</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Reunion">Reunion</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Scotland">Scotland</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="South Korea">South Korea</option>
+                                <option value="España">Spain</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="Swaziland">Swaziland</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Schweiz / Suisse">Switzerland</option>
+                                <option value="Tahiti">Tahiti</option>
+                                <option value="Tanzania">Tanzania</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="UK">UK</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="USA">USA</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Vietnam">Vietnam</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                                <option value="Other">Other</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <input type="email" class="form-control" placeholder="Email *">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Phone *">
+                            </div>
+                            <div class="form-group">
+                              <textarea class="form-control hgt102" rows="4" placeholder="Any notes or special requests..."></textarea>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group">
+                              <input type="text" class="form-control daysofnumber" placeholder="# of travelers">
+                              <input type="text" class="form-control travelerofnumber" placeholder="Age of travelers">
+                            </div>
+                            <div class="form-group">
+                              <input type="text" class="form-control threpartition4" placeholder="Select date range">
+                              <input type="text" class="form-control threpartition5" placeholder="# of days">
+                            </div>
+                            <div class="form-group slidermaincontainer">
+                              <div class="slidertextcont">
+                                <i class="fa fa-question questionbdr"></i>
+                                Price Range
+                                <span>per person</span>
+                              </div>
+                              <div class="slidermaincont">
+                                <div class="nstSlider" data-range_min="200" data-range_max="10000" data-cur_min="2500"  data-cur_max="7000">     
+                                  <div class="highlightPanel"></div>        
+                                  <div class="bar"></div>                             
+                                  <div class="leftGrip"></div>              
+                                  <div class="rightGrip"></div>             
+                                </div>
+                                <div class="leftLabel">$</div>
+                                <div class="rightLabel">$</div>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <select name="planning_stage" class="form-control" placeholder="What stage of planning are you in?">
+                                <option value="">What stage of planning are you in?</option>
+                                <option value="Still dreaming / researching">Still dreaming / researching</option>
+                                <option value="Definitely traveling, not sure which country yet">Definitely traveling, not sure which country yet</option>
+                                <option value="Definitely going to India and need help with an itinerary">Definitely going to India and need help with an itinerary</option>
+                                <option value="Definitely going to India, have my itinerary planned out and need help with booking the trip">Definitely going to India, have my itinerary planned out and need help with booking the trip</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <select name="planning_stage" class="form-control" placeholder="What stage of planning are you in?">
+                                <option value="">What would you like to do next?</option>
+                                <option value="Still dreaming / researching">Still dreaming / researching</option>
+                                <option value="Definitely traveling, not sure which country yet">Definitely traveling, not sure which country yet</option>
+                                <option value="Definitely going to India and need help with an itinerary">Definitely going to India and need help with an itinerary</option>
+                                <option value="Definitely going to India, have my itinerary planned out and need help with booking the trip">Definitely going to India, have my itinerary planned out and need help with booking the trip</option>
+                              </select>
+                            </div>
+
+                            <div class="form-group">
+                              <select name="planning_stage" class="form-control" placeholder="What stage of planning are you in?">
+                                <option value="">How did you hear about us?</option>
+                                <option value="Still dreaming / researching">Still dreaming / researching</option>
+                                <option value="Definitely traveling, not sure which country yet">Definitely traveling, not sure which country yet</option>
+                                <option value="Definitely going to India and need help with an itinerary">Definitely going to India and need help with an itinerary</option>
+                                <option value="Definitely going to India, have my itinerary planned out and need help with booking the trip">Definitely going to India, have my itinerary planned out and need help with booking the trip</option>
+                              </select>
+                            </div>
+
+                          </div>
+
+                          <div class="requiredtxt">*Required</div>
+                        </div>
+                        <div class="signuptxtbtmcont">
+                          <div class="checkboxcust">
+                            <input type="checkbox" id="step3cont4" checked="checked" />
+                            <label for="step3cont4" class="signuptxtbtm"> Sign up for occasional Enchanting Travels emails (you can unsubscribe at any time)</label>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>                              
+              </div>
+
+            </div>
+
+          </form>
+        </div>
+      </section>
+
+    </div> <!-- .wrap -->
+  </div>        
+
+
+
+
+
+
+
+
+
+  <section class="col-md-12 col-sm-12 col-xs-12 pdn0 mgn-tp45">
+    <div class="container pdn0">
+      <ul class="btnsectionmid">
+        <span class="insidespan">
+          <li class="linkhover1"><a href=""><i class="whoweareicon"></i>Who we are</a></li>
+          <div class="linkpara arrow_down linkpara1">
+            <h3>Who we are</h3>
+            <p>Enchanting Travels passionately brings you extraordinary tailor-made travel. We are a global company with 130 travel experts from 17 nationalities in 6 offices around the world. We have over 10 consecutive years of growth and expertise in seamless trip planning. It is our goal to make sure each guest is fully enchanted with thier experience. </p>
+          </div>
+        </span>
+        <span class="insidespan">
+          <li class="linkhover2"><a href=""><i class="howwedifericon"></i>How we differ</a></li>
+          <div class="linkpara arrow_down linkpara2">
+            <h3>How We Differ</h3>
+            <ul class="check-list">
+              <li>Private, Flexible and Personal</li>
+              <li>Authentic Travel, Local Expertise</li>
+              <li>Safe and Stress-Free Travel</li>
+              <li>Security and 24/7 Ground Support</li>
+              <li>100% Financial Protection</li>
+            </ul>
+          </div>
+        </span>
+        <span class="insidespan">
+          <li class="linkhover3"><a href=""><i class="getintouchicon"></i>Get in touch</a></li>
+          <div class="linkpara arrow_down linkpara3">
+            <h3>Get in Touch</h3>
+            <h4>Give us a call</h4>
+            <p>US / Canada: +1 888 263 2574<br>
+              UK: +0 800 098 8486<br>
+              AUS: +1 800 044 986</p>
+              <h4>Email us</h4>
+              <a href="">contact@enchantingtravels.com</a>
+            </div>
+          </span>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bottom-review col-md-12 col-sm-12 col-xs-12 pdn0">
+      <div class="container pdn0">
+        <div class="tripadvisor_review">
+          <div class="quoteimg"><img src="assets/images/review_image.png" alt="" width="170"></div>
+          <div class="quotetxt">
+            <img class="quoteicon" src="assets/images/quote_icon.png" alt="" width="43">
+            <div class="quotepara">
+              <p>Two trips to India with the same company in thirteen months: Why? The answer: Trust. We trusted Enchanting to exceed our expectations and they did! From the moment you arrive until you’re home safe, you’re in control. The guides, drivers and people back in the office - they’re all there to help and MAKE IT FUN! Loved it.</p>
+              <span><img src="assets/images/trip_advisor_icon.png" alt="" width="80"></span>
+            </div>
+            <span class="quotebytxt">Geoffrey Pitman & Catherine Gibson</span>
+          </div>
+        </div>
+        <div class="reviews_slider">
+
+          <div id="owl-demo" class="owl-carousel">
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/sample_review.png">
+            </div>
+          </div>
+          <div class="ratingrank">
+            <p>Rated <b>9.5</b> out of 10 based on <b>41</b> reviews. See some of the reviews here.</p>
+            <p>Powered by <img src="assets/images/trust_pilot_icon.png"></p>
+          </div>
+
+        </div>
+        <div class="createmytripbtn">
+          <a href="#" class="mgn-tp28 btn btn-lg-red" id="createmytripbtn2">CREATE MY TRIP <i class="fa dropbtnicon btnarrowiconbtm"></i> </a>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="foo">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="row">
+
+            <div class="col-md-9 col-sm-9 col-xs-12">
+              <div class="row footspanlft">
+                <div class="footxt">Accreditations & Associations</div>
+                <img src="assets/images/footer-icons.png" />
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="row footspan">
+                <div>© Copyright 2015 Enchanting-Travels</div>
+                <span class="line"><a href="#">Terms</a></span>
+                <span><a href="#">Privacy</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="tripadvisorreview" tabindex="-1" role="dialog" aria-labelledby="tripadvisorreviewLabel">
+    <div class="modal-dialog tripadvisorreview-modal" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><img src="assets/images/contact-close-x.png" alt="close"></span>
+          </button>
+          <h1 class="modal-title" id="contactusLabel">Customer Reviews</h1>
+        </div>
+        <div class="modal-body">
+          <div class="modal-tripadvisorreview">
+            <ul>
+              <li>
+                <div class="review-cardhead">
+                  <img src="assets/images/img_01.png">
+                  <h4>Natalia Moore, USA</h4>
+                  <span>
+                    <img src="assets/images/tripadvisor-icon.png">
+                  </span>
+                </div>
+                <p>If you can take the good (amazing rich culture, delicious food, beautiful music, temples, etc.) with the bad (poverty, traffic jams, unclean streets), this is a great place to go to. It was my dream trip! Enchanting-India is the greatest tourist company one can choose!!!</p>
+              </li>
+              <li>
+                <div class="review-cardhead">
+                  <img src="assets/images/img_02.png">
+                  <h4>Natalia Moore, USA</h4>
+                  <span>
+                    <img src="assets/images/trust_pilot_icon.png">
+                  </span>
+                </div>
+                <p>If you can take the good (amazing rich culture, delicious food, beautiful music, temples, etc.) with the bad (poverty, traffic jams, unclean streets), this is a great place to go to. It was my dream trip! Enchanting-India is the greatest tourist company one can choose!!!</p>
+              </li>
+              <li>
+                <div class="review-cardhead">
+                  <img src="assets/images/img_03.png">
+                  <h4>Natalia Moore, USA</h4>
+                  <span>
+                    <img src="assets/images/tripadvisor-icon.png">
+                  </span>
+                </div>
+                <p>If you can take the good (amazing rich culture, delicious food, beautiful music, temples, etc.) with the bad (poverty, traffic jams, unclean streets), this is a great place to go to. It was my dream trip! Enchanting-India is the greatest tourist company one can choose!!!</p>
+              </li>
+              <li>
+                <div class="review-cardhead">
+                  <img src="assets/images/img_04.png">
+                  <h4>Natalia Moore, USA</h4>
+                </div>
+                <p>If you can take the good (amazing rich culture, delicious food, beautiful music, temples, etc.) with the bad (poverty, traffic jams, unclean streets), this is a great place to go to. It was my dream trip! Enchanting-India is the greatest tourist company one can choose!!!</p>
+              </li>
+              <li>
+                <div class="review-cardhead">
+                  <img src="assets/images/img_01.png">
+                  <h4>Natalia Moore, USA</h4>
+                  <span>
+                    <img src="assets/images/trust_pilot_icon.png">
+                  </span>
+                </div>
+                <p>If you can take the good (amazing rich culture, delicious food, beautiful music, temples, etc.) with the bad (poverty, traffic jams, unclean streets), this is a great place to go to. It was my dream trip! Enchanting-India is the greatest tourist company one can choose!!!</p>
+              </li>
+              <li>
+                <div class="review-cardhead">
+                  <img src="assets/images/img_02.png">
+                  <h4>Natalia Moore, USA</h4>
+                  <span>
+                    <img src="assets/images/tripadvisor-icon.png">
+                  </span>
+                </div>
+                <p>If you can take the good (amazing rich culture, delicious food, beautiful music, temples, etc.) with the bad (poverty, traffic jams, unclean streets), this is a great place to go to. It was my dream trip! Enchanting-India is the greatest tourist company one can choose!!!</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster --> 
+    <script type="text/javascript" src="assets/slider/js/jquery-2.0.0.min.js"></script>
+    
+    <!-- datepicker -->
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>    
+    <script src="assets/js/jquery.nstSlider.min.js"></script>  
+
+    
+    <script type="text/javascript" src="assets/slider/js/jquery.smartWizard.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      // Smart Wizard   
+      $('#wizard').smartWizard();
+      
+      function onFinishCallback(){
+        $('#wizard').smartWizard('showMessage','Finish Clicked');
+        //alert('Finish Clicked');
+      }     
+    });
+    </script>
+
+    <!-- owl slider for rating -->
+    <script type="text/javascript" src="assets/review_slider/js/owl.carousel.js"></script>
+
+    <script src="assets/js/core.js"></script>
+    <script src="assets/dropdown/js/jquery.dd.min.js"></script>
+
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  </html>
