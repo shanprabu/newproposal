@@ -22,7 +22,6 @@ function SmartWizard(target, options) {
     //this.loader = $('<div>Loading</div>').addClass("loader");
     this.buttons = {
         next : $('<a>'+options.labelNext+'&nbsp;'+'<i class="fa fa-long-arrow-right">'+'</i>'+'</a>').attr("href","#").addClass("btn btn-red mgnlr10"),
-        second : $('<a>'+options.labelSecond+'&nbsp;'+'<i class="fa fa-long-arrow-right">'+'</i>'+'</a>').attr("href","#").addClass("btn btn-red mgnlr10"),
         finish  : $('<a>'+options.labelFinish+'&nbsp;'+'<i class="fa fa-long-arrow-right">'+'</i>'+'</a>').attr("href","thankyou.html").addClass("btn btn-red mgnlr10"),
         //previous : $('<a>'+ '<i class="fa fa-long-arrow-left">'+'</i>'+ '&nbsp;' +options.labelPrevious+'</a>').attr("href","#").addClass("btn btn-gold mgnlr10 pull-left")
     };
@@ -478,7 +477,6 @@ function SmartWizard(target, options) {
         errorSteps:[],    // Array Steps with errors
         labelPrevious:'GO BACK',
         labelNext:'Select interests',
-        labelSecond:'Trip Details',
         labelFinish:'Submit Travel plans',
         noForwardJumping: false,
         ajaxType: "POST",

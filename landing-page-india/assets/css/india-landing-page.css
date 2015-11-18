@@ -629,6 +629,11 @@ header{
 	color: #dc665a;
 	font-family: 'SoinSansPro-Roman';
 }
+
+.morinfotxtform:hover, .morinfotxtform:focus{
+	color: #dc665a;
+	text-decoration: none;
+}
 .steps-n-txt{
 	font-size: 17px;
 	color: #36312a;
@@ -663,9 +668,9 @@ header{
 
 .slides-holder article {
 	float: left;
-	margin-right: 25.35px;
+	margin-right: 23.5px;
 	margin-top: 22px;
-	width: auto;
+	width: 14.5%;
 	position: relative;
 }
 
@@ -2122,11 +2127,11 @@ hr{
 }
 
 .thnkubtn{
-	    background: #F2F2F1;
-    display: inline-block;
-    top: 25px;
-    position: relative;
-    padding: 0px 15px;
+	background: #F2F2F1;
+	display: inline-block;
+	top: 25px;
+	position: relative;
+	padding: 0px 15px;
 }
 
 
