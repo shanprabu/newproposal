@@ -580,7 +580,7 @@ header{
 
 .custom-itinerary{
 	width: 100%;	
-	margin-bottom: 68px;
+	margin-bottom: 120px;
 	border: 2px solid #e5e5e0;
 }
 
@@ -1746,6 +1746,7 @@ ul.btnsectionmid li a, ul.btnsectionmid li a:hover{
 .mgn-lft35{ margin-left: 35px;}
 .wdt106{width: 106px;}
 .wdt2775perc{width: 27.75%;}
+.wdt420{    width: 420px;}
 .wdt2783perc{width: 27.834%;}
 .pdn-tp20{padding-top: 20px;}
 .pdn-lft38{padding-left:38px !important;}
@@ -2009,6 +2010,52 @@ hr{
 	line-height: 20px;
 }
 
+.tooltip{
+	width: 265px;
+}
+
+.tooltip.bottom .tooltip-arrow:before, .tooltip.bottom .tooltip-arrow:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: transparent;
+	border-top: 0;
+}
+
+.tooltip.bottom .tooltip-arrow:before {
+	top: -4px;
+	left: -12px;
+	border-bottom-color: #D8D8D7;
+	border-width: 10px;
+}
+.tooltip.bottom .tooltip-arrow:after {
+	top: -3px;
+	left: -11px;
+	border-bottom-color: #FFFFFF;
+	border-width: 9px;
+}
+
+.tooltip.bottom .tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #ffffff;
+}
+.tooltip-inner {
+	max-width: 265px;
+	padding: 8px;
+	font-size: 14px;
+	font-family: 'SoinSansPro-Roman';
+	color: #66625d;
+	text-align: center;
+	background-color: #ffffff;	
+	border-radius: 5px;
+	border: 1px solid #d5d5d4;
+}
+
 
 /*-----------------form container ---------------------*/
 .formcontinergry{
@@ -2016,9 +2063,74 @@ hr{
 	width: 80%;
 	margin: 0 auto;
 	padding: 30px;
+}
 
+.lockdiv{
+	text-align: center;
+	position: relative;
+	top: 165px;
+}
+
+.lockdivspan{
+	color: #36312a;
+	font-size: 14px;
+	line-height: 28px;
+	background: #e4e4e4;
+	padding: 7px 20px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 /*-----------------form container ---------------------*/
+
+/*-------------thank you ------------------*/
+.thnkyoucont{
+	width: 610px;
+	margin: 0 auto;
+	padding: 4% 5%;
+	background: #fff;
+	margin-bottom: 25px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #454649;
+}
+
+.thnkyoucont h3{
+	font-size: 32px;
+	font-family: 'SoinSansPro-Roman';
+	line-height: 35px;
+}
+
+.thnkyoucont p{
+	font-size: 20px;
+	font-family: 'SoinSansPro-Roman';
+	line-height: 26px;
+}
+
+.thnkyoucont span{
+	font-size: 18px;
+	font-family: 'SoinSansPro-Roman';
+	line-height: 24px;
+}
+
+.thnkyoucontbtm{
+	font-size: 16px;
+	line-height: 24px;
+	color: #36312a;
+	font-family: 'SoinSansPro-Roman';
+}
+
+.thnkubtn{
+	    background: #F2F2F1;
+    display: inline-block;
+    top: 25px;
+    position: relative;
+    padding: 0px 15px;
+}
+
+
+/*--------------thank you ends-------------*/
 
 /*-------------check box --------------------*/
 
@@ -2109,6 +2221,8 @@ hr{
 	width: 80%;
 	margin: 0 auto;
 	padding: 20px 14%;
+	position: relative;
+	top: 25px;
 }
 .signuptxtbtm{
 	font-size: 15px;
@@ -2118,6 +2232,57 @@ hr{
 }
 
 /*----------------------check box end---------------*/
+
+
+/*------------ date picker-----*/
+.date-picker-wrapper .month-wrapper table .day.toMonth.hovering {
+	background-color: #ADA69F !important;
+}
+.date-picker-wrapper .month-wrapper table .day.real-today {
+	background-color: rgb(113, 109, 105) !important;
+	color: #fff !important;
+}
+.date-picker-wrapper .first-date-selected {
+	background-color: #36312A !important;
+	color: white !important;
+}
+.date-picker-wrapper .last-date-selected {
+	background-color: #36312A !important;
+	color: white !important;
+}
+.date-picker-wrapper .month-wrapper table .day.checked {
+	background-color: rgb(165, 155, 141) !important;
+}
+
+.date-picker-wrapper .date-range-length-tip:after {
+	content: '';
+	position: absolute;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #E8E8E8 !important;
+	left: 50%;
+	margin-left: -4px;
+	bottom: -4px;
+}
+.date-picker-wrapper .date-range-length-tip {
+	position: absolute;
+	margin-top: -4px;
+	color: #5F5F5F !important;
+	margin-left: -8px;
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+	display: none;
+	background-color: #E8E8EB !important;
+	padding: 0 6px;
+	border-radius: 2px;
+	font-size: 12px;
+	line-height: 16px;
+	-webkit-filter: drop-shadow(0 0 3px rgba(0,0,0,.3));
+	-moz-filter: drop-shadow(0 0 3px rgba(0,0,0,.3));
+	-ms-filter: drop-shadow(0 0 3px rgba(0,0,0,.3));
+	-o-filter: drop-shadow(0 0 3px rgba(0,0,0,.3));
+	filter: drop-shadow(0 0 3px rgba(0,0,0,.3));
+}
+
 
 /* -------------------- bootstrap Media Quires ------------------ */
 
@@ -3019,6 +3184,23 @@ hr{
 
 }
 
+/* firefox hack css */
+@-moz-document url-prefix() { 
+	
+}
+
+/* IE hack css */
+@media all and (-ms-high-contrast:none)
+{
+
+}
+
+/*for ios*/
+_::-webkit-full-page-media, _:future, :root .dropbtnicon{top:11px;}
+_::-webkit-full-page-media, _:future, :root .btn-lg-red{line-height:56px;}
+_::-webkit-full-page-media, _:future, :root ul.btnsectionmid li{line-height:50px}
+_::-webkit-full-page-media, _:future, :root .btn-red{line-height:50px;}
+_::-webkit-full-page-media, _:future, :root .signuptxtbtmcont{width:81%}
 
 /*@media screen and (-webkit-min-device-pixel-ratio:0) {
 	.btn-brown {

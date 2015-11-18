@@ -19,7 +19,7 @@ text-align: center;
   display:block;
   position: relative;
   clear:both;
-  padding-bottom: 15px;
+  /*padding-bottom: 15px;*/
 }
 
 .swMain .stepContainer div.content {

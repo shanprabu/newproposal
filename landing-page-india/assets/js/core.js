@@ -21,6 +21,9 @@ jQuery(document).ready(function($){
             /*-----------language dropdown-------*/
             $("#language").msDropdown({visibleRows:4});
 
+            /*-------------tooltip-----------*/
+            $('[data-toggle="tooltip"]').tooltip();  
+
 	//Sort random function
 	function random(owlSelector){
 		owlSelector.children().sort(function(){
@@ -118,18 +121,6 @@ $('.read-more-hide').on('click', function(e) {
   p.prev('.read-more-show').removeClass('hide'); // Hide only the preceding "Read More"
   e.preventDefault();
 });
-
-
-
-// Date Picker
-$(".start-date").datepicker({
-	dateFormat: 'dd M yy',
-	autoclose:true,
-	showOtherMonths: true,
-	selectOtherMonths: true
-})
-.attr('readonly', 'readonly');
-
 
 
 
