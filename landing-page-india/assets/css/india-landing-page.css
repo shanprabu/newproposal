@@ -3248,3 +3248,7 @@ _::-webkit-full-page-media, _:future, :root .signuptxtbtmcont{width:81%}
 	_::-webkit-full-page-media, _:future, :root .btn-gold {
 		line-height: 50px;
 	}
+
+	.hide-me {
+		display: none !important;
+	}

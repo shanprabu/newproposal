@@ -777,6 +777,38 @@
         $('#wizard').smartWizard('showMessage','Finish Clicked');
         //alert('Finish Clicked');
       }     
+      // Changes contributed by @diego-rzg
+      $('.actionBar a').on('click', function() {
+        var current_text = "Trip Details&nbsp;<i class='fa fa-long-arrow-right'></i>";
+        var current_text1 = "Select Interests&nbsp;<i class='fa fa-long-arrow-right'></i>";
+        if($("#wizard ul li:first-child a").hasClass("selected")) {
+          $(".actionBar a:last-child").html(current_text);
+        }
+        else if ($("#wizard ul li:nth-child(2) a").hasClass("selected")){
+          $(".actionBar a:last-child").prev().removeClass("hide-me");
+          $(".actionBar a:last-child").prev().css("display","inline-block");
+        }
+        else{
+          $(".actionBar a:last-child").html(current_text1);
+        }
+      });
+
+      $("#wizard ul.anchor li:nth-child(2) a").on('click',function(){
+        var current_text = "Trip Details&nbsp;<i class='fa fa-long-arrow-right'></i>";
+        $(".actionBar a:last-child").html(current_text);
+        $(".actionBar a:last-child").prev().addClass("hide-me");
+      });
+
+      $("#wizard ul.anchor li:nth-child(1) a").on('click',function(){
+        var current_text = "Select Interests&nbsp;<i class='fa fa-long-arrow-right'></i>";
+        $(".actionBar a:last-child").html(current_text);
+        $(".actionBar a:last-child").prev().addClass("hide-me");
+      });
+
+      $("#wizard ul.anchor li:nth-child(3) a").on('click',function(){
+        $(".actionBar a:last-child").prev().removeClass("hide-me");
+        $(".actionBar a:last-child").prev().css("display","inline-block");
+      });
     });
     </script>
 

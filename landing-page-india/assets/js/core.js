@@ -123,7 +123,6 @@ $('.read-more-hide').on('click', function(e) {
 });
 
 
-
 // hack for IE 11 only!! Can also be used with $(document).ready() 
 jQuery(window).load(function() {
 	if(navigator.userAgent.match(/Trident.*rv:11\./)) {
