@@ -152,8 +152,12 @@
                             </tr>
                           </thead>
                           <tbody>
-                            <tr>
-                              <td class="wdt30per">Lorem Ipsum Comet </td>
+                            <tr data-duplicate="addoptions">
+                              <td class="wdt30per">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                              </td>
                               <td class="wdt30per"> 
                                 <div class="form-group">
                                   <i class="dropdown-icon2"></i>
@@ -175,12 +179,12 @@
                                   </select>
                                 </div>
                               </td>
-                              <td class="closeicon"></td>
+                              <td class="closeicon" data-duplicate-remove="addoptions"></td>
                             </tr>
                           </tbody>
                         </table>
                         <div class="adbtn">
-                          <a onclick=""><img src="assets/images/add-row.png"><span>Add Option</span></a>
+                          <a onclick="" data-duplicate-add="addoptions"><img src="assets/images/add-row.png"><span>Add Option</span></a>
                         </div>
                       </div>
                     </div>
@@ -194,19 +198,19 @@
                             </tr>
                           </thead>
                           <tbody>
-                            <tr>
-                              <td>Extra 1</td>
-                              <td class="closeicon"></td>
-                            </tr>
-                            <tr>
-                              <td>Extra 2</td>
-                              <td class="closeicon"></td>
+                            <tr data-duplicate="addextraname">
+                              <td>
+                                <div class="form-group">
+                                  <input type="text" class="form-control" placeholder="Extra Name">
+                                </div>
+                              </td>
+                              <td class="closeicon" data-duplicate-remove="addextraname"></td>
                             </tr>
                             
                           </tbody>
                         </table>
                         <div class="adbtn">
-                          <a onclick=""><img src="assets/images/add-row.png"><span>Add Extra</span></a>
+                          <a onclick="" data-duplicate-add="addextraname"><img src="assets/images/add-row.png"><span>Add Extra</span></a>
                         </div>
                       </div>
                     </div>
@@ -237,7 +241,7 @@
                     <div class="contrctsinnercont">
                       <h3>Contract & Period</h3>
                       <div class="commoncontainer">
-                        <div class="sscontlines mgn20">
+                        <div class="sscontlines mgn20" data-duplicate="addcontract">
                           <div class="form-group mgn-rgt30 col-md-4 bdrrytdoted">
                             <input type="text" class="form-control" placeholder="Contract Name">
                           </div>
@@ -250,26 +254,11 @@
                           <div class="form-group col-md-2">
                             <input type="text" class="form-control end-date date_icon pointerclass" placeholder="End Date">
                           </div>
-                          <div class="closeicon contacticon"></div>
+                          <div class="closeicon contacticon" data-duplicate-remove="addcontract"></div>
                         </div>
 
-                        <div class="sscontlines mgn20">
-                          <div class="form-group mgn-rgt30 col-md-4 bdrrytdoted">
-                            <input type="text" class="form-control" placeholder="Contract Name">
-                          </div>
-                          <div class="form-group mgn-rgt30 col-md-2">
-                            <input type="text" class="form-control" placeholder="Name">
-                          </div>
-                          <div class="form-group mgn-rgt30 col-md-2">
-                            <input type="text" class="form-control start-date date_icon pointerclass" placeholder="Start Date">
-                          </div>
-                          <div class="form-group col-md-2">
-                            <input type="text" class="form-control end-date date_icon pointerclass" placeholder="End Date">
-                          </div>  
-                          <div class="closeicon contacticon"></div>
-                        </div>
                         <div class="adbtn">
-                          <a onclick=""><img src="assets/images/add-row.png"><span>Add Contract</span></a>
+                          <a onclick="" data-duplicate-add="addcontract"><img src="assets/images/add-row.png"><span>Add Contract</span></a>
                         </div>
                       </div>
                     </div>
@@ -282,16 +271,11 @@
 
                           <div class="seasonlist">
                             <ul>
-                              <li><a href="#">Season 1</a><i class="closeicon"></i></li>
-                              <li><a href="#">Season 2</a><i class="closeicon"></i></li>
-                              <li><a href="#">Season 3</a><i class="closeicon"></i></li>
-                              <li><a href="#">Season 4</a><i class="closeicon"></i></li>
-                              <li><a href="#">Season 5</a><i class="closeicon"></i></li>
-                              <li><a href="#">Season 6</a><i class="closeicon"></i></li>
+                              <li data-duplicate="addseason"><a href="#">Season</a><i class="closeicon" data-duplicate-remove="addseason"></i></li>
                             </ul>
                           </div>
                           <div class="adbtn">
-                            <a onclick=""><img src="assets/images/add-row.png"><span>Add Season</span></a>
+                            <a onclick="" data-duplicate-add="addseason"><img src="assets/images/add-row.png"><span>Add Season</span></a>
                           </div>
                         </div>
                       </div>
@@ -309,7 +293,7 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
+                              <tr data-duplicate="addtoseason">
                                 <td class="wdt30per">
                                   <div class="form-group">
                                     <input type="text" class="form-control" placeholder="Name">
@@ -325,12 +309,12 @@
                                     <input type="text" class="form-control end-date date_icon pointerclass" placeholder="End Date">
                                   </div>
                                 </td>
-                                <td class="closeicon"></td>
+                                <td class="closeicon" data-duplicate-remove="addtoseason"></td>
                               </tr>
                             </tbody>
                           </table>
                           <div class="adbtn">
-                            <a onclick=""><img src="assets/images/add-row.png"><span>Add To Season</span></a>
+                            <a onclick="" data-duplicate-add="addtoseason"><img src="assets/images/add-row.png"><span>Add To Season</span></a>
                           </div>
 
                         </div>
@@ -355,7 +339,7 @@
                             </tr>
                           </thead>
                           <tbody>
-                            <tr>
+                            <tr data-duplicate="addoption">
                               <td class="wdt25per">
                                 <div class="form-group">
                                   <i class="dropdown-icon2"></i>
@@ -386,12 +370,12 @@
                                   <input type="text" class="form-control" placeholder="Price">
                                 </div>
                               </td>
-                              <td class="closeicon"></td>
+                              <td class="closeicon" data-duplicate-remove="addoption"></td>
                             </tr>
                           </tbody>
                         </table>
                         <div class="adbtn">
-                          <a onclick=""><img src="assets/images/add-row.png"><span>Add Option</span></a>
+                          <a onclick="" data-duplicate-add="addoption"><img src="assets/images/add-row.png"><span>Add Option</span></a>
                         </div>
 
                       </div>
@@ -411,7 +395,7 @@
                             </tr>
                           </thead>
                           <tbody>
-                            <tr>
+                            <tr data-duplicate="addextra">
                               <td class="wdt25per">
                                 <div class="form-group">
                                   <input type="text" class="form-control" placeholder="Extra">
@@ -437,12 +421,12 @@
                                   <input type="text" class="form-control" placeholder="Price">
                                 </div>
                               </td>
-                              <td class="closeicon"></td>
+                              <td class="closeicon" data-duplicate-remove="addextra"></td>
                             </tr>
                           </tbody>
                         </table>
                         <div class="adbtn">
-                          <a onclick=""><img src="assets/images/add-row.png"><span>Add Extra</span></a>
+                          <a onclick="" data-duplicate-add="addextra"><img src="assets/images/add-row.png"><span>Add Extra</span></a>
                         </div>
 
                       </div>
@@ -483,7 +467,7 @@
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
   <script type="text/javascript" src="assets/js/script.js"></script>
-
+  <script type="text/javascript" src="assets/js/jquery.duplicate.js"></script>
   <!-- datepicker -->
   <script src="assets/js/jquery-ui.js"></script>
 

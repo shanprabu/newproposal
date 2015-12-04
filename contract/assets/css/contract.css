@@ -657,6 +657,7 @@ tbody{vertical-align: top;}
 	width: 18px;
 	height: 18px;
 	position: absolute;
+	cursor: pointer;
 }
 .contacticon{
 	right: 48px;
@@ -1060,105 +1061,106 @@ label{
 	position: relative;
 }
 
-.commonextra tbody tr td{
+/*.commonextra tbody tr td{
 	padding: 18px 25px !important;
-}
+	}*/
 
-.commontable tbody tr td .form-group{
-	margin-bottom: 0px;
-	 display: -moz-groupbox;
-}
+	.commontable tbody tr td .form-group{
+		margin-bottom: 0px;
+		display: -moz-groupbox;
+	}
 
-.commontable tbody tr td .form-group select, .commontable tbody tr td .form-group input {
-	border: 0;
-	box-shadow: none;
-	padding: 4px 0px;
-	background-color: transparent;
-}
+	.commontable tbody tr td .form-group select, .commontable tbody tr td .form-group input {
+		border: 0;
+		box-shadow: none;
+		padding: 4px 0px;
+		background-color: transparent;
+	}
 
-.commontable tbody tr td .form-group i.dropdown-icon2{
-	right: 18px;
-	top: 9px;
-}
+	.commontable tbody tr td .form-group i.dropdown-icon2{
+		right: 18px;
+		top: 9px;
+	}
 
-.adbtn{
-	padding: 5px 10px 10px 10px;
-}
-.adbtn a img{margin-right: 8px;}
+	.adbtn{
+		padding: 5px 10px 10px 10px;
+	}
+	.adbtn a img{margin-right: 8px;}
 
-.adbtn a, .adbtn a:hover{
-	font-size: 14px;
-	color: #b9a284;
-	text-decoration: none;
-	cursor: pointer;
-}
+	.adbtn a, .adbtn a:hover{
+		font-size: 14px;
+		color: #b9a284;
+		text-decoration: none;
+		cursor: pointer;
+	}
 
 
-/*contrcts*/
-.contrctscont{
-	background: #f8f8f8;
-	border: 1px solid #d7d6d6;
-	padding: 30px 40px;
-}
+	/*contrcts*/
+	.contrctscont{
+		background: #f8f8f8;
+		border: 1px solid #d7d6d6;
+		padding: 30px 40px;
+	}
 
-.contrctsinnercont{
-	margin-bottom: 25px;
-	display: inline-block;
-	width: 100%;
-}
+	.contrctsinnercont{
+		margin-bottom: 25px;
+		display: inline-block;
+		width: 100%;
+	}
 
-.contrctsinnercont h3{
-	color: #5b5b5b;
-	text-transform: uppercase;
-	font-size: 16px;
-	letter-spacing: 0.04em;
-	font-family: 'SoinSansPro-Medium';
-}
+	.contrctsinnercont h3{
+		color: #5b5b5b;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 0.04em;
+		font-family: 'SoinSansPro-Medium';
+	}
 
-.bdrrytdoted{
-	border-right: 2px dotted #ccc;
-	padding-right: 30px;
-}
+	.bdrrytdoted{
+		border-right: 2px dotted #ccc;
+		padding-right: 30px;
+	}
 
-.seasoncontainer{
-	width: 47%;
-	float: left;
-	margin-right: 42px;
-}
+	.seasoncontainer{
+		width: 47%;
+		float: left;
+		margin-right: 42px;
+	}
 
-.seasoncontainer2{
-	width: 49%;
-	float: left;
-}
+	.seasoncontainer2{
+		width: 49%;
+		float: left;
+	}
 
-.seasonlist{
-	padding: 15px 0px;
-}
+	.seasonlist{
+		padding: 15px 0px;
+	}
 
-.seasonlist ul{
-	padding: 0;
-	list-style-type: none;
-	margin: 0px 15px;
-	display: inline-block;
-	width: 94%;
-}
+	.seasonlist ul{
+		padding: 0;
+		list-style-type: none;
+		margin: 0px 15px;
+		display: inline-block;
+		width: 94%;
+	}
 
-.seasonlist ul li{
-	font-size: 16px;
-	color: #5b5b5b;
-	float: left;
-	font-family: 'SoinSansPro-Medium';
-	margin: 15px;
-}
+	.seasonlist ul li{
+		font-size: 16px;
+		color: #5b5b5b;
+		float: left;
+		font-family: 'SoinSansPro-Medium';
+		margin: 15px;
+	}
 
-.seasonlist ul li a{
-	color: #5b5b5b;
-	letter-spacing: 0.04em;
-	padding: 10px 20px;
-}
+	.seasonlist ul li a{
+		color: #5b5b5b;
+		letter-spacing: 0.04em;
+		padding: 10px 24px;
+		margin-right: 8px;
+	}
 
-.seasonlist ul li a:hover{
-	color: #fff;
-	text-decoration:none;
-	background: #dc665a;
-}
+	.seasonlist ul li a:hover{
+		color: #fff;
+		text-decoration:none;
+		background: #dc665a;
+	}
