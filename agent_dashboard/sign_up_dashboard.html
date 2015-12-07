@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>:: Sign Up Dashboard ::</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- base styles  -->
+	<link href="assets/css/base.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="assets/css/dashboard.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Fixed navbar -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="#"><img class="img-responsive" src="assets/images/logo.svg" alt="Enchanting Travels"/></a>
+			</div>
+			<div class="contactnumber">
+				1 888 263 2574
+			</div>
+		</div>
+		<div class="headerBand">
+			<div class="container">
+				<div class="headerBandNav">
+					<ul>
+						<li class="active"><a href="#">Dashboard</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="wrapper">
+		<div class="container">
+			<div class="signupDashboardContainer">
+				<div class="createNewAccount">
+					<button type="button" class="btn createAccountBtnRed btn-primary" data-toggle="modal" data-target="#createNewAccount">Create New Account</button>
+				</div>
+				<div class="searchSection">
+					<form>
+						<div class="form-group searchinput">
+							<input type="text" class="form-control" placeholder="Search by Name, Company Name, Country" />
+						</div>
+						<button type="button" class="btn btn-primary searchBtnRed">Search</button>
+					</form>
+				</div>
+				<div class="dashboardTable">
+					<div class="dashboardTableHeader">
+						<div class="dashboardTableHeading">Accounts</div>
+						<div class="dashboardTableheadingright">
+							<div class="form-group">
+								<label>Country</label>
+								<select type="text" class="">
+									<option>All</option>
+									<option>Country 01</option>
+									<option>Country 02</option>
+									<option>Country 03</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="dashboardTableContent">
+
+						<table id="dashboardtable" cellspacing="1" class="tablesorter">             
+							<thead>
+								<tr> 
+									<th class="header">Sl. No</th> 
+									<th class="header">Reg. Date</th> 
+									<th>Name</th> 
+									<th>Company Name</th> 
+									<th class="header">Commission</th> 
+									<th>Country</th> 
+									<th class="header">Trips Confirmed</th>
+									<th class="header">Revenue</th>
+									<th class="header">Commission Paid</th>
+									<th class="header">Commission Pending</th>
+								</tr> 
+							</thead> 
+							<tbody> 
+								<tr> 
+									<td class="orange">98</td> 
+									<td>28-Oct-15</td> 
+									<td>Arun Pillar</td> 
+									<td>Makerstravel pvt Ltd</td> 
+									<td>10%</td> 
+									<td>Germany</td> 
+									<td>8745</td> 
+									<td>$212598</td> 
+									<td class="green">$7856</td> 
+									<td class="palered">$875<span data-toggle="modal" data-target="#deleteRow" class="tableCloseicon"></span></td> 
+								</tr> 
+								<tr> 
+									<td class="orange">97</td> 
+									<td>22-Oct-15</td> 
+									<td>Kumar Pillar</td> 
+									<td>Cosmic travel pvt Ltd</td> 
+									<td>9%</td> 
+									<td>Germany</td> 
+									<td>6988</td> 
+									<td>$210487</td> 
+									<td class="green">$7589</td> 
+									<td class="palered">$854<span data-toggle="modal" data-target="#deleteRow" class="tableCloseicon"></span></td> 
+								</tr> 
+								<tr> 
+									<td class="orange">96</td> 
+									<td>12-Oct-15</td> 
+									<td>Caroline</td> 
+									<td>Cosmic pvt Ltd</td> 
+									<td>14%</td> 
+									<td>India</td> 
+									<td>5880</td> 
+									<td>$198764</td> 
+									<td class="green">$7154</td> 
+									<td class="palered">$820<span data-toggle="modal" data-target="#deleteRow" class="tableCloseicon"></span></td> 
+								</tr> 
+								<tr> 
+									<td class="orange">95</td> 
+									<td>12-Oct-15</td> 
+									<td>Pillar</td> 
+									<td>Travel pvt Ltd</td> 
+									<td>8%</td> 
+									<td>China</td> 
+									<td>4425</td> 
+									<td>$174445</td> 
+									<td class="green">$6980</td> 
+									<td class="palered">$750<span data-toggle="modal" data-target="#deleteRow" class="tableCloseicon"></span></td> 
+								</tr> 
+								<tr> 
+									<td class="orange">94</td> 
+									<td>02-Oct-15</td> 
+									<td>Arun kumar</td> 
+									<td>Maker pvt Ltd</td> 
+									<td>12%</td> 
+									<td>USA</td> 
+									<td>3230</td> 
+									<td>$155570</td> 
+									<td class="green">$6550</td> 
+									<td class="palered">$525<span data-toggle="modal" data-target="#deleteRow" class="tableCloseicon"></span></td> 
+								</tr> 
+							</tbody> 
+						</table>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="createNewAccount" tabindex="-1" role="dialog" aria-labelledby="createnewaccountLabel">
+		<div class="modal-dialog createnewaccount-modal" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><img src="assets/images/close-modal-icon.png" alt="close"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="modalformcontainer">
+							<div class="modalformheading">Personal Details</div>
+							<div class="modalformcontent">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Name</label>
+										<input type="text" class="form-control" />
+									</div>
+									<div class="form-group">
+										<label>Password</label>
+										<input type="text" class="form-control grey" />
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Email</label>
+										<input type="text" class="form-control" />
+									</div>
+									<div class="form-group">
+										<label>Contact number</label>
+										<input type="text" class="form-control" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modalformcontainer">
+							<div class="modalformheading">Business Details</div>
+							<div class="modalformcontent">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label>Company name</label>
+										<input type="text" class="form-control" />
+									</div>
+									<div class="form-group">
+										<label>Business address</label>
+										<textarea type="text" class="hgt122 form-control"></textarea>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group doubleinput">
+										<div class="wdt62perc alignleft">
+											<label>Company website</label>
+											<input type="text" class="form-control" />
+										</div>
+										<div class="wdt32perc pull-left">
+											<label>Commission%</label>
+											<input type="text" class="form-control" />
+										</div>
+									</div>
+									<div class="form-group doubleinput">
+										<div class="wdt47perc alignleft">
+											<label>City</label>
+											<input type="text" class="form-control" />
+										</div>
+										<div class="wdt47perc pull-left">
+											<label>State</label>
+											<input type="text" class="form-control" />
+										</div>
+									</div>
+									<div class="form-group doubleinput">
+										<div class="wdt47perc alignleft">
+											<label>Country:</label>
+											<select type="text" class="form-control">
+												<option>USA</option>
+												<option>Germany</option>
+												<option>India</option>
+												<option>Canada</option>
+											</select>
+										</div>
+										<div class="wdt47perc pull-left">
+											<label>Zipcode</label>
+											<input type="text" class="form-control" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modalbtnsection">
+							<button type="button" class="btn btn-primary modelbtnred mgnryt15">Save</button>
+							<button type="button" class="btn btn-primary modelbtngoldenbdr">Reset</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="deleteRow" tabindex="-1" role="dialog" aria-labelledby="deleteLabel">
+		<div class="modal-dialog delete-modal" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<form>
+						<p>Are you sure you want to delete this item?</p>						
+						<div class="modalbtnsection">
+							<button type="button" class="btn btn-primary modelbtnred mgnryt15">Yes</button>
+							<button type="button" class="btn btn-primary modelbtngoldenbdr">No</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/table_sorter/js/jquery.tablesorter.js"></script>
+	<script type="text/javascript" src="assets/js/base.js"></script>
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,519 @@
+/**
+** Pakage : enchanting travels
+** Author : Mohammed Nadeem 
+** file : Base css
+**/
+
+/* -------------------- Fonts Css ------------------ */
+
+@font-face {
+      font-family: 'SoinSansPro-ThinOblique';
+      src: url('../../fonts/SoinSansPro-ThinOblique');
+      src: url('../../fonts/SoinSansPro-ThinOblique.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/SoinSansPro-ThinOblique.woff2') format('woff2'),
+      url('../../fonts/SoinSansPro-ThinOblique.woff') format('woff'),
+      url('../../fonts/SoinSansPro-ThinOblique.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+      font-family: 'SoinSansPro-MediumOblique';
+      src: url('../../fonts/SoinSansPro-MediumOblique.eot');
+      src: url('../../fonts/SoinSansPro-MediumOblique.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/SoinSansPro-MediumOblique.woff2') format('woff2'),
+      url('../../fonts/SoinSansPro-MediumOblique.woff') format('woff'),
+      url('../../fonts/SoinSansPro-MediumOblique.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+
+@font-face {
+      font-family: 'SoinSansPro-LightOblique';
+      src: url('../../fonts/SoinSansPro-LightOblique.eot');
+      src: url('../../fonts/SoinSansPro-LightOblique.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/SoinSansPro-LightOblique.woff2') format('woff2'),
+      url('../../fonts/SoinSansPro-LightOblique.woff') format('woff'),
+      url('../../fonts/SoinSansPro-LightOblique.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+      font-family: 'SoinSansPro-Roman';
+      src: url('../../fonts/SoinSansPro-Roman.eot');
+      src: url('../../fonts/SoinSansPro-Roman.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/SoinSansPro-Roman.woff2') format('woff2'),
+      url('../../fonts/SoinSansPro-Roman.woff') format('woff'),
+      url('../../fonts/SoinSansPro-Roman.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+      font-family: 'SoinSansPro-Light';
+      src: url('../../fonts/SoinSansPro-Light.eot');
+      src: url('../../fonts/SoinSansPro-Light.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/SoinSansPro-Light.woff2') format('woff2'),
+      url('../../fonts/SoinSansPro-Light.woff') format('woff'),
+      url('../../fonts/SoinSansPro-Light.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+      font-family: 'SoinSansPro-Bold';
+      src: url('../../fonts/SoinSansPro-Bold.eot');
+      src: url('../../fonts/SoinSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/SoinSansPro-Bold.woff2') format('woff2'),
+      url('../../fonts/SoinSansPro-Bold.woff') format('woff'),
+      url('../../fonts/SoinSansPro-Bold.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+      font-family: 'SoinSansPro-Thin';
+      src: url('../../fonts/SoinSansPro-Thin.eot');
+      src: url('../../fonts/SoinSansPro-Thin.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/SoinSansPro-Thin.woff2') format('woff2'),
+      url('../../fonts/SoinSansPro-Thin.woff') format('woff'),
+      url('../../fonts/SoinSansPro-Thin.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+      font-family: 'SoinSansPro-BoldOblique';
+      src: url('../../fonts/SoinSansPro-BoldOblique.eot');
+      src: url('../../fonts/SoinSansPro-BoldOblique.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/SoinSansPro-BoldOblique.woff2') format('woff2'),
+      url('../../fonts/SoinSansPro-BoldOblique.woff') format('woff'),
+      url('../../fonts/SoinSansPro-BoldOblique.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+      font-family: 'SoinSansPro-Oblique';
+      src: url('../../fonts/SoinSansPro-Oblique.eot');
+      src: url('../../fonts/SoinSansPro-Oblique.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/SoinSansPro-Oblique.woff2') format('woff2'),
+      url('../../fonts/SoinSansPro-Oblique.woff') format('woff'),
+      url('../../fonts/SoinSansPro-Oblique.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+      font-family: 'SoinSansPro-Medium';
+      src: url('../../fonts/SoinSansPro-Medium.eot');
+      src: url('../../fonts/SoinSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/SoinSansPro-Medium.woff2') format('woff2'),
+      url('../../fonts/SoinSansPro-Medium.woff') format('woff'),
+      url('../../fonts/SoinSansPro-Medium.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+      font-family: 'SoinSansPro-Headline';
+      src: url('../../fonts/SoinSansPro-Headline.eot');
+      src: url('../../fonts/SoinSansPro-Headline.eot?#iefix') format('embedded-opentype'),
+      url('../../fonts/SoinSansPro-Headline.woff2') format('woff2'),
+      url('../../fonts/SoinSansPro-Headline.woff') format('woff'),
+      url('../../fonts/SoinSansPro-Headline.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      text-rendering: optimizeLegibility !important;
+      -webkit-font-smoothing: antialiased !important;
+}
+
+
+/*------------- base styles -----------*/
+
+*{
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      text-decoration: none;
+      vertical-align: baseline;
+}
+
+html, body {
+      height: 100%;
+}
+
+a{
+      outline: 0;
+}
+
+a:hover, a:active, a:focus {
+ outline: 0;
+}
+
+body{
+      background: #ffffff;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      font-family: 'SoinSansPro-Roman'
+}
+
+object, embed { 
+  outline: 0;
+}
+
+/*-------- header -------------*/
+header{
+      background-color: #fff;
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0px;
+}
+.logo{
+      float: left;
+}
+
+.contactnumber{
+      float: right;
+      line-height: 58px;
+      font-size: 14px;
+      font-family: 'SoinSansPro-Roman';
+      letter-spacing:0.02em;
+      color: #797875;
+}
+
+.headerBand{
+      background: #36312b;
+}
+
+.headerBandNav{
+      float: left;
+}
+
+.headerBandNav ul{
+      list-style-type: none;
+      margin: 0;
+      display: inline-flex;
+      padding: 0;
+}
+
+.headerBandNav ul li{
+      float: left;
+      color: #fff;
+}
+
+.headerBandNav ul li a{
+      font-size: 18px;
+      padding: 18px 40px;
+      color: #fff;
+      display: block;
+}
+
+.headerBandNav ul li a:hover, .headerBandNav ul li a:focus{ 
+      background: #221f16;
+      color: #fff;
+      text-decoration: none;
+}
+
+.headerBandNav ul li.active{
+      background: #221f16;
+}
+
+.headerbandright{
+      float: right;
+}
+.headerbandright ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      border-left: 1px solid #221f16;
+      display: inline-flex;
+}
+
+.headerbandright ul li{
+      float: left;
+      border-right: 1px solid #221f16; 
+}
+
+.headerbandright ul li a{
+      padding: 20px;
+      display: block;
+      position: relative;
+}
+.headerbandright ul li a:hover, .headerbandright ul li a.active{
+      background: #221f16;
+}
+.welcomeuserlogin{
+      padding: 10px;
+      display: inline-table;
+      margin-right: 35px;
+}
+.welcomeuserlogin img{
+      float: left;
+      margin-right: 10px;
+      width: 40px;
+}
+.welcomeuserlogin span{
+      float: left;
+      color: #fff;
+}
+
+.welcomeuserlogin span h4{
+      color: #fff;
+      font-size: 14px;
+      margin: 0;
+      margin-top: 5px;
+}
+
+.welcomeuserlogin span h5{
+      color: #b59d79;
+      font-size: 11px;
+      font-family: 'SoinSansPro-LightOblique';
+      margin: 0;
+      margin-top: 5px;
+      font-weight: 600;
+}
+.notifyno{
+  font-size: 10px;
+  font-family: 'SoinSansPro-Light';
+  color: #fff;
+  background: #ef9507;
+  padding: 0px 4px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+}
+
+/*------------ header drop down --------------*/
+ul.dddropdown-menu{
+      display: none;
+      position: absolute;
+      border: 0;
+      box-shadow: none;
+      background: #221f16;
+      border-radius: 0;
+      left: -160%;
+      padding: 15px;
+      z-index: 99;
+}
+
+ul.dddropdown-menu li{
+      display: block;
+      width: 100%;
+      color: #fff;
+      border: 0;
+      float: inherit;
+      border-bottom: 1px solid #36312b;
+}
+
+ul.dddropdown-menu li:last-child{
+      border-bottom: 0;
+}
+
+ul.dddropdown-menu li a{
+  color: #fff;
+  padding: 10px 0px;
+  font-size: 13px;
+  white-space: inherit;
+  text-decoration: none;
+}
+
+ul.dddropdown-menu li a span{
+      color: #ef9507;
+}
+
+ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
+      color: #fff;
+      text-decoration: none;
+}
+
+/*---------------container styles -----------*/
+#wrapper{
+      margin-bottom: 50px;
+}
+.container{
+      width: 1180px;
+      margin: 0 auto;
+}
+
+/*---------------common --------------*/
+.orange{color: #ef9507 !important;}
+.grey{color: #949494 !important;}
+.green{color: #5acb1c !important;}
+.palered{color: #dc665a !important;}
+.bgred{background: #cb2727 !important;}
+.bgorange{background: #ea950e !important;}
+.bgblue{background: #11a3d9 !important; }
+.bggreen{background: #5acb1c !important;}
+.mgnryt30{margin-right: 30px;}
+.mgnryt15{margin-right: 15px;}
+.mgnbtm25{margin-bottom: 25px;}
+.mgnbtm15{margin-bottom: 15px;}
+.wdt10perc{width: 10%;}
+.wdt20perc{width: 20%;}
+.wdt205perc{width: 20.5%;}
+.wdt18perc{width: 18%;}
+.wdt25perc{width: 25%;}
+.wdt30perc{width: 30%;}
+.wdt60perc{width: 60%;}
+.wdt62perc{width: 62%;}
+.wdt32perc{width: 32%;}
+.wdt72perc{width: 72%;}
+.wdt74perc{width: 74%;}
+.wdt20perc{width: 20%;}
+.wdt22perc{width: 22%;}
+.wdt45perc{width: 45%;}
+.wdt47perc{width: 47%;}
+.mgnryt6perc{margin-right: 6%;}
+.mgnbtm0{margin-bottom: 0px !important;}
+.hgt122{ height: 122px !important;}
+.hgt108{ height: 108px !important;}
+.pdn0{padding: 0px !important;}
+.bgtransparent{background-color: transparent !important;}
+.pointerclass {cursor: pointer;}
+
+.date_icon {
+      background: url("../images/calender-icon.png") no-repeat 95% center #fff;
+}
+.inputuser_icon {
+      background: url("../images/user_iconinput.png") no-repeat 6% center #fff;
+      padding-left: 28px;
+}
+
+.closeredicon{
+  background: url("../images/close-red-icon.png") no-repeat #fff;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  cursor: pointer;
+}
+
+/* ---- date picker calender ----*/
+.ui-widget-header {     
+      border: 1px solid #36312A !important;
+      background: #422B19 !important;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+      border: 1px solid #36312A !important;
+      background: #422B19 !important;
+      color: #ffffff !important;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+      border: 1px solid #36312A !important;
+      background: #E4B794 !important;
+      color: #FFFFFF !important;
+}
+.ui-datepicker{
+      z-index: 9999 !important;
+}
+
+/*-----custom checkbox------------*/
+.checkbox input[type="checkbox"]{
+      display: none;
+}
+
+.checkbox input[type="checkbox"] + label{
+      background: url("../images/check-off.png") no-repeat;
+}
+
+.checkbox input[type="checkbox"]:checked + label{
+      background: url("../images/check-on.png") no-repeat;
+}
+
+/*----------------bootstrap common ----------------*/
+.btn:focus,.btn:active {
+      outline: none !important;
+}
+
+
+/*--------------modal styles----------------*/
+.modal-header {
+      height: 0px;
+      border: 0;
+}
+
+/* -------------------- bootstrap Media Quires ------------------ */
+@media (min-width: 768px) {
+
+      .container{
+            width: 1180px;
+            margin: 0 auto;
+      }
+
+}
+
+@media (min-width: 280px) and (max-width: 400px) {
+      .container{
+            width: 100%;
+            margin: 0 auto;
+      }
+}
+
+@media (max-width: 767px) and (min-width: 650px){
+      .container{
+            width: 100%;
+            margin: 0 auto;
+      }
+}
+
+@media(max-width: 651px) and (min-width: 401px){
+      .container{
+            width: 100%;
+            margin: 0 auto;
+      }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+      .container{
+            width: 100%;
+            margin: 0 auto;
+      }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+      .container{
+            width: 100%;
+            margin: 0 auto;
+      }
+
+}
