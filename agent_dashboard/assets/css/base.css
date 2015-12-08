@@ -510,7 +510,7 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
   float: left;
   width: 25%;
   border-radius: 4px 0px 0px 4px;
-  padding: 6px 0px;
+  padding: 6px;
   border-right: 0;
 }
 .numbrinput{
