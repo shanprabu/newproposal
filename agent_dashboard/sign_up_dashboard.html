@@ -17,6 +17,7 @@
 	<link href="assets/css/base.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
 	<link href="assets/css/dashboard.css" rel="stylesheet">
+	<link href="assets/month_picker/css/datepicker.css" rel="stylesheet">
 
 </head>
 
@@ -69,6 +70,7 @@
 									<option>Country 03</option>
 								</select>
 							</div>
+							<div id="monthpicker3" data-date-format="dd-mm-yyyy"></div>
 						</div>
 					</div>
 					<div class="dashboardTableContent">
@@ -169,29 +171,38 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<form>
+					<form data-toggle="validator" role="form" novalidate="true">
 						<div class="modalformcontainer">
 							<div class="modalformheading">Personal Details</div>
 							<div class="modalformcontent">
 								<div class="col-md-6">
 									<div class="form-group">
-										<label>Name</label>
-										<input type="text" class="form-control" />
+										<label for="inputName">Name</label>
+										<input type="text" class="form-control" id="inputName" data-error="please enter name " required="" />
+										<div class="help-block with-errors"></div>
 									</div>
 									<div class="form-group">
-										<label>Password</label>
-										<input type="text" class="form-control grey" />
+										<label for="inputPassword">Password</label>
+										<input type="password" data-toggle="validator" data-minlength="6" class="form-control grey" id="inputPassword" data-error="Minimum of 6 characters" required="">
+										<span class="help-block with-errors"></span>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<label>Email</label>
-										<input type="text" class="form-control" />
+										<label for="inputEmail">Email</label>
+										<input type="email" class="form-control" id="inputEmail" data-error="Email id is entered wrong" required="">
+										<div class="help-block with-errors"></div>
 									</div>
 									<div class="form-group">
-										<label>Contact number</label>
-										<input type="text" class="form-control" />
-									</div>
+										<label class="displayblk">Contact number</label>
+										<select type="text" class="form-control numbrselect">
+											<option>+91</option>
+											<option>+1</option>
+											<option>+765</option>
+											<option>+08</option>
+										</select>
+										<input name="num" id="num" class="form-control numbrinput" />
+									</div>`
 								</div>
 							</div>
 						</div>
@@ -248,8 +259,8 @@
 							</div>
 						</div>
 						<div class="modalbtnsection">
-							<button type="button" class="btn btn-primary modelbtnred mgnryt15">Save</button>
-							<button type="button" class="btn btn-primary modelbtngoldenbdr">Reset</button>
+							<button type="submit" class="btn btn-primary modelbtnred mgnryt15">Save</button>
+							<button type="button" class="reset btn btn-primary modelbtngoldenbdr">Reset</button>
 						</div>
 					</form>
 				</div>
@@ -266,7 +277,7 @@
 						<p>Are you sure you want to delete this item?</p>						
 						<div class="modalbtnsection">
 							<button type="button" class="btn btn-primary modelbtnred mgnryt15">Yes</button>
-							<button type="button" class="btn btn-primary modelbtngoldenbdr">No</button>
+							<button type="button" class="btn btn-primary modelbtngoldenbdr" class="close" data-dismiss="modal" aria-label="Close">No</button>
 						</div>
 					</form>
 				</div>
@@ -283,6 +294,8 @@
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/table_sorter/js/jquery.tablesorter.js"></script>
 	<script type="text/javascript" src="assets/js/base.js"></script>
+	<script src="assets/month_picker/js/bootstrap-datepicker.js"></script>   
+	<script src="assets/validation/js/validator.min.js"></script> 
 
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>

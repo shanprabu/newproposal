@@ -70,9 +70,12 @@
 .dashboardTableheadingright{
       float: right;
       font-size: 16px;
+      position: relative;
 }
 .dashboardTableheadingright .form-group{
       margin: 0;
+      position: relative;
+      right: 125%;
 }
 .dashboardTableheadingright .form-group label {
       display: inline-block;
@@ -123,10 +126,18 @@
 }
 
 .dashboardTableContent table.tablesorter thead tr .header {
-      background-image: url(../images/arrow-icon.png);
+      background-image: url(../images/arrow-icon-up.png);
       background-repeat: no-repeat;
-      background-position: right 20px;
+      background-position: right 22px;
       cursor: pointer;
+}
+
+.dashboardTableContent table.tablesorter thead tr .header.headerSortDown {
+      background-image: url(../images/arrow-icon-down.png);
+}
+
+.dashboardTableContent table.tablesorter thead tr .header.headerSortUp {
+      background-image: url(../images/arrow-icon-up.png);
 }
 
 .tableCloseicon{
@@ -174,6 +185,7 @@
 .statisticsheading{
       line-height: 49px;
       font-size: 16px;
+      position: relative;
       color: #a4a4a4;
       height: 46px;
 }
