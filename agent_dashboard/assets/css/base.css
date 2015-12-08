@@ -163,6 +163,7 @@
 
 /*------------- base styles -----------*/
 
+
 *{
   margin: 0;
   padding: 0;
@@ -329,6 +330,12 @@ ul.dddropdown-menu{
   left: -160%;
   padding: 15px;
   z-index: 99;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 
 ul.dddropdown-menu li{
@@ -370,6 +377,7 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
   margin: 0 auto;
 }
 
+
 /*---------------common --------------*/
 .orange{color: #ef9507 !important;}
 .grey{color: #949494 !important;}
@@ -396,6 +404,8 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
 .wdt74perc{width: 74%;}
 .wdt20perc{width: 20%;}
 .wdt22perc{width: 22%;}
+.wdt52perc{width: 52%;}
+.wdt42perc{width: 42%;}
 .wdt45perc{width: 45%;}
 .wdt47perc{width: 47%;}
 .mgnryt6perc{margin-right: 6%;}
@@ -406,12 +416,15 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
 .bgtransparent{background-color: transparent !important;}
 .pointerclass {cursor: pointer;}
 .displayblk{display: block;}
+.positionrelative{position: relative;}
 
 .date_icon {
   background: url("../images/calender-icon.png") no-repeat 95% center #fff;
 }
 .inputuser_icon {
-  background: url("../images/user_iconinput.png") no-repeat 6% center #fff;
+  background-image: url("../images/user_iconinput.png");
+  background-repeat: no-repeat;
+  background-position: 6px 9px;
   padding-left: 28px;
 }
 
@@ -423,6 +436,52 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
   right: 2px;
   top: 4px;
   cursor: pointer;
+}
+
+.dropdown-icon {
+  background: transparent url("../images/dropdown-arrow-ico-white.png") no-repeat scroll right center;
+  border-radius: 0 3px 3px 0;
+  height: 36px;
+  pointer-events: none;
+  position: absolute;
+  right: 0px;
+  top: 23px;
+  width: 33px;
+  z-index: 9;
+}
+.dropdown-icon3 {
+  background: transparent url("../images/dropdown-arrow-ico-white.jpg") no-repeat scroll right center;
+  border-radius: 0 3px 3px 0;
+  height: 32px;
+  pointer-events: none;
+  position: absolute;
+  right: 75%;
+  top: 26px;
+  width: 33px;
+  z-index: 9;
+}
+
+.dropdown-icon2 {
+  background: transparent url("../images/dropdown-arrow-ico-white.jpg") no-repeat scroll right center;
+  border-radius: 0 3px 3px 0;
+  height: 32px;
+  pointer-events: none;
+  position: absolute;
+  right: 1px;
+  top: 26px;
+  width: 33px;
+  z-index: 9;
+}
+.dropdown-icon4 {
+  background: #fff url("../images/dropdown-arrow-ico-white.png") no-repeat scroll;
+  border-radius: 0 3px 3px 0;
+  height: 32px;
+  pointer-events: none;
+  position: absolute;
+  right: 1px;
+  top: 35px;
+  width: 26px;
+  z-index: 9;
 }
 
 /* ---- date picker calender ----*/
@@ -447,15 +506,16 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
 /*--custom ------*/
 .numbrselect{
   float: left;
-  width: 20%;
+  width: 25%;
   border-radius: 4px 0px 0px 4px;
   padding: 6px 0px;
+  border-right: 0;
 }
 .numbrinput{
   float: left;
-  width: 80%;
+  width: 75%;
   border-radius: 0px 4px 4px 0px;
-  border-left: 0;
+  
 }
 
 /*-----custom checkbox------------*/
@@ -493,7 +553,7 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
   }
   #monthpicker1, #monthpicker2{ 
     position: absolute;
-    right: -12px;
+    right: 0px;
     z-index: 999;
     top: 9px;
   }
@@ -513,10 +573,10 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
   }
 
   #monthpicker1 .datepicker table thead tr th:first-child, #monthpicker2 .datepicker table thead tr th:first-child{
-    padding: 7px 20px 10px 10px;
+    padding: 7px 20px 10px 0px;
   }
   #monthpicker1 .datepicker table thead tr th:last-child, #monthpicker2 .datepicker table thead tr th:last-child{
-    padding: 7px 20px 10px 10px;
+    padding: 7px 00px 10px 10px;
   }
   #monthpicker1 .datepicker table thead tr th:hover, #monthpicker2 .datepicker table thead tr th:hover{
     background: transparent !important;
@@ -529,6 +589,7 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
     line-height: 24px;
     font-weight: normal;
     color: #949494;
+    background: transparent;
   }
   #monthpicker1 .datepicker .datepicker-days thead tr:last-child, #monthpicker2 .datepicker .datepicker-days thead tr:last-child {
     display: none;
@@ -546,12 +607,12 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
   #monthpicker2 .datepicker .datepicker-months tbody tr td, #monthpicker2 .datepicker .datepicker-years tbody tr td{
     border-radius: 0;
     background: #36312b;
-    -webkit-border-bottom-right-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -moz-border-radius-bottomright: 5px;
-    -moz-border-radius-bottomleft: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius:3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
 
   #monthpicker1 .datepicker .datepicker-months tbody, #monthpicker1 .datepicker .datepicker-years tbody,
@@ -565,6 +626,7 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
     line-height: 32px;
     height: 32px;
     color: #fff;
+    font-size: 11px;
   }
 
   #monthpicker1 .datepicker .datepicker-months tbody tr td span:hover, #monthpicker1 .datepicker .datepicker-years tbody tr td span:hover,
@@ -576,10 +638,11 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
 
   #monthpicker3{ 
     position: absolute;
-    right: -22px;
+    right: 0px;
     z-index: 999;
     top: 3px;
     color: #949494;
+    background: transparent;
   }
 
   #monthpicker3 .datepicker table {
@@ -590,10 +653,10 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
   }
 
   #monthpicker3 .datepicker table thead tr th:first-child{
-    padding: 7px 20px 10px 10px;
+    padding: 7px 20px 10px 0px;
   }
   #monthpicker3 .datepicker table thead tr th:last-child{
-    padding: 7px 20px 10px 10px;
+    padding: 7px 0px 10px 10px;
   }
   #monthpicker3 .datepicker table thead tr th:hover{
     background: transparent !important;
@@ -622,12 +685,12 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
   #monthpicker3 .datepicker .datepicker-months tbody tr td, #monthpicker3 .datepicker .datepicker-years tbody tr td{
     border-radius: 0;
     background: #36312b;
-    -webkit-border-bottom-right-radius: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    -moz-border-radius-bottomright: 5px;
-    -moz-border-radius-bottomleft: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
   }
 
   #monthpicker3 .datepicker .datepicker-months tbody, #monthpicker3 .datepicker .datepicker-years tbody{
@@ -639,6 +702,7 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
     line-height: 32px;
     height: 32px;
     color: #fff;
+    font-size: 11px;
   }
 
   #monthpicker3 .datepicker .datepicker-months tbody tr td span:hover, #monthpicker3 .datepicker .datepicker-years tbody tr td span:hover,
@@ -669,7 +733,7 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
   .btn-primary.disabled, .btn-primary.disabled.active, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled], .btn-primary[disabled].active, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
     background: #e3847a;
     border-color: #e3847a;
-}
+  }
 
 
   /* -------------------- bootstrap Media Quires ------------------ */
@@ -721,3 +785,59 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
     }
 
   }
+
+
+
+
+  /*-----------hacks ---------------*/
+
+  /* firefox hack css */
+  @-moz-document url-prefix(){ 
+
+    .dropdown-icon4 {
+      top: 36px;
+    }
+    #monthpicker1 .datepicker thead tr th.prev i.icon-arrow-left, #monthpicker1 .datepicker thead tr th.next i.icon-arrow-right,
+    #monthpicker2 .datepicker thead tr th.prev i.icon-arrow-left, #monthpicker2 .datepicker thead tr th.next i.icon-arrow-right,
+    #monthpicker3 .datepicker thead tr th.prev i.icon-arrow-left, #monthpicker3 .datepicker thead tr th.next i.icon-arrow-right{
+      top:9px;
+    }
+    
+    select::-moz-focus-inner{
+      outline : none;
+    }
+    select:-moz-focusring {
+      /*color: transparent;
+      text-shadow: 0 0 0 #000;*/
+      outline: none;
+    }
+  }
+
+  /* IE hack css */
+  @media all and (-ms-high-contrast:none){
+
+  }
+
+  /*for ios*/
+  _::-webkit-full-page-media, _:future, :root {}
+
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .btn-brown {
+    line-height: 38px;
+  }
+  {
+    line-height: 52px;
+  }
+  #home-page .expertise blockquote {
+    padding: 40px 52px;
+  }
+  .btn-red {
+    line-height: 40px;
+  }
+  }*/
+
+  /*for ios*/
+  .form-control::-webkit-input-placeholder {
+
+  }
+  _::-webkit-full-page-media, _:future, :root {}

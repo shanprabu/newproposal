@@ -184,7 +184,7 @@
 
 .statisticsheading{
       line-height: 49px;
-      font-size: 16px;
+      font-size: 11px;
       position: relative;
       color: #a4a4a4;
       height: 46px;
@@ -371,7 +371,7 @@
       background: #b59d79;
       color: #fff;
       font-weight: bold;
-      padding: 0px 9px;
+      padding: 0px 7px;
       font-size: 18px;
       border-radius: 3px;
       margin-right: 6px;
@@ -390,7 +390,7 @@
       position: absolute;
       width: 292px;
       background: #fff;
-      padding: 17px 25px;
+      padding: 17px 10px 17px 20px;
       right: -35%;
       border: 1px solid #ccc;
       border-radius: 5px;
@@ -439,4 +439,12 @@
       border-bottom-color: #d3d1d1;
       border-width: 11px;
       margin-left: -11px;
+}
+
+.datepicker-dropdown .datepicker-days thead .prev i.icon-arrow-left,.datepicker-dropdown .datepicker-days thead .next i.icon-arrow-right{
+  top: 20px;
+}
+
+.datepicker-dropdown .datepicker-days {
+   padding: 5px
 }
