@@ -192,7 +192,7 @@
 
 .statisticscontent{
       background: #f6f6f6;
-      padding: 15px;
+      padding: 20px;
       display: inline-block;
       width: 100%;
 }
@@ -210,7 +210,7 @@
 
 .salesstatisticslist ul li{
       float: left;
-      width: 19.5%;
+      width: 20.5%;
       margin-right: 6%;
 }
 
@@ -226,7 +226,8 @@
       font-size: 11px;
       color: #36312b;
       text-transform: uppercase;
-      line-height: 24px;
+      line-height: 16px;
+      padding-bottom: 4px;
 }
 .bignumber{
       font-size: 23px;
@@ -442,7 +443,7 @@
 }
 
 .datepicker-dropdown .datepicker-days thead .prev i.icon-arrow-left,.datepicker-dropdown .datepicker-days thead .next i.icon-arrow-right{
-  top: 20px;
+    top: 20px;
 }
 
 .datepicker-dropdown .datepicker-days {
