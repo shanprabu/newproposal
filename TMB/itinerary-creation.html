@@ -24,9 +24,12 @@
   <link href="assets/css/jquery-ui.css" rel="stylesheet">
   <!-- multi select -->
   <link href="assets/multiselect/css/multiple-select.css" rel="stylesheet"/>
-  <!-- sly slider css -->
-  <link rel="stylesheet" href="assets/slider/css/horizontal.css">
-  <script src="assets/slider/js/modernizr.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="assets/custom_scrollbar/css/jquery.scrollbar.css">
+
+  <!-- sortable -->
+  <link rel="stylesheet" href="assets/sortable/css/jquery-ui.css">
+
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -57,7 +60,8 @@
       </nav>
       <div class="sumarysllidecont">
         <div class="sumary-tab shadowsumm">
-          <a class="open-summary">Itinerary Summary +</a>
+          <a class="open-summary pull-left">Itinerary Summary +</a>
+          <a class="open-txt-summary">Rules Summary +</a>
         </div>
         <div class="sumrycontent" id="summary-content">
           <div class="container scrolcontai">
@@ -199,6 +203,119 @@
               <a class="slidetop">Close Itinerary Summary -</a>
             </div>
           </div>
+
+          <div class="sumrycontent" id="txt-summary-content">
+            <div class="container scrolcontai">
+              <table class="table table-bordered table-summary">
+                <thead>
+                  <tr>
+                    <th class="wdt60">City</th>
+                    <th class="wdt170">Service Name</th>
+                    <th class="wdt60">Rule Type</th>
+                    <th class="wdt220">Message</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p><b>Delhi</b></p>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li>Fri, Oct 15, 2015 : Delhi - City highlights</li>
+                        <li>Fri, Oct 15, 2015 : Delhi - City highlights</li>
+                      </ul>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li>warning</li>
+                        <li>warning</li>
+                      </ul>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li><p>Lorem ipsum new txta ver de samr kaouns as</p></li>
+                        <li><p>Lorem ipsum new txta ver de samr kaouns as</p></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><b>Delhi</b></p>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li>Fri, Oct 15, 2015 : Delhi - City highlights</li>
+                        <li>Fri, Oct 15, 2015 : Delhi - City highlights</li>
+                      </ul>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li>warning</li>
+                        <li>warning</li>
+                      </ul>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li><p>Lorem ipsum new txta ver de samr kaouns as</p></li>
+                        <li><p>Lorem ipsum new txta ver de samr kaouns as</p></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><b>Delhi</b></p>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li>Fri, Oct 15, 2015 : Delhi - City highlights</li>
+                        <li>Fri, Oct 15, 2015 : Delhi - City highlights</li>
+                      </ul>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li>warning</li>
+                        <li>warning</li>
+                      </ul>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li><p>Lorem ipsum new txta ver de samr kaouns as</p></li>
+                        <li><p>Lorem ipsum new txta ver de samr kaouns as</p></li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><b>Delhi</b></p>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li>Fri, Oct 15, 2015 : Delhi - City highlights</li>
+                        <li>Fri, Oct 15, 2015 : Delhi - City highlights</li>
+                      </ul>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li>warning</li>
+                        <li>warning</li>
+                      </ul>
+                    </td>
+                    <td class="classrepeat">
+                      <ul>
+                        <li><p>Lorem ipsum new txta ver de samr kaouns as</p></li>
+                        <li><p>Lorem ipsum new txta ver de samr kaouns as</p></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="sumary-tab">
+              <a class="txt-slidetop">Close Rules Summary -</a>
+            </div>
+          </div>
         </div>
         <div class="container">
 
@@ -250,21 +367,15 @@
                                     <label for="enddate">End Date</label>
                                     <input type="text" class="form-control end-date date_icon pointerclass" id="enddate"> 
                                   </div>
-                                  <div class="form-group col-md-2">
+                                  <div class="form-group col-md-2 wdtperc20">
                                     <label for="nights">Nights</label>
                                     <input type="text" class="form-control" id="nights">
                                   </div>
-                                  <div class="form-group col-md-3">
-                                    <label for="guestrooms">Guests / Rooms</label>
-                                    <select class="form-control" id="guestrooms">
-                                      <option>1 person, 1 room</option>
-                                      <option>2 people, 1 room</option>
-                                      <option>3 people, 2 room</option>
-                                      <option>4 people, 2 room</option>
-                                      <option>5 people, 3 room</option>
-                                    </select>
+                                  <div class="form-group col-md-2 wdtperc20">
+                                    <label for="adults">Adults</label>
+                                    <input type="text" class="form-control" id="adults">
                                   </div>
-                                  <div class="form-group col-md-2">
+                                  <div class="form-group col-md-2 wdtperc20">
                                     <label for="currency">Currency</label>
                                     <select class="form-control" id="currency">
                                       <option>USD</option>
@@ -272,6 +383,25 @@
                                       <option>AUS</option>
                                       <option>CAN</option>
                                     </select>
+                                  </div>
+                                  
+                                  <div class="form-group col-md-2 mgn-rgt15">
+                                    <div class="row">
+                                      <label for="singlerom">Single Rooms</label>
+                                      <input type="text" class="form-control" id="singlerom">
+                                    </div>
+                                  </div>
+                                  <div class="form-group col-md-2 wdtperc20">
+                                    <label for="doublrom">Double Rooms</label>
+                                    <input type="text" class="form-control" id="doublrom">
+                                  </div>
+                                  <div class="form-group col-md-2 wdtperc20">
+                                    <label for="triblerom">Trible Rooms</label>
+                                    <input type="text" class="form-control" id="triblerom">
+                                  </div>
+                                  <div class="form-group col-md-2 wdtperc20">
+                                    <label for="quads">Quads</label>
+                                    <input type="text" class="form-control" id="quads">
                                   </div>
 
                                   <div class="form-group col-md-4 mgn-rgt15 wdtperc367">
@@ -354,21 +484,36 @@
                                     <table class="table table-bordered table-iticreat">
                                       <thead>
                                         <tr>
-                                          <th>Price</th>
-                                          <th>Per Person</th>
-                                          <th>Total</th>
+                                          <th>Room</th>
+                                          <th>Opt 1</th>
+                                          <th>Opt 2</th>
                                         </tr>
                                       </thead>
                                       <tbody>
                                         <tr>
-                                          <th scope="row">Option 1</th>
-                                          <td>2 x $ 750</td>
-                                          <td>$ 1,500</td>
+                                          <th scope="row">Single</th>
+                                          <td>1 x &euro; 100</td>
+                                          <td>1 x &euro; 150</td>
                                         </tr>
                                         <tr>
-                                          <th scope="row">Option 1</th>
-                                          <td>2 x $ 950</td>
-                                          <td>$ 1,900</td>
+                                          <th scope="row">Double</th>
+                                          <td>1 x &euro; 100</td>
+                                          <td>1 x &euro; 150</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Triple</th>
+                                          <td>1 x &euro; 100</td>
+                                          <td>1 x &euro; 150</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">Quads</th>
+                                          <td>1 x &euro; 100</td>
+                                          <td>1 x &euro; 150</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row"><b>Total</b></th>
+                                          <td><b>1 x &euro; 100</b></td>
+                                          <td><b>1 x &euro; 150</b></td>
                                         </tr>
                                       </tbody>
                                     </table>
@@ -398,76 +543,93 @@
               <section>
 
                 <div>
-                  <div class="frame destination-timeline" id="cyclepages" style="overflow: hidden;">
-                    <ul class="clearfix" >
-                      <li class="active">
+                  <div id="box" class="destination-timeline">
+                    <div id="list" class="scrollbar-inner">
+                      <div class="listli">
+                        <a href="#">
+                          <p><span>Delhi </span><small> (1)</small></p>
+                          <img src="assets/images/blank.png">
+                        </a>
+
+                        <span class="desthrtimeline" style="display:block;"></span>
+                      </div>
+                      <div class="listli">
+                        <a href="#">
+                          <p><span>Delhi </span><small> (2)</small></p>
+                          <img src="assets/images/blank.png">
+                        </a>
+                        <span class="desthrtimeline" style="display:block;"></span>
+                      </div>
+                      <div class="listli">
+                        <a href="#">
+                          <p><span>Delhi </span><small> (3)</small></p>
+                          <img src="assets/images/blank.png">
+                        </a>
+                        <span class="desthrtimeline" style="display:block;"></span>
+                      </div>
+                      <div class="listli">
+                        <a href="#">
+                          <p><span>Delhi </span><small> (4)</small></p>
+                          <img src="assets/images/blank.png">
+                        </a>
+                        <span class="desthrtimeline" style="display:block;"></span>
+                      </div>
+                      <div class="listli">
+                        <a href="#">
+                          <p><span>Delhi </span><small> (5)</small></p>
+                          <img src="assets/images/blank.png">
+                        </a>
+                        <span class="desthrtimeline" style="display:block;"></span>
+                      </div>
+                      <div class="listli">
+                        <a href="#">
+                          <p><span>Delhi </span><small> (6)</small></p>
+                          <img src="assets/images/blank.png">
+                        </a>
+                        <span class="desthrtimeline" style="display:block;"></span>
+                      </div>
+                      <div class="listli">
+                        <a href="#">
+                          <p><span>Delhi </span><small> (7)</small></p>
+                          <img src="assets/images/blank.png">
+                        </a>
+                        <span class="desthrtimeline" style="display:block;"></span>
+                      </div>
+                      <div class="listli">
+                        <a href="#">
+                          <p><span>Delhi </span><small> (8)</small></p>
+                          <img src="assets/images/blank.png">
+                        </a>
+                        <span class="desthrtimeline" style="display:block;"></span>
+                      </div>
+                      <div class="listli">
+                        <a href="#">
+                          <p><span>Delhi </span><small> (9)</small></p>
+                          <img src="assets/images/blank.png">
+                        </a>
+                        <span class="desthrtimeline" style="display:block;"></span>
+                      </div>
+                      <div class="listli">
                         <a href="#">
                           <p><span>Delhi </span><small> (1)</small></p>
                           <img src="assets/images/blank.png">
                         </a>
                         <span class="desthrtimeline" style="display:block;"></span>
-                      </li>
-                      <li>
+                      </div>
+                      <div class="listli">
                         <a href="#">
-                          <p><span>Delhi</span><small>(2)</small></p>
+                          <p><span>Delhi </span><small> (10)</small></p>
                           <img src="assets/images/blank.png">
                         </a>
-                        <span class="desthrtimeline"></span>
-                      </li>
-                      <li>
+                        <span class="desthrtimeline" style="display:block;"></span>
+                      </div>
+                      <div class="listli">
                         <a href="#">
-                          <p><span>Delhi</span><small>(3)</small></p>
+                          <p><span>Delhi </span><small> (11)</small></p>
                           <img src="assets/images/blank.png">
                         </a>
-                        <span class="desthrtimeline"></span>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p><span>Delhi</span><small>(4)</small></p>
-                          <img src="assets/images/blank.png">
-                        </a>
-                        <span class="desthrtimeline"></span>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p><span>Delhi</span><small>(5)</small></p>
-                          <img src="assets/images/blank.png">
-                        </a>
-                        <span class="desthrtimeline"></span>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p><span>Delhi</span><small>(6)</small></p>
-                          <img src="assets/images/blank.png">
-                        </a>
-                        <span class="desthrtimeline"></span>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p><span>Delhi</span><small>(7)</small></p>
-                          <img src="assets/images/blank.png">
-                        </a>
-                        <span class="desthrtimeline"></span>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p><span>Delhi</span><small>(8)</small></p>
-                          <img src="assets/images/blank.png">
-                        </a>
-                        <span class="desthrtimeline"></span>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <p><span>Delhi</span><small>(9)</small></p>
-                          <img src="assets/images/blank.png">
-                        </a>
-                        <span class="desthrtimeline"></span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="scrollbar" style="display:block;">
-                    <div class="handle" >
-                      <div class="mousearea"></div>
+                        <span class="desthrtimeline" style="display:block;"></span>
+                      </div>
                     </div>
                   </div>
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#errorblk">ADD NEW CITY
@@ -545,7 +707,7 @@
                                               </span>
                                               <a href="#"><img src="assets/images/del-row.png"></a>
                                             </p>
-                                            <div id='tooltip-1' style='display:none'>
+                                            <div class='tooltip-1' style='display:none'>
                                               <ul class="tooltip-ul">
                                                 <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
                                                 <li>Drive from Cochin to kumarakum <span class="pull-right">$ 50</span></li>
@@ -597,58 +759,134 @@
                                       </div>
 
                                       <div class="clearfix">
-                                        <div class="form-group col-md-3 mgn-rgt15">
+                                        <div class="col-md-12">
                                           <div class="row">
-                                            <label for="tdhotelopt1">Hotel Opt 1</label>
-                                            <i class="dropdown-icon"></i>
-                                            <select class="form-control" id="tdhotelopt1">
-                                              <option>Hotel detail 1</option>
-                                              <option>Hotel detail 2</option>
-                                              <option>Hotel detail 3</option>
-                                              <option>Hotel detail 4</option>
-                                              <option>Hotel detail 5</option>
-                                            </select>
-                                            <span data-toggle="modal" data-target="#reviewblock">
-                                              Guest Rating:
-                                              <img src="assets/images/rating-stars.png" alt="rating stars">
-                                              <a href="#" class="pull-right">8 Reviews</a>
-                                            </span>
+
+                                            <div class="form-group col-md-3">
+                                              <div class="row">
+                                                <label for="tdhotelopt1">Hotel Opt 1</label>
+                                                <i class="dropdown-icon"></i>
+                                                <select class="form-control" id="tdhotelopt1">
+                                                  <option>Hotel detail 1</option>
+                                                  <option>Hotel detail 2</option>
+                                                  <option>Hotel detail 3</option>
+                                                  <option>Hotel detail 4</option>
+                                                  <option>Hotel detail 5</option>
+                                                </select>
+                                                <span data-toggle="modal" data-target="#reviewblock">
+                                                  Guest Rating:
+                                                  <img src="assets/images/rating-stars.png" alt="rating stars">
+                                                  <a href="#" class="pull-right">8 Reviews</a>
+                                                </span>
+
+                                              </div>
+                                            </div>
+
+                                            <div class="form-group col-md-9">
+                                              <div class="row">
+
+                                                <div class="col-md-6">
+                                                  <div class="form-group col-md-1 wdtperc25">
+                                                    <label for="romqty1">Qty</label>
+                                                    <input type="text" class="form-control" id="romqty1">
+                                                  </div>
+                                                  <div class="form-group col-md-8 wdtperc50">
+                                                    <label for="tdroom1">Room 1</label>
+                                                    <i class="dropdown-icon ryt16"></i>
+                                                    <select class="form-control" id="tdroom1">
+                                                      <option>Luxury ( double )</option>
+                                                      <option>Luxury ( single )</option>
+                                                      <option>platinum ( double )</option>
+                                                      <option>gold ( double )</option>
+                                                      <option>gold ( single )</option>
+                                                    </select>
+                                                    <span>Meals : Breakfast, Lunch</span>
+                                                  </div>
+                                                  <div class="form-group col-md-1 wdtperc25">
+                                                    <label for="tdroomprice1">Price</label>
+                                                    <input type="text" class="form-control" id="tdroomprice1">
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                  <div class="form-group col-md-1 wdtperc25">
+                                                    <label for="romqty1">Qty</label>
+                                                    <input type="text" class="form-control" id="romqty1">
+                                                  </div>
+                                                  <div class="form-group col-md-8 wdtperc50">
+                                                    <label for="tdroom1">Room 1</label>
+                                                    <i class="dropdown-icon ryt16"></i>
+                                                    <select class="form-control" id="tdroom1">
+                                                      <option>Luxury ( double )</option>
+                                                      <option>Luxury ( single )</option>
+                                                      <option>platinum ( double )</option>
+                                                      <option>gold ( double )</option>
+                                                      <option>gold ( single )</option>
+                                                    </select>
+                                                    <span>Meals : Breakfast, Lunch</span>
+                                                  </div>
+                                                  <div class="form-group col-md-1 wdtperc25">
+                                                    <label for="tdroomprice1">Price</label>
+                                                    <input type="text" class="form-control" id="tdroomprice1">
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                  <div class="form-group col-md-1 wdtperc25">
+                                                    <label for="romqty1">Qty</label>
+                                                    <input type="text" class="form-control" id="romqty1">
+                                                  </div>
+                                                  <div class="form-group col-md-8 wdtperc50">
+                                                    <label for="tdroom1">Room 1</label>
+                                                    <i class="dropdown-icon ryt16"></i>
+                                                    <select class="form-control" id="tdroom1">
+                                                      <option>Luxury ( double )</option>
+                                                      <option>Luxury ( single )</option>
+                                                      <option>platinum ( double )</option>
+                                                      <option>gold ( double )</option>
+                                                      <option>gold ( single )</option>
+                                                    </select>
+                                                    <span>Meals : Breakfast, Lunch</span>
+                                                  </div>
+                                                  <div class="form-group col-md-1 wdtperc25">
+                                                    <label for="tdroomprice1">Price</label>
+                                                    <input type="text" class="form-control" id="tdroomprice1">
+                                                  </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                  <div class="form-group col-md-1 wdtperc25">
+                                                    <label for="romqty1">Qty</label>
+                                                    <input type="text" class="form-control" id="romqty1">
+                                                  </div>
+                                                  <div class="form-group col-md-8 wdtperc50">
+                                                    <label for="tdroom1">Room 1</label>
+                                                    <i class="dropdown-icon ryt16"></i>
+                                                    <select class="form-control" id="tdroom1">
+                                                      <option>Luxury ( double )</option>
+                                                      <option>Luxury ( single )</option>
+                                                      <option>platinum ( double )</option>
+                                                      <option>gold ( double )</option>
+                                                      <option>gold ( single )</option>
+                                                    </select>
+                                                    <span>Meals : Breakfast, Lunch</span>
+                                                  </div>
+                                                  <div class="form-group col-md-1 wdtperc25">
+                                                    <label for="tdroomprice1">Price</label>
+                                                    <input type="text" class="form-control" id="tdroomprice1">
+                                                  </div>
+                                                </div>
+
+
+                                              </div>
+                                            </div>
 
                                           </div>
                                         </div>
-                                        <div class="form-group col-md-3 wdtperc20">
-                                          <label for="tdroom1">Room 1</label>
-                                          <i class="dropdown-icon ryt16"></i>
-                                          <select class="form-control" id="tdroom1">
-                                            <option>Luxury ( double )</option>
-                                            <option>Luxury ( single )</option>
-                                            <option>platinum ( double )</option>
-                                            <option>gold ( double )</option>
-                                            <option>gold ( single )</option>
-                                          </select>
-                                          <span>Meals : Breakfast, Lunch</span>
-                                        </div>
-                                        <div class="form-group col-md-2 wdtperc12">
-                                          <label for="tdroomprice">Room Price</label>
-                                          <input type="text" class="form-control" id="tdroomprice">
-                                        </div>
-                                        <div class="form-group col-md-3 wdtperc20">
-                                          <label for="tdromm2">Room 2</label>
-                                          <i class="dropdown-icon ryt16"></i>
-                                          <select class="form-control" id="tdromm2">
-                                            <option>Luxury ( double )</option>
-                                            <option>Luxury ( single )</option>
-                                            <option>platinum ( double )</option>
-                                            <option>gold ( double )</option>
-                                            <option>gold ( single )</option>
-                                          </select>
-                                          <span>Meals : Breakfast, Lunch</span>
-                                        </div>
-                                        <div class="form-group col-md-2 wdtperc12">
-                                          <label for="tdroomprice2">Room Price</label>
-                                          <input type="text" class="form-control" id="tdroomprice2">
-                                        </div>
                                       </div>
+
+
+
                                     </div>
 
                                     <a id="button1" onclick="cloneDiv(this.parentNode);"><img src="assets/images/add-row.png"><span>Add Hotel</span></a>
@@ -684,19 +922,17 @@
                                   <div class="activitynguide-container-row">
                                     <div class="form-group col-md-3 wdtperc29 mgn-rgt15">
                                       <div class="row">
-                                        <label for="agactivity">Activity 1</label>
+                                        <label for="agactivity">Activity 1 <span class="questionlink"><img src="assets/images/help.png"></span></label>
                                         <i class="dropdown-icon"></i>
-                                        <select class=" tool-tip form-control" id="agactivity" data-tipped-options="inline: 'tooltip-5', position:'bottom'">
+                                        <select class="form-control" id="agactivity" >
                                           <option>Activity 1</option>
                                           <option>Activity 2</option>
                                           <option>Activity 3</option>
                                           <option>Activity 4</option>
                                           <option>Activity 5</option>
                                         </select>
-                                        <div id='tooltip-5' style='display:none'>
-                                          <span class="tooltip-ul">
-                                            <p>sdfsdffasdfasfdasdfsa</p>
-                                          </span>
+                                        <div class="questioncontent questioncontent-arrow" style="display:none">
+                                          <p>sdfsdffasdfasfdasdfsa</p>
                                         </div>
                                       </div>
                                     </div>
@@ -1008,10 +1244,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-    <!-- sly slider -->
-    <script src="assets/slider/js/plugins.js"></script>
-    <script src="assets/slider/js/sly.min.js"></script>
-    <script src="assets/slider/js/horizontal.js"></script>
 
     <!-- tool-tip -->
     <script src="assets/tooltip/js/tipped.js"></script>
@@ -1020,11 +1252,34 @@
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/accord-ion.js"></script>
 
+    <!-- sortable -->
+    <script src="assets/sortable/js/jquery-ui.js"></script>
+
     <!-- datepicker -->
     <script src="assets/js/jquery-ui.js"></script>
 
+    <script type="text/javascript" src="assets/custom_scrollbar/js/jquery.scrollbar.min.js"></script>
+
     <!-- multiselect -->
     <script src="assets/multiselect/js/jquery.multiple.select.js"></script>
+    <script type="text/javascript">
+
+
+
+    $('.questionlink').click(function(){
+      $('.questioncontent').toggle();
+    });
+    $(document).mouseup(function (e)
+    {
+      var container = $(".questioncontent");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+      container.hide();
+    }
+  });
+    </script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
