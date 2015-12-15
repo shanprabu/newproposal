@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>::Customer Report::</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <!-- styling for invoice --> 
+  <style type="text/css">
+
+  /*------- Common body --------*/
+  body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0.02em;
+  }
+
+  a, a:hover, a:focus{
+    color: #3c2e25;
+    text-decoration: none;
+  }
+
+  #main-wrapper{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: 0 auto; /* the bottom margin is the negative value of the footer's height */
+  }
+
+  .container{
+    margin: 0 auto;
+    width: 1020px;
+  }
+  /*------- Common body ends --------*/
+
+  /*------- pdfHeader --------*/
+  .header{
+    border-bottom: 15px solid #3b2e26;
+    width: 100%;
+    min-height: 78px;
+  }
+
+  .header .logo{
+    width: 50%;
+    float: left;
+    padding: 13px 0px;
+  }
+
+  .header .head-title{
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: right;
+    padding: 24px 0px;
+  }
+
+  /*------- pdfHeader ends --------*/
+
+  .main-container{
+    clear: both;
+    width: 100%;
+    color: #3b2e26;
+    padding: 25px 0px;
+  }
+
+  .cover-page{
+    width: 100%;
+  }
+  .cover-page img{
+    margin-top: 18px;
+  }
+
+  .addresscont{
+    width: 100%;
+    display: inline-block;
+  }
+  .addresslft{
+    float: left;
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    padding-bottom: 20px;
+  }
+  .addressryt{
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    padding-bottom: 20px;
+    float: right;
+  }
+
+  .name{
+    float: left;
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+  }
+  .date{
+    text-align: right;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 28px;
+  }
+
+  .page{
+
+  }
+  .page p{
+    font-size: 16px;
+  }
+
+  .page a:hover, .page a:visited, .page a:focus, .page a:link {
+    color: #d35c1c;
+    text-decoration: underline;
+  }
+
+  .goldline{
+    color: #ab9175;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .regards{
+    margin-bottom: 25px;
+  }
+
+  .regards p{
+    margin: 0px;
+  }
+
+  .signature span{
+    font-size: 14px;
+  }
+
+  .signature div{
+    font-weight: bold;
+  }
+
+
+  .bilnumbernadd{
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    color: #3b2e26;
+    /*padding-top: 10px;*/
+    position: relative;
+    /*min-height: 95px;*/
+  }
+
+  .bilnumbernadd p{
+    margin-top: 0;
+    margin-bottom: 3px;
+  }
+  .billnumber{
+    vertical-align: bottom;
+    float: left;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .address{
+    float: right;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .date{
+    font-weight: 100;
+    color: #CEB691;
+    font-size: 18px;
+  }
+
+  .triphighlght{
+    padding-top: 25px;
+  }
+
+  .triphighlght div{
+    display: inline-block;
+    font-size: 16px;
+    padding-right: 20px;
+    font-weight: 100;
+  }
+
+  .triphighlght div span{
+    font-weight: bold;
+  }
+
+  .thankyou{
+    padding-top: 25px;
+    width: 100%;
+    border-top: 2px solid #757575;
+    font-weight: 600;
+  }
+  .table-section{
+    margin-top: 7px;
+    border: 2px solid #757575;
+    margin-bottom: 25px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  tr{border: 0;}
+  th, td {
+   border: 0;
+   padding: 12px 8px;
+ }
+ th {
+  font-weight: bold;
+}
+
+tbody > tr > td select {
+/*  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;*/
+  position: relative;
+}
+tbody > tr > td select {
+  /* height: 30px; */
+  border: 1px solid #d7d5d5;
+  border-radius: 2px;
+  padding: 7px;
+}
+
+tbody > tr > td input {
+  /* height: 30px; */
+  border: 1px solid #d7d5d5;
+  border-radius: 2px;
+  padding: 7px 0px;
+}
+.table_small{
+
+}
+
+.table_small th, td {
+ border: 0;
+ padding: 8px 8px;
+}
+
+.invo-payopt{
+  margin: 25px 0px;
+}
+
+.invo-payopt h3{
+  margin: 0px 0px 10px 0px
+}
+
+.invo-payopt p{
+  margin: 0px;
+}
+
+.invo-optcon{
+  margin-top: 15px;
+  border-top: 1px dashed #DBDAD9;
+  border-bottom: 1px dashed #DBDAD9;
+  display: inline-block;
+  padding-bottom: 25px;
+}
+
+.invo-optcon div{
+  width: 30%;
+  float: left;
+  margin-right: 34px;
+}
+
+.greyspace{
+  height: 20px;
+  background-color: #888888;
+  border: 0;
+  padding: 0px;
+}
+
+.bdr-ryt2{border-right: 2px solid #757575 !important;}
+.bdr-ryt1{border-right: 1px solid #757575 !important;}
+.bdr-btm1{border-bottom: 1px solid #757575 !important;}
+.font20{font-size: 20px;}
+.font16{font-size: 16px;}
+.font14{font-size: 14px;}
+.fontbold{font-weight: bold;}
+.wdtperc40{width:40%;}
+.wdtperc25{width:25%;}
+.pdn-tp25{padding-top: 25px;}
+.pdn-btm25{padding-bottom: 25px;}
+.text-right{text-align: right;}
+.text-left{text-align: left;}
+.bdr0 {border: 0px;}
+.wd100per {width: 100%;}
+.greyheader{
+  background-color: #ECECEC;
+  border: 0;
+}
+
+.greyheader td{
+  border: 0;
+}
+
+/*------ pdffooter -------*/
+
+footer{
+  background-color: #efedde;
+  margin-top: 25px;
+}
+
+footer .foo{
+  margin: 0 auto;
+  width: 1020px;
+  font-size: 14px;
+  color: #3c2e25;
+}  
+
+footer .foo .container{
+  padding: 20px 0px;
+}
+
+.foo .container span{
+  display: inline-block;
+  text-transform: uppercase;
+}
+.foo .container p {
+  line-height: 18px;
+  margin: 0;
+}
+/*------ pdffooter ends -------*/
+
+</style><!-- /styling -->
+
+
+<body>
+
+  <div id="main-wrapper"> <!-- main wrapper -->
+
+    <section><!-- pdf section page -->
+      <div class="wrapper">
+
+        <div class="header"><!-- pdfheader -->
+          <div class="container">
+            <div class="logo">
+              <img src="logo.png" width="142">
+            </div>
+            <div class="head-title">
+              Customer Report
+            </div>
+          </div>
+        </div><!-- pdfheader ends -->
+
+        <div class="container"><!-- main content container -->
+          <div class="main-container">
+            <div class="page">
+
+              <div class="bilnumbernadd">
+                <p>For: <b>Heidi Leslie Darwell</b></p>
+                <p>No. of Adults: 5  No. ofChildren: 0</p>
+                <p>Country: Australia</p>
+                <p>E Mail: heidi@muwarra.com.au</p>
+                <p>Preferred Language: English</p>
+                <p>Cost Per Person: AUD 4525</p>
+                <p>ET58185</p>
+                
+              </div>
+
+              <div class="triphighlght">
+                <div><span>Passenger Details</span></div>
+              </div>
+
+              <div class="table-section table_small">
+                <table>
+                  <thead>
+                    <tr class="greyheader">
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Name</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Gender</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Date of Birth</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Passport Number</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Notes</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold"></td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Heidi Leslie Darwell</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <select class="wd100per">
+                          <option>male</option>
+                          <option>Female</option>
+                        </select>
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">01/03/1965</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <input type="text" class="wd100per">
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <textarea class="bdr0 wd100per"></textarea>
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1"><a href="#">View</a></td>  
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Gregory John Darwell</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <select class="wd100per">
+                          <option>male</option>
+                          <option>Female</option>
+                        </select>
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">01/03/1965</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <input type="text" class="wd100per">
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <textarea class="bdr0 wd100per"></textarea>
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1"><a href="#">View</a></td>  
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Darwell john</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <select class="wd100per">
+                          <option>male</option>
+                          <option>Female</option>
+                        </select>
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">01/03/1965</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <input type="text" class="wd100per">
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <textarea class="bdr0 wd100per"></textarea>
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1"><a href="#">View</a></td>  
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">john Gregory</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <select class="wd100per">
+                          <option>male</option>
+                          <option>Female</option>
+                        </select>
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">01/03/1965</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <input type="text" class="wd100per">
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <textarea class="bdr0 wd100per"></textarea>
+                      </td>
+                      <td class="font16 bdr-ryt1 bdr-btm1"><a href="#">View</a></td>  
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <div class="triphighlght">
+                <div><span>Executives:</span></div>
+              </div>
+
+              <div class="table-section table_small">
+                <table>
+                  <thead>
+                    <tr class="greyheader">
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Role Type</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Name</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Mobile Number</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Guest Co-ordinatore</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Sneha Poonacha</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <input type="text" class="wd100per">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Operation 1</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">ralesh Poonacha</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <input type="text" class="wd100per">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Travel Consultant</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Swati</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <input type="text" class="wd100per">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Trip Designer</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">XBishal Aran</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">
+                        <input type="text" class="wd100per">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+              <div class="triphighlght">
+                <div><span>Travel Details:</span></div>
+              </div>
+
+              <div class="table-section table_small">
+                <table>
+                  <thead>
+                    <tr class="greyheader">
+                      <td scope="col" colspan="5" class="font16 bdr-ryt1 bdr-btm1 fontbold">Transfeer from yangon Airport to Hotel</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Yangon</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Sule Shangri La<br>23 Dec - 25 Dec (2 Nights)</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Sule Shangri La<br>Executive Room(Dbl+Extra Adult)</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Breakfast</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">+95 (0) 1-24 2828</td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Yangon</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Sule Shangri La<br>23 Dec - 25 Dec (2 Nights)</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Sule Shangri La<br>Executive Room(Dbl+Extra Adult)</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Breakfast</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">+95 (0) 1-24 2828</td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Yangon</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Sule Shangri La<br>23 Dec - 25 Dec (2 Nights)</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Sule Shangri La<br>Executive Room(Dbl+Extra Adult)</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Breakfast</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">+95 (0) 1-24 2828</td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1" colspan="2">23 Dec Guide/Escort: yangon HD-Local Guide</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1" colspan="2">+95 (0) 1-24 2828</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1"></td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1" colspan="5">23 Dec Activity: 2-3hrs - Yangon Circle Train Ride</td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1" colspan="2">23 Dec Guide/Escort: yangon HD-Local Guide</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1" colspan="2">+95 (0) 1-24 2828</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1"></td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1" colspan="5">23 Dec Activity: 2-3hrs - Yangon Circle Train Ride</td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1" colspan="5">Transfer to Airport</td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1" colspan="5">Flight: Yangon - Nyaung U</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="triphighlght">
+                <div><span>Remarks:</span></div>
+              </div>
+
+              <div class="triphighlght">
+                <div><span>Trains:</span></div>
+              </div>
+              <div class="table-section table_small">
+                <table>
+                  <thead>
+                    <tr class="greyheader">
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Date</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Name</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Option</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1"></td>
+                      <td class="font16 bdr-ryt1 bdr-btm1"></td>
+                      <td class="font16 bdr-ryt1 bdr-btm1"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="triphighlght">
+                <div><span>Flights:</span></div>
+              </div>
+              <div class="table-section table_small">
+                <table>
+                  <thead>
+                    <tr class="greyheader">
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Date</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Flight No.</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">From</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Dep. Time</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">To</td>
+                      <td scope="col" class="font16 bdr-ryt1 bdr-btm1 fontbold">Arrival Time</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">22 Dec</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">SQ 998</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Singapore</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">00:01</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Yangon</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">09:20 AM</td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">22 Dec</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">SQ 998</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Singapore</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">00:01</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Yangon</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">09:20 AM</td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">22 Dec</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">SQ 998</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Singapore</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">00:01</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Yangon</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">09:20 AM</td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">22 Dec</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">SQ 998</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Singapore</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">00:01</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Yangon</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">09:20 AM</td>
+                    </tr>
+                    <tr>
+                      <td class="font16 bdr-ryt1 bdr-btm1">22 Dec</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">SQ 998</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Singapore</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">00:01</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">Yangon</td>
+                      <td class="font16 bdr-ryt1 bdr-btm1">09:20 AM</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
+
+
+
+
+              
+              
+
+
+            </div>
+          </div><!-- main content container ends -->
+        </div><!-- wrapper ends -->
+
+        <footer><!-- pdffooter -->
+          <div class="foo">
+            <div class="container">
+              <p><span>EMAIL</span> <a href="#"><b>priyank@enchanting-travels.com</b></a></p>
+              <p><span>TEL</span> <b>USA +1 888 263 2574</b></p>
+              <p><span>WEB</span> <a href="#"><b>enchantingtravels.com</b></a></p>
+            </div>
+          </div>
+        </footer><!-- pdffooter -->
+      </section><!-- pdf section page ends -->
+
+    </div><!-- main wrapper ends -->
+
+  </body>
+  </html>
