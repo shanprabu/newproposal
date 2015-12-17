@@ -1,0 +1,872 @@
+
+#header .top .right .travel-consultant{
+	margin-top: 11px;
+	margin-right: 15px;
+	font-size: 15px;
+	height: 64px;
+	font-weight: normal;
+	color: #36312a;
+}
+
+#header .top .right .travel-consultant img{
+	float: left;
+	margin-right: 15px;
+}
+#header .top .right .travel-consultant span{    
+	display: inline-block;
+	padding-top: 10px; 
+}
+#header .top .right .travel-consultant span small{
+	color: #9f9b96;
+	font-size: 15px;
+	font-style: italic;
+}
+
+#header .top .right .mail{
+	display: block;
+	color: #393634;
+	font-size: 13px;
+	height: 32px;
+	line-height: 32px;
+	padding-left: 11px;
+	border: 2px solid #d8d7d6;
+	padding-right: 10px;
+	text-transform: uppercase;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: transparent;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 19px;
+}
+
+#header .top .right .call{
+	display: block;
+	color: #393634;
+	font-size: 13px;
+	height: 32px;
+	line-height: 34px;
+	padding-left: 11px;
+	border: 2px solid #d8d7d6;
+	padding-right: 10px;
+	text-transform: uppercase;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: transparent;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-top: 19px;
+}
+
+.total-price h3{
+	margin-bottom: 15px;
+	margin-top: 50px;
+}
+
+.total-price .handle{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.total-price .options{
+	display: inline-block;
+	width: 100%;
+}
+
+.total-price .options li {
+	width: 220px;
+	padding-bottom: 4px;
+	padding-left: 25px;
+	margin-bottom: 15px;
+	
+}
+.vacations-single .price-inclusions .options li .multiple{
+	margin-bottom: 20px;
+}
+
+.vacations-single .price-inclusions .options li .bottom-line {
+	font-size: 15px;
+	display:block;
+}
+.total-price .options li .heading {
+	background: #f2f2f1;
+	font-size: 13px !important;
+	color: #36312a !important;
+	text-transform: uppercase;
+	font-weight: 600 !important;
+	padding: 10px;
+	display: inline-block !important;
+	margin-bottom: 20px !important;
+}
+
+.hotel-includes{
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.optional-flight{
+	vertical-align: top;
+	border: 0;
+	background: #F2F2F1;
+	padding: 20px 25px;
+	float: right;
+	padding-bottom: 15px !important;
+	margin-left: 0px !important;
+}
+
+.optional-flight .intl-flight{
+	position: relative;
+}
+.optional-flight .intl-flight small{
+	font-size: 13px;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: block;
+	letter-spacing: 0.03em;
+	line-height: 19px;
+}
+.optional-flight .intl-flight .plane{
+	float: right;
+	border: 2px solid #d8d8d8;
+	border-radius: 50%;
+	padding: 9px 6px;
+	vertical-align: top;
+	position: absolute;
+	top: 0px;
+	right: 0;
+	color: #7d7d7d;
+	font-size: 18px;
+}
+
+@media screen and (max-width: 450px){
+	.optional-flight {
+		padding: 20px 25px !important;
+	}
+}
+
+@media screen and (max-width: 531px) {
+	.total-price .options li:first-child {
+		width: 55%;
+		
+	}
+	.total-price .options li:nth-child(2) {
+		border: 0 !important;
+		padding-left: 0;
+		width: 55%;
+		margin-left: 0 !important;
+	}
+}
+
+@media screen and (max-width: 828px) {
+	.optional-flight{
+		float: left;
+	}
+}
+
+@media screen and (max-width: 1215px) and (min-width: 1001px) {
+	.optional-flight{
+		float: left;
+	}
+}
+
+
+/*-------commmon-----------*/
+.pdnbtm12{padding-bottom: 12px;}
+
+.standard-types .pulbottom {
+	margin-bottom: 0px;
+}
+
+.standard-types ul{
+	margin-top: 0px;
+}
+
+.flight-proposal{
+
+}
+.price-inclusions {
+	margin-top: 0px !important;
+}
+
+.hotel-information {
+	margin-top: 70px;
+}
+.important-information article{
+	border-bottom: 0px;
+}
+.hotel-information article{
+	border-bottom: 0;
+}
+
+.hotel-details{
+	padding-bottom: 40px;
+}
+
+.hotel-details .detail {
+	/*border-left: 2px solid #f2f2f1;*/
+	padding-top: 75px;
+	padding-bottom: 25px;
+}
+
+.hotel-details .detail:first-child {
+	padding-top: 0
+}
+
+.hotel-details .detail .cols {
+	overflow: hidden;
+	margin-top: 3px;
+	/*padding-left: 24px;*/
+}
+
+.hotel-details .detail .cols .left {
+	width: 43.30412371%;
+	float: left
+}
+
+.hotel-details .detail .cols .right {
+	width: 55.98969072%;
+	float: right
+}
+
+
+.hotel-details .detail .cols .city-image {
+	position: relative;
+	display: block
+}
+.hotel-details .detail .cols .city-image .gallery {
+	position: absolute;
+	z-index: 10;
+	width: 30px;
+	height: 30px;
+	display: block;
+	top: 10px;
+	right: 10px;
+	background-color: #FFF;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background-image: url(../images/icon-expand.png);
+	background-repeat: no-repeat;
+	background-position: center center
+}
+.hotel-details .detail .cols .city-image img {
+	width: 100%;
+	height: auto;
+	position: relative;
+	z-index: 5;
+}
+
+
+.hotel-details .detail .cols .left .description ul {
+	margin-top: 5px;
+	margin-right: 35px;
+}
+.hotel-details .detail .cols .left .description li {
+	border-bottom: 1px solid #dfdfde;
+	font-size: 12px;
+	line-height: 20px;
+	padding-top: 13px;
+	color: #36312a;
+	font-weight: 600;
+	padding-bottom: 12px;
+	text-transform: uppercase;
+}
+.hotel-details .detail .cols .left .description li:first-child {
+	border-top: 0
+}
+.hotel-details .detail .cols .left .description li span {
+	display: block;
+	font-size: 16px;
+	text-transform: capitalize;
+	letter-spacing: 0.075em;
+	float: right;
+	font-weight: 500;
+}
+
+.hotel-details .detail .cols .left .description li h4{
+	font-size: 14px;
+	line-height: 1;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 0;
+	letter-spacing: 0.025em;
+}
+
+.hotel-details .detail .cols .left .description li h3{
+	font-size: 23px;
+	line-height: 1;
+	font-weight: 400;
+	margin-bottom: 0;
+	letter-spacing: 0.025em;
+	text-transform: capitalize;
+}
+
+.hotel-details .detail .cols .left .description li .ei {
+	font-size: 18px;
+	margin-left: 5px
+}
+
+
+
+/*------- thank you ----------*/
+.thank-you h2{
+	margin-top: 55px;
+	margin-bottom: 20px;
+}
+
+.thank-you .standard-type img{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.thank-you .standard-type{
+	margin-bottom: 50px;
+}
+
+.TC-book-thistrip{
+	padding: 25px;
+	border: 2px solid #f2f2f1;
+	margin-top: 15px;
+	overflow: hidden;
+}
+
+.TC-book-thistrip .left{
+	float: left;
+	/*width: 72%;*/
+}
+
+.TC-book-thistrip .left img{
+	float: left;
+	margin: 0;
+	padding: 0;
+	margin-right: 20px;
+}
+
+
+.TC-book-thistrip .left .details{
+	float: left;
+	color: #595754;
+	font-size: 17px;
+	margin-top: 8px;
+	display: block;
+}
+
+.TC-book-thistrip .left .details span span{
+	color: #a2a2a2;
+	text-transform: lowercase;
+}
+
+.TC-book-thistrip .left .details .call, .TC-book-thistrip .left .details .email{
+	display: block;
+	line-height: 22px;
+}
+
+.TC-book-thistrip .left .details .name{
+	font-weight: 600;
+	display: block;
+	line-height: 22px;
+}
+
+.TC-book-thistrip .right{
+	margin-top: 22px;
+	/*width: 27%;*/
+	float: right;
+}
+
+
+.flight-proposal-table{
+	margin-bottom: 40px;
+}
+
+.mgntop25{
+	margin-top: 25px !important;
+}
+
+.flight-proposal-table table{
+	border: 1px solid #dfdfde;
+	padding: 0;
+	margin: 0;
+	border-bottom: 0;
+	border-right: 0;
+}
+.flight-proposal-table table thead{
+	background: #f2f2f1;
+}
+.flight-proposal-table table thead tr{
+
+}
+.flight-proposal-table table thead tr td{
+	border-right: 1px solid #dfdfde;
+	font-size: 12px;
+	font-weight: 600;
+	padding: 15px;
+	text-transform: uppercase;
+	letter-spacing: 0.054em;
+} 
+.flight-proposal-table table tbody{
+
+}
+.flight-proposal-table table tbody tr{
+
+}
+.flight-proposal-table table tbody tr td{
+	border-bottom: 1px solid #dfdfde;
+	border-right: 1px solid #dfdfde;
+	font-size: 16px;
+	padding: 15px;
+	text-transform: capitalize;
+	letter-spacing: 0.04em;
+}
+
+.lastduration{
+	position: relative;
+	top: 21px;
+}
+
+.downloadpdf {
+	display: inline-block;
+	vertical-align: baseline;
+	margin-right: 8px;
+	width: 17px;
+	height: 15px;
+	background-image: url("../images/downloadpdf.png");
+	/* background-image: linear-gradient(transparent, transparent), url("../images/downloadpdf.svg"); */
+	background-repeat: no-repeat;
+	position: relative;
+	top: 8px;
+	right: -5px;
+}
+
+#banner .text-container .text {
+	display: table-cell;
+	vertical-align: bottom;
+	width: 100%;
+	text-align: left;
+}
+.banner-text{
+	text-transform: capitalize;
+	z-index: 99;
+	position: relative;
+	margin-bottom: 40px;
+}
+.banner-text h1{
+	font-size: 52px;
+	letter-spacing: 0.025em;
+	max-width: 950px;
+	font-weight: 400;
+}
+.banner-text p{
+	font-size: 26px;
+	line-height: 1.2em;
+	margin-top: 10px;
+	letter-spacing: 0.1em;
+	max-width: 950px;
+	font-weight: 400;
+}
+
+.banner-gradient .gradient {
+	width: 100%;
+	height: 207px;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='a6000000', GradientType=0);
+	background-repeat: repeat-x;
+	z-index: 9;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+@media screen and (max-width: 1275px){
+	.hotel-details .detail .cols .left .description li {
+		padding-top: 11px;
+		padding-bottom: 11px;
+	}
+}
+
+@media screen and (max-width: 1100px){
+	.banner-text h1{
+		font-size: 48px;
+	}
+	.hotel-details .detail .cols .left .description li {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 740px){
+	.flight-proposal-table{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.banner-text h1{
+		font-size: 36px;
+	}
+	.banner-text p{
+		font-size: 18px;
+	}
+	.vacations-single .price-inclusions .options li {
+		font-size: 20px;
+	}
+	.TC-book-thistrip {
+		padding: 15px;
+	}
+	.TC-book-thistrip .left img {
+		margin-right: 10px;
+		width: 72px;
+	}
+	.TC-book-thistrip .left .details {
+		font-size: 15px;
+		margin-top: 10px;
+	}
+	.TC-book-thistrip .left .details .call, .TC-book-thistrip .left .details .email {
+		line-height: 16px;
+	}
+	.hotel-details .detail .cols .left .description li {
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+	.hotel-details .detail .cols .city-image .gallery {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.hotel-details .detail .cols .left {
+		width: 100%;
+		float: left;
+	}
+	.hotel-details .detail .cols .left .description ul {
+		margin-top: 5px;
+		margin-right: 0;
+	}
+	.hotel-details .detail .cols .right {
+		width: 100%;
+		float: right;
+		padding-top: 25px;
+	}
+}
+
+@media screen and (max-width: 610px){
+	.TC-book-thistrip .left .details {
+		font-size: 15px;
+		margin-top:5px;
+	}
+	.accordion article.open .handle .right {
+		background-position: right -38px !important;
+	}
+	.accordion article .handle .right {
+		background-position: right 0px !important;
+	}
+	.bookthistripbtn{
+		width: 100%;
+		padding-top: 10px;
+	}
+	.bookthistripbtn .cta-button-2{
+		width: 100%;
+
+	}
+}
+
+@media screen and (max-width: 550px){
+	.banner-text h1{
+		font-size: 28px;
+	}
+	.banner-text p{
+		font-size: 18px;
+	}
+	.vacations-single .price-inclusions .options li {
+		font-size: 17px;
+	}
+	.TC-book-thistrip {
+		padding: 15px;
+	}
+	.TC-book-thistrip .left {
+		float: left;
+		width: 100%;
+	}
+	.TC-book-thistrip .left .details {
+		font-size: 15px;
+		margin-top: 10px;
+	}
+	.TC-book-thistrip .right {
+		margin-top: 0px;
+		width: 100%;
+		float: left;
+		position: relative;
+		text-align: left !important;
+	}
+	.accordion article .handle .right span {
+		padding-right: 20px;
+		padding-left: 82px;
+	}
+	.accordion article.open .handle .right {
+		background-position: 148px -38px !important;
+	}
+	.accordion article .handle .right {
+		background-position: 148px 0px !important;
+	}
+	.TC-book-thistrip .left img {
+		margin-right: 10px;
+	}
+	.TC-book-thistrip .left .details .call, .TC-book-thistrip .left .details .email {
+		line-height: 16px;
+	}
+}
+
+@media screen and (max-width: 432px){
+	.TC-book-thistrip .left img {
+		display: none;
+	}
+	.accordion article {
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
+	.accordion article .handle .right span {
+		padding-left: 0px;
+	}
+	.accordion article .handle .right {
+		background-position: 68px 0px !important;
+	}
+	.accordion article.open .handle .right {
+		background-position: 68px -38px !important;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.banner-text h1{
+		font-size: 22px;
+	}
+	.banner-text p{
+		font-size: 15px;
+	}
+	.TC-book-thistrip .left img {
+		display: none;
+	}
+	.accordion article {
+		padding-top: 15px;
+		padding-bottom: 20px;
+	}
+	.accordion article .handle .right span {
+		padding-left: 0px;
+	}
+	.accordion article .handle .right {
+		background-position: 68px 0px !important;
+	}
+	.accordion article.open .handle .right {
+		background-position: 68px -38px !important;
+	}
+}
+
+@media screen and (max-width: 320px){
+	.banner-text h1{
+		font-size: 22px;
+	}
+	.banner-text p{
+		font-size: 15px;
+	}
+}
+
+.bookthistrip-content .standard-type p{
+	margin-bottom: 10px;
+}
+
+.accordion article.open .handle .right {
+	background-position: right -35px;
+}
+.accordion article .handle .right span {
+	padding-right: 20px;
+}
+
+.accordion article .handle .right{
+	font-size: 17px;
+	color: #dc665a;
+	display: block;
+	background-image: url("../images/aboutme-accordion.png");
+	/* background-image: linear-gradient(transparent, transparent), url("../images/aboutme-accordion.svg"); */
+	background-position: right 2px;
+	text-align: right;
+	background-repeat: no-repeat;
+}
+
+
+@media screen and (max-width: 600px){
+	#header .top .right .travel-consultant span {
+		display: none; 
+	}
+	#header .top .right .travel-consultant {
+		margin-right: 0px; 
+	}
+	.radio-options .left {
+		width: 46% !important;
+	}
+	.radio-options .right {
+		width: 46% !important;
+	}
+	.customradiobox input[type=radio]:checked + label {
+		padding-left: 42px !important;
+	}
+	.customradiobox input[type=radio] + label {
+		padding-left: 42px !important;	
+	}
+	.options-text {
+		padding: 0px 5px !important;
+	}
+
+}
+@media screen and (max-width: 400px){
+	#header .top .right .travel-consultant {
+		display: none;
+	}
+	.radio-options .left {
+		width: 100% !important;
+	}
+	.radio-options .right {
+		width: 100% !important;
+	}
+}
+
+
+.samplemap{
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/*----modal ----*/
+.inquire-modal {
+	max-width: 592px;
+	background: #fff;
+}
+
+.booking-message2{
+	width: 430px;
+}
+
+.booking-message .header{
+	text-align: center;
+	padding: 15px 0px;
+}
+
+.booking-message .header h3{
+	font-size: 23px;
+	margin-top: 15px;
+}
+
+.booking-message .header p{
+	font-size: 17px;
+	padding-top: 8px;
+	font-weight: 500;
+}
+
+.booking-message .foo{
+	padding: 20px;
+	text-align:center;
+}
+
+.booking-message .foo p{
+	font-size: 13px;
+	color: #36312a;
+	line-height: 16px;
+	padding: 0px 38px;
+}
+
+.booking-message .content{    padding-bottom: 0;}
+.booking-message .content .radio-options{
+	border-bottom: 2px solid #eae9e6;
+}
+
+.radio-options{
+	display: inline-block;
+	width: 100%;
+}
+
+.radio-options .left{
+	float: left;
+	width: 48%;
+	margin-right: 20px;
+}
+
+.radio-options .right{
+	float: right;
+	width: 48%;
+}
+
+.customradiobg{
+	display: flex;
+	width: 100%;
+}
+.options-text{
+	padding: 0px 15px;
+	font-size: 16px;
+	line-height: 20px;
+	padding-bottom: 10px;
+}
+.options-text h4{
+	font-weight: 600;
+}
+.options-text p{
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+
+.booking-msg2{
+	text-align: center;
+	border-bottom: 2px solid #eae9e6;
+}
+/*------custom checkbox ------*/
+
+.customradiobox label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.customradiobox input[type=radio] {
+	display: none;
+}
+
+.customradiobox input[type=radio]:checked + label {
+	background: #e6e6e6 url("../images/radio_on.png") no-repeat;
+	float: left;
+	font-size: 14px;
+	line-height: 40px;
+	padding: 0px 30px;
+	text-transform: uppercase;
+	padding-left: 52px;
+	cursor: pointer;
+	background-position: 15px 9px;
+	width: 100%;
+	color: #36312a;
+	font-weight: 600;
+	letter-spacing: 0.024em;	
+}
+
+.customradiobox input[type=radio] + label {
+	background: #f2f2f2 url("../images/radio_off.png") no-repeat;
+	float: left;
+	font-size: 14px;
+	line-height: 40px;
+	padding: 0px 30px;
+	text-transform: uppercase;
+	padding-left: 52px;
+	cursor: pointer;
+	background-position: 15px 9px;
+	width: 100%;
+	color: #36312a;
+	font-weight: 600;
+	letter-spacing: 0.024em;
+}
