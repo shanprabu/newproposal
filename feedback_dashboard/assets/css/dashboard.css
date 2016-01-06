@@ -1,0 +1,558 @@
+
+.box-containers{
+  margin-top: 25px;
+}
+
+.box-contianer-head{
+  text-align: right;            
+}
+.box-contianer-content{
+  border: 1px solid #F4f4f4;
+  background: #fff;
+  padding: 15px 25px;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(233,233,233,0.75);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(233,233,233,0.75);
+  box-shadow: 1px 1px 1px 0px rgba(233,233,233,0.75);
+  display: inline-block;
+  width: 100%;
+}
+
+.leftblock{
+  width: 49.5%;
+  float: left;
+}
+
+.middleblock{
+  float: left;
+  background: #d0d0d0;
+  display: block;
+  width: 1px;
+  height: 0%;
+  padding: 8% 0%;
+  margin: 12% 0%;
+}
+
+.rightblock{
+  width: 49.5%;
+  float: right;
+}
+
+.box-contianer-content h4{
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  color: #727272;
+  margin-bottom: 15px;
+}
+
+.box-contianer-content h5{
+  font-size: 20px;
+  color: #797979;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.blockcontent{
+  color: #797979;
+  display: inline-block;
+  width: 100%;
+}
+
+.blockcontent p{
+  font-size: 18px;
+  font-family: 'SoinSansPro-Light';
+}
+
+.blockone{
+  float: left;
+  width: 30%;
+}
+
+.blocktwo{
+  float: left;
+  width: 35%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.blockthree{
+  float: left;
+  width: 35%;
+  margin-top: 12%;
+}
+
+.smallbigdots{
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+}
+.smallbigdots ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.smallbigdots ul li{
+  float: left;
+  text-align: center;
+  width: 19%;
+}
+
+.smallbigdots ul li h3{
+  font-size: 32px;
+  margin-bottom: 0px;
+  color: #797979;
+  font-family: "SoinSansPro-Light";
+}
+
+.smallbigdots ul li span{
+  display: block;
+  font-size: 14px;
+}
+
+.smallbigdots ul li img{
+
+}
+
+.graphcircle{
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.travelcount{
+  padding: 0px;
+  padding-left: 12%;
+}
+
+.smilemsg{
+  float: left;
+  display: block;
+  text-align: center;
+  margin: 0px 20px 0px 30px;
+}
+.smilemsg span{
+  display: block;
+  margin-top: 5px;
+}
+
+.smilemsgcount{
+  float: left;
+  width: 70%;
+  /*padding-right: 60px;    */
+}
+.smilemsgcountsingle{
+  position: relative;
+  padding: 0px;
+  height: 75px;
+}
+.smilemsgcountbar{
+  height: 5px;
+  background-color: #bdbdbd;
+  float: left;
+}
+.smilemsgcountsingle span{
+  position: relative;
+  top: -30%;
+  font-size: 37px;
+  float: left;
+  font-family: "SoinSansPro-Light";
+  width: 25%;
+}
+.smilemsgcountsingle span small{
+  font-size: 14px;
+}
+
+.smalllabel{
+  text-transform: uppercase;
+}
+.smalllabelno {
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 60%;
+  float: left;
+  left: 0;
+}
+
+.tpminus18{top: -18px;}
+.bgcyan{background-color: #31b9c2 !important; }
+.wdt100perc{width: 100%;}
+.wdt72perc{width: 72%;}
+.wdt28perc{width: 28%;}
+.hrmiddle{
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0px 15%;
+  border-top: 1px solid #d0d0d0;
+  width: 0%;
+  margin-left: 36%;
+}
+
+.toprated{
+  padding-left: 50px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 22px;
+}
+
+.toprated ul{
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: 15px;
+  float: left;
+}
+
+.toprated ul li{
+  float: left;
+  position: relative;
+}
+
+.toprated ul li .numberfeedback{
+  text-align: center;
+  display: block;
+  position: absolute;
+  font-size: 14px;
+  top: 15%;
+  right: 39%;
+  width: 48%;
+}
+
+.toprated ul li .starfeedback{
+  text-align: center;
+  display: block;
+  position: absolute;
+  font-size: 15px;
+  top: 51%;
+  right: 39%;
+  width: 48%;
+}
+.toprated ul li label{
+  font-weight: normal;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  width: 77%;
+  position: absolute;
+  top: 78%;
+  font-family: "SoinSansPro-Light";
+}
+
+.toprated ul li label small{
+  font-family: "SoinSansPro-Light";
+  font-size: 12px;
+  display: block;
+
+}
+
+.showmorearrow{
+  text-align: center;
+  position: absolute;
+  right: 30px;
+  background: url('../images/arrow_showmore.png') no-repeat center 7px;
+  height: 55px;
+  padding-top: 36px;
+  font-size: 12px;
+  top: 20%;
+}
+
+/*------------ hotel rated line graph-------------*/
+.ratedhotelline{
+  margin-right: 45px;
+  height: 240px;
+}
+
+.ratedhotelline ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+.ratedhotelline ul li{
+  float: left;
+  text-align: center;
+  position: relative;
+  display: table;
+  height: 190px;
+}
+
+.ratedhotelline ul li span{
+  display: block;
+  clear: both;
+  float: left;
+}
+.ratedhotelline ul li .linegrap{
+  width: 5px;
+  background: #febe10;
+  position: absolute;
+  height: 100%;
+  margin: 0px 21px;
+  clear: both;
+  display: -webkit-flex;
+  -webkit-flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row-reverse;
+  float: left;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.ratedhotelline ul li label{
+  clear: both;
+  vertical-align: bottom;
+  font-weight: normal;
+  text-align: center;
+  float: left;
+  width: 100%;
+  padding-top: 10px;
+}
+
+
+/*-----top activities -----*/
+.topactivities{
+  margin-left: 55px;
+  display: -webkit-box;
+  margin-top: 25px;
+  position: relative;
+}
+
+.topactivities ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.topactivities ul li{
+  float: left;
+  font-family: "SoinSansPro-Light";
+  width: 18%;
+  margin-right: 10px;
+}
+.topactivities ul li .percentage img{
+  position: relative;
+  bottom: 8px;
+  padding-right: 5px;
+}
+
+.topactivities ul li .percentage span{
+ font-size: 31px;
+}
+
+.topactivities ul li .percentage span small{
+  font-size: 18px;
+}
+
+.topactivities ul li p{
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.topactivities ul li p small{
+  display: block;
+  font-size: 12px;
+}
+
+.topactivities ul li:last-child{
+  padding-right: 0px;
+}
+
+
+/*----rated guides -----*/
+.ratedguides{
+  margin-left: 55px;
+  display: -webkit-box;
+  margin-top: 25px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.ratedguides ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ratedguides ul li{
+  float: left;
+  font-family: "SoinSansPro-Light";
+  width: 18%;
+  margin-right: 10px;
+}
+.ratedguides ul li .imgname{
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.ratedguides ul li .imgname img{
+
+}
+
+.ratedguides ul li .imgname label{
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 10px;
+}
+
+.ratedguides ul li .imgname label small{
+  font-size: 12px;
+  display: block;
+}
+.ratedguides ul li .percentagestar{
+  float: right;
+  width: 50%;
+  margin-top: 7px;
+}
+.ratedguides ul li .percentagestar img{ 
+  position: relative;
+  bottom: 12px;
+  width: 71%;
+}
+
+.ratedguides ul li .percentagestar span{
+  font-size: 31px;
+}
+
+.ratedguides ul li .percentagestar span small{
+  font-size: 18px;
+}
+
+.ratedguides ul li:last-child{
+  padding-right: 0px;
+}
+
+
+
+/* radial css */
+
+.numberfeedback{
+  text-align: center;
+  display: block;
+  position: absolute;
+  font-size: 15px;
+  top: 59%;
+  right: 42%;
+}
+
+.background {
+  fill: #f2f2f2;
+  fill-opacity: 0.01;
+}
+
+.component {
+  fill: #f2f2f2;
+}
+
+.component .label {    
+  text-anchor: middle;
+  fill: #ff7a04;
+}
+
+.arc {
+  stroke-weight: 0.1;
+  -webkit-stroke-weight: 0.01;
+  fill: #ff7a04;
+}
+
+
+#rated_hotel1 .arc, #rated_hotel2 .arc, #rated_hotel3 .arc, #rated_hotel4 .arc, #rated_hotel5 .arc {
+  stroke-weight: 0.1;
+  -webkit-stroke-weight: 0.01;
+  fill: #63b446;
+}
+
+
+#rated_hotel1 .label, #rated_hotel2 .label, #rated_hotel3 .label, #rated_hotel4 .label, #rated_hotel5 .label {
+  font-size: 32px !important;
+}
+
+
+.label {
+  text-anchor: middle;
+  font-family: "SoinSansPro-Light";
+  color: #797979 !important;
+  font-size: 50px !important;
+  font-weight: normal;
+  padding: 0;
+}
+
+.radial-svg {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+/*----------grid for area-----*/
+.ct-chart-activites .ct-grid {
+  stroke: #f2f2f2 !important;
+  stroke-width: 1px !important;
+  stroke-dasharray: 0px !important;  
+}
+.ct-chart-activites .ct-series-a .ct-area, .ct-chart-activites .ct-series-a .ct-slice-pie {
+  fill: #83d5da !important;
+}
+.ct-chart-activites .ct-vertical{
+  display: none !important;
+}
+
+.ct-chart-activites .ct-area {
+  stroke: none;
+  fill-opacity: 0.7 !important;
+}
+
+.ct-chart-activites .ct-label{
+  font-size: 22px;
+  color: #797979;
+  font-family: "SoinSansPro-Light";
+}
+
+.ct-chart-guides .ct-grid {
+  stroke: #f2f2f2 !important;
+  stroke-width: 1px !important;
+  stroke-dasharray: 0px !important;  
+}
+.ct-chart-guides .ct-series-a .ct-area, .ct-chart-activites .ct-series-a .ct-slice-pie {
+ fill: #91C18B !important;
+}
+.ct-chart-guides .ct-vertical{
+}
+
+.ct-chart-guides .ct-area {
+  stroke: none;
+  fill-opacity: 0.7 !important;
+}
+
+.ct-chart-guides .ct-label{
+  font-size: 22px;
+  color: #797979;
+  font-family: "SoinSansPro-Light";
+}
+
+.ct-chart-guides .ct-series-a .ct-bar, .ct-chart-guides .ct-series-a .ct-line, .ct-chart-guides .ct-series-a .ct-point, .ct-chart-guides .ct-series-a .ct-slice-donut {
+  stroke: #77A571 !important;
+}
+.ct-chart-guides .ct-line {
+  fill: none;
+  stroke-width: 2px !important;
+}
+
+.ct-chart-lines .ct-series-a .ct-bar, .ct-chart-lines .ct-series-a .ct-line, .ct-chart-lines .ct-series-a .ct-point, .ct-chart-lines .ct-series-a .ct-slice-donut {
+    stroke: #febe10 !important;
+}
+.ct-chart-lines .ct-label{
+  font-size: 22px;
+  color: #797979;
+  font-family: "SoinSansPro-Light";
+}

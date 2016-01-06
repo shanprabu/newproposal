@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>:: Feedback Dashboard ::</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- base styles  -->
+	<link href="assets/css/base.css" rel="stylesheet">
+	<link href="assets/jquery_ui/css/jquery-ui.css" rel="stylesheet"> 
+	<!-- Custom styles for this template -->
+	<link href="assets/css/dashboard.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/multiple_input/css/chosen.css">
+	<link href="assets/month_picker/css/datepicker.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+
+
+</head>
+
+<body>
+
+	<!-- Fixed navbar -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="#"><img class="img-responsive" src="assets/images/logo.svg" alt="Enchanting Travels"/></a>
+			</div>
+			<div class="contactnumber">
+				
+			</div>
+		</div>
+		<div class="headerBand">
+			<div class="container">
+				<div class="headerBandNav">
+					<ul>
+						<li class="active"><a href="#">Feedback Dashboard</a></li>
+					</ul>
+				</div>
+				<div class="headerbandright">
+					<ul>
+						<li>
+							<div class="welcomeuserlogin">
+								<img src="assets/images/userimage.png">
+								<span>
+									<h4>Hello, User</h4>
+									<h5>Last Login on Wed OCT 15, 17:26 </h5>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="wrapper">
+		<div class="container">
+			
+			<div class="box-containers">
+				<div class="box-contianer-head">
+					Country
+					Destination
+					Last one Month
+				</div>
+				<div class="box-contianer-content">
+					<div class="leftblock">
+						<h4>Overall Satisfaction</h4>
+						<div class="blockcontent">
+							<div class="graphcircle">
+								<div id="rg_overall"></div>
+								<span class="numberfeedback">8759 feedback</span>
+							</div>
+							<div class="smallbigdots">
+								<ul>
+									<li>
+										<h3>76%</h3>
+										<span>5 Rating</span>
+										<img src="assets/images/bigdot.png">
+									</li>
+									<li>
+										<h3>14%</h3>
+										<span>4 Rating</span>
+										<img src="assets/images/bigdot.png">
+									</li>
+									<li>
+										<h3>5%</h3>
+										<span>3 Rating</span>
+										<img src="assets/images/bigdot.png">
+									</li>
+									<li>
+										<h3>3%</h3>
+										<span>2 Rating</span>
+										<img src="assets/images/bigdot.png">
+									</li>
+									<li>
+										<h3>2%</h3>
+										<span>1 Rating</span>
+										<img src="assets/images/bigdot.png">
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="middleblock"></div>
+					<div class="rightblock">
+						<div class="travelcount">
+							<h4>Travel Again</h4>
+							<div class="blockcontent">
+								<div class="smilemsg">
+									<img src="assets/images/bigdot.png">
+									<span>8759<br>Feedback</span>
+								</div>
+								<div class="smilemsgcount">
+									<div class="smilemsgcountsingle">
+										<div class="smalllabel">Yes</div>
+										<div class="smilemsgcountbar bgcyan wdt72perc"></div>
+										<span>72<small>%</small></span>
+									</div>
+
+									<div class="smilemsgcountsingle tpminus18">
+										<div class="smilemsgcountbar wdt28perc"></div>
+										<span>28<small>%</small></span>
+										<div class="smalllabelno">No</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr class="hrmiddle">
+						<div class="travelcount">
+							<h4>Feedback Count</h4>
+							<div class="blockcontent">
+								<div class="smilemsg">
+									<img src="assets/images/bigdot.png">
+									<span>8759<br>Feedback</span>
+								</div>
+								<div class="smilemsgcount">
+									<div class="smilemsgcountsingle">
+										<div class="smalllabel">Sent</div>
+										<div class="smilemsgcountbar wdt72perc"></div>
+										<span>100<small>%</small></span>
+									</div>
+
+									<div class="smilemsgcountsingle tpminus18">
+										<div class="smilemsgcountbar bgcyan wdt28perc"></div>
+										<span>12<small>%</small></span>
+										<div class="smalllabelno">Received</div>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+
+			<div class="box-containers">
+				<div class="box-contianer-head">
+					Country
+					Destination
+					Hotel
+				</div>
+				<div class="box-contianer-content">
+					<div class="fulltopblock">
+						<h4>Top 10 rated hotels</h4>
+						<div class="blockcontent">
+							<div class="toprated">
+								<ul>
+									<li>
+										<div id="rated_hotel1"></div>
+										<span class="numberfeedback">Rank 1</span>
+										<img class="starfeedback" src="assets/images/stars.png">
+										<label>The Cynosure<small>Bangalore</small></label>
+									</li>
+									<li>
+										<div id="rated_hotel2"></div>
+										<span class="numberfeedback">Rank 2</span>
+										<img class="starfeedback" src="assets/images/stars.png">
+										<label>The Cynosure<small>Bangalore</small></label>
+									</li>
+									<li>
+										<div id="rated_hotel3"></div>
+										<span class="numberfeedback">Rank 3</span>
+										<img class="starfeedback" src="assets/images/stars.png">
+										<label>The Cynosure<small>Bangalore</small></label>
+									</li>
+									<li>
+										<div id="rated_hotel4"></div>
+										<span class="numberfeedback">Rank 4</span>
+										<img class="starfeedback" src="assets/images/stars.png">
+										<label>The Cynosure<small>Bangalore</small></label>
+									</li>
+									<li>
+										<div id="rated_hotel5"></div>
+										<span class="numberfeedback">Rank 5</span>
+										<img class="starfeedback" src="assets/images/stars.png">
+										<label>The Cynosure<small>Bangalore</small></label>
+									</li>
+								</ul>
+								<div class="showmorearrow">
+									<span>Show more</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="threeblock">
+						<div class="blockone">bg image</div>
+						<div class="blocktwo">
+							<div class="ct-chart-lines ct-perfect-fourth"></div>
+						</div>
+						<div class="blockthree">
+							<h5>Hotel Feedback</h5>
+							<div class="blockcontent">
+								<p>The above section shows top 10 rated hotels  based on the filters you have selected.</p>
+								<p>The graph below shows overall ratings for the hotels</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="box-containers">
+				<div class="box-contianer-head">
+					Country
+					City
+				</div>
+				<div class="box-contianer-content">
+					<div class="fulltopblock">
+						<h4>Top 10 rated Activities</h4>
+						<div class="blockcontent">
+							<div class="topactivities">
+								<ul>
+									<li>
+										<div class="percentage"><img src="assets/images/smalldot.png"> <span>98<small>%</small></span></div>
+										<p>HD City tour + Sanre Cataline Monasetry In <small>New York</small></p>
+									</li>
+									<li>
+										<div class="percentage"><img src="assets/images/smalldot.png"> <span>98<small>%</small></span></div>
+										<p>HD City tour + Sanre Cataline Monasetry In <small>New York</small></p>
+									</li>
+									<li>
+										<div class="percentage"><img src="assets/images/smalldot.png"> <span>98<small>%</small></span></div>
+										<p>HD City tour + Sanre Cataline Monasetry In <small>New York</small></p>
+									</li>
+									<li>
+										<div class="percentage"><img src="assets/images/smalldot.png"> <span>98<small>%</small></span></div>
+										<p>HD City tour + Sanre Cataline Monasetry In <small>New York</small></p>
+									</li>
+									<li>
+										<div class="percentage"><img src="assets/images/smalldot.png"> <span>98<small>%</small></span></div>
+										<p>HD City tour + Sanre Cataline Monasetry In <small>New York</small></p>
+									</li>
+
+								</ul>
+								<div class="showmorearrow">
+									<span>Show more</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="threeblock">
+						<div class="blockone">bg image</div>
+						<div class="blocktwo">
+							
+							<div class="ct-chart ct-perfect-fourth ct-chart-activites"></div>
+
+						</div>
+						<div class="blockthree">
+							<h5>Activity Feedback</h5>
+							<div class="blockcontent">
+								<p>The above section shows top 10 rated hotels  based on the filters you have selected.</p>
+								<p>The graph below shows overall ratings for the hotels</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="box-containers">
+				<div class="box-contianer-head">
+					Country
+					City
+				</div>
+				<div class="box-contianer-content">
+					<div class="fulltopblock">
+						<h4>Top 10 rated Guides</h4>
+						<div class="blockcontent">
+							<div class="ratedguides">
+								<ul>
+									<li>
+										<div class="imgname">
+											<img src="assets/images/rating-img.png"> 
+											<label>Lynn Marshall<small>New York</small></label>
+										</div>
+										<div class="percentagestar">
+											<span>98<small>%</small></span>
+											<img src="assets/images/stars.png">
+										</div>
+									</li>
+									<li>
+										<div class="imgname">
+											<img src="assets/images/rating-img.png"> 
+											<label>Lynn Marshall<small>New York</small></label>
+										</div>
+										<div class="percentagestar">
+											<span>98<small>%</small></span>
+											<img src="assets/images/stars.png">
+										</div>
+									</li>
+									<li>
+										<div class="imgname">
+											<img src="assets/images/rating-img.png"> 
+											<label>Lynn Marshall<small>New York</small></label>
+										</div>
+										<div class="percentagestar">
+											<span>98<small>%</small></span>
+											<img src="assets/images/stars.png">
+										</div>
+									</li>
+									<li>
+										<div class="imgname">
+											<img src="assets/images/rating-img.png"> 
+											<label>Lynn Marshall<small>New York</small></label>
+										</div>
+										<div class="percentagestar">
+											<span>98<small>%</small></span>
+											<img src="assets/images/stars.png">
+										</div>
+									</li>
+									<li>
+										<div class="imgname">
+											<img src="assets/images/rating-img.png"> 
+											<label>Lynn Marshall<small>New York</small></label>
+										</div>
+										<div class="percentagestar">
+											<span>98<small>%</small></span>
+											<img src="assets/images/stars.png">
+										</div>
+									</li>
+								</ul>
+								<div class="showmorearrow">
+									<span>Show more</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="threeblock">
+						<div class="blockone">bg image</div>
+						<div class="blocktwo">
+							<div class="ct-chart-guides ct-perfect-fourth"></div>
+						</div>
+						<div class="blockthree">
+							<h5>Guide Feedback</h5>
+							<div class="blockcontent">
+								<p>The above section shows top 10 rated hotels  based on the filters you have selected.</p>
+								<p>The graph below shows overall ratings for the hotels</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	
+
+
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- radial -->
+	<script type="text/javascript" src="assets/radial/js/d3.min.js"></script>
+	<script type="text/javascript" src="assets/radial/js/radialProgress.js"></script>
+
+	<script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+	<!-- datepicker -->
+	<script src="assets/jquery_ui/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="assets/js/base.js"></script>
+	<script src="assets/multiple_input/js/chosen.jquery.js" type="text/javascript"></script>
+	<script src="assets/month_picker/js/bootstrap-datepicker.js"></script>    
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+	<script type="text/javascript">
+	new Chartist.Line('.ct-chart', {
+		labels: [ '38%', '45%', '9%', '5%', '3%'],
+		series: [
+		[3.8, 4.5, 0.9, 0.5, 0.3 ]
+		]
+	}, {
+		low: 0,
+		showArea: true,
+		showLine: false
+	});
+
+	new Chartist.Line('.ct-chart-guides', {
+		labels: [ '5%', '38%', '9%', '45%', '3%'],
+		series: [
+		[5, 3.8, 0.9, 4.5, 0.3 ]
+		]
+	}, {
+		low: 0,
+		showArea: true,
+		showPoint: false,
+		axisY: {
+			showLabel: false,
+			showGrid: true
+		}
+	});
+
+
+	new Chartist.Bar('.ct-chart-lines', {
+		labels: ['38%', '45%', '9%', '5%', '3%'],
+		series: [
+		[3.8, 4.5, 0.9, 0.5, 0.3]
+		]
+	}, {
+		high: 10,
+		axisX: {
+			showGrid:false
+		},
+		axisY: {
+			showLabel: false,
+			showGrid: false
+		}
+	});
+	
+	</script>
+
+</body>
+</html>

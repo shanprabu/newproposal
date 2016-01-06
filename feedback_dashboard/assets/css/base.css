@@ -1,0 +1,845 @@
+/**
+** Pakage : enchanting travels
+** Author : Mohammed Nadeem 
+** file : Base css
+**/
+
+/* -------------------- Fonts Css ------------------ */
+
+@font-face {
+  font-family: 'SoinSansPro-ThinOblique';
+  src: url('../../fonts/SoinSansPro-ThinOblique');
+  src: url('../../fonts/SoinSansPro-ThinOblique.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SoinSansPro-ThinOblique.woff2') format('woff2'),
+  url('../../fonts/SoinSansPro-ThinOblique.woff') format('woff'),
+  url('../../fonts/SoinSansPro-ThinOblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+  font-family: 'SoinSansPro-MediumOblique';
+  src: url('../../fonts/SoinSansPro-MediumOblique.eot');
+  src: url('../../fonts/SoinSansPro-MediumOblique.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SoinSansPro-MediumOblique.woff2') format('woff2'),
+  url('../../fonts/SoinSansPro-MediumOblique.woff') format('woff'),
+  url('../../fonts/SoinSansPro-MediumOblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+
+@font-face {
+  font-family: 'SoinSansPro-LightOblique';
+  src: url('../../fonts/SoinSansPro-LightOblique.eot');
+  src: url('../../fonts/SoinSansPro-LightOblique.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SoinSansPro-LightOblique.woff2') format('woff2'),
+  url('../../fonts/SoinSansPro-LightOblique.woff') format('woff'),
+  url('../../fonts/SoinSansPro-LightOblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+  font-family: 'SoinSansPro-Roman';
+  src: url('../../fonts/SoinSansPro-Roman.eot');
+  src: url('../../fonts/SoinSansPro-Roman.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SoinSansPro-Roman.woff2') format('woff2'),
+  url('../../fonts/SoinSansPro-Roman.woff') format('woff'),
+  url('../../fonts/SoinSansPro-Roman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+  font-family: 'SoinSansPro-Light';
+  src: url('../../fonts/SoinSansPro-Light.eot');
+  src: url('../../fonts/SoinSansPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SoinSansPro-Light.woff2') format('woff2'),
+  url('../../fonts/SoinSansPro-Light.woff') format('woff'),
+  url('../../fonts/SoinSansPro-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+  font-family: 'SoinSansPro-Bold';
+  src: url('../../fonts/SoinSansPro-Bold.eot');
+  src: url('../../fonts/SoinSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SoinSansPro-Bold.woff2') format('woff2'),
+  url('../../fonts/SoinSansPro-Bold.woff') format('woff'),
+  url('../../fonts/SoinSansPro-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+  font-family: 'SoinSansPro-Thin';
+  src: url('../../fonts/SoinSansPro-Thin.eot');
+  src: url('../../fonts/SoinSansPro-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SoinSansPro-Thin.woff2') format('woff2'),
+  url('../../fonts/SoinSansPro-Thin.woff') format('woff'),
+  url('../../fonts/SoinSansPro-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+  font-family: 'SoinSansPro-BoldOblique';
+  src: url('../../fonts/SoinSansPro-BoldOblique.eot');
+  src: url('../../fonts/SoinSansPro-BoldOblique.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SoinSansPro-BoldOblique.woff2') format('woff2'),
+  url('../../fonts/SoinSansPro-BoldOblique.woff') format('woff'),
+  url('../../fonts/SoinSansPro-BoldOblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+  font-family: 'SoinSansPro-Oblique';
+  src: url('../../fonts/SoinSansPro-Oblique.eot');
+  src: url('../../fonts/SoinSansPro-Oblique.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SoinSansPro-Oblique.woff2') format('woff2'),
+  url('../../fonts/SoinSansPro-Oblique.woff') format('woff'),
+  url('../../fonts/SoinSansPro-Oblique.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+  font-family: 'SoinSansPro-Medium';
+  src: url('../../fonts/SoinSansPro-Medium.eot');
+  src: url('../../fonts/SoinSansPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SoinSansPro-Medium.woff2') format('woff2'),
+  url('../../fonts/SoinSansPro-Medium.woff') format('woff'),
+  url('../../fonts/SoinSansPro-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+@font-face {
+  font-family: 'SoinSansPro-Headline';
+  src: url('../../fonts/SoinSansPro-Headline.eot');
+  src: url('../../fonts/SoinSansPro-Headline.eot?#iefix') format('embedded-opentype'),
+  url('../../fonts/SoinSansPro-Headline.woff2') format('woff2'),
+  url('../../fonts/SoinSansPro-Headline.woff') format('woff'),
+  url('../../fonts/SoinSansPro-Headline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+
+/*------------- base styles -----------*/
+
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+html, body {
+  height: 100%;
+}
+
+a{
+  outline: 0;
+}
+
+a:hover, a:active, a:focus {
+ outline: 0;
+}
+
+body{
+  background: #fafafa;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'SoinSansPro-Roman'
+}
+
+object, embed { 
+  outline: 0;
+}
+
+/*-------- header -------------*/
+header{
+  background-color: #fafafa;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0px;
+}
+.logo{
+  float: left;
+}
+
+.contactnumber{
+  float: right;
+  line-height: 58px;
+  font-size: 14px;
+  font-family: 'SoinSansPro-Roman';
+  letter-spacing:0.02em;
+  color: #797875;
+}
+
+.headerBand{
+  background: #36312b;
+}
+
+.headerBandNav{
+  float: left;
+}
+
+.headerBandNav ul{
+  list-style-type: none;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+}
+
+.headerBandNav ul li{
+  float: left;
+  color: #fff;
+}
+
+.headerBandNav ul li a{
+  font-size: 18px;
+  padding: 18px 40px;
+  color: #fff;
+  display: block;
+}
+
+.headerBandNav ul li a:hover, .headerBandNav ul li a:focus{ 
+  background: #221f16;
+  color: #fff;
+  text-decoration: none;
+}
+
+.headerBandNav ul li.active{
+  background: #221f16;
+}
+
+.headerbandright{
+  float: right;
+}
+.headerbandright ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-left: 1px solid #221f16;
+  display: inline-flex;
+}
+
+.headerbandright ul li{
+  float: left;
+  border-right: 1px solid #221f16; 
+}
+
+.headerbandright ul li a{
+  padding: 20px;
+  display: block;
+  position: relative;
+}
+.headerbandright ul li a:hover, .headerbandright ul li a.active{
+  background: #221f16;
+}
+.welcomeuserlogin{
+  padding: 10px;
+  display: inline-table;
+  margin-right: 35px;
+}
+.welcomeuserlogin img{
+  float: left;
+  margin-right: 10px;
+  width: 40px;
+}
+.welcomeuserlogin span{
+  float: left;
+  color: #fff;
+}
+
+.welcomeuserlogin span h4{
+  color: #fff;
+  font-size: 14px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.welcomeuserlogin span h5{
+  color: #b59d79;
+  font-size: 11px;
+  font-family: 'SoinSansPro-LightOblique';
+  margin: 0;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.notifyno{
+  font-size: 10px;
+  font-family: 'SoinSansPro-Light';
+  color: #fff;
+  background: #ef9507;
+  padding: 0px 4px;
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+}
+
+/*------------ header drop down --------------*/
+ul.dddropdown-menu{
+  display: none;
+  position: absolute;
+  border: 0;
+  box-shadow: none;
+  background: #221f16;
+  border-radius: 0;
+  left: -160%;
+  padding: 15px;
+  z-index: 99;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+ul.dddropdown-menu li{
+  display: block;
+  width: 100%;
+  color: #fff;
+  border: 0;
+  float: inherit;
+  border-bottom: 1px solid #36312b;
+}
+
+ul.dddropdown-menu li:last-child{
+  border-bottom: 0;
+}
+
+ul.dddropdown-menu li a{
+  color: #fff;
+  padding: 10px 0px;
+  font-size: 13px;
+  white-space: inherit;
+  text-decoration: none;
+}
+
+ul.dddropdown-menu li a span{
+  color: #ef9507;
+}
+
+ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
+  color: #fff;
+  text-decoration: none;
+}
+
+/*---------------container styles -----------*/
+#wrapper{
+  margin-bottom: 50px;
+}
+.container{
+  width: 1180px;
+  margin: 0 auto;
+}
+
+
+/*---------------common --------------*/
+.orange{color: #ef9507 !important;}
+.grey{color: #949494 !important;}
+.green{color: #5acb1c !important;}
+.palered{color: #dc665a !important;}
+.bgred{background: #cb2727 !important;}
+.bgorange{background: #ea950e !important;}
+.bgblue{background: #11a3d9 !important; }
+.bggreen{background: #5acb1c !important;}
+.mgnryt30{margin-right: 30px;}
+.mgnryt15{margin-right: 15px;}
+.mgnbtm25{margin-bottom: 25px;}
+.mgnbtm15{margin-bottom: 15px;}
+.wdt10perc{width: 10%;}
+.wdt20perc{width: 20%;}
+.wdt205perc{width: 20.5%;}
+.wdt18perc{width: 18%;}
+.wdt25perc{width: 25%;}
+.wdt30perc{width: 30%;}
+.wdt60perc{width: 60%;}
+.wdt62perc{width: 62%;}
+.wdt32perc{width: 32%;}
+.wdt72perc{width: 72%;}
+.wdt74perc{width: 74%;}
+.wdt20perc{width: 20%;}
+.wdt22perc{width: 22%;}
+.wdt52perc{width: 52%;}
+.wdt42perc{width: 42%;}
+.wdt45perc{width: 45%;}
+.wdt47perc{width: 47%;}
+.mgnryt6perc{margin-right: 6%;}
+.mgnbtm0{margin-bottom: 0px !important;}
+.hgt122{ height: 122px !important;}
+.hgt108{ height: 108px !important;}
+.hgt100{ height: 100px !important;}
+.pdn0{padding: 0px !important;}
+.pdntp0{padding-top: 0px !important;}
+.bgtransparent{background-color: transparent !important;}
+.pointerclass {cursor: pointer;}
+.displayblk{display: block;}
+.positionrelative{position: relative;}
+
+.date_icon {
+  background: url("../images/calender-icon.png") no-repeat 95% center #fff;
+}
+.inputuser_icon {
+  background-image: url("../images/user_iconinput.png");
+  background-repeat: no-repeat;
+  background-position: 6px 9px;
+  padding-left: 28px;
+}
+
+.closeredicon{
+  background: url("../images/close-red-icon.png") no-repeat #fff;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  cursor: pointer;
+}
+
+.dropdown-icon {
+  background: transparent url("../images/dropdown-arrow-ico-white.png") no-repeat scroll right center;
+  border-radius: 0 3px 3px 0;
+  height: 36px;
+  pointer-events: none;
+  position: absolute;
+  right: 0px;
+  top: 23px;
+  width: 33px;
+  z-index: 9;
+}
+.dropdown-icon3 {
+  background: transparent url("../images/dropdown-arrow-ico-white.jpg") no-repeat scroll right center;
+  border-radius: 0 3px 3px 0;
+  height: 32px;
+  pointer-events: none;
+  position: absolute;
+  right: 75%;
+  top: 26px;
+  width: 33px;
+  z-index: 9;
+}
+
+.dropdown-icon2 {
+  background: transparent url("../images/dropdown-arrow-ico-white.jpg") no-repeat scroll right center;
+  border-radius: 0 3px 3px 0;
+  height: 32px;
+  pointer-events: none;
+  position: absolute;
+  right: 1px;
+  top: 26px;
+  width: 33px;
+  z-index: 9;
+}
+.dropdown-icon4 {
+  background: #fff url("../images/dropdown-arrow-ico-white.png") no-repeat scroll;
+  border-radius: 0 3px 3px 0;
+  height: 32px;
+  pointer-events: none;
+  position: absolute;
+  right: 1px;
+  top: 35px;
+  width: 26px;
+  z-index: 9;
+}
+
+/* ---- date picker calender ----*/
+.ui-widget-header {     
+  border: 1px solid #36312A !important;
+  background: #422B19 !important;
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  border: 1px solid #36312A !important;
+  background: #422B19 !important;
+  color: #ffffff !important;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+  border: 1px solid #36312A !important;
+  background: #E4B794 !important;
+  color: #FFFFFF !important;
+}
+.ui-datepicker{
+  z-index: 9999 !important;
+}
+
+/*--custom ------*/
+.numbrselect{
+  float: left;
+  width: 25%;
+  border-radius: 4px 0px 0px 4px;
+  padding: 6px;
+  border-right: 0;
+}
+.numbrinput{
+  float: left;
+  width: 75%;
+  border-radius: 0px 4px 4px 0px;
+  
+}
+
+/*-----custom checkbox------------*/
+.checkbox input[type="checkbox"]{
+  display: none;
+}
+
+.checkbox input[type="checkbox"] + label{
+  background: url("../images/check-off.png") no-repeat;
+}
+
+.checkbox input[type="checkbox"]:checked + label{
+  background: url("../images/check-on.png") no-repeat;
+}
+
+/*----------------bootstrap common ----------------*/
+.btn:focus,.btn:active {
+  outline: none !important;
+}
+
+/*.form-control{
+  border-radius: 2;
+  }*/
+
+
+  /*--------------modal styles----------------*/
+  .modal-header {
+    height: 0px;
+    border: 0;
+  }
+
+  /*---------------- month picker--------------- */
+  .datepicker-inline {
+    width: 220px;
+  }
+  #monthpicker1, #monthpicker2{ 
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+    top: 9px;
+  }
+  #monthpicker1 .datepicker, #monthpicker2 .datepicker, #monthpicker3 .datepicker{
+    background: transparent;
+  }
+
+  .datepicker th.switch {
+    background: transparent !important;
+  }
+
+  #monthpicker1 .datepicker table, #monthpicker2 .datepicker table {
+
+  }
+  #monthpicker1 .datepicker table thead tr, #monthpicker2 .datepicker table thead tr{
+    border-bottom: 0px;
+  }
+
+  #monthpicker1 .datepicker table thead tr th:first-child, #monthpicker2 .datepicker table thead tr th:first-child{
+    padding: 7px 20px 10px 0px;
+  }
+  #monthpicker1 .datepicker table thead tr th:last-child, #monthpicker2 .datepicker table thead tr th:last-child{
+    padding: 7px 00px 10px 10px;
+  }
+  #monthpicker1 .datepicker table thead tr th:hover, #monthpicker2 .datepicker table thead tr th:hover{
+    background: transparent !important;
+  }
+
+  #monthpicker1 .datepicker table thead tr th, #monthpicker2 .datepicker table thead tr th {
+    padding: 0;
+    margin: 0;
+    border: 0 !important;
+    line-height: 24px;
+    font-weight: normal;
+    color: #949494;
+    background: transparent;
+  }
+  #monthpicker1 .datepicker .datepicker-days thead tr:last-child, #monthpicker2 .datepicker .datepicker-days thead tr:last-child {
+    display: none;
+  }
+
+  #monthpicker1 .datepicker .datepicker-days tfoot, #monthpicker2 .datepicker .datepicker-days tfoot{
+    display: none;
+  }
+
+  #monthpicker1 .datepicker .datepicker-days tbody, #monthpicker2 .datepicker .datepicker-days tbody{
+    display: none;
+  }
+
+  #monthpicker1 .datepicker .datepicker-months tbody tr td, #monthpicker1 .datepicker .datepicker-years tbody tr td,
+  #monthpicker2 .datepicker .datepicker-months tbody tr td, #monthpicker2 .datepicker .datepicker-years tbody tr td{
+    border-radius: 0;
+    background: #36312b;
+    -webkit-border-bottom-right-radius:3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  #monthpicker1 .datepicker .datepicker-months tbody, #monthpicker1 .datepicker .datepicker-years tbody,
+  #monthpicker2 .datepicker .datepicker-months tbody, #monthpicker2 .datepicker .datepicker-years tbody{
+    background: #221f16;
+  }
+
+  #monthpicker1 .datepicker .datepicker-months tbody tr td span, #monthpicker1 .datepicker .datepicker-years tbody tr td span,
+  #monthpicker2 .datepicker .datepicker-months tbody tr td span, #monthpicker2 .datepicker .datepicker-years tbody tr td span{
+    padding: 0;
+    line-height: 32px;
+    height: 32px;
+    color: #fff;
+    font-size: 11px;
+  }
+
+  #monthpicker1 .datepicker .datepicker-months tbody tr td span:hover, #monthpicker1 .datepicker .datepicker-years tbody tr td span:hover,
+  #monthpicker1 .datepicker .datepicker-months tbody tr td span.active, #monthpicker1 .datepicker .datepicker-years tbody tr td span.active,
+  #monthpicker2 .datepicker .datepicker-months tbody tr td span:hover, #monthpicker2 .datepicker .datepicker-years tbody tr td span:hover,
+  #monthpicker2 .datepicker .datepicker-months tbody tr td span.active, #monthpicker2 .datepicker .datepicker-years tbody tr td span.active{
+    background: #ea950e;
+  }
+
+  #monthpicker3{ 
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+    top: 3px;
+    color: #949494;
+    background: transparent;
+  }
+
+  #monthpicker3 .datepicker table {
+
+  }
+  #monthpicker3 .datepicker table thead tr{
+    border-bottom: 0px;
+  }
+
+  #monthpicker3 .datepicker table thead tr th:first-child{
+    padding: 7px 20px 10px 0px;
+  }
+  #monthpicker3 .datepicker table thead tr th:last-child{
+    padding: 7px 0px 10px 10px;
+  }
+  #monthpicker3 .datepicker table thead tr th:hover{
+    background: transparent !important;
+  }
+
+  #monthpicker3 .datepicker table thead tr th{
+    padding: 0;
+    margin: 0;
+    border: 0 !important;
+    line-height: 24px;
+    font-weight: normal;
+    color: #949494;
+  }
+  #monthpicker3 .datepicker .datepicker-days thead tr:last-child {
+    display: none;
+  }
+
+  #monthpicker3 .datepicker .datepicker-days tfoot{
+    display: none;
+  }
+
+  #monthpicker3 .datepicker .datepicker-days tbody{
+    display: none;
+  }
+
+  #monthpicker3 .datepicker .datepicker-months tbody tr td, #monthpicker3 .datepicker .datepicker-years tbody tr td{
+    border-radius: 0;
+    background: #36312b;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  #monthpicker3 .datepicker .datepicker-months tbody, #monthpicker3 .datepicker .datepicker-years tbody{
+    background: #221f16;
+  }
+
+  #monthpicker3 .datepicker .datepicker-months tbody tr td span, #monthpicker3 .datepicker .datepicker-years tbody tr td span{
+    padding: 0;
+    line-height: 32px;
+    height: 32px;
+    color: #fff;
+    font-size: 11px;
+  }
+
+  #monthpicker3 .datepicker .datepicker-months tbody tr td span:hover, #monthpicker3 .datepicker .datepicker-years tbody tr td span:hover,
+  #monthpicker3 .datepicker .datepicker-months tbody tr td span.active, #monthpicker3 .datepicker .datepicker-years tbody tr td span.active{
+    background: #ea950e;
+  }
+
+
+
+  .icon-arrow-right{
+    background: url('../images/icon_arrow_right.png');
+    background-repeat: no-repeat;
+    width: 5px;
+    height: 8px;
+    position: absolute;
+  }
+
+  .icon-arrow-left{
+    background: url('../images/icon_arrow_left.png');
+    background-repeat: no-repeat;
+    width: 5px;
+    height: 8px;
+    position: absolute;
+  }
+
+
+  /*-------------bootstrap modified---------------*/
+  .btn-primary.disabled, .btn-primary.disabled.active, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled], .btn-primary[disabled].active, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary.active, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+    background: #e3847a;
+    border-color: #e3847a;
+  }
+
+
+  /* -------------------- bootstrap Media Quires ------------------ */
+  @media (min-width: 768px) {
+
+    .container{
+      width: 1180px;
+      margin: 0 auto;
+    }
+
+  }
+
+  @media (min-width: 280px) and (max-width: 400px) {
+    .container{
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @media (max-width: 767px) and (min-width: 650px){
+    .container{
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  @media(max-width: 651px) and (min-width: 401px){
+    .container{
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+
+  @media (min-width: 768px) and (max-width: 991px) {
+
+    .container{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+
+    .container{
+      width: 100%;
+      margin: 0 auto;
+    }
+
+  }
+
+
+
+
+  /*-----------hacks ---------------*/
+
+  /* firefox hack css */
+  @-moz-document url-prefix(){ 
+
+    .dropdown-icon4 {
+      top: 36px;
+    }
+    #monthpicker1 .datepicker thead tr th.prev i.icon-arrow-left, #monthpicker1 .datepicker thead tr th.next i.icon-arrow-right,
+    #monthpicker2 .datepicker thead tr th.prev i.icon-arrow-left, #monthpicker2 .datepicker thead tr th.next i.icon-arrow-right,
+    #monthpicker3 .datepicker thead tr th.prev i.icon-arrow-left, #monthpicker3 .datepicker thead tr th.next i.icon-arrow-right{
+      top:9px;
+    }
+    
+    select::-moz-focus-inner{
+      outline : none;
+    }
+    select:-moz-focusring {
+      /*color: transparent;
+      text-shadow: 0 0 0 #000;*/
+      outline: none;
+    }
+  }
+
+  /* IE hack css */
+  @media all and (-ms-high-contrast:none){
+
+  }
+
+  /*for ios*/
+  _::-webkit-full-page-media, _:future, :root {}
+
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .btn-brown {
+    line-height: 38px;
+  }
+  {
+    line-height: 52px;
+  }
+  #home-page .expertise blockquote {
+    padding: 40px 52px;
+  }
+  .btn-red {
+    line-height: 40px;
+  }
+  }*/
+
+  /*for ios*/
+  .form-control::-webkit-input-placeholder {
+
+  }
+  _::-webkit-full-page-media, _:future, :root {}
