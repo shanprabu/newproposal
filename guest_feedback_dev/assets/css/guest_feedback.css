@@ -1,0 +1,776 @@
+
+#header .top .right .travel-consultant{
+	margin-top: 11px;
+	margin-right: 15px;
+	font-size: 15px;
+	height: 64px;
+	font-weight: normal;
+	color: #36312a;
+}
+
+
+@media screen and (max-width: 450px){
+
+}
+
+@media screen and (max-width: 531px) {
+
+}
+
+@media screen and (max-width: 828px) {
+
+}
+
+@media screen and (max-width: 1215px) and (min-width: 1001px) {
+
+}
+
+
+/*-------commmon-----------*/
+.pdnbtm12{padding-bottom: 12px;}
+.bdrbtm{border-bottom: 1px dashed #36312a;     display: inline-block;}
+.mgntp10{margin-top: 10px;}
+.wdt100prec{width: 100%;}
+.standard-types .pulbottom {
+	margin-bottom: 0px;
+}
+
+.standard-types ul{
+	margin-top: 0px;
+}
+
+.flight-proposal{
+
+}
+.price-inclusions {
+	margin-top: 0px !important;
+}
+
+.hotel-information {
+	margin-top: 70px;
+}
+.important-information article{
+	border-bottom: 0px;
+}
+.hotel-information article{
+	border-bottom: 0;
+}
+
+#banner .text-container .text {
+	display: table-cell;
+	vertical-align: bottom;
+	width: 100%;
+	text-align: left;
+}
+.banner-text{
+	text-transform: capitalize;
+	z-index: 99;
+	position: relative;
+	margin-bottom: 40px;
+}
+.banner-text h1{
+	font-size: 52px;
+	letter-spacing: 0.025em;
+	max-width: 950px;
+	font-weight: 400;
+}
+.banner-text p{
+	font-size: 26px;
+	line-height: 1.2em;
+	margin-top: 10px;
+	letter-spacing: 0.1em;
+	max-width: 950px;
+	font-weight: 400;
+}
+
+.banner-gradient .gradient {
+	width: 100%;
+	height: 207px;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.8)));
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='a6000000', GradientType=0);
+	background-repeat: repeat-x;
+	z-index: 9;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+
+@media screen and (max-width: 1275px){
+
+}
+
+@media screen and (max-width: 1100px){
+	.banner-text h1{
+		font-size: 48px;
+	}
+
+}
+
+@media screen and (max-width: 740px){
+	
+}
+
+@media screen and (max-width: 768px){
+	.banner-text h1{
+		font-size: 36px;
+	}
+	.banner-text p{
+		font-size: 18px;
+	}
+	
+}
+
+@media screen and (min-width: 600px){
+	.thankyou .wrap {
+		width: 334px;
+	}
+}
+
+@media screen and (max-width: 610px){
+	
+}
+
+@media screen and (max-width: 550px){
+	.banner-text h1{
+		font-size: 28px;
+	}
+	.banner-text p{
+		font-size: 18px;
+	}
+	.thankyou .wrap {
+		width: 334px;
+	}
+	
+}
+
+@media screen and (max-width: 432px){
+	
+}
+
+@media screen and (max-width: 400px){
+	.banner-text h1{
+		font-size: 22px;
+	}
+	.banner-text p{
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (max-width: 320px){
+	.banner-text h1{
+		font-size: 22px;
+	}
+	.banner-text p{
+		font-size: 15px;
+	}
+}
+
+
+@media screen and (max-width: 600px){
+	#header .top .right .travel-consultant span {
+		display: none; 
+	}
+	#header .top .right .travel-consultant {
+		margin-right: 0px; 
+	}
+
+}
+@media screen and (max-width: 400px){
+	#header .top .right .travel-consultant {
+		display: none;
+	}
+}
+
+
+
+/*----------------guest feedback form--------*/
+#two-col .col-left .details-box p {
+	font-size: 16px;
+	line-height: 1.2em;
+	margin-top: 10px;
+}
+
+#two-col .col-left .value-box {
+	background-color: transparent;
+	margin-top: 35px;
+	margin-right: 30px;
+	padding: 20px;
+	border: 2px solid #dcdcdb;
+	padding-bottom: 23px;
+}
+
+#two-col .col-left .value-box img{
+	float: left;
+	margin-right: 15px;
+}
+
+#two-col .col-left .value-box p{
+	padding-top: 2px;
+	line-height: 20px;
+	font-size: 13px;
+	display: -webkit-box;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 768px){
+	#two-col .col-left .value-box {
+		padding: 15px;
+	}
+	#two-col .col-left .value-box p {
+		display: inline-block;
+	}
+	#two-col .col-left .value-box img {
+		margin: 0 auto;
+		float: none;
+	}
+}
+
+.insidebanner .banner-text {
+	text-transform: capitalize;
+	z-index: 99;
+	position: relative;
+	margin-bottom: 18px;
+}
+
+.insidebanner .banner-text h1 {
+	font-size: 42px;
+	letter-spacing: 0.025em;
+	max-width: 950px;
+	font-weight: 400;
+	background: url("../images/banner-icon.png") no-repeat;
+	padding-left: 55px;
+	margin-left: 20px;
+}
+
+.introduction{
+	background: #f9f3ed;
+	color: #7c6640;
+	padding: 20px 30px;
+	font-size: 18px;
+	line-height: 1.5em;
+	letter-spacing: 0.01em;
+}
+#two-col .col-left {
+	padding-top: 34px;
+}
+#two-col .col-right {
+	padding-top: 34px;
+}
+#two-col .col-left .details-box {
+	margin-top: 0;
+}
+
+
+/*------------questionaire -----------------*/
+#two-col .col-right { 
+	padding-left: 5.064516%;
+}
+
+.questionaire{
+	margin-top: 60px;
+}
+
+.questionblock{
+	margin-bottom: 40px;
+}
+
+.questionblock .qheader{
+
+}
+
+.questionblock .qheader h2{
+	font-size: 32px !important;
+	letter-spacing: 0.05em;
+	line-height: 1.7em;
+	border-bottom: 2px solid #5e5a55;
+}
+
+.questionblock .qcontent{
+	width: 100%;
+	display: inline-block;
+	margin-top: 15px;
+}
+.questionblock .qcontent .qlabel{
+	line-height: 3em;
+	font-size: 12px;
+	display: inline-block;
+	float: right;
+	width: 100%;
+	color: #7d7d7d;
+}
+
+.questionblock .qcontent .qlabel .qlabelcont{
+	width: 50%;
+	padding-left: 50%;
+	display: table;
+}
+
+.questionblock .qcontent .qlabel .qlabelcont div{
+	width: 10%;
+	text-align: center;
+	display: table-cell;
+}
+
+.questionblock .qcontent .qrating{
+	font-size: 15px;
+	color: #595754;
+	line-height: 0;
+	margin-top: 20px;
+}
+
+
+.questionblock .qcontent .qquestions{
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px dashed #36312a;
+	margin-top: 18px;
+	padding-bottom: 15px;
+}
+
+.questionblock .qcontent .qquestions:last-child{
+	border-bottom: 0px dashed #36312a;
+}
+
+.questionblock .qcontent .qquestions .questionsection{
+	font-weight: 600;
+	color: #36312a;
+	font-size: 17px;
+	width: 50%;
+	line-height: 20px;
+	float: left;
+	padding-top: 8px;
+}
+.questionblock .qcontent .qquestions .ratingsection{
+	display: inline-block;
+	width: 50%;
+}
+
+.questionblock .qcontent .qquestions .ratingsection .qchecklabel{
+	line-height: 3em;
+	font-size: 12px;
+	display: table;
+	width: 100%;
+	color: #7d7d7d;
+}
+
+.questionblock .qcontent .qquestions .ratingsection .qcheckbox{
+	width: 20%;
+	text-align: center;
+	float: left;
+	display: table-cell;
+}
+
+.questionblock .qcontent .qquestions .ratingsection .qchecklabel .field{
+	margin-top: 8px;
+	display: inline-flex;
+	width: 100%;
+	width: 92.5%;
+	padding-left: 7.5%;
+}
+
+.questionblock .qcontent .qquestions .ratingsection .qchecklabel .field .text-area {
+	height: 70px;
+	font-family: inherit;
+	padding: 9px;
+	font-size: 14px;
+	line-height: 1.2em;
+	resize: vertical;
+	width: 100%;
+}
+.check-box label .text {
+	font-size: 17px;
+	color: #595754;
+	line-height: 1.4em;
+}
+
+.trustpilotsection{
+	margin-top: 15px;
+	line-height: 24px;
+}
+
+.trustpilotsection img{
+	float: left;
+	margin-right: 10px;
+}
+
+.trustpilotsection a{
+	color: #e46a5e;
+	font-size: 15px;
+}
+
+.trustpilotsection a:hover{
+	text-decoration: underline;
+}
+
+.textcolor{
+	color: #595754 !important;
+	font-size: 16px !important;
+}
+
+.leftingspace{
+	width: 46.2% !important;
+	padding-left: 3.8%;
+}
+
+.leftingspaceyn {
+	width: 47.8% !important;
+	padding-left: 2.2%;
+}
+
+
+.left66{
+	width: 66%;
+	float: left;
+}
+
+.optionalsec{
+	margin: 15px 0px;
+	clear: both;
+	color: #595754;
+	margin-bottom: 60px;
+	display: inline-block;
+	width: 100%;
+}
+
+.optionalsec .optionalseccent{
+	width: 63%;
+	float: left;
+}
+
+.travelimg{
+	float: left;
+}
+
+.travelimg img{
+	width: 80%;
+}
+
+
+.optionalsec p{
+	font-size: 16px;
+	line-height: 22px;
+	color: #595754;
+	margin-bottom: 25px;
+}
+
+.optionalsec a{
+	color: #e46a5e;
+	font-size: 15px;
+}
+
+.optionalsec a:hover{
+	text-decoration: underline;
+}
+
+.uploadsec{
+
+}
+
+.uploadsec h3{
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.sharelnksec{
+	width: 66%;
+}
+
+.sharelnksec input{
+	margin-top: 8px;
+}
+
+.sharelnksec h3{
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.submitfeebback{
+	margin-top: 50px;
+}
+.submitfeebback h3{
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	margin-bottom: 25px;
+}
+
+.checksubscribe{
+	margin-bottom: 25px;
+}
+
+.right34{
+	width: 34%;
+	float: left;
+}
+
+/*----------check box --------------*/
+.check-box{position:relative}
+.check-box input[type=checkbox]{position:absolute;z-index:-1000;left:-1000px;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+.check-box input[type=checkbox]+label{display:inline-block;background-repeat:no-repeat;background-position:0 0;vertical-align:middle;cursor:pointer;line-height:1.2em}
+.check-box label{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.check-box label
+.check{display:block;width:20px;height:20px;vertical-align:top;background-image:url("../images/checkbox.png");background-image:linear-gradient(transparent, transparent),url("../images/checkbox.svg");float:left}
+.check-box label.text{display:block;margin-left:30px}
+.check-box input[type=checkbox]
+.checked+label.check{background-position:0 -20px}
+.check-box.small label.check{width:14px;height:14px;background-image:url("../images/checkbox-small.png");background-image:linear-gradient(transparent, transparent),url("../images/checkbox-small.svg")}
+.check-box.small label.text{margin-left:24px}
+.check-box.small input[type=checkbox]
+.checked+label.check{background-position:0 -14px}
+
+
+/*----------multi container---------*/
+.select2-container-multi {
+	display: block;
+	font-size: 16px;
+	font-family: inherit;
+	background-color: #FFF;
+	background-image: url("../images/select-arrows.png");
+	background-image: linear-gradient(transparent, transparent),url("../images/select-arrows.svg");
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.select-box, .input-text, .text-area, .select2-container-multi {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-background-clip: padding;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 2px solid #9A9A99;
+	-webkit-transition: border .15s ease-in;
+	-moz-transition: border .15s ease-in;
+	-o-transition: border .15s ease-in;
+	transition: border .15s ease-in;
+	-webkit-transform: translateZ(0);
+	-webkit-font-smoothing: subpixel-antialiased;
+	border: 2px solid rgba(99,99,98,0.35);
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+
+.select2-container, .select2-drop, .select2-search, .select2-search input {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.select2-container {
+	margin: 0;
+	position: relative;
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+}
+
+.thankyou{
+	background-color: #f2f2f1;
+	padding: 35px 0px;
+}
+
+.thankyou .wrap{
+	width: 464px;
+	text-align: center;
+	background: #fff;
+	padding: 25px 9%;
+	padding-bottom: 60px;
+	margin: 0 auto;
+}
+
+.thankyou .wrap h2{
+	color: #454649;
+	font-size: 32px;
+	line-height: 38px;
+	margin: 15px 0px;
+}
+
+.thankyou .wrap p{
+	color: #36312a;
+	font-size: 17px;
+	line-height: 24px;
+	margin-bottom: 15px;
+}
+
+.tuhrdiv{
+	border-bottom: 1px solid #f2f2f1;
+	margin: 35px 0px;
+}
+
+.cta-button.green{
+	border: 2px solid #2a770f;
+	border: 2px solid rgba(42, 119, 15, 0.45);
+	color: #2a770f;
+}
+.cta-button.green:hover{
+	border: 2px solid #2a770f;
+}
+
+.thankyou .wrap img{
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 25px;
+}
+
+.cta-button.black{
+	border: 2px solid #36312a;
+	border: 2px solid rgba(54, 49, 42, 0.45);
+	color: #36312a;
+	height: 34px;
+	line-height: 35px;
+	font-size: 12px;
+}
+.cta-button.black:hover{
+	border: 2px solid #36312a;
+}
+
+.needhelp{
+	margin: 18px 0px;
+	height: inherit !important;
+}
+
+/* Dropdown Button */
+
+.dropdown-content .usericondd{
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin: 20px 0px;
+	margin-right: 15px;
+}
+.ddtravelconsultant{
+	color: #595754;
+	margin: 20px 0px;
+}
+
+.ddtravelconsultant h4{
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.ddtravelconsultant span{
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	font-style: italic;
+}
+.ddtravelconsultant span.number{
+	font-style: inherit;
+	display: block;
+}
+.ddtravelconsultant span a{
+	color: #e46a5e;
+	display: inline;
+	padding: 0;
+}
+.ddtravelconsultant span a:hover{
+	text-decoration: underline;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 278px;
+	overflow: auto;
+	box-shadow: 0px 1px 21px 5px rgba(0,0,0,0.06);
+	right: 0;
+	border-radius: 5px;
+	padding: 0px 30px;
+	top: 50px;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.show {display:block;}
+
+.closeicon{
+	float: right;
+	position: relative;
+	right: -25px;
+	padding: 8px 3px;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+
+.fieldbelow{
+	margin-left: 53.5%;
+}
+.fieldbelow textarea{
+	width: 100%;
+}
+
+
+@media screen and (max-width: 630px){
+	.hideit{
+		display: none !important;
+	}
+
+	.wdt100smal{
+		width: 100% !important;
+	}
+	.commntsmall{
+		padding: 0 !important;
+		width: 100% !important;
+	}
+	.questionblock .qcontent .qquestions .questionsection {
+		font-weight: normal; 
+		font-size: 1.1em;
+	}
+	.qcheckboxsm{
+		width: 50% !important;
+	}
+	.insidebanner .banner-text h1 {
+		font-size: 26px;
+	}
+	.insidebanner .banner-text {
+		line-height: 45px;
+	}
+	.fieldbelow{
+		margin-left: 0%;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.thankyou .wrap {
+		width: 295px;
+	}
+}
+@media screen and (max-width: 400px){
+	.thankyou{
+		padding: 0;
+	}
+
+	.thankyou .wrap {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		padding-bottom: 45px;
+	}
+	#footer .copyright {
+		margin-top: 0px; 
+	}
+}
