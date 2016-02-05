@@ -1475,6 +1475,27 @@ jQuery(function($) {
                 $(this).blur();
             }).trigger('change.class_names');
         }
+        radio_fields = $('.check-box input[type=radio]');
+        if (radio_fields.length !== 0) {
+            var radio_count = 0;
+            radio_fields.each(function() {
+                radio_count++;
+                $(this).attr('id', 'radio-' +
+                    radio_count).next('label').attr(
+                    'for', 'radio-' + radio_count
+                );
+            });
+            radio_fields.unbind('change.class_names');
+            radio_fields.bind('change.class_names', function() {
+                if ($(this).is(':checked')) {
+                    $(this).parentsUntil('.qquestions').find('input[type=radio]').removeClass('checked');
+                    $(this).addClass('checked');
+                }
+                else 
+                    $(this).removeClass('checked');
+                $(this).blur();
+            }).trigger('change.class_names');
+        }
         $('.select-box select').focus(function() {
             $(this).parent().addClass('focus');
         }).blur(function() {

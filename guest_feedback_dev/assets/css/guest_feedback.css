@@ -106,12 +106,12 @@
 .banner-gradient .gradient {
 	width: 100%;
 	height: 207px;
-	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.8)));
-	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
-	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
-	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.8) 100%);
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.24) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.24)));
+	background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.24) 100%);
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.24) 100%);
+	background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.24) 100%);
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.24) 100%);
 	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='a6000000', GradientType=0);
 	background-repeat: repeat-x;
 	z-index: 9;
@@ -364,7 +364,7 @@
 	letter-spacing: 0.025em;
 	max-width: 950px;
 	font-weight: 400;
-	background: url("../images/banner-icon.png") no-repeat;
+	background: url("../images/speech-bubble-icon.svg") no-repeat;
 	padding-left: 55px;
 	margin-left: 20px;
 }
@@ -449,7 +449,7 @@
 .questionblock .qcontent .qquestions{
 	width: 100%;
 	display: inline-block;
-	border-bottom: 1px dashed #36312a;
+	border-bottom: 1px dotted #36312a;
 	margin-top: 18px;
 	padding-bottom: 15px;
 }
@@ -499,7 +499,7 @@
 	height: 70px;
 	font-family: inherit;
 	padding: 9px;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 1.2em;
 	resize: vertical;
 	width: 100%;
@@ -648,6 +648,12 @@
 .check-box.small input[type=checkbox]
 .checked+label.check{background-position:0 -14px}
 
+/*------------Radio Buttons---------------*/
+
+.check-box input[type=radio]{position:absolute;z-index:-1000;left:-1000px;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0}
+.check-box input[type=radio]+label{display:inline-block;background-repeat:no-repeat;background-position:0 0;vertical-align:middle;cursor:pointer;line-height:1.2em}
+.check-box input[type=radio]
+.check-box.small input[type=radio]
 
 /*----------multi container---------*/
 .select2-container-multi {
@@ -807,9 +813,9 @@
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
-	min-width: 278px;
+	min-width: 320px;
 	overflow: auto;
-	box-shadow: 0px 1px 21px 5px rgba(0,0,0,0.06);
+	box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.34);
 	right: 0;
 	border-radius: 5px;
 	padding: 0px 30px;
@@ -991,4 +997,35 @@ td.plupload_cell.plupload_file_name {
     font-size: 12px;
     font-weight: 500;
     border-radius: 5px;
+}
+#myDropdown .number .divider_help {
+    color: #bcbcbc;
+    font-style: normal;
+    margin: 0 7px;
+}
+#header .wrap {
+    padding-left: 41px;
+    padding-right: 41px;
+}
+.introduction .standard-type .salutation_banner {
+    margin: 0;
+    font-weight: 600;
+}
+.designation_banner{
+		font-style: italic;
+}
+.qlabelcont div {
+    font-size: medium;
+}
+.check-box input[type=radio] {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
 }

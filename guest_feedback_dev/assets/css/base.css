@@ -467,6 +467,9 @@ h5 {
 .check-box input[type=checkbox].checked+label .check {
     background-position: 0 -20px
 }
+.check-box input[type=radio].checked+label .check {
+    background-position: 0 -20px
+}
 .check-box.small label .check {
     width: 14px;
     height: 14px;
@@ -538,7 +541,7 @@ h5 {
     height: 78px;
     font-family: inherit;
     padding: 12px;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 1.2em;
     resize: vertical
 }
