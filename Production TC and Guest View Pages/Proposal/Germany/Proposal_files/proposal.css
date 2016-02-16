@@ -1,0 +1,602 @@
+/* line 5, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, img{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+
+/*Custom css*/
+
+.proposal-approve {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow: hidden;
+    width: 1164px;
+}
+/* line 30, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 120, form_elements/*.png */
+.form_elements-sprite {
+  background-image: url('/images/form_elements-sfdaeea566a.png');
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: 'soin_sans_proroman';
+  src: url("../fonts/soin.sans.pro.roman.woff") format("woff"), url("../fonts/soin.sans.pro.roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'soin_sans_promedium';
+  src: url("../fonts/soin.sans.pro.medium.woff") format("woff"), url("../fonts/soin.sans.pro.medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 4, ../sass/_style.scss */
+.container {
+  margin: 0 auto;
+  width: 1180px;
+  font-family: soin_sans_proroman;
+  padding: 0px;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 10, ../sass/_style.scss */
+header, .header_style {
+  background-color: #6a5741;
+  height: 60px;
+  font-family: soin_sans_proroman;
+}
+
+/* line 16, ../sass/_style.scss */
+.header_style {
+  border-top: 2px solid #FFF;
+}
+/* line 27, ../sass/_style.scss */
+h1, h2, .tab_container span {
+  margin: 0 auto;
+  width: 1180px;
+  padding: 20px 0px;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+}
+/* line 33, ../sass/_style.scss */
+h1 a, h2 a, .tab_container span a, h1 a:hover, h2 a:hover, .tab_container span a:hover, h1 a:link, h2 a:link, .tab_container span a:link, h1 a:visited, h2 a:visited, .tab_container span a:visited, h1 a:active, h2 a:active, .tab_container span a:active, h1 a:focus, h2 a:focus, .tab_container span a:focus {
+  color: #fff;
+}
+
+/* line 37, ../sass/_style.scss */
+h2, .tab_container span {
+  width: auto;
+  color: #7B786E;
+  padding-left: 20px;
+}
+/* line 43, ../sass/_style.scss */
+h2 a, .tab_container span a, h2 a:hover, .tab_container span a:hover, h2 a:link, .tab_container span a:link, h2 a:visited, .tab_container span a:visited, h2 a:active, .tab_container span a:active, h2 a:focus, .tab_container span a:focus {
+  color: #7B786E;
+}
+
+/* override Bootstrap panel */
+/* line 48, ../sass/_style.scss */
+.panel {
+  margin: 0px !important;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* line 55, ../sass/_style.scss */
+.tab {
+  border-bottom: 1px solid #221f16;
+}
+
+/* line 58, ../sass/_style.scss */
+.tab_container {
+    font-family: soin_sans_proroman;
+    height: 65px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 12px;
+    width: 1180px;
+}
+/* line 62, ../sass/_style.scss */
+.tab_container img {
+  position: relative;
+  top: 12px;
+}
+/* line 66, ../sass/_style.scss */
+.tab_container span {
+  padding: 20px;
+  font-size: 18px;
+}
+/* line 70, ../sass/_style.scss */
+.tab_container span.active {
+  color: #fff;
+  border-top: 8px solid #715e48;
+  position: relative;
+  display: inline-block;
+  top: -4px;
+}
+/* line 76, ../sass/_style.scss */
+.tab_container span.active span {
+  background: url("../images/others/arrow_down_dark.png") no-repeat center bottom;
+  position: absolute;
+  left: 35%;
+  top: 48%;
+  z-index: 1;
+}
+/* line 85, ../sass/_style.scss */
+.tab_container .tab1 {
+  margin-left: 135px;
+}
+/* line 88, ../sass/_style.scss */
+.tab_container .tab2, .tab_container .tab3 {
+  margin-left: 15px;
+}
+
+/* line 94, ../sass/_style.scss */
+a, a:hover, a:link, a:visited, a:active, a:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 99, ../sass/_style.scss */
+a:hover {
+  color: inherit;
+}
+
+/* line 102, ../sass/_style.scss */
+.tab {
+  background-color: #36312b;
+}
+
+body section.container-fluid {
+    margin-top: 0 !important;
+}  
+
+.ittinary_description {
+    max-width: 100%;
+}
+
+.book_my_trip {
+    float: right;
+    padding: 13px 0;
+    text-align: center;
+    width: auto;
+}
+
+.book_my_trip > a {
+  background-color: #dc665a;
+  border-radius: 6px;
+  color: #ffffff;
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 7px 20px;
+  width: 100%;
+}
+/* line 305, ../sass/_style.scss */
+.terms form, .billing_info form {
+  margin-top: 22px;
+  line-height: 20px;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.terms form:after, .billing_info form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 310, ../sass/_style.scss */
+.terms label, .billing_info label {
+  display: inline;
+  font-size: 18px;
+  padding-left: 30px;
+  float: left;
+  width: 800px;
+  color: #686868;
+}
+/* line 318, ../sass/_style.scss */
+.terms input[type="checkbox"], .billing_info input[type="checkbox"] {
+  display: none;
+}
+/* line 321, ../sass/_style.scss */
+.terms input[type="checkbox"] + label, .billing_info input[type="checkbox"] + label {
+  background: url("../images/form_elements/check-off.png") no-repeat;
+}
+/* line 325, ../sass/_style.scss */
+.terms input[type="checkbox"]:checked + label, .billing_info input[type="checkbox"]:checked + label {
+  background: url("../images/form_elements/check-on.png") no-repeat;
+}
+
+/* line 533, ../sass/_style.scss */
+.billing_info label {
+  float: none;
+  width: auto;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+/* line 599, ../sass/_style.scss */
+.hotel_option {
+  margin: 0 auto;
+  padding: 45px 86px;
+}
+/* line 602, ../sass/_style.scss */
+.hotel_option form {
+  margin-bottom: 5px;
+}
+/* line 605, ../sass/_style.scss */
+.hotel_option p {
+  margin-bottom: 55px;
+  color: #686868;
+  font-size: 18px;
+}
+/* line 608, ../sass/_style.scss */
+.hotel_option .cancel {
+  color: #757575;
+  margin-left: 15px;
+}
+/* line 612, ../sass/_style.scss */
+.hotel_option label {
+  padding: 10px 0px 25px 64px;
+  font-size: 18px;
+  display: inline-flex;
+  line-height: 25px;
+}
+/* line 615, ../sass/_style.scss */
+.hotel_option label span {
+  font-family: soin_sans_promedium;
+}
+/* line 620, ../sass/_style.scss */
+.hotel_option label[for="hotel1"] {
+  padding-right: 35px;
+}
+/* line 626, ../sass/_style.scss */
+.hotel_option input[type="checkbox"] + label {
+  background: url("../images/form_elements/proposal-check-off.png") no-repeat;
+}
+/* line 630, ../sass/_style.scss */
+.hotel_option input[type="checkbox"]:checked + label {
+  background: url("../images/form_elements/proposal-check-on.png") no-repeat;
+}
+
+/* line 460, ../sass/_style.scss */
+.payment_instructions ol li {
+  margin-bottom: 20px;
+}
+/* line 462, ../sass/_style.scss */
+.payment_instructions ol li span {
+  position: relative;
+  left: 10px;
+  font-weight: normal;
+}
+
+.payment_info {
+  margin-top: 35px;
+  background-color: #f6f6f6;
+  padding-bottom: 22px;
+  margin-bottom: 40px;
+}
+
+.payment_info > div {
+  border-left: 1px solid #ABABAB;
+  margin-left: 45px;
+}
+
+.payment_info ul:first-child {
+  list-style: none;
+  margin: 40px 0px 25px -3px;
+  color: #686868;
+}
+
+.payment_info ul:first-child li {
+  font-family: soin_sans_promedium;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.payment_info ul:first-child li:before {
+    content: "•";
+    font-size: 170%;
+    padding-right: 15px;
+    margin-left: -3px;
+}
+
+.payment_info ul:first-child li span {
+  font-size: 18px;
+}
+
+.payment_info ul:first-child li:first-child {
+  position: relative;
+  top: -10px;
+  margin-bottom: 18px;
+}
+
+.payment_info ul:first-child li:last-child {
+  margin-bottom: 0px;
+  position: relative;
+  bottom: -10px;
+  margin-top: -9px;
+}
+
+.payment_info ul:first-child li:last-child span {
+  font-size: 24px;
+}
+
+.payment_info ul:first-child li:last-child span:first-child {
+  font-family: soin_sans_proroman;
+}
+
+.payment_info .pay_amt {
+  text-align: right;
+  list-style: none;
+  padding-right: 30px;
+  margin-top: -40px;
+}
+
+.payment_info .pay_amt li {
+  font-family: soin_sans_promedium;
+  font-size: 18px;
+  color: #b99a76;
+  font-size: 24px;
+}
+
+.payment_info .pay_amt li span:first-child {
+  font-family: soin_sans_proroman;
+}
+
+.payment {
+  background-color: #DC665A;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid #DC665A;
+  border-radius: 4px;
+  /*margin-top: 40px;*/
+  display: inline-block;
+  /*margin-bottom: 20px;*/
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: soin_sans_promedium;
+}
+.payment:hover, .payment:focus {
+  color: #fff;
+}
+
+.hotel_option p {
+    color: #686868;
+    font-size: 18px;
+    margin-bottom: 55px;
+}
+
+.billing_info .info a {
+    text-decoration: none;
+}
+
+a.payment.hotel_payment {
+    color: white;
+}
+
+
+/* custom css */
+.help-option-ui .modal-lg {
+  width: 1035px;
+  font-family: soin_sans_proroman;
+}
+
+.help-option-ui .modal-content {
+  border-radius: 0px;
+}
+
+.hotel_option {
+  margin: 0 auto;
+  padding: 45px 86px;
+}
+
+.hotel_option form {
+  margin-bottom: 5px;
+}
+
+.hotel_option p {
+  margin-bottom: 55px;
+  color: #686868;
+  font-size: 18px;
+}
+.hotel_option .cancel {
+  color: #757575;
+  margin-left: 15px;
+}
+
+.hotel_option label {
+  padding: 10px 0px 25px 64px;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 25px;
+}
+
+.billing_info input[type="checkbox"] {
+  display: none;
+}
+
+.hotel_option .buttons_div {
+  margin: 20px 0px;
+}
+
+.hotel_option .info span a {
+  font-size: 17px;
+  color: #686868;
+}
+
+.tab_container span:hover {
+    color: #ffffff;
+}
+
+/*Fixed header*/
+section.container-fluid.first_section {
+    padding-top: 102px;
+}
+
+#top.tab {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.tab2.inactive_booking {
+    display: none !important;
+}
+
+.tab3.inactive_booking {
+    display: none !important;
+}
+
+#igonre_me {
+    background: url("../images/form_elements/proposal-check-on.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    opacity: 0;
+    height:0
+}
+
+.info_booking_pop {
+    color: #686868;
+}
+
+.info_booking_pop > a {
+    color: #dc665a !important;
+    font-size: 15px !important;
+    font-weight: 400;
+}
+
+.download_trip {
+  background-clip: padding-box;
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 2px solid rgba(185, 162, 132, 0.45);
+  color: #c4ad8e !important;
+  font-family: soin_sans_proroman;
+  letter-spacing: 0.075em;
+  padding: 10px 16px 8px !important;
+  text-transform: uppercase;
+  transition: border 0.15s ease-in 0s;
+}
+
+.download_trip:hover {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #b9a284;
+    color: #c4ad8e !important;
+}
+
+.download_trip span {
+    margin: 0;
+    padding: 0 10px 0 1px;
+    position: relative;
+    top: -8px;
+}
+
+.book_my_trip.no_padding {
+    float: right;
+    padding: 11px 0 0;
+}
+
+body footer {
+  background: none repeat scroll 0 0 #36312b !important;
+  color: #ffffff !important;
+  font-family: Soin_sans_proroman;
+  font-size: 15px !important;
+  left: 0;
+  max-width: 100%;
+  padding: 0 !important;
+  position: absolute;
+  width: 24000px !important;
+}
+
+footer div {
+  font-size: 15px !important;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 24px 46px;
+  width: 2280px;
+}
+
+footer span {
+  color: #ffffff !important; 
+  font-size: 15px !important;
+}
+
+footer a {
+  float: right;
+  padding: 0 12px;
+  color: #ffffff !important;
+  margin-right:0 !important;
+  font-size: 15px !important;
+}
+
+.tab_left {
+    float: left;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 20px;
+    width: auto;
+}
+
+.tab_container .tab_left img {
+    top: 18px;
+}
+
+.tab_left a, .tab_left img {
+    display: inline-block;
+    float: left;
+}
+
+.tab_container .tab_left .active span {
+    top: 53%;
+}
+
+.tab_container .tab1 {
+    padding: 16px 20px;
+}
+
+.tab_container .tab2 {
+    padding: 16px 20px;
+    border-top: 8px solid #715e48;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+}
+
+.tab_container .tab3 {
+    padding: 16px 20px;
+    border-top: 8px solid #715e48;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+}
