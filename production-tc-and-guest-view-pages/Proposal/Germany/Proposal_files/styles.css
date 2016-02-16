@@ -1,0 +1,1060 @@
+/******************* Start of Common Styles *****************/
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin:0 auto;	
+	max-width:1366px;
+	min-width: 320px;
+	background: #ECEBE9;
+}
+
+body p{
+font-size:16px;
+font-weight:300;
+}
+
+body nav.navbar {
+	background: #662D24;
+	border:0;
+	margin: 0;
+}
+
+body section.container-fluid h1 {
+	font-size: 48px;
+	font-weight: 100;
+	padding: 0px;
+	margin-bottom: 25px;
+	color: #CDCDCD;
+}
+
+body section.container-fluid h2 {
+	font-size: 48px;
+	font-weight: 100;
+	padding: 0px;
+	margin-bottom: 25px;
+	color: #D35C1C;
+}
+
+body section h3 {
+	font-size: 24px;
+	line-height: 30px;
+	color: #595855;
+}
+
+body section .content p, body section ul li span {
+	font-size: 16px;
+	line-height: 24px;
+	color: #595754;
+	font-weight: 300;
+}
+
+body section ul {
+        color: #595754;
+        padding-left: 15px;
+}
+
+body section ul li {
+	font-size: 9px;
+	color: #b3b1ad;
+	margin-bottom: 3px;
+}
+
+body section .content h4 {
+	font-size: 16px;
+	line-height: 24px;
+	color: #595754;
+	font-weight: bold;
+	margin-bottom: 0px;
+	font-weight: 600;
+}
+
+body section .col-md-1, body section .col-md-2, body section .col-md-3, body section .col-md-4, body section .col-md-5, body section .col-md-6, body section .col-md-7, body section .col-md-8, body section .col-md-9, body section .col-md-10, body section .col-md-11, body section .col-md-12 {
+	padding:0;
+}
+
+body section div a {
+	font-size: 16px;
+	line-height: 26px;
+	color: #d35c1c;
+	text-decoration: underline;
+	outline: none;
+}
+
+body section div a:hover, body section div a:visited, body section div a:focus, body section div a:link {
+	color: #d35c1c;
+	text-decoration: underline;
+}
+
+body section .support {
+	padding: 10px 0px 0px;
+}
+
+body section .content p.cost{
+	font-size: 24px !important;
+	line-height: 24px;
+	color: #83322c;
+	font-weight: 600 !important;
+}
+body section .content span.option {
+	font-size: 18px !important;
+	line-height: 24px;
+	color: #83322c;
+	font-weight: 500 !important;
+}
+body section .content p.cost span {
+	font-size: 16px;
+	font-weight: 100;
+}
+.f10{
+font-size:10px;
+}
+.f12{
+font-size:12px;
+}
+.f14{
+font-size:14px;
+}
+.f16{
+font-size:16px;
+}
+.f16{
+font-size:16px;
+}
+.f18{
+font-size:18x;
+}
+.f20{
+font-size:20px;
+}
+.displaynone{
+display:none !important;
+}
+.center{
+text-align:center;
+}
+.bottom_dashed_border{
+border-bottom: 1px dashed #DBDAD9;
+}
+b{
+font-weight:600;
+}
+/******************* End of Common Styles *****************/
+
+/******************* Start of Header Styles *****************/
+
+body nav.navbar .navbar-header a.navbar-brand {
+	outline: none;
+	background: url(../images/logo.png) left top no-repeat;
+	color: transparent;
+	margin: 15px 0 5px;
+}
+
+body nav.navbar .container-fluid {
+	padding: 0px;
+	margin: 0px auto;
+	width: 70%;
+}
+
+body nav.navbar #navbar ul.nav {
+	margin-right: 0;
+}
+
+body nav.navbar #navbar ul li a {
+	background: none;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 15px 35px;
+	background: url(../images/sprite.png) 13px 16px no-repeat;
+	margin: 10px 0;
+	outline: none;
+        cursor :pointer;
+}
+
+body nav.navbar #navbar ul li.customer a {
+	background-position:13px -25px;
+}
+
+body nav.navbar #navbar ul li.trip a {
+	background-position:13px -68px;
+}
+
+body nav.navbar #navbar ul li:last-child a {
+	padding-right: 15px;
+}
+
+/******************* End of Header Styles *****************/
+
+/******************* Start of Trip Proposal Styles *****************/
+
+body section.container-fluid {
+	padding: 35px 75px;
+	width: 70%;
+	margin: 70px auto 0px;
+	background: #FFF;
+	position: relative;
+}
+
+body section .trip-proposal > div {
+	padding: 0;
+	display: inline-block;
+	width: 100%;
+}
+
+body section .trip-proposal .content {
+	padding-bottom: 35px;
+	border-bottom: 1px dashed #DBDAD9;
+}
+
+body section .trip-proposal .proposal-info div {
+	padding: 17px 23px;
+	border: 2px solid #E3CAC8;
+}
+
+body section .trip-proposal > div > div p {
+	margin-bottom: 0px;
+	font-size: 14px;
+	color: #83322C;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+body section .trip-proposal > div > div span {
+	font-weight: 100;
+	margin-right: 3px;
+}
+
+body section .content h4 + p {
+	margin-bottom: 20px;
+}
+
+body section .travel-consultant {
+	margin: 15px 0 20px;
+}
+
+body section .travel-consultant > div {
+	padding: 10px 0;
+}
+
+body section .travel-consultant > div > div:first-child {
+	padding-left: 0;
+}
+
+body section .travel-consultant div img {
+	border: 1px solid #eee;
+	border-radius: 50%;
+	padding: 4px;
+	background: none repeat scroll 0% 0% #FFF;
+	height: 92px;
+	width: 92px;
+}
+
+body section .travel-consultant div div {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 300;
+}
+
+/*body section .travel-consultant > div > div:last-child {
+	padding: 8px 0px 0px 15px;
+}*/
+
+body section .travel-consultant div .name {
+	color: #6b6862;
+	font-weight: 600;
+}
+
+body section .travel-consultant div .number {
+	color: #595855;
+}
+
+/******************* End of Trip Proposal Styles *****************/
+
+/******************* Start of Trip Itinerary Styles *****************/
+
+body section .travel-itinerary .travel-info {
+	margin-top: 10px;	
+}
+
+body section .travel-itinerary .travel-info > div:last-child {
+	text-align: center;
+}
+
+body section .travel-itinerary .travel-info .travel-info-header span {
+	padding: 10px;
+	background: none repeat scroll 0% 0% #F6F1F0;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #83322C;
+	border-right: 2px solid #FFF;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+body section .travel-itinerary .travel-info .travel-info-body {
+	border-bottom: 3px solid #ededed;
+	padding-bottom: 20px;
+}
+
+body section .travel-itinerary .travel-info .travel-info-body span {
+	padding: 3px 10px;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #83322C;
+	border-right: 2px solid #FFF;
+}
+
+body section .travel-itinerary .travel-info .travel-info-table .support p {
+	margin-bottom: 0;
+	line-height: 20px;
+	font-size: 15px;
+}
+
+body section .travel-itinerary .destination-detail {
+	margin: 50px 0px 20px;
+}
+
+body section .travel-itinerary .destination-detail h5 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #595855;
+	padding: 15px 0;
+	border-bottom: 1px dashed #DBDAD9;
+}
+
+body section .travel-itinerary .destination-detail h5 span {
+	float: right;
+}
+
+body section .travel-itinerary .destination-detail > p {
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #83322c;
+	margin: 15px 0 20px;
+}
+
+body section .travel-itinerary .destination-detail .destination-img {
+	margin-bottom: 15px;
+}
+
+body section .travel-itinerary .destination-detail .destination-desc {
+	margin-bottom: 10px;
+}
+
+body section .travel-itinerary .destination-detail .destination-desc h4 {
+	line-height: 24px;
+	margin: 10px 0 0;
+	text-transform: none;
+}
+
+body section .travel-itinerary .destination-detail .highlights-activities {
+	border-top: 2px solid #EDEDED;
+}
+
+body section .travel-itinerary .destination-detail h4 {
+	text-transform: uppercase;
+	line-height: 15px;
+	margin: 20px 0px 15px;
+}
+
+body section .travel-itinerary .destination-detail .hotel-info p {
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+body section .travel-itinerary .destination-detail .hotel-info p span {
+	font-weight: 100;
+}
+
+body section .travel-itinerary .destination-detail .highlights-activities div:first-child {
+	margin-bottom: 30px;
+	border-bottom: 2px solid #EDEDED;
+	padding-bottom: 15px;
+}
+
+body section .travel-itinerary .destination-detail .highlights-activities > div > div:first-child {
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+
+body section .travel-itinerary .destination-detail .highlights-activities ul li a {
+	font-weight: 100;
+	text-decoration: none;
+	outline: none;
+	background: url(../images/sprite.png) right -115px no-repeat;
+	padding-right: 23px;
+}
+
+body section .travel-itinerary .destination-detail .panel-group h4 {
+	margin: 0;
+}
+
+body section .travel-itinerary .destination-detail .panel-group a {
+	font-size: 14px;
+	color: #595754;
+	text-decoration: none;
+	text-transform: capitalize;
+	outline: none;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel {
+	position: relative;
+        border: medium none;
+        box-shadow: none;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel .panel-heading a .glyphicon-plus-sign {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 19px;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel .panel-heading a .glyphicon-minus-sign {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 19px;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel .panel-heading a.collapsed + a.collapsed .glyphicon-plus-sign {
+	display: block;
+}
+
+/*
+body section .travel-itinerary .destination-detail .panel-group .panel .panel-heading a.collapsed .glyphicon-minus-sign {
+	display: none;
+}
+
+*/
+
+body section .travel-itinerary .destination-detail .panel-group .panel .panel-heading a.collapsed + a.collapsed .glyphicon-minus-sign {
+    display: none;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel-heading {
+	padding: 7px 10px;
+	color: #595754;
+        border: 1px solid #DDD;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel-body {
+	font-weight: 300;
+	font-size: 15px;
+	color: #595754;
+	/*text-align: justify;*/
+        border: medium none;
+        padding: 15px 0px;
+}
+/******************* End of Trip Itinerary Styles *****************/
+
+/******************* Start of Trip Pricing *****************/
+
+body section .trip-pricing {
+	margin-top: 50px;
+}
+
+
+body section .trip-pricing .pricing-info {
+	margin: 10px 0;
+}
+
+body section .trip-pricing .pricing-info div {
+	padding: 15px;
+	border: 2px solid #eee;
+	height: 150px;
+}
+
+p.cost {
+  margin-top: 30px !important;
+}
+
+body section .trip-pricing .pricing-info div:last-child h3, body section .trip-pricing .pricing-info div:last-child p {
+	margin: 0 0 10px;
+}
+
+body section .trip-pricing .support p {
+	margin-bottom: 0;
+}
+
+body section .trip-pricing .price-included {
+	margin-top: 30px;
+	border-top: 1px dashed #DBDAD9;
+}
+
+body section .trip-pricing .price-not-included {
+	padding-bottom: 30px;
+}
+
+body section .trip-pricing .enchanting-india {
+	padding-top: 10px;
+	border-top: 1px dashed #DBDAD9;
+}
+
+body section .trip-pricing ul li {
+	font-size: 16px !important;
+        line-height: 24px;
+        color: #595754;
+        font-weight: 300;
+       
+}
+.priceTable ul li{
+    list-style: none !important;
+}
+
+/******************* End of Trip Pricing *****************/
+
+/******************* Start of Imp Info *****************/
+
+body section .imp-info {
+	margin-top: 50px;
+}
+
+body section .imp-info p {
+	margin-bottom: 25px;
+}
+
+body section .imp-info .dont-forget {
+	padding-top: 10px;
+	border-top: 1px dashed #DBDAD9;
+}
+.ittinary_description, .desc_h1, .end_image_div{
+	margin-top: 30px;
+	display: inline-block;
+}
+
+/******************* End of Imp Info *****************/
+
+/******************* Start of Book Your Trip *****************/
+
+body section .book-your-trip {
+	margin-top: 50px;
+}
+
+body section .book-your-trip .book-your-trip-details {
+	font-size: 24px;
+	line-height: 30px;
+	color: #83322c;
+}
+
+body section .book-your-trip p {
+	margin-bottom: 25px;
+}
+
+body section .book-your-trip .cancellation-refund {
+	padding-top: 10px;
+	border-top: 1px dashed #DBDAD9;
+}
+
+body section .book-your-trip ul li {
+	color: #595754;
+}
+
+/******************* End of Book Your Trip *****************/
+
+/******************* Start of Hotel Information *****************/
+
+/******************* End of Book Your Trip *****************/
+
+/******************* Start of Hotel Information *****************/
+
+body section .hotel-info p {
+	margin-bottom: 25px;
+}
+
+body section .hotel-info .hotels-detail {
+	padding: 15px 0 0;
+	border-top: 1px dashed #DBDAD9;
+	margin-top: 20px;
+}
+
+body section .hotel-info .hotels-detail:last-child {
+	border-bottom: 1px dashed #DBDAD9;
+	padding-bottom: 20px;
+}
+body section .hotel-info .hotels-detail div.option2{	
+	margin-top: 15px;
+}
+
+body section .hotel-info ul li {
+	color: #595754;
+}
+
+body section .hotel-info div.city {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #83322C;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+body section .hotel-info .hotel-location h3 {
+	margin: 0;
+}
+
+body section .hotel-info .hotel-interiors img {
+	margin-left: 9px;
+}
+
+
+/*
+body section .hotel-info-detail {
+	margin-top: 50px;
+}
+
+body section .hotel-info-detail p {
+	margin-bottom: 25px;
+}
+
+body section .hotel-info-detail .hotels-detail {
+	padding: 30px 0 0;
+	border-top: 1px dashed #DBDAD9;
+	margin-top: 20px;
+}
+
+body section .hotel-info-detail .hotels-detail:last-child {
+	
+	padding-bottom: 20px;
+}
+
+body section .hotel-info-detail ul li {
+	color: #595754;
+}
+
+body section .hotel-info-detail .hotel-location div {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #83322C;
+	text-transform: uppercase;
+	margin-top: 15px;
+}
+
+body section .hotel-info-detail .hotel-location h3 {
+	margin: 0;
+}
+*/
+
+/******************* End of Hotel Information *****************/
+
+/******************* Start of Thank You *****************/
+
+body section .thank-you {
+	margin-top: 50px;
+}
+
+body section .thank-you .content p {
+    margin-bottom: 45px;
+}
+
+body section .thank-you .ty-desc {
+	padding-top: 30px;
+	border-top: 1px dashed #DBDAD9;
+	margin-top: 20px;
+}
+
+body section .thank-you .travel-consultant h3 {
+	display: none;
+}
+
+/******************* End of Thank You *****************/
+
+/******************* Start of Logo *****************/
+
+body section .logo {
+margin: 20px 0px 50px;
+text-align: center;
+}
+
+body section .logo img {
+	margin: 0 20px;
+}
+
+/******************* End of Logo *****************/
+
+/******************* Start of Back to Top *****************/
+
+body section .back-to-top {
+	text-align: center;
+	margin: 20px 0;
+}
+
+body section .back-to-top a {
+	font-size: 17px;
+	font-weight: 100;
+	outline: none;
+}
+
+body section .btn-generate-page {
+	outline: none !important;
+	position: fixed;
+	top: 215px;
+	margin-left: 107px;
+}
+
+/******************* End of Back to Top *****************/
+
+/******************* Start of Footer *****************/
+
+body footer {
+	padding: 35px 75px;
+	width: 70%;
+	margin: 3px auto 0;
+	background: #FFF;
+}
+
+body footer span, body footer a {
+	font-size: 14px;
+	line-height: 26px;
+	color: #BCBCBC;
+	font-weight: 300;
+}
+
+body footer a {
+	text-decoration: underline;
+	outline: none;
+	float: right;
+	margin-right: 15px;
+}
+
+body footer a:hover, body footer a:visited, body footer a:link, body footer a:focus, body footer a:active {
+	color: #BCBCBC;
+}
+
+/******************* End of Footer *****************/
+/*trigger block*/
+
+.trigger_editor {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.trigger_editor li {
+  padding: 0;
+  margin: 1px !important;
+} 
+
+.wysihtml5-toolbar a.btn.btn-default {
+    box-sizing: border-box;
+    font-size: 11px !important;
+    padding: 7px 8px;
+}
+
+.wysihtml5-toolbar li {
+    margin: 0 !important;
+    padding: 0px !important;
+}
+
+.wysihtml5-toolbar li.dropdown a.btn.btn-default {
+    padding: 3px 0;
+}
+
+.wysihtml5-toolbar li.dropdown a.btn.btn-default span {
+    font-size: 14px;
+}
+
+form#cust-form .btn.btn-primary.busy_on {
+    background-image: url("../images/busy_loader.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    opacity: 0.96;
+    pointer-events: none;
+    text-align: left;
+    width: 90px;
+}
+
+form#cust-form-flight-proposal .btn.btn-primary.busy_on {
+    background-image: url("../images/busy_loader.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    opacity: 0.96;
+    pointer-events: none;
+    text-align: left;
+    width: 90px;
+}
+
+.upload_on {
+    background-image: url("../images/busy_loader.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    opacity: 0.96;
+    pointer-events: none;
+    text-align: left;
+    width: 90px;
+}
+
+.upload_on {
+  display: block;
+  max-width: 100%;
+  width: 66%;
+}
+
+form#cust-form-update .btn.btn-primary.busy_on {
+    background-image: url("../images/busy_loader.gif");
+    background-position: right center;
+    background-repeat: no-repeat;
+    opacity: 0.96;
+    pointer-events: none;
+    text-align: left;
+    width: 90px;
+}
+
+#customized-page form div.tab-content div.active {
+  background: none repeat scroll 0 0 #f1f1f1;
+  padding: 10px 15px;
+}
+
+#customized-page form ul.nav li a {
+  outline: medium none;
+  text-decoration: none;
+}
+
+.payment_tab_advance .inside .content {
+  color: #d35c1c;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 2px 9px;
+}
+
+.advance_payment_tab .col-md-6 {
+    padding: 5px 10px;
+}
+
+.payment_tab_advance {
+    color: #444444;
+    overflow: hidden;
+}
+
+.advance_payment_tab {
+  border: 4px solid #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 0 1px #333c43;
+  margin: 6px;
+  overflow: hidden;
+}
+
+.advance_payment_tab p {
+    font-size: 14.5px;
+    font-weight: 500;
+}
+
+.advance_payment_tab .form-group p span {
+    font-weight: 700;
+}
+
+.payment_tab_advance.adjust_final {
+    padding-top: 15px;
+}
+
+.advance_payment_tab .form-group input {
+    max-width: 100%;
+}
+
+#customized-page .modal-dialog {
+  margin: 30px auto;
+  width: 757px;
+}
+
+#customized-page form ul.nav li.active a {
+  background: none repeat scroll 0 0 #f1f1f1;
+  border-color: #f1f1f1;
+}
+
+#cust-form .nav-tabs, #cust-form-update .nav-tabs{
+    border: 0 none;
+}
+
+#cust-form .nav-tabs > li > a:hover, #cust-form-update .nav-tabs > li > a:hover {
+    border-color: #eeeeee;
+}
+
+div#trip_documents_view {
+    background: none repeat scroll 0 0 #ffffff;
+    clear: both;
+    margin: 20px;
+    padding: 10px;
+}
+
+.documents_list {
+    border-bottom: 1px solid #808080;
+    margin: 5px;
+}
+
+.remove_document {
+    cursor: pointer;
+    float: right;
+}
+
+#trip_documents_view .file_to_remove {
+    display: none;
+}
+
+.cost{
+    border: 2px solid #eee ;
+    min-height: 125px;
+}
+.pricbox .cost {
+    font-weight: 400 !important;
+}
+.proposalcostbtm .priceTable{
+   border: 1px solid #eee !important;
+}
+.proposalcostbtm .priceTable p{
+        border: 0 !important;
+    margin-top:0 !important ;
+    min-height: 0 !important;
+}
+
+.cost  .double_options {
+	font-size: 24px !important;
+	line-height: 24px;
+	color: #83322c;
+	font-weight: 400;
+	background: none;
+	padding-left: 0;
+	float: left;
+	width: 50%;
+	padding: 25px;
+	margin: 0;
+        min-height: 178px;
+}
+
+.content .cost  div {
+	font-size: 16px;
+	font-weight: 400;
+	color: #83322c;
+}
+
+.pdnlft0 span {
+    font-weight: 600;
+}
+
+.content .double_options .singdoutxt {
+    font-weight: 400;
+}
+
+.content .cost-single {
+	padding-bottom: 15px;
+	margin: 0;
+	display: inline-block;
+}
+
+ .content .cost-single li {
+	font-size: 24px !important;
+	line-height: 24px;
+	color: #83322c;
+	font-weight: 400;
+	background: none;
+	padding: 0;
+	float: none;
+	width: 100%;
+	padding-bottom: 5px;
+	margin-top: 10px;
+}
+
+ .cost-single li span {
+	font-size: 16px;
+	font-weight: 100;
+	color: #83322c;
+}
+
+.in_content {
+    color: #000000;
+    font-weight: 600;
+    padding-left: 0;
+}
+.trippricing ul {
+	padding-left: 20px;
+	list-style-type: disc;
+}
+
+.trippricing ul li {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	color: #595754;
+	font-size: 16px !important;
+	font-weight: 300;
+	line-height: 24px;
+	padding-left: 10px;
+}
+.single_options{
+	border: 2px solid #eee ;
+}
+.double_option{
+	border-left: 2px solid #eee ;
+	
+}
+.mylist{
+	float: left;
+	padding-left: 40px;	
+	padding-top: 20px;	
+	width: 48%;
+}
+.error {
+	color: red;
+}
+
+.boxli{
+    padding-left: 15px !important;
+}
+
+.option_two{
+	border-left: 2px solid #eee;
+}
+
+.singdoutxt{
+	color: #595754 !important;
+	font-size: 16px !important;
+	line-height: 26px;
+	font-weight: bold !important;
+	clear: both;
+	display: block;
+	font-weight: normal !important;
+}
+
+.pdnlft0{	
+	padding-left: 0px !important;
+        color: #83322c !important;
+        font-weight: 400 !important;
+ }
+
+.leftoption{
+	border-left: 2px solid #eee ;
+}
+
+#flight-proposal .modal-body {
+  min-height: 500px;
+  padding-bottom: 150px;
+}
+
+#flight-proposal .modal-dialog {
+    width: 1000px;
+} 
+
+.col-md-6.col-sm-4.clear_tm {
+    clear: both;
+    display: block;
+    width: 100% !important;
+}
+
+.link_latest_proposal {
+    background-color: #cfc388;
+    font-size: 17px;
+    padding: 12px 0;
+    position: fixed;
+    text-align: center;
+    text-shadow: 0px 0px #BA9A6B;
+    width: 800px;
+    z-index: 99;
+}
+
+.link_latest_proposal a {
+  text-decoration: none !important;
+}
