@@ -1,0 +1,80 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 12, 2016, 4:15:09 PM
+    Author     : senthil
+*/
+.nav > li.checkavailability{
+    position: absolute;
+    right: 50px;
+}
+
+.hotel_option {
+    margin: 0 auto;
+    padding: 45px 86px;
+}
+
+.hotel_option form {
+    margin-bottom: 5px;
+}
+
+.hotel_option p {
+    margin-bottom: 55px;
+    color: #686868;
+    font-size: 18px;
+}
+.hotel_option .cancel {
+    color: #757575;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.hotel_option label {
+    padding: 10px 0px 25px 64px;
+    font-size: 18px;
+    display: inline-flex;
+    line-height: 25px;
+}
+
+.hotel_option label span {
+    font-weight: bold;
+}
+
+.billing_info input[type="radio"] {
+    display: none;
+}
+
+.hotel_option .buttons_div {
+    margin: 20px 0px;
+}
+.info_booking_pop {
+    color: #686868;
+    font-size: 16px;
+}
+
+.hotel_option label[for="hotel1"] {
+    padding-right: 35px;
+}
+
+.hotel_option input[type="radio"] + label {
+    background: url("../images/form_elements/proposal-check-off.png") no-repeat;
+}
+
+.hotel_option input[type="radio"]:checked + label {
+    background: url("../images/form_elements/proposal-check-on.png") no-repeat;
+}
+a.payment{
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+a.payment:hover, a.payment:visited, body section div a.payment:focus, body section div a.payment:link{
+    color:#fff;
+    text-decoration: none;
+}

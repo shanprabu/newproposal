@@ -1,0 +1,147 @@
+/**
+** Pakage : enchanting travels
+** Author : Mohammed Nadeem 
+**/
+
+/* -------------------- Common Css ------------------ */
+
+#flight-proposal a{
+	color: #dc665a;
+	text-decoration: none;
+}
+#flight-proposal a:hover{
+	color: #dc665a;
+	text-decoration: none;
+}
+
+#flight-proposal section{
+	color: #595855;
+}
+
+#flight-proposal .itinerary-creation-container{
+	background-color: #ffffff;
+	//padding: 50px;
+}
+
+
+#flight-proposal .hotel-td-opt-container{
+	background-color: #f6f6f6;
+	border: 1px solid #d9d8d8;
+	padding: 20px;
+	clear: both;
+	display: inline-block;
+	width: 100%;
+}
+
+#flight-proposal .mgn-rgt15{margin-right: 15px;}
+#flight-proposal .wdtperc965{width: 9.65%;}
+#flight-proposal .wdtperc15{width: 15%;}
+#flight-proposal .mgntp20{margin-top: 20px;}
+
+
+#flight-proposal .date_icon {
+	background: url("../images/calender-icon.png") no-repeat 95% center #fff;
+}
+#flight-proposal .pointerclass {
+	cursor: pointer;
+}
+
+#flight-proposal .intardebox{
+	float: left;
+	width: 100%;
+}
+
+#flight-proposal .intardebox label{
+	float: left;
+	line-height: 32px;
+}
+
+#flight-proposal .intardebox input{
+	float: left;
+	width: 20%;
+	margin-left: 25px;
+}
+
+#flight-proposal .inputlinefields, .inputlinefields2{
+	display: inherit;
+        float:left;
+        
+}
+
+#flight-proposal .addbtn{
+	clear: both;
+	display: inline-block;
+}
+
+#flight-proposal .addbtn img{
+	top: -2px;
+	position: relative;
+}
+
+#flight-proposal .closediv{
+	float: left;
+	position: relative;
+	bottom: -30px;
+	cursor: pointer;
+}
+
+#flight-proposal .addbtn span{
+	color: #B59D7B;
+	padding-left: 8px;
+	line-height: 24px;
+}
+
+/* ---- date picker calender ----*/
+#flight-proposal .ui-widget-header {
+	border: 1px solid #36312A !important;
+	background: #422B19 !important;
+}
+#flight-proposal .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+	border: 1px solid #36312A !important;
+	background: #422B19 !important;
+	color: #ffffff !important;
+}
+#flight-proposal .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	border: 1px solid #36312A !important;
+	background: #E4B794 !important;
+	color: #FFFFFF !important;
+}
+
+#flight-proposal .modal-dialog {
+    margin: 30px auto;
+    width: 1200px;
+}
+
+#flight-proposal .col-xs-1, #flight-proposal .col-sm-1, #flight-proposal .col-md-1, #flight-proposal .col-lg-1, #flight-proposal .col-xs-2, #flight-proposal .col-sm-2, #flight-proposal .col-md-2, #flight-proposal .col-lg-2, #flight-proposal .col-xs-3, #flight-proposal .col-sm-3, #flight-proposal .col-md-3, #flight-proposal .col-lg-3, #flight-proposal .col-xs-4, #flight-proposal .col-sm-4, #flight-proposal .col-md-4, #flight-proposal .col-lg-4, #flight-proposal .col-xs-5, #flight-proposal .col-sm-5, #flight-proposal .col-md-5, #flight-proposal .col-lg-5, #flight-proposal .col-xs-6, #flight-proposal .col-sm-6, #flight-proposal .col-md-6, #flight-proposal .col-lg-6, #flight-proposal .col-xs-7, #flight-proposal .col-sm-7, #flight-proposal .col-md-7, #flight-proposal .col-lg-7, #flight-proposal .col-xs-8, #flight-proposal .col-sm-8, #flight-proposal .col-md-8, #flight-proposal .col-lg-8, #flight-proposal .col-xs-9, #flight-proposal .col-sm-9, #flight-proposal .col-md-9, #flight-proposal .col-lg-9, #flight-proposal .col-xs-10, #flight-proposal .col-sm-10, #flight-proposal .col-md-10, #flight-proposal .col-lg-10, #flight-proposal .col-xs-11, #flight-proposal .col-sm-11, #flight-proposal .col-md-11, #flight-proposal .col-lg-11, #flight-proposal .col-xs-12, #flight-proposal .col-sm-12, #flight-proposal .col-md-12, #flight-proposal .col-lg-12 {
+    min-height: 1px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    position: relative;
+}
+
+.tt-dropdown-menu {
+    background-color: menu;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 0 #000000;
+    color: #ffffff;
+    font-size: 12px;
+    opacity: 0.97;
+    padding: 2px 6px;
+    width: 400px;
+}
+
+.tt-dropdown-menu span div p {
+    color: #777777;
+    cursor: pointer;
+    line-height: 16px;
+}
+
+.proposal-expired {
+    background-color: #cfc388;
+    font-size: 17px;
+    padding: 12px 0;
+    position: fixed;
+    text-align: center;
+    text-shadow: 1px 0 #ffffff;
+    width: 835px;
+}
