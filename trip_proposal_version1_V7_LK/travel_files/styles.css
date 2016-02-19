@@ -1,0 +1,1675 @@
+/******************* Start of Common Styles *****************/
+@font-face {
+    font-family: 'Soin_Sans_Pro_Bold';
+    src: url('../fonts/Soin_Sans_Pro_Bold.eot');
+    src: url('../fonts/Soin_Sans_Pro_Bold.woff') format('woff'),
+        url('../fonts/Soin_Sans_Pro_Bold.ttf') format('truetype'),
+        url('../fonts/Soin_Sans_Pro_Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+@font-face {
+    font-family: 'Soin_Sans_Pro_Light';
+    src: url('../fonts/Soin_Sans_Pro_Light.eot');
+    src: url('../fonts/Soin_Sans_Pro_Light.woff') format('woff'),
+        url('../fonts/Soin_Sans_Pro_Light.ttf') format('truetype'),
+        url('../fonts/Soin_Sans_Pro_Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+@font-face {
+    font-family: 'Soin_Sans_Pro_Medium';
+    src: url('../fonts/Soin_Sans_Pro_Medium.eot');
+    src: url('../fonts/Soin_Sans_Pro_Medium.woff') format('woff'),
+        url('../fonts/Soin_Sans_Pro_Medium.ttf') format('truetype'),
+        url('../fonts/Soin_Sans_Pro_Medium.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+@font-face {
+    font-family: 'Soin_Sans_Pro_Roman';
+    src: url('../fonts/Soin_Sans_Pro_Roman.eot');
+    src: url('../fonts/Soin_Sans_Pro_Roman.woff') format('woff'),
+        url('../fonts/Soin_Sans_Pro_Roman.ttf') format('truetype'),
+        url('../fonts/Soin_Sans_Pro_Roman.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+@font-face {
+    font-family: 'Soin_Sans_Pro_Roman';
+    src: url('../fonts/Soin_Sans_Pro_Roman.eot');
+    src: url('../fonts/Soin_Sans_Pro_Roman.woff') format('woff'),
+        url('../fonts/Soin_Sans_Pro_Roman.ttf') format('truetype'),
+        url('../fonts/Soin_Sans_Pro_Roman.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+@font-face {
+    font-family: 'SourceSansPro-Regular';
+    src: url('../fonts/SourceSansPro-Regular.eot');
+    src: url('../fonts/SourceSansPro-Regular.woff') format('woff'),
+        url('../fonts/SourceSansPro-Regular.ttf') format('truetype'),
+        url('../fonts/SourceSansPro-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body{
+	font-family: 'Soin_Sans_Pro_Light', sans-serif;
+	margin:0 auto;
+	
+	max-width:1366px;
+	min-width: 320px;
+
+	background: #ECEBE9;
+}
+
+body nav.navbar {
+	background: #662D24;
+	border:0;
+	margin: 0;
+}
+
+body.logged-in .navbar.navbar-fixed-top {
+	/*top:32px;*/
+}
+
+body section.container-fluid h1 {
+	font-size: 48px;
+	font-weight: 100;
+	padding: 0px;
+	margin-bottom: 25px;
+	color: #CDCDCD;
+}
+
+body section.container-fluid h2 {
+	font-size: 48px;
+	font-weight: 100;
+	padding: 0px;
+	margin-bottom: 25px;
+	color: #D35C1C;
+}
+
+body section h3 {
+	font-size: 24px;
+	line-height: 30px;
+	color: #595855;
+}
+
+body section .content p, body section ul li span {
+	font-size: 16px;
+	line-height: 24px;
+	color: #595754;
+}
+
+body section ul {
+	list-style: outside none none;
+	padding-left: 0px;
+	color: #595754;
+	width: 100%;
+	margin: 0;
+}
+
+body section ul li {
+	font-size: 16px;
+	color: #b3b1ad;
+	margin-bottom: 3px; 
+	background: url('../images/sprite.png') no-repeat scroll 0px -146px transparent;
+	padding-left: 10px;
+}
+
+body section .modal-dialog ul li {
+	margin-bottom: 10px; 
+	background: none;
+	padding-left: 0px;
+}
+
+body section .content h4 {
+	font-size: 16px;
+	line-height: 24px;
+	color: #595754;
+	font-weight: bold;
+	margin-bottom: 0px;
+	font-weight: 600;
+}
+
+body section .col-md-1, body section .col-md-2, body section .col-md-3, body section .col-md-4, body section .col-md-5, 
+body section .col-md-6, body section .col-md-7, body section .col-md-8, body section .col-md-9, body section .col-md-10, 
+body section .col-md-11, body section .col-md-12 {
+	padding:0;
+}
+
+body section div a {
+	font-size: 16px;
+	line-height: 26px;
+	color: #d35c1c;
+	text-decoration: underline;
+	outline: none;
+}
+
+body section div a:hover, body section div a:visited, body section div a:focus, body section div a:link {
+	color: #d35c1c;
+	text-decoration: underline;
+}
+
+body section .support {
+	padding: 10px 0px 0px;
+}
+
+body nav.navbar .navbar-header a.navbar-brand {
+	outline: none;
+	background: url(../travel_files/logo.jpg) left top no-repeat;
+	color: transparent;
+	margin: 15px 0 5px;
+}
+
+body nav.navbar .container-fluid {
+	padding: 0px;
+	margin: 0px auto;
+    width: 944px;
+	}
+
+body nav.navbar #navbar ul.nav {
+	margin-right: 0;
+}
+
+body nav.navbar #navbar ul li a {
+	background: none;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 15px 20px;
+	background: url(../images/sprite.png) 13px 16px no-repeat;
+	margin: 10px 0;
+	outline: none;
+	cursor: pointer;
+}
+
+body nav.navbar #navbar ul li.customer a {
+	background-position:13px -25px;
+}
+
+body nav.navbar #navbar ul li.trip a {
+	background-position:13px -68px;
+}
+
+body nav.navbar #navbar ul li:last-child a {
+	padding-right: 15px;
+}
+body nav.navbar #navbar ul li.generate-page {
+	position: relative;
+}
+
+body nav.navbar #navbar ul li.generate-page a {
+	background: none;
+}
+
+body nav.navbar #navbar ul li.generate-page span {
+	position: absolute;
+	top: 22px;
+	left: 8px;
+	color: #FFF;
+	font-size: 20px;
+}
+
+body section.container-fluid {
+	padding: 35px 90px;
+	width: 70%;
+	margin: 70px auto 0px;
+	background: #FFF;
+	position: relative;
+}
+
+body section .trip-proposal > div {
+	padding: 0;
+	display: inline-block;
+	width: 100%;
+}
+
+body section .trip-proposal .content {
+	padding-bottom: 35px;
+	border-bottom: 1px dashed #DBDAD9;
+}
+
+body section .trip-proposal .proposal-info div {
+	padding: 17px 23px;
+	border: 2px solid #E3CAC8;
+}
+
+body section .trip-proposal > div > div p {
+	margin-bottom: 0px;
+	font-size: 14px;
+	color: #83322C;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+body section .trip-proposal > div > div span {
+	font-weight: 100;
+	margin-right: 3px;
+}
+
+body section .content h4 + p {
+	margin-bottom: 20px;
+}
+
+body section .travel-consultant {
+	margin: 15px 0 20px;
+}
+
+body section .travel-consultant > div {
+	padding: 10px 0;
+}
+
+body section .travel-consultant > div > div:first-child {
+	padding-left: 0;
+}
+
+body section .travel-consultant div img {
+	border: 1px solid #eee;
+	border-radius: 50%;
+	padding: 4px;
+	background: none repeat scroll 0% 0% #FFF;
+	height: 92px;
+	width: 92px;
+}
+
+body section .travel-consultant div div {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 300;
+}
+
+body section .travel-consultant > div > div:last-child {
+	padding: 8px 0px 0px 15px;
+}
+
+body section .travel-consultant div .name {
+	color: #6b6862;
+	font-weight: 600;
+}
+
+body section .travel-consultant div .number {
+	color: #595855;
+}
+
+body section .travel-itinerary .travel-info {
+	margin-top: 10px;	
+}
+
+body section .travel-itinerary .travel-info > div:last-child {
+	text-align: center;
+}
+
+body section .travel-itinerary .travel-info .travel-info-header span, body section .travel-itinerary .travel-info .travel-info-header div {
+	padding: 10px;
+	background: none repeat scroll 0% 0% #F6F1F0;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #83322C;
+	border-right: 2px solid #FFF;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+body section .travel-itinerary .travel-info .travel-info-body {
+	border-bottom: 3px solid #ededed;
+	padding-bottom: 20px;
+}
+
+body section .travel-itinerary .travel-info .travel-info-body span, body section .travel-itinerary .travel-info .travel-info-body div {
+	padding: 3px 10px;
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #83322C;
+	border-right: 2px solid #FFF;
+}
+
+body section .travel-itinerary .travel-info .travel-info-table .support p {
+	margin-bottom: 0;
+	line-height: 20px;
+	font-size: 15px;
+}
+
+body section .travel-itinerary .destination-detail {
+	margin: 50px 0px 20px;
+}
+
+body section .travel-itinerary .destination-detail h5 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #595855;
+	padding: 15px 0;
+	border-bottom: 1px dashed #DBDAD9;
+}
+
+body section .travel-itinerary .destination-detail h5 span {
+	float: right;
+}
+
+body section .travel-itinerary .destination-detail > p {
+	font-size: 15px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #83322c;
+	margin: 15px 0 20px;
+}
+
+body section .travel-itinerary .destination-detail .destination-img {
+	margin-bottom: 15px;
+}
+
+body section .travel-itinerary .destination-detail .destination-desc p {
+	margin-bottom: 10px;
+}
+
+body section .travel-itinerary .destination-detail .destination-desc h4 {
+	line-height: 24px;
+	margin: 10px 0 0;
+	text-transform: none;
+}
+
+body section .travel-itinerary .destination-detail .highlights-activities { 
+	border-top: 2px solid #EDEDED;
+}
+
+body section .travel-itinerary .destination-detail h4 {
+	text-transform: uppercase;
+	line-height: 15px;
+	margin: 20px 0px 15px;
+}
+
+body section .travel-itinerary .destination-detail .hotel-info p {
+	margin-bottom: 0;
+	font-weight: 600;
+}
+
+body section .travel-itinerary .destination-detail .hotel-info p span {
+	font-weight: 100;
+}
+
+body section .travel-itinerary .destination-detail .highlights-activities div:first-child {
+	margin-bottom: 30px;
+	border-bottom: 2px solid #EDEDED;
+	padding-bottom: 15px;
+}
+
+body section .travel-itinerary .destination-detail .highlights-activities > div > div:first-child {
+	margin-bottom: 0px;
+	border-bottom: none;
+}
+body section .travel-itinerary .destination-detail .highlights-activities ul li a {
+	font-weight: 100;
+	text-decoration: none;
+	outline: none;
+	background: url(../images/sprite.png) right -115px no-repeat;
+	padding-right: 23px;
+}
+body section .travel-itinerary .destination-detail .panel-group h4 {
+	margin: 0;
+}
+
+body section .travel-itinerary .destination-detail .panel-group a {
+	font-size: 14px;
+	color: #595754;
+	text-decoration: none;
+	text-transform: capitalize;
+	outline: none;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel {
+	position: relative;
+	border: medium none;
+	box-shadow: none;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel .panel-heading a .glyphicon-plus-sign {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 19px;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel .panel-heading a .glyphicon-minus-sign {
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 19px;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel .panel-heading a.collapsed + a.collapsed .glyphicon-plus-sign {
+	display: block;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel .panel-heading a.collapsed + a.collapsed .glyphicon-minus-sign {
+	display: none;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel-heading {
+	padding: 7px 10px;
+	color: #595754;
+	border: 1px solid #DDD;
+}
+
+body section .travel-itinerary .destination-detail .panel-group .panel-body {
+	font-weight: 300;
+	font-size: 15px;
+	color: #595754;
+	border: medium none;
+	padding: 15px 0px;
+}
+
+body section .trip-pricing {
+	margin-top: 50px;
+}
+
+body section .trip-pricing p {
+	margin-bottom: 25px;
+}
+
+body section .trip-pricing .pricing-info {
+	margin: 10px 0;
+}
+
+body section .trip-pricing .pricing-info .pricbox {
+	border: 2px solid #eee;
+	margin-top: 15px;
+}
+
+body section .trip-pricing .pricing-info div:last-child h3, body section .trip-pricing .pricing-info div:last-child p {
+	margin: 0 0 10px;
+}
+
+body section .trip-pricing .support p {
+	margin-bottom: 0;
+}
+
+body section .trip-pricing .price-included {
+	margin-top: 30px;
+	border-top: 1px dashed #DBDAD9;
+}
+
+body section .trip-pricing .price-not-included {
+	padding-bottom: 30px;
+}
+
+body section .trip-pricing .enchanting-india {
+	padding-top: 10px;
+	border-top: 1px dashed #DBDAD9;
+}
+
+body section .trip-pricing ul li {
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+	color: #595754;
+	font-size: 16px !important;
+	font-weight: 300;
+	line-height: 24px;
+	padding-left: 10px;
+}
+
+body section .price-not-included ul{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.price-included ul ul {
+	padding-left: 10px;
+}
+
+.price-included ul {
+	list-style: disc outside none;
+}
+
+.price-included ul ul {
+	list-style: circle outside none;
+}
+
+body section .imp-info {
+	margin-top: 50px;
+}
+
+body section .imp-info p {
+	margin-bottom: 25px;
+}
+
+body section .imp-info .dont-forget {
+	padding-top: 10px;
+	border-top: 1px dashed #DBDAD9;
+}
+
+body section .book-your-trip {
+	margin-top: 50px;
+}
+
+body section .book-your-trip .book-your-trip-details {
+	font-size: 24px;
+	line-height: 30px;
+	color: #83322c;
+}
+
+body section .book-your-trip p {
+	margin-bottom: 25px;
+}
+
+body section .book-your-trip .cancellation-refund {
+	padding-top: 10px;
+	border-top: 1px dashed #DBDAD9;
+}
+
+body section .book-your-trip .cancellation-refund ul li {
+	font-size: 16px;
+	line-height: 24px;
+	color: #595754;
+}
+
+body section .book-your-trip ul li {
+	color: #595754;
+}
+
+body section .hotel-info p {
+	margin-bottom: 25px;
+}
+
+body section .hotel-info .hotels-detail {
+	padding: 15px 0 0;
+	border-top: 1px dashed #DBDAD9;
+	margin-top: 20px;
+}
+
+body section .hotel-info .hotels-detail:last-child {
+	border-bottom: 1px dashed #DBDAD9;
+	padding-bottom: 20px;
+}
+body section .hotel-info .hotels-detail div.option2{	
+	margin-top: 15px;
+}
+
+body section .hotel-info ul li {
+	color: #595754;
+}
+
+body section .hotel-info div.city {
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #83322C;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+body section .hotel-info .hotel-location h3 {
+	margin: 0;
+}
+
+body section .hotel-info .hotel-interiors img {
+	margin-left: 9px;
+}
+
+body section .thank-you {
+	margin-top: 50px;
+}
+
+body section .thank-you .content p {
+	margin-bottom: 45px;
+}
+
+body section .thank-you .ty-desc {
+	padding-top: 30px;
+	border-top: 1px dashed #DBDAD9;
+	margin-top: 20px;
+}
+
+body section .thank-you .travel-consultant h3 {
+	display: none;
+}
+
+body section .logo {
+	margin: 20px 0px 50px;
+	text-align: center;
+}
+
+body section .logo img {
+	margin: 0 20px;
+}
+
+body section .back-to-top {
+	text-align: center;
+	margin: 20px 0;
+}
+
+body section .back-to-top a {
+	font-size: 17px;
+	font-weight: 100;
+}
+
+body section .btn-generate-page {
+	outline: none !important;
+	position: fixed;
+	top: 215px;
+	margin-left: 107px;
+}
+
+body footer {
+	padding: 35px 75px;
+	width: 70%;
+	margin: 2px auto 0;
+	background: #FFF;
+}
+
+body footer span, body footer a {
+	font-size: 14px;
+	line-height: 26px;
+	color: #BCBCBC;
+	font-weight: 300;
+}
+
+body footer a {
+	text-decoration: underline;
+	outline: none;
+	float: right;
+	margin-right: 15px;
+}
+
+body footer a:hover, body footer a:visited, body footer a:link, body footer a:focus, body footer a:active {
+	color: #BCBCBC;
+}
+
+.price-included ul{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.price-included ul li {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+body > iframe{
+	display: none;
+}
+
+#customized-page form ul.nav {
+	border-bottom: none;
+}
+
+#customized-page form ul.nav li {
+	margin-bottom: 0;
+}
+
+#customized-page form ul.nav li a {
+	text-decoration: none;
+	outline: none;
+}
+
+#customized-page form ul.nav li.active a {
+	background: #f1f1f1;
+	border-color: #f1f1f1;
+}
+
+#customized-page form ul.nav li a:hover {
+	text-decoration: none;
+	background: #f1f1f1;
+	border-bottom-color: #f1f1f1;
+}
+
+#customized-page form div.tab-content div.active {
+	background: #f1f1f1;
+	padding: 10px 15px;
+}
+
+.trigger_editor {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.trigger_editor li {
+	padding: 0;
+	margin: 1px !important;
+} 
+
+.wysihtml5-toolbar a.btn.btn-default {
+	box-sizing: border-box;
+	font-size: 11px !important;
+	padding: 7px 8px;
+}
+
+.wysihtml5-toolbar li {
+	margin: 0 !important;
+	padding: 0px !important;
+}
+
+.destination-detail img {
+	max-width: 96%;
+}
+
+.wysihtml5-toolbar li.dropdown a.btn.btn-default {
+	padding: 3px 0;
+}
+
+.wysihtml5-toolbar li.dropdown a.btn.btn-default span {
+	font-size: 14px;
+}
+
+form#cust-form .btn.btn-primary.busy_on {
+	background-image: url("../images/busy_loader.gif");
+	background-position: right center;
+	background-repeat: no-repeat;
+	opacity: 0.96;
+	pointer-events: none;
+	text-align: left;
+	width: 90px;
+}
+
+form#cust-form-update .btn.btn-primary.busy_on {
+	background-image: url("../images/busy_loader.gif");
+	background-position: right center;
+	background-repeat: no-repeat;
+	opacity: 0.96;
+	pointer-events: none;
+	text-align: left;
+	width: 90px;
+}
+
+.upload_on {
+	background-image: url("../images/busy_loader.gif");
+	background-position: right center;
+	background-repeat: no-repeat;
+	opacity: 0.96;
+	pointer-events: none;
+	text-align: left;
+	width: 90px;
+}
+
+.upload_on {
+	display: block;
+	max-width: 100%;
+	width: 66%;
+}
+
+.payment_tab_advance .inside .content {
+	color: #d35c1c;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 2px 9px;
+}
+
+.advance_payment_tab .col-md-6 {
+	padding: 5px 10px;
+}
+
+.payment_tab_advance {
+	color: #444444;
+	overflow: hidden;
+}
+
+.advance_payment_tab {
+	border: 4px solid #ffffff;
+	border-radius: 3px;
+	box-shadow: 0 0 1px #333c43;
+	margin: 6px;
+	overflow: hidden;
+}
+
+.advance_payment_tab p {
+	font-size: 14.5px;
+	font-weight: 500;
+}
+
+.advance_payment_tab .form-group p span {
+	font-weight: 700;
+}
+
+.payment_tab_advance.adjust_final {
+	padding-top: 15px;
+}
+
+.advance_payment_tab .form-group input {
+	max-width: 100%;
+}
+
+.link_latest_proposal {
+	font-family: soin_sans_proroman;
+	font-size: 19px;
+	margin-bottom: 22px;
+	max-width: 100%;
+	padding: 6px 0;
+	text-align: center;
+}
+
+.link_latest_proposal a {
+	text-decoration: none !important;
+}
+
+#customized-page .modal-dialog {
+	margin: 30px auto;
+	width: 1024px;
+}
+
+div#trip_documents_view {
+	background: none repeat scroll 0 0 #ffffff;
+	clear: both;
+	margin: 20px;
+	padding: 10px;
+}
+
+.documents_list {
+	border-bottom: 1px solid #808080;
+	margin: 5px;
+}
+
+.remove_document {
+	cursor: pointer;
+	float: right;
+}
+
+#trip_documents_view .file_to_remove {
+	display: none;
+}
+
+body section .trip-pricing .price-included ul {
+	padding-left: 15px;
+}
+
+.singdoutxt{
+	color: #595754 !important;
+	font-size: 16px !important;
+	line-height: 26px;
+	font-weight: bold !important;
+	clear: both;
+	display: block;
+	font-weight: normal !important;
+}
+.bdrlfteee{
+	border-left: 2px solid #eee;
+}
+.pdnlft0{
+	padding-left: 0px !important;
+}
+
+.tripStatusLeft{
+	display: inline-block;
+	float: left;
+	width: 25%;
+	padding-left: 5%;
+}
+.tripStatusRight{
+	display: inline-block;
+	width: 75%;
+	float: right;
+}
+.modal-dialog.tripStatus {
+    width: 800px;
+    margin: 165px auto;
+}
+.tripStatus .modal-title {
+    text-align: center;
+    margin-left: 65px;
+}
+.tripStatus .progress {
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+    width: 90.5%;
+}
+.tripStatus .progress-bar.overallStatusBar {
+    background-color: #21a668;
+}
+.tripStatus .completion_percet{
+	color: #21a668;
+	font-size: 1.2em;
+}
+.tripStatus .overallStatusDiv{
+	padding: 15px 0;
+}
+.bs-wizard {margin-top: 40px;}
+
+/*Form Wizard*/
+/* Progress Tracker v2 */
+ol.progresss[data-steps="2"] li { width: 49%; }
+ol.progresss[data-steps="3"] li { width: 33%; }
+ol.progresss[data-steps="4"] li { width: 24%; }
+ol.progresss[data-steps="5"] li { width: 19%; }
+ol.progresss[data-steps="6"] li { width: 16%; }
+ol.progresss[data-steps="7"] li { width: 14%; }
+ol.progresss[data-steps="8"] li { width: 12%; }
+ol.progresss[data-steps="9"] li { width: 11%; }
+
+.progresss {
+    width: 91%;
+    list-style: none;
+    list-style-image: none;
+    margin: 20px 0 20px 0;
+    padding: 0;
+}
+
+.progresss li {
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.progresss .name {
+	color: #878787;
+	display: block;
+	margin-left: -8px;
+	opacity: 1.2;
+	text-align: center;
+	vertical-align: bottom;
+	    width: 110px;
+}
+.tripStatusLeft .passengerName span {
+	font-weight: 500;
+}
+.passengers-list-item-details .span-email {
+	color: rgb(161, 151, 151);
+}
+.progresss .step.flight {
+ 		
+ }
+.passengerName br:last-child{
+		display: none;
+}
+.progresss .step {
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") repeat scroll 40px -8px;
+    border: 3px solid silver;
+    border-radius: 50%;
+    color: black;
+    display: inline-block;
+    height: 2em;
+    line-height: 1.2;
+    width: 2em;
+    z-index: 0;
+}
+
+.progresss .step.flight {
+     background-position: 37px -39px;
+    border: 0px solid #d6d6d6;
+}
+.progresss .step span {
+    opacity: 0.3;
+}
+
+.progresss .active .name,
+.progresss .active .step span {
+    opacity: 1;
+}
+
+.progresss .step:before {
+    background-color: silver;
+    bottom: 2.6em;
+    content: "";
+    display: block;
+    height: 0.2em;
+    left: -1px;
+    position: absolute;
+    width: 40%;
+}
+
+.progresss .step:after {
+   	background-color: silver;
+    bottom: 2.6em;
+    content: "";
+    display: block;
+    height: 0.2em;
+    position: absolute;
+    right: -12px;
+    width: 50%;
+}
+
+.progresss .step.flight:before {
+    background-color: silver;
+    bottom: 1.16em;
+    content: "";
+    display: block;
+    height: 0.2em;
+    left: -6px;
+    position: absolute;
+    width: 50%;
+}
+
+.progresss .step.flight:after {
+   	background-color: silver;
+    bottom: 1.16em;
+    content: "";
+    display: block;
+    height: 0.2em;
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+.progresss .unUsed .step::before {
+    background-color: silver;
+    bottom: 2.6em;
+    content: "";
+    display: block;
+    height: 0.2em;
+    left: 6px;
+    position: absolute;
+    width: 30%;
+}
+.progresss li:first-of-type .step:before {
+    display: none;
+}
+
+.progresss li:last-of-type .step:after {
+    display: none;
+}
+
+.progresss .done .step:before,
+.progresss .done .step:after,
+.progresss .active .step,
+.progresss .active .step:before {
+    background-color: #eaeaea;
+}
+
+.progresss .done .step,
+.progresss .active .step {
+    border: 0px solid #eaeaea;
+}
+
+.tripStatus .stepProcess {
+    width: 100%;
+    padding: 10px 0 20px 0;
+    display: inline-block;
+}
+
+.modal-body.tripStatusBody {
+    padding: 0px;
+}
+
+.stepProcess {
+    background-color: #f9f9f9;
+}
+
+
+.tripStatus .progress{
+	height: 12px;
+}
+
+.passengersListDiv .progress {
+    margin: 0;
+}
+
+
+.passengersListDiv {
+    padding: 20px 0 20px 0px;
+}
+
+.passengerStatus {
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+}
+
+#modal-1 .passengerIcon{
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    float: left;
+    margin: 5px 15px 5px 5px;
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") repeat scroll 39px -75px;
+}
+#modal-2 .passengerIcon {
+    display: inline-block;
+    height: 39px;
+    width: 39px;
+    float: left;
+    margin: -10px 10px 0 0;
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") repeat scroll 46px -199px;
+}
+.headerPassengersNamesDiv{
+	padding-left: 38px;
+}
+.pmtdtl-th {
+    font-size: 15.8px;
+}
+.radio.options label {
+	padding-left: 0;
+}
+#modal-1 .passengerName {
+    float: left;
+    margin: 5px;
+    max-width: 150px;
+    word-wrap: break-word;
+}
+#tbl-div-display {
+
+}
+.passengersListDiv .progress {
+    height: 6px;
+    margin: 10px 5px 5px;
+    width: 90%;
+}
+
+.flightBooked_guest, 
+.flightBooked_passportCopies, 
+.flightBooked_advPyment {
+		background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") repeat scroll 40px -117px;
+    display: inline-block;
+    height: 28px;
+    margin-top: -11px;
+    position: absolute;
+    width: 28px;
+    z-index: 0;
+}
+.flightBooked_guest{
+    left: 38%;
+}
+.flightBooked_advPyment{
+    left: 57%;
+}
+.flightBooked_passportCopies{
+     left: 76%;
+}
+.progress-bar.guestDetails_Progress {
+    width: 20%;
+}
+.progress-bar.advancePayment_Progress {
+    width: 48.5%;
+}
+.progress-bar.passportCopies_Progress {
+    width: 77%;
+}
+.progress-bar.balancePayment_Progress {
+    width: 100%;
+}
+.passengerStatus:nth-child(4n+1) .progress-bar{
+		background-color: #efb84d;
+}
+.passengerStatus:nth-child(4n+2) .progress-bar{
+		background-color: #2baad9;
+}
+.passengerStatus:nth-child(4n+3) .progress-bar{
+		background-color: #21a668;
+}
+.passengerStatus:nth-child(4n+4) .progress-bar{
+		background-color: #bf463b;
+}
+
+#modal-1 .visibilityOff{
+		visibility: hidden;
+}
+#modal-1 .percentageTxtDiv {
+    width: 90%;
+    margin-bottom: 18px;
+}
+
+.payment-details {
+	text-align: center;
+	font-weight: 500;
+	color: #696969;
+}
+.para-center {
+	font-weight: 400;
+    font-size: 15px;
+    color: #565553;
+    text-align: center;
+}
+.user {
+	color: #fff;
+    background: #4F5050;
+    width: 31px;
+    height: 28px;
+    text-align: center;
+    border-radius: 58px;
+    padding: 7px 0px 0px 1px;
+    margin: 0 10px 0 50px;
+}
+.modal-part2,.pay-details h4,.intermediate-details h4,.flight h4,.tbl th {
+		color: #504F4F;
+		font-weight: 500;
+}
+
+
+.modal-bg {
+		background: #fafafa;
+}
+
+#modal-2 .row-body .table th, #modal-2 .row-body .table td{
+		padding: 8px 0;
+} 
+#modal-2 .modal-lg {
+    width: 1109px;
+}
+
+.float-left.headerPassengersNamesDiv {
+	float: left;
+	width: 50%;
+}
+#modal-2 .pay-details,
+#modal-2 .intermediate-details,
+#modal-2 .flight {
+	width: 33%;
+	height: 100%;
+	float: left;
+	padding: 10px 4%;
+}
+
+.tbl1 {
+    border-right: 1px solid #ccc;
+    margin: 15px 0 10px 0;
+    min-height: 583px;
+    max-width: 100%;
+}
+#modal-2 .flight.tbl2 {
+    margin: 15px 0 10px 0;
+}
+#modal-2 .paymentDetailsIcon {
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -10px 238px;
+    padding-left: 40px;
+    height: 25px;
+    background-repeat-x: no-repeat;
+}
+#modal-2 .intermediatePaymentIcon{
+	  background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll  -10px 200px;
+    padding-left: 40px;
+    height: 25px;
+    background-repeat-x: no-repeat;
+}
+#modal-2 .flightIconH4{
+	  background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -10px 157px;
+    padding-left: 40px;
+    height: 25px;
+    background-repeat-x: no-repeat;
+}
+#modal-2 .processedIconDropDown {
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -15px 23px;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    top: 3px;
+    width: 15px;
+}
+#modal-2 .invalidIconDropDown {
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -10px 23px;
+    display: inline-block;
+    height: 15px;
+    position: relative;
+    top: 3px;
+    width: 20px;
+}
+#modal-2 .close {
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -10px 329px;
+    display: inline-block;
+    height: 23px;
+    position: relative;
+    top: 3px;
+    width: 40px;
+    background-repeat-x: no-repeat;
+}
+.statusDropDown{
+		left: 5px;
+}
+.tbl th {
+	border-bottom: 0 !important;
+}
+.tbl td {
+	border-top: 0 !important;	
+}
+.hr-line {
+	/*margin: 0 -5px;*/
+	border-top: 1px solid #ccc;
+}
+.ok-color {
+	color: #acd843 !important;
+}
+
+.time-color {
+	color: orange !important;
+}
+.confirm-btn {
+    border-radius: 20px;
+    width: 85px;
+    height: 27px;
+    padding: 3px;
+    margin: -11px 0 10px 0;
+    background: #e3847a;
+    border-color: #e3847a;
+}
+#sel1 {
+	border: none;
+}
+.tbl-bdr {
+	border-top: 1px solid #ccc;
+	width: 100%;
+}
+.glyphicon-plus-sign {
+	cursor: pointer;
+}
+.gen-modal {
+	text-align: left;
+	border-top: none;
+}
+.modal-head {
+	border-bottom: none;
+}
+.generate {
+	padding: 6px 12px;
+	font-size: 16px;
+	margin-left: 20px;
+}
+.radio-btn {
+	margin-left: -17px !important;
+}
+.row-body {
+	height: 100%;
+	background: #fff;
+	color: #333;
+	width: 95%;
+	margin: auto 35px 30px 27px;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.red, .color-usd {
+	color:  #D9534F !important;
+}
+.float-right.headerRoomDetails {
+    color: #c4aa61;
+    float: right;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: 9px;
+    text-align: left;
+    width: 25%;
+}
+.tblusd-color {
+	color: #a3d42f;
+}
+.float-right.headerRoomDetails p{
+		float: left;
+		margin: 0 12px 0 0;
+}
+.not-opted {
+	color: #ccc;
+	font-size: 15px;
+	text-align: left;
+}
+.not-opted1 h4,.clr-ccc {
+	color: #B3ADAD !important;
+}
+.modal-bg td,#usd-pay1,#date-pay,#date-pay1,#usd-pay{
+	color: rgb(122, 118, 118);
+}
+
+.usd {
+	float: left;
+	width: 19%;
+	margin-left: 86px;
+	margin-top: 2px;
+}
+.num {
+	float: right;
+	width: 60px;
+}
+#ProjectListButton {
+   margin: -16px -2px 14px;
+}
+.plane {
+	transform: rotate(90deg);
+}
+
+div.options > label > input {
+    visibility: hidden;
+}
+div.options > label > img {
+    width: 11px;
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -17px 100px;
+    height: 11px;
+    background-repeat-x: no-repeat;
+}
+.tbl .options {
+	margin-bottom: 3px;
+}
+div.options > label > input:checked +img {  
+    width: 11px;
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -17px 115px;
+    height: 11px;
+    background-repeat-x: no-repeat;
+}
+#menuContainer {
+	min-width: 100px;
+}
+
+.radio-label {
+	margin-left: 50px;
+}
+.gen-radio-multiple {
+	margin-left: 121px;
+}
+.section-std {
+	width: 95%;
+	margin: 10px 20px;
+	border: 1px solid #B3A8A8;
+	background: #fff;
+	padding:20px;
+}
+a.sel-drpdwn {
+	color: #333 !important;
+	text-decoration: none !important;
+}
+.drpdown-name-email {
+	border: 1px solid #CCC;
+	width: 25%;
+	border-radius: 5px;
+	float: left;
+	padding-left: 15px;
+	font-size: 14px;
+}
+
+.dollors {
+	float: left;
+	display: inline;
+	width: 15%;
+	margin-left: 5px;
+	padding: 10px;
+	color: #C98114;
+}
+.dropdown-menu.name-ul-div {
+    margin-top: 18px;
+    width: 232px;
+    text-align: left;
+}
+.dropdown-menu.name-ul-div li span {
+	font-size: 14px;
+}
+.span-edit, .span-saving {
+	float: right;
+	padding-top: 15px;
+}
+.span-name {
+	float: left;
+	width: 80%;
+}
+.p1 {
+    white-space: nowrap;
+    width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.btnn {
+		float: left;
+}
+
+.add-plus-icon {
+    margin: 0 50%;
+    text-align: center;
+    top: -16px;
+}
+.pay-top-padding {
+	padding-top: 20px  !important;
+}
+.closeTable{
+	padding: 0px;
+    float: right;
+    background: transparent url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -10px 83px;
+    display: inline-block;
+    height: 19px;
+    position: relative;
+    width: 23px;
+	border: none;
+	top: 5px;
+    left: 18px;
+}
+#tbl-div-display .closeTable {
+	top: 24px;
+}
+#modal-1 .modal-header, 
+#modal-2 .modal-header{
+	border-bottom: 0px solid #FFF;
+}
+.headerTripDetails p {
+    float: left;
+    font-size: 1.3em;
+    margin-right: 23px;
+}
+.headerTripDetails {
+    display: inline-block;
+    margin: auto 225px;
+    text-align: center;
+    width: 80%;
+    padding: 18px 0;
+}
+.passengers-list-item-details-edit, .span-saving {
+	display: none;
+}
+.passengers-list-item-details-edit input{
+	border: none;
+	font-size: 14px;
+	color: #595754;
+	background: transparent;
+}
+.passengers-list-item div{
+    float: left;
+    width: 92%;
+}
+
+li.passengers-list-item{
+	display: inline-block;
+}
+.drpdwn-name2.passengers-list-item {
+    padding: 0 15px;
+}
+body section .modal-dialog ul li.bgCccLiPassengersList{
+	background-color: #f1f1f1;
+}
+ul.passengers-list li{
+	margin: 0px !important;
+}
+.span-name-edit {
+    font-weight: 600;
+}
+.span-email-edit {
+    font-style: italic;
+}
+.passengers-list-item-details {
+    float: left;
+    width: 90%;
+}
+.dropdown.drpdown-name-email b.caret {
+    margin-top: 15px;
+}
+.std-section-div {
+    display: inline-block;
+    padding: 20px 0;
+    width: 100%;
+    height: 34.9%;
+	border-bottom: 1px dashed #ccc;
+}
+.std-section-div:last-child{
+	border-bottom: 0px dashed #ccc;
+}
+.extraPersonDropdown{
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+.close {
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -10px 329px;
+    display: inline-block;
+    height: 23px;
+    position: relative;
+    top: 3px;
+    width: 40px;
+    background-repeat-x: no-repeat;
+}
+.span-usd {
+	color: #333;
+	margin-right: 3px;
+}
+#menuContainer.dropdown-menu {
+    left: -40px;
+    width: 175px;
+    box-shadow: 0px 2px 2px #ccc;
+}
+#menuContainer.dropdown-menu li {
+    padding: 10px 38px;
+}
+#menuContainer.dropdown-menu li:hover {
+    padding: 10px 38px;
+    background-color: #f1f1f1;
+}
+#drpdwn-status .statusTxt, #menuContainer .statusTxt, .paymentDetailsStatus {
+    display: inline-block;
+    margin-right: 10px;
+    width: 60px;
+}
+#drpdwn-status img{
+		margin-right: 5px;
+}
+.table-responsive.tbl table tr th:first-child{
+	width: 150px;
+}
+.btn.btn-danger.confirm-btn.add-plus-icon {
+    margin: 0 32%;
+}
+#modal-2 .flightIconH4.grayedOutDiv {
+    height: 25px;
+    opacity: 0.5;
+    padding-left: 40px;
+}
+.close-attachment {
+	top: -2px;
+}
+.date-picker-input {
+	width: 100px;
+	float: right;
+}
+input::-webkit-input-placeholder {
+color: #B3ADAD !important;
+}
+  
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #B3ADAD !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: #B3ADAD !important;  
+}
+.span-email {
+	white-space: nowrap;
+	width: 12em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+}
