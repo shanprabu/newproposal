@@ -68,15 +68,50 @@
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
+@font-face {
+    font-family: 'SourceSansPro-Bold';
+    src: url('../fonts/SourceSansPro-Bold.eot');
+    src: url('../fonts/SourceSansPro-Bold.woff') format('woff'),
+        url('../fonts/SourceSansPro-Bold.ttf') format('truetype'),
+        url('../fonts/SourceSansPro-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
 
-body{
-	font-family: 'Source Sans Pro', sans-serif;
-	margin:0 auto;
-	
-	max-width:1366px;
-	min-width: 320px;
-
-	background: #ECEBE9;
+@font-face {
+    font-family: 'SourceSansPro-ExtraLight';
+    src: url('../fonts/SourceSansPro-ExtraLight.eot');
+    src: url('../fonts/SourceSansPro-ExtraLight.woff') format('woff'),
+        url('../fonts/SourceSansPro-ExtraLight.ttf') format('truetype'),
+        url('../fonts/SourceSansPro-ExtraLight.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+@font-face {
+    font-family: 'SourceSansPro-Light';
+    src: url('../fonts/SourceSansPro-Light.eot');
+    src: url('../fonts/SourceSansPro-Light.woff') format('woff'),
+        url('../fonts/SourceSansPro-Light.ttf') format('truetype'),
+        url('../fonts/SourceSansPro-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+@font-face {
+    font-family: 'SourceSansPro-Semibold';
+    src: url('../fonts/SourceSansPro-Semibold.eot');
+    src: url('../fonts/SourceSansPro-Semibold.woff') format('woff'),
+        url('../fonts/SourceSansPro-Semibold.ttf') format('truetype'),
+        url('../fonts/SourceSansPro-Semibold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
 }
 
 body nav.navbar {
@@ -1683,3 +1718,12 @@ color: #B3ADAD !important;
 	font-size: 14px;
 	padding: 0px !important;
  }
+
+
+ body{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin:0 auto;
+	max-width:1366px;
+	min-width: 320px;
+	background: #ECEBE9;
+}
