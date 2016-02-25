@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Enchanting - Add Contract</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="assets/css/service_contract.css">
+    <link rel="stylesheet" href="assets/css/service_style.css">
+
+  <!-- Date Picker CSS -->
+ <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+   <script src="assets/js/moment.min.js"></script>
+   <script src="assets/js/daterangepicker.js"></script>
+   <link rel="stylesheet" type="text/css" href="assets/css/daterangepicker.css" />
+
+   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <script src="assets/js/service_events.js"></script>
+</head>
+<body>
+<!-- Modal -->
+<div id="weekModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle-o"></i> </button>
+                <h4 class="modal-title">Week Pricing</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div class="row">
+                        <div class="col-md-8 poppicklbl">Type &nbsp;</div>
+                        <div class="col-md-4">
+                            <i class="dropdown-icon2 popselicon"></i>
+                            <select class="form-control popstatussel">
+                                <option>Per Unit Per Day</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="poptab">
+                        <div class="addweekrow"></div>
+                        <div class="row">
+                            <div class="adbtn">
+                                <a id="addweekprice" onclick=""><img src="assets/img/add-row.png"><span>Add</span></a>
+                                <span class="weekerror">Please select atleast one day..!!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="savebut weeksave">SAVE</div>
+                <div class="resetbut weekreset">RESET</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="priceModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times-circle-o"></i> </button>
+                <h4 class="modal-title">Price Band</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <div class="row">
+                        <div class="col-md-8 poppicklbl">Type &nbsp;</div>
+                        <div class="col-md-4">
+                            <i class="dropdown-icon2 popselicon"></i>
+                            <select class="form-control popstatussel">
+                                <option>Per Unit Per Day</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="poptab">
+                        <div class="addpricerow"></div>
+                        <div class="row">
+                            <div class="adbtn">
+                                <a id="addpriceband" onclick=""><img src="assets/img/add-row.png"><span>Add</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="savebut pricesave">SAVE</div>
+                <div class="resetbut pricereset">RESET</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="rowdelpopup">
+    <div class="delpoptext">Are you sure you want to delete this item?
+        <div><button class="rowyesbut">YES</button><button class="rownobut">NO</button></div>
+    </div>
+</div>
+<div class="delpopup">
+	<div class="delpoptext">Are you sure you want to delete this item?
+		<div><button class="yesbut">YES</button><button class="nobut">NO</button></div>
+	</div>
+</div>
+
+<form name="validForm" id="validForm" action="" method="">
+<div class="flydiv" id="flydivsel">
+	<input type="button" class="btn btn-primary page-submit" value="SAVE">
+	<input type="button" class="btn btn-gold pagereset" value="RESET">
+</div>
+<div class="container">
+    <header class="col-md-12">
+      <div class="wrapper">
+        <a href="" class="pull-left logo-container">
+          <img src="assets/img/logo.png" class="">
+        </a>
+
+        <nav class="pull-left">
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="pull-left">
+              <a href="" class="active">ADD CONTRACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="col-md-12 main-container">
+      <div class="wrapper">
+        <div class="to-top"> </div>
+        <div class="panel-group col-md-12" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default col-md-12 noborder">
+            <div class="panel-heading col-md-12" role="tab" id="headingaccord1">
+              <h4 class="panel-title col-md-12" >
+                <a class="col-md-12" role="button" data-toggle="collapse" href="#tripdetails" aria-expanded="true" aria-controls="collapseOne">
+                  <div class="titletxt">SERVICE DETAILS</div>
+                  <span class="plus"><img src="assets/img/plus.png" alt="-" title=""></span>
+                  <span class="minus"><img src="assets/img/minus.png" alt="-" title=""></span>
+                </a>
+              </h4>
+            </div>
+            <div id="tripdetails" class="panel-collapse collapse in col-md-12" role="tabpanel" aria-labelledby="headingaccord1" >
+                <div class="row">
+                      <div class="form-group col-md-6">
+                          <label for="first-name">Service Name</label>
+                          <input type="text" class="form-control sinputval" placeholder="Name" value="ITC Mugal Agra" id="service_name" name="service_name">
+                      </div>
+                      <div class="form-group padleft30 col-md-3">
+                          <label for="first-name">Region</label>
+                          <i class="dropdown-icon2" ></i>
+                          <select class="form-control sinputval select-region" id="region_id" name="region_id">
+                              <option value="North">North</option>
+                              <option value="South">South</option>
+                              <option value="Asia">Asia</option>
+                              <option value="North US">North US</option>
+                          </select>
+                      </div>
+                      <div class="form-group padleft30 col-md-3">
+                          <label for="first-name">Supplier</label>
+                          <i class="dropdown-icon2"></i>
+                          <select class="form-control sinputval select-supplier" id="supplier_id" name="supplier_id">
+                              <option value="">Select</option>
+                              <option selected>Lorem Ipsum</option>
+                          </select>
+                      </div>
+                  </div>
+                <div class="row"><div class="col-md-12 hidden-sm emt-height"></div></div>
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="first-name">Service Type</label>
+                        <i class="dropdown-icon2" ></i>
+                        <select class="form-control sinputval" id="service_type_id" name="service_type_id">
+                            <option value="">Select</option>
+                            <option value="Accomodation" selected>Accomodation</option>
+                            <option>Lorem Ipsum</option>
+                        </select>
+                    </div>
+                    <div class="form-group padleft30 col-md-2">
+                        <label for="first-name">Margin</label>
+                        <input type="text" class="form-control sinputval" placeholder="Margin" value="20%" id="service_margin" name="service_margin">
+                    </div>
+                    <div class="form-group padleft30 col-md-3">
+                        <label for="first-name">Status</label>
+                        <i class="dropdown-icon2" ></i>
+                        <select class="form-control sinputval" id="service_status" name="service_status">
+                            <option value="">Select</option>
+                            <option value="Active" selected>Active</option>
+                        </select>
+                    </div>
+                    <div class="form-group padleft30 col-md-3">
+                        <label for="first-name">Default Category</label>
+                        <div class="greyborder">
+                            <i class="dropdown-icon2 right75"></i>
+                            <select class="form-control applycss select-room-type" id="default_room_type" name="default_room_type">
+                                <option selected>Standard</option>
+                            </select>
+                            <input type="button" value="APPLY" class="greybut greybutpos">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+            <div class="row"><div class="col-md-12">&nbsp;</div></div>
+            <div class="panel panel-default col-md-12 noborder oflowhide">
+                <div class="panel-heading col-md-12" role="tab" id="headingaccord2">
+                    <h4 class="panel-title col-md-12" >
+                        <a class="col-md-12" role="button" data-toggle="collapse" href="#optionsblock" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="titletxt">OPTIONS</div>
+                            <span class="plus"><img src="assets/img/plus.png" alt="-" title=""></span>
+                            <span class="minus"><img src="assets/img/minus.png" alt="-" title=""></span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="optionsblock" class="panel-collapse collapse in col-md-12" role="tabpanel" aria-labelledby="headingaccord2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="prices-option-table" id="prices_option_table">
+                                <tr class="trbgcolor">
+                                    <td><input type="checkbox" class="optcheckall" value=""></td>
+                                    <td>Room Name</td>
+                                    <td>Occupancy</td>
+                                    <td>From</td>
+                                    <td>To</td>
+                                    <td>Charging Policy</td>
+                                    <td>Meal Plan</td>
+                                    <td>Currency</td>
+                                    <td>Buy</td>
+                                    <td>Sell</td>
+                                    <td>Margin</td>
+                                    <td>Status</td>
+                                </tr>
+                                <tr id="prices_options_row_1" class="prices-options-row">
+                                    <td><input type="hidden" id="options_hidden_1"><input id="prices_options_row_selection_1" class="optcheckbox" name="prices_options_row_selection" type="checkbox" value="1"></td>
+                                    <td>Standard</td>
+                                    <td>Double</td>
+                                    <td>2016-01-01</td>
+                                    <td>2016-01-12</td>
+                                    <td>Per Room Per Night</td>
+                                    <td>Breakfast</td>
+                                    <td>USD</td>
+                                    <td>200</td>
+                                    <td>300</td>
+                                    <td>20%</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr id="prices_options_row_2" class="trdisable prices-options-row">
+                                    <td><input type="hidden" id="options_hidden_2"><input id="prices_options_row_selection_2" class="optcheckbox" name="prices_options_row_selection" type="checkbox" value="2"></td>
+                                    <td>Standard</td>
+                                    <td>Double</td>
+                                    <td>2016-01-01</td>
+                                    <td>2016-01-12</td>
+                                    <td>Per Room Per Night</td>
+                                    <td>Breakfast</td>
+                                    <td>USD</td>
+                                    <td>200</td>
+                                    <td>300</td>
+                                    <td>20%</td>
+                                    <td>Inactive</td>
+                                </tr>
+                                <tr id="prices_options_row_3" class="prices-options-row">
+                                    <td><input type="hidden" id="options_hidden_3"><input id="prices_options_row_selection_3" class="optcheckbox" name="prices_options_row_selection" type="checkbox" value="3"></td>
+                                    <td>Standard</td>
+                                    <td>Double</td>
+                                    <td>2016-01-01</td>
+                                    <td>2016-01-12</td>
+                                    <td>Per Room Per Night</td>
+                                    <td>Breakfast</td>
+                                    <td>USD</td>
+                                    <td>200</td>
+                                    <td>300</td>
+                                    <td>20%</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr id="prices_options_row_4" class="prices-options-row">
+                                    <td><input type="hidden" id="options_hidden_4"><input id="prices_options_row_selection_4" class="optcheckbox" name="prices_options_row_selection" type="checkbox" value="4"></td>
+                                    <td>Standard</td>
+                                    <td>Double</td>
+                                    <td>2016-01-01</td>
+                                    <td>2016-01-12</td>
+                                    <td>Week Pricing</td>
+                                    <td>Breakfast</td>
+                                    <td>USD</td>
+                                    <td colspan="2"><span class="view-price" data-model-type="Week Pricing">View Price</span></td>
+                                    <td>20%</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr id="prices_options_row_5" class="prices-options-row">
+                                    <td><input type="hidden" id="options_hidden_5"><input id="prices_options_row_selection_5" class="optcheckbox" name="prices_options_row_selection" type="checkbox" value="5"></td>
+                                    <td>Standard</td>
+                                    <td>Double</td>
+                                    <td>2016-01-01</td>
+                                    <td>2016-01-12</td>
+                                    <td>Price Band</td>
+                                    <td>Breakfast</td>
+                                    <td>USD</td>
+                                    <td colspan="2"><span class="view-price" data-model-type="Price Band">View Price</span></td>
+                                    <td>20%</td>
+                                    <td>Active</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="butsarea">
+                        <div class="pull-left">
+                            <div class="options-page-navigation-left"><img src="assets/img/left-arrow.png" alt="<" title=""></div>
+                            <div class="dropdown page-navigation">
+                                <div data-toggle="dropdown" class="page-navigation-block"><span id="options_navigation_id" class="options-navigation-id">1</span><span class="caret"></span></div>
+                                <ul class="dropdown-menu">
+                                    <li class="options-page-nav-change">1</li>
+                                    <li class="options-page-nav-change">2</li>
+                                    <li class="options-page-nav-change">3</li>
+                                    <li class="options-page-nav-change">4</li>
+                                    <li class="options-page-nav-change">5</li>
+                                </ul>
+                            </div>
+                            <div class="options-page-navigation-right"><img src="assets/img/right-arrow.png" alt=">" title=""></div>
+                        </div>
+                        <div class="eventbut add-options-price-row" id="add_options_price_row"><i class="icon-clone"></i>&nbsp; CLONE</div>
+                        <div class="delbut remove-options-price-row" id="remove_options_price_row"><i class="icon-delete"></i>&nbsp; DELETE</div>
+                        <div class="eventbut edit-options-price-row" id="edit_options_price_row"><i class="icon-edit"></i>&nbsp; Edit</div>
+                    </div>
+                </div>
+                <div class="datepickblock">
+                    <div class="row">
+                        <div class="col-md-2 datepicklbl">Date Range &nbsp;</div>
+                        <div class="col-md-3">
+                            <input type="text" name="optdate" id="optdate" class="form-control datetxtbox" placeholder="Select Date">
+                            <label for="optdate"><i class="datecalicon"></i></label>
+                        </div>
+                        <div class="col-md-2 datepicklbl">Status &nbsp;</div>
+                        <div class="col-md-4">
+                            <i class="dropdown-icon2 dateselicon"></i>
+                            <select class="form-control datestatussel prices-option-table-status" id="prices_option_table_status">
+                                <option value="">Select Status</option>
+                                <option value="Active">Active</option>
+                                <option value="Inactive">Inactive</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                    <div id="optDateText">&nbsp;</div>
+                </div>
+            </div>
+            <div class="panel panel-default col-md-12 noborder oflowhide">
+                <div class="panel-heading col-md-12" role="tab" id="headingaccord3">
+                    <h4 class="panel-title col-md-12" >
+                        <a class="col-md-12" role="button" data-toggle="collapse" href="#extrasblock" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="titletxt">EXTRAS</div>
+                            <span class="plus"><img src="assets/img/plus.png" alt="-" title=""></span>
+                            <span class="minus"><img src="assets/img/minus.png" alt="-" title=""></span>
+                        </a>
+                    </h4>
+                </div>
+                <div id="extrasblock" class="panel-collapse collapse in col-md-12" role="tabpanel" aria-labelledby="headingaccord3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table class="prices_extra_table" id="prices_extra_table">
+                                <tr class="trbgcolor">
+                                    <td><input type="checkbox" class="extcheckall" value=""></td>
+                                    <td>Extra Name</td>
+                                    <td>From</td>
+                                    <td>To</td>
+                                    <td>Charging Policy</td>
+                                    <td>Mandatory</td>
+                                    <td>Currency</td>
+                                    <td>Buy</td>
+                                    <td>Sell</td>
+                                    <td>Margin</td>
+                                    <td>Status</td>
+                                </tr>
+                                <tr id="prices_extras_row_1" class="prices-extras-row">
+                                    <td><input type="hidden" id="extras_hidden_1"><input id="prices_extras_row_selection_1" class="extcheckbox" name="prices_extras_row_selection" type="checkbox" value="1"></td>
+                                    <td>Dinner</td>
+                                    <td>2016-01-01</td>
+                                    <td>2016-01-12</td>
+                                    <td>Per Room Per Night</td>
+                                    <td>Yes</td>
+                                    <td>USD</td>
+                                    <td>200</td>
+                                    <td>300</td>
+                                    <td>20%</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr id="prices_extras_row_2" class="trdisable prices-extras-row">
+                                    <td><input type="hidden" id="extras_hidden_2"><input id="prices_extras_row_selection_2" class="extcheckbox" name="prices_extras_row_selection" type="checkbox" value="2"></td>
+                                    <td>Breakfast</td>
+                                    <td>2016-01-01</td>
+                                    <td>2016-01-12</td>
+                                    <td>Per Room Per Night</td>
+                                    <td>No</td>
+                                    <td>USD</td>
+                                    <td>200</td>
+                                    <td>300</td>
+                                    <td>20%</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr id="prices_extras_row_3" class="prices-extras-row">
+                                    <td><input type="hidden" id="extras_hidden_3"><input id="prices_extras_row_selection_3" class="extcheckbox" name="prices_extras_row_selection" type="checkbox" value="3"></td>
+                                    <td>Dinner</td>
+                                    <td>2016-01-01</td>
+                                    <td>2016-01-12</td>
+                                    <td>Price Band</td>
+                                    <td>No</td>
+                                    <td>USD</td>
+                                    <td colspan="2"><span class="view-price" data-model-type="Price Band">View Price</span></td>
+                                    <td>20%</td>
+                                    <td>Active</td>
+                                </tr>
+                                <tr id="prices_extras_row_4" class="prices-extras-row">
+                                    <td><input type="hidden" id="extras_hidden_4"><input id="extras_extras_row_selection_4" class="extcheckbox" name="prices_extras_row_selection" type="checkbox" value="4"></td>
+                                    <td>Dinner</td>
+                                    <td>2016-01-01</td>
+                                    <td>2016-01-12</td>
+                                    <td>Week Pricing</td>
+                                    <td>No</td>
+                                    <td>USD</td>
+                                    <td colspan="2"><span class="view-price" data-model-type="Week Pricing">View Price</span></td>
+                                    <td>20%</td>
+                                    <td>Active</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="butsarea">
+                        <div class="pull-left">
+                            <div class="extras-page-navigation-left"><img src="assets/img/left-arrow.png" alt="<" title=""></div>
+                            <div class="dropdown page-navigation">
+                                <div data-toggle="dropdown" class="page-navigation-block"><span id="extras_navigation_id" class="extras-navigation-id">1</span><span class="caret"></span></div>
+                                <ul class="dropdown-menu">
+                                    <li class="extras-page-nav-change">1</li>
+                                    <li class="extras-page-nav-change">2</li>
+                                    <li class="extras-page-nav-change">3</li>
+                                    <li class="extras-page-nav-change">4</li>
+                                    <li class="extras-page-nav-change">5</li>
+                                </ul>
+                            </div>
+                            <div class="extras-page-navigation-right"><img src="assets/img/right-arrow.png" alt=">" title=""></div>
+                        </div>
+                        <div class="eventbut" id="link_extras_price_row"><i class="icon-link"></i>&nbsp; LINK</div>
+                        <div class="eventbut" id="add_extras_price_row"><i class="icon-clone"></i>&nbsp; CLONE</div>
+                        <div class="delbut" id="remove_extras_price_row"><i class="icon-delete"></i>&nbsp; DELETE</div>
+                        <div class="eventbut" id="edit_extras_price_row"><i class="icon-edit"></i>&nbsp; Edit</div>
+                    </div>
+                </div>
+                <div class="datepickblock">
+                    <div class="row">
+                        <div class="col-md-2 datepicklbl">Date Range &nbsp;</div>
+                        <div class="col-md-3">
+                            <input type="text" name="extdate" id="extdate" class="form-control datetxtbox" placeholder="Select Date">
+                            <label for="extdate"><i class="datecalicon"></i></label>
+                        </div>
+                        <div class="col-md-2 datepicklbl">Status &nbsp;</div>
+                        <div class="col-md-4">
+                            <i class="dropdown-icon2 dateselicon"></i>
+                            <select class="form-control datestatussel prices-extra-table-status" id="prices_extra_table_status"">
+                                <option value="">Select Status</option>
+                                <option value="Active">Active</option>
+                                <option value="Inactive">Inactive</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">&nbsp;</div>
+                    </div>
+                    <div id="extDateText">&nbsp;</div>
+                </div>
+            </div>
+            <div>
+                <div class="savebut page-submit">SAVE</div>
+                <div class="resetbut pagereset">RESET</div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</form>
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="assets/js/service_script.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.duplicate.js"></script>
+  <!-- datepicker -->
+  <script src="assets/js/jquery-ui.js"></script>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
