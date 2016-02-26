@@ -1093,3 +1093,15 @@ td.plupload_cell.plupload_file_name {
 .none,.non{
  display:none;
 }
+.india_banner{
+	background-image: url("../images/banner.jpg");
+}
+.southAmerica_banner{
+	background-image: url("../images/SouthAmerica.jpg");
+}
+.asia_banner{
+	background-image: url("../images/asia.jpg");
+}
+.africa_banner{
+	background-image: url("../images/africa.jpg");
+}
