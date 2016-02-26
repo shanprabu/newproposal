@@ -1105,3 +1105,24 @@ td.plupload_cell.plupload_file_name {
 .africa_banner{
 	background-image: url("../images/africa.jpg");
 }
+#multiselect_wrapper label {
+	display: block;
+	margin-bottom: 5px;
+}
+/*#multiselect_wrapper {
+	padding: 15px;
+}	*/
+#select4 {
+	width: 350px;
+	height: 36px;
+}
+div#multiselect_wrapper {
+    width: 93%;
+    height: 44px;
+}
+div#selectator_select4 {
+    width: 100% !important;
+    border: 2px solid rgba(99,99,98,0.35);
+    border-radius: 5px;
+    min-height: 44px;
+}

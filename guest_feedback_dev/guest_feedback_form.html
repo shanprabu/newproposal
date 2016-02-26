@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="assets/css/core.css" type="text/css" media="all">
 <link rel="stylesheet" href="assets/css/base.css" type="text/css" media="all">
 <link rel="stylesheet" href="assets/css/guest_feedback.css" type="text/css" media="all">
+<link rel="stylesheet" href="assets/css/fm.selectator.jquery.css" type="text/css" media="all">
 <!--[if lt IE 9]>
 <script src="http://cdn-2.enchantingtravels.com/wp-content/themes/enchanting/assets/js/respond.js"></script>
 <![endif]-->
@@ -21,7 +22,7 @@
 <script src="assets/js/tp.widget.bootstrap.min.js" async="" defer=""></script>
 </head>
 
-<body class="single single-vacation postid-25428 lang-en">
+<body class="single-vacation postid-25428 lang-en">
 	<div id="site-wrap"> <!-- ( This ends in the footer ) -->
 		<a href="#" id="back-to-top" style="display: block;"></a>
 		<header id="header">
@@ -1357,13 +1358,33 @@
 											<div class="optionalsec">
 												<p><b>Optional:</b><br>If you wish to share your favorite trip pictures that you are comfortable with us using and sharing with other travelers for our marketing materials, please submit below.</p>
 
-												<div class="wdt100prec select2-container select2-container-multi regions" id="s2id_autogen1">
+												<div class="wdt100prec select2-container regions" id="s2id_autogen1">
 													<ul class="select2-choices">  
 														<li class="select2-search-field">    
-															<label for="s2id_autogen2" class="select2-offscreen"></label>    
-															<input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input select2-default" id="s2id_autogen2" placeholder="Select Countries or Regions" style="width: 428px;">  
+																<div id="multiselect_wrapper">
+																		<select id="select4" name="select4" multiple>
+																			<optgroup label="Group one" class="group_one">
+																				<option value="1" class="option_one">One</option>
+																				<option value="2" class="option_two">Two</option>
+																			</optgroup>
+																			<optgroup label="Group two" class="group_two">
+																				<option value="3" class="option_three">Three</option>
+																				<option value="4" class="option_four">Four</option>
+																				<option value="5" class="option_five">Five</option>
+																				<option value="6" class="option_six">Six</option>
+																			</optgroup>
+																			<optgroup label="Group three" class="group_three">
+																				<option value="7" class="option_seven">Seven</option>
+																			</optgroup>
+																			<option value="8" class="option_eight">Eight</option>
+																			<option value="9" class="option_nine">Nine</option>
+																			<option value="10" class="option_ten">Ten</option>
+																		</select>
+																	</div>
 														</li>
+
 													</ul>
+
 													<div class="select2-drop select2-drop-multi select2-display-none select2-drop-active">   
 														<ul class="select2-results">   
 															<li class="select2-no-results">No matches found</li>
@@ -1449,6 +1470,7 @@ enchanting_vacations_single.galleries[694] = [ 'http://cdn-3.enchantingtravels.c
 
 
 <script type="text/javascript" src="assets/js/jquery-latest.js"></script>
+	<script src="assets/js/fm.selectator.jquery.js"></script>
 <script type="text/javascript">
 /* <![CDATA[ */
 var enchanting = {"site_url":"http:\/\/www.enchantingtravels.com","template_url":"http:\/\/www.enchantingtravels.com\/wp-content\/themes\/enchanting","ajax_url":"http:\/\/www.enchantingtravels.com\/wp-admin\/admin-ajax.php","lang":{"ajax_error":"There was a problem processing your request.\nPlease try after some time","at_least_one_date_error":"Please select at least one date.","after_start_date_error":"Must be after start date.","read_more":"Read More"}};
@@ -1473,7 +1495,15 @@ window.onclick = function(event) {
 			}
 		}
 	}
-}
+}	
+		$(function () {var $activate_selectator4 = $('#activate_selectator4');
+				var $select4 = $('#select4');
+					$select4.selectator({
+						showAllOptionsOnFocus: true
+					});
+			$activate_selectator4.trigger('click');
+
+		});
 </script>
 
 </body>
