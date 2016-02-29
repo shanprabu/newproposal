@@ -1514,6 +1514,21 @@ section{
 		font-weight: 100;
 		
 	}
+		ul#inert-price-include_accordion {
+		/*padding-left: 0px;*/
+		padding-left: 20px;
+		list-style-type: none;
+	}
+
+	ul#inert-price-include_accordion li:before{
+		content: "-";
+		/*margin-right: -15px;*/
+		color: #c4c1bb;
+		/*margin-left: 21px;*/
+		margin-left: -2px;
+		font-weight: 100;
+		
+	}
 	.goldtxt{
 		color: #ab9175 !important;
 		text-transform: uppercase;

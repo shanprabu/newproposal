@@ -124,7 +124,7 @@
                                                         <input type="text" class="form-control" id="address-1">
                                                       </div>
                                                       <div class="form-group mgn-rgt30">
-                                                        <label for="country">Country</label>
+                                                        <label for="country_primary-guest">Country</label>
                                                         <input type="text" class="form-control" id="country">
                                                       </div>
                                                       <div class="form-group mgn-rgt30">
@@ -391,8 +391,8 @@
                                                 <input type="text" class="form-control start-date date_icon pointerclass" id="dob6"> 
                                               </div>
                                               <div class="form-group mgn-rgt30">
-                                                <label for="first-name">Departure City</label>
-                                                <input type="text" class="form-control" id="first-name">
+                                                <label for="first-name_int-flight">Departure City</label>
+                                                <input type="text" class="form-control" id="first-name_int-flight">
                                               </div>
                                             </div>
                                           </div>
@@ -401,38 +401,39 @@
                                             <div class="row">
 
                                               <div class="form-group mgn-rgt15 mgn-tp80">
-                                                <label for="first-name">Arrival Time</label>
-                                                <input type="text" class="form-control" id="first-name">
+                                                <label for="first-name_int-flight1">Arrival Time</label>
+                                                <input type="text" class="form-control" id="first-name_int-flight1
+                                                ">
                                               </div>
                                               <div class="form-group mgn-rgt15 dispblkmgn10">
                                                 <div class="col-md-5 mgn-rgt15">
                                                   <div class="row">
-                                                    <label for="zip-code">Flight #</label>
-                                                    <input type="text" class="form-control" id="zip-code"> 
+                                                    <label for="zip-code_int-flight1">Flight #</label>
+                                                    <input type="text" class="form-control" id="zip-code_int-flight1"> 
                                                   </div>
                                                 </div>
                                                 <div class="col-md-6 wdtperc534">
                                                   <div class="row">
-                                                    <label for="strtdate">Airline</label>
-                                                    <input type="text" class="form-control" id="strtdate"> 
+                                                    <label for="strtdate_int-flight1">Airline</label>
+                                                    <input type="text" class="form-control" id="strtdate_int-flight1"> 
                                                   </div>
                                                 </div>
                                               </div>
                                               <div class="form-group mgn-rgt15">
-                                                <label for="first-name">Departure Time</label>
-                                                <input type="text" class="form-control" id="first-name">
+                                                <label for="first-name_int-flight2">Departure Time</label>
+                                                <input type="text" class="form-control" id="first-name_int-flight2">
                                               </div>
                                               <div class="form-group mgn-rgt15">
                                                 <div class="col-md-5 mgn-rgt15">
                                                   <div class="row">
-                                                    <label for="zip-code">Flight #</label>
-                                                    <input type="text" class="form-control" id="zip-code"> 
+                                                    <label for="zip-code_int-flight2">Flight #</label>
+                                                    <input type="text" class="form-control" id="zip-code_int-flight2"> 
                                                   </div>
                                                 </div>
                                                 <div class="col-md-6 wdtperc534">
                                                   <div class="row">
-                                                    <label for="strtdate">Airline</label>
-                                                    <input type="text" class="form-control" id="strtdate"> 
+                                                    <label for="strtdate_int-flight2">Airline</label>
+                                                    <input type="text" class="form-control" id="strtdate_int-flight2"> 
                                                   </div>
                                                 </div>
                                               </div>
@@ -540,12 +541,12 @@
                                           <div class="row">
 
                                             <div class="form-group mgn-rgt30">
-                                              <label for="first-name">Full Name</label>
-                                              <input type="text" class="form-control" id="first-name">
+                                              <label for="first-name_emg-contact">Full Name</label>
+                                              <input type="text" class="form-control" id="first-name_emg-contact">
                                             </div>
                                             <div class="form-group mgn-rgt30">
-                                              <label for="email">Email</label>
-                                              <input type="text" class="form-control" id="email">
+                                              <label for="email_emg-contact">Email</label>
+                                              <input type="text" class="form-control" id="email_emg-contact">
                                             </div>
                                           </div>
                                         </div>
@@ -554,13 +555,13 @@
                                           <div class="row">
 
                                            <div class="form-group mgn-rgt15">
-                                            <label for="last-name">City</label>
-                                            <input type="text" class="form-control" id="last-name">
+                                            <label for="last-name_emg-contact">City</label>
+                                            <input type="text" class="form-control" id="last-name_emg-contact">
                                           </div>
 
                                           <div class="form-group mgn-rgt15">
-                                            <label for="dob2">Phone</label>
-                                            <input type="text" class="form-control" id="dob2"> 
+                                            <label for="dob2_emg-contact">Phone</label>
+                                            <input type="text" class="form-control" id="dob2_emg-contact"> 
                                           </div>
 
                                         </div>
@@ -700,7 +701,7 @@
                                       <li> Udaipur to Delhi on business class</li>
                                     </ul>
                                     <li>All activities as listed</li>
-                                    <ul id="inert-price-include">
+                                    <ul id="inert-price-include_accordion">
                                       <li> Delhi: City Highlights of Delhi</li>
                                       <li> Agra: City Highlights of Agra</li>
                                       <li> Agra: City Highlights of Fatehpur Sikri</li>
@@ -743,7 +744,7 @@
                             <div class="content-include-price">
                               <div class="col-md-12">
                                 <div class="row">
-                                  <ul id="price-include">
+                                  <ul id="price-include_accordion">
                                     <li>Camera fees.</li>
                                     <li>Travel, Health and Cancellation Insurance</li>
                                     <li>International airfare</li>
@@ -885,24 +886,24 @@
                                         <div class="row">
 
                                           <div class="form-group mgn-rgt30">
-                                            <label for="first-name">Full Name</label>
-                                            <input type="text" class="form-control" id="first-name">
+                                            <label for="first-name_billing-address">Full Name</label>
+                                            <input type="text" class="form-control" id="first-name_card-holder">
                                           </div>
                                           <div class="form-group mgn-rgt30">
-                                            <label for="email">Address 1</label>
-                                            <input type="text" class="form-control" id="email">
+                                            <label for="email_card-holder">Address 1</label>
+                                            <input type="text" class="form-control" id="email_card-holder">
                                           </div>
                                           <div class="form-group mgn-rgt30">
-                                            <label for="address-1">City</label>
-                                            <input type="text" class="form-control" id="address-1">
+                                            <label for="address-1_card-holder">City</label>
+                                            <input type="text" class="form-control" id="address-1_card-holder">
                                           </div>
                                           <div class="form-group mgn-rgt30">
-                                            <label for="country">Zip</label>
-                                            <input type="text" class="form-control" id="country">
+                                            <label for="country_card-holder">Zip</label>
+                                            <input type="text" class="form-control" id="country_card-holder">
                                           </div>
                                           <div class="form-group mgn-rgt30">
                                             <label for="state">Phone</label>
-                                            <input type="text" class="form-control" id="state">
+                                            <input type="text" class="form-control" id="state_card-holder">
                                           </div>
                                         </div>
                                       </div>
@@ -911,20 +912,20 @@
                                         <div class="row">
 
                                          <div class="form-group mgn-rgt15">
-                                          <label for="last-name">Last Name</label>
-                                          <input type="text" class="form-control" id="last-name">
+                                          <label for="last-name_card-holder">Last Name</label>
+                                          <input type="text" class="form-control" id="last-name_card-holder">
                                         </div>
                                         <div class="form-group mgn-rgt15">
                                           <label for="phone">Address 2</label>
-                                          <input type="text" class="form-control" id="phone">
+                                          <input type="text" class="form-control" id="phone_card-holder">
                                         </div>
                                         <div class="form-group mgn-rgt15">
-                                          <label for="address-2">State</label>
-                                          <input type="text" class="form-control" id="address-2">
+                                          <label for="address-2_card-holder">State</label>
+                                          <input type="text" class="form-control" id="address-2_card-holder">
                                         </div>
                                         <div class="form-group mgn-rgt15">
-                                          <label for="country">Country</label>
-                                          <select class="form-control" id="country">
+                                          <label for="country_card-holder1">Country</label>
+                                          <select class="form-control" id="country_card-holder1">
                                             <option></option>
                                             <option>country 1</option>
                                             <option>country 2</option>
@@ -934,8 +935,8 @@
                                           </select>
                                         </div>
                                         <div class="form-group mgn-rgt15">
-                                          <label for="city">Email</label>
-                                          <input type="text" class="form-control" id="city">
+                                          <label for="city_card-holder">Email</label>
+                                          <input type="text" class="form-control" id="city_card-holder">
                                         </div>
                                       </div>
                                     </div>
@@ -958,8 +959,8 @@
                                       <div class="row">
 
                                         <div class="form-group mgn-rgt30">
-                                          <label for="first-name">Card Number</label>
-                                          <input type="text" class="form-control" id="first-name">
+                                          <label for="first-name_card-details">Card Number</label>
+                                          <input type="text" class="form-control" id="first-name_card-details">
                                         </div>
                                       </div>
                                     </div>
@@ -1037,8 +1038,8 @@
                               <div class="col-md-6">
                                 <div class="row">
                                   <div class="form-group mgn-rgt30">
-                                    <label for="first-name">Date of Transfer Made</label>
-                                    <input type="text" class="form-control" id="first-name">
+                                    <label for="first-name_date-transfer">Date of Transfer Made</label>
+                                    <input type="text" class="form-control" id="first-name_date-transfer">
                                   </div>
                                 </div>
                               </div>
@@ -1046,8 +1047,8 @@
                               <div class="col-md-6">
                                 <div class="row">
                                   <div class="form-group mgn-rgt30">
-                                    <label for="first-name">Reference Number</label>
-                                    <input type="text" class="form-control" id="first-name">
+                                    <label for="first-name_ref-number">Reference Number</label>
+                                    <input type="text" class="form-control" id="first-name_ref-number">
                                   </div>
                                 </div>
                               </div>
@@ -1072,8 +1073,8 @@
                             <div class="col-md-6">
                               <div class="row">
                                 <div class="form-group mgn-rgt30">
-                                  <label for="first-name">Cheque Number</label>
-                                  <input type="text" class="form-control" id="first-name">
+                                  <label for="first-name_cheque-number">Cheque Number</label>
+                                  <input type="text" class="form-control" id="first-name_cheque-number">
                                 </div>
                               </div>
                             </div>
