@@ -1,6 +1,8 @@
+/* -------------  Show/Hide for floating buttons [SAVE/RESET] ------------- */
 jQuery(document).ready(function($){
     var winHeight = $(window).height();
     $(window).scroll(function(){
+        winHeight = $(window).height();
         var docHeight = $(document).height();
         var nowScroll=$(this).scrollTop();
         if((docHeight-90)<(winHeight+nowScroll)){
@@ -22,6 +24,8 @@ jQuery(document).ready(function($){
         },500);
     });
 });
+
+/* -------------  Edit Week Price /Price Band Model for Charging Policy ------------- */
 function showPriceBox(pricetxt, rid) {
     // ------------  Getting ID of ROW -------------
     //var tr_row_id=$(rid.closest('tr')).attr('id');
@@ -39,7 +43,7 @@ function showPriceBox(pricetxt, rid) {
         model_heading="<button data-dismiss='modal' class='close' type='button'><i class='fa fa-times-circle-o'><img src='assets/img/close.png' alt='X' title='close'></i></button><h4 class='modal-title'>Week Pricing</h4>";
         type_div="<div class='row'><div class='col-md-8 poppicklbl'>Type &nbsp;</div><div class='col-md-4'><i class='dropdown-icon2 popselicon'></i><select class='form-control popstatussel'><option>Per Unit Per Day</option></select></div></div>"
         head_row="<div class='row poprecord'><div class='col-md-1 popthrow'>M</div><div class='col-md-1 popthrow'>T</div><div class='col-md-1 popthrow'>W</div><div class='col-md-1 popthrow'>T</div><div class='col-md-1 popthrow'>F</div><div class='col-md-1 popthrow'>S</div><div class='col-md-1 popthrow'>S</div><div class='col-md-2 popthrow'>Buy</div><div class='col-md-2 popthrow'>Sell</div><div class='col-md-1 popthrow'>&nbsp;</div></div>";
-        add_rows=head_row+"<div class='row poprecord'><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1542'></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1742'></div><div class='col-md-1 poptdrow closeicon'>&nbsp;</div></div><div class='row poprecord'><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1542'></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1742'></div><div class='col-md-1 poptdrow closeicon'>&nbsp;</div></div>";
+        add_rows=head_row+"<div class='row poprecord'><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-monday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox prices-options-row-week-prices-tuesday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-wednesday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox prices-options-row-week-prices-thursday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox prices-options-row-week-prices-friday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-saturday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-sunday'></label></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1542'></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1742'></div><div class='col-md-1 poptdrow closeicon'>&nbsp;</div></div><div class='row poprecord'><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-monday' checked=''></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-tuesday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-wednesday' checked=''></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-thursday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-friday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-saturday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-sunday'></label></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1542'></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1742'></div><div class='col-md-1 poptdrow closeicon'>&nbsp;</div></div>";
         add_row_button="<div class='row model-add-row'><div class='adbtn'><a onclick='' id='addweekprice'><img src='assets/img/add-row.png'><span>Add</span></a><span class='weekerror'>Please select atleast one day..!!</span></div></div>";
         save_buttons="<div class='row model-buttons'><div class='savebut weeksave'>SAVE</div><div class='resetbut weekreset'>RESET</div></div>";
         var generate_price_model="<div role='dialog' class='modal fade' id='weekModal'><div class='modal-dialog'><div class='modal-content'><div class='modal-header'>"+model_heading+"</div><div class='modal-body'>"+type_div+"<div class='poptab'><div class='addweekrow'>"+add_rows+"</div>"+add_row_button+"</div>"+save_buttons+"</div></div></div></div>";
@@ -63,6 +67,8 @@ function showPriceBox(pricetxt, rid) {
     }
 }
 $(function() {
+
+    /* -------------  Page Save  ------------- */
     $('body').on('click', '.page-submit', function() {
         var counta = 0;
         $(".sinputval").each(function () {
@@ -87,6 +93,8 @@ $(function() {
             }
         });
     });
+
+    /* -------------  View Week Price/Price Band Model  ------------- */
     $('body').on('click', '.view-price', function() {
         pricetxt=$(this).attr("data-model-type");
         // ------------  Getting ID of ROW -------------
@@ -128,6 +136,8 @@ $(function() {
             $('#priceModal').modal('show');
         }
     });
+
+    /* -------------  Edit Week Price /Price Band Model for BUY/SELL ------------- */
     $('body').on('click', '.edit-price', function() {
         pricetxt=$(this).attr("data-model-type");
         // ------------  Getting ID of ROW -------------
@@ -146,7 +156,7 @@ $(function() {
             model_heading="<button data-dismiss='modal' class='close' type='button'><i class='fa fa-times-circle-o'><img src='assets/img/close.png' alt='X' title='close'></i></button><h4 class='modal-title'>Week Pricing</h4>";
             type_div="<div class='row'><div class='col-md-8 poppicklbl'>Type &nbsp;</div><div class='col-md-4'><i class='dropdown-icon2 popselicon'></i><select class='form-control popstatussel'><option>Per Unit Per Day</option></select></div></div>"
             head_row="<div class='row poprecord'><div class='col-md-1 popthrow'>M</div><div class='col-md-1 popthrow'>T</div><div class='col-md-1 popthrow'>W</div><div class='col-md-1 popthrow'>T</div><div class='col-md-1 popthrow'>F</div><div class='col-md-1 popthrow'>S</div><div class='col-md-1 popthrow'>S</div><div class='col-md-2 popthrow'>Buy</div><div class='col-md-2 popthrow'>Sell</div><div class='col-md-1 popthrow'>&nbsp;</div></div>";
-            add_rows=head_row+"<div class='row poprecord'><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1542'></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1742'></div><div class='col-md-1 poptdrow closeicon'>&nbsp;</div></div><div class='row poprecord'><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1542'></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1742'></div><div class='col-md-1 poptdrow closeicon'>&nbsp;</div></div>";
+            add_rows=head_row+"<div class='row poprecord'><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-monday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox prices-options-row-week-prices-tuesday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-wednesday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox prices-options-row-week-prices-thursday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' checked='' class='weekcheckbox prices-options-row-week-prices-friday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-saturday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-sunday'></label></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1542'></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1742'></div><div class='col-md-1 poptdrow closeicon'>&nbsp;</div></div><div class='row poprecord'><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-monday' checked=''></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-tuesday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-wednesday' checked=''></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-thursday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-friday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-saturday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-sunday'></label></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1542'></div><div class='col-md-2 poptdrow'><input type='text' class='form-control poptdtext' placeholder='Price' value='1742'></div><div class='col-md-1 poptdrow closeicon'>&nbsp;</div></div>";
             add_row_button="<div class='row model-add-row'><div class='adbtn'><a onclick='' id='addweekprice'><img src='assets/img/add-row.png'><span>Add</span></a><span class='weekerror'>Please select atleast one day..!!</span></div></div>";
             save_buttons="<div class='row model-buttons'><div class='savebut weeksave'>SAVE</div><div class='resetbut weekreset'>RESET</div></div>";
             var generate_price_model="<div role='dialog' class='modal fade' id='weekModal'><div class='modal-dialog'><div class='modal-content'><div class='modal-header'>"+model_heading+"</div><div class='modal-body'>"+type_div+"<div class='poptab'><div class='addweekrow'>"+add_rows+"</div>"+add_row_button+"</div>"+save_buttons+"</div></div></div></div>";
@@ -169,6 +179,8 @@ $(function() {
             $('#priceModal').modal('show');
         }
     });
+
+    /* -------------  Page Reset ------------- */
     $(".pagereset").click(function(){
         count=0;
         $( ".inputval" ).each(function() {
@@ -178,6 +190,8 @@ $(function() {
             $( this ).addClass( "errorbox" );
         });
     });
+
+    /* -------------  Week Price model RESET ------------- */
     $('body').on('click', '.weekreset', function() {
         $(".weekcheckbox").prop('checked', false);
         count=0;
@@ -189,6 +203,8 @@ $(function() {
             $( this ).val("");
         });
     });
+
+    /* -------------  Price Band model RESET ------------- */
     $('body').on('click', '.pricereset', function() {
         count=0;
         $( ".poptdtext" ).each(function() {
@@ -199,6 +215,8 @@ $(function() {
             $( this ).val("");
         });
     });
+
+    /* -------------  Week Price Band model SAVE ------------- */
     $('body').on('click', '.weeksave', function() {
         count=0; var r=0; var k=0; var s=0;
         $('.weekcheckbox').each(function(){
@@ -226,6 +244,8 @@ $(function() {
             }
         });
     });
+
+    /* -------------  Week Price model SAVE ------------- */
     $('body').on('click', '.pricesave', function() {
         count=0;
         $( ".poptdtext" ).each(function() {
@@ -239,29 +259,52 @@ $(function() {
             }
         });
     });
+
+    /* -------------  Week Price / Price Band  model Delete ------------- */
     $('body').on('click', '.closeicon', function() {
         hh=$(this).parent('div');
         $('.delpopup').css("display","block");
     });
+
+    /* -------------  Week Price / Price Band  model alert [NO] ------------- */
     $(".nobut").click(function(){
         $('.delpopup').css("display","none");
     });
+
+    /* -------------  Week Price / Price Band  model alert [YES] ------------- */
     $(".yesbut").click(function(){
         hh.remove();
         $('.delpopup').css("display","none");
     });
+
+    /* -------------  Add Row in Week Price model  ------------- */
     $('body').on('click', '#addweekprice', function() {
-        $(".addweekrow").append("<div class='row poprecord'><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox'></label></div><div class='col-md-2 poptdrow'><input type='text' placeholder='Price' class='form-control poptdtext'></div><div class='col-md-2 poptdrow'><input type='text' placeholder='Price' class='form-control poptdtext'></div><div class='col-md-1 poptdrow showcloseicon'>&nbsp;</div></div>");
-        $(".showcloseicon").click(function(){
-            $(this).parent('div').remove();
-        });
+        if(($('.addweekrow').children().length-1) <= 6) {
+            $(".addweekrow").append("<div class='row poprecord'><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-monday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-tuesday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-wednesday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-thursday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-friday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-saturday'></label></div><div class='col-md-1 poptdrow'><label><input type='checkbox' class='weekcheckbox prices-options-row-week-prices-sunday'></label></div><div class='col-md-2 poptdrow'><input type='text' placeholder='Price' class='form-control poptdtext'></div><div class='col-md-2 poptdrow'><input type='text' placeholder='Price' class='form-control poptdtext'></div><div class='col-md-1 poptdrow showcloseicon'>&nbsp;</div></div>");
+            $(".showcloseicon").click(function () {
+                $(this).parent('div').remove();
+            });
+        }
     });
+
+    /* -------------  7 X 7  checkbox validation in Week Price model for OPTIONS and EXTRAS------------- */
+    $('body').on('click', '.prices-options-row-week-prices-monday, .prices-options-row-week-prices-tuesday, .prices-options-row-week-prices-wednesday, .prices-options-row-week-prices-thursday, .prices-options-row-week-prices-friday, .prices-options-row-week-prices-saturday, .prices-options-row-week-prices-sunday, .prices-extras-row-week-prices-monday, .prices-extras-row-week-prices-tuesday, .prices-extras-row-week-prices-wednesday, .prices-extras-row-week-prices-thursday, .prices-extras-row-week-prices-friday, .prices-extras-row-week-prices-saturday, .prices-extras-row-week-prices-sunday', function() {
+        var classnames = $(this).attr('class');
+        $("."+classnames.replace(/ /g, '.')).each(function () {
+            this.checked = false;
+        });
+        this.checked = true;
+    });
+
+    /* -------------  Add Row in Price Band model  ------------- */
     $('body').on('click', '#addpriceband', function() {
         $(".addpricerow").append("<div class='row poprecord'><div class='col-md-3 poptdrow'><input type='text' placeholder='Min' class='form-control poptdtext'></div><div class='col-md-3 poptdrow'><input type='text' placeholder='Max' class='form-control poptdtext'></div><div class='col-md-3 poptdrow'><input type='text' placeholder='Price' class='form-control poptdtext'></div><div class='col-md-2 poptdrow'><input type='text' placeholder='Price' class='form-control poptdtext'></div><div class='col-md-1 poptdrow showcloseicon'>&nbsp;</div></div>");
         $(".showcloseicon").click(function(){
             $(this).parent('div').remove();
         });
     });
+
+    /* -------------  ALERT for deleting active OPTIONS rows [YES]  ------------- */
     options_hidden_hold_str="";
     extras_hidden_hold_str="";
     options_holdrows = [];
@@ -286,9 +329,13 @@ $(function() {
         }
         $('.rowdelpopup').css("display","none");
     });
+
+    /* -------------  ALERT for deleting active OPTIONS rows [NO]  ------------- */
     $(".rownobut").click(function(){
         $('.rowdelpopup').css("display","none");
     });
+
+    /* -------------  Holding selected OPTIONS rows for Delete ------------- */
     $('body').on('click', '#remove_options_price_row', function() {
         options_hidden_hold_str="";
         extras_hidden_hold_str="";
@@ -307,6 +354,8 @@ $(function() {
             $('.rowdelpopup').css("display","block");
         }
     });
+
+    /* -------------  Edit OPTIONS Row ------------- */
     options_actRow="";
     $("#edit_options_price_row").on('click', function(){
         if($('.optcheckbox:checked').length==1 && $('.prices-options-row-option-name').length==0) {
@@ -337,6 +386,8 @@ $(function() {
             });
         }
     });
+
+    /* -------------  Clone OPTIONS Row ------------- */
     $("#add_options_price_row").on('click', function(){
         if($('.optcheckbox:checked').length==1 && $('.tdtext').length==0) {
             optrowid=$('.optcheckbox:checked').val();
@@ -368,6 +419,8 @@ $(function() {
             });
         }
     });
+
+    /* -------------  Date Range picker for OPTIONS ------------- */
     $("#optdate").daterangepicker({
         "autoUpdateInput": false,
         "cancelClass": "closecan",
@@ -375,6 +428,8 @@ $(function() {
             format: 'YYYY-MM-DD'
         }
     });
+
+    /* -------------  APPLY Date Range picker for OPTIONS ------------- */
     $('#optdate').on('apply.daterangepicker', function(ev, picker) {
         $("#optDateText").empty();
         $("#optDateText").append("<div class='dyndateleft'><span class='txtredcol'>From:</span> "+picker.startDate.format('YYYY-MM-DD')+"</div><div class='dyndateright'> <span class='txtredcol'>To:</span> "+picker.endDate.format('YYYY-MM-DD')+"</div>");
@@ -412,6 +467,8 @@ $(function() {
             });
         }
     });
+
+    /* -------------  Edit EXTRAS Row ------------- */
     extras_actRow="";
     $("#edit_extras_price_row").on('click', function(){
         if($('.extcheckbox:checked').length==1 && $('.prices-extras-row-extra-name').length==0) {
@@ -442,6 +499,8 @@ $(function() {
             });
         }
     });
+
+    /* -------------  Holding selected EXTRAS rows for Delete ------------- */
     $('body').on('click', '#remove_extras_price_row', function() {
         var i=0;
         extras_holdrows=[];
@@ -457,6 +516,8 @@ $(function() {
             $('.rowdelpopup').css("display","block");
         }
     });
+
+    /* -------------  Date Range picker for EXTRAS ------------- */
     $("#extdate").daterangepicker({
         "autoUpdateInput": false,
         "cancelClass": "closecan",
@@ -464,12 +525,16 @@ $(function() {
             format: 'YYYY-MM-DD'
         }
     });
+
+    /* -------------  APPLY Date Range picker for EXTRAS ------------- */
     $('#extdate').on('apply.daterangepicker', function(ev, picker) {
         $("#extDateText").empty();
         $("#extDateText").append("<div class='dyndateleft'><span class='txtredcol'>From:</span> "+picker.startDate.format('YYYY-MM-DD')+"</div><div class='dyndateright'> <span class='txtredcol'>To:</span> "+picker.endDate.format('YYYY-MM-DD')+"</div>");
         $("#extras_date_range_from").val(picker.startDate.format('YYYY-MM-DD'));
         $("#extras_date_range_to").val(picker.endDate.format('YYYY-MM-DD'));
     });
+
+    /* -------------  Select all rows in OPTIONS ------------- */
     $('body').on('change', '.optcheckall', function() {
         if(this.checked) {
             $(".optcheckbox").prop('checked', $(this).prop("checked"));
@@ -483,6 +548,8 @@ $(function() {
             $('#add_options_price_row').removeClass("butactive");
         }
     });
+
+    /* -------------  Select all rows in EXTRAS ------------- */
     $('body').on('change', '.extcheckall', function() {
         if(this.checked) {
             $(".extcheckbox").prop('checked', $(this).prop("checked"));
@@ -496,6 +563,8 @@ $(function() {
             $('#add_extras_price_row').removeClass("butactive");
         }
     });
+
+    /* -------------  OPTIONS Checkbox onclick ------------- */
     $('body').on('click', '.optcheckbox', function() {
         if (options_actRow != "") {
             $("#prices_options_row_" + optrowid).empty();
@@ -525,6 +594,8 @@ $(function() {
             $('#link_extras_price_row').removeClass("butactive");
 
     });
+
+    /* -------------  EXTRAS Checkbox onclick ------------- */
     $('body').on('click', '.extcheckbox', function() {
         if (extras_actRow != "") {
             $("#prices_extras_row_" + extrowid).empty();
@@ -554,6 +625,8 @@ $(function() {
             $('#link_extras_price_row').removeClass("butactive");
 
     });
+
+    /* -------------  Page Nation  ------------- */
     $('body').on('click', '.options-page-nav-change', function() {
         $("#options_navigation_id").empty();
         $("#options_navigation_id").append($(this).html());
@@ -561,12 +634,6 @@ $(function() {
     $('body').on('click', '.extras-page-nav-change', function() {
         $("#extras_navigation_id").empty();
         $("#extras_navigation_id").append($(this).html());
-    });
-    $('body').on('click', '.options-view-price-band', function() {
-        $('#view_price_band_model').modal('show');
-    });
-    $('body').on('click', '.options-view-week-price', function() {
-        $('#view_week_price_model').modal('show');
     });
     $('body').on('click', '.options-page-navigation-right', function() {
         naxtval=parseInt($("#options_navigation_id").html())+1;
@@ -596,15 +663,9 @@ $(function() {
             $("#extras_navigation_id").append(prevval);
         }
     });
-    $('body').on('click', '.prices-options-row-sell-price', function() {
-        prevval=parseInt($("#extras_navigation_id").html())-1;
-        if(1 <= prevval){
-            $("#extras_navigation_id").empty();
-            $("#extras_navigation_id").append(prevval);
-        }
-    });
 
-    $('body').on('keydown', '.poptdtext', function(e) {
+    /* -------------  Allow Only Numerics for model text fields ------------- */
+        $('body').on('keydown', '.poptdtext', function(e) {
         // Allow: backspace, delete, tab, escape, enter and .
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110]) !== -1 ||
                 // Allow: Ctrl+A
@@ -623,6 +684,8 @@ $(function() {
             e.preventDefault();
         }
     });
+
+    /* -------------  Allow Only Numerics in OPTIONS and EXTRAS BUY text fields ------------- */
     $('body').on('keydown', '.prices-options-row-buy-price', function(e) {
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110]) !== -1 ||
             (e.keyCode == 65 && e.ctrlKey === true) ||
@@ -635,6 +698,8 @@ $(function() {
             e.preventDefault();
         }
     });
+
+    /* -------------  Allow Only Numerics in OPTIONS and EXTRAS SELL text fields ------------- */
     $('body').on('keydown', '.prices-options-row-sell-price', function(e) {
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110]) !== -1 ||
             (e.keyCode == 65 && e.ctrlKey === true) ||
@@ -647,6 +712,56 @@ $(function() {
             e.preventDefault();
         }
     });
+    $('body').on('keydown', '.prices-options-row-price-margin', function(e) {
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 53]) !== -1 ||
+            (e.keyCode == 65 && e.ctrlKey === true) ||
+            (e.keyCode == 67 && e.ctrlKey === true) ||
+            (e.keyCode == 88 && e.ctrlKey === true) ||
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+            return;
+        }
+        if (e.shiftKey || (e.keyCode < 48 || e.keyCode > 57) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+    $('body').on('keydown', '.prices-extras-row-price-margin', function(e) {
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 53]) !== -1 ||
+            (e.keyCode == 65 && e.ctrlKey === true) ||
+            (e.keyCode == 67 && e.ctrlKey === true) ||
+            (e.keyCode == 88 && e.ctrlKey === true) ||
+            (e.keyCode >= 35 && e.keyCode <= 39)) {
+            return;
+        }
+        if (e.shiftKey || (e.keyCode < 48 || e.keyCode > 57) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+    $('body').on('blur', '.prices-options-row-price-margin', function() {
+        if(isNaN(($(this).val()).replace('%',''))){
+            $(".prices-options-row-price-margin").addClass("errorbox");
+        }else{
+            if($(this).val()!=""){
+                $(".prices-options-row-price-margin").val(($(this).val()).replace('%','')+"%");
+                $(".prices-options-row-price-margin").removeClass("errorbox");
+            }else{
+                $(".prices-options-row-price-margin").addClass("errorbox");
+            }
+        }
+    });
+    $('body').on('blur', '.prices-extras-row-price-margin', function() {
+        if(isNaN(($(this).val()).replace('%',''))){
+            $(".prices-extras-row-price-margin").addClass("errorbox");
+        }else{
+            if($(this).val()!=""){
+                $(".prices-extras-row-price-margin").val(($(this).val()).replace('%','')+"%");
+                $(".prices-extras-row-price-margin").removeClass("errorbox");
+            }else{
+                $(".prices-extras-row-price-margin").addClass("errorbox");
+            }
+        }
+    });
+
+    /* -------------  Automatic Margin[%] calculation in OPTIONS ------------- */
     $('body').on('keyup', '.prices-options-row-sell-price', function() {
         if(parseInt($(".prices-options-row-sell-price").val()) >= parseInt($(".prices-options-row-buy-price").val())){
             var diffval=parseInt($(this).val())-parseInt($(".prices-options-row-buy-price").val());
@@ -658,10 +773,13 @@ $(function() {
             $(".prices-options-row-price-margin").val("");
         }
     });
+
+    /* -------------  Automatic SELL calculation in OPTIONS ------------- */
     $('body').on('keyup', '.prices-options-row-price-margin', function() {
         if(parseInt($(".prices-options-row-buy-price").val()) > 0){
             if($(this).val()!="" && $(this).val()!="%"){
                 var diffval=(parseInt($(this).val())/100)*parseInt($(".prices-options-row-buy-price").val());
+                console.log(diffval);
                 $(".prices-options-row-sell-price").val(Math.ceil(diffval)+parseInt($(".prices-options-row-buy-price").val()));
                 $(".prices-options-row-sell-price").removeClass("errorbox");
                 $(".prices-options-row-buy-price").removeClass("errorbox");
@@ -670,6 +788,8 @@ $(function() {
             $(".prices-options-row-buy-price").addClass("errorbox");
         }
     });
+
+    /* -------------  Automatic Margin[%] calculation in EXTRAS ------------- */
     $('body').on('keyup', '.prices-extras-row-sell-price', function() {
         if(parseInt($(".prices-extras-row-sell-price").val()) >= parseInt($(".prices-extras-row-buy-price").val())){
             var diffval=parseInt($(this).val())-parseInt($(".prices-extras-row-buy-price").val());
@@ -681,10 +801,13 @@ $(function() {
             $(".prices-extras-row-price-margin").val("");
         }
     });
+
+    /* -------------  Automatic SELL calculation in EXTRAS ------------- */
     $('body').on('keyup', '.prices-extras-row-price-margin', function() {
         if(parseInt($(".prices-extras-row-buy-price").val()) > 0){
             if($(this).val()!="" && $(this).val()!="%"){
                 var diffval=(parseInt($(this).val())/100)*parseInt($(".prices-extras-row-buy-price").val());
+                console.log(diffval);
                 $(".prices-extras-row-sell-price").val(Math.ceil(diffval)+parseInt($(".prices-extras-row-buy-price").val()));
                 $(".prices-extras-row-sell-price").removeClass("errorbox");
                 $(".prices-extras-row-buy-price").removeClass("errorbox");
@@ -693,6 +816,9 @@ $(function() {
             $(".prices-extras-row-buy-price").addClass("errorbox");
         }
     });
+    /* -------------  to show page loader ------------- */
+    //   $('.page-loader').css('display','block')
+    //   $('.page-loader').css('display','none')
 });
 
 

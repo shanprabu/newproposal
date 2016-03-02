@@ -89,7 +89,7 @@ label{
     margin-left:-200px;
     margin-top:-75px;
     text-align:center;
-    font-size:16xpx;
+    font-size:16px;
     padding:30px;
     border-radius:2px;
 }
@@ -125,6 +125,31 @@ label{
     z-index:1000;
     display:none;
     z-index: 9100;
+}
+.page-loader{
+    position:fixed;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,0,0,0.5);
+    z-index:1000;
+    z-index: 9100;
+    display: none;
+}
+.loader-box{
+    background-color:#FFFFFF;
+    width:180px;
+    height:90px;
+    padding:15px 20px;
+    box-shadow:0px 0px 5px #000;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-90px;
+    margin-top:-45px;
+    text-align:center;
+    padding:20px;
+    border-radius:2px;
+    text-align: center;
 }
 .rowyesbut{
     background-color:#e3847a;
@@ -231,10 +256,10 @@ label{
 /*.oflowhide{
     overflow: hidden;
 }*/
-#headingaccord2{
+#heading_accordion_options{
     padding-bottom: 32px;
 }
-#headingaccord3{
+#heading_accordion_extras{
     padding-bottom: 32px;
 }
 .trbgcolor{
