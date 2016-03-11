@@ -1,0 +1,511 @@
+/*------- Sign Up Dashboard screen ------*/
+.signupDashboardContainer{
+}
+
+/*----create new account section ---*/
+.createNewAccount{
+      margin: 0 auto;
+      padding: 35px 0px;
+      display: table;
+}
+
+.createAccountBtnRed{
+      width: 100%;
+      background: #e3847a;
+      border-color: #e3847a;
+      font-size: 18px;
+      text-transform: uppercase;
+      height: 42px;
+      letter-spacing: 0.03em;
+      padding: 5px 28px;
+      font-family: 'SoinSansPro-Medium'
+}
+
+/*---search section -----*/
+.searchSection {
+    width: 68%;
+    display: inline-table;
+    margin: auto 16.2%;
+}
+
+.searchinput{
+      float: left;
+      width: 78%;
+      margin-right: 25px;
+}
+.searchinput input{
+      height: 38px;
+      font-style: italic !important;
+}
+
+
+.searchBtnRed{
+      background: #dc665a;
+      border-color: #dc665a;
+      float: right;
+      font-size: 18px;
+      text-transform: uppercase;
+      height: 38px;
+      letter-spacing: 0.03em;
+      padding: 5px 28px;
+      font-family: 'SoinSansPro-Medium'
+}
+
+/*----------dashboard table section-------------*/
+.dashboardTable{
+      margin: 15px 0px;
+}
+.dashboardTableHeader{
+      font-size: 18px;
+      color: #a4a4a4;
+      display: inline-block;
+      width: 100%;
+      line-height: 34px;
+      height: 35px;
+}
+.dashboardTableHeading{
+      float: left;
+      font-size: 18px;
+      color: #a4a4a4;     
+}
+.dashboardTableheadingright{
+      float: right;
+      font-size: 16px;
+      position: relative;
+}
+.dashboardTableheadingright .form-group{
+      margin: 0;
+      position: relative;
+      right: 125%;
+}
+.dashboardTableheadingright .form-group label {
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 0px; 
+      font-weight: normal;
+}
+
+.dashboardTableheadingright .form-group select {
+      font-size: 14px;
+      margin-left: 10px;
+      padding: 3px 5px;
+}
+.dashboardTableContent{
+      clear: both;
+      width: 100%;
+}
+
+.dashboardTableContent table{
+      width: 100%;
+}
+
+.dashboardTableContent table thead{
+      background: #949494;
+      color: #fff;
+      font-size: 14px;
+      font-family: 'SoinSansPro-Roman'
+}
+
+.dashboardTableContent table thead tr th{
+      padding: 15px;
+      font-weight: normal;
+}
+
+.dashboardTableContent table tbody tr{
+      border-top: 1px solid #ccc;
+}
+
+.dashboardTableContent table tbody tr td{
+      background: #f7f7f7;
+      padding: 15px;
+      color: #36312b;
+}
+
+.dashboardTableContent table tbody tr td:last-child{
+      position: relative;
+      /*display: block;*/
+}
+
+.dashboardTableContent table.tablesorter thead tr .header {
+      background-image: url(../images/arrow-icon-up.png);
+      background-repeat: no-repeat;
+      background-position: right 22px;
+      cursor: pointer;
+}
+
+.dashboardTableContent table.tablesorter thead tr .header.headerSortDown {
+      background-image: url(../images/arrow-icon-down.png);
+}
+
+.dashboardTableContent table.tablesorter thead tr .header.headerSortUp {
+      background-image: url(../images/arrow-icon-up.png);
+}
+
+.tableCloseicon{
+      background: transparent url('../images/close-icon.png') center right no-repeat;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      right: 25px;
+      cursor: pointer;
+}
+
+/*-----------------dashboard statistics --------------*/
+.dashboardstatistics{
+      margin-top: 40px;
+      margin-bottom: 35px;
+}
+.headingtext{
+      font-size: 18px;
+      font-weight: bold;
+      color: #5b5b5b;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+}
+.statisticscontainer{
+      min-height: 250px;
+}
+.statisticscontainer table{
+      width: 100%;
+}
+.statisticscontainer table thead tr th{
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      border-bottom: 1px solid #ccc;
+      color: #949494;
+      letter-spacing: 0.05em;
+}
+
+.statisticscontainer table tbody tr td{
+      padding: 10px;
+      color: #949494;
+}
+
+.statisticsheading{
+      line-height: 49px;
+      font-size: 11px;
+      position: relative;
+      color: #a4a4a4;
+      height: 46px;
+}
+
+.statisticscontent{
+      background: #f6f6f6;
+      padding: 20px;
+      display: inline-block;
+      width: 100%;
+}
+
+.salesstatisticslist{
+      width: 100%;
+      display: inline-block;
+}
+
+.salesstatisticslist ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+}
+
+.salesstatisticslist ul li{
+      float: left;
+      width: 20.5%;
+      margin-right: 6%;
+}
+
+.salesstatisticslist ul li:last-child{
+      margin-right: 0%;
+}
+
+.salesstatisticslist ul li span{
+      display: block;
+}
+
+.smallheading{
+      font-size: 11px;
+      color: #36312b;
+      text-transform: uppercase;
+      line-height: 16px;
+      padding-bottom: 4px;
+}
+.bignumber{
+      font-size: 23px;
+      color: #36312b;
+      text-transform: uppercase;
+      font-family: 'SoinSansPro-Medium';
+}
+.smallheadinggrey{
+      font-size: 11px;
+      text-transform: uppercase;
+      line-height: 24px;
+      color: #949494;
+}
+
+.linewhitestrip{
+      background: #fff;
+      height: 7px;
+      margin-bottom: 5px;
+      width: 100%;
+      position: relative;
+}
+
+.linepercentage{
+      height: 7px;
+      position: absolute;
+}
+.alignbtmline{
+      height: 100%;
+      position: relative;
+      top: 7px;
+}
+
+
+/*-----------modal-------------*/
+
+.delete-modal{
+      width: 394px;
+}
+.delete-modal .modal-body{
+      text-align: center;
+      padding-top: 25px;
+}
+.delete-modal p{
+      font-size: 16px;
+}
+
+.createnewaccount-modal{
+      width: 730px;
+}
+
+.createnewaccount-modal .modal-body {
+      position: relative;
+      padding: 15px;
+      padding-top: 0px;
+}
+.modalformcontainer{
+      margin-bottom: 15px;
+      display: inline-block;
+      width: 100%;
+}
+.modalformheading{
+      text-transform: uppercase;
+      font-size: 15px;
+      color: #36312b;
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 20px;
+      font-family: 'SoinSansPro-Roman';
+      letter-spacing: 0.03em;
+}
+.modalformcontent{
+
+}
+
+.modalformcontent label{
+      font-weight: 600;
+}
+
+.modalformcontent select{
+      color: #b59d79;
+      font-size: 16px;
+      font-family: 'SoinSansPro-Roman';
+}
+
+.modalformcontent input{
+      color: #b59d79;
+      font-size: 16px;
+      font-family: 'SoinSansPro-Roman';
+}
+
+.doubleinput{
+      display: inline-block;
+      width: 100%;
+}
+
+.doubleinput div.alignleft{
+      float: left;
+      margin-right: 6%;
+}
+.modalbtnsection{
+      padding: 0px 15px;
+      margin-bottom: 15px;
+      padding-top: 15px;
+}
+
+.modelbtnred{
+      background: #e3847a;
+      border-color: #e3847a;
+      font-size: 14px;
+      height: 36px;
+      text-transform: uppercase;
+      padding: 0px 20px;
+      letter-spacing: 0.03em;
+}
+.modelbtngoldenbdr{
+      background: transparent;
+      border-color: #c4ad8e;
+      font-size: 14px;
+      color: #c4ad8e;
+      height: 36px;
+      text-transform: uppercase;
+      padding: 0px 20px;
+      letter-spacing: 0.03em;
+}
+.modelbtngoldenbdr:hover, .modelbtngoldenbdr:focus{
+      color: #c4ad8e;
+}
+
+/*------------Modal trip creation---------------*/
+.createnewtrip-modal{    
+      width: 1150px;
+}
+
+.createnewtrip-modal .modal-body {
+      position: relative;
+      padding: 15px 11%;
+      padding-top: 0px;
+}
+
+.pulledup{
+      position: relative;
+      top: -25px;
+}
+.plusminus{
+      background: #b59d79;
+      color: #fff;
+      font-weight: bold;
+      padding: 4px 6px;
+      font-size: 16px;
+      border-radius: 3px;
+      margin-right: 6px;
+      cursor: pointer;
+      line-height: 12px;
+      width: 21px;
+      display: inline-block;
+}
+
+.accordion_head, .accordion_head label{
+      cursor: pointer;
+}
+
+/*--------------hide show traveller count--------------*/
+.totalguest{
+      position: relative;
+}
+.displaycontentTG{
+      position: absolute;
+      width: 292px;
+      background: #fff;
+      padding: 17px 10px 17px 20px;
+      right: -35%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      top: 57px;
+      z-index: 9;
+}
+.onpopup{
+
+}
+
+.onpopup label{
+      font-size: 14px;
+      letter-spacing: 0.06em;
+      line-height: 14px;
+}
+.onpopup label span{
+      font-size: 10px;
+      letter-spacing: 0.02em;
+      color: #b59d79;
+}
+
+.arrow_box {
+      /*position: relative;*/
+      background: #fff;
+      border: 1px solid #d3d1d1;
+}
+.arrow_box:after, .arrow_box:before {
+      bottom: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+}
+
+.arrow_box:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-bottom-color: #fff;
+      border-width: 10px;
+      margin-left: -10px;
+}
+.arrow_box:before {
+      border-color: rgba(211, 209, 209, 0);
+      border-bottom-color: #d3d1d1;
+      border-width: 11px;
+      margin-left: -11px;
+}
+
+.datepicker-dropdown .datepicker-days thead .prev i.icon-arrow-left,.datepicker-dropdown .datepicker-days thead .next i.icon-arrow-right{
+    top: 20px;
+}
+
+.datepicker-dropdown .datepicker-days {
+   padding: 5px
+}
+th.noSortIcon.header {
+    background: none !important;
+    cursor: default !important;
+    background-image: url(../images/arrow.png) !important;
+}
+ .trip_link {
+    width: 185px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 150px;
+}
+span.page-number.clickable {
+    color: #b2b2b2;
+    width: 10px;
+    display: inline-block;
+    background: #b2b2b2;
+    margin: 5px;
+    font-size: 8px;
+    border-radius: 50%;
+    height: 10px;
+    cursor: pointer;
+}
+span.page-number.clickable.active{
+    color: #65615c;
+    background-color: #65615c;
+    cursor: pointer;
+}
+.pager{
+      margin: 0px;
+}
+#topTenPackages thead{
+      border-bottom: 1px #ccc solid;
+}
+#topTenPackages tbody tr td{
+      border: 0px #fff solid;
+      padding: 6px;
+}
+.statisticscontainer .pager {
+    position: absolute;
+    bottom: 0;
+    width: 42%;
+}
+.statisticscontainer #topTenPackages tbody tr td:last-child{
+    text-align: center;
+}
+.delete-modal {
+  margin-top: 190px;
+}
+.delete-modal-head {
+    background: #ddd;
+    padding-bottom: 27px;
+}

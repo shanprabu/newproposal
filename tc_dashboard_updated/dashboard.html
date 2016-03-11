@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>:: Agent Dashboard ::</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- base styles  -->
+	<link href="assets/css/base.css" rel="stylesheet">
+	<link href="assets/jquery_ui/css/jquery-ui.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="assets/css/dashboard.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/multiple_input/css/chosen.css">
+	<link href="assets/month_picker/css/datepicker.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Fixed navbar -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="#"><img class="img-responsive" src="assets/images/logo.svg" alt="Enchanting Travels"/></a>
+			</div>
+		</div>
+		<div class="headerBand">
+			<div class="container">
+				<div class="headerBandNav">
+					<ul>
+						<li class="active"><a href="#">Overview</a></li>
+						<li><a href="#">Trips</a></li>
+					</ul>
+				</div>
+				<div class="headerbandright">
+					<ul>
+						<!-- <li class="dropdown">
+							<a href="#">
+								<img src="assets/images/notify.png">
+								<span class="notifyno">2</span>
+							</a>
+							<ul class="dddropdown-menu">
+								<li><a href="#">Commission paid for query no. <span>22152</span></a></li>
+								<li><a href="#">Commission paid for query no. <span>15221</span></a></li>
+							</ul>
+						</li> -->
+						<!-- <li>
+							<a href="#"><img src="assets/images/setting.png"></a>
+						</li> -->
+						<li>
+							<div class="welcomeuserlogin">
+								<img src="assets/images/userimage.png">
+								<span>
+									<h4>Hello, Agent</h4>
+									<h5>Last Login Wed OCT 15, 2015</h5>
+								</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="wrapper">
+		<div class="container">
+			<div class="signupDashboardContainer">
+
+				<div class="col-md-12 dashboardstatistics">
+					<div class="row">
+						<div class="wdt52perc mgnryt6perc pull-left">
+							<div class="headingtext">Sales statistics</div>
+							<div class="statisticscontainer">
+								<div class="statisticsheading">
+									<div id="monthpicker1" data-date-format="dd-mm-yyyy"></div>
+								</div>
+								
+								<div class="statisticscontent">
+									<div class="salesstatisticslist mgnbtm25">
+										<ul>
+											<li>
+												<span class="bignumber">152</span>
+												<span class="smallheading">Enquiries</span>
+												<span class="linewhitestrip">
+													<span class="bgred linepercentage wdt30perc"></span>
+												</span>
+												<span class="smallheadinggrey">Out of 455</span>
+											</li>
+											<li>
+												<span class="bignumber">124</span>
+												<span class="smallheading">Proposals</span>
+												<span class="linewhitestrip">
+													<span class="bgorange linepercentage wdt20perc"></span>
+												</span>
+												<span class="smallheadinggrey">Out of 455</span>
+											</li>
+											<li>
+												<span class="bignumber">100</span>
+												<span class="smallheading">Revised</span>
+												<span class="linewhitestrip">
+													<span class="bgblue linepercentage wdt60perc"></span>
+												</span>
+												<span class="smallheadinggrey">Out of 455</span>
+											</li>
+											<li>
+												<span class="bignumber">79</span>
+												<span class="smallheading">Confirmed</span>
+												<span class="linewhitestrip">
+													<span class="bggreen linepercentage wdt25perc"></span>
+												</span>
+												<span class="smallheadinggrey">Out of 455</span>
+											</li>
+										</ul>
+									</div>
+									<div class="salesstatisticslist">
+										<ul>
+											<li class="smallheading alignbtmline">Total Sales</li>
+											<li class="bignumber">$212,457</li>
+											<li class="smallheading alignbtmline">Total Earnings</li>
+											<li class="bignumber">$7500</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="wdt42perc pull-left">
+							<div class="headingtext">Top 10 Packages</div>
+							<div class="statisticscontainer">
+							<table id="topTenPackages" class="paginated tablesorter table table-hover">
+								<thead>
+									<tr>
+										<th>Packages</th>
+										<th><img src="assets/images/package_icon_01.png"></th>
+										<th class="wdt10perc"><img src="assets/images/package_icon_02.png"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Lorem ipsum comet syrup</td>
+										<td>$4780</td>
+										<td>16%</td>
+									</tr>
+									<tr>
+										<td>Lorem ipsum comet syrup</td>
+										<td>$4780</td>
+										<td>16%</td>
+									</tr>
+									<tr>
+										<td>Lorem ipsum comet syrup</td>
+										<td>$4780</td>
+										<td>16%</td>
+									</tr>
+									<tr>
+										<td>Lorem ipsum comet syrup</td>
+										<td>$4780</td>
+										<td>16%</td>
+									</tr>
+									<tr>
+										<td>Lorem ipsum comet syrup</td>
+										<td>$4780</td>
+										<td>16%</td>
+									</tr>
+									<tr>
+										<td>Lorem ipsum comet syrup</td>
+										<td>$4780</td>
+										<td>16%</td>
+									</tr>
+									<tr>
+										<td>Lorem ipsum comet syrup</td>
+										<td>$4780</td>
+										<td>16%</td>
+									</tr>
+									<tr>
+										<td>Lorem ipsum comet syrup</td>
+										<td>$4780</td>
+										<td>16%</td>
+									</tr>
+								</tbody>
+							</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="searchSection">
+					<form>
+						<div class="form-group searchinput">
+							<input type="text" class="form-control" id="filter" placeholder="Search by Deal ID, Guest Name" />
+						</div>
+						<button type="button" class="btn btn-primary searchBtnRed">Search</button>
+					</form>
+				</div>
+				
+				<div class="dashboardTable">
+					<div class="dashboardTableHeader">
+						<div class="dashboardTableHeading">Trip Details List:</div>
+						<div class="dashboardTableheadingright">
+							<div id="monthpicker2" data-date-format="dd-mm-yyyy"></div>
+						</div>
+					</div>
+					<div class="dashboardTableContent table-responsive">
+						<table id="agentdashboardtable" class="paginated tablesorter table table-hover">
+					    <thead>
+					        <tr>
+					            <th class="" scope="col">Deal Id</th>
+					            <th scope="col">Registration Date</th>  
+					            <th scope="col">Guest Name</th> 
+					            <th class="">Total Guest</th> 
+											<th class="">Confirmed Date</th> 
+											<th class="">Trip Link</th> 
+											<th class="">Sales Value</th>
+											<th class="noSortIcon header"></th>
+					        </tr>
+					    </thead>
+							    <tbody class="searchable">
+							      <tr> 
+									<td><a href="#" class="orange">22142</a></td> 
+									<td>28-Oct-15</td> 
+									<td>Arun Pillar</td> 
+									<td>2</td> 
+									<td>22-Jun-15</td>  
+									<td class="trip_link" title="http://Enchanting_TravelsEnchanting_TravelsEnchanting_TravelsEnchanting_Travels.com">http://Enchanting_TravelsEnchanting_TravelsEnchanting_TravelsEnchanting_Travels.com</td>
+									<td>$2200</td>  
+									<td><span data-toggle="modal" data-target="#deleteRow"  class="tableCloseicon confirm-delete" data-title="arun" data-id="1"></span></td> 
+								</tr> 
+								<tr> 
+									<td><a href="#" class="orange">22143</a></td> 
+									<td>28-Oct-15</td> 
+									<td>Arun Pillar</td> 
+									<td>7</td> 
+									<td>02-jul-15</td>  
+									<td class="trip_link">http://Enchanting_Travels.com</td>
+									<td>$23232</td>  
+									<td><span data-toggle="modal" data-target="#deleteRow"  class="tableCloseicon confirm-delete" data-title="arun_pillar" data-id="2"></span></td> 
+								</tr>
+								<tr> 
+									<td><a href="#" class="orange">22144</a></td> 
+									<td>08-Oct-15</td> 
+									<td>Arun Kumar</td> 
+									<td>9</td> 
+									<td>07-jan-15</td>  
+									<td class="trip_link">http://Enchanting_Travels.com</td>
+									<td>$23232</td>  
+									<td><span data-toggle="modal" data-target="#deleteRow"  class="tableCloseicon confirm-delete" data-title="arunpillar" data-id="3"></span></td> 
+								</tr>
+								<tr> 
+									<td><a href="#" class="orange">22145</a></td> 
+									<td>11-Oct-15</td> 
+									<td>Arun</td> 
+									<td>74</td> 
+									<td>01-may-15</td>  
+									<td class="trip_link">http://Enchanting_Travels.com</td>
+									<td>$4444</td>  
+									<td><span data-toggle="modal" data-target="#deleteRow"  class="tableCloseicon confirm-delete" data-title="arunArun" data-id="4"></span></td> 
+								</tr>
+								<tr> 
+									<td><a href="#" class="orange">22146</a></td> 
+									<td>02-Oct-15</td> 
+									<td>Arun Pillar</td> 
+									<td>2</td> 
+									<td>08-dec-15</td>  
+									<td class="trip_link">http://Enchanting_Travels.com</td>
+									<td>$3333</td>  
+									<td><span data-toggle="modal" data-target="#deleteRow"  class="tableCloseicon confirm-delete" data-title="arun_pillar_arun" data-id="5"></span></td>
+								</tr>
+								<tr> 
+									<td><a href="#" class="orange">22146</a></td> 
+									<td>02-Oct-15</td> 
+									<td>Arun Pillar</td> 
+									<td>2</td> 
+									<td>08-dec-15</td>  
+									<td class="trip_link">http://Enchanting_Travels.com</td>
+									<td>$3333</td>  
+									<td><span data-toggle="modal" data-target="#deleteRow"  class="tableCloseicon confirm-delete" data-title="arunn" data-id="6"></span></td>
+								</tr>
+								<tr> 
+									<td><a href="#" class="orange">22146</a></td> 
+									<td>02-Oct-15</td> 
+									<td>Arun Pillar</td> 
+									<td>2</td> 
+									<td>08-dec-15</td>  
+									<td class="trip_link">http://Enchanting_Travels.com</td>
+									<td>$3333</td>  
+									<td><span data-toggle="modal" data-target="#deleteRow" class="tableCloseicon confirm-delete" data-title="arun_enchanting" data-id="7"></span></td>
+								</tr>
+							    </tbody>
+							</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="createNewTrip" tabindex="-1" role="dialog" aria-labelledby="createnewtripLabel">
+		<div class="modal-dialog createnewtrip-modal" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true"><img src="assets/images/close-modal-icon.png" alt="close"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="modalformcontainer">
+							<div class="modalformheading">Trip Details</div>
+							<div class="modalformcontent">
+								<div class="col-md-12">
+									<div class="form-group doubleinput">
+										<div class="wdt20perc alignleft">
+											<label>Query No:</label>
+											<input type="text" class="form-control grey" />
+										</div>
+										<div class="wdt74perc pull-left">
+
+											<label>Destination: (Multiple places can be added)</label>
+											<select data-placeholder="Select Destinations" class="chosen-select form-control" multiple >
+												<option value=""></option>
+												<option value="United States">United States</option>
+												<option value="United Kingdom">United Kingdom</option>
+												<option value="Afghanistan">Afghanistan</option>
+												<option value="Zimbabwe">Zimbabwe</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group doubleinput">
+										<div class="wdt20perc alignleft">
+											<label>Start Date:</label>
+											<input type="text" class="bgtransparent form-control date_icon start-date pointerclass" />
+										</div>
+										<div class="wdt20perc alignleft totalguest">
+											<label>Total Guest:</label>
+											<i class="dropdown-icon"></i>
+											<input type="text" placeholder="Guest(s)" class=" pointerclass form-control inputboxTG inputuser_icon" />
+											<div class="displaycontentTG arrow_box" style="display:none;">
+												<div class="closeredicon"></div>
+												<div class="alignleft onpopup positionrelative">
+													<label>Adults<br><span>(12+yrs)</span></label>
+													<i class="dropdown-icon4"></i>
+													<select type="text" class="form-control">
+														<option>01</option>
+														<option>02</option>
+														<option>03</option>
+														<option>04</option>
+													</select>
+												</div>
+												<div class="alignleft onpopup positionrelative">
+													<label>Childrens<br><span>(2-12yrs)</span></label>
+													<i class="dropdown-icon4"></i>
+													<select type="text" class="form-control">
+														<option>01</option>
+														<option>02</option>
+														<option>03</option>
+														<option>04</option>
+													</select>
+												</div>
+												<div class="pull-left onpopup positionrelative">
+													<label>Infants<br><span>(below 2yrs)</span></label>
+													<i class="dropdown-icon4"></i>
+													<select type="text" class="form-control">
+														<option>01</option>
+														<option>02</option>
+														<option>03</option>
+														<option>04</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="wdt20perc alignleft positionrelative">
+											<label>Budget:</label>
+											<i class="dropdown-icon2"></i>
+											<select type="text" class="form-control">
+												<option>Unsure</option>
+												<option>lorem ipsum</option>
+												<option>lorem ipsum</option>
+												<option>lorem ipsum</option>
+											</select>
+										</div>
+										<div class="wdt22perc pull-left positionrelative">
+											<label>Status</label>
+											<i class="dropdown-icon2"></i>
+											<select type="text" class="form-control">
+												<option>Enquiry</option>
+												<option>lorem ipsum</option>
+												<option>lorem ipsum</option>
+												<option>lorem ipsum</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modalformcontainer mgnbtm0">
+							<div class="modalformheading">Personal Details</div>
+							<div class="modalformcontent">
+								<div class="col-md-12">
+									<div class="form-group doubleinput">
+										<div class="wdt47perc alignleft">
+											<label>First Name:</label>
+											<input type="text" class="form-control" />
+										</div>
+										<div class="wdt47perc pull-left">
+											<label>Last Name:</label>
+											<input type="text" class="form-control" />
+										</div>
+									</div>
+									<div class="form-group doubleinput">
+										<div class="wdt47perc alignleft">
+											<label>Email Id:</label>
+											<input type="text" class="form-control" />
+										</div>
+										<div class="wdt205perc alignleft">
+											<label>Phone:</label>
+											<input type="text" class="form-control" />
+										</div>
+										<div class="wdt205perc pull-left">
+											<label>DOB:</label>
+											<input type="text" class="bgtransparent form-control date_icon start-date pointerclass" />
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="accordion_container mgnbtm25">
+										<div class="accordion_head">
+											<span class="plusminus">+</span>
+											<label>Address:</label>
+										</div>
+										<div class="accordion_body" style="display: none;">
+											<div class="form-group doubleinput hgt100 mgnbtm0">
+												<div class="wdt47perc alignleft">
+													<textarea type="text" class="hgt108 form-control"></textarea>
+												</div>
+												<div class="wdt205perc alignleft mgnbtm15 pulledup">
+													<label>City:</label>
+													<input type="text" class="form-control" />
+												</div>
+												<div class="wdt205perc pull-left mgnbtm15 pulledup">
+													<label>State:</label>
+													<input type="text" class="form-control" />
+												</div>
+												<div class="wdt205perc alignleft mgnbtm15 pulledup">
+													<label>Zip Code:</label>
+													<input type="text" class="form-control" />
+												</div>
+												<div class="wdt205perc pull-left mgnbtm15 pulledup positionrelative">
+													<label>Country:</label>
+													<i class="dropdown-icon2"></i>
+													<select type="text" class="form-control">
+														<option>USA</option>
+														<option>Germany</option>
+														<option>India</option>
+														<option>Canada</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="modalbtnsection pdntp0">
+							<button type="button" class="btn btn-primary modelbtnred mgnryt15">Save</button>
+							<button type="button" class="btn btn-primary modelbtngoldenbdr">Reset</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="deleteRow" tabindex="-1" role="dialog" aria-labelledby="deleteLabel">
+		<div class="modal-dialog delete-modal" role="document">
+			<div class="modal-content">
+				<div class="modal-header delete-modal-head">
+					<p class="text-center">Delete this item</p>
+				</div>
+				<div class="modal-body">
+					<form>
+						<!-- <p>Delete this item</p>	 -->					
+						<div class="modalbtnsection">
+							<button type="button" class="btn btn-primary modelbtnred mgnryt15" id="btnYes">Yes</button>
+							<button type="button" class="btn btn-primary modelbtngoldenbdr" class="close" data-dismiss="modal" aria-label="Close">No</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/table_sorter/js/jquery.tablesorter.js"></script>
+	<!-- datepicker -->
+	<script src="assets/jquery_ui/js/jquery-ui.js"></script>
+	<script type="text/javascript" src="assets/js/base.js"></script>
+	<script type="text/javascript" src="assets/js/search.js"></script>
+	<script src="assets/accordion/js/accordion.js" type="text/javascript"></script>
+	<script src="assets/multiple_input/js/chosen.jquery.js" type="text/javascript"></script>
+	<script src="assets/month_picker/js/bootstrap-datepicker.js"></script>    
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="assets/bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
