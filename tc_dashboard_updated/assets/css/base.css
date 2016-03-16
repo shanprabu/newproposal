@@ -629,6 +629,7 @@ ul.dddropdown-menu li a:hover, ul.dddropdown-menu li a:focus{
     height: 32px;
     color: #fff;
     font-size: 11px;
+    font-weight: bold;
   }
 
   #monthpicker1 .datepicker .datepicker-months tbody tr td span:hover, #monthpicker1 .datepicker .datepicker-years tbody tr td span:hover,

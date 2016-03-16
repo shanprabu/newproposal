@@ -1,17 +1,17 @@
 jQuery(document).ready(function($){
 
 
-  $("#dashboardtable").tablesorter({
+  $("#topTenPackages").tablesorter({
     headers: {
-      2: {
+      0: {
         sorter: false
       },
-      3: {
-        sorter: false
-      },
-      5: {
-        sorter: false
-      }
+      // 2: {
+      //   sorter: false
+      // },
+      // 5: {
+      //   sorter: false
+      // }
     }
   });
 
