@@ -62,11 +62,17 @@
 					Parik Laxminarayan<br>
 					Founder & Managing Director</p>
 					<hr class="tuhrdiv">
-					<h2>Tell the world about Enchanting</h2>
+					<h2>Review us on Trustpilot!</h2>
 
 					<p>You know how important independent reviews are. So do we! 
-						Please take an extra minute to share your Enchanting Travels experience on Trip Advisor.</p>
-						<img src="assets/images/tripadvisor.jpg">
+						In a moment, you will be redirected to the independant review platform, Trustpilot</p>
+
+					<p>Please take an extra minute to share your Enchanting Travels experience. Thank you.</p>
+					<img src="assets/images/trustpilot_logo.png">
+					<div id="dvCountDown">
+					You will be redirected after <span id="lblCount"></span>&nbsp;seconds.
+					</div>
+					<!-- 	<img src="assets/images/tripadvisor.jpg">
 						<a href="#" class="cta-button green">Review on trip advisor</a>
 						<hr class="tuhrdiv">
 						<h2>Earn $150 towards your next trip</h2>
@@ -81,7 +87,7 @@
 			           	<span class="facebook"><i class="fa fa-facebook fa-lg"></i></span>
 	                   	<button type="button" class="fbook"> POST ON FACEBOOK </button>
 		           </div>
-              </div>
+              </div> -->
 
 					</div> <!-- .wrap -->
 			
@@ -135,6 +141,19 @@ window.onclick = function(event) {
 		}
 	}
 }
+/*Redirection code*/
+$(function () {
+        var seconds = 10;
+        $("#lblCount").html(seconds);
+        setInterval(function () {
+            seconds--;
+            $("#lblCount").html(seconds);
+            if (seconds == 0) {
+                $("#dvCountDown").hide();
+                window.location = "http://www.google.com/";
+            }
+        }, 1000);
+});
 </script>
 
 </body>

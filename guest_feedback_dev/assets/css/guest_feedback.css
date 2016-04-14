@@ -1126,3 +1126,6 @@ div#selectator_select4 {
     border-radius: 5px;
     min-height: 44px;
 }
+#lblCount{
+   color: #e46a5e !important;
+}
