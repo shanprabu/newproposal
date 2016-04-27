@@ -77,7 +77,7 @@
                   <li>Trip Summary</li>
                   <li>Advance Payment</li>
                   <li>Passport Copies</li>
-                  <li>Balance Payment</li>
+                  <li>Refund</li>
                 </ul>
               </div>
               <!-- fieldsets -->
@@ -1310,7 +1310,119 @@
           <div class="row">
             <div class="lft-section">
               <div class="l-s-box">
-                <p>Same as the advance payment section!</p>
+                <div class="content-bg-gry refundTab">
+                  <div class="col-md-12 refundTxtDiv">
+                    <p>Please share your bank account details, where we could refund the amount</p>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="row">
+                      <form>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <div class="form-group mgn-rgt30">
+                              <label for="first-name">Name of Account Holder</label>
+                              <input type="text" class="form-control" id="refundTab_Account-holder-name">
+                            </div>
+                            <div class="form-group mgn-rgt30">
+                              <label for="email">ABA Code/SWIFT Code/Routing Number</label>
+                              <input type="text" class="form-control" id="refundTab_routingNumber">
+                            </div>
+                            <div class="form-group mgn-rgt30">
+                              <label for="address-1">Branch Address</label>
+                              <textarea rows="6" name="refundTab_BranchAddress" class="form-control" id="refundTab_address-1"></textarea>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="row">
+
+                           <div class="form-group mgn-rgt15">
+                            <label for="last-name">IBAN / Bank Account Number</label>
+                            <input type="text" class="form-control" id="refundTab_accNumber">
+                          </div>
+                          <div class="form-group mgn-rgt15">
+                            <label for="phone">Branch Name</label>
+                            <input type="text" class="form-control" id="refundTab_branchName">
+                          </div>
+                          <div class="form-group mgn-rgt15">
+                            <div class="col-md-5 mgn-rgt15">
+                              <div class="row">
+                                <label for="zip-code">City</label>
+                                <input type="text" class="form-control" id="refundTab_city"> 
+                              </div>
+                            </div>
+                            <div class="col-md-6 wdtperc534">
+                              <div class="row">
+                                <label for="strtdate">State</label>
+                                <input type="text" class="form-control" id="refundTab_state"> 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group mgn-rgt15 paddingTopTenpx">
+                            <div class="col-md-5 mgn-rgt15">
+                              <div class="row">
+                                <label for="zip-code">Country</label>
+                                <select class="form-control" id="refundTab_card-holder2">
+                                  <option></option>
+                                  <option>country 1</option>
+                                  <option>country 2</option>
+                                  <option>country 3</option>
+                                  <option>country 4</option>
+                                  <option>country 5</option>
+                                </select> 
+                              </div>
+                            </div>
+                            <div class="col-md-6 wdtperc534">
+                              <div class="row">
+                                <label for="strtdate">Zip Code</label>
+                                <input type="text" class="form-control" id="refundTab_zip-code"> 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- German Refund Tab -->
+
+             <!--  <div class="content-bg-gry refundTab">
+                  <div class="col-md-12 refundTxtDiv">
+                    <p>Please share your bank account details, where we could refund the amount</p>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="row">
+                      <form>
+                        <div class="col-md-6">
+                          <div class="row">
+                            <div class="form-group mgn-rgt30">
+                              <label for="first-name">Name des Kontoinhabers</label>
+                              <input type="text" class="form-control" id="refundTab_Account-holder-name">
+                            </div>
+                            <div class="form-group mgn-rgt30">
+                              <label for="email">SWIFT</label>
+                              <input type="text" class="form-control" id="refundTab_routingNumber">
+                              <p>*nur anzugeven fur Kontos auBerhalb der EU oder in anderer Wahrung als Euro</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="row">
+                           <div class="form-group mgn-rgt15">
+                            <label for="last-name">IBAN</label>
+                            <input type="text" class="form-control" id="refundTab_accNumber">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div> -->
+
+              <!-- German Refund Tab -->
+
               </div>
             </div>
           </div>
@@ -1350,7 +1462,7 @@
         </div>
       </div>
     </div>
-    <input type="submit" name="next" class="btn btn-primary pull-left" value="MAKE PAYMENT" />
+    <input type="submit" name="next" class="btn btn-primary pull-left refundTabSubmit" value="SUBMIT" />
   </fieldset>
 </div>
 

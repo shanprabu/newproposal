@@ -2010,3 +2010,26 @@ section{
 		background-color: #b9a284;
 		border-color: #b9a284;	
 	}
+
+.refundTab label{
+	font-size: 16px;
+}
+.paddingTopTenpx{
+	margin-top: 32px;
+    display: inline-block;
+    width: 96%;
+}
+.refundTxtDiv {
+    padding: 0;
+    margin: 0px 0 40px 0;
+    border-bottom: 1px #ab9175 dashed;
+}
+.refundTxtDiv p {
+    color: #ab9175;
+}
+.refundTab .form-group{
+	margin-bottom: 30px;
+}
+.refundTabSubmit{
+	margin-top: 20px;
+}
