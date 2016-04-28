@@ -2011,13 +2011,11 @@ section{
 		border-color: #b9a284;	
 	}
 
-.refundTab label{
+/*.refundTab label{
 	font-size: 16px;
-}
+}*/
 .paddingTopTenpx{
 	margin-top: 32px;
-    display: inline-block;
-    width: 96%;
 }
 .refundTxtDiv {
     padding: 0;
