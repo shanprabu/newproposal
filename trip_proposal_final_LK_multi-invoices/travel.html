@@ -867,23 +867,51 @@
                                   <!-- Tab panes -->
                                   <div class="tab-content">
                                     <div role="tabpanel" class="tab-pane" id="bookTab">
-                                      <label>Give option to the guest to book trip online:
-                                        <label class="radio-inline radio-label">
-                                          <input type="radio" name="optradio">Yes
-                                        </label>
-                                        <label class="radio-inline">
-                                          <input type="radio" name="optradio">No
-                                        </label>
-                                      </label>
-                                      <br/>
-                                      <label class="gen-radio-multiple">Generate multiple links:
-                                        <label class="radio-inline radio-label">
-                                          <input type="radio" name="post-format" id="post-format-gallery">Yes
-                                        </label>
-                                        <label class="radio-inline">
-                                          <input type="radio" name="post-format" checked>No
-                                        </label>
-                                      </label>
+                                      <div class="col-md-5 textALignRight bookTabLabelDiv">
+                                        <div class="row">
+                                          <label>Give option to the guest to book trip online:</label>
+                                        </div>
+                                        <div class="row">
+                                          <label class="gen-radio-multiple">Generate multiple links:</label>
+                                        </div>
+                                        <div class="row">
+                                          <label class="gen-radio-multiple">Edit Advance Percentage to be paid?</label>
+                                        </div>
+                                        <div class="row">
+                                          <input type="checkbox" name="applyAllCheckBox" id="checkBoxApplyAll">
+                                          <label class="gen-radio-multiple">Apply for all</label>
+                                        </div>
+                                      </div> 
+                                      <div class="col-md-7 textAlignLeft bookTabOptionsDiv">
+                                        <div class="row">
+                                          <label class="radio-inline radio-label">
+                                            <input type="radio" name="optradio">Yes
+                                          </label>
+                                          <label class="radio-inline">
+                                            <input type="radio" name="optradio">No
+                                          </label>
+                                        </div>
+                                        <div class="row">
+                                          <label class="radio-inline radio-label">
+                                            <input type="radio" name="post-format" id="post-format-gallery">Yes
+                                          </label>
+                                          <label class="radio-inline">
+                                            <input type="radio" name="post-format" checked>No
+                                          </label>
+                                        </div>
+                                        <div class="row">
+                                          <label class="radio-inline radio-label">
+                                            <input type="radio" name="percentOptionYesNo" id="percentOption">Yes
+                                          </label>
+                                          <label class="radio-inline">
+                                            <input type="radio" name="percentOptionYesNo">No
+                                          </label>
+                                        </div>
+                                        <div class="row">
+                                           <input type="text" value="20%" name="applyAllValue" class="applyAllInputField disabled" id="inputFieldApplyAll">
+                                           <label class="applyAllPercentValue displayNone dollors" name="percentageValue">$7800</label>
+                                        </div>
+                                      </div>
                                       <div class="section-std" id="gallery-box">
                                         <div class="std-section-div div-1">
                                           <label for="sel1">1 - Standard Room (Double)</label><br/>
@@ -934,6 +962,7 @@
                                               </li>
                                         </ul>
                                     </div>
+                                    <input type="text" value="20%" name="applyAllValue" class="applyAllInputField floatLeft individualPercentage">
                                     <span class="dollors">$2450</span>
                                     <input class="p1" type="text" id="copyBtnTarget" value="t-travelmaker-dev.enchanting-travels.com/travel/abcdjcgfqwertyuioasdfghjk" readonly>
 
@@ -1016,6 +1045,7 @@
                                         </li>
                                   </ul>
                               </div>
+                              <input type="text" value="20%" name="applyAllValue" class="applyAllInputField floatLeft individualPercentage">
                               <span class="dollors">$2450</span>
                                 <input class="p1" type="text" id="copyBtnTarget1" value="p-travelmaker-dev.enchanting-travels.com/travel/abcdjcgfqwertyuioasdfghjk" readonly>
 
@@ -1073,6 +1103,7 @@
                                   </li>
                             </ul>
                         </div>
+                        <input type="text" value="20%" name="applyAllValue" class="applyAllInputField floatLeft individualPercentage">
                         <span class="dollors">$2450</span>
                          <input class="p1" type="text" id="copyBtnTarget2" value="o-travelmaker-dev.enchanting-travels.com/travel/abcdjcgfqwertyghjkldfghjouioasdfghjk" readonly>
 
@@ -2814,15 +2845,15 @@
           <script> nofouc();</script>
           <!-- FOUC fix END -->
           <script>
-            // Load AddThis on DOM Ready
-            var addthisScript = document.createElement('script');
-            addthisScript.setAttribute('src', 'http://s7.addthis.com/js/300/addthis_widget.js#domready=1')
-            document.body.appendChild(addthisScript);
-            var addthis_config = {
-            services_exclude: "print,gmail",
-            services_compact: "facebook,twitter,email,stumbleupon,more",
-            pubid: "xa-519b1ed332277891"
-            };
+          //   // Load AddThis on DOM Ready
+          //   var addthisScript = document.createElement('script');
+          //   addthisScript.setAttribute('src', 'http://s7.addthis.com/js/300/addthis_widget.js#domready=1')
+          //   document.body.appendChild(addthisScript);
+          //   var addthis_config = {
+          //   services_exclude: "print,gmail",
+          //   services_compact: "facebook,twitter,email,stumbleupon,more",
+          //   pubid: "xa-519b1ed332277891"
+          //   };
           </script>
           <script src="./travel_files/addthis_widget.js"></script>
 

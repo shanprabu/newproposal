@@ -109,8 +109,40 @@ $(document).ready(function(){
   $(function() {
       $('input[name=post-format]').on('click init-post-format', function() {
           $('#gallery-box').toggle($('#post-format-gallery').prop('checked'));
+
       }).trigger('init-post-format');
   });
+  /*Percentage Value toggle*/
+ $(function() {
+      $('input[name=percentOptionYesNo]').on('click init-post-format', function() {
+          $('.individualPercentage').toggle($('#percentOption').prop('checked'));
+          $('#inputFieldApplyAll').prop('readonly',false);
+          $('.individualPercentage').prop('readonly',true);
+          $('#inputFieldApplyAll').removeClass('disabled');
+          $('.individualPercentage').addClass('disabled');
+      }).trigger('init-post-format');
+
+      $('input#checkBoxApplyAll').change(function () {
+        if($(this).is(':checked')) {
+          $('#inputFieldApplyAll').attr('readonly', false);
+          $('.individualPercentage').attr('readonly', true);
+          $('#inputFieldApplyAll').removeClass('disabled');
+          $('.individualPercentage').addClass('disabled');
+        } else {
+          $('#inputFieldApplyAll').attr('readonly', true);
+          $('input.individualPercentage').attr('readonly', false);
+          $('#inputFieldApplyAll').addClass('disabled');
+          $('.individualPercentage').removeClass('disabled');
+        }
+    });
+  });
+/* $(function() {
+      $('input[name=applyAllCheckBox]').attr('checked', function() {
+          $('#inputFieldApplyAll').prop('disabled',false);
+          $('.individualPercentage').prop('disabled',false);
+      }).trigger('init-post-format');
+  });*/
+ 
 
 $('.copyBtnCommon').click(function () {
     $('.copiedBtnCommon').hide();
