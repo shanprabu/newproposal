@@ -126,11 +126,13 @@ $(document).ready(function(){
         if($(this).is(':checked')) {
           $('#inputFieldApplyAll').attr('readonly', false);
           $('.individualPercentage').attr('readonly', true);
+          $('#applyAllLabel').removeClass('disabled');
           $('#inputFieldApplyAll').removeClass('disabled');
           $('.individualPercentage').addClass('disabled');
         } else {
           $('#inputFieldApplyAll').attr('readonly', true);
           $('input.individualPercentage').attr('readonly', false);
+          $('#applyAllLabel').addClass('disabled');
           $('#inputFieldApplyAll').addClass('disabled');
           $('.individualPercentage').removeClass('disabled');
         }
@@ -155,5 +157,15 @@ $('.copyBtnCommon').click(function () {
   });
 
  var clipboard = new Clipboard('.copyBtnCommon');
-
+});
+/*Booking Details Tabs*/
+$(document).ready(function() {
+    $(".tabs-menu a").click(function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("current");
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $(".tab-content").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
 });

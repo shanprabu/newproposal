@@ -1015,7 +1015,7 @@ ol.progresss[data-steps="9"] li { width: 11%; }
 	font-weight: 500;
 }
 .passengers-list-item-details .span-email {
-	color: rgb(161, 151, 151);
+	color: #989898;
 }
 .progresss .step.flight {
  		
@@ -1250,7 +1250,7 @@ ol.progresss[data-steps="9"] li { width: 11%; }
 
 .payment-details {
 	text-align: center;
-	font-weight: 500;
+	font-weight: 600;
 	color: #696969;
 }
 .para-center {
@@ -1271,7 +1271,7 @@ ol.progresss[data-steps="9"] li { width: 11%; }
 }
 .modal-part2,.pay-details h4,.intermediate-details h4,.flight h4,.tbl th {
 		color: #504F4F;
-		font-weight: 500;
+		font-weight: 600;
 }
 
 
@@ -1347,7 +1347,8 @@ ol.progresss[data-steps="9"] li { width: 11%; }
     display: inline-block;
     height: 23px;
     position: relative;
-    top: 3px;
+    top: 20px;
+    right: 0;
     width: 40px;
     background-repeat-x: no-repeat;
 }
@@ -1423,7 +1424,7 @@ ol.progresss[data-steps="9"] li { width: 11%; }
     margin-bottom: 15px;
     margin-top: 9px;
     text-align: left;
-    width: 25%;
+    width: 25.5%;
 }
 .tblusd-color {
 	color: #a3d42f;
@@ -1512,13 +1513,13 @@ a.sel-drpdwn {
 .dollors {
 	float: left;
 	display: inline;
-	width: 15%;
+	width: 25%;
 	margin-left: 5px;
 	padding: 10px;
-	color: #C98114;
+	color: #c4aa61;
 }
 .dropdown-menu.name-ul-div {
-    margin-top: 18px;
+    margin-top: 1px;
     width: 232px;
     text-align: left;
 }
@@ -1535,13 +1536,14 @@ a.sel-drpdwn {
 }
 .p1 {
     white-space: nowrap;
-	width: 40%;
+	width: 35%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	float: left;
 	margin-top: 4px;
 	margin-right: 20px;
 	border: none;
+	font-size: 13px;
 }
 .btnn {
 	float: left;
@@ -1574,17 +1576,18 @@ a.sel-drpdwn {
 #modal-2 .modal-header{
 	border-bottom: 0px solid #FFF;
 }
-.headerTripDetails p {
+.headerTripDetails div {
     float: left;
-    font-size: 1.3em;
-    margin-right: 23px;
+    font-size: 1.2em;
+    margin: 0 10px;
+    font-weight: 500;
 }
 .headerTripDetails {
     display: inline-block;
-    margin: auto 225px;
+    margin: 0 10%;
     text-align: center;
     width: 80%;
-    padding: 18px 0;
+    padding: 30px 0 10px;
 }
 .passengers-list-item-details-edit, .span-saving {
 	display: none;
@@ -1774,12 +1777,110 @@ input.applyAllInputField {
     padding: 20px;
 }
 #gallery-box .applyAllInputField{
-	margin-top: 6px;
-    margin-left: 25px;
+	margin: -5px 5px 10px 0;
 }
 .disabled { 
     background-color: #f1f1f1;
 }
 #inputFieldApplyAll.disabled{
 	background: #f1f1f1;
+}
+.passengers-list-item-details-edit input.span-email-edit:focus {
+    outline: none;
+}
+
+
+/*Booking Details Tabs CSS*/
+div#bookingDetailsTabs {
+    width: 100%;
+    padding: 0;
+}
+
+.wdh100{
+	width: 100px;
+}
+
+div#bookingDetailsTabs ul.nav.nav-tabs {
+	border: none;
+    width: 100%;
+    padding: 30px 20% 0;
+    background: #f6f6f6;
+}
+
+div#bookingDetailsTabs li.active a {
+    border-bottom: #ea950e 2px solid !Important;
+    border: 1px solid transparent;
+    background: transparent;
+    color: #000;
+    font-weight: 600;
+}
+
+div#bookingDetailsTabs li {
+    width: 31%;
+    text-align: center;
+}
+
+div#bookingDetailsTabs li a {
+	font-size: 1.2em;
+	color: #565656;
+}
+
+div#bookingDetailsTabs li a:hover {
+	font-size: 1.2em;
+	background: transparent;
+	border: 1px solid transparent;
+}
+
+#modal-2 .modal-header.modal-head{
+	background: #f6f6f6;
+}
+
+.hotelDetails h4 {
+    margin: 0px 0 20px 0;
+    font-weight: 600;
+}
+
+span.tripDetailsHeader {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.bookingDetailsTabList{
+
+}
+/*End of Booking details css*/
+.orngClr{
+	color: #c4aa61;
+}
+
+.totalTripPrice{
+	float: right;
+}
+
+.individualPercentage {
+    color: #000;
+}
+
+button.btn.btn-danger.btnn.copyBtnCommon {
+    float: right;
+}
+
+button.btn.btn-default.btnn.copiedBtnCommon {
+    float: right;
+    background: #f1f1f1;
+    border: none;
+}
+
+input#checkBoxApplyAll {
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+label.gen-radio-multiple.disabled {
+    opacity: .5;
+}
+
+label#applyAllLabel {
+    font-weight: 500;
 }

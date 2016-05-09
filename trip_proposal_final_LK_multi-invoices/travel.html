@@ -879,7 +879,7 @@
                                         </div>
                                         <div class="row">
                                           <input type="checkbox" name="applyAllCheckBox" id="checkBoxApplyAll">
-                                          <label class="gen-radio-multiple">Apply for all</label>
+                                          <label class="gen-radio-multiple disabled" id="applyAllLabel">Apply for all</label>
                                         </div>
                                       </div> 
                                       <div class="col-md-7 textAlignLeft bookTabOptionsDiv">
@@ -914,7 +914,11 @@
                                       </div>
                                       <div class="section-std" id="gallery-box">
                                         <div class="std-section-div div-1">
-                                          <label for="sel1">1 - Standard Room (Double)</label><br/>
+                                          <div class="roomDetailsListRow">
+                                            <label for="sel1">1 - Standard Room (Double)</label>
+                                            <span class="totalTripPrice"> Trip Price: <span class="totalPriceValue orngClr">$2400</span></span>
+                                          </div>
+                                          <br/>
                                           <div class="dropdown drpdown-name-email">
                                             <div class="dropdown-toggle sel-drpdwn" data-toggle="dropdown">
                                               <div class="passengers-list-item-details">
@@ -962,8 +966,8 @@
                                               </li>
                                         </ul>
                                     </div>
-                                    <input type="text" value="20%" name="applyAllValue" class="applyAllInputField floatLeft individualPercentage">
-                                    <span class="dollors">$2450</span>
+                                    
+                                    <span class="dollors"><input type="text" value="20%" name="applyAllValue" class="applyAllInputField floatLeft individualPercentage">$2450</span>
                                     <input class="p1" type="text" id="copyBtnTarget" value="t-travelmaker-dev.enchanting-travels.com/travel/abcdjcgfqwertyuioasdfghjk" readonly>
 
                                     <button class="btn btn-danger btnn copyBtnCommon" data-clipboard-target="#copyBtnTarget" data-clipboard-action="copy">Copy</button>
@@ -997,7 +1001,10 @@
                                     <!-- End of first row -->
                                   </div>
                                   <div class="std-section-div">
-                                    <label for="sel2">1 - Standard Room (Single)</label><br/>
+                                    <div class="roomDetailsListRow">
+                                      <label for="sel2">1 - Standard Room (Single)</label>
+                                      <span class="totalTripPrice"> Trip Price: <span class="totalPriceValue orngClr">$2400</span></span>
+                                    </div><br/>
                                     <div class="dropdown drpdown-name-email">
                                       <div class="dropdown-toggle sel-drpdwn" data-toggle="dropdown">
                                         <div class="passengers-list-item-details">
@@ -1045,8 +1052,8 @@
                                         </li>
                                   </ul>
                               </div>
-                              <input type="text" value="20%" name="applyAllValue" class="applyAllInputField floatLeft individualPercentage">
-                              <span class="dollors">$2450</span>
+                              
+                              <span class="dollors"><input type="text" value="20%" name="applyAllValue" class="applyAllInputField floatLeft individualPercentage"> $2450</span>
                                 <input class="p1" type="text" id="copyBtnTarget1" value="p-travelmaker-dev.enchanting-travels.com/travel/abcdjcgfqwertyuioasdfghjk" readonly>
 
                                     <button class="btn btn-danger btnn copyBtnCommon" data-clipboard-target="#copyBtnTarget1" data-clipboard-action="copy">Copy</button>
@@ -1055,7 +1062,10 @@
 
                             </div>
                             <div class="std-section-div">
-                              <label for="sel3">1 - Delux Room (Single)</label><br/>
+                              <div class="roomDetailsListRow">
+                                <label for="sel3">1 - Delux Room (Single)</label>
+                                <span class="totalTripPrice"> Trip Price: <span class="totalPriceValue orngClr">$2400</span></span>
+                              </div><br/>
                               <div class="dropdown drpdown-name-email">
                                 <div class="dropdown-toggle sel-drpdwn" data-toggle="dropdown">
                                   <div class="passengers-list-item-details">
@@ -1103,8 +1113,8 @@
                                   </li>
                             </ul>
                         </div>
-                        <input type="text" value="20%" name="applyAllValue" class="applyAllInputField floatLeft individualPercentage">
-                        <span class="dollors">$2450</span>
+                        
+                        <span class="dollors"><input type="text" value="20%" name="applyAllValue" class="applyAllInputField floatLeft individualPercentage"> $2450</span>
                          <input class="p1" type="text" id="copyBtnTarget2" value="o-travelmaker-dev.enchanting-travels.com/travel/abcdjcgfqwertyghjkldfghjouioasdfghjk" readonly>
 
                                     <button class="btn btn-danger btnn copyBtnCommon" data-clipboard-target="#copyBtnTarget2" data-clipboard-action="copy">Copy</button>
@@ -2866,367 +2876,440 @@
               <div class="modal-content modal-bg">
                 <div class="modal-header modal-head">
                   <div class="close" data-dismiss="modal"></div>
-                  <h4 class="modal-title payment-details">PAYMENT DETAILS</h4>
+                  <h4 class="modal-title payment-details">BOOKING DETAILS</h4>
                 </div>
-                <div class="modal-body modal-part2">
-                  <div class="headerTripDetails">
-                    <p class="para-center">Trip to India </p>
-                    <p class="no_ofDays">6 days/5 nights </p>
-                    <p class="tripDatesHeader">22 Mar 2016 - 28 Mar 2016</p>
-                    <p class="no_osGuests">2 guests </p>
-                    <p class="amountDetailsHeader">USD 25,500</p>
-                  </div>
-                  <div class="row">
-                    <div class="float-left headerPassengersNamesDiv">
-                      <h4><span class="passengerIcon"> </span>Caroline Pillar&nbsp;&nbsp;&nbsp; |&nbsp; &nbsp;&nbsp;Jenny Watson</h4>
-                    </div>
-                    <div class="float-right headerRoomDetails">
-                      <p>1 - Delux Room (Double) </p>
-                      <p>USD 2500</p>
-                    </div>
-                  </div>
-                  <div class="row row-body">
-                    <div class="pay-details tbl1">
-                      <h4 class="paymentDetailsIcon">PAYMENT DETAILS</h4>
-                      <div class="table-responsive tbl">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class="text-left pmtdtl-th">ADV.PAID</th>
-                              <th class="text-left pmtdtl-th">USD 2,00</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td><span class="clr-ccc">Paid on</span> <br/> 06 Dec 2015</td>
-                              <td><span class="clr-ccc">Cheq./Ref.</span><br/>#215478</td>
-                            </tr>
-                            <tr>
-                              <td><span class="clr-ccc">Submitted On </span><br/> 16 Nov 2015</td>
-                              <td><span class="clr-ccc">Status</span><br>
-                              <span class="paymentDetailsStatus">Processed</span>
-                              <span class="processedIconDropDown"></span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <hr class="col-md-11 hr-line" />
-                      </div><br/>
-                      <div class="tbl-attachment">
-                        <div class="table-responsive tbl">
-                          <table class="table">
-                            <thead>
-                              <tr>
-                                <th class="text-left pmtdtl-th">ADJUSTMENT 1</th>
-                                <th class="text-left pmtdtl-th">USD <span class="tblusd-color">7,00</span></th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td><span class="clr-ccc">Made on</span> <br/> 20 Dec 2015</td>
-                                <td style="padding-top: 0px;">
-                                  <div class="radio options">
-                                    <label><input type="radio" name="optradio" value="hold"><img />   On Hold</label>
-                                  </div>
-                                  <div class="radio options">
-                                    <label><input type="radio" class="radio-btn" value="genr" name="optradio"> <img /> Generate</label>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <div id="none" class="box genr"></div>
+              <!-- Booking details Tabs HTML -->
+                <div class="container" id="bookingDetailsTabs">
+                  <ul class="nav nav-tabs bookingDetailsTabList">
+                    <li class="active"><a data-toggle="tab" href="#paymentDetails">PAYMENT DETAILS</a></li>
+                    <li><a data-toggle="tab" href="#tripStatus">OVERALL TRIP STATUS</a></li>
+                    <li><a data-toggle="tab" href="#cancelTrip">CANCEL TRIP</a></li>
+                  </ul>
 
-                        <div id="ProjectListButton" class="box hold">
-                          <input type="textbox" class="form-control" placeholder="Reason"/>
+                  <div class="tab-content">
+                    <div id="paymentDetails" class="tab-pane fade in active paymentDetailsContent">
+                      <div class="modal-body modal-part2">
+                        <div class="headerTripDetails">
+                        <span class="tripDetailsHeader">
+                          <div class="para-center">Trip to India </div>
+                          <div class="no_ofDays">6 days/5 nights </div>
+                          <div class="tripDatesHeader">22 Mar 2016 - 28 Mar 2016</div>
+                          <div class="no_osGuests">2 guests </div>
+                          <div class="amountDetailsHeader">USD 25,500</div>
+                        </span>
                         </div>
-                        
-                        <hr class="col-md-11 hr-line" />
-                      </div>
-                        <br/>
-                      <div class="table-responsive tbl">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class="text-left pmtdtl-th">BAL. DUE</th>
-                              <th class="text-left pmtdtl-th">USD <span class="red">2,200</span></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="clr-ccc">Balance Due On <br/> <span class="red">20 Jan 2016</span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="intermediate-details tbl1">
-                      <h4 class="intermediatePaymentIcon">INTERMEDIATE PAYMENT</h4>
-                      <div class="table-responsive tbl">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class="text-left pmtdtl-th">PAYMENT 1</th>
-                              <th class="text-left pmtdtl-th">USD 5,00</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td><span class="clr-ccc">Paid on </span><br/> 24 Dec 2015</td>
-                              <td><span class="clr-ccc">Cheq./Ref.</span><br/>#4715478</td>
-                            </tr>
-                            <tr>
-                              <td><span class="clr-ccc">Submitted On</span> <br/>21 Dec 2015</td>
-                               <td><span class="clr-ccc">Status</span><br>
-                              <span class="paymentDetailsStatus">Processed</span>
-                              <span class="processedIconDropDown"></span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="table-responsive tbl">
-                        <table class="table">
-                          <thead>
-                            <tr style="border-top: 1px solid #ccc">
-                              <th class="text-left pmtdtl-th">PAYMENT 2</th>
-                              <th class="text-left pmtdtl-th">USD 5,00</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td><span class="clr-ccc">Paid on </span><br/> 24 Dec 2015</td>
-                              <td><span class="clr-ccc">Cheq./Ref.</span><br/>#4715478</td>
-                            </tr>
-                            <tr>
-                              <td><span class="clr-ccc">Submitted On</span> <br/>21 Dec 2015</td>
-                              <td><span class="clr-ccc">Status</span><br/>
-                                <div class="dropdown">
-                                  <div id="drpdwn-status" class="dropdown-toggle" data-toggle="dropdown">
-                                    <span class="statusTxt">Processing</span>
-                                    <img class="statusDropDown" src="./travel_files/processing_drpd.png"/>
-                                    <span class="caret"></span>
-                                  </div>
-                                  <ul class="dropdown-menu" id="menuContainer">
-                                    <li id="li-status-processed">
-                                      <span class="statusTxt">Processed</span>
-                                      <img class="statusDropDown" src="./travel_files/processed_drpd.png"/>
-                                    </li>
-                                    <li id="li-status-processing">
-                                      <span class="statusTxt">Processing</span>
-                                      <img class="statusDropDown" src="./travel_files/processing_drpd.png"/>
-                                    </li>
-                                    <li id="li-status-invalid">
-                                      <span class="statusTxt">Invalid </span>
-                                      <img class="statusDropDown" src="./travel_files/invalid_drpd.png"/>
-                                    </li>
-                                  </ul>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div id="count" hidden>1</div>
-                      <div id="add-tbl">
-                        <div id="div-display-container"></div>
-                        <div class="table-responsive tbl tbl-bdr close-table-div" id="tbl-div-confirm">
-                        <button id="" class="closeTable"><i class="fa fa-times"></i></button>
-                        <table class="table">
-                          <tr>
-                            <td class="text-left pmtdtl-th">PAYMENT</td>
-                            <td>
-                              <p class="usd">USD</p>
-                              <input type="text" value="" class="form-control num" id="usd-payment">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-left pmtdtl-th">DUE DATE</td>
-                            <td>
-                              <input type="text" class="form-control date-picker-input" id="datepicker"></td>
-                          </tr>
-                        </table>
-                        <button type="submit" class="btn btn-danger confirm-btn add-plus-icon" id="confirm">Confirm</button>
+                        <div class="row">
+                          <div class="float-left headerPassengersNamesDiv">
+                            <h4><span class="passengerIcon"> </span>Caroline Pillar | Jenny Watson</h4>
+                          </div>
+                          <div class="float-right headerRoomDetails">
+                            <p>1 - Delux Room (Double) </p>
+                            <p>USD 2500</p>
+                          </div>
                         </div>
-                      </div>
-                      <span class="glyphicon glyphicon-plus-sign add-plus-icon" id="add"></span>
-                    </div>
+                        <div class="row row-body">
+                          <div class="pay-details tbl1">
+                            <h4 class="paymentDetailsIcon">PAYMENT DETAILS</h4>
+                            <div class="table-responsive tbl">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th class="text-left pmtdtl-th">ADV.PAID</th>
+                                    <th class="text-left pmtdtl-th">USD 2,00</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="clr-ccc">Paid on</span> <br/> 06 Dec 2015</td>
+                                    <td><span class="clr-ccc">Status</span><br>
+                                    <span class="paymentDetailsStatus">Processed</span>
+                                    <span class="processedIconDropDown"></span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="clr-ccc">Submitted On </span><br/> 16 Nov 2015</td>
+                                    <td><span class="clr-ccc">Cheq./Ref.</span><br/>#215478</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <hr class="col-md-11 hr-line" />
+                            </div><br/>
+                            <div class="hotelDetails">
+                              <h4>Hotel Not Available</h4>
+                              <hr class="col-md-11 hr-line" />
+                            </div>
+                            <br>
+                            <div class="tbl-attachment">
+                              <div class="table-responsive tbl">
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th class="text-left pmtdtl-th">ADJUSTMENT 1</th>
+                                      <th class="text-left pmtdtl-th">USD <span class="tblusd-color">7,00</span></th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td><span class="clr-ccc">Made on</span> <br/> 20 Dec 2015</td>
+                                      <td style="padding-top: 0px;">
+                                        <div class="radio options">
+                                          <label><input type="radio" name="optradio" value="hold"><img />   On Hold</label>
+                                        </div>
+                                        <div class="radio options">
+                                          <label><input type="radio" class="radio-btn" value="genr" name="optradio"> <img /> Generate</label>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div id="none" class="box genr"></div>
 
-                    <div class="flight tbl2">
-                      <h4 class="flightIconH4">FLIGHT</h4>
-                      <div class="table-responsive tbl">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class="text-left pmtdtl-th">CONFIRMED</th>
-                              <th class="text-left pmtdtl-th">USD 15,000</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td><span class="clr-ccc">Paid on</span> <br/> 06 Dec 2015</td>
-                              <td><span class="clr-ccc">Cheq./Ref.</span><br/>#215478</td>
-                            </tr>
-                            <tr>
-                              <td><span class="clr-ccc">Submitted On</span> <br/> 16 Nov 2015</td>
-                              <td>
-                              <span class="clr-ccc">Status</span><br/>
-                              <span class="paymentDetailsStatus">Processed</span>
-                              <span class="processedIconDropDown"></span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <!--   <div class="flight not-opted1">
-                      <h4>Flight</h4>
-                      <span class="not-opted">Not Opted</span>
-                    </div> -->
-                  </div>
-                  <div class="row">
-                    <div class="float-left headerPassengersNamesDiv">
-                      <h4><span class="passengerIcon"> </span>Caroline Pillar | Jenny Watson</h4>
-                    </div>
-                    <div class="float-right headerRoomDetails">
-                      <p>1 - Delux Room (Double) </p>
-                      <p>USD 2500</p>
-                    </div>
-                  </div>
-                  <div class="row row-body">
-                    <div class="pay-details tbl1">
-                      <h4 class="paymentDetailsIcon">PAYMENT DETAILS</h4>
-                      <div class="table-responsive tbl">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class="text-left pmtdtl-th">ADV.PAID</th>
-                              <th class="text-left pmtdtl-th">USD 2,00</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td><span class="clr-ccc">Paid on</span> <br/> 06 Dec 2015</td>
-                              <td><span class="clr-ccc">Cheq./Ref.</span><br/>#215478</td>
-                            </tr>
-                            <tr>
-                              <td><span class="clr-ccc">Submitted On </span><br/> 16 Nov 2015</td>
-                              <td><span class="clr-ccc">Status</span><br>
-                              <span class="paymentDetailsStatus">Processed</span>
-                              <span class="processedIconDropDown"></span></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                              <div id="ProjectListButton" class="box hold">
+                                <input type="textbox" class="form-control" placeholder="Reason"/>
+                              </div>
+                              
+                              <hr class="col-md-11 hr-line" />
+                            </div>
+                              <br/>
+                            <div class="table-responsive tbl">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th class="text-left pmtdtl-th">BAL. DUE</th>
+                                    <th class="text-left pmtdtl-th">USD <span class="red">2,200</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="clr-ccc">Balance Due On <br/> <span class="red">20 Jan 2016</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="table-responsive tbl">
+                              <table class="table">
+                                <thead>
+                                  <tr style="border-top: 1px solid #ccc">
+                                    <th class="text-left pmtdtl-th">ADJUSTMENT 1</th>
+                                    <th class="text-left pmtdtl-th">USD <span class="tblusd-color">5,00</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr><td>Additional Hotel Added</td></tr>
+                                  <tr>
+                                    <td><span class="clr-ccc">Paid on </span><br/> 24 Dec 2015</td>
+                                    <td><span class="clr-ccc">Status</span><br/>
+                                      <div class="dropdown wdh100">
+                                        <div id="drpdwn-status" class="dropdown-toggle" data-toggle="dropdown">
+                                          <span class="statusTxt">Processing</span>
+                                          <img class="statusDropDown" src="./travel_files/processing_drpd.png"/>
+                                          <span class="caret"></span>
+                                        </div>
+                                        <ul class="dropdown-menu" id="menuContainer">
+                                          <li id="li-status-processed">
+                                            <span class="statusTxt">Processed</span>
+                                            <img class="statusDropDown" src="./travel_files/processed_drpd.png"/>
+                                          </li>
+                                          <li id="li-status-processing">
+                                            <span class="statusTxt">Processing</span>
+                                            <img class="statusDropDown" src="./travel_files/processing_drpd.png"/>
+                                          </li>
+                                          <li id="li-status-invalid">
+                                            <span class="statusTxt">Invalid </span>
+                                            <img class="statusDropDown" src="./travel_files/invalid_drpd.png"/>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="clr-ccc">Submitted On</span> <br/>21 Dec 2015</td>
+                                    <td><span class="clr-ccc">Cheq./Ref.</span><br/>#4715478</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="intermediate-details tbl1">
+                            <h4 class="intermediatePaymentIcon">INTERMEDIATE PAYMENT</h4>
+                            <div class="table-responsive tbl">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th class="text-left pmtdtl-th">PAYMENT 1</th>
+                                    <th class="text-left pmtdtl-th">USD 5,00</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="clr-ccc">Paid on </span><br/> 24 Dec 2015</td>
+                                     <td><span class="clr-ccc">Status</span><br>
+                                    <span class="paymentDetailsStatus">Processed</span>
+                                    <span class="processedIconDropDown"></span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="clr-ccc">Submitted On</span> <br/>21 Dec 2015</td>
+                                    <td><span class="clr-ccc">Cheq./Ref.</span><br/>#4715478</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="table-responsive tbl">
+                              <table class="table">
+                                <thead>
+                                  <tr style="border-top: 1px solid #ccc">
+                                    <th class="text-left pmtdtl-th">PAYMENT 2</th>
+                                    <th class="text-left pmtdtl-th">USD 5,00</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="clr-ccc">Paid on </span><br/> 24 Dec 2015</td>
+                                    <td><span class="clr-ccc">Status</span><br/>
+                                      <div class="dropdown wdh100">
+                                        <div id="drpdwn-status" class="dropdown-toggle" data-toggle="dropdown">
+                                          <span class="statusTxt">Processing</span>
+                                          <img class="statusDropDown" src="./travel_files/processing_drpd.png"/>
+                                          <span class="caret"></span>
+                                        </div>
+                                        <ul class="dropdown-menu" id="menuContainer">
+                                          <li id="li-status-processed">
+                                            <span class="statusTxt">Processed</span>
+                                            <img class="statusDropDown" src="./travel_files/processed_drpd.png"/>
+                                          </li>
+                                          <li id="li-status-processing">
+                                            <span class="statusTxt">Processing</span>
+                                            <img class="statusDropDown" src="./travel_files/processing_drpd.png"/>
+                                          </li>
+                                          <li id="li-status-invalid">
+                                            <span class="statusTxt">Invalid </span>
+                                            <img class="statusDropDown" src="./travel_files/invalid_drpd.png"/>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="clr-ccc">Submitted On</span> <br/>21 Dec 2015</td>
+                                    <td><span class="clr-ccc">Cheq./Ref.</span><br/>#4715478</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div id="count" hidden>1</div>
+                            <div id="add-tbl">
+                              <div id="div-display-container"></div>
+                              <div class="table-responsive tbl tbl-bdr close-table-div" id="tbl-div-confirm">
+                              <button id="" class="closeTable"><i class="fa fa-times"></i></button>
+                              <table class="table">
+                                <tr>
+                                  <td class="text-left pmtdtl-th">PAYMENT</td>
+                                  <td>
+                                    <p class="usd">USD</p>
+                                    <input type="text" value="" class="form-control num" id="usd-payment">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="text-left pmtdtl-th">DUE DATE</td>
+                                  <td>
+                                    <input type="text" class="form-control date-picker-input" id="datepicker"></td>
+                                </tr>
+                              </table>
+                              <button type="submit" class="btn btn-danger confirm-btn add-plus-icon" id="confirm">Confirm</button>
+                              </div>
+                            </div>
+                            <span class="glyphicon glyphicon-plus-sign add-plus-icon" id="add"></span>
+                          </div>
 
-                        <hr class="col-md-11 hr-line" />
-                      </div>
-                      <br/>
-                      <div class="tbl-attachment">
-                        <div class="table-responsive tbl">
-                          <table class="table">
-                            <thead>
-                              <tr>
-                                <th class="text-left pmtdtl-th">ADJUSTMENT 1</th>
-                                <th class="text-left pmtdtl-th">USD 7,00</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td><span class="clr-ccc">Made on</span> <br/> 20 Dec 2015</td>
-                                <td style="padding-top: 0px;">
-                                  <div class="radio options">
-                                    <label><input type="radio" name="optradio" value="hold"><img />   On Hold</label>
-                                  </div>
-                                  <div class="radio options">
-                                    <label><input type="radio" class="radio-btn" value="genr" name="optradio"> <img /> Generate</label>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
+                          <div class="flight tbl2">
+                            <h4 class="flightIconH4">FLIGHT</h4>
+                            <div class="table-responsive tbl">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th class="text-left pmtdtl-th">CONFIRMED</th>
+                                    <th class="text-left pmtdtl-th">USD 15,000</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="clr-ccc">Paid on</span> <br/> 06 Dec 2015</td>
+                                    <td>
+                                    <span class="clr-ccc">Status</span><br/>
+                                    <span class="paymentDetailsStatus">Processed</span>
+                                    <span class="processedIconDropDown"></span></td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="clr-ccc">Submitted On</span> <br/> 16 Nov 2015</td>
+                                    <td><span class="clr-ccc">Cheq./Ref.</span><br/>#215478</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <!--   <div class="flight not-opted1">
+                            <h4>Flight</h4>
+                            <span class="not-opted">Not Opted</span>
+                          </div> -->
                         </div>
-                        <div id="none" class="box genr"></div>
+                        <div class="row">
+                          <div class="float-left headerPassengersNamesDiv">
+                            <h4><span class="passengerIcon"> </span>Caroline Pillar | Jenny Watson</h4>
+                          </div>
+                          <div class="float-right headerRoomDetails">
+                            <p>1 - Delux Room (Double) </p>
+                            <p>USD 2500</p>
+                          </div>
+                        </div>
+                        <div class="row row-body">
+                          <div class="pay-details tbl1">
+                            <h4 class="paymentDetailsIcon">PAYMENT DETAILS</h4>
+                            <div class="table-responsive tbl">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th class="text-left pmtdtl-th">ADV.PAID</th>
+                                    <th class="text-left pmtdtl-th">USD 2,00</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="clr-ccc">Paid on</span> <br/> 06 Dec 2015</td>
+                                    <td><span class="clr-ccc">Cheq./Ref.</span><br/>#215478</td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="clr-ccc">Submitted On </span><br/> 16 Nov 2015</td>
+                                    <td><span class="clr-ccc">Status</span><br>
+                                    <span class="paymentDetailsStatus">Processed</span>
+                                    <span class="processedIconDropDown"></span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
 
-                        <div id="ProjectListButton" class="box hold">
-                          <input type="textbox" class="form-control" placeholder="Reason"/>
-                        </div>
-                        
-                        <hr class="col-md-11 hr-line" />
-                      </div>
-                        <br/>
-                      <div class="table-responsive tbl">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class="text-left pmtdtl-th">BAL. DUE</th>
-                              <th class="text-left pmtdtl-th">USD <span class="red">2,200</span></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="clr-ccc">Balance Due On <br/> <span class="red">20 Jan 2016</span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                    <div class="intermediate-details tbl1">
-                      <h4 class="intermediatePaymentIcon">INTERMEDIATE PAYMENT</h4>
-                      <div class="table-responsive tbl">
-                        <table class="table">
-                          <thead>
-                            <tr>
-                              <th class="text-left pmtdtl-th">PAYMENT 1</th>
-                              <th class="text-left pmtdtl-th">USD 5,00</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td><span class="clr-ccc">Paid on </span><br/> 24 Dec 2015</td>
-                              <td><span class="clr-ccc">Cheq./Ref.</span><br/>#4715478</td>
-                            </tr>
-                            <tr>
-                              <td><span class="clr-ccc">Submitted On</span> <br/>21 Dec 2015</td>
-                               <td><span class="clr-ccc">Status</span><br>
-                              <span class="paymentDetailsStatus">Processed</span>
-                              <span class="processedIconDropDown"></span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-<!--                       <div id="count" hidden>1</div>
-                      <div id="add-tbl">
-                        <div id="div-display-container"></div>
-                        <div class="table-responsive tbl tbl-bdr" id="tbl-div-confirm">
-                        <table class="table">
-                          <tr>
-                            <td class="text-left pmtdtl-th">PAYMENT</td>
-                            <td>
-                              <p class="usd pmtdtl-th">USD</p>
-                              <input type="text" value="" class="form-control num" id="usd-payment">
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="text-left pmtdtl-th">DUE DATE</td>
-                            <td>
-                              <input type="text" class="form-control date-picker-input" id="datepicker"></td>
-                          </tr>
-                        </table>
-                        <button type="submit" class="btn btn-danger confirm-btn add-plus-icon" id="confirm">Confirm</button>
-                        </div>
-                      </div> -->
-                      <span class="glyphicon glyphicon-plus-sign add-plus-icon" id="add"></span>
-                    </div>
+                              <hr class="col-md-11 hr-line" />
+                            </div>
+                            <br/>
+                            <div class="tbl-attachment">
+                              <div class="table-responsive tbl">
+                                <table class="table">
+                                  <thead>
+                                    <tr>
+                                      <th class="text-left pmtdtl-th">ADJUSTMENT 1</th>
+                                      <th class="text-left pmtdtl-th">USD 7,00</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td><span class="clr-ccc">Made on</span> <br/> 20 Dec 2015</td>
+                                      <td style="padding-top: 0px;">
+                                        <div class="radio options">
+                                          <label><input type="radio" name="optradio" value="hold"><img />   On Hold</label>
+                                        </div>
+                                        <div class="radio options">
+                                          <label><input type="radio" class="radio-btn" value="genr" name="optradio"> <img /> Generate</label>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div id="none" class="box genr"></div>
 
-                    <div class="flight tbl2">
-                      <h4 class="flightIconH4 grayedOutDiv">FLIGHT</h4>
-                       <span class="not-opted">NOT OPTED</span>
+                              <div id="ProjectListButton" class="box hold">
+                                <input type="textbox" class="form-control" placeholder="Reason"/>
+                              </div>
+                              
+                              <hr class="col-md-11 hr-line" />
+                            </div>
+                              <br/>
+                            <div class="table-responsive tbl">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th class="text-left pmtdtl-th">BAL. DUE</th>
+                                    <th class="text-left pmtdtl-th">USD <span class="red">2,200</span></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="clr-ccc">Balance Due On <br/> <span class="red">20 Jan 2016</span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="intermediate-details tbl1">
+                            <h4 class="intermediatePaymentIcon">INTERMEDIATE PAYMENT</h4>
+                            <div class="table-responsive tbl">
+                              <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th class="text-left pmtdtl-th">PAYMENT 1</th>
+                                    <th class="text-left pmtdtl-th">USD 5,00</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td><span class="clr-ccc">Paid on </span><br/> 24 Dec 2015</td>
+                                    <td><span class="clr-ccc">Cheq./Ref.</span><br/>#4715478</td>
+                                  </tr>
+                                  <tr>
+                                    <td><span class="clr-ccc">Submitted On</span> <br/>21 Dec 2015</td>
+                                     <td><span class="clr-ccc">Status</span><br>
+                                    <span class="paymentDetailsStatus">Processed</span>
+                                    <span class="processedIconDropDown"></span></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+      <!--                       <div id="count" hidden>1</div>
+                            <div id="add-tbl">
+                              <div id="div-display-container"></div>
+                              <div class="table-responsive tbl tbl-bdr" id="tbl-div-confirm">
+                              <table class="table">
+                                <tr>
+                                  <td class="text-left pmtdtl-th">PAYMENT</td>
+                                  <td>
+                                    <p class="usd pmtdtl-th">USD</p>
+                                    <input type="text" value="" class="form-control num" id="usd-payment">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="text-left pmtdtl-th">DUE DATE</td>
+                                  <td>
+                                    <input type="text" class="form-control date-picker-input" id="datepicker"></td>
+                                </tr>
+                              </table>
+                              <button type="submit" class="btn btn-danger confirm-btn add-plus-icon" id="confirm">Confirm</button>
+                              </div>
+                            </div> -->
+                            <span class="glyphicon glyphicon-plus-sign add-plus-icon" id="add"></span>
+                          </div>
+
+                          <div class="flight tbl2">
+                            <h4 class="flightIconH4 grayedOutDiv">FLIGHT</h4>
+                             <span class="not-opted">NOT OPTED</span>
+                          </div>
+                          <!--   <div class="flight not-opted1">
+                            <h4>Flight</h4>
+                            <span class="not-opted">Not Opted</span>
+                          </div> -->
+                        </div>
+                        <div class="modal-footer gen-modal">
+                          <button type="button" class="btn btn-danger generate">Generate</button>
+                        </div>
+                      </div>
                     </div>
-                    <!--   <div class="flight not-opted1">
-                      <h4>Flight</h4>
-                      <span class="not-opted">Not Opted</span>
-                    </div> -->
-                  </div>
-                  <div class="modal-footer gen-modal">
-                    <button type="button" class="btn btn-danger generate">Generate</button>
+                    <div id="tripStatus" class="tab-pane fade">
+                       Trip Status Content Comes Here
+                    </div>
+                    <div id="cancelTrip" class="tab-pane fade">
+                        Cancel Trip Content Comes Here
+                    </div>
                   </div>
                 </div>
+
+                
                 
               </div>
             </div>
