@@ -129,12 +129,15 @@ $(document).ready(function(){
           $('#applyAllLabel').removeClass('disabled');
           $('#inputFieldApplyAll').removeClass('disabled');
           $('.individualPercentage').addClass('disabled');
+          $('.applyAllPercentValue').removeClass('displayNone');
+
         } else {
           $('#inputFieldApplyAll').attr('readonly', true);
           $('input.individualPercentage').attr('readonly', false);
           $('#applyAllLabel').addClass('disabled');
           $('#inputFieldApplyAll').addClass('disabled');
           $('.individualPercentage').removeClass('disabled');
+          $('.applyAllPercentValue').addClass('displayNone');
         }
     });
   });
