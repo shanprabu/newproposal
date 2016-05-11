@@ -1169,7 +1169,7 @@ ol.progresss[data-steps="9"] li { width: 11%; }
     width: 39px;
     float: left;
     margin: -10px 10px 0 0;
-    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") repeat scroll 46px -199px;
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") repeat scroll 46px -67px;
 }
 .headerPassengersNamesDiv{
 	padding-left: 38px;
@@ -1283,7 +1283,7 @@ ol.progresss[data-steps="9"] li { width: 11%; }
 		padding: 8px 0;
 } 
 #modal-2 .modal-lg {
-    width: 1109px;
+    width: 1165px;
 }
 
 .float-left.headerPassengersNamesDiv {
@@ -1327,12 +1327,12 @@ ol.progresss[data-steps="9"] li { width: 11%; }
     background-repeat-x: no-repeat;
 }
 #modal-2 .processedIconDropDown,.std-section-div span.processedIconDropDown {
-    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -15px 23px;
+    background: rgba(0, 0, 0, 0) url("../travel_files/copied.png") no-repeat;
     display: inline-block;
-    height: 15px;
+    height: 16px;
     position: relative;
     top: 3px;
-    width: 15px;
+    width: 17px;
 }
 #modal-2 .invalidIconDropDown {
     background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -10px 23px;
@@ -1807,7 +1807,7 @@ div#bookingDetailsTabs ul.nav.nav-tabs {
     background: #f6f6f6;
 }
 
-div#bookingDetailsTabs li.active a {
+div#bookingDetailsTabs ul.bookingDetailsTabList li.active a {
     border-bottom: #ea950e 2px solid !Important;
     border: 1px solid transparent;
     background: transparent;
@@ -1815,17 +1815,17 @@ div#bookingDetailsTabs li.active a {
     font-weight: 600;
 }
 
-div#bookingDetailsTabs li {
+div#bookingDetailsTabs ul.bookingDetailsTabList li {
     width: 31%;
     text-align: center;
 }
 
-div#bookingDetailsTabs li a {
+div#bookingDetailsTabs ul.bookingDetailsTabList li a {
 	font-size: 1.2em;
 	color: #565656;
 }
 
-div#bookingDetailsTabs li a:hover {
+div#bookingDetailsTabs ul.bookingDetailsTabList li a:hover {
 	font-size: 1.2em;
 	background: transparent;
 	border: 1px solid transparent;
@@ -1851,6 +1851,7 @@ span.tripDetailsHeader {
 /*End of Booking details css*/
 .orngClr{
 	color: #c4aa61;
+	font-weight: 400;
 }
 
 .totalTripPrice{
@@ -1869,6 +1870,7 @@ button.btn.btn-default.btnn.copiedBtnCommon {
     float: right;
     background: #f1f1f1;
     border: none;
+    color: #979797;
 }
 
 input#checkBoxApplyAll {
@@ -1883,4 +1885,77 @@ label.gen-radio-multiple.disabled {
 
 label#applyAllLabel {
     font-weight: 500;
+}
+/*Overall Trip Status CSS*/
+
+.item{
+	margin-bottom: 30px; 
+	box-sizing: border-box;
+    overflow: hidden; 
+}
+.progress-indicator{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+    font-size: 1em;
+    text-transform: capitalize;
+}
+.booking-status{
+	float:right;
+}
+
+.progress-indicator>li {
+	float:left;
+	text-align: center;
+	padding: 20px 20px 10px;
+	margin-top: 15px;
+	border-top: 1px solid #e9e9e9;
+	width: 125px;
+	position: relative;
+	overflow: visible;
+}
+.progress-indicator li.success:before{
+	content: url(../travel_files/Top_icon.png);
+	position: absolute;
+	top: -16px;
+	left: 46px;
+}
+.progress-indicator li.in-progress:before{
+	content: url(../travel_files/status_processing.png);
+	position: absolute;
+	top: -16px;
+	left: 46px;
+}
+.progress-indicator li.done:before, .progress-indicator li.processed:before{
+	content: url(../travel_files/status_done.png);
+	position: absolute;
+	top: -16px;
+	left: 46px;
+}
+.progress-indicator li.pending:before{
+	content: url(../travel_files/status_pending.png);
+	position: absolute;
+	top: -16px;
+	left: 46px;
+}
+.progress-indicator li.not-applicable:before{
+	content: url(../travel_files/status_notAplicable.png);
+	position: absolute;
+	top: -16px;
+	left: 46px;
+}
+.progress-indicator li.emptyStatus:before{
+	content: url(../travel_files/empty.png);
+	position: absolute;
+	top: -16px;
+	left: 46px;
+}
+.customer-booking-status{
+	margin: 50px;
+}
+.customer-entry{
+	float:left;
+	font-size: 0.9em;
+	margin: 4px 30px 0 0;
+	font-weight: 600;
 }

@@ -117,9 +117,8 @@ $(document).ready(function(){
       $('input[name=percentOptionYesNo]').on('click init-post-format', function() {
           $('.individualPercentage').toggle($('#percentOption').prop('checked'));
           $('#inputFieldApplyAll').prop('readonly',true);
-          $('.individualPercentage').prop('readonly',true);
+          $('.individualPercentage').prop('readonly',false);
           $('#inputFieldApplyAll').addClass('disabled');
-          $('.individualPercentage').addClass('disabled');
       }).trigger('init-post-format');
 
       $('input#checkBoxApplyAll').change(function () {
