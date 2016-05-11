@@ -1326,8 +1326,17 @@ ol.progresss[data-steps="9"] li { width: 11%; }
     height: 25px;
     background-repeat-x: no-repeat;
 }
-#modal-2 .processedIconDropDown,.std-section-div span.processedIconDropDown {
+.std-section-div .copiedBtnCommon span.processedIconDropDown{
     background: rgba(0, 0, 0, 0) url("../travel_files/copied.png") no-repeat;
+    display: inline-block;
+    height: 16px;
+    position: relative;
+    top: 3px;
+    width: 17px;
+}
+
+#modal-2 .modal-part2 .processedIconDropDown {
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") no-repeat repeat scroll -15px 23px;
     display: inline-block;
     height: 16px;
     position: relative;
