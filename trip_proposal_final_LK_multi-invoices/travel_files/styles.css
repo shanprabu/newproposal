@@ -1283,7 +1283,7 @@ ol.progresss[data-steps="9"] li { width: 11%; }
 		padding: 8px 0;
 } 
 #modal-2 .modal-lg {
-    width: 1165px;
+    width: 1300px;
 }
 
 .float-left.headerPassengersNamesDiv {
@@ -1679,11 +1679,11 @@ ul.passengers-list li{
 }
 #drpdwn-status .statusTxt, #menuContainer .statusTxt, .paymentDetailsStatus {
     display: inline-block;
-    margin-right: 5px;
+    margin-right: 10px;
     width: 60px;
 }
 #drpdwn-status img{
-		margin-right: 5px;
+		margin-right: 0px;
 }
 .table-responsive.tbl table tr th:first-child{
 	width: 150px;
@@ -1919,45 +1919,39 @@ label#applyAllLabel {
 	padding: 20px 20px 10px;
 	margin-top: 15px;
 	border-top: 1px solid #e9e9e9;
-	width: 125px;
+	width: 145px;
 	position: relative;
 	overflow: visible;
 }
 .progress-indicator li.success:before{
 	content: url(../travel_files/Top_icon.png);
-	position: absolute;
-	top: -16px;
-	left: 46px;
 }
 .progress-indicator li.in-progress:before{
 	content: url(../travel_files/status_processing.png);
-	position: absolute;
-	top: -16px;
-	left: 46px;
 }
 .progress-indicator li.done:before, .progress-indicator li.processed:before{
 	content: url(../travel_files/status_done.png);
-	position: absolute;
-	top: -16px;
-	left: 46px;
 }
 .progress-indicator li.pending:before{
 	content: url(../travel_files/status_pending.png);
-	position: absolute;
-	top: -16px;
-	left: 46px;
 }
 .progress-indicator li.not-applicable:before{
 	content: url(../travel_files/status_notAplicable.png);
-	position: absolute;
-	top: -16px;
-	left: 46px;
 }
 .progress-indicator li.emptyStatus:before{
 	content: url(../travel_files/empty.png);
+}
+.progress-indicator li.emptyStatus:before,
+.progress-indicator li.not-applicable:before,
+.progress-indicator li.pending:before,
+.progress-indicator li.done:before, 
+.progress-indicator li.processed:before,
+.progress-indicator li.in-progress:before,
+.progress-indicator li.success:before
+{
 	position: absolute;
 	top: -16px;
-	left: 46px;
+	left: 55px;
 }
 .customer-booking-status{
 	margin: 50px;
