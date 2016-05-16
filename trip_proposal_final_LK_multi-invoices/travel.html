@@ -2900,7 +2900,7 @@
                         </div>
                         <div class="row">
                           <div class="float-left headerPassengersNamesDiv">
-                            <h4><span class="passengerIcon"> </span>Caroline Pillar | Jenny Watson</h4>
+                            <h4><span class="passengerIcon"> </span><span class="passengerMainNameHeader">Caroline Pillar</span>|<span class="passengerNameHeader">Jenny Watson</span><!-- Add "passengerNameHeader" class span for next passengers --></h4>
                           </div>
                           <div class="float-right headerRoomDetails">
                             <p>1 - Delux Room (Double) </p>
@@ -2964,7 +2964,7 @@
                               </div>
                               <div id="none" class="box genr"></div>
 
-                              <div id="ProjectListButton" class="box hold">
+                              <div id="ProjectListButton" class="box hold displayNone">
                                 <input type="textbox" class="form-control" placeholder="Reason"/>
                               </div>
                               
@@ -3105,6 +3105,7 @@
                                 <tr>
                                   <td class="text-left pmtdtl-th">PAYMENT</td>
                                   <td>
+                                    <input type="text" value="20%" class="form-control percentage" id="percentageVal">
                                     <p class="usd">USD</p>
                                     <input type="text" value="" class="form-control num" id="usd-payment">
                                   </td>
@@ -3115,10 +3116,10 @@
                                     <input type="text" class="form-control date-picker-input" id="datepicker"></td>
                                 </tr>
                               </table>
-                              <button type="submit" class="btn btn-danger confirm-btn add-plus-icon" id="confirm">Confirm</button>
+                              <button type="submit" class="btn btn-danger confirm-btn confirmPaymentBtn" id="confirm">Confirm</button>
                               </div>
                             </div>
-                            <span class="glyphicon glyphicon-plus-sign add-plus-icon" id="add"></span>
+                            <span class="add-plus-icon" id="add"></span>
                           </div>
 
                           <div class="flight tbl2">
@@ -3283,7 +3284,7 @@
                               <button type="submit" class="btn btn-danger confirm-btn add-plus-icon" id="confirm">Confirm</button>
                               </div>
                             </div> -->
-                            <span class="glyphicon glyphicon-plus-sign add-plus-icon" id="add"></span>
+                            <span class="add-plus-icon" id="add"></span>
                           </div>
 
                           <div class="flight tbl2">

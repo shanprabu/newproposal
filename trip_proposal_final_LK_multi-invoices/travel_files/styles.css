@@ -1171,6 +1171,9 @@ ol.progresss[data-steps="9"] li { width: 11%; }
     margin: -10px 10px 0 0;
     background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") repeat scroll 46px -67px;
 }
+#modal-2 #paymentDetails .passengerIcon {
+    background: rgba(0, 0, 0, 0) url("../travel_files/tripstatus_sprite.png") repeat scroll 46px -198px;
+}
 .headerPassengersNamesDiv{
 	padding-left: 38px;
 }
@@ -1279,6 +1282,10 @@ ol.progresss[data-steps="9"] li { width: 11%; }
 		background: #fafafa;
 }
 
+#modal-2 .modal-bg {
+		background: #fff;
+}
+
 #modal-2 .row-body .table th, #modal-2 .row-body .table td{
 		padding: 8px 0;
 } 
@@ -1302,7 +1309,7 @@ ol.progresss[data-steps="9"] li { width: 11%; }
 .tbl1 {
     border-right: 1px solid #ccc;
     margin: 15px 0 10px 0;
-    min-height: 583px;
+    min-height: 250px;
     max-width: 100%;
 }
 #modal-2 .flight.tbl2 {
@@ -1356,8 +1363,8 @@ ol.progresss[data-steps="9"] li { width: 11%; }
     display: inline-block;
     height: 23px;
     position: relative;
-    top: 20px;
-    right: 0;
+    top: -30px;
+    right: -20px;
     width: 40px;
     background-repeat-x: no-repeat;
 }
@@ -1410,7 +1417,7 @@ ol.progresss[data-steps="9"] li { width: 11%; }
 .generate {
 	padding: 6px 12px;
 	font-size: 16px;
-	margin-left: 20px;
+	margin-left: 10px;
 }
 .radio-btn {
 	margin-left: -17px !important;
@@ -1421,7 +1428,7 @@ ol.progresss[data-steps="9"] li { width: 11%; }
 	color: #333;
 	width: 95%;
 	margin: auto 35px 30px 27px;
-	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 .red, .color-usd {
 	color:  #D9534F !important;
@@ -1433,14 +1440,16 @@ ol.progresss[data-steps="9"] li { width: 11%; }
     margin-bottom: 15px;
     margin-top: 9px;
     text-align: left;
-    width: 25.5%;
+    width: 22%;
 }
 .tblusd-color {
 	color: #a3d42f;
 }
 .float-right.headerRoomDetails p{
-		float: left;
-		margin: 0 12px 0 0;
+	float: left;
+	margin: 0 12px 0 0;
+	color: #c4aa61;
+    font-weight: 400;
 }
 .not-opted {
 	color: #ccc;
@@ -1448,20 +1457,16 @@ ol.progresss[data-steps="9"] li { width: 11%; }
 	text-align: left;
 }
 .not-opted1 h4,.clr-ccc {
-	color: #B3ADAD !important;
+	color: #b8b8b8 !important;
 }
 .modal-bg td,#usd-pay1,#date-pay,#date-pay1,#usd-pay{
 	color: rgb(122, 118, 118);
 }
 
 .usd {
-	float: left;
-	width: 19%;
-	margin-left: 77px;
-	margin-top: 2px;
-}
-.num {
-	float: right;
+    float: left;
+    margin: 6px 6px;
+}.num {
 	width: 60px;
 }
 #ProjectListButton {
@@ -1562,7 +1567,20 @@ a.sel-drpdwn {
     margin: 0 50%;
     text-align: center;
     top: -16px;
+    background: transparent url("../travel_files/plus.png") no-repeat;
+    height: 20px;
+    width: 20px;
+    display: inherit;
+    cursor: pointer;
 }
+
+.confirmPaymentBtn{
+	margin: 0 43%;
+    text-align: center;
+    top: -16px;
+    cursor: pointer;
+}
+
 .pay-top-padding {
 	padding-top: 20px  !important;
 }
@@ -1587,7 +1605,7 @@ a.sel-drpdwn {
 }
 .headerTripDetails div {
     float: left;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0 10px;
     font-weight: 500;
 }
@@ -1661,9 +1679,10 @@ ul.passengers-list li{
     width: 40px;
     background-repeat-x: no-repeat;
 }
+
 .span-usd {
 	color: #333;
-	margin-right: 3px;
+	margin: 6px;
 }
 #menuContainer.dropdown-menu {
     left: -40px;
@@ -1701,7 +1720,6 @@ ul.passengers-list li{
 }
 .date-picker-input {
 	width: 100px;
-	float: right;
 }
 input::-webkit-input-placeholder {
 color: #B3ADAD !important;
@@ -1812,7 +1830,7 @@ div#bookingDetailsTabs {
 div#bookingDetailsTabs ul.nav.nav-tabs {
 	border: none;
     width: 100%;
-    padding: 30px 20% 0;
+    padding: 30px 28% 0;
     background: #f6f6f6;
 }
 
@@ -1832,6 +1850,7 @@ div#bookingDetailsTabs ul.bookingDetailsTabList li {
 div#bookingDetailsTabs ul.bookingDetailsTabList li a {
 	font-size: 1.2em;
 	color: #565656;
+	padding: 5px;
 }
 
 div#bookingDetailsTabs ul.bookingDetailsTabList li a:hover {
@@ -1842,11 +1861,13 @@ div#bookingDetailsTabs ul.bookingDetailsTabList li a:hover {
 
 #modal-2 .modal-header.modal-head{
 	background: #f6f6f6;
+	padding-top: 40px;
 }
 
 .hotelDetails h4 {
     margin: 0px 0 20px 0;
     font-weight: 600;
+    font-size: 13px;
 }
 
 span.tripDetailsHeader {
@@ -1961,4 +1982,22 @@ label#applyAllLabel {
 	font-size: 0.9em;
 	margin: 4px 30px 0 0;
 	font-weight: 600;
+}
+
+span.passengerMainNameHeader {
+    margin-right: 15px;
+}
+
+.passengerNameHeader {
+    margin: 15px;
+}
+
+td.text-left.pmtdtl-th {
+    width: 50%;
+}
+
+input#percentageVal {
+    width: 45px;
+    float: left;
+    padding: 5px;
 }
